@@ -26,7 +26,7 @@ const theme = {
     sideNavBg: '#17202a',
     blackBg: '#0b1015',
     widgetBg: '#1c232b',
-    tableRowBorderColor: '#cee3f921',
+    // tableRowBorderColor: '#cee3f921',
     grayBorder: '#2e363e',
     statusGreen: '#70ffd0',
     statusRed: '#ff7285',

@@ -1,6 +1,7 @@
 import React, { ReactNode, SyntheticEvent } from 'react';
 import { css } from '@emotion/core';
 import theme from './theme';
+import Spinner from './Spinner';
 
 type buttonType = 'primary' | 'default';
 const buttonCSS = ({ outline }: { outline: boolean }) => css`
@@ -25,7 +26,7 @@ const buttonCSS = ({ outline }: { outline: boolean }) => css`
   }
 `;
 
-export type Props = {
+export type ButtonProps = {
   children: ReactNode | string;
   type: buttonType;
   outline?: boolean;
@@ -45,7 +46,7 @@ const Button = ({
   onClick,
   loading = false,
   icon,
-}: Props) => {
+}: ButtonProps) => {
   const isDisabled = disabled || loading;
   return (
     <button
@@ -55,7 +56,7 @@ const Button = ({
       disabled={isDisabled}
       onClick={isDisabled ? undefined : onClick}
     >
-      {/* {loading ? <LoadingSpinnerCircle /> : null} */}
+      {loading ? <Spinner /> : null}
       {!loading && icon ? icon : null}
       {children}
     </button>
