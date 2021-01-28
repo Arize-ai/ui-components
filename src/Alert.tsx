@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import { css } from '@emotion/core';
 
 export type AlertProps = {
-  type: 'warning';
+  type: 'warning' | 'info';
   message: ReactNode;
 };
 
