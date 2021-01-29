@@ -77,6 +77,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.35",
-    "emotion-theming": "^10.0.27"
+    "emotion-theming": "^10.0.27",
+    "polished": "^4.1.0"
   }
 }

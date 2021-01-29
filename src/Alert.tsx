@@ -1,5 +1,7 @@
 import React, { ReactNode } from 'react';
 import { css } from '@emotion/core';
+import { transparentize } from 'polished';
+import theme from './theme';
 
 export type AlertProps = {
   type: 'warning' | 'info';
@@ -7,8 +9,13 @@ export type AlertProps = {
 };
 
 const warningCSS = css`
-  border: 1px solid #f1c64d;
-  background-color: rgb(241, 198, 77, 0.8);
+  border: 1px solid ${theme.colors.statusWarning};
+  background-color: ${transparentize(0.5, theme.colors.statusWarning)};
+`;
+
+const infoCSS = css`
+  border: 1px solid ${theme.colors.statusInfo};
+  background-color: ${transparentize(0.5, theme.colors.statusInfo)};
 `;
 
 const Alert = ({ type, message }: AlertProps) => {
@@ -16,6 +23,10 @@ const Alert = ({ type, message }: AlertProps) => {
   switch (type) {
     case 'warning':
       typeStyle = warningCSS;
+      break;
+    case 'info':
+      typeStyle = infoCSS;
+      break;
   }
   return (
     <div

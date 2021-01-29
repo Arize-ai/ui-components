@@ -30,7 +30,9 @@ const theme = {
     grayBorder: '#2e363e',
     statusGreen: '#70ffd0',
     statusRed: '#ff7285',
+    statusInfo: '#91d5ff',
     statusSuccess: '#41bc94', // RGB independent success color
+    statusWarning: '#f1c64d',
     statusDanger: '#db247c',
     textColor: '#ffffff',
     subTextColor: '#bbbdbf',
