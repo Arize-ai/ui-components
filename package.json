@@ -77,6 +77,8 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.35",
+    "@react-aria/overlays": "^3.6.1",
+    "@react-stately/overlays": "^3.1.1",
     "emotion-theming": "^10.0.27",
     "polished": "^4.1.0"
   }

@@ -12,9 +12,11 @@ const baseColors = {
 };
 
 const baseFontSizes = {
-  small: '12px',
+  xsmall: '12px',
+  small: '14px',
   medium: '16px',
   large: '18px',
+  xlarge: '24px',
 };
 
 const theme = {
@@ -26,7 +28,6 @@ const theme = {
     sideNavBg: '#17202a',
     blackBg: '#0b1015',
     widgetBg: '#1c232b',
-    // tableRowBorderColor: '#cee3f921',
     grayBorder: '#2e363e',
     statusGreen: '#70ffd0',
     statusRed: '#ff7285',
@@ -42,10 +43,6 @@ const theme = {
   },
   fontSizes: {
     ...baseFontSizes,
-    baseFontSize: '14px',
-    header: baseFontSizes.large,
-    listItemFontSize: '15px',
-    listItemSecondaryFontSize: '14px',
   },
 };
 
