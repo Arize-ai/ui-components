@@ -655,12 +655,19 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.10.4"
 
-"@babel/plugin-syntax-jsx@^7.12.1", "@babel/plugin-syntax-jsx@^7.2.0":
+"@babel/plugin-syntax-jsx@^7.12.1":
   version "7.12.1"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-jsx/-/plugin-syntax-jsx-7.12.1.tgz#9d9d357cc818aa7ae7935917c1257f67677a0926"
   integrity sha512-1yRi7yAtB0ETgxdY9ti/p2TivUxJkTdhu/ZbF9MshVGqOx1TdB3b7xCXs49Fupgg50N45KcAsRP/ZqWjs9SRjg==
   dependencies:
     "@babel/helper-plugin-utils" "^7.10.4"
+
+"@babel/plugin-syntax-jsx@^7.2.0":
+  version "7.12.13"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-jsx/-/plugin-syntax-jsx-7.12.13.tgz#044fb81ebad6698fe62c478875575bcbb9b70f15"
+  integrity sha512-d4HM23Q1K7oq/SLNmG6mRt85l2csmQ0cHRaxRXjKW0YFdEXqlZ5kzFQKH5Uc3rDJECgu+yCRgPkG04Mm98R/1g==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.12.13"
 
 "@babel/plugin-syntax-logical-assignment-operators@^7.10.4", "@babel/plugin-syntax-logical-assignment-operators@^7.8.3":
   version "7.10.4"
@@ -1435,15 +1442,16 @@
     source-map "^0.5.7"
     stylis "^4.0.3"
 
-"@emotion/babel-preset-css-prop@^11.2.0":
-  version "11.2.0"
-  resolved "https://registry.yarnpkg.com/@emotion/babel-preset-css-prop/-/babel-preset-css-prop-11.2.0.tgz#c7e945f56b2610b438f0dc8ae5253fc55488de0e"
-  integrity sha512-9XLQm2eLPYTho+Cx1LQTDA1rATjoAaB4O+ds55XDvoAa+Z16Hhg8y5Vihj3C8E6+ilDM8SV5A9Z6z+yj0YIRBg==
+"@emotion/babel-preset-css-prop@^10.0.27":
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/@emotion/babel-preset-css-prop/-/babel-preset-css-prop-10.2.1.tgz#fb331355c1819367a6e5dd171879ae4957aa701a"
+  integrity sha512-4hudLJCfIrbpJZek5n69cwzu7GgCamza/whh/RgqXaI5ZWT8pFj1rR2KjQntzFFzTU7l9o+jdVPSpgCbrVG+VQ==
   dependencies:
     "@babel/plugin-transform-react-jsx" "^7.12.1"
-    "@babel/runtime" "^7.7.2"
-    "@emotion/babel-plugin" "^11.2.0"
+    "@babel/plugin-transform-react-jsx-development" "^7.12.1"
+    "@babel/runtime" "^7.5.5"
     "@emotion/babel-plugin-jsx-pragmatic" "^0.1.5"
+    babel-plugin-emotion "^10.0.27"
 
 "@emotion/cache@^10.0.27":
   version "10.0.29"
