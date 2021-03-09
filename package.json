@@ -23,7 +23,8 @@
     "chromatic": "npx chromatic --project-token 1yugawkzsgd"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=16",
+    "react-dom": ">=16"
   },
   "husky": {
     "hooks": {
