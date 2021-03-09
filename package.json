@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -7,6 +7,7 @@
     "dist",
     "src"
   ],
+  "source": "src/index.tsx",
   "engines": {
     "node": ">=10"
   },
@@ -23,9 +24,9 @@
     "chromatic": "npx chromatic --project-token 1yugawkzsgd"
   },
   "peerDependencies": {
+    "@emotion/core": ">=10",
     "react": ">=16",
-    "react-dom": ">=16",
-    "@emotion/core": ">=10"
+    "react-dom": ">=16"
   },
   "husky": {
     "hooks": {
@@ -38,7 +39,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "ui-components",
+  "name": "@Arize-ai/ui-components",
   "author": "Mikyo King",
   "module": "dist/ui-components.esm.js",
   "size-limit": [
@@ -53,7 +54,8 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.12.3",
-    "@emotion/babel-preset-css-prop": "^10.0.27",
+    "@emotion/babel-plugin": "^11.2.0",
+    "@emotion/babel-preset-css-prop": "^11.2.0",
     "@emotion/core": "^10.0.35",
     "@size-limit/preset-small-lib": "^4.6.2",
     "@storybook/addon-essentials": "^6.0.26",
@@ -67,6 +69,7 @@
     "babel-plugin-polished": "^1.1.0",
     "chromatic": "^5.2.0",
     "husky": "^4.3.0",
+    "polished": "^4.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-is": "^17.0.1",
@@ -81,8 +84,19 @@
   },
   "dependencies": {
     "@react-aria/overlays": "^3.6.1",
-    "@react-stately/overlays": "^3.1.1",
-    "emotion-theming": "^10.0.27",
-    "polished": "^4.1.0"
-  }
+    "@react-stately/overlays": "^3.1.1"
+  },
+  "description": "Re-usable React components",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arize-ai/ui-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Arize-ai/ui-components/issues"
+  },
+  "homepage": "https://github.com/Arize-ai/ui-components#readme"
 }

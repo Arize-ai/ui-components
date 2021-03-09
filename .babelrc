@@ -1,3 +1,4 @@
 {
-    "plugins": ["polished"]
+    "presets": ["@emotion/babel-preset-css-prop"],
+    "plugins": ["@emotion", "polished"]
 }
