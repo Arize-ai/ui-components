@@ -31,7 +31,7 @@ export const RequiredFieldsDisclosure = () => (
 const formLabelText = css`
   margin-bottom: 4px;
   margin-top: 8px;
-  font-size: ${theme.fontSizes.baseFontSize};
+  font-size: ${theme.fontSizes.small};
   color: ${theme.colors.text1};
 `;
 

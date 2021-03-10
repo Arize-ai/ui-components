@@ -5,7 +5,7 @@ import Button from '../src/Button';
 describe('Button', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<Button type="primary">Button</Button>, div);
+    ReactDOM.render(<Button variant="primary">Button</Button>, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 });

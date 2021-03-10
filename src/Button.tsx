@@ -3,12 +3,11 @@ import { css } from '@emotion/core';
 import theme from './theme';
 import Spinner from './Spinner';
 
-type buttonType = 'primary' | 'default';
 const buttonCSS = ({ outline }: { outline: boolean }) => css`
   color: ${theme.colors.text1};
   padding: 6px 12px;
   border: 1px solid ${theme.colors.grayBorder};
-  font-size: ${theme.fontSizes.baseFontSize};
+  font-size: ${theme.fontSizes.small};
   font-weight: 600;
   height: 24px;
   display: flex;
@@ -28,7 +27,7 @@ const buttonCSS = ({ outline }: { outline: boolean }) => css`
 
 export type ButtonProps = {
   children: ReactNode | string;
-  type: buttonType;
+  variant: 'primary' | 'default';
   outline?: boolean;
   disabled?: boolean;
   className?: string;
@@ -37,9 +36,9 @@ export type ButtonProps = {
   icon?: ReactNode;
 };
 
-const Button = ({
+export const Button = ({
   children,
-  type,
+  variant,
   outline = false,
   disabled = false,
   className,
@@ -52,7 +51,7 @@ const Button = ({
     <button
       css={buttonCSS({ outline })}
       className={className}
-      data-type={type}
+      data-type={variant}
       disabled={isDisabled}
       onClick={isDisabled ? undefined : onClick}
     >
