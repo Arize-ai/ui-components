@@ -1,5 +1,5 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.9",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -16,7 +16,8 @@
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
+    "typegen": "./scripts/generate_flow_types.sh",
+    "prepare": "tsdx build && ./scripts/generate_flow_types.sh",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
@@ -39,7 +40,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@Arize-ai/ui-components",
+  "name": "@arizeai/components",
   "author": "Mikyo King",
   "module": "dist/ui-components.esm.js",
   "size-limit": [
@@ -68,6 +69,7 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-polished": "^1.1.0",
     "chromatic": "^5.2.0",
+    "flowgen": "^1.13.0",
     "husky": "^4.3.0",
     "polished": "^4.1.0",
     "react": "^17.0.1",
