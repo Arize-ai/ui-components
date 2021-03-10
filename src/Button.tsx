@@ -36,7 +36,7 @@ export type ButtonProps = {
   icon?: ReactNode;
 };
 
-const Button = ({
+export const Button = ({
   children,
   variant,
   outline = false,

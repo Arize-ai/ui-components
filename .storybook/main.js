@@ -9,6 +9,9 @@ module.exports = {
     config.module.rules[0].use[0].options.presets.push(
       require.resolve('@emotion/babel-preset-css-prop')
     );
+    // Need to remove the use of the root babelrc
+    // @src https://github.com/storybookjs/storybook/issues/7540#issuecomment-544311843
+    config.module.rules[0].use[0].options.babelrc = false;
     return config;
   },
 };

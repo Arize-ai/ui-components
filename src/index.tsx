@@ -1,6 +1,4 @@
-import Button from './Button';
-
-export { Button };
+export * from './Button';
 
 // export interface Props extends HTMLAttributes<HTMLDivElement> {
 //   /** custom content, defaults to 'the snozzberries taste like snozzberries' */
