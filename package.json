@@ -16,8 +16,7 @@
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
-    "typegen": "./scripts/generate_flow_types.sh",
-    "prepare": "tsdx build && ./scripts/generate_flow_types.sh",
+    "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
@@ -42,14 +41,14 @@
   },
   "name": "@arizeai/components",
   "author": "Mikyo King",
-  "module": "dist/ui-components.esm.js",
+  "module": "dist/components.esm.js",
   "size-limit": [
     {
-      "path": "dist/ui-components.cjs.production.min.js",
+      "path": "dist/components.cjs.production.min.js",
       "limit": "20 KB"
     },
     {
-      "path": "dist/ui-components.esm.js",
+      "path": "dist/components.esm.js",
       "limit": "20 KB"
     }
   ],
@@ -69,7 +68,6 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-polished": "^1.1.0",
     "chromatic": "^5.2.0",
-    "flowgen": "^1.13.0",
     "husky": "^4.3.0",
     "polished": "^4.1.0",
     "react": "^17.0.1",
