@@ -3,7 +3,6 @@ import { css } from '@emotion/core';
 import theme from './theme';
 import Spinner from './Spinner';
 
-type buttonVariant = 'primary' | 'default';
 const buttonCSS = ({ outline }: { outline: boolean }) => css`
   color: ${theme.colors.text1};
   padding: 6px 12px;
@@ -28,7 +27,7 @@ const buttonCSS = ({ outline }: { outline: boolean }) => css`
 
 export type ButtonProps = {
   children: ReactNode | string;
-  variant: buttonVariant;
+  variant: 'primary' | 'default';
   outline?: boolean;
   disabled?: boolean;
   className?: string;
