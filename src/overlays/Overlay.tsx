@@ -1,4 +1,4 @@
-import { ReactNode, useState, useCallback } from 'react';
+import { ReactNode, useState } from 'react';
 import ReactDOM from 'react-dom';
 
 export interface OverlayProps {
@@ -26,7 +26,7 @@ function Overlay(props: OverlayProps) {
     // onExiting,
     // onExited,
   } = props;
-  const [exited, setExited] = useState(!isOpen);
+  const [exited] = useState(!isOpen);
 
   // const handleEntered = useCallback(() => {
   //   setExited(false);

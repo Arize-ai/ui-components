@@ -36,7 +36,7 @@ export function PopoverTrigger(props: PopoverTriggerProps) {
     isOpen: state.isOpen,
   });
 
-  let { triggerProps, overlayProps } = useOverlayTrigger(
+  let { triggerProps } = useOverlayTrigger(
     { type: 'dialog' },
     state,
     triggerRef
@@ -53,8 +53,6 @@ export function PopoverTrigger(props: PopoverTriggerProps) {
       ref={overlayRef}
       onClose={state.close}
       placement={placement}
-      // arrowProps={arrowProps}
-      // hideArrow={hideArrow}
       {...popoverProps}
     >
       {typeof content === 'function' ? content(state.close) : content}
@@ -64,7 +62,6 @@ export function PopoverTrigger(props: PopoverTriggerProps) {
     <PopoverTriggerBase
       state={state}
       triggerProps={triggerPropsWithRef}
-      popoverProps={overlayProps}
       trigger={trigger}
       overlay={overlay}
     />
@@ -73,7 +70,6 @@ export function PopoverTrigger(props: PopoverTriggerProps) {
 
 interface PopoverTriggerBaseProps {
   state: OverlayTriggerState;
-  isDismissable?: boolean;
   triggerProps?: any;
   popoverProps?: any;
   overlay: ReactElement;
@@ -82,9 +78,7 @@ interface PopoverTriggerBaseProps {
 
 function PopoverTriggerBase({
   state,
-  isDismissable,
   triggerProps = {},
-  popoverProps = {},
   overlay,
   trigger,
 }: PopoverTriggerBaseProps) {
