@@ -1,4 +1,4 @@
-import React, { ReactNode, RefObject, HTMLAttributes, useContext } from 'react';
+import React, { ReactNode, RefObject, HTMLAttributes } from 'react';
 import { useOverlay, useModal } from '@react-aria/overlays';
 import { Overlay } from '../overlays';
 import { PlacementAxis } from '../types';
@@ -23,7 +23,7 @@ export const Popover = React.forwardRef<HTMLDivElement, PopoverProps>(
     }: PopoverProps,
     ref
   ) => {
-    // Handle interacting outside the dialog and pressing
+    // Handle interacting outside the popover and pressing
     // the Escape key to close the modal.
     let { overlayProps } = useOverlay(
       {

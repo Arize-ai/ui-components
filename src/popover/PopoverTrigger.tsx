@@ -7,7 +7,6 @@ import {
 } from '@react-stately/overlays';
 import { PopoverClose, OverlayTriggerProps, PositionProps } from '../types';
 import { useOverlayPosition, useOverlayTrigger } from '@react-aria/overlays';
-import { PopoverContext } from './context';
 
 export interface PopoverTriggerProps
   extends OverlayTriggerProps,
@@ -89,11 +88,6 @@ function PopoverTriggerBase({
   overlay,
   trigger,
 }: PopoverTriggerBaseProps) {
-  let context = {
-    onClose: state.close,
-    isDismissable,
-    ...popoverProps,
-  };
   return (
     <>
       <PressResponder
@@ -105,9 +99,7 @@ function PopoverTriggerBase({
       >
         {trigger}
       </PressResponder>
-      <PopoverContext.Provider value={context}>
-        {overlay}
-      </PopoverContext.Provider>
+      {overlay}
     </>
   );
 }
