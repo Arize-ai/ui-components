@@ -74,17 +74,24 @@
     "react-dom": "^17.0.1",
     "react-is": "^17.0.1",
     "size-limit": "^4.6.2",
-    "tsdx": "^0.14.1",
+    "tsdx": "0.14.1",
     "tslib": "^2.0.3",
     "typescript": "^4.0.3"
   },
   "resolutions": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "**/@typescript-eslint/eslint-plugin": "^4.1.1",
+    "**/@typescript-eslint/parser": "^4.1.1"
   },
   "dependencies": {
+    "@react-aria/button": "^3.3.1",
+    "@react-aria/focus": "^3.2.3",
+    "@react-aria/interactions": "^3.3.3",
     "@react-aria/overlays": "^3.6.1",
-    "@react-stately/overlays": "^3.1.1"
+    "@react-aria/utils": "^3.6.0",
+    "@react-stately/overlays": "^3.1.1",
+    "@react-stately/utils": "^3.2.0"
   },
   "description": "Re-usable React components",
   "directories": {

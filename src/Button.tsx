@@ -6,7 +6,7 @@ import Spinner from './Spinner';
 const buttonCSS = ({ outline }: { outline: boolean }) => css`
   color: ${theme.colors.text1};
   padding: 6px 12px;
-  border: 1px solid ${theme.colors.grayBorder};
+  border: 1px solid ${theme.colors.dark1};
   font-size: ${theme.fontSizes.small};
   font-weight: 600;
   height: 24px;

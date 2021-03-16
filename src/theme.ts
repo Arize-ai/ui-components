@@ -24,22 +24,11 @@ const theme = {
     ...baseColors,
     primary: '#db247c', // pink
     secondary: '#db247c', // blue
-    topNavBg: '#14171b',
-    sideNavBg: '#17202a',
-    blackBg: '#0b1015',
-    widgetBg: '#1c232b',
     grayBorder: '#2e363e',
-    statusGreen: '#70ffd0',
-    statusRed: '#ff7285',
     statusInfo: '#91d5ff',
     statusSuccess: '#41bc94', // RGB independent success color
     statusWarning: '#f1c64d',
     statusDanger: '#db247c',
-    textColor: '#ffffff',
-    subTextColor: '#bbbdbf',
-    maskColor: 'rgba(0, 0, 0, 0.7)',
-    checkboxOutline: '#9d9e9f',
-    chartText: '#A8ACAD',
   },
   fontSizes: {
     ...baseFontSizes,
