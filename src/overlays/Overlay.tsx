@@ -1,5 +1,6 @@
-import { ReactNode, useState } from 'react';
+import React, { ReactNode, useState, useCallback } from 'react';
 import ReactDOM from 'react-dom';
+import { OpenTransition } from './OpenTransition';
 
 export interface OverlayProps {
   children: ReactNode;
@@ -19,28 +20,28 @@ function Overlay(props: OverlayProps) {
     children,
     isOpen,
     container,
-    // onEnter,
-    // onEntering,
-    // onEntered,
-    // onExit,
-    // onExiting,
-    // onExited,
+    onEnter,
+    onEntering,
+    onEntered,
+    onExit,
+    onExiting,
+    onExited,
   } = props;
-  const [exited] = useState(!isOpen);
+  const [exited, setExited] = useState<boolean>(!isOpen);
 
-  // const handleEntered = useCallback(() => {
-  //   setExited(false);
-  //   if (onEntered) {
-  //     onEntered();
-  //   }
-  // }, [onEntered]);
+  const handleEntered = useCallback(() => {
+    setExited(false);
+    if (onEntered) {
+      onEntered();
+    }
+  }, [onEntered]);
 
-  // const handleExited = useCallback(() => {
-  //   setExited(true);
-  //   if (onExited) {
-  //     onExited();
-  //   }
-  // }, [onExited]);
+  const handleExited = useCallback(() => {
+    setExited(true);
+    if (onExited) {
+      onExited();
+    }
+  }, [onExited]);
 
   // Don't un-render the overlay while it's transitioning out.
   let mountOverlay = isOpen || !exited;
@@ -49,7 +50,20 @@ function Overlay(props: OverlayProps) {
     return null;
   }
 
-  const contents = children;
+  const contents = (
+    <OpenTransition
+      in={isOpen}
+      appear
+      onExit={onExit}
+      onExiting={onExiting}
+      onExited={handleExited}
+      onEnter={onEnter}
+      onEntering={onEntering}
+      onEntered={handleEntered}
+    >
+      {children}
+    </OpenTransition>
+  );
 
   return ReactDOM.createPortal(contents, container || document.body);
 }

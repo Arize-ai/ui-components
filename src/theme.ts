@@ -33,6 +33,14 @@ const theme = {
   fontSizes: {
     ...baseFontSizes,
   },
+  spacing: {
+    popover: {
+      /**
+       * The offset is the distance between the source and the popover edge (or the end of the tip, when there is a tip).
+       */
+      offset: 6,
+    },
+  },
 };
 
 export default theme;

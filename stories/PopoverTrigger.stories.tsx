@@ -9,6 +9,7 @@ import {
 } from '../src';
 
 import Card from '../src/Card';
+import css from '@emotion/css';
 
 const meta: Meta = {
   title: 'Popover',
@@ -59,10 +60,31 @@ const Template: Story<PopoverTriggerProps> = args => {
       <ul style={{ listStyle: 'none', marginLeft: '300px' }}>
         {placements.map((placement, index) => {
           return (
-            <li key={index} style={{ margin: '50px 0' }}>
+            <li key={index} style={{ margin: '24px 0' }}>
               <PopoverTrigger placement={placement}>
                 <ActionButton>{placement}</ActionButton>
-                <Card title="Popover Card Title">Hello world</Card>
+                <Card
+                  title="Popover Card Title"
+                  bodyStyle={{ padding: 0, minWidth: 300 }}
+                >
+                  <ul
+                    css={css`
+                      list-style: none;
+                      margin: 0;
+                      padding: 0;
+                      & > li {
+                        padding: 16px 24px;
+                        &:not(:last-child) {
+                          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                        }
+                      }
+                    `}
+                  >
+                    <li>Item One</li>
+                    <li>Item Two</li>
+                    <li>Item Three</li>
+                  </ul>
+                </Card>
               </PopoverTrigger>
             </li>
           );

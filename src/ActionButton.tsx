@@ -1,7 +1,10 @@
+import React, { ReactNode } from 'react';
+import { classNames } from './utils/classNames';
 import { mergeProps } from '@react-aria/utils';
-import React, { useRef, Ref, ReactNode, RefObject } from 'react';
 import { useButton } from '@react-aria/button';
 import { useHover } from '@react-aria/interactions';
+import { FocusableRef } from './types';
+import { useFocusableRef } from './utils/useDOMRef';
 
 interface ButtonProps {
   /** Whether the button is disabled. */
@@ -10,26 +13,30 @@ interface ButtonProps {
   children?: ReactNode;
 }
 
-function useButtonRef(
-  ref: Ref<HTMLButtonElement>
-): RefObject<HTMLButtonElement> {
-  const fallbackRef = useRef<HTMLButtonElement>(null);
-  return (ref || fallbackRef) as RefObject<HTMLButtonElement>;
-}
-
-function ActionButton(props: ButtonProps, ref: Ref<HTMLButtonElement>) {
-  const buttonRef = useButtonRef(ref);
+/**
+ * A button that performs an action (e.g. open a popover)
+ * @param props
+ * @param ref
+ * @returns
+ */
+function ActionButton(
+  props: ButtonProps,
+  ref: FocusableRef<HTMLButtonElement>
+) {
+  let domRef = useFocusableRef(ref);
   const { isDisabled, children } = props;
-  const { buttonProps, isPressed } = useButton(props, buttonRef);
+  const { buttonProps, isPressed } = useButton(props, domRef);
   const { hoverProps, isHovered } = useHover({ isDisabled });
 
   return (
     <button
       {...mergeProps(buttonProps, hoverProps)}
-      ref={buttonRef}
-      className={`${isPressed ? 'is-active' : ''} ${
-        isDisabled ? 'is-disabled' : ''
-      } ${isHovered ? 'is-hovered' : ''}`}
+      ref={domRef}
+      className={classNames('action-button', {
+        'is-active': isPressed,
+        'is-disabled': isDisabled,
+        'is-hovered': isHovered,
+      })}
     >
       {children}
     </button>

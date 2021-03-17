@@ -8,6 +8,7 @@ const card = css`
   background-color: ${theme.colors.dark4};
   color: ${theme.colors.text1};
   border-radius: 5px;
+  border: 1px solid ${theme.colors.dark5};
 `;
 
 const header = css`

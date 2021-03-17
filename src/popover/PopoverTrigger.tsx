@@ -5,8 +5,14 @@ import {
   OverlayTriggerState,
   useOverlayTriggerState,
 } from '@react-stately/overlays';
-import { PopoverClose, OverlayTriggerProps, PositionProps } from '../types';
+import {
+  PopoverClose,
+  OverlayTriggerProps,
+  PositionProps,
+  DOMRefValue,
+} from '../types';
 import { useOverlayPosition, useOverlayTrigger } from '@react-aria/overlays';
+import { unwrapDOMRef } from '../utils/useDOMRef';
 
 export interface PopoverTriggerProps
   extends OverlayTriggerProps,
@@ -20,7 +26,7 @@ export interface PopoverTriggerProps
 export function PopoverTrigger(props: PopoverTriggerProps) {
   const { children } = props;
   if (!Array.isArray(children) || children.length > 2) {
-    throw new Error('DialogTrigger must have exactly 2 children');
+    throw new Error('PopoverTrigger must have exactly 2 children');
   }
 
   // if a function is passed as the second child, it won't appear in toArray
@@ -28,15 +34,15 @@ export function PopoverTrigger(props: PopoverTriggerProps) {
   const state = useOverlayTriggerState(props);
 
   const triggerRef = useRef<HTMLElement>(null);
-  const overlayRef = useRef<HTMLDivElement>(null);
+  const overlayRef = useRef<DOMRefValue<HTMLDivElement>>(null);
   const { overlayProps: popoverProps, placement } = useOverlayPosition({
     targetRef: triggerRef,
-    overlayRef,
+    overlayRef: unwrapDOMRef(overlayRef),
     placement: props.placement,
     isOpen: state.isOpen,
   });
 
-  let { triggerProps } = useOverlayTrigger(
+  const { triggerProps } = useOverlayTrigger(
     { type: 'dialog' },
     state,
     triggerRef
