@@ -24,13 +24,13 @@ function ActionButton(
   ref: FocusableRef<HTMLButtonElement>
 ) {
   let domRef = useFocusableRef(ref);
-  const { isDisabled, children } = props;
+  const { isDisabled, children, ...otherProps } = props;
   const { buttonProps, isPressed } = useButton(props, domRef);
   const { hoverProps, isHovered } = useHover({ isDisabled });
 
   return (
     <button
-      {...mergeProps(buttonProps, hoverProps)}
+      {...mergeProps(buttonProps, hoverProps, otherProps)}
       ref={domRef}
       className={classNames('action-button', {
         'is-active': isPressed,
