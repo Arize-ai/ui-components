@@ -1,4 +1,4 @@
-export { OverlayProvider } from '@react-aria/overlays';
+export { OverlayProvider as Provider } from '@react-aria/overlays';
 export * from './popover';
 export * from './ActionButton';
 export * from './types';
