@@ -1,8 +1,14 @@
-# Arize AI UI Components - **alpha**
+# Arize AI UI Components 
 
 Re-usable React components
 
 > If you’re new to TypeScript and React, checkout [this handy cheatsheet](https://github.com/sw-yx/react-typescript-cheatsheet/)
+
+## Install
+
+```bash
+npm install @arizeai/components
+```
 
 ## Commands
 
