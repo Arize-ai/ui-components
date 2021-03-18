@@ -43,6 +43,7 @@ const theme = {
     statusDanger: '#db247c',
     dividerColor: '#32383f',
     hoverBgColor: '#23292F',
+    disabled: '#646A70',
   },
   textColors,
   // Add any component specific overrides here
@@ -91,6 +92,7 @@ const theme = {
     },
   },
   spacing: {
+    padding4: 4,
     padding8: 8,
     padding16: 16,
     padding24: 24,
@@ -105,8 +107,11 @@ const theme = {
        * The offset is the distance between the source and the tooltip edge (or the end of the tip, when there is a tip).
        */
       offset: 6,
+    outline: {
+      thin: 2,
     },
   },
+
   animation: {
     global: {
       /**
