@@ -6,6 +6,7 @@ export * from './accordion';
 export * from './card';
 export * from './list';
 export * from './types';
+export * from './radio';
 
 // export interface Props extends HTMLAttributes<HTMLDivElement> {
 //   /** custom content, defaults to 'the snozzberries taste like snozzberries' */

@@ -10,7 +10,7 @@ module.exports = {
   typescript: {
     check: true, // type-check stories during Storybook build
   },
-  webpackFinal: async config => {
+  webpackFinal: async (config) => {
     config.module.rules[0].use[0].options.presets.push(
       require.resolve('@emotion/babel-preset-css-prop')
     );
