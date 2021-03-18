@@ -11,24 +11,6 @@ import {
 import Card from '../src/Card';
 import css from '@emotion/css';
 
-const meta: Meta = {
-  title: 'Popover',
-  component: PopoverTrigger,
-  argTypes: {
-    placement: {
-      control: {
-        type: 'select',
-        options: ['bottom right', 'bottom left'],
-      },
-    },
-  },
-  parameters: {
-    controls: { expanded: true },
-  },
-};
-
-export default meta;
-
 const placements: Placement[] = [
   'bottom',
   'bottom left',
@@ -53,6 +35,24 @@ const placements: Placement[] = [
   'end top',
   'end bottom',
 ];
+
+const meta: Meta = {
+  title: 'PopoverTrigger',
+  component: PopoverTrigger,
+  argTypes: {
+    placement: {
+      control: {
+        type: 'select',
+        options: placements,
+      },
+    },
+  },
+  parameters: {
+    controls: { expanded: true },
+  },
+};
+
+export default meta;
 
 const Template: Story<PopoverTriggerProps> = args => {
   return (
