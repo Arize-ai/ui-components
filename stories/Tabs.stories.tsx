@@ -1,13 +1,15 @@
 import React from 'react';
 import { css } from '@emotion/core';
 import { Meta, Story } from '@storybook/react';
-import Tabs, { Props } from '../src/Tabs';
+import { withDesign } from 'storybook-addon-designs';
+import Tabs, { TabsProps } from '../src/Tabs';
 
 const { TabPane } = Tabs;
 
 const meta: Meta = {
   title: 'Tabs',
   component: Tabs,
+  decorators: [withDesign],
   argTypes: {
     children: {
       control: {
@@ -17,6 +19,11 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
+    design: {
+      type: 'figma',
+      url:
+        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=20%3A2',
+    },
   },
 };
 
@@ -26,7 +33,7 @@ const tabContents = css`
   padding: 20px;
   color: white;
 `;
-const Template: Story<Props> = args => (
+const Template: Story<TabsProps> = args => (
   <div style={{ width: 500 }}>
     <Tabs {...args}>
       <TabPane name="Tab 1" css={tabContents}>
