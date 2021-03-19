@@ -1,11 +1,13 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
+import { withDesign } from 'storybook-addon-designs';
 import Card, { CardProps } from '../src/Card';
 import Button from '../src/Button';
 
 const meta: Meta = {
   title: 'Card',
   component: Card,
+  decorators: [withDesign],
   argTypes: {
     children: {
       control: {
@@ -15,6 +17,11 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
+    design: {
+      type: 'figma',
+      url:
+        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=3%3A371',
+    },
   },
 };
 

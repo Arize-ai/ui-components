@@ -1,10 +1,12 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import Button, { ButtonProps } from '../src/Button';
+import { withDesign } from 'storybook-addon-designs';
 
 const meta: Meta = {
   title: 'Button',
   component: Button,
+  decorators: [withDesign],
   argTypes: {
     children: {
       control: {
@@ -14,6 +16,11 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
+    design: {
+      type: 'figma',
+      url:
+        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=0%3A1',
+    },
   },
 };
 

@@ -1,11 +1,11 @@
 import React from 'react';
 import theme from '../src/theme';
 import { Meta, Story } from '@storybook/react';
+import { withDesign } from 'storybook-addon-designs';
 
 function Colors() {
   const colors = theme.colors;
   const colorsArray = [];
-  const borderColor = 'gray';
 
   Object.keys(theme.colors).forEach(name => {
     if (theme.colors[name]) {
@@ -56,6 +56,14 @@ function Colors() {
 const meta: Meta = {
   title: 'Colors',
   component: Colors,
+  decorators: [withDesign],
+  parameters: {
+    design: {
+      type: 'figma',
+      url:
+        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=2%3A1499',
+    },
+  },
 };
 
 export default meta;
