@@ -11,14 +11,6 @@ const baseColors = {
   text5: '#A3A6A9',
 };
 
-const baseFontSizes = {
-  xsmall: '12px',
-  small: '14px',
-  medium: '16px',
-  large: '18px',
-  xlarge: '24px',
-};
-
 const theme = {
   colors: {
     ...baseColors,
@@ -30,8 +22,41 @@ const theme = {
     statusWarning: '#f1c64d',
     statusDanger: '#db247c',
   },
-  fontSizes: {
-    ...baseFontSizes,
+  typography: {
+    weights: {
+      heavy: 500,
+      normal: 400,
+    },
+    sizes: {
+      xxxlarge: {
+        fontSize: 44,
+        lineHeight: 52,
+      },
+      xxlarge: {
+        fontSize: 28,
+        lineHeight: 36,
+      },
+      xlarge: {
+        fontSize: 18,
+        lineHeight: 28,
+      },
+      large: {
+        fontSize: 16,
+        lineHeight: 24,
+      },
+      medium: {
+        fontSize: 14,
+        lineHeight: 20,
+      },
+      small: {
+        fontSize: 12,
+        lineHeight: 16,
+      },
+      xsmall: {
+        fontSize: 10,
+        lineHeight: 16,
+      },
+    },
   },
   spacing: {
     popover: {

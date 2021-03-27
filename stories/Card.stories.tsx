@@ -1,5 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
+// @ts-ignore
 import { withDesign } from 'storybook-addon-designs';
 import Card, { CardProps } from '../src/Card';
 import Button from '../src/Button';
