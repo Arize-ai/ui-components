@@ -20,7 +20,7 @@ export const RequiredFieldsDisclosure = () => (
     data-testid="required-fields-disclosure"
     css={css`
       color: #bbbdbf;
-      font-size: ${theme.fontSizes.small};
+      font-size: ${theme.typography.sizes.medium};
       text-align: right;
     `}
   >
@@ -31,14 +31,14 @@ export const RequiredFieldsDisclosure = () => (
 const formLabelText = css`
   margin-bottom: 4px;
   margin-top: 8px;
-  font-size: ${theme.fontSizes.small};
+  font-size: ${theme.typography.sizes.medium};
   color: ${theme.colors.text1};
 `;
 
 const formLabelHelper = css`
   padding-left: 4px;
   color: #bbbdbf;
-  font-size: ${theme.fontSizes.small};
+  font-size: ${theme.typography.sizes.medium};
 `;
 
 const formLabelContents = css`

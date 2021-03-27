@@ -1,6 +1,7 @@
 import React, { CSSProperties, ReactNode } from 'react';
 import { css } from '@emotion/core';
 import theme from './theme';
+import { Heading } from './content';
 
 const card = css`
   display: flex;
@@ -47,7 +48,7 @@ const Card = ({
   return (
     <section css={card} style={style} className={className}>
       <header css={header}>
-        {title}
+        <Heading level={3}>{title}</Heading>
         {extra}
       </header>
       <div css={body} style={bodyStyle}>

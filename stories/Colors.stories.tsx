@@ -1,6 +1,7 @@
 import React from 'react';
 import theme from '../src/theme';
 import { Meta, Story } from '@storybook/react';
+// @ts-ignore
 import { withDesign } from 'storybook-addon-designs';
 
 function Colors() {
