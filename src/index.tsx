@@ -2,6 +2,8 @@ export { OverlayProvider as Provider } from '@react-aria/overlays';
 export * from './popover';
 export * from './content';
 export * from './ActionButton';
+export * from './accordion';
+export * from './card';
 export * from './types';
 
 // export interface Props extends HTMLAttributes<HTMLDivElement> {

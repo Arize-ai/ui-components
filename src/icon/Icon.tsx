@@ -4,7 +4,7 @@ import { css } from '@emotion/core';
 /**
  * Wraps the svg in a reasonable size and applies a color
  */
-const Icon = ({
+export const Icon = ({
   svg,
   style,
 }: {
@@ -34,5 +34,3 @@ const Icon = ({
     </i>
   );
 };
-
-export default Icon;

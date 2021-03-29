@@ -2,7 +2,7 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 // @ts-ignore
 import { withDesign } from 'storybook-addon-designs';
-import Card, { CardProps } from '../src/Card';
+import { Card, CardProps } from '../src';
 import Button from '../src/Button';
 
 const meta: Meta = {
