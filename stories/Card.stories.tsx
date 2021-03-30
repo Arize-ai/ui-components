@@ -42,4 +42,4 @@ Default.args = {};
 
 export const WithExtra = Template.bind({});
 
-WithExtra.args = { extra: <Button variant="primary">Extra</Button> };
+WithExtra.args = { extra: <Button variant="primary">Create Dashboard</Button> };
