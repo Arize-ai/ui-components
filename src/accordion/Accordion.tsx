@@ -93,6 +93,7 @@ export function AccordionItem(props: AccordionItemProps) {
               transition: transform ease var(--accordion-animation-duration);
               transform: rotate(0deg);
             `}
+            aria-hidden={true}
           />
         </button>
       </Heading>
