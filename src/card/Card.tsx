@@ -8,8 +8,8 @@ const cardCSS = css`
   flex-direction: column;
   background-color: ${theme.colors.dark4};
   color: ${theme.colors.text1};
-  border-radius: 5px;
-  border: 1px solid ${theme.colors.dark5};
+  border-radius: 8px;
+  border: 1px solid ${theme.colors.dividerColor};
   overflow: hidden;
 `;
 
@@ -66,7 +66,7 @@ export const Card = ({
             {title}
           </Text>
           {subTitle && (
-            <Text size="medium" elementType="h4">
+            <Text size="medium" elementType="h4" color="white70">
               {subTitle}
             </Text>
           )}

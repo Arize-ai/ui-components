@@ -29,7 +29,12 @@ const meta: Meta = {
 export default meta;
 
 const Template: Story<CardProps> = args => (
-  <Card title="Title goes here" style={{ width: 500, height: 500 }} {...args}>
+  <Card
+    title="Title"
+    subTitle="Subtext area"
+    style={{ width: 400, height: 200 }}
+    {...args}
+  >
     Content goes here
   </Card>
 );

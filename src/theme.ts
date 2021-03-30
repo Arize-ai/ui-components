@@ -4,11 +4,17 @@ const baseColors = {
   dark3: '#707070',
   dark4: '#1C232B', // card bg
   dark5: '#2D353E',
+  // TODO to be deprecated
   text1: '#FFFFFF',
   text2: '#D4D4D5',
   text3: '#BBBDBF',
   text4: '#D4D4D5',
   text5: '#A3A6A9',
+};
+
+const textColors = {
+  white90: `rgba(255, 255, 255, 0.9)`,
+  white70: `rgba(255, 255, 255, 0.7)`,
 };
 
 const theme = {
@@ -19,10 +25,11 @@ const theme = {
     grayBorder: '#2e363e',
     statusInfo: '#91d5ff',
     statusSuccess: '#41bc94', // RGB independent success color
-    statusWarning: '#f1c64d',
+    statusWarning: '#E69958',
     statusDanger: '#db247c',
     dividerColor: '#32383f',
   },
+  textColors,
   // Add any component specific overrides here
   components: {
     accordion: {

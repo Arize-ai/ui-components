@@ -19,6 +19,8 @@ type Size =
 
 type Weight = 'heavy' | 'normal';
 
+type Color = 'white90' | 'white70';
+
 type textElementType = 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 
 export interface TextProps {
@@ -41,12 +43,17 @@ export interface TextProps {
    * Heading content.
    */
   children: ReactNode;
+  /**
+   * The color of the text
+   * @default 'white90'
+   */
+  color?: Color;
 }
 
-const headingCSS = css`
+const textCSS = (color: Color) => css`
   /* default to no margin */
   margin: 0;
-  color: ${theme.colors.text1};
+  color: ${theme.textColors[color]};
 `;
 
 const textSizeCSS = (size: Size) => {
@@ -67,6 +74,7 @@ const textWeightCSS = (weight: Weight) => css`
 function Text(props: TextProps, ref: DOMRef<HTMLHeadingElement>) {
   const {
     children,
+    color = 'white90',
     size = 'medium',
     elementType = 'span',
     weight = 'normal',
@@ -79,7 +87,7 @@ function Text(props: TextProps, ref: DOMRef<HTMLHeadingElement>) {
     <TextTag
       {...otherProps}
       css={css`
-        ${headingCSS};
+        ${textCSS(color)};
         ${textSizeCSS(size)};
         ${textWeightCSS(weight)};
       `}
