@@ -10,12 +10,12 @@ export type AlertProps = {
 
 const warningCSS = css`
   border: 1px solid ${theme.colors.statusWarning};
-  background-color: ${transparentize(0.5, theme.colors.statusWarning)};
+  background-color: ${transparentize(0.6, theme.colors.statusWarning)};
 `;
 
 const infoCSS = css`
   border: 1px solid ${theme.colors.statusInfo};
-  background-color: ${transparentize(0.5, theme.colors.statusInfo)};
+  background-color: ${transparentize(0.6, theme.colors.statusInfo)};
 `;
 
 const Alert = ({ type, message }: AlertProps) => {
@@ -33,7 +33,7 @@ const Alert = ({ type, message }: AlertProps) => {
       css={css`
         padding: 8px 15px;
         border-radius: 5px;
-        color: white;
+        color: ${theme.colors.text1};
         ${typeStyle}
       `}
     >

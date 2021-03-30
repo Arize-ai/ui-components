@@ -1,6 +1,6 @@
 import React from 'react';
-import * as Icons from '../src/Icons';
-import Icon from '../src/Icon';
+import * as Icons from '../src/icon/Icons';
+import { Icon } from '../src/icon';
 import { Meta, Story } from '@storybook/react';
 import theme from '../src/theme';
 

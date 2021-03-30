@@ -3,13 +3,13 @@ import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
 import {
   ActionButton,
+  Card,
   PopoverTrigger,
   Provider,
   PopoverTriggerProps,
   Placement,
 } from '../src';
 
-import Card from '../src/Card';
 import css from '@emotion/css';
 
 const placements: Placement[] = [

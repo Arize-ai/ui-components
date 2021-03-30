@@ -4,11 +4,17 @@ const baseColors = {
   dark3: '#707070',
   dark4: '#1C232B', // card bg
   dark5: '#2D353E',
+  // TODO to be deprecated
   text1: '#FFFFFF',
   text2: '#D4D4D5',
   text3: '#BBBDBF',
   text4: '#D4D4D5',
   text5: '#A3A6A9',
+};
+
+const textColors = {
+  white90: `rgba(255, 255, 255, 0.9)`,
+  white70: `rgba(255, 255, 255, 0.7)`,
 };
 
 const theme = {
@@ -19,8 +25,16 @@ const theme = {
     grayBorder: '#2e363e',
     statusInfo: '#91d5ff',
     statusSuccess: '#41bc94', // RGB independent success color
-    statusWarning: '#f1c64d',
+    statusWarning: '#E69958',
     statusDanger: '#db247c',
+    dividerColor: '#32383f',
+  },
+  textColors,
+  // Add any component specific overrides here
+  components: {
+    accordion: {
+      backgroundColor: '#1E2329',
+    },
   },
   typography: {
     weights: {
@@ -64,6 +78,14 @@ const theme = {
        * The offset is the distance between the source and the popover edge (or the end of the tip, when there is a tip).
        */
       offset: 6,
+    },
+  },
+  animation: {
+    global: {
+      /**
+       * Fallback to 200ms as an animation duration
+       */
+      duration: 200,
     },
   },
 };

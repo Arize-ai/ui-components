@@ -2,7 +2,7 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 // @ts-ignore
 import { withDesign } from 'storybook-addon-designs';
-import Card, { CardProps } from '../src/Card';
+import { Card, CardProps } from '../src';
 import Button from '../src/Button';
 
 const meta: Meta = {
@@ -29,7 +29,12 @@ const meta: Meta = {
 export default meta;
 
 const Template: Story<CardProps> = args => (
-  <Card title="Title goes here" style={{ width: 500, height: 500 }} {...args}>
+  <Card
+    title="Title"
+    subTitle="Subtext area"
+    style={{ width: 400, height: 200 }}
+    {...args}
+  >
     Content goes here
   </Card>
 );
@@ -42,4 +47,4 @@ Default.args = {};
 
 export const WithExtra = Template.bind({});
 
-WithExtra.args = { extra: <Button variant="primary">Extra</Button> };
+WithExtra.args = { extra: <Button variant="primary">Create Dashboard</Button> };
