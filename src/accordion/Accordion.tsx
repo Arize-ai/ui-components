@@ -19,7 +19,7 @@ export function Accordion({ children }: AccordionProps) {
       className="ac-accordion"
       role="region"
       css={css`
-        background-color: ${theme.colors.accordion.backgroundColor};
+        background-color: ${theme.components.accordion.backgroundColor};
         --accordion-animation-duration: ${theme.animation.global.duration}ms;
       `}
     >

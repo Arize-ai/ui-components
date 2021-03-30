@@ -22,6 +22,9 @@ const theme = {
     statusWarning: '#f1c64d',
     statusDanger: '#db247c',
     dividerColor: '#32383f',
+  },
+  // Add any component specific overrides here
+  components: {
     accordion: {
       backgroundColor: '#1E2329',
     },
