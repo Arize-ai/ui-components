@@ -1,16 +1,14 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, HTMLAttributes } from 'react';
 import { css } from '@emotion/core';
 
+interface IconProps extends HTMLAttributes<HTMLElement> {
+  svg: ReactNode;
+  style?: React.CSSProperties;
+}
 /**
  * Wraps the svg in a reasonable size and applies a color
  */
-export const Icon = ({
-  svg,
-  style,
-}: {
-  svg: ReactNode;
-  style?: React.CSSProperties;
-}) => {
+export const Icon = ({ svg, style, ...restProps }: IconProps) => {
   return (
     <i
       className="icon-wrap"
@@ -29,6 +27,7 @@ export const Icon = ({
         }
       `}
       style={style}
+      {...restProps}
     >
       {svg}
     </i>

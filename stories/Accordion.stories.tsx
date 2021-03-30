@@ -34,14 +34,17 @@ const Template: Story<AccordionProps> = args => (
   <Card
     title="Model Health"
     subTitle={'An overview of the the health of your model'}
-    bodyStyle={{ padding: 0 }}
+    bodyStyle={{ padding: 0, overflow: 'hidden' }}
     style={{ width: 700 }}
   >
     <Accordion>
-      <AccordionItem title="2 Predictions">
+      <AccordionItem title="2 Predictions" id="predictions">
         <AccordionContents />
       </AccordionItem>
-      <AccordionItem title="100 Features">
+      <AccordionItem title="100 Features" id="features">
+        <AccordionContents />
+      </AccordionItem>
+      <AccordionItem title="10 Actuals" id="actuals">
         <AccordionContents />
       </AccordionItem>
     </Accordion>

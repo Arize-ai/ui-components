@@ -21,6 +21,10 @@ const theme = {
     statusSuccess: '#41bc94', // RGB independent success color
     statusWarning: '#f1c64d',
     statusDanger: '#db247c',
+    dividerColor: '#32383f',
+    accordion: {
+      backgroundColor: '#1E2329',
+    },
   },
   typography: {
     weights: {
@@ -64,6 +68,14 @@ const theme = {
        * The offset is the distance between the source and the popover edge (or the end of the tip, when there is a tip).
        */
       offset: 6,
+    },
+  },
+  animation: {
+    global: {
+      /**
+       * Fallback to 200ms as an animation duration
+       */
+      duration: 200,
     },
   },
 };
