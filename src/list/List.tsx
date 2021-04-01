@@ -44,6 +44,7 @@ export function List({
           background-color: ${interactive
             ? theme.colors.hoverBgColor
             : 'transparent'};
+          cursor: ${interactive ? 'pointer' : 'default'};
         }
       `}
     >
