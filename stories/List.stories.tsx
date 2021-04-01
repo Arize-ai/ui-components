@@ -31,8 +31,8 @@ const Template: Story<ListProps> = args => (
               flex-direction: column;
             `}
           >
-            <Text size="large" weight="heavy">{`List Item ${num}`}</Text>
-            <Text size="medium" color="white70">{`Subtext`}</Text>
+            <Text size="medium" weight="heavy">{`List Item ${num}`}</Text>
+            <Text size="small" color="white70">{`Subtext`}</Text>
           </div>
         </ListItem>
       ))}

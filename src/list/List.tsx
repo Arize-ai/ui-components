@@ -3,6 +3,7 @@ import React, {
   Children,
   cloneElement,
   isValidElement,
+  SyntheticEvent,
 } from 'react';
 import { css } from '@emotion/core';
 import theme from '../theme';
@@ -19,12 +20,19 @@ export interface ListProps {
    * @default true
    */
   interactive?: boolean;
+  /**
+   * Whether or not to strip the inner padding.
+   * Useful for when the contents uses a link
+   * @default false
+   */
+  noPadding?: boolean;
   children: ReactNode;
 }
 export function List({
   children,
   size = 'default',
   interactive = true,
+  noPadding = false,
 }: ListProps) {
   return (
     <ul
@@ -43,6 +51,7 @@ export function List({
         if (isValidElement(child)) {
           return cloneElement(child, {
             size,
+            noPadding,
           });
         }
         return null;
@@ -57,14 +66,22 @@ export interface ListItemProps {
    * @default 'default'
    */
   size?: ListSize;
+  /**
+   * Whether or not to strip the inner padding.
+   * Useful for when the contents uses a link
+   * @default false
+   */
+  noPadding?: boolean;
+  onClick?: (e: SyntheticEvent<HTMLLIElement>) => void;
   children: ReactNode;
 }
 
-const listItemCSS = (size: ListSize) => {
+const listItemCSS = (options: { noPadding: boolean; size?: ListSize }) => {
   const spacing =
-    size === 'small' ? theme.spacing.padding8 : theme.spacing.padding16;
+    options.size === 'small' ? theme.spacing.padding8 : theme.spacing.padding16;
+  const innerPadding = options.noPadding ? 0 : spacing;
   return css`
-    padding: ${spacing}px;
+    padding: ${innerPadding}px;
     position: relative;
 
     &:not(:first-of-type)::after {
@@ -78,6 +95,15 @@ const listItemCSS = (size: ListSize) => {
   `;
 };
 
-export function ListItem({ children, size = 'default' }: ListItemProps) {
-  return <li css={listItemCSS(size)}>{children}</li>;
+export function ListItem({
+  children,
+  size = 'default',
+  noPadding = false,
+  onClick,
+}: ListItemProps) {
+  return (
+    <li css={listItemCSS({ size, noPadding })} onClick={onClick}>
+      {children}
+    </li>
+  );
 }
