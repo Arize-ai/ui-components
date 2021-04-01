@@ -21,7 +21,7 @@ type Weight = 'heavy' | 'normal';
 
 type Color = 'white90' | 'white70';
 
-type textElementType = 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+type TextElementType = 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 
 export interface TextProps {
   /**
@@ -33,7 +33,7 @@ export interface TextProps {
    * The text node element type
    * @default 'span'
    */
-  elementType?: textElementType;
+  elementType?: TextElementType;
   /**
    * Sets the font weight
    * @default 'normal'

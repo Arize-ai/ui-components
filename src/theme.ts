@@ -28,6 +28,7 @@ const theme = {
     statusWarning: '#E69958',
     statusDanger: '#db247c',
     dividerColor: '#32383f',
+    hoverBgColor: '#23292F',
   },
   textColors,
   // Add any component specific overrides here
@@ -73,6 +74,9 @@ const theme = {
     },
   },
   spacing: {
+    padding8: 8,
+    padding16: 16,
+    padding24: 24,
     popover: {
       /**
        * The offset is the distance between the source and the popover edge (or the end of the tip, when there is a tip).
