@@ -4,17 +4,18 @@ import React, {
   cloneElement,
   isValidElement,
   SyntheticEvent,
+  HTMLProps,
 } from 'react';
 import { css } from '@emotion/core';
 import theme from '../theme';
 
 export type ListSize = 'small' | 'default';
-export interface ListProps {
+export interface ListProps extends HTMLProps<HTMLUListElement> {
   /**
    * The list size
    * @default 'default'
    */
-  size?: ListSize;
+  listSize?: ListSize;
   /**
    * Whether or not the list is interactive (e.g. provide hover color)
    * @default true
@@ -30,7 +31,7 @@ export interface ListProps {
 }
 export function List({
   children,
-  size = 'default',
+  listSize = 'default',
   interactive = true,
   noPadding = false,
 }: ListProps) {
@@ -51,7 +52,7 @@ export function List({
       {Children.map(children, child => {
         if (isValidElement(child)) {
           return cloneElement(child, {
-            size,
+            listSize,
             noPadding,
           });
         }
@@ -61,12 +62,12 @@ export function List({
   );
 }
 
-export interface ListItemProps {
+export interface ListItemProps extends HTMLProps<HTMLLIElement> {
   /**
    * The list size
    * @default 'default'
    */
-  size?: ListSize;
+  listSize?: ListSize;
   /**
    * Whether or not to strip the inner padding.
    * Useful for when the contents uses a link
@@ -77,9 +78,11 @@ export interface ListItemProps {
   children: ReactNode;
 }
 
-const listItemCSS = (options: { noPadding: boolean; size?: ListSize }) => {
+const listItemCSS = (options: { noPadding: boolean; listSize?: ListSize }) => {
   const spacing =
-    options.size === 'small' ? theme.spacing.padding8 : theme.spacing.padding16;
+    options.listSize === 'small'
+      ? theme.spacing.padding8
+      : theme.spacing.padding16;
   const innerPadding = options.noPadding ? 0 : spacing;
   return css`
     padding: ${innerPadding}px;
@@ -98,12 +101,12 @@ const listItemCSS = (options: { noPadding: boolean; size?: ListSize }) => {
 
 export function ListItem({
   children,
-  size = 'default',
+  listSize = 'default',
   noPadding = false,
   onClick,
 }: ListItemProps) {
   return (
-    <li css={listItemCSS({ size, noPadding })} onClick={onClick}>
+    <li css={listItemCSS({ listSize, noPadding })} onClick={onClick}>
       {children}
     </li>
   );
