@@ -62,11 +62,11 @@ export const Card = ({
     <section css={cardCSS} style={style} className={className}>
       <header css={headerCSS}>
         <div css={headerTitleWrapCSS}>
-          <Text size="xlarge" elementType="h3" weight="heavy">
+          <Text textSize="xlarge" elementType="h3" weight="heavy">
             {title}
           </Text>
           {subTitle && (
-            <Text size="medium" elementType="h4" color="white70">
+            <Text textSize="medium" elementType="h4" color="white70">
               {subTitle}
             </Text>
           )}
