@@ -1,4 +1,4 @@
-import React, { ElementType, ReactNode, forwardRef } from 'react';
+import React, { ElementType, ReactNode, forwardRef, HTMLProps } from 'react';
 import { css } from '@emotion/core';
 import { DOMRef } from '../types';
 import { useDOMRef } from '../utils/useDOMRef';
@@ -23,12 +23,12 @@ type Color = 'white90' | 'white70';
 
 type TextElementType = 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 
-export interface TextProps {
+export interface TextProps extends HTMLProps<HTMLSpanElement> {
   /**
    * Sets text size
    * @default 'medium'
    */
-  size?: Size;
+  textSize?: Size;
   /**
    * The text node element type
    * @default 'span'
@@ -40,7 +40,7 @@ export interface TextProps {
    */
   weight?: Weight;
   /**
-   * Heading content.
+   * Text content.
    */
   children: ReactNode;
   /**
@@ -75,7 +75,7 @@ function Text(props: TextProps, ref: DOMRef<HTMLHeadingElement>) {
   const {
     children,
     color = 'white90',
-    size = 'medium',
+    textSize = 'medium',
     elementType = 'span',
     weight = 'normal',
     ...otherProps
@@ -88,7 +88,7 @@ function Text(props: TextProps, ref: DOMRef<HTMLHeadingElement>) {
       {...otherProps}
       css={css`
         ${textCSS(color)};
-        ${textSizeCSS(size)};
+        ${textSizeCSS(textSize)};
         ${textWeightCSS(weight)};
       `}
       ref={domRef}

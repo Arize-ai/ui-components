@@ -31,8 +31,8 @@ const Template: Story<ListProps> = args => (
               flex-direction: column;
             `}
           >
-            <Text size="medium" weight="heavy">{`List Item ${num}`}</Text>
-            <Text size="small" color="white70">{`Subtext`}</Text>
+            <Text textSize="medium" weight="heavy">{`List Item ${num}`}</Text>
+            <Text textSize="small" color="white70">{`Subtext`}</Text>
           </div>
         </ListItem>
       ))}
@@ -55,11 +55,20 @@ const WithLinksTemplate: Story<ListProps> = args => (
               flex-direction: column;
               padding: 16px;
               text-decoration: none;
+              & > .list-title {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
             `}
             href="#"
           >
-            <Text size="medium" weight="heavy">{`List Item ${num}`}</Text>
-            <Text size="small" color="white70">{`Subtext`}</Text>
+            <Text
+              textSize="medium"
+              weight="heavy"
+              className="list-title"
+            >{`Really Really Really Really Really Long List Item ${num}`}</Text>
+            <Text textSize="small" color="white70">{`Subtext`}</Text>
           </a>
         </ListItem>
       ))}
