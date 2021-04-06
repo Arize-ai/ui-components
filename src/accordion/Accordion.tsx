@@ -85,7 +85,7 @@ export function AccordionItem(props: AccordionItemProps) {
           aria-controls={contentId}
           aria-expanded={isOpen}
         >
-          <Text size="large">{title}</Text>
+          <Text textSize="large">{title}</Text>
           <Icon
             svg={<ArrowIosDownwardOutline />}
             className="ac-accordion-itemIndicator"
