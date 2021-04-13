@@ -35,12 +35,12 @@ export type RadioProps = {
 };
 
 function Radio(props: RadioProps) {
-  let { children, value } = props;
-  let state = React.useContext(RadioContext);
-  let ref = React.useRef(null);
-  let { inputProps } = useRadio(props, state, ref);
-  let { isFocusVisible, focusProps } = useFocusRing();
-  let isSelected = state.selectedValue === props.value;
+  const { children, value } = props;
+  const state = React.useContext(RadioContext);
+  const ref = React.useRef(null);
+  const { inputProps } = useRadio(props, state, ref);
+  const { isFocusVisible, focusProps } = useFocusRing();
+  const isSelected = state.selectedValue === props.value;
 
   return (
     <label

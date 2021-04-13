@@ -16,11 +16,11 @@ export interface RadioGroupProps {
 }
 
 function RadioGroup(props: RadioGroupProps) {
-  let { children, label } = props;
-  let state = useRadioGroupState(props);
+  const { children, label } = props;
+  const state = useRadioGroupState(props);
 
   const labeledById = useId();
-  let { radioGroupProps, labelProps } = useRadioGroup(
+  const { radioGroupProps, labelProps } = useRadioGroup(
     { ...props, 'aria-labelledby': labeledById },
     state
   );
