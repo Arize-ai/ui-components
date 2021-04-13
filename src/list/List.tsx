@@ -49,7 +49,7 @@ export function List({
         }
       `}
     >
-      {Children.map(children, (child) => {
+      {Children.map(children, child => {
         if (isValidElement(child)) {
           return cloneElement(child, {
             listSize,

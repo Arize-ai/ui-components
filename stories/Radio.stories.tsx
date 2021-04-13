@@ -1,6 +1,5 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-// import RadioGroup, { RadioGroupProps } from '../src/radio/RadioGroup';
 import { Radio, RadioGroup, RadioGroupProps } from '../src/radio';
 
 const meta: Meta = {
