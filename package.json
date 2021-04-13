@@ -49,7 +49,7 @@
     },
     {
       "path": "dist/components.esm.js",
-      "limit": "25 KB"
+      "limit": "25.25 KB"
     }
   ],
   "devDependencies": {
