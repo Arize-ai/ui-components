@@ -54,7 +54,7 @@ function parseTabList(children: ReactNode): Tab[] {
       }
       return null;
     })
-    .filter(tab => tab);
+    .filter((tab) => tab);
 }
 
 export type TabsProps = {
@@ -76,7 +76,7 @@ function Tabs({ children, className, onChange }: TabsProps) {
           <button
             key={tab.key}
             data-selected={index === selectedIndex}
-            onClick={e => {
+            onClick={(e) => {
               e.preventDefault();
               setSelectedIndex(index);
               onChange && onChange(index);
