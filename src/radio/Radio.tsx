@@ -3,22 +3,19 @@ import theme from '../theme';
 import { useRadio } from '@react-aria/radio';
 import { RadioContext } from './context';
 import { css } from '@emotion/core';
+import Icon from '../src/Icon';
 
-const container = css`
+const containerCSS = css`
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 4px;
 `;
 
-const labelText = css`
+const labelTextCSS = css`
   color: ${theme.colors.text1};
   font-size: ${theme.fontSizes.small};
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0px 4px;
+  display: flex;
+  align-items: center;
 `;
 
 export type RadioProps = {
@@ -27,18 +24,17 @@ export type RadioProps = {
 };
 
 function Radio(props: RadioProps) {
-  let { children, value } = props;
-  let state = React.useContext(RadioContext);
-  let ref = React.useRef(null);
-  let { inputProps } = useRadio(props, state, ref);
+  const { children, value } = props;
+  const state = React.useContext<RadioContextType>(RadioContext);
+  const ref = React.useRef<HTMLInputElement>(null);
+  const { inputProps } = useRadio(props, state, ref);
 
   return (
-    <span css={container}>
-      <label css={labelText} style={{ display: 'block' }}>
-        <input {...inputProps} value={value} ref={ref} />
-        {children}
-      </label>
-    </span>
+    <label css={labelTextCSS} style={{ display: 'block' }}>
+      <input {...inputProps} value={value} ref={ref} />
+      <span> </span>
+      {children}
+    </label>
   );
 }
 

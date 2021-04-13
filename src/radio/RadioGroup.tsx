@@ -6,10 +6,9 @@ import theme from '../theme';
 import React, { ReactNode } from 'react';
 
 import { RadioContext } from './context';
-const container = css`
+const containerCSS = css`
   color: ${theme.colors.text1};
 `;
-
 export interface RadioGroupProps {
   children: ReactNode;
   label?: string;
@@ -21,7 +20,7 @@ function RadioGroup(props: RadioGroupProps) {
   let { radioGroupProps, labelProps } = useRadioGroup(props, state);
 
   return (
-    <div css={container} {...radioGroupProps}>
+    <div css={containerCSS} {...radioGroupProps}>
       <span {...labelProps}>{label}</span>
       <RadioContext.Provider value={state}>{children}</RadioContext.Provider>
     </div>

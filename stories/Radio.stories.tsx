@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Radio, RadioProps, RadioGroup, RadioGroupProps } from '../src/radio';
+// import RadioGroup, { RadioGroupProps } from '../src/radio/RadioGroup';
+import { Radio, RadioGroup, RadioGroupProps } from '../src/radio';
 
 const meta: Meta = {
   title: 'RadioGroup',
@@ -21,6 +22,11 @@ const Template: Story<RadioGroupProps> = (args) => (
 export const DefaultNoLabel = Template.bind({});
 
 export const WithMoreChildren = Template.bind({});
+
+export const Disabled = Template.bind({});
+
+// export const Disabled = Template.bind({});
+
 const SomeChildren = () => (
   <>
     <Radio value="cats">Cats</Radio>
@@ -31,6 +37,10 @@ const SomeChildren = () => (
 );
 WithMoreChildren.args = {
   children: SomeChildren(),
+};
+
+Disabled.args = {
+  isDisabled: true,
 };
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test

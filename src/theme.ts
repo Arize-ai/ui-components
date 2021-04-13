@@ -29,6 +29,7 @@ const theme = {
     statusDanger: '#db247c',
     dividerColor: '#32383f',
     hoverBgColor: '#23292F',
+    disabled: '#646A70',
   },
   textColors,
   // Add any component specific overrides here
