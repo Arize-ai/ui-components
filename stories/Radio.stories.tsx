@@ -25,7 +25,7 @@ export const WithMoreChildren = Template.bind({});
 
 export const Disabled = Template.bind({});
 
-// export const Disabled = Template.bind({});
+export const PreselectedValue = Template.bind({});
 
 const SomeChildren = () => (
   <>
@@ -41,6 +41,10 @@ WithMoreChildren.args = {
 
 Disabled.args = {
   isDisabled: true,
+};
+
+PreselectedValue.args = {
+  defaultValue: 'cats',
 };
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test

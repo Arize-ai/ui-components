@@ -2,6 +2,7 @@ import { useRadioGroupState } from '@react-stately/radio';
 import { useRadioGroup } from '@react-aria/radio';
 import { css } from '@emotion/core';
 import theme from '../theme';
+import { useId } from '@react-aria/utils';
 
 import React, { ReactNode } from 'react';
 
@@ -17,11 +18,18 @@ export interface RadioGroupProps {
 function RadioGroup(props: RadioGroupProps) {
   let { children, label } = props;
   let state = useRadioGroupState(props);
-  let { radioGroupProps, labelProps } = useRadioGroup(props, state);
+
+  const labeledById = useId();
+  let { radioGroupProps, labelProps } = useRadioGroup(
+    { ...props, 'aria-labelledby': labeledById },
+    state
+  );
 
   return (
-    <div css={containerCSS} {...radioGroupProps}>
-      <span {...labelProps}>{label}</span>
+    <div role="radiogroup" css={containerCSS} {...radioGroupProps}>
+      <span id={labeledById} {...labelProps}>
+        {label}
+      </span>
       <RadioContext.Provider value={state}>{children}</RadioContext.Provider>
     </div>
   );

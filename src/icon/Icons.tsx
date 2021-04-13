@@ -99,7 +99,11 @@ export const FileAdd = () => (
 );
 
 export const FileAddOutline = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
     <g data-name="Layer 2">
       <g data-name="file-add">
         <rect width="24" height="24" opacity="0" />
@@ -114,7 +118,13 @@ export const LogOut = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <g data-name="Layer 2">
       <g data-name="log-out">
-        <rect width="24" height="24" transform="rotate(90 12 12)" opacity="0" />
+        <rect
+          width="24"
+          height="24"
+          transform="rotate(90 12 12)"
+          opacity="0"
+          aria-hidden="true"
+        />
         <path d="M7 6a1 1 0 0 0 0-2H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h2a1 1 0 0 0 0-2H6V6z" />
         <path d="M20.82 11.42l-2.82-4a1 1 0 0 0-1.39-.24 1 1 0 0 0-.24 1.4L18.09 11H10a1 1 0 0 0 0 2h8l-1.8 2.4a1 1 0 0 0 .2 1.4 1 1 0 0 0 .6.2 1 1 0 0 0 .8-.4l3-4a1 1 0 0 0 .02-1.18z" />
       </g>
@@ -123,7 +133,11 @@ export const LogOut = () => (
 );
 
 export const Grid = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
     <g data-name="Layer 2">
       <g data-name="grid">
         <rect width="24" height="24" opacity="0" />
@@ -137,7 +151,11 @@ export const Grid = () => (
 );
 
 export const ExpandOutline = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
     <g data-name="Layer 2">
       <g data-name="expand">
         <rect
@@ -154,7 +172,11 @@ export const ExpandOutline = () => (
 );
 
 export const CollapseOutline = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
     <g data-name="Layer 2">
       <g data-name="collapse">
         <rect
@@ -171,7 +193,11 @@ export const CollapseOutline = () => (
 );
 
 export const PlusCircleOutline = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
     <g data-name="Layer 2">
       <g data-name="plus-circle">
         <rect width="24" height="24" opacity="0" />
@@ -183,7 +209,11 @@ export const PlusCircleOutline = () => (
 );
 
 export const ArrowIosUpwardOutline = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
     <g data-name="Layer 2">
       <g data-name="arrow-ios-upward">
         <rect
@@ -199,7 +229,11 @@ export const ArrowIosUpwardOutline = () => (
 );
 
 export const ArrowIosDownwardOutline = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
     <g data-name="Layer 2">
       <g data-name="arrow-ios-downward">
         <rect width="24" height="24" opacity="0" />
@@ -215,6 +249,7 @@ export const RadioButtonOff = () => (
     height="24"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
   >
     <g>
       <path
@@ -222,21 +257,11 @@ export const RadioButtonOff = () => (
         clipRule="evenodd"
         d="M2 12C2 17.514 6.486 22 12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2C6.486 2 2 6.486 2 12ZM4 12C4 7.589 7.589 4 12 4C16.411 4 20 7.589 20 12C20 16.411 16.411 20 12 20C7.589 20 4 16.411 4 12Z"
       />
-      <mask
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="2"
-        y="2"
-        width="20"
-        height="20"
-      >
-        <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M2 12C2 17.514 6.486 22 12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2C6.486 2 2 6.486 2 12ZM4 12C4 7.589 7.589 4 12 4C16.411 4 20 7.589 20 12C20 16.411 16.411 20 12 20C7.589 20 4 16.411 4 12Z"
-        />
-      </mask>
-      <g mask="url(#mask0)"></g>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M2 12C2 17.514 6.486 22 12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2C6.486 2 2 6.486 2 12ZM4 12C4 7.589 7.589 4 12 4C16.411 4 20 7.589 20 12C20 16.411 16.411 20 12 20C7.589 20 4 16.411 4 12Z"
+      />
     </g>
   </svg>
 );
@@ -247,6 +272,7 @@ export const RadioButtonOnFill = () => (
     height="24"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
   >
     <g>
       <path
@@ -254,21 +280,11 @@ export const RadioButtonOnFill = () => (
         clipRule="evenodd"
         d="M2 11.9999C2 6.48591 6.486 1.99991 12 1.99991C17.514 1.99991 22 6.48591 22 11.9999C22 17.5139 17.514 21.9999 12 21.9999C6.486 21.9999 2 17.5139 2 11.9999ZM12 19.9999C7.589 19.9999 4 16.4109 4 11.9999C4 7.58891 7.589 3.99991 12 3.99991C16.411 3.99991 20 7.58891 20 11.9999C20 16.4109 16.411 19.9999 12 19.9999ZM12 6.99991C9.243 6.99991 7 9.24291 7 11.9999C7 14.7569 9.243 16.9999 12 16.9999C14.757 16.9999 17 14.7569 17 11.9999C17 9.24291 14.757 6.99991 12 6.99991Z"
       />
-      <mask
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="2"
-        y="2"
-        width="20"
-        height="20"
-      >
-        <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M2 11.9999C2 6.48591 6.486 1.99991 12 1.99991C17.514 1.99991 22 6.48591 22 11.9999C22 17.5139 17.514 21.9999 12 21.9999C6.486 21.9999 2 17.5139 2 11.9999ZM12 19.9999C7.589 19.9999 4 16.4109 4 11.9999C4 7.58891 7.589 3.99991 12 3.99991C16.411 3.99991 20 7.58891 20 11.9999C20 16.4109 16.411 19.9999 12 19.9999ZM12 6.99991C9.243 6.99991 7 9.24291 7 11.9999C7 14.7569 9.243 16.9999 12 16.9999C14.757 16.9999 17 14.7569 17 11.9999C17 9.24291 14.757 6.99991 12 6.99991Z"
-        />
-      </mask>
-      <g mask="url(#mask0)"></g>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M2 11.9999C2 6.48591 6.486 1.99991 12 1.99991C17.514 1.99991 22 6.48591 22 11.9999C22 17.5139 17.514 21.9999 12 21.9999C6.486 21.9999 2 17.5139 2 11.9999ZM12 19.9999C7.589 19.9999 4 16.4109 4 11.9999C4 7.58891 7.589 3.99991 12 3.99991C16.411 3.99991 20 7.58891 20 11.9999C20 16.4109 16.411 19.9999 12 19.9999ZM12 6.99991C9.243 6.99991 7 9.24291 7 11.9999C7 14.7569 9.243 16.9999 12 16.9999C14.757 16.9999 17 14.7569 17 11.9999C17 9.24291 14.757 6.99991 12 6.99991Z"
+      />
     </g>
   </svg>
 );
