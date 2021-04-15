@@ -76,6 +76,27 @@ const WithLinksTemplate: Story<ListProps> = args => (
   </Card>
 );
 
+const Interacting: Story<ListProps> = args => (
+  <Card title="Model Info" bodyStyle={{ padding: 0 }} style={{ width: 300 }}>
+    <List {...args}>
+      {Array.from('12345').map(num => (
+        <ListItem key={num} interactive={Number(num) % 2 === 0}>
+          <div
+            css={css`
+              display: flex;
+              flex-direction: column;
+            `}
+          >
+            <Text textSize="medium" weight="heavy">{`List Item ${num}`}</Text>
+            <Text textSize="small" color="white70">{`Subtext`}</Text>
+          </div>
+        </ListItem>
+      ))}
+    </List>
+  </Card>
+);
+
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const WithLinks = WithLinksTemplate.bind({});
+export const WithDifferentInteractive = Interacting.bind({});
