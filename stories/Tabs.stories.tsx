@@ -2,7 +2,7 @@ import React from 'react';
 import { css } from '@emotion/core';
 import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
-import Tabs, { TabsProps } from '../src/Tabs';
+import { Tabs, TabsProps } from '../src/tabs/Tabs';
 
 const { TabPane } = Tabs;
 

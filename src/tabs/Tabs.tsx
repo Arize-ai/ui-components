@@ -5,31 +5,30 @@ import React, {
   ReactNode,
   isValidElement,
 } from 'react';
+import { Text } from '..';
 import { css } from '@emotion/core';
-import theme from './theme';
+import theme from '../theme';
 
 type Tab = TabPaneProps & {
   key: string;
   node: ReactNode;
 };
 
-const tabList = css`
+const tabListCSS = css`
   overflow: hidden;
   border-bottom: 0.5px solid ${theme.colors.grayBorder};
 
   button {
+    box-sizing: border-box; /* place the border inside */
     background-color: inherit;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 0 ${theme.spacing.padding16}px;
+    height: 30px;
     transition: 0.3s;
-    border-bottom: 3px solid transparent;
-    text-transform: capitalize;
-    font-size: 16px;
-    color: ${theme.colors.text5};
+    border-bottom: 4px solid transparent;
     font-weight: bold;
-    width: 35%;
   }
 
   button:hover {
@@ -37,8 +36,7 @@ const tabList = css`
   }
 
   button[data-selected='true'] {
-    border-bottom: 3px solid ${theme.colors.primary};
-    color: ${theme.colors.text1};
+    border-bottom: 4px solid ${theme.colors.arizeBlue};
   }
 `;
 
@@ -66,27 +64,36 @@ export type TabsProps = {
 /**
  * A re-usable, accessible tabs component
  */
-function Tabs({ children, className, onChange }: TabsProps) {
+export function Tabs({ children, className, onChange }: TabsProps) {
   const tabs = parseTabList(children);
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   return (
-    <div className={className}>
-      <div role="tablist" data-orientation="horizontal" css={tabList}>
-        {tabs.map((tab, index) => (
-          <button
-            key={tab.key}
-            data-selected={index === selectedIndex}
-            onClick={e => {
-              e.preventDefault();
-              setSelectedIndex(index);
-              onChange && onChange(index);
-            }}
-          >
-            {tab.name}
-          </button>
-        ))}
+    <div className={`ac-tabs ${className}`}>
+      <div role="tablist" data-orientation="horizontal" css={tabListCSS}>
+        {tabs.map((tab, index) => {
+          const isSelected = index === selectedIndex;
+          return (
+            <button
+              key={tab.key}
+              data-selected={isSelected}
+              role="tab"
+              onClick={e => {
+                e.preventDefault();
+                setSelectedIndex(index);
+                onChange && onChange(index);
+              }}
+            >
+              <Text
+                textSize="medium"
+                weight="heavy"
+                color={isSelected ? 'white90' : 'white30'}
+              >
+                {tab.name}
+              </Text>
+            </button>
+          );
+        })}
       </div>
-
       <div>
         {Children.map(children, (child, index) => {
           if (isValidElement(child)) {
@@ -130,5 +137,3 @@ export const TabPane = ({
 };
 
 Tabs.TabPane = TabPane;
-
-export default Tabs;
