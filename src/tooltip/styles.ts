@@ -47,7 +47,7 @@ export const tooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
     padding: ${theme.spacing.padding8}px;
     border-radius: 4px;
     min-height: 24px;
-    max-inline-size: 160px;
+    max-inline-size: 200px;
 
     word-break: break-word;
     -webkit-font-smoothing: antialiased;
