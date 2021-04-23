@@ -86,7 +86,7 @@ export function Tabs({ children, className, onChange }: TabsProps) {
               <Text
                 textSize="medium"
                 weight="heavy"
-                color={isSelected ? 'white90' : 'white30'}
+                color={isSelected ? 'white90' : 'white70'}
               >
                 {tab.name}
               </Text>
@@ -108,9 +108,13 @@ export function Tabs({ children, className, onChange }: TabsProps) {
   );
 }
 
+/**
+ * Function component child for lazy loading support. See storybook
+ */
+type TabPaneChildFC = (args: { isSelected: boolean }) => ReactNode;
 type TabPaneProps = {
   name: string;
-  children: ReactNode;
+  children: ReactNode | TabPaneChildFC;
   className?: string;
 };
 
@@ -131,7 +135,7 @@ export const TabPane = ({
         outline: none;
       `}
     >
-      {children}
+      {typeof children === 'function' ? children({ isSelected }) : children}
     </div>
   );
 };
