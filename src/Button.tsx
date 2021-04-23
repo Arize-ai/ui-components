@@ -3,7 +3,7 @@ import { css } from '@emotion/core';
 import theme from './theme';
 import Spinner from './Spinner';
 
-const buttonCSS = ({ outline }: { outline: boolean }) => css`
+const buttonCSS = css`
   color: ${theme.colors.text1};
   padding: 6px 12px;
   border: 1px solid ${theme.colors.dark1};
@@ -16,8 +16,12 @@ const buttonCSS = ({ outline }: { outline: boolean }) => css`
   box-sizing: content-box;
   border-radius: 4px;
   &[data-type='primary'] {
-    background-color: ${outline ? 'transparent' : theme.colors.primary};
-    border-color: ${theme.colors.primary};
+    background-color: ${theme.colors.arizeBlue};
+    border-color: ${theme.colors.arizeBlue};
+  }
+  &[data-type='default'] {
+    background-color: ${theme.colors.gray500};
+    border-color: ${theme.colors.gray500};
   }
 
   & > i {
@@ -28,7 +32,6 @@ const buttonCSS = ({ outline }: { outline: boolean }) => css`
 export type ButtonProps = {
   children: ReactNode | string;
   variant: 'primary' | 'default';
-  outline?: boolean;
   disabled?: boolean;
   className?: string;
   onClick?: (e: SyntheticEvent<HTMLButtonElement>) => void;
@@ -39,7 +42,6 @@ export type ButtonProps = {
 export const Button = ({
   children,
   variant,
-  outline = false,
   disabled = false,
   className,
   onClick,
@@ -49,7 +51,7 @@ export const Button = ({
   const isDisabled = disabled || loading;
   return (
     <button
-      css={buttonCSS({ outline })}
+      css={buttonCSS}
       className={className}
       data-type={variant}
       disabled={isDisabled}

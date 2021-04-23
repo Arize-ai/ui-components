@@ -32,12 +32,16 @@ const Template: Story<ButtonProps> = args => <Button {...args} />;
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Primary = Template.bind({});
 
-Primary.args = { variant: 'primary', children: 'Button' };
+Primary.args = { variant: 'primary', children: 'Create Dashboard' };
 
-export const PrimaryOutline = Template.bind({});
+export const Default = Template.bind({});
 
-PrimaryOutline.args = { variant: 'primary', outline: true, children: 'Button' };
+Default.args = { variant: 'default', children: 'Create Dashboard' };
 
 export const Loading = Template.bind({});
 
-Loading.args = { variant: 'primary', loading: true, children: 'Button' };
+Loading.args = {
+  variant: 'primary',
+  loading: true,
+  children: 'Create Dashboard',
+};
