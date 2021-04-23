@@ -50,8 +50,10 @@ function Popover(props: PopoverProps, ref: DOMRef<HTMLDivElement>) {
           {...mergeProps(overlayProps, otherProps, dialogProps, modalProps)}
           ref={domRef}
           style={style}
-          className={classNames('popover', `popover--${placement}`)}
-          css={popoverCSS({ placement, isOpen })}
+          className={classNames('popover', `popover--${placement}`, {
+            'is-open': isOpen,
+          })}
+          css={popoverCSS({ placement })}
           data-testid="popover"
           data-is-open={isOpen}
           // Explicitly set the tab index to 0.

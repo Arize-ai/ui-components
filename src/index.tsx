@@ -5,6 +5,7 @@ export * from './ActionButton';
 export * from './accordion';
 export * from './card';
 export * from './list';
+export * from './tooltip';
 export * from './types';
 
 // export interface Props extends HTMLAttributes<HTMLDivElement> {
