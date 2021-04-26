@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { css } from '@emotion/core';
 import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
-import Tabs, { TabsProps } from '../src/Tabs';
+import { Tabs, TabsProps } from '../src/tabs/Tabs';
 
 const { TabPane } = Tabs;
 
@@ -49,5 +49,31 @@ const Template: Story<TabsProps> = args => (
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
+
+const LazyLoadingTabContents = ({ isSelected }: { isSelected: boolean }) => {
+  const [content, setContent] = useState<string>('contents');
+  useEffect(() => {
+    if (isSelected) {
+      setContent('Loading...');
+      setTimeout(() => {
+        setContent('contents');
+      }, 1000);
+    }
+  }, [isSelected]);
+  return <span>{content}</span>;
+};
+
+export const LazyLoading: Story<TabsProps> = args => (
+  <div style={{ width: 500 }}>
+    <Tabs {...args}>
+      <TabPane name="Tab 1" css={tabContents}>
+        {({ isSelected }) => <LazyLoadingTabContents isSelected={isSelected} />}
+      </TabPane>
+      <TabPane name="Tab 2" css={tabContents}>
+        {({ isSelected }) => <LazyLoadingTabContents isSelected={isSelected} />}
+      </TabPane>
+    </Tabs>
+  </div>
+);
 
 Default.args = {};

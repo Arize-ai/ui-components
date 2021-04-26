@@ -12,14 +12,28 @@ const baseColors = {
   text5: '#A3A6A9',
 };
 
+const grayColors = {
+  gray500: '#2D353E',
+  gray400: '#39424D',
+  gray200: '#646A70',
+};
+const arizeColors = {
+  arizePink: '#CA2A76',
+  arizeGreen: '#48BB95',
+  arizeBlue: '#227C9D',
+};
+
 const textColors = {
   white90: `rgba(255, 255, 255, 0.9)`,
   white70: `rgba(255, 255, 255, 0.7)`,
+  white30: `rgba(255, 255, 255, 0.3)`,
 };
 
 const theme = {
   colors: {
     ...baseColors,
+    ...arizeColors,
+    ...grayColors,
     primary: '#db247c', // pink
     secondary: '#db247c', // blue
     grayBorder: '#2e363e',

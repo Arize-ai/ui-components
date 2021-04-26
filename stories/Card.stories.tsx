@@ -1,9 +1,11 @@
 import React from 'react';
+import { css } from '@emotion/core';
 import { Meta, Story } from '@storybook/react';
-// @ts-ignore
 import { withDesign } from 'storybook-addon-designs';
-import { Card, CardProps } from '../src';
+import { Card, CardProps, TabbedCard, Tabs } from '../src';
 import Button from '../src/Button';
+
+const { TabPane } = Tabs;
 
 const meta: Meta = {
   title: 'Card',
@@ -27,6 +29,65 @@ const meta: Meta = {
 };
 
 export default meta;
+
+const cardStyle = { width: 407, height: 198, margin: '8px' };
+
+/**
+ * Gallery of all the varients
+ */
+export const Gallery = () => (
+  <div
+    css={css`
+      display: flex;
+      flex-wrap: wrap;
+    `}
+  >
+    <Card title="Title" style={cardStyle}>
+      {''}
+    </Card>
+    <Card
+      title="Title"
+      subTitle="Subtext area"
+      extra={<Button variant="default">Create Dashboard</Button>}
+      style={cardStyle}
+    >
+      {''}
+    </Card>
+    <Card title="Title" subTitle="Subtext area" style={cardStyle}>
+      {''}
+    </Card>
+    <Card
+      title="Title"
+      subTitle="Subtext area"
+      style={cardStyle}
+      extra={<Button variant="default">Create Dashboard</Button>}
+    >
+      {''}
+    </Card>
+    <TabbedCard title="Title" style={cardStyle}>
+      <Tabs>
+        <TabPane name="Tab 1">{null}</TabPane>
+        <TabPane name="Tab 2">{null}</TabPane>
+      </Tabs>
+    </TabbedCard>
+    <TabbedCard
+      title="Title"
+      extra={<Button variant="default">Create Dashboard</Button>}
+      style={cardStyle}
+    >
+      <Tabs>
+        <TabPane name="Tab 1">{null}</TabPane>
+        <TabPane name="Tab 2">{null}</TabPane>
+      </Tabs>
+    </TabbedCard>
+    <TabbedCard style={cardStyle}>
+      <Tabs>
+        <TabPane name="Tab 1">{null}</TabPane>
+        <TabPane name="Tab 2">{null}</TabPane>
+      </Tabs>
+    </TabbedCard>
+  </div>
+);
 
 const Template: Story<CardProps> = args => (
   <Card

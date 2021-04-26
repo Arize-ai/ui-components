@@ -1,28 +1,8 @@
 import React, { CSSProperties, ReactNode } from 'react';
 import { css } from '@emotion/core';
-import theme from '../theme';
 import { Text } from '../content';
-
-const cardCSS = css`
-  display: flex;
-  flex-direction: column;
-  background-color: ${theme.colors.dark4};
-  color: ${theme.colors.text1};
-  border-radius: 8px;
-  border: 1px solid ${theme.colors.dividerColor};
-  overflow: hidden;
-`;
-
-const headerCSS = css`
-  display: flex;
-  flex-direction: row;
-  flex: fixed;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 16px;
-  height: 68px;
-  border-bottom: 1px solid ${theme.colors.dark5};
-`;
+import theme from '../theme';
+import { cardCSS, headerCSS } from './styles';
 
 const headerTitleWrapCSS = css`
   display: flex;
@@ -36,11 +16,11 @@ const headerTitleWrapCSS = css`
 
 const bodyCSS = css`
   flex: 1 1 auto;
-  padding: 24px;
+  padding: ${theme.spacing.padding16}px;
 `;
 
 export type CardProps = {
-  title: string;
+  title?: string;
   subTitle?: string;
   children: ReactNode;
   style?: CSSProperties;
@@ -49,7 +29,7 @@ export type CardProps = {
   className?: string;
 };
 
-export const Card = ({
+export function Card({
   title,
   subTitle,
   children,
@@ -57,10 +37,10 @@ export const Card = ({
   bodyStyle,
   extra,
   className,
-}: CardProps) => {
+}: CardProps) {
   return (
     <section css={cardCSS} style={style} className={className}>
-      <header css={headerCSS}>
+      <header css={headerCSS({ bordered: true })}>
         <div css={headerTitleWrapCSS}>
           <Text textSize="xlarge" elementType="h3" weight="heavy">
             {title}
@@ -78,4 +58,4 @@ export const Card = ({
       </div>
     </section>
   );
-};
+}
