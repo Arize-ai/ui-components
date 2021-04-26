@@ -12,13 +12,15 @@ import {
   Card,
   TabbedCard,
   Tabs,
+  TooltipTrigger,
+  Tooltip,
 } from '../.';
 
 const { TabPane } = Tabs;
 const App = () => {
   return (
     <Provider>
-      <div style={{ display: 'flex' }}>
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
         <Card
           title={'Hello World'}
           extra={
@@ -34,7 +36,15 @@ const App = () => {
             <ListItem>Item One</ListItem>
           </List>
         </Card>
-        <TabbedCard>
+        <TabbedCard
+          title="Card With Tabs"
+          extra={
+            <TooltipTrigger>
+              <ActionButton>Hover</ActionButton>
+              <Tooltip>Tooltip text goes here</Tooltip>
+            </TooltipTrigger>
+          }
+        >
           <Tabs>
             <TabPane name="Tab One">
               <List>
