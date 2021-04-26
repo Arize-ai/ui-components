@@ -50,6 +50,9 @@ const theme = {
     accordion: {
       backgroundColor: '#1E2329',
     },
+    tooltip: {
+      backgroundColor: '#3C4C5D',
+    },
   },
   typography: {
     weights: {
@@ -94,6 +97,12 @@ const theme = {
     popover: {
       /**
        * The offset is the distance between the source and the popover edge (or the end of the tip, when there is a tip).
+       */
+      offset: 6,
+    },
+    tooltip: {
+      /**
+       * The offset is the distance between the source and the tooltip edge (or the end of the tip, when there is a tip).
        */
       offset: 6,
     },

@@ -2,20 +2,7 @@ import { css } from '@emotion/core';
 import theme from '../theme';
 import { PlacementAxis } from '../types';
 
-const popoverOpenCSS = css`
-  visibility: visible;
-  opacity: 1;
-  transition-delay: 0ms;
-  pointer-events: auto;
-`;
-
-export const popoverCSS = ({
-  placement,
-  isOpen,
-}: {
-  placement: PlacementAxis;
-  isOpen: boolean;
-}) => {
+export const popoverCSS = ({ placement }: { placement: PlacementAxis }) => {
   let transformCSS = css``;
   switch (placement) {
     case 'bottom':
@@ -47,7 +34,12 @@ export const popoverCSS = ({
     transition: transform 100ms ease-in-out, opacity 100ms ease-in-out,
       visibility 100ms linear 100ms;
     pointer-events: none;
-    ${isOpen ? popoverOpenCSS : ''}
-    ${isOpen ? transformCSS : ''}
+    &.is-open {
+      visibility: visible;
+      opacity: 1;
+      transition-delay: 0ms;
+      pointer-events: auto;
+      ${transformCSS}
+    }
   `;
 };
