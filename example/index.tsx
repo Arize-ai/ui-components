@@ -16,6 +16,7 @@ import {
   Tooltip,
   RadioGroup,
   Radio,
+  Text,
 } from '../.';
 
 const { TabPane } = Tabs;
@@ -70,7 +71,16 @@ const App = () => {
             defaultValue="cats"
           >
             <Radio label="Dogs" value="dogs" />
-            <Radio label="Cats" value="cats" />
+            <Radio label="Cats" value="cats">
+              <ActionButton>Example Child</ActionButton>
+              <ActionButton>Example Child</ActionButton>
+              <ActionButton>Example Child</ActionButton>
+            </Radio>
+            <Radio label="Parrots" value="parrots" isDisabled>
+              <Text> Example Text </Text>
+              <ActionButton>Example Child</ActionButton>
+              <ActionButton>Example Child</ActionButton>
+            </Radio>
           </RadioGroup>
         </Card>
       </div>
