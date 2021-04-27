@@ -11,7 +11,7 @@ export const radioGroupCSS = ({
 }: {
   isDisabled: boolean;
 }) => css`
-  color: ${isDisabled ? theme.colors.disabled : theme.colors.text1};
+  color: ${isDisabled ? theme.colors.gray200 : theme.colors.text1};
 `;
 
 export const radioCSS = ({
@@ -22,7 +22,7 @@ export const radioCSS = ({
   noPadding?: boolean;
 }) => css`
   display: flex;
-  color: ${isDisabled ? theme.colors.disabled : theme.colors.text1};
+  color: ${isDisabled ? theme.colors.gray200 : theme.colors.text1};
   font-size: ${theme.typography.sizes.medium.fontSize}px;
   line-height: ${theme.typography.sizes.medium.lineHeight}px;
   align-items: center;
@@ -40,7 +40,7 @@ export const radioButtonIconCSS = ({
   isFocusVisible?: boolean;
   isDisabled?: boolean;
 }) => css`
-  fill: ${isDisabled ? theme.colors.disabled : theme.colors.text1};
+  fill: ${isDisabled ? theme.colors.gray200 : theme.colors.text1};
   margin-right: ${theme.spacing.padding4}px;
   ${isFocusVisible &&
     `outline: ${theme.spacing.outline.thin}px solid -webkit-focus-ring-color;`}

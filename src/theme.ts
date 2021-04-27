@@ -15,7 +15,7 @@ const baseColors = {
 const grayColors = {
   gray500: '#2D353E',
   gray400: '#39424D',
-  gray200: '#646A70',
+  gray200: '#646A70', // disabled text
 };
 const arizeColors = {
   arizePink: '#CA2A76',
@@ -43,7 +43,6 @@ const theme = {
     statusDanger: '#db247c',
     dividerColor: '#32383f',
     hoverBgColor: '#23292F',
-    disabled: '#646A70',
   },
   textColors,
   // Add any component specific overrides here
