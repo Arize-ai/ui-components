@@ -25,7 +25,12 @@ function RadioGroup(props: RadioGroupProps) {
   );
 
   return (
-    <div role="radiogroup" css={radioGroupCSS(state)} {...radioGroupProps}>
+    <div
+      role="radiogroup"
+      css={radioGroupCSS(state)}
+      {...radioGroupProps}
+      className="ac-radio-group"
+    >
       <span css={radioGroupLabelCSS} id={labeledById} {...labelProps}>
         {label}
       </span>
