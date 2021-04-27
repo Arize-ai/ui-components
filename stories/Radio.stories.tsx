@@ -1,21 +1,33 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { Radio, RadioGroup, RadioGroupProps } from '../src/radio';
-import { ActionButton } from '../src/ActionButton';
+import { Card, Text, ActionButton } from '../src';
 const meta: Meta = {
   title: 'Radio',
   component: RadioGroup,
+  parameters: {
+    controls: {
+      expanded: true,
+    },
+    design: {
+      type: 'figma',
+      url:
+        'https://www.figma.com/file/Gs8BthCViFvipFh0gknwgg/Drift-Monitors?node-id=90%3A44',
+    },
+  },
 };
 
 export default meta;
 const DefaultChildren = (
   <>
     <Radio value="dogs" label="Dogs" />
-    <Radio value="cats" label="Cats" />
+    <Radio value="cats" label="Cats" isDisabled />
   </>
 );
 const Template: Story<RadioGroupProps> = args => (
-  <RadioGroup {...args}>{args.children || DefaultChildren}</RadioGroup>
+  <Card title="Radio Info" style={{ width: 300 }}>
+    <RadioGroup {...args}>{args.children || DefaultChildren}</RadioGroup>
+  </Card>
 );
 
 export const DefaultWithLabel = Template.bind({});
@@ -37,7 +49,10 @@ const SomeChildren = () => (
         console.log('clicked radio option', e.currentTarget.value);
       }}
     >
-      <ActionButton>Click Me</ActionButton>
+      <Text textSize="small" weight="heavy">
+        Text Child of Radio Component
+      </Text>
+      <ActionButton>Example Button</ActionButton>
     </Radio>
     <Radio value="parrot" label="Parrot" />
   </>
@@ -55,13 +70,12 @@ DefaultNoLabel.args = {
 
 Disabled.args = {
   isDisabled: true,
-  defaultValue: 'cats',
+  defaultValue: 'parrot',
   children: SomeChildren(),
 };
 
 DefaultWithLabel.args = {
-  defaultValue: 'parrot',
-  children: SomeChildren(),
+  defaultValue: 'dogs',
   label: 'Here are some animals',
 };
 

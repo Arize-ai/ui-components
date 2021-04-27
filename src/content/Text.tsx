@@ -48,6 +48,10 @@ export interface TextProps extends HTMLProps<HTMLSpanElement> {
    * @default 'white90'
    */
   color?: Color;
+  /**
+   *
+   */
+  isDisabled?: boolean;
 }
 
 const textCSS = (color: Color) => css`
@@ -72,9 +76,10 @@ const textWeightCSS = (weight: Weight) => css`
  * Text is used to create various sizes of typographic hierarchies.
  */
 function Text(props: TextProps, ref: DOMRef<HTMLHeadingElement>) {
+  const { isDisabled = false } = props;
   const {
     children,
-    color = 'white90',
+    color = isDisabled ? 'white30' : 'white90',
     textSize = 'medium',
     elementType = 'span',
     weight = 'normal',

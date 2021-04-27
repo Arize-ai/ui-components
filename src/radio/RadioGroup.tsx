@@ -2,6 +2,7 @@ import { useRadioGroupState } from '@react-stately/radio';
 import { useRadioGroup } from '@react-aria/radio';
 import { useId } from '@react-aria/utils';
 import { radioGroupCSS, radioGroupLabelCSS } from './styles';
+import { Text } from '..';
 
 import React, { ReactNode } from 'react';
 
@@ -30,10 +31,13 @@ function RadioGroup(props: RadioGroupProps) {
       css={radioGroupCSS(state)}
       {...radioGroupProps}
       className="ac-radio-group"
+      {...labelProps}
     >
-      <span css={radioGroupLabelCSS} id={labeledById} {...labelProps}>
-        {label}
-      </span>
+      {label && (
+        <Text textSize="large" css={radioGroupLabelCSS} id={labeledById}>
+          {label}
+        </Text>
+      )}
       <RadioContext.Provider value={state}>{children}</RadioContext.Provider>
     </div>
   );
