@@ -64,15 +64,15 @@ const App = () => {
             </TabPane>
           </Tabs>
         </TabbedCard>
-        <RadioGroup
-          label="here are the animals to choose from"
-          defaultValue="cats"
-        >
-          <Radio value="dogs">Dogs</Radio>
-          <Radio value="cats" isDisabled>
-            Cats
-          </Radio>
-        </RadioGroup>
+        <Card title="Radio Form">
+          <RadioGroup
+            label="here are the animals to choose from"
+            defaultValue="cats"
+          >
+            <Radio label="Dogs" value="dogs" />
+            <Radio label="Cats" value="cats" />
+          </RadioGroup>
+        </Card>
       </div>
     </Provider>
   );
