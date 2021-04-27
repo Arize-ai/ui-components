@@ -47,6 +47,7 @@ function Radio(props: RadioProps) {
           noPadding,
         })}
         aria-label={value}
+        className="ac-radio"
       >
         <VisuallyHidden>
           <input

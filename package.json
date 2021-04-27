@@ -1,5 +1,5 @@
 {
-  "version": "0.2.7",
+  "version": "0.2.9",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -40,7 +40,13 @@
     "trailingComma": "es5"
   },
   "name": "@arizeai/components",
-  "author": "Mikyo King",
+  "author": "Mikyo King <mikyo@arize.com>",
+  "contributors": [
+    {
+      "name": "Eunice Kokor",
+      "email": "eunice@arize.com"
+    }
+  ],
   "module": "dist/components.esm.js",
   "size-limit": [
     {
@@ -93,13 +99,13 @@
     "@react-aria/focus": "^3.2.3",
     "@react-aria/interactions": "^3.3.3",
     "@react-aria/overlays": "^3.6.1",
-    "@react-aria/tooltip": "^3.1.1",
     "@react-aria/radio": "^3.1.3",
+    "@react-aria/tooltip": "^3.1.1",
     "@react-aria/utils": "^3.6.0",
     "@react-aria/visually-hidden": "^3.2.1",
     "@react-stately/overlays": "^3.1.1",
-    "@react-stately/tooltip": "^3.0.3",
     "@react-stately/radio": "^3.3.0",
+    "@react-stately/tooltip": "^3.0.3",
     "@react-stately/utils": "^3.2.0",
     "clsx": "^1.1.1",
     "react-transition-group": "^4.4.1"
