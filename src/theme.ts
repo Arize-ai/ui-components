@@ -107,6 +107,7 @@ const theme = {
        * The offset is the distance between the source and the tooltip edge (or the end of the tip, when there is a tip).
        */
       offset: 6,
+    },
     outline: {
       thin: 2,
     },

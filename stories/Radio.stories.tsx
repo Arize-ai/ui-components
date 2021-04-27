@@ -59,11 +59,11 @@ Disabled.args = {
   children: SomeChildren(),
 };
 
-DefaultWithLabel.args = {
-  defaultValue: 'parrot',
-  children: SomeChildren(),
-  label: 'Here are some animals',
-};
+// DefaultWithLabel.args = {
+//   defaultValue: 'parrot',
+//   children: SomeChildren(),
+//   label: 'Here are some animals',
+// };
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
