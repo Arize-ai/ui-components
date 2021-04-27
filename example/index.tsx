@@ -69,7 +69,9 @@ const App = () => {
           defaultValue="cats"
         >
           <Radio value="dogs">Dogs</Radio>
-          <Radio value="cats">Cats</Radio>
+          <Radio value="cats" isDisabled>
+            Cats
+          </Radio>
         </RadioGroup>
       </div>
     </Provider>

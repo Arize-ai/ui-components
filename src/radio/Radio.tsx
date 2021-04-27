@@ -1,23 +1,33 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, SyntheticEvent } from 'react';
 import { useRadio } from '@react-aria/radio';
 import { RadioContext } from './context';
-import { RadioButtonOff, RadioButtonOnFill, Icon } from '../icon';
+import { Icon } from '../icon';
+import { RadioButtonOff, RadioButtonOnFill } from './icons';
 import { VisuallyHidden } from '@react-aria/visually-hidden';
 import { useFocusRing } from '@react-aria/focus';
 import { radioCSS, radioButtonIconCSS, radioChildrenCSS } from './styles';
 import { Text } from '..';
 
 export type RadioProps = {
-  children?: ReactNode | string;
+  children?: ReactNode;
   value: string;
   noPadding?: boolean;
   label: string;
-  onClick?: () => void;
+  onClick?: (e: SyntheticEvent<HTMLInputElement>) => void;
+  isDisabled?: boolean;
 };
 
 function Radio(props: RadioProps) {
-  const { children, value, noPadding, label, onClick } = props;
   const state = React.useContext(RadioContext);
+  const {
+    children,
+    value,
+    noPadding,
+    label,
+    onClick,
+    isDisabled = state.isDisabled,
+  } = props;
+
   const ref = React.useRef(null);
   const { inputProps } = useRadio(props, state, ref);
   const { isFocusVisible, focusProps } = useFocusRing();
@@ -31,9 +41,9 @@ function Radio(props: RadioProps) {
   return (
     <>
       <label
-        aria-disabled={state.isDisabled}
+        aria-disabled={isDisabled}
         css={radioCSS({
-          isDisabled: state.isDisabled,
+          isDisabled,
           noPadding,
         })}
         aria-label={value}
@@ -50,7 +60,7 @@ function Radio(props: RadioProps) {
         <Icon
           svg={currentRadioButton}
           css={radioButtonIconCSS({
-            isDisabled: state.isDisabled,
+            isDisabled,
             isFocusVisible,
           })}
           aria-hidden={true}
@@ -66,7 +76,7 @@ function Radio(props: RadioProps) {
             child =>
               child &&
               // @ts-ignore
-              React.cloneElement(child, { isDisabled: state.isDisabled })
+              React.cloneElement(child, { isDisabled })
           )}
         </div>
       )}
