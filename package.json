@@ -40,7 +40,13 @@
     "trailingComma": "es5"
   },
   "name": "@arizeai/components",
-  "author": "Mikyo King",
+  "author": "Mikyo King <mikyo@arize.com>",
+  "contributors": [
+    {
+      "name": "Eunice Kokor",
+      "email": "eunice@arize.com"
+    }
+  ],
   "module": "dist/components.esm.js",
   "size-limit": [
     {
