@@ -14,6 +14,8 @@ import {
   Tabs,
   TooltipTrigger,
   Tooltip,
+  RadioGroup,
+  Radio,
 } from '../.';
 
 const { TabPane } = Tabs;
@@ -62,6 +64,15 @@ const App = () => {
             </TabPane>
           </Tabs>
         </TabbedCard>
+        <Card title="Radio Form">
+          <RadioGroup
+            label="here are the animals to choose from"
+            defaultValue="cats"
+          >
+            <Radio label="Dogs" value="dogs" />
+            <Radio label="Cats" value="cats" />
+          </RadioGroup>
+        </Card>
       </div>
     </Provider>
   );

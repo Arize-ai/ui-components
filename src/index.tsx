@@ -8,6 +8,7 @@ export * from './list';
 export * from './tooltip';
 export * from './tabs';
 export * from './types';
+export * from './radio';
 
 // export interface Props extends HTMLAttributes<HTMLDivElement> {
 //   /** custom content, defaults to 'the snozzberries taste like snozzberries' */

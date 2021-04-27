@@ -15,7 +15,7 @@ const baseColors = {
 const grayColors = {
   gray500: '#2D353E',
   gray400: '#39424D',
-  gray200: '#646A70',
+  gray200: '#646A70', // disabled text
 };
 const arizeColors = {
   arizePink: '#CA2A76',
@@ -91,6 +91,7 @@ const theme = {
     },
   },
   spacing: {
+    padding4: 4,
     padding8: 8,
     padding16: 16,
     padding24: 24,
@@ -106,7 +107,11 @@ const theme = {
        */
       offset: 6,
     },
+    outline: {
+      thin: 2,
+    },
   },
+
   animation: {
     global: {
       /**
