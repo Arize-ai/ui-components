@@ -8,6 +8,7 @@ import { VisuallyHidden } from '@react-aria/visually-hidden';
 import { useFocusRing } from '@react-aria/focus';
 import { radioCSS, radioButtonIconCSS, radioChildrenCSS } from './styles';
 // import { useFocusableRef } from '@react-spectrum/utils';
+import { useId } from '@react-aria/utils';
 
 import { Text } from '..';
 
@@ -48,7 +49,13 @@ function Radio(props: RadioProps) {
   } = props;
 
   const inputRef = React.useRef(null);
-  const { inputProps } = useRadio(props, state, inputRef);
+  const labeledById = useId();
+
+  const { inputProps } = useRadio(
+    { ...props, 'aria-labelledby': labeledById },
+    state,
+    inputRef
+  );
   const { isFocusVisible, focusProps } = useFocusRing();
   const isSelected = state.selectedValue === props.value;
 
