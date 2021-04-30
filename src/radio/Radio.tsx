@@ -28,7 +28,7 @@ export type RadioProps = {
   /**
    * Additional functionality after the select
    */
-  onClick?: (e: SyntheticEvent<HTMLInputElement>) => void;
+  onClick?: (e?: SyntheticEvent<HTMLInputElement>) => void;
   /**
    * If this specific radio option is disabled
    * Overrides the disabled value coming from the parent component's status
@@ -65,6 +65,16 @@ function Radio(props: RadioProps) {
     <RadioButtonOff />
   );
 
+  const handleOnChangeLabel = () => {
+    state.setSelectedValue(props.value);
+    onClick && onClick();
+  };
+
+  const handleOnChange = (e: SyntheticEvent<HTMLInputElement>) => {
+    state.setSelectedValue(props.value);
+    onClick && onClick(e);
+  };
+
   return (
     <>
       <label
@@ -76,15 +86,13 @@ function Radio(props: RadioProps) {
         aria-label={value}
         className="ac-radio"
         {...focusProps}
+        onClick={handleOnChangeLabel}
       >
         <VisuallyHidden>
           <input
             aria-label={value}
             {...inputProps}
-            onChange={e => {
-              state.setSelectedValue(props.value);
-              onClick && onClick(e);
-            }}
+            onChange={handleOnChange}
             value={value}
             ref={inputRef}
           />
