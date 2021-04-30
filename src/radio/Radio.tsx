@@ -75,12 +75,12 @@ function Radio(props: RadioProps) {
         })}
         aria-label={value}
         className="ac-radio"
+        {...focusProps}
       >
         <VisuallyHidden>
           <input
             aria-label={value}
             {...inputProps}
-            {...focusProps}
             onChange={e => {
               state.setSelectedValue(props.value);
               onClick && onClick(e);
