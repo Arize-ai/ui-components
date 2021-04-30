@@ -16,7 +16,7 @@ import {
   Tooltip,
   RadioGroup,
   Radio,
-} from '../.';
+} from '@arizeai/components';
 
 const { TabPane } = Tabs;
 const App = () => {

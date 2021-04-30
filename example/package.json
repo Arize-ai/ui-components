@@ -8,7 +8,11 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "react-app-polyfill": "^1.0.0"
+    "@arizeai/components": "0.2.9",
+    "@emotion/core": ">=10",
+    "react": ">=16",
+    "react-app-polyfill": "^1.0.0",
+    "react-dom": ">=16"
   },
   "alias": {
     "react": "../node_modules/react",

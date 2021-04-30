@@ -1,13 +1,13 @@
 import React, { ReactNode, SyntheticEvent } from 'react';
-import { FocusableRef } from '@react-types/shared';
+// import { FocusableRef } from '@react-types/shared';
 import { useRadio } from '@react-aria/radio';
-import { RadioContext } from './context';
+import { useRadioProvider } from './context';
 import { Icon } from '../icon';
 import { RadioButtonOff, RadioButtonOnFill } from './icons';
 import { VisuallyHidden } from '@react-aria/visually-hidden';
 import { useFocusRing } from '@react-aria/focus';
 import { radioCSS, radioButtonIconCSS, radioChildrenCSS } from './styles';
-import { useFocusableRef } from '@react-spectrum/utils';
+// import { useFocusableRef } from '@react-spectrum/utils';
 
 import { Text } from '..';
 
@@ -36,8 +36,8 @@ export type RadioProps = {
   noPadding?: boolean;
 };
 
-function Radio(props: RadioProps, ref: FocusableRef<HTMLLabelElement>) {
-  const state = React.useContext(RadioContext);
+function Radio(props: RadioProps) {
+  const state = useRadioProvider();
   const {
     children,
     value,
@@ -51,7 +51,12 @@ function Radio(props: RadioProps, ref: FocusableRef<HTMLLabelElement>) {
   const { inputProps } = useRadio(props, state, inputRef);
   const { isFocusVisible, focusProps } = useFocusRing();
   const isSelected = state.selectedValue === props.value;
-  let domRef = useFocusableRef(ref, inputRef);
+
+  console.log('props!!', props);
+  console.log('state!', state);
+  console.log('inputProps!', inputProps);
+
+  // let domRef = useFocusableRef(ref, inputRef);
   const currentRadioButton = isSelected ? (
     <RadioButtonOnFill />
   ) : (
@@ -68,7 +73,7 @@ function Radio(props: RadioProps, ref: FocusableRef<HTMLLabelElement>) {
         })}
         aria-label={value}
         className="ac-radio"
-        ref={domRef}
+        // ref={domRef}
       >
         <VisuallyHidden>
           <input
