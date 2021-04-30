@@ -52,11 +52,6 @@ function Radio(props: RadioProps) {
   const { isFocusVisible, focusProps } = useFocusRing();
   const isSelected = state.selectedValue === props.value;
 
-  console.log('props!!', props);
-  console.log('state!', state);
-  console.log('inputProps!', inputProps);
-
-  // let domRef = useFocusableRef(ref, inputRef);
   const currentRadioButton = isSelected ? (
     <RadioButtonOnFill />
   ) : (
@@ -73,13 +68,16 @@ function Radio(props: RadioProps) {
         })}
         aria-label={value}
         className="ac-radio"
-        // ref={domRef}
       >
         <VisuallyHidden>
           <input
+            aria-label={value}
             {...inputProps}
             {...focusProps}
-            onClick={onClick}
+            onChange={e => {
+              state.setSelectedValue(props.value);
+              onClick && onClick(e);
+            }}
             value={value}
             ref={inputRef}
           />
@@ -90,6 +88,7 @@ function Radio(props: RadioProps) {
             isDisabled,
             isFocusVisible,
           })}
+          aria-label={value}
           aria-hidden={true}
         />
         <Text textSize="medium" color={isDisabled ? 'white30' : 'white90'}>

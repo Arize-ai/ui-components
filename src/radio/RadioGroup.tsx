@@ -12,6 +12,7 @@ export interface RadioGroupProps {
   children: ReactNode;
   label?: string;
   defaultValue: string;
+  onChange?: () => void;
 }
 
 function RadioGroup(props: RadioGroupProps) {
@@ -20,15 +21,10 @@ function RadioGroup(props: RadioGroupProps) {
 
   const state = useRadioGroupState(props);
 
-  const { radioGroupProps, labelProps, ...rest } = useRadioGroup(
+  const { radioGroupProps, labelProps } = useRadioGroup(
     { ...props, 'aria-labelledby': labeledById },
     state
   );
-
-  console.log('state', state);
-  console.log('radioGroupProps', radioGroupProps);
-  console.log('labelProps', labelProps);
-  console.log('rest', rest);
 
   return (
     <div

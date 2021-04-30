@@ -2,7 +2,7 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { jsx } from '@emotion/core';
+import { jsx } from '@emotion/react';
 import {
   Provider,
   ActionButton,
@@ -16,7 +16,7 @@ import {
   Tooltip,
   RadioGroup,
   Radio,
-} from '@arizeai/components';
+} from '../.';
 
 const { TabPane } = Tabs;
 const App = () => {
@@ -66,7 +66,7 @@ const App = () => {
         </TabbedCard>
         <Card title="Radio Form">
           <RadioGroup
-            label="here are the animals to choose from"
+            label="here are the animals to choose from!"
             defaultValue="cats"
           >
             <Radio label="Dogs" value="dogs" />

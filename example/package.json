@@ -8,9 +8,9 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "@arizeai/components": "0.2.9",
     "@emotion/core": ">=10",
-    "react": ">=16",
+    "@emotion/react": "11.1.5",
+    "react": ">=16.8.0",
     "react-app-polyfill": "^1.0.0",
     "react-dom": ">=16"
   },
@@ -21,7 +21,7 @@
     "scheduler/tracing": "../node_modules/scheduler/tracing-profiling"
   },
   "devDependencies": {
-    "@babel/core": "^7.13.10",
+    "@babel/core": "^7.0.0",
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.8.4",
     "parcel": "^1.12.4",
