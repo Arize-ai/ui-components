@@ -2,8 +2,7 @@ import theme from '../theme';
 import { css } from '@emotion/core';
 
 export const radioGroupLabelCSS = css`
-  font-size: ${theme.typography.sizes.large.fontSize}px;
-  line-height: ${theme.typography.sizes.large.lineHeight}px;
+  margin-bottom: ${theme.spacing.padding8}px;
 `;
 
 export const radioGroupCSS = ({

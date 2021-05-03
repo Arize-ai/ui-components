@@ -45,7 +45,7 @@ function RadioGroup(props: RadioGroupProps) {
       {...labelProps}
     >
       {label && (
-        <Text textSize="large" css={radioGroupLabelCSS} id={labeledById}>
+        <Text css={radioGroupLabelCSS} id={labeledById} elementType="p">
           {label}
         </Text>
       )}
