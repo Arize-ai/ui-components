@@ -1,5 +1,5 @@
 {
-  "version": "0.2.9",
+  "version": "0.2.10",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -103,10 +103,12 @@
     "@react-aria/tooltip": "^3.1.1",
     "@react-aria/utils": "^3.6.0",
     "@react-aria/visually-hidden": "^3.2.1",
+    "@react-spectrum/utils": "^3.5.1",
     "@react-stately/overlays": "^3.1.1",
     "@react-stately/radio": "^3.3.0",
     "@react-stately/tooltip": "^3.0.3",
     "@react-stately/utils": "^3.2.0",
+    "@react-types/shared": "^3.5.0",
     "clsx": "^1.1.1",
     "react-transition-group": "^4.4.1"
   },

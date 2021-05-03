@@ -11,4 +11,8 @@ const RadioContext = React.createContext<RadioGroupState>({
   setLastFocusedValue: () => {},
 });
 
+export function useRadioProvider() {
+  return React.useContext(RadioContext);
+}
+
 export { RadioContext };

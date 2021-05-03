@@ -2,8 +2,7 @@ import theme from '../theme';
 import { css } from '@emotion/core';
 
 export const radioGroupLabelCSS = css`
-  font-size: ${theme.typography.sizes.large.fontSize}px;
-  line-height: ${theme.typography.sizes.large.lineHeight}px;
+  margin-bottom: ${theme.spacing.padding8}px;
 `;
 
 export const radioGroupCSS = ({
@@ -11,7 +10,7 @@ export const radioGroupCSS = ({
 }: {
   isDisabled: boolean;
 }) => css`
-  color: ${isDisabled ? theme.colors.gray200 : theme.colors.text1};
+  color: ${isDisabled ? theme.textColors.white30 : theme.textColors.white90};
 `;
 
 export const radioCSS = ({
@@ -22,9 +21,6 @@ export const radioCSS = ({
   noPadding?: boolean;
 }) => css`
   display: flex;
-  color: ${isDisabled ? theme.colors.gray200 : theme.colors.text1};
-  font-size: ${theme.typography.sizes.medium.fontSize}px;
-  line-height: ${theme.typography.sizes.medium.lineHeight}px;
   align-items: center;
   cursor: ${isDisabled ? 'not-allowed' : 'pointer'};
 
@@ -40,7 +36,7 @@ export const radioButtonIconCSS = ({
   isFocusVisible?: boolean;
   isDisabled?: boolean;
 }) => css`
-  fill: ${isDisabled ? theme.colors.gray200 : theme.colors.text1};
+  color: ${isDisabled ? theme.textColors.white30 : theme.textColors.white90};
   margin-right: ${theme.spacing.padding4}px;
   ${isFocusVisible &&
     `outline: ${theme.spacing.outline.thin}px solid -webkit-focus-ring-color;`}
@@ -50,4 +46,5 @@ export const radioChildrenCSS = css`
   display: flex;
   padding: 0;
   margin-top: ${theme.spacing.padding4}px;
+  flex-direction: column;
 `;

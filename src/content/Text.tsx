@@ -21,7 +21,7 @@ type Weight = 'heavy' | 'normal';
 
 type Color = 'white90' | 'white70' | 'white30';
 
-type TextElementType = 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+type TextElementType = 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
 
 export interface TextProps extends HTMLProps<HTMLSpanElement> {
   /**
@@ -48,6 +48,10 @@ export interface TextProps extends HTMLProps<HTMLSpanElement> {
    * @default 'white90'
    */
   color?: Color;
+  /**
+   * The disabled state of the text
+   */
+  isDisabled?: boolean;
 }
 
 const textCSS = (color: Color) => css`
@@ -72,9 +76,10 @@ const textWeightCSS = (weight: Weight) => css`
  * Text is used to create various sizes of typographic hierarchies.
  */
 function Text(props: TextProps, ref: DOMRef<HTMLHeadingElement>) {
+  const { isDisabled = false } = props;
   const {
     children,
-    color = 'white90',
+    color = isDisabled ? 'white30' : 'white90',
     textSize = 'medium',
     elementType = 'span',
     weight = 'normal',
