@@ -57,6 +57,9 @@ function Radio(props: RadioProps) {
   const { isFocusVisible, focusProps } = useFocusRing();
   const isSelected = state.selectedValue === props.value;
 
+  console.log('props radio', props);
+  console.log('state radio', state);
+
   const currentRadioButton = isSelected ? (
     <RadioButtonOnFill />
   ) : (

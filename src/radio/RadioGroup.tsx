@@ -17,12 +17,13 @@ export interface RadioGroupProps {
   /**
    * Matches the `value` option of one of the Radio Children components
    */
-  defaultValue: string;
+  defaultValue?: string;
   /**
    * On change handler that is triggered by the selectedValue state change.
    * `value` is the new selected value.
    */
   onChange?: (value: string) => void;
+  value?: string;
 }
 
 function RadioGroup(props: RadioGroupProps) {
@@ -35,6 +36,9 @@ function RadioGroup(props: RadioGroupProps) {
     { ...props, 'aria-labelledby': labeledById },
     state
   );
+
+  console.log('props radiogroup', props);
+  console.log('state radiogroup', state);
 
   return (
     <div
