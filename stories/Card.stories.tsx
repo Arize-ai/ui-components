@@ -4,6 +4,7 @@ import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
 import { Card, CardProps, TabbedCard, Tabs } from '../src';
 import Button from '../src/Button';
+import InfoTip from './components/InfoTip';
 
 const { TabPane } = Tabs;
 
@@ -61,6 +62,15 @@ export const Gallery = () => (
       subTitle="Subtext area"
       style={cardStyle}
       extra={<Button variant="default">Create Dashboard</Button>}
+    >
+      {''}
+    </Card>
+    <Card
+      title="Title"
+      subTitle="Subtext area"
+      style={cardStyle}
+      extra={<Button variant="default">Create Dashboard</Button>}
+      titleExtra={<InfoTip>Create Dashboard Info Bubble</InfoTip>}
     >
       {''}
     </Card>

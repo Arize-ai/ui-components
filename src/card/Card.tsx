@@ -27,6 +27,7 @@ export type CardProps = {
   bodyStyle?: CSSProperties;
   extra?: ReactNode; // Extra controls on the header
   className?: string;
+  titleExtra?: ReactNode;
 };
 
 export function Card({
@@ -37,6 +38,7 @@ export function Card({
   bodyStyle,
   extra,
   className,
+  titleExtra,
 }: CardProps) {
   return (
     <section css={cardCSS} style={style} className={className}>
@@ -44,6 +46,7 @@ export function Card({
         <div css={headerTitleWrapCSS}>
           <Text textSize="xlarge" elementType="h3" weight="heavy">
             {title}
+            {titleExtra}
           </Text>
           {subTitle && (
             <Text textSize="medium" elementType="h4" color="white70">
