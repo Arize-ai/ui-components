@@ -46,8 +46,8 @@ export function Card({
         <div css={headerTitleWrapCSS}>
           <Text textSize="xlarge" elementType="h3" weight="heavy">
             {title}
-            {titleExtra}
           </Text>
+          {titleExtra}
           {subTitle && (
             <Text textSize="medium" elementType="h4" color="white70">
               {subTitle}
