@@ -1,6 +1,7 @@
 import { ReactElement } from 'react';
 
 export type PopoverClose = (close: () => void) => ReactElement;
+export type ModalClose = (close: () => void) => ReactElement;
 
 export interface OverlayTriggerProps {
   /** Whether the overlay is open by default (controlled). */

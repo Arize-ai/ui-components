@@ -2,7 +2,17 @@ import React from 'react';
 import { css } from '@emotion/core';
 import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
-import { Card, CardProps, TabbedCard, Tabs } from '../src';
+import {
+  Card,
+  CardProps,
+  TabbedCard,
+  Tabs,
+  DialogCard,
+  ButtonGroup,
+  Text,
+  List,
+  ListItem,
+} from '../src';
 import Button from '../src/Button';
 
 const { TabPane } = Tabs;
@@ -86,7 +96,86 @@ export const Gallery = () => (
         <TabPane name="Tab 2">{null}</TabPane>
       </Tabs>
     </TabbedCard>
+
+    {/* with footer */}
+    <Card
+      title="Title"
+      footer={
+        <ButtonGroup>
+          <Button variant="default" onClick={close}>
+            <Text>Button 1</Text>
+          </Button>
+          <Button variant="primary" onClick={close}>
+            <Text>Button 2</Text>
+          </Button>
+        </ButtonGroup>
+      }
+      style={cardStyle}
+    >
+      {''}
+    </Card>
+    {/* with aside */}
+    <Card
+      title="Title"
+      aside={
+        <List>
+          <ListItem>Item One</ListItem>
+          <ListItem>Item Two</ListItem>
+          <ListItem>Item Three</ListItem>
+        </List>
+      }
+      style={cardStyle}
+    >
+      {''}
+    </Card>
+    {/* aside with footer */}
+    <Card
+      title="Title"
+      footer={
+        <ButtonGroup>
+          <Button variant="default" onClick={close}>
+            <Text>Another Button</Text>
+          </Button>
+          <Button variant="primary" onClick={close}>
+            <Text>Primary Button</Text>
+          </Button>
+        </ButtonGroup>
+      }
+      aside={
+        <List>
+          <ListItem>Item One</ListItem>
+          <ListItem>Item Two</ListItem>
+          <ListItem>Item Three</ListItem>
+          <ListItem>Item One</ListItem>
+          <ListItem>Item Two</ListItem>
+          <ListItem>Item Three</ListItem>
+        </List>
+      }
+      style={cardStyle}
+    >
+      <Text>
+        Here is the body of the modal. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Proin consectetur vel odio in condimentum. Aliquam Here
+        is the body of the modal. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Proin consectetur vel odio in condimentum. AliquamHere
+        is the body of the modal. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Proin consectetur vel odio in condimentum. AliquamHere
+        is the body of the modal. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Proin consectetur vel odio in condimentum. Aliquam
+      </Text>
+    </Card>
   </div>
+);
+
+export const DialogCardDefault: Story<CardProps> = args => (
+  <DialogCard
+    title="Title"
+    {...args}
+    onClose={() => console.log('default onclose event')}
+    style={{ width: 400, height: 200 }}
+  >
+    <Text>Content in here</Text>
+  </DialogCard>
 );
 
 const Template: Story<CardProps> = args => (

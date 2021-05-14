@@ -7,8 +7,6 @@ const buttonCSS = css`
   color: ${theme.colors.text1};
   padding: 6px 12px;
   border: 1px solid ${theme.colors.dark1};
-  font-size: ${theme.typography.sizes.medium};
-  font-weight: 600;
   height: 24px;
   display: flex;
   justify-content: center;
@@ -26,6 +24,10 @@ const buttonCSS = css`
 
   & > i {
     padding-right: 6px;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 `;
 

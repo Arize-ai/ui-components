@@ -91,6 +91,14 @@ const theme = {
     },
   },
   spacing: {
+    /**
+     * widths for card sizing
+     */
+    card: {
+      small: 500,
+      medium: 840,
+      large: 1200,
+    },
     padding4: 4,
     padding8: 8,
     padding16: 16,

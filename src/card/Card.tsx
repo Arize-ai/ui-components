@@ -1,33 +1,33 @@
 import React, { CSSProperties, ReactNode } from 'react';
-import { css } from '@emotion/core';
 import { Text } from '../content';
 import theme from '../theme';
-import { cardCSS, headerCSS } from './styles';
+import {
+  cardCSS,
+  headerCSS,
+  bodyWithAsideCSS,
+  bodyCSS,
+  headerTitleWrapCSS,
+  asideCSS,
+  footerCSS,
+  bodyCSSWithScroll,
+} from './styles';
 
-const headerTitleWrapCSS = css`
-  display: flex;
-  flex-direction: column;
-  & > h3,
-  & > h4 {
-    padding: 0;
-    margin: 0;
-  }
-`;
+export type CardSize = 'small' | 'large' | 'medium';
 
-const bodyCSS = css`
-  flex: 1 1 auto;
-  padding: ${theme.spacing.padding16}px;
-`;
-
-export type CardProps = {
+export interface CardProps {
   title?: string;
   subTitle?: string;
   children: ReactNode;
   style?: CSSProperties;
   bodyStyle?: CSSProperties;
-  extra?: ReactNode; // Extra controls on the header
+  asideStyle?: CSSProperties;
   className?: string;
-};
+  aside?: ReactNode;
+  footer?: ReactNode;
+  size?: CardSize;
+  /** Extra controls on the header */
+  extra?: ReactNode;
+}
 
 export function Card({
   title,
@@ -35,11 +35,20 @@ export function Card({
   children,
   style,
   bodyStyle,
+  asideStyle,
   extra,
+  aside,
+  footer,
   className,
+  size = 'medium',
 }: CardProps) {
   return (
-    <section css={cardCSS} style={style} className={className}>
+    <section
+      css={cardCSS}
+      // Allow existing card widths to override size until quick audit is done to check
+      style={{ width: `${theme.spacing.card[size]}px`, ...style }}
+      className={className}
+    >
       <header css={headerCSS({ bordered: true })}>
         <div css={headerTitleWrapCSS}>
           <Text textSize="xlarge" elementType="h3" weight="heavy">
@@ -53,9 +62,23 @@ export function Card({
         </div>
         {extra}
       </header>
-      <div css={bodyCSS} style={bodyStyle}>
-        {children}
-      </div>
+      {aside ? (
+        <div css={bodyWithAsideCSS}>
+          <aside css={asideCSS} style={asideStyle}>
+            {aside}
+          </aside>
+          <div css={bodyCSSWithScroll} style={bodyStyle}>
+            {children}
+          </div>
+        </div>
+      ) : (
+        <div css={bodyCSS} style={bodyStyle}>
+          {children}
+        </div>
+      )}
+      {footer ? (
+        <footer css={footerCSS({ bordered: true })}>{footer}</footer>
+      ) : null}
     </section>
   );
 }

@@ -31,6 +31,7 @@ const headingCSS = css`
   /* default to no margin */
   margin: 0;
   color: ${theme.colors.text1};
+  grid-area: heading;
 `;
 
 const headingSizeCSS = (level: Level) => {

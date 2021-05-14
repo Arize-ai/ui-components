@@ -9,6 +9,9 @@ export * from './tooltip';
 export * from './tabs';
 export * from './types';
 export * from './radio';
+export * from './modal';
+export * from './Button';
+export * from './ButtonGroup';
 
 // export interface Props extends HTMLAttributes<HTMLDivElement> {
 //   /** custom content, defaults to 'the snozzberries taste like snozzberries' */

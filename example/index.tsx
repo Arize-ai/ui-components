@@ -17,18 +17,32 @@ import {
   RadioGroup,
   Radio,
   Text,
+  ModalTrigger,
+  DialogCard,
 } from '../.';
 
+import { useState } from 'react';
 const { TabPane } = Tabs;
 const App = () => {
   return (
     <Provider>
       <div style={{ display: 'flex', flexDirection: 'column' }}>
         <Card
-          title={'Hello World'}
+          title={'Card in Dialog'}
           extra={
             <PopoverTrigger>
-              <ActionButton>Click Me</ActionButton>
+              <ModalTrigger>
+                <ActionButton>Modal Trigger</ActionButton>
+                {close => (
+                  <DialogCard
+                    title="Dialog Heading"
+                    subTitle="cool"
+                    onClose={close}
+                  >
+                    <Text>Hello world I am in a card</Text>
+                  </DialogCard>
+                )}
+              </ModalTrigger>
               <div style={{ border: '1px solid gray' }}>
                 Popover content here
               </div>
@@ -42,7 +56,7 @@ const App = () => {
         <TabbedCard
           title="Card With Tabs"
           extra={
-            <TooltipTrigger>
+            <TooltipTrigger delay={0}>
               <ActionButton>Hover</ActionButton>
               <Tooltip>Tooltip text goes here</Tooltip>
             </TooltipTrigger>
