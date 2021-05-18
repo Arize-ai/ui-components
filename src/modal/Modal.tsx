@@ -34,7 +34,7 @@ const Underlay = ({ isOpen }: { isOpen: boolean }) => (
 
       &.is-open {
         visibility: visible;
-        opacity: 0.9999;
+        opacity: 1;
         transition-delay: 0ms;
         pointer-events: auto;
       }

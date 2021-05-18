@@ -1924,7 +1924,7 @@
   dependencies:
     "@babel/runtime" "^7.6.2"
 
-"@react-types/button@^3.3.1":
+"@react-types/button@3.3.1", "@react-types/button@^3.3.1":
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/@react-types/button/-/button-3.3.1.tgz#4bdd325bc7df19c33911af256f63eae91e2a452e"
   integrity sha512-xKLGSzGfsDBMe0SM7icOLNmzW38sdNSDSGMdrTLd3ygxb6pXY/LlcTdx7Sq28hdW8XL/ikFAnoQeS1VLXZHj7w==

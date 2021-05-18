@@ -1,17 +1,16 @@
-import React, { ReactNode, CSSProperties, SyntheticEvent } from 'react';
+import React from 'react';
 import { classNames } from './utils/classNames';
 import { mergeProps } from '@react-aria/utils';
 import { useButton } from '@react-aria/button';
 import { useHover } from '@react-aria/interactions';
 import { FocusableRef } from './types';
 import { useFocusableRef } from './utils/useDOMRef';
-interface ActionButtonProps {
+import { AriaButtonProps } from '@react-types/button';
+import { StyleProps } from '@react-types/shared';
+
+interface ActionButtonProps extends AriaButtonProps<'button'>, StyleProps {
   /** Whether the button is disabled. */
   isDisabled?: boolean;
-  /** The content to display in the button. */
-  children?: ReactNode;
-  style?: CSSProperties;
-  onClick?: (e: SyntheticEvent<HTMLButtonElement>) => void;
 }
 
 /**
@@ -25,7 +24,7 @@ function ActionButton(
   ref: FocusableRef<HTMLButtonElement>
 ) {
   let domRef = useFocusableRef(ref);
-  const { isDisabled, children, style, ...otherProps } = props;
+  const { isDisabled, children, ...otherProps } = props;
   const { buttonProps, isPressed } = useButton(props, domRef);
   const { hoverProps, isHovered } = useHover({ isDisabled });
 
@@ -38,7 +37,6 @@ function ActionButton(
         'is-disabled': isDisabled,
         'is-hovered': isHovered,
       })}
-      style={style}
     >
       {children}
     </button>

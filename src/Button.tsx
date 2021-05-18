@@ -2,6 +2,7 @@ import React, { ReactNode, SyntheticEvent } from 'react';
 import { css } from '@emotion/core';
 import theme from './theme';
 import Spinner from './Spinner';
+import { classNames } from './utils/classNames';
 
 const buttonCSS = css`
   color: ${theme.colors.text1};
@@ -26,8 +27,10 @@ const buttonCSS = css`
     padding-right: 6px;
   }
 
-  &:hover {
-    cursor: pointer;
+  cursor: pointer;
+
+  &.is-loading {
+    cursor: wait;
   }
 `;
 
@@ -54,7 +57,7 @@ export const Button = ({
   return (
     <button
       css={buttonCSS}
-      className={className}
+      className={classNames(className, { 'is-loading': loading })}
       data-type={variant}
       disabled={isDisabled}
       onClick={isDisabled ? undefined : onClick}

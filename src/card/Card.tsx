@@ -1,6 +1,5 @@
 import React, { CSSProperties, ReactNode } from 'react';
 import { Text } from '../content';
-import theme from '../theme';
 import {
   cardCSS,
   headerCSS,
@@ -12,8 +11,6 @@ import {
   bodyCSSWithScroll,
 } from './styles';
 
-export type CardSize = 'small' | 'large' | 'medium';
-
 export interface CardProps {
   title?: string;
   subTitle?: string;
@@ -24,7 +21,6 @@ export interface CardProps {
   className?: string;
   aside?: ReactNode;
   footer?: ReactNode;
-  size?: CardSize;
   /** Extra controls on the header */
   extra?: ReactNode;
 }
@@ -40,13 +36,12 @@ export function Card({
   aside,
   footer,
   className,
-  size = 'medium',
 }: CardProps) {
   return (
     <section
       css={cardCSS}
       // Allow existing card widths to override size until quick audit is done to check
-      style={{ width: `${theme.spacing.card[size]}px`, ...style }}
+      style={style}
       className={className}
     >
       <header css={headerCSS({ bordered: true })}>

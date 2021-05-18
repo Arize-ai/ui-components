@@ -7,19 +7,17 @@ import { css } from '@emotion/core';
 import React from 'react';
 import { ActionButton } from '../ActionButton';
 
+const actionButtonStyles = {
+  padding: '0',
+  marginLeft: '4px',
+  border: 'none',
+  background: 'transparent',
+  cursor: 'pointer',
+  color: 'inherit',
+};
+
 const CloseIcon = ({ onClick }: { onClick: () => void }) => (
-  <ActionButton
-    key="info-icon"
-    aria-label="info"
-    style={{
-      padding: 0,
-      marginLeft: '4px',
-      border: 'none',
-      background: 'transparent',
-      cursor: 'pointer',
-      color: 'inherit',
-    }}
-  >
+  <ActionButton key="close-icon" aria-label="Close" {...actionButtonStyles}>
     <Icon
       onClick={onClick}
       css={css`
