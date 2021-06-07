@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, CSSProperties } from 'react';
 import { classNames } from './utils/classNames';
 import { mergeProps } from '@react-aria/utils';
 import { useButton } from '@react-aria/button';
@@ -11,6 +11,7 @@ interface ButtonProps {
   isDisabled?: boolean;
   /** The content to display in the button. */
   children?: ReactNode;
+  style?: CSSProperties;
 }
 
 /**
@@ -24,7 +25,7 @@ function ActionButton(
   ref: FocusableRef<HTMLButtonElement>
 ) {
   let domRef = useFocusableRef(ref);
-  const { isDisabled, children, ...otherProps } = props;
+  const { isDisabled, children, style, ...otherProps } = props;
   const { buttonProps, isPressed } = useButton(props, domRef);
   const { hoverProps, isHovered } = useHover({ isDisabled });
 
@@ -37,6 +38,7 @@ function ActionButton(
         'is-disabled': isDisabled,
         'is-hovered': isHovered,
       })}
+      style={style}
     >
       {children}
     </button>
