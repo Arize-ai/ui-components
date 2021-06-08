@@ -24,7 +24,7 @@ export const headerCSS = ({
 }) => css`
   display: flex;
   flex-direction: row;
-  flex: fixed;
+  flex: none;
   justify-content: space-between;
   align-items: center;
   padding: 0 16px;
