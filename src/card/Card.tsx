@@ -14,6 +14,11 @@ const headerTitleWrapCSS = css`
   }
 `;
 
+const titleWithTitleExtraCSS = css`
+  display: flex;
+  flex-direction: row;
+`;
+
 const bodyCSS = css`
   flex: 1 1 auto;
   padding: ${theme.spacing.padding16}px;
@@ -40,14 +45,23 @@ export function Card({
   className,
   titleExtra,
 }: CardProps) {
+  const titleEl = (
+    <Text textSize="xlarge" elementType="h3" weight="heavy">
+      {title}
+    </Text>
+  );
   return (
     <section css={cardCSS} style={style} className={className}>
       <header css={headerCSS({ bordered: true })}>
         <div css={headerTitleWrapCSS}>
-          <Text textSize="xlarge" elementType="h3" weight="heavy">
-            {title}
-          </Text>
-          {titleExtra}
+          {titleExtra != null ? (
+            <div css={titleWithTitleExtraCSS}>
+              {titleEl}
+              {titleExtra}
+            </div>
+          ) : (
+            titleEl
+          )}
           {subTitle && (
             <Text textSize="medium" elementType="h4" color="white70">
               {subTitle}
