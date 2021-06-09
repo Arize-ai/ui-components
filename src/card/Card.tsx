@@ -3,6 +3,7 @@ import { css } from '@emotion/core';
 import { Text } from '../content';
 import theme from '../theme';
 import { cardCSS, headerCSS } from './styles';
+import { classNames } from '../utils';
 
 const headerTitleWrapCSS = css`
   display: flex;
@@ -51,7 +52,11 @@ export function Card({
     </Text>
   );
   return (
-    <section css={cardCSS} style={style} className={className}>
+    <section
+      css={cardCSS}
+      style={style}
+      className={classNames('ac-card', className)}
+    >
       <header css={headerCSS({ bordered: true })}>
         <div css={headerTitleWrapCSS}>
           {titleExtra != null ? (
