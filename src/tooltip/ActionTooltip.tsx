@@ -76,7 +76,7 @@ function ActionTooltip(props: ActionTooltipProps) {
           {title}
         </Text>
         {subTitle && (
-          <Text color="white70" textSize="medium" elementType="h6">
+          <Text color="white70" textSize="small" elementType="h6">
             {subTitle}
           </Text>
         )}
