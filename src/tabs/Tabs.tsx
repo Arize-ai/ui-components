@@ -5,7 +5,7 @@ import React, {
   ReactNode,
   isValidElement,
 } from 'react';
-import { Text } from '..';
+import { Text } from '../content';
 import { css } from '@emotion/core';
 import theme from '../theme';
 
