@@ -64,9 +64,15 @@ const Link = () => (
     <Icon aria-hidden={true} svg={<ArrowIosForwardOutline />}></Icon>
   </a>
 );
+
+const containerCSS = css`
+  margin-left: 200px;
+  margin-right: 200px;
+`;
+
 export const Gallery = () => (
   <Provider>
-    <ul style={{ listStyle: 'none', marginLeft: '200px', marginTop: '200px' }}>
+    <ul style={{ listStyle: 'none' }} css={containerCSS}>
       {placements.map((placement, index) => {
         return (
           <li key={index} style={{ margin: '10px 0' }}>
@@ -75,7 +81,7 @@ export const Gallery = () => (
               <ActionTooltip
                 title="We've detected model drift"
                 subTitle="Your prediction PSI is 0.45 which is higher than your threshold of 0.25"
-                style={{ width: 300 }}
+                UNSAFE_style={{ width: 245 }}
               >
                 <Link />
               </ActionTooltip>
@@ -90,13 +96,13 @@ export const Gallery = () => (
 const Template: Story<TooltipTriggerProps> = args => {
   return (
     <Provider>
-      <div style={{ marginLeft: '200px', marginTop: '200px' }}>
+      <div css={containerCSS}>
         <TooltipTrigger {...args}>
           <ActionButton>Hover</ActionButton>
           <ActionTooltip
             title="We've detected model drift"
             subTitle="Your prediction PSI is 0.45 which is higher than your threshold of 0.25"
-            style={{ width: 300 }}
+            UNSAFE_style={{ width: 245 }}
           >
             <Link />
           </ActionTooltip>

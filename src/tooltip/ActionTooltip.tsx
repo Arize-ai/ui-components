@@ -1,4 +1,4 @@
-import React, { ReactNode, useContext, HTMLProps } from 'react';
+import React, { ReactNode, useContext, HTMLProps, CSSProperties } from 'react';
 import { useTooltip } from '@react-aria/tooltip';
 import { classNames } from '../utils';
 import { PlacementAxis } from '../types';
@@ -17,6 +17,10 @@ interface ActionTooltipProps extends HTMLProps<HTMLDivElement> {
   children: ReactNode;
   title: string;
   subTitle?: string;
+  /**
+   * Style overrides. Not guaranteed to be not overridden
+   */
+  UNSAFE_style?: CSSProperties;
 }
 
 /**
@@ -31,15 +35,29 @@ function ActionTooltip(props: ActionTooltipProps) {
     state,
     ...tooltipProviderProps
   } = useContext(TooltipContext);
+
   props = mergeProps(props, tooltipProviderProps);
-  let { title, subTitle, placement = 'right', isOpen, style, id } = props;
-  let { tooltipProps } = useTooltip(props, state);
+  const {
+    title,
+    subTitle,
+    placement = 'right',
+    isOpen,
+    style: propsStyle,
+    id,
+  } = props;
+  const { tooltipProps } = useTooltip(props, state);
+
+  const style = {
+    ...props?.UNSAFE_style,
+    ...propsStyle,
+    ...tooltipProps.style,
+  };
 
   return (
     <div
       id={id}
-      style={style}
       {...tooltipProps}
+      style={style}
       className={classNames(
         'ac-action-tooltip',
         `ac-action-tooltip--${placement}`,
