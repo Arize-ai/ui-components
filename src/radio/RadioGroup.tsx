@@ -1,11 +1,9 @@
+import React, { ReactNode } from 'react';
 import { useRadioGroupState } from '@react-stately/radio';
 import { useRadioGroup } from '@react-aria/radio';
 import { useId } from '@react-aria/utils';
 import { radioGroupCSS, radioGroupLabelCSS } from './styles';
-import { Text } from '..';
-
-import React, { ReactNode } from 'react';
-
+import { Text } from '../content';
 import { RadioContext } from './context';
 
 export interface RadioGroupProps {

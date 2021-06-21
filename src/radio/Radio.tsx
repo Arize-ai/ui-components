@@ -7,8 +7,7 @@ import { VisuallyHidden } from '@react-aria/visually-hidden';
 import { useFocusRing } from '@react-aria/focus';
 import { radioCSS, radioButtonIconCSS, radioChildrenCSS } from './styles';
 import { useId } from '@react-aria/utils';
-
-import { Text } from '..';
+import { Text } from '../content';
 
 export type RadioProps = {
   /**

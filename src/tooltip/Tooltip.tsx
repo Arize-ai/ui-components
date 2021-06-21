@@ -4,7 +4,7 @@ import { classNames } from '../utils';
 import { PlacementAxis } from '../types';
 import { mergeProps } from '@react-aria/utils';
 import { TooltipContext } from './context';
-import { Text } from '..';
+import { Text } from '../content';
 import { tooltipCSS, tooltipTipCSS } from './styles';
 
 interface TooltipProps extends HTMLProps<HTMLDivElement> {

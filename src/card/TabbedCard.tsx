@@ -1,6 +1,6 @@
 import React, { ReactNode, HTMLProps } from 'react';
 import { css } from '@emotion/core';
-import { Text } from '..';
+import { Text } from '../content';
 import { cardCSS, headerCSS } from './styles';
 
 const tabbedCardCSS = css`
