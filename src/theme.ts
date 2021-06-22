@@ -16,6 +16,7 @@ const grayColors = {
   gray500: '#2D353E',
   gray400: '#39424D',
   gray200: '#646A70', // disabled text
+  // 2D3845
 };
 const arizeColors = {
   arizePink: '#CA2A76',
@@ -52,6 +53,10 @@ const theme = {
     },
     tooltip: {
       backgroundColor: '#3C4C5D',
+    },
+    actionTooltip: {
+      backgroundColor: '#2D3845',
+      borderColor: '#6F7D8C',
     },
   },
   typography: {
