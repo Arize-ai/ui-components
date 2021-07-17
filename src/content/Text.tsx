@@ -19,7 +19,7 @@ type Size =
 
 type Weight = 'heavy' | 'normal';
 
-type Color = 'white90' | 'white70' | 'white30';
+type Color = 'white90' | 'white70' | 'white30' | 'inherit';
 
 type TextElementType = 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
 
