@@ -17,6 +17,8 @@ import {
   RadioGroup,
   Radio,
   Text,
+  Label,
+  LabelGroup,
 } from '../.';
 
 const { TabPane } = Tabs;
@@ -51,7 +53,13 @@ const App = () => {
           <Tabs>
             <TabPane name="Tab One">
               <List>
-                <ListItem>Item One</ListItem>
+                <ListItem>
+                  Item One
+                  <LabelGroup>
+                    <Label color="red">Danger</Label>
+                    <Label color="green">Okay</Label>
+                  </LabelGroup>
+                </ListItem>
                 <ListItem>Item Two</ListItem>
                 <ListItem>Item Three</ListItem>
               </List>

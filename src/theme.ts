@@ -18,6 +18,7 @@ const grayColors = {
   gray200: '#646A70', // disabled text
   // 2D3845
 };
+
 const arizeColors = {
   arizePink: '#CA2A76',
   arizeGreen: '#48BB95',
@@ -28,6 +29,17 @@ const textColors = {
   white90: `rgba(255, 255, 255, 0.9)`,
   white70: `rgba(255, 255, 255, 0.7)`,
   white30: `rgba(255, 255, 255, 0.3)`,
+  inherit: 'inherit',
+};
+
+const labelColors = {
+  white: `rgba(255, 255, 255, 0.9)`,
+  red: '#F85149',
+  green: '#7EE787',
+  orange: '#E69958',
+  blue: '#72D9FF',
+  purple: '#ADA1FF',
+  gray: 'rgba(255, 255, 255, 0.7)',
 };
 
 const theme = {
@@ -46,6 +58,7 @@ const theme = {
     hoverBgColor: '#23292F',
   },
   textColors,
+  labelColors,
   // Add any component specific overrides here
   components: {
     accordion: {
@@ -100,6 +113,10 @@ const theme = {
     padding8: 8,
     padding16: 16,
     padding24: 24,
+    margin4: 4,
+    margin8: 8,
+    margin16: 16,
+    margin24: 24,
     popover: {
       /**
        * The offset is the distance between the source and the popover edge (or the end of the tip, when there is a tip).

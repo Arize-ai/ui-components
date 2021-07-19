@@ -2,7 +2,8 @@ import React from 'react';
 import { css } from '@emotion/core';
 import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
-import { Card, CardProps, TabbedCard, Tabs } from '../src';
+import { Card, CardProps, TabbedCard } from '../src/card';
+import { Tabs } from '../src/tabs';
 import Button from '../src/Button';
 import InfoTip from './components/InfoTip';
 
@@ -34,7 +35,7 @@ export default meta;
 const cardStyle = { width: 407, height: 198, margin: '8px' };
 
 /**
- * Gallery of all the varients
+ * Gallery of all the variants
  */
 export const Gallery = () => (
   <div
