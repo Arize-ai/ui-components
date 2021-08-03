@@ -50,10 +50,10 @@ const theme = {
     primary: '#db247c', // pink
     secondary: '#db247c', // blue
     grayBorder: '#2e363e',
-    statusInfo: '#91d5ff',
-    statusSuccess: '#41bc94', // RGB independent success color
+    statusInfo: '#72D9FF',
+    statusSuccess: '#7EE787', // RGB independent success color
     statusWarning: '#E69958',
-    statusDanger: '#db247c',
+    statusDanger: '#F85149',
     dividerColor: '#32383f',
     hoverBgColor: '#23292F',
   },
