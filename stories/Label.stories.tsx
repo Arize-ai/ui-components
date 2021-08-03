@@ -5,7 +5,7 @@ import { withDesign } from 'storybook-addon-designs';
 import { LabelGroup, Label, LabelProps } from '../src/label';
 import {
   Icon,
-  CheckmarkCircle,
+  CheckmarkCircleOutline,
   AlertTriangleOutline,
   AlertCircleOutline,
 } from '../src/icon';
@@ -51,10 +51,10 @@ export const Gallery = () => (
     <br />
     <br />
     <LabelGroup>
-      <Label color="blue" icon={<Icon svg={<CheckmarkCircle />} />}>
+      <Label color="blue" icon={<Icon svg={<CheckmarkCircleOutline />} />}>
         Info
       </Label>
-      <Label color="green" icon={<Icon svg={<CheckmarkCircle />} />}>
+      <Label color="green" icon={<Icon svg={<CheckmarkCircleOutline />} />}>
         Success
       </Label>
       <Label color="orange" icon={<Icon svg={<AlertTriangleOutline />} />}>
