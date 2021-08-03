@@ -14,7 +14,7 @@ import {
 } from '../icon';
 
 export interface AlertProps {
-  variant?: 'warning' | 'info' | 'danger' | 'success';
+  variant: 'warning' | 'info' | 'danger' | 'success';
   children?: ReactNode;
   /**
    * Title of the alert. Optional
