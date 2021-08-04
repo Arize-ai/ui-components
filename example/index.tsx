@@ -19,6 +19,7 @@ import {
   Text,
   Label,
   LabelGroup,
+  Alert,
 } from '../.';
 
 const { TabPane } = Tabs;
@@ -26,6 +27,9 @@ const App = () => {
   return (
     <Provider>
       <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <Alert title="Title" variant="info">
+          Alert message goes here
+        </Alert>
         <Card
           title={'Hello World'}
           extra={

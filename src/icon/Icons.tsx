@@ -98,7 +98,7 @@ export const FileAdd = () => (
   </svg>
 );
 
-export const CheckmarkCircle = () => (
+export const CheckmarkCircleOutline = () => (
   <svg
     width="24"
     height="24"
@@ -297,6 +297,22 @@ export const InfoOutline = () => (
         <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z" />
         <circle cx="12" cy="8" r="1" />
         <path d="M12 10a1 1 0 0 0-1 1v5a1 1 0 0 0 2 0v-5a1 1 0 0 0-1-1z" />
+      </g>
+    </g>
+  </svg>
+);
+
+export const CloseOutline = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g data-name="Layer 2">
+      <g data-name="close">
+        <rect
+          width="24"
+          height="24"
+          transform="rotate(180 12 12)"
+          opacity="0"
+        />
+        <path d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z" />
       </g>
     </g>
   </svg>

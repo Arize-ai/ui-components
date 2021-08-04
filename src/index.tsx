@@ -10,6 +10,7 @@ export * from './tabs';
 export * from './types';
 export * from './radio';
 export * from './label';
+export * from './alert';
 
 // export interface Props extends HTMLAttributes<HTMLDivElement> {
 //   /** custom content, defaults to 'the snozzberries taste like snozzberries' */

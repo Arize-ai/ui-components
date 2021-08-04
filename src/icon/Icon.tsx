@@ -11,7 +11,7 @@ interface IconProps extends HTMLAttributes<HTMLElement> {
 export const Icon = ({ svg, style, ...restProps }: IconProps) => {
   return (
     <i
-      className="icon-wrap"
+      className="ac-icon-wrap"
       css={css`
         width: 1em;
         height: 1em;
