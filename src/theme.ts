@@ -16,7 +16,6 @@ const grayColors = {
   gray500: '#2D353E',
   gray400: '#39424D',
   gray200: '#646A70', // disabled text
-  // 2D3845
 };
 
 const arizeColors = {
