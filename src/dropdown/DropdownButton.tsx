@@ -10,12 +10,35 @@ import theme from '../theme';
 import { Text } from '../content';
 import { Icon, ArrowIosDownwardOutline } from '../icon';
 
-interface DropdownButtonProps {
+const addonBeforeCSS = css`
+  background-color: ${theme.colors.gray400};
+  padding: ${theme.spacing.padding8}px;
+  flex: none;
+`;
+
+/**
+ * A label element that describes the button
+ */
+function AddonBefore({ children }: { children: ReactNode }) {
+  return (
+    <div css={addonBeforeCSS}>
+      <Text textSize="medium" weight="heavy" color="white70">
+        {children}
+      </Text>
+    </div>
+  );
+}
+export interface DropdownButtonProps {
   /** Whether the button is disabled. */
   isDisabled?: boolean;
   /** The content to display in the button. */
   children?: ReactNode;
   style?: CSSProperties;
+  /**
+   * A label that can be appended to the beginning of the button
+   * (e.x. dataset, formula, etc.). Useful when there is no form label
+   */
+  addonBefore?: ReactNode;
 }
 
 /**
@@ -29,7 +52,7 @@ function DropdownButton(
   ref: FocusableRef<HTMLButtonElement>
 ) {
   let domRef = useFocusableRef(ref);
-  const { isDisabled, children, style, ...otherProps } = props;
+  const { isDisabled, children, style, addonBefore, ...otherProps } = props;
   const { buttonProps, isPressed } = useButton(props, domRef);
   const { hoverProps, isHovered } = useHover({ isDisabled });
 
@@ -51,15 +74,27 @@ function DropdownButton(
         display: flex;
         align-items: center;
         padding: 0;
+        overflow: hidden;
+        cursor: pointer;
+        border: 1px solid ${theme.components.dropdown.borderColor};
         .ac-dropdown-button__text {
-          margin: ${theme.spacing.margin8}px ${theme.spacing.margin16}px;
+          flex: 1 1 auto;
+          margin: ${theme.spacing.margin8}px 4px ${theme.spacing.margin8}px
+            ${theme.spacing.margin8}px;
           display: inline-block;
+          text-overflow: ellipsis;
+          white-space: nowrap;
         }
         .ac-icon-wrap {
           margin-right: ${theme.spacing.margin8}px;
+          flex: fixed;
+          width: 16px;
+          height: 16px;
+          font-size: 16px;
         }
       `}
     >
+      {addonBefore != null ? <AddonBefore>{addonBefore}</AddonBefore> : null}
       <Text className="ac-dropdown-button__text" textSize="medium">
         {children}
       </Text>

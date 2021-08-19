@@ -1,18 +1,14 @@
 import React from 'react';
 import { css } from '@emotion/core';
-import {
-  DropdownTrigger,
-  DropdownTriggerProps,
-  DropdownButton,
-  DropdownMenu,
-} from '../src/dropdown';
+import { Dropdown, DropdownProps } from '../src/dropdown';
 import { Provider } from '../src';
 import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
+import { List, ListItem } from '../src/list';
 
 const meta: Meta = {
-  title: 'DropdownTrigger',
-  component: DropdownTrigger,
+  title: 'Dropdown',
+  component: Dropdown,
   decorators: [withDesign],
   argTypes: {
     children: {
@@ -34,18 +30,55 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<DropdownTriggerProps> = args => (
+const Menu = () => (
+  <List listSize="small">
+    <ListItem>hello</ListItem>
+    <ListItem>hello</ListItem>
+  </List>
+);
+export const Gallery = () => (
   <Provider>
-    <DropdownTrigger {...args}>
-      <DropdownButton>Button here</DropdownButton>
-      <DropdownMenu
-        css={css`
-          color: white;
-        `}
-      >
-        menu goes here
-      </DropdownMenu>
-    </DropdownTrigger>
+    <ul
+      css={css`
+        margin-left: 300px;
+        li {
+          margin-bottom: 8px;
+        }
+      `}
+    >
+      <li>
+        <Dropdown menu={<Menu />}>Click Me</Dropdown>
+      </li>
+      <li>
+        <Dropdown menu={<Menu />} buttonAddonBefore="Dataset A">
+          Click Me
+        </Dropdown>
+      </li>
+      <li>
+        <Dropdown
+          menu={
+            <List listSize="small">
+              <ListItem>hello</ListItem>
+              <ListItem>
+                hello asdfasdfasdfasdfasdfasdfasdfasdfasdadsfad
+              </ListItem>
+            </List>
+          }
+          buttonAddonBefore="Dataset A"
+          buttonStyle={{ maxWidth: 200 }}
+        >
+          Really really really really really really really long text
+        </Dropdown>
+      </li>
+    </ul>
+  </Provider>
+);
+
+const Template: Story<DropdownProps> = args => (
+  <Provider>
+    <Dropdown menu={<Menu />} {...args}>
+      Click Me
+    </Dropdown>
   </Provider>
 );
 

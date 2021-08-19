@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, CSSProperties } from 'react';
 import { css } from '@emotion/core';
 import theme from '../theme';
 
@@ -6,12 +6,17 @@ interface DropdownMenuProps {
   children: ReactNode;
   /**
    * whether or not there is inner padding on the dropdown
-   * @default true
+   * @default false
    */
-  isPadded: boolean;
+  isPadded?: boolean;
+  style?: CSSProperties;
 }
 
-export function DropdownMenu({ children, isPadded = true }: DropdownMenuProps) {
+export function DropdownMenu({
+  children,
+  isPadded = false,
+  style,
+}: DropdownMenuProps) {
   return (
     <div
       css={css`
@@ -19,7 +24,11 @@ export function DropdownMenu({ children, isPadded = true }: DropdownMenuProps) {
         border-radius: 4px;
         color: ${theme.textColors.white90};
         padding: ${isPadded ? theme.spacing.padding8 : 0}px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+        border: 1px solid ${theme.components.dropdown.borderColor};
+        overflow: hidden;
       `}
+      style={style}
     >
       {children}
     </div>

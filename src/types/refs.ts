@@ -1,5 +1,4 @@
 import { Ref } from 'react';
-
 export interface DOMRefValue<T extends HTMLElement = HTMLElement> {
   UNSAFE_getDOMNode(): T;
 }

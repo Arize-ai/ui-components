@@ -1,8 +1,4 @@
-import {
-  PopoverTrigger as DropdownTrigger,
-  PopoverTriggerProps as DropdownTriggerProps,
-} from '../popover';
+export * from './Dropdown';
 export * from './DropdownButton';
 export * from './DropdownMenu';
-
-export { DropdownTrigger, DropdownTriggerProps };
+export * from './DropdownTrigger';

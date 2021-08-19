@@ -70,6 +70,9 @@ const theme = {
       backgroundColor: '#2D3845',
       borderColor: '#6F7D8C',
     },
+    dropdown: {
+      borderColor: 'rgba(118, 140, 163, .6)',
+    },
   },
   typography: {
     weights: {
