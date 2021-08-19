@@ -12,6 +12,11 @@ import { popoverCSS } from './styles';
 export interface PopoverProps extends HTMLAttributes<HTMLElement> {
   onClose?: () => void;
   isOpen?: boolean;
+  /**
+   * Whether or not the popover should close when the component loses focus
+   * @default true
+   */
+  shouldCloseOnBlur?: boolean;
   children: ReactNode;
   placement?: PlacementAxis;
 }
@@ -22,6 +27,7 @@ function Popover(props: PopoverProps, ref: DOMRef<HTMLDivElement>) {
     children,
     isOpen = false,
     onClose,
+    shouldCloseOnBlur = true,
     style,
     ...otherProps
   } = props;
@@ -32,6 +38,7 @@ function Popover(props: PopoverProps, ref: DOMRef<HTMLDivElement>) {
     {
       onClose,
       isOpen,
+      shouldCloseOnBlur,
       isDismissable: true,
     },
     domRef
