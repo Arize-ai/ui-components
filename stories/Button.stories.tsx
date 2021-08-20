@@ -1,7 +1,12 @@
 import React from 'react';
+import { css } from '@emotion/core';
 import { Meta, Story } from '@storybook/react';
-import Button, { ButtonProps } from '../src/Button';
+import { ButtonGroup } from '../src/button';
+import { Button, ButtonProps } from '../src/button';
+import { Icon, PlusCircleOutline } from '../src/icon';
 import { withDesign } from 'storybook-addon-designs';
+
+const plusIcon = <Icon svg={<PlusCircleOutline />} />;
 
 const meta: Meta = {
   title: 'Button',
@@ -26,6 +31,56 @@ const meta: Meta = {
 
 export default meta;
 
+export const Gallery = () => {
+  return (
+    <ul
+      css={css`
+        & > li {
+          margin-bottom: 8px;
+        }
+      `}
+    >
+      <li>
+        <ButtonGroup>
+          <Button variant="primary">Create Dashboard</Button>
+          <Button variant="primary" icon={plusIcon}>
+            Create Dashboard
+          </Button>
+          <Button variant="primary" icon={plusIcon}>
+            Create Dashboard
+          </Button>
+          <Button variant="primary" icon={plusIcon} />
+        </ButtonGroup>
+      </li>
+      <li>
+        <ButtonGroup>
+          <Button variant="default">Create Dashboard</Button>
+          <Button variant="default" icon={plusIcon}>
+            Create Dashboard
+          </Button>
+          <Button variant="default" icon={plusIcon}>
+            Create Dashboard
+          </Button>
+          <Button variant="default" icon={plusIcon} />
+        </ButtonGroup>
+      </li>
+      <li>
+        <ButtonGroup>
+          <Button size="compact" variant="primary">
+            Create Dashboard
+          </Button>
+          <Button size="compact" variant="primary" icon={plusIcon}>
+            Create Dashboard
+          </Button>
+          <Button size="compact" variant="primary" icon={plusIcon}>
+            Create Dashboard
+          </Button>
+          <Button size="compact" variant="primary" icon={plusIcon} />
+        </ButtonGroup>
+      </li>
+    </ul>
+  );
+};
 const Template: Story<ButtonProps> = args => <Button {...args} />;
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test

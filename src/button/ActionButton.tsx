@@ -1,16 +1,13 @@
-import React, { ReactNode, CSSProperties } from 'react';
-import { classNames } from './utils/classNames';
+import React, { CSSProperties } from 'react';
+import { classNames } from '../utils/classNames';
 import { mergeProps } from '@react-aria/utils';
 import { useButton } from '@react-aria/button';
 import { useHover } from '@react-aria/interactions';
-import { FocusableRef } from './types';
-import { useFocusableRef } from './utils/useDOMRef';
+import { FocusableRef } from '../types';
+import { useFocusableRef } from '../utils/useDOMRef';
+import { BaseButtonProps } from './types';
 
-interface ButtonProps {
-  /** Whether the button is disabled. */
-  isDisabled?: boolean;
-  /** The content to display in the button. */
-  children?: ReactNode;
+interface ActionButtonProps extends BaseButtonProps {
   style?: CSSProperties;
 }
 
@@ -21,7 +18,7 @@ interface ButtonProps {
  * @returns
  */
 function ActionButton(
-  props: ButtonProps,
+  props: ActionButtonProps,
   ref: FocusableRef<HTMLButtonElement>
 ) {
   let domRef = useFocusableRef(ref);
@@ -33,7 +30,7 @@ function ActionButton(
     <button
       {...mergeProps(buttonProps, hoverProps, otherProps)}
       ref={domRef}
-      className={classNames('action-button', {
+      className={classNames('ac-action-button', {
         'is-active': isPressed,
         'is-disabled': isDisabled,
         'is-hovered': isHovered,

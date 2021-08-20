@@ -12,8 +12,7 @@ const bounceDelay = keyframes`
     }
 `;
 
-const spinner = css`
-  margin: 0 8px;
+const spinnerCSS = css`
   width: 16px;
   height: 16px;
   position: relative;
@@ -107,7 +106,7 @@ const spinner = css`
 
 const Spinner = () => {
   return (
-    <div css={spinner}>
+    <div css={spinnerCSS} className="ac-spinner">
       <div className="loadingSpinnerCircle1 loadingChild"></div>
       <div className="loadingSpinnerCircle2 loadingChild"></div>
       <div className="loadingSpinnerCircle3 loadingChild"></div>

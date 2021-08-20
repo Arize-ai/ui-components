@@ -72,6 +72,14 @@ const theme = {
     },
     dropdown: {
       borderColor: 'rgba(118, 140, 163, .6)',
+      activeBorderColor: 'rgba(118, 140, 163, 1)',
+      activeBackgroundColor: '#313A44',
+    },
+    button: {
+      primaryBorderColor: '#5BAECC',
+      primaryHoverBackgroundColor: '#5BAECC',
+      defaultBorderColor: '#768CA3',
+      defaultHoverBackgroundColor: '#64768A',
     },
   },
   typography: {

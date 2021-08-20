@@ -77,6 +77,15 @@ function DropdownButton(
         overflow: hidden;
         cursor: pointer;
         border: 1px solid ${theme.components.dropdown.borderColor};
+        transition: all 0.2s ease-in-out;
+        /** provide an alternate highlight */
+        outline: none;
+        &.is-active,
+        &.is-hovered,
+        &:focus {
+          border: 1px solid ${theme.components.dropdown.activeBorderColor};
+          background-color: ${theme.components.dropdown.activeBackgroundColor};
+        }
         .ac-dropdown-button__text {
           flex: 1 1 auto;
           margin: ${theme.spacing.margin8}px 4px ${theme.spacing.margin8}px
@@ -84,6 +93,7 @@ function DropdownButton(
           display: inline-block;
           text-overflow: ellipsis;
           white-space: nowrap;
+          overflow: hidden;
         }
         .ac-icon-wrap {
           margin-right: ${theme.spacing.margin8}px;

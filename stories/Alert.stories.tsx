@@ -2,7 +2,7 @@ import React from 'react';
 import { css } from '@emotion/core';
 import { Meta, Story } from '@storybook/react';
 import { Alert, AlertProps } from '../src/alert';
-import { Button } from '../src/Button';
+import { Button } from '../src/button';
 const meta: Meta = {
   title: 'Alert',
   component: Alert,

@@ -65,7 +65,7 @@ export const Gallery = () => (
             </List>
           }
           buttonAddonBefore="Dataset A"
-          buttonStyle={{ maxWidth: 200 }}
+          buttonStyle={{ maxWidth: 250 }}
         >
           Really really really really really really really long text
         </Dropdown>

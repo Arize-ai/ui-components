@@ -16,6 +16,7 @@ export const Icon = ({ svg, style, ...restProps }: IconProps) => {
         width: 1em;
         height: 1em;
         font-size: 1.3rem;
+        display: flex;
         svg {
           fill: currentColor;
           width: 1em;
