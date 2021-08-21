@@ -7,9 +7,9 @@ import React, {
 } from 'react';
 import { DropdownButton, DropdownButtonProps } from './DropdownButton';
 import { DropdownMenu } from './DropdownMenu';
-import { DropdownTrigger } from './DropdownTrigger';
+import { DropdownTrigger, DropdownTriggerProps } from './DropdownTrigger';
 import { useResizeObserver } from '@react-aria/utils';
-import { Placement, FocusableRefValue } from '../types';
+import { FocusableRefValue } from '../types';
 import { useUnwrapDOMRef } from '../utils';
 
 export type DropdownProps = {
@@ -22,26 +22,20 @@ export type DropdownProps = {
    */
   children: ReactNode;
   /**
-   * the placement of the dropdown menu
-   * @default "bottom left"
+   * the dropdown trigger props
    */
-  menuPlacement?: Placement;
+  triggerProps?: Omit<DropdownTriggerProps, 'children'>;
   /**
-   * before text or icon for the button
+   * the dropdown button props
    */
-  buttonAddonBefore?: DropdownButtonProps['addonBefore'];
-  /**
-   * additional styles for the button
-   */
-  buttonStyle?: CSSProperties;
+  buttonProps?: DropdownButtonProps;
 };
 
 export function Dropdown({
   menu,
   children,
-  menuPlacement = 'bottom left',
-  buttonAddonBefore,
-  buttonStyle,
+  triggerProps = { placement: 'bottom left' },
+  buttonProps,
 }: DropdownProps) {
   let triggerRef = useRef<FocusableRefValue<HTMLButtonElement>>(null);
   let unwrappedTriggerRef = useUnwrapDOMRef(triggerRef);
@@ -67,12 +61,8 @@ export function Dropdown({
   };
 
   return (
-    <DropdownTrigger placement={menuPlacement}>
-      <DropdownButton
-        ref={triggerRef}
-        addonBefore={buttonAddonBefore}
-        style={buttonStyle}
-      >
+    <DropdownTrigger {...triggerProps}>
+      <DropdownButton ref={triggerRef} {...buttonProps}>
         {children}
       </DropdownButton>
       <DropdownMenu style={menuStyle}>{menu}</DropdownMenu>

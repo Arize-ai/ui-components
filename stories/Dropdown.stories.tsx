@@ -34,6 +34,7 @@ const Menu = () => (
     <ListItem>hello</ListItem>
   </List>
 );
+
 export const Gallery = () => (
   <Provider>
     <ul
@@ -48,7 +49,7 @@ export const Gallery = () => (
         <Dropdown menu={<Menu />}>Click Me</Dropdown>
       </li>
       <li>
-        <Dropdown menu={<Menu />} buttonAddonBefore="Dataset A">
+        <Dropdown menu={<Menu />} buttonProps={{ addonBefore: 'Dataset A' }}>
           Click Me
         </Dropdown>
       </li>
@@ -62,8 +63,7 @@ export const Gallery = () => (
               </ListItem>
             </List>
           }
-          buttonAddonBefore="Dataset A"
-          buttonStyle={{ maxWidth: 250 }}
+          buttonProps={{ addonBefore: 'Dataset A', style: { maxWidth: 250 } }}
         >
           Really really really really really really really long text
         </Dropdown>
