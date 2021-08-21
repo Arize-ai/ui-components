@@ -1,10 +1,8 @@
 import React from 'react';
 import { css } from '@emotion/core';
-import { Dropdown, DropdownProps } from '../src/dropdown';
-import { Provider } from '../src';
 import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
-import { List, ListItem } from '../src/list';
+import { Provider, List, ListItem, Dropdown, DropdownProps } from '../src';
 
 const meta: Meta = {
   title: 'Dropdown',

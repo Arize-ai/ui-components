@@ -12,7 +12,6 @@ import { useHover } from '@react-aria/interactions';
 import { BaseButtonProps } from './types';
 
 const buttonCSS = css`
-  color: ${theme.colors.text1};
   border: 1px solid ${theme.colors.dark1};
   font-size: ${theme.typography.sizes.medium};
   font-weight: 600;
@@ -22,8 +21,15 @@ const buttonCSS = css`
   align-items: center;
   box-sizing: content-box;
   border-radius: 4px;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
+  &:not([disabled]) {
+    color: ${theme.textColors.white90};
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  &[disabled] {
+    color: ${theme.textColors.white70};
+    cursor: not-allowed;
+  }
   &[data-size='normal'][data-childless='false'] {
     padding: ${theme.spacing.padding8}px ${theme.spacing.padding16}px;
   }
@@ -39,14 +45,14 @@ const buttonCSS = css`
   &[data-variant='primary'] {
     background-color: ${theme.colors.arizeBlue};
     border-color: ${theme.components.button.primaryBorderColor};
-    &:hover {
+    &:hover:not([disabled]) {
       background-color: ${theme.components.button.primaryHoverBackgroundColor};
     }
   }
   &[data-variant='default'] {
     background-color: ${theme.colors.gray500};
     border-color: ${theme.components.button.defaultBorderColor};
-    &:hover {
+    &:hover:not([disabled]) {
       background-color: ${theme.components.button.defaultHoverBackgroundColor};
     }
   }
@@ -64,6 +70,10 @@ export interface ButtonProps extends BaseButtonProps {
   onClick?: (e: SyntheticEvent<HTMLButtonElement>) => void;
   loading?: boolean;
   icon?: ReactNode;
+  /**
+   * The title of the button. Required if only showing an icon
+   */
+  title?: string;
   /**
    * The size of the button
    * @default 'normal'
@@ -106,7 +116,9 @@ const Button = (props: ButtonProps, ref: FocusableRef<HTMLButtonElement>) => {
     >
       {loading ? <Spinner /> : null}
       {!loading && icon ? icon : null}
-      <Text textSize="medium">{children}</Text>
+      <Text textSize="medium" color={isDisabled ? 'white70' : 'white90'}>
+        {children}
+      </Text>
     </button>
   );
 };

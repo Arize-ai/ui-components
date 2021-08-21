@@ -49,7 +49,21 @@ export const Gallery = () => {
           <Button variant="primary" icon={plusIcon}>
             Create Dashboard
           </Button>
-          <Button variant="primary" icon={plusIcon} />
+          <Button variant="primary" icon={plusIcon} title="add" />
+        </ButtonGroup>
+      </li>
+      <li>
+        <ButtonGroup>
+          <Button variant="primary" disabled>
+            Create Dashboard
+          </Button>
+          <Button variant="primary" icon={plusIcon} disabled>
+            Create Dashboard
+          </Button>
+          <Button variant="primary" icon={plusIcon} disabled>
+            Create Dashboard
+          </Button>
+          <Button variant="primary" icon={plusIcon} disabled title="add" />
         </ButtonGroup>
       </li>
       <li>
@@ -61,7 +75,7 @@ export const Gallery = () => {
           <Button variant="default" icon={plusIcon}>
             Create Dashboard
           </Button>
-          <Button variant="default" icon={plusIcon} />
+          <Button variant="default" icon={plusIcon} title="add" />
         </ButtonGroup>
       </li>
       <li>
@@ -75,7 +89,31 @@ export const Gallery = () => {
           <Button size="compact" variant="primary" icon={plusIcon}>
             Create Dashboard
           </Button>
-          <Button size="compact" variant="primary" icon={plusIcon} />
+          <Button
+            size="compact"
+            variant="primary"
+            icon={plusIcon}
+            title="add"
+          />
+        </ButtonGroup>
+      </li>
+      <li>
+        <ButtonGroup>
+          <Button size="compact" variant="default">
+            Create Dashboard
+          </Button>
+          <Button size="compact" variant="default" icon={plusIcon}>
+            Create Dashboard
+          </Button>
+          <Button size="compact" variant="default" icon={plusIcon}>
+            Create Dashboard
+          </Button>
+          <Button
+            size="compact"
+            variant="default"
+            icon={plusIcon}
+            title="add"
+          />
         </ButtonGroup>
       </li>
     </ul>
