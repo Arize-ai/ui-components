@@ -1,10 +1,4 @@
-import React, {
-  CSSProperties,
-  ReactNode,
-  useState,
-  useCallback,
-  useRef,
-} from 'react';
+import React, { ReactNode, useState, useCallback, useRef } from 'react';
 import { DropdownButton, DropdownButtonProps } from './DropdownButton';
 import { DropdownMenu } from './DropdownMenu';
 import { DropdownTrigger, DropdownTriggerProps } from './DropdownTrigger';
