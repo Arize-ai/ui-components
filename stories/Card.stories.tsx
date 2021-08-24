@@ -4,7 +4,7 @@ import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
 import { Card, CardProps, TabbedCard } from '../src/card';
 import { Tabs } from '../src/tabs';
-import Button from '../src/Button';
+import { Button } from '../src/button';
 import InfoTip from './components/InfoTip';
 
 const { TabPane } = Tabs;
@@ -115,7 +115,9 @@ const Template: Story<CardProps> = args => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 
-Default.args = {};
+Default.args = {
+  title: 'Title goes here',
+};
 
 export const WithExtra = Template.bind({});
 

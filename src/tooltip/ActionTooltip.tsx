@@ -1,7 +1,7 @@
 import React, { ReactNode, useContext, HTMLProps, CSSProperties } from 'react';
 import { useTooltip } from '@react-aria/tooltip';
 import { classNames } from '../utils';
-import { PlacementAxis } from '../types';
+import { PlacementAxis, DOMRef } from '../types';
 import { mergeProps } from '@react-aria/utils';
 import { TooltipContext } from './context';
 import { Text } from '../content';
@@ -28,7 +28,7 @@ interface ActionTooltipProps extends HTMLProps<HTMLDivElement> {
  * @param props
  * @returns
  */
-function ActionTooltip(props: ActionTooltipProps) {
+function ActionTooltip(props: ActionTooltipProps, _ref: DOMRef) {
   const {
     ref: overlayRef,
     arrowProps,

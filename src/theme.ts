@@ -16,7 +16,6 @@ const grayColors = {
   gray500: '#2D353E',
   gray400: '#39424D',
   gray200: '#646A70', // disabled text
-  // 2D3845
 };
 
 const arizeColors = {
@@ -70,6 +69,17 @@ const theme = {
     actionTooltip: {
       backgroundColor: '#2D3845',
       borderColor: '#6F7D8C',
+    },
+    dropdown: {
+      borderColor: 'rgba(118, 140, 163, .6)',
+      activeBorderColor: 'rgba(118, 140, 163, 1)',
+      activeBackgroundColor: '#313A44',
+    },
+    button: {
+      primaryBorderColor: '#5BAECC',
+      primaryHoverBackgroundColor: '#5BAECC',
+      defaultBorderColor: '#768CA3',
+      defaultHoverBackgroundColor: '#64768A',
     },
   },
   typography: {

@@ -1,5 +1,5 @@
 {
-  "version": "0.2.18",
+  "version": "0.2.20",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -51,11 +51,11 @@
   "size-limit": [
     {
       "path": "dist/components.cjs.production.min.js",
-      "limit": "50 KB"
+      "limit": "70 KB"
     },
     {
       "path": "dist/components.esm.js",
-      "limit": "50 KB"
+      "limit": "70 KB"
     }
   ],
   "devDependencies": {
