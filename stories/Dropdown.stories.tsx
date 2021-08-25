@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { css } from '@emotion/core';
 import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
-import { Provider, List, ListItem, Dropdown, DropdownProps } from '../src';
+import {
+  Provider,
+  List,
+  ListItem,
+  Dropdown,
+  DropdownProps,
+  Button,
+  Radio,
+  RadioGroup,
+} from '../src';
 
 const meta: Meta = {
   title: 'Dropdown',
@@ -81,3 +90,67 @@ const Template: Story<DropdownProps> = args => (
 );
 
 export const Default = Template.bind({});
+
+export const Controlled = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [value, setValue] = useState<string>('dogs');
+  const [unAppliedValue, setUnAppliedValue] = useState<string>('dogs');
+  return (
+    <Provider>
+      <Dropdown
+        triggerProps={{
+          isOpen: isOpen,
+          onOpenChange: open => setIsOpen(open),
+        }}
+        menu={
+          <div
+            css={css`
+              display: flex;
+              flex-direction: column;
+            `}
+          >
+            <div
+              css={css`
+                min-width: 300px;
+                padding: 8px;
+              `}
+            >
+              <RadioGroup defaultValue="dogs" onChange={setUnAppliedValue}>
+                <Radio value="dogs" label="Dogs" />
+                <Radio value="cats" label="Cats" />
+                <Radio value="lions" label="Lions" />
+                <Radio value="elephants" label="Elephants" />
+              </RadioGroup>
+            </div>
+            <div
+              css={css`
+                min-width: 300px;
+                border-top: 1px solid gray;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                .ac-button {
+                  flex: 1 1 auto;
+                  margin: 8px;
+                }
+              `}
+            >
+              <Button
+                variant="primary"
+                size="compact"
+                onClick={() => {
+                  setValue(unAppliedValue);
+                  setIsOpen(false);
+                }}
+              >
+                Apply
+              </Button>
+            </div>
+          </div>
+        }
+      >
+        {value}
+      </Dropdown>
+    </Provider>
+  );
+};
