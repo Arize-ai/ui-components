@@ -2,6 +2,8 @@
 
 Re-usable React components
 
+Find us at: https://www.npmjs.com/package/@arizeai/components
+
 > If you’re new to TypeScript and React, checkout [this handy cheatsheet](https://github.com/sw-yx/react-typescript-cheatsheet/)
 
 ## Install
