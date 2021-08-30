@@ -5,6 +5,10 @@ export const radioGroupLabelCSS = css`
   margin-bottom: ${theme.spacing.padding8}px;
 `;
 
+export const radioLabelCSS = css`
+  display: flex;
+`;
+
 export const radioGroupCSS = ({
   isDisabled = false,
 }: {
@@ -16,12 +20,14 @@ export const radioGroupCSS = ({
 export const radioCSS = ({
   isDisabled = false,
   noPadding = false,
+  isInline = false,
 }: {
   isDisabled?: boolean;
   noPadding?: boolean;
+  isInline?: boolean;
 }) => css`
   display: flex;
-  align-items: center;
+  flex-direction: ${isInline ? 'row' : 'column'};
   cursor: ${isDisabled ? 'not-allowed' : 'pointer'};
 
   &:not(:first-of-type) {
@@ -42,9 +48,13 @@ export const radioButtonIconCSS = ({
     `outline: ${theme.spacing.outline.thin}px solid -webkit-focus-ring-color;`}
 `;
 
-export const radioChildrenCSS = css`
+export const radioChildrenCSS = ({
+  isInline = false,
+}: {
+  isInline?: boolean;
+}) => css`
   display: flex;
   padding: 0;
-  margin-top: ${theme.spacing.padding4}px;
+  margin-top: ${isInline ? 0 : theme.spacing.padding4}px;
   flex-direction: column;
 `;

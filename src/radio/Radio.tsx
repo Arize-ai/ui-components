@@ -5,7 +5,12 @@ import { Icon } from '../icon';
 import { RadioButtonOff, RadioButtonOnFill } from './icons';
 import { VisuallyHidden } from '@react-aria/visually-hidden';
 import { useFocusRing } from '@react-aria/focus';
-import { radioCSS, radioButtonIconCSS, radioChildrenCSS } from './styles';
+import {
+  radioCSS,
+  radioButtonIconCSS,
+  radioChildrenCSS,
+  radioLabelCSS,
+} from './styles';
 import { useId } from '@react-aria/utils';
 import { Text } from '../content';
 
@@ -32,6 +37,7 @@ export type RadioProps = {
    */
   isDisabled?: boolean;
   noPadding?: boolean;
+  isInline?: boolean;
 };
 
 function Radio(props: RadioProps) {
@@ -43,6 +49,7 @@ function Radio(props: RadioProps) {
     label,
     onClick,
     isDisabled = state.isDisabled,
+    isInline,
   } = props;
 
   const inputRef = React.useRef(null);
@@ -77,18 +84,19 @@ function Radio(props: RadioProps) {
   };
 
   return (
-    <>
-      <label
-        aria-disabled={isDisabled}
-        css={radioCSS({
-          isDisabled,
-          noPadding,
-        })}
-        aria-label={value}
-        className="ac-radio"
-        {...focusProps}
-        onClick={handleOnChangeLabel}
-      >
+    <label
+      aria-disabled={isDisabled}
+      css={radioCSS({
+        isDisabled,
+        noPadding,
+        isInline,
+      })}
+      aria-label={value}
+      className="ac-radio"
+      {...focusProps}
+      onClick={handleOnChangeLabel}
+    >
+      <div css={radioLabelCSS}>
         <VisuallyHidden>
           <input
             aria-label={value}
@@ -110,9 +118,9 @@ function Radio(props: RadioProps) {
         <Text textSize="medium" color={isDisabled ? 'white30' : 'white90'}>
           {label}
         </Text>
-      </label>
+      </div>
       {children && (
-        <div css={radioChildrenCSS}>
+        <div css={radioChildrenCSS({ isInline })}>
           {React.Children.map(
             props.children,
             child =>
@@ -122,7 +130,7 @@ function Radio(props: RadioProps) {
           )}
         </div>
       )}
-    </>
+    </label>
   );
 }
 
