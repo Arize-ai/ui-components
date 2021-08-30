@@ -45,7 +45,7 @@ export const customRadioCSS = ({
   height: 50px;
   width: 100%;
   border-radius: 8px;
-  border: 1px solid
+  border: 2px solid
     ${isSelected ? theme.textColors.white90 : theme.colors.dividerColor};
   color: ${isDisabled ? theme.textColors.white30 : theme.textColors.white90};
   margin-right: ${theme.spacing.padding4}px;
