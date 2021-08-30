@@ -21,9 +21,9 @@ export type RadioProps = {
    */
   type?: 'default' | 'custom';
   /**
-   * For the "default" type, this is one or group of 
+   * For the "default" type, this is one or group of
    * components that will sit under the radio option
-   * 
+   *
    * In the "custom" type, this is the content of the radio itself
    */
   children?: ReactNode;
