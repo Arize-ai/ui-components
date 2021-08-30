@@ -30,6 +30,32 @@ const Template: Story<RadioGroupProps> = args => (
   </Card>
 );
 
+const CustomExample: Story<RadioGroupProps> = args => (
+  <Card title="Radio Info" style={{ width: 500 }}>
+    <RadioGroup type="custom" {...args}>
+      <Radio value="dogs" label="Dogs">
+        <Text>Dogs</Text>
+      </Radio>
+      <Radio value="cats" label="Cats">
+        <Text>Cats</Text>
+      </Radio>
+      <Radio value="parrot" label="Parrot">
+        <Text>Parrot</Text>
+      </Radio>
+      <Radio
+        isDisabled
+        value="frog"
+        label="Frog"
+        onClick={e => {
+          console.log('clicked radio option', e.currentTarget.value);
+        }}
+      >
+        <Text>Frog (isDisabled)</Text>
+      </Radio>
+    </RadioGroup>
+  </Card>
+);
+
 export const DefaultWithLabel = Template.bind({});
 
 export const DefaultNoLabel = Template.bind({});
@@ -37,6 +63,8 @@ export const DefaultNoLabel = Template.bind({});
 export const WithMoreChildren = Template.bind({});
 
 export const Disabled = Template.bind({});
+
+export const Custom = CustomExample.bind({});
 
 const SomeChildren = () => (
   <>
@@ -87,6 +115,10 @@ Disabled.args = {
 DefaultWithLabel.args = {
   defaultValue: 'dogs',
   label: 'Here are some animals',
+};
+
+Custom.args = {
+  defaultValue: 'dogs',
 };
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test

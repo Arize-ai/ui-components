@@ -35,6 +35,23 @@ export const radioCSS = ({
   }
 `;
 
+export const customRadioCSS = ({
+  isSelected = false,
+  isDisabled = false,
+}: {
+  isSelected?: boolean;
+  isDisabled?: boolean;
+}) => css`
+  height: 50px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid
+    ${isSelected ? theme.textColors.white90 : theme.colors.dividerColor};
+  color: ${isDisabled ? theme.textColors.white30 : theme.textColors.white90};
+  margin-right: ${theme.spacing.padding4}px;
+  padding: ${theme.spacing.padding16}px;
+`;
+
 export const radioButtonIconCSS = ({
   isFocusVisible = false,
   isDisabled = false,
