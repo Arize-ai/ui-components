@@ -21,7 +21,10 @@ export type RadioProps = {
    */
   type?: 'default' | 'custom';
   /**
-   * One or group of components that will sit under the radio option
+   * For the "default" type, this is one or group of 
+   * components that will sit under the radio option
+   * 
+   * In the "custom" type, this is the content of the radio itself
    */
   children?: ReactNode;
   /**
@@ -138,17 +141,21 @@ function Radio(props: RadioProps) {
             </Text>
           </>
         ) : (
-          <div
-            className="ac-custom-radio"
-            css={customRadioCSS({
-              isDisabled,
-              isSelected,
-            })}
-            aria-label={value}
-            aria-hidden={true}
-          >
-            {type === 'custom' && children && <>{radioChildren}</>}
-          </div>
+          <>
+            {children && (
+              <div
+                className="ac-custom-radio"
+                css={customRadioCSS({
+                  isDisabled,
+                  isSelected,
+                })}
+                aria-label={value}
+                aria-hidden={true}
+              >
+                {radioChildren}
+              </div>
+            )}
+          </>
         )}
       </div>
       {type === 'default' && children && (
