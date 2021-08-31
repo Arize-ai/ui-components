@@ -26,7 +26,34 @@ const DefaultChildren = (
 );
 const Template: Story<RadioGroupProps> = args => (
   <Card title="Radio Info" style={{ width: 300 }}>
-    <RadioGroup {...args}>{args.children || DefaultChildren}</RadioGroup>
+    <RadioGroup
+      {...args}
+      onChange={value => alert('clicked radio option ' + value)}
+    >
+      {args.children || DefaultChildren}
+    </RadioGroup>
+  </Card>
+);
+
+const SelectorExample: Story<RadioGroupProps> = args => (
+  <Card title="Radio Info" style={{ width: 500 }}>
+    <RadioGroup
+      {...args}
+      onChange={value => alert('clicked radio option ' + value)}
+    >
+      <Radio value="dogs" label="Dogs">
+        <Text>Dogs</Text>
+      </Radio>
+      <Radio value="cats" label="Cats">
+        <Text>Cats</Text>
+      </Radio>
+      <Radio value="parrot" label="Parrot">
+        <Text>Parrot</Text>
+      </Radio>
+      <Radio isDisabled value="frog" label="Frog">
+        <Text>Frog (isDisabled)</Text>
+      </Radio>
+    </RadioGroup>
   </Card>
 );
 
@@ -38,17 +65,13 @@ export const WithMoreChildren = Template.bind({});
 
 export const Disabled = Template.bind({});
 
+export const Selector = SelectorExample.bind({});
+
 const SomeChildren = () => (
   <>
     <Radio value="dogs" label="Dogs" />
     <Radio value="cats" label="Cats" />
-    <Radio
-      value="cow"
-      label="Cow"
-      onClick={e => {
-        console.log('clicked radio option', e.currentTarget.value);
-      }}
-    >
+    <Radio value="cow" label="Cow">
       <Text textSize="small" weight="heavy">
         Text Child of Radio Component
       </Text>
@@ -77,6 +100,11 @@ Disabled.args = {
 DefaultWithLabel.args = {
   defaultValue: 'dogs',
   label: 'Here are some animals',
+};
+
+Selector.args = {
+  defaultValue: 'dogs',
+  variant: 'selector',
 };
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test

@@ -5,13 +5,26 @@ import { Icon } from '../icon';
 import { RadioButtonOff, RadioButtonOnFill } from './icons';
 import { VisuallyHidden } from '@react-aria/visually-hidden';
 import { useFocusRing } from '@react-aria/focus';
-import { radioCSS, radioButtonIconCSS, radioChildrenCSS } from './styles';
+import {
+  radioCSS,
+  radioButtonIconCSS,
+  radioChildrenCSS,
+  defaultRadioCSS,
+  selectorRadioCSS,
+} from './styles';
 import { useId } from '@react-aria/utils';
 import { Text } from '../content';
 
 export type RadioProps = {
   /**
-   * One or group of components that will sit under the radio option
+   * @default default
+   */
+  variant?: 'default' | 'selector';
+  /**
+   * For the "default" variant, this is one or group of
+   * components that will sit under the radio option
+   *
+   * For the "selector" variant, this is the content of the radio itself
    */
   children?: ReactNode;
   /**
@@ -37,6 +50,7 @@ export type RadioProps = {
 function Radio(props: RadioProps) {
   const state = useRadioProvider();
   const {
+    variant = 'default',
     children,
     value,
     noPadding,
@@ -76,53 +90,75 @@ function Radio(props: RadioProps) {
     }
   };
 
+  const radioChildren = children
+    ? React.Children.map(
+        props.children,
+        child =>
+          child &&
+          // @ts-ignore
+          React.cloneElement(child, { isDisabled })
+      )
+    : null;
+
   return (
-    <>
-      <label
-        aria-disabled={isDisabled}
-        css={radioCSS({
-          isDisabled,
-          noPadding,
-        })}
-        aria-label={value}
-        className="ac-radio"
-        {...focusProps}
-        onClick={handleOnChangeLabel}
-      >
-        <VisuallyHidden>
-          <input
-            aria-label={value}
-            {...inputProps}
-            onChange={handleOnChange}
-            value={value}
-            ref={inputRef}
-          />
-        </VisuallyHidden>
-        <Icon
-          svg={currentRadioButton}
-          css={radioButtonIconCSS({
-            isDisabled,
-            isFocusVisible,
-          })}
+    <label
+      aria-disabled={isDisabled}
+      css={radioCSS({
+        isDisabled,
+        noPadding,
+      })}
+      aria-label={value}
+      className="ac-radio"
+      {...focusProps}
+      onClick={handleOnChangeLabel}
+    >
+      <VisuallyHidden>
+        <input
           aria-label={value}
-          aria-hidden={true}
+          {...inputProps}
+          onChange={handleOnChange}
+          value={value}
+          ref={inputRef}
         />
-        <Text textSize="medium" color={isDisabled ? 'white30' : 'white90'}>
-          {label}
-        </Text>
-      </label>
-      {children && (
-        <div css={radioChildrenCSS}>
-          {React.Children.map(
-            props.children,
-            child =>
-              child &&
-              // @ts-ignore
-              React.cloneElement(child, { isDisabled })
+      </VisuallyHidden>
+      {variant === 'default' ? (
+        <div css={defaultRadioCSS} className="ac-radio--variant-default">
+          <Icon
+            svg={currentRadioButton}
+            css={radioButtonIconCSS({
+              isDisabled,
+              isFocusVisible,
+            })}
+            aria-label={value}
+            aria-hidden={true}
+          />
+          <Text textSize="medium" color={isDisabled ? 'white30' : 'white90'}>
+            {label}
+          </Text>
+        </div>
+      ) : (
+        <>
+          {children && (
+            <div
+              className="ac-radio--variant-selector"
+              css={selectorRadioCSS({
+                isDisabled,
+                isSelected,
+              })}
+              aria-label={value}
+              aria-hidden={true}
+            >
+              {radioChildren}
+            </div>
           )}
+        </>
+      )}
+      {variant === 'default' && children && (
+        <div css={radioChildrenCSS} className="ac-radio--children">
+          {radioChildren}
         </div>
       )}
-    </>
+    </label>
   );
 }
 
