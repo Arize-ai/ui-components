@@ -48,6 +48,7 @@ export const selectorRadioCSS = ({
   margin-right: ${theme.spacing.padding4}px;
   padding: ${theme.spacing.padding16}px;
   ${!isDisabled &&
+    !isSelected &&
     `&:hover {
     border-color: ${theme.components.button.defaultHoverBackgroundColor};
     transition: border-color 0.2s ease-in-out;

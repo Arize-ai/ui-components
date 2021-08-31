@@ -112,49 +112,47 @@ function Radio(props: RadioProps) {
       {...focusProps}
       onClick={handleOnChangeLabel}
     >
-      <>
-        <VisuallyHidden>
-          <input
+      <VisuallyHidden>
+        <input
+          aria-label={value}
+          {...inputProps}
+          onChange={handleOnChange}
+          value={value}
+          ref={inputRef}
+        />
+      </VisuallyHidden>
+      {variant === 'default' ? (
+        <div css={defaultRadioCSS} className="ac-radio--variant-default">
+          <Icon
+            svg={currentRadioButton}
+            css={radioButtonIconCSS({
+              isDisabled,
+              isFocusVisible,
+            })}
             aria-label={value}
-            {...inputProps}
-            onChange={handleOnChange}
-            value={value}
-            ref={inputRef}
+            aria-hidden={true}
           />
-        </VisuallyHidden>
-        {variant === 'default' ? (
-          <div css={defaultRadioCSS} className="ac-radio--variant-default">
-            <Icon
-              svg={currentRadioButton}
-              css={radioButtonIconCSS({
+          <Text textSize="medium" color={isDisabled ? 'white30' : 'white90'}>
+            {label}
+          </Text>
+        </div>
+      ) : (
+        <>
+          {children && (
+            <div
+              className="ac-radio--variant-selector"
+              css={selectorRadioCSS({
                 isDisabled,
-                isFocusVisible,
+                isSelected,
               })}
               aria-label={value}
               aria-hidden={true}
-            />
-            <Text textSize="medium" color={isDisabled ? 'white30' : 'white90'}>
-              {label}
-            </Text>
-          </div>
-        ) : (
-          <>
-            {children && (
-              <div
-                className="ac-radio--variant-selector"
-                css={selectorRadioCSS({
-                  isDisabled,
-                  isSelected,
-                })}
-                aria-label={value}
-                aria-hidden={true}
-              >
-                {radioChildren}
-              </div>
-            )}
-          </>
-        )}
-      </>
+            >
+              {radioChildren}
+            </div>
+          )}
+        </>
+      )}
       {variant === 'default' && children && (
         <div css={radioChildrenCSS} className="ac-radio--children">
           {radioChildren}
