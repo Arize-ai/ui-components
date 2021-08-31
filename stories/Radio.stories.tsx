@@ -102,7 +102,7 @@ DefaultWithLabel.args = {
   label: 'Here are some animals',
 };
 
-Custom.args = {
+Selector.args = {
   defaultValue: 'dogs',
   variant: 'selector',
 };
