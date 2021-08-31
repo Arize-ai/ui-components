@@ -109,6 +109,7 @@ DefaultWithLabel.args = {
 
 Custom.args = {
   defaultValue: 'dogs',
+  variant: "selector"
 };
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
