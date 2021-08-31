@@ -45,6 +45,10 @@
     {
       "name": "Eunice Kokor",
       "email": "eunice@arize.com"
+    },
+    {
+      "name": "Manisha Sharma",
+      "email": "manisha@arize.com"
     }
   ],
   "module": "dist/components.esm.js",
