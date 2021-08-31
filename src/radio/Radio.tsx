@@ -9,22 +9,22 @@ import {
   radioCSS,
   radioButtonIconCSS,
   radioChildrenCSS,
-  radioLabelCSS,
-  customRadioCSS,
+  defaultRadioCSS,
+  selectorRadioCSS,
 } from './styles';
 import { useId } from '@react-aria/utils';
 import { Text } from '../content';
 
 export type RadioProps = {
   /**
-   * (Optional) For the custom style of radio buttons
+   * @default default
    */
-  type?: 'default' | 'custom';
+  variant?: 'default' | 'selector';
   /**
    * For the "default" type, this is one or group of
    * components that will sit under the radio option
    *
-   * In the "custom" type, this is the content of the radio itself
+   * In the "selector" type, this is the content of the radio itself
    */
   children?: ReactNode;
   /**
@@ -45,20 +45,18 @@ export type RadioProps = {
    */
   isDisabled?: boolean;
   noPadding?: boolean;
-  isInline?: boolean;
 };
 
 function Radio(props: RadioProps) {
   const state = useRadioProvider();
   const {
-    type = 'default',
+    variant = 'default',
     children,
     value,
     noPadding,
     label,
     onClick,
     isDisabled = state.isDisabled,
-    isInline,
   } = props;
 
   const inputRef = React.useRef(null);
@@ -108,14 +106,13 @@ function Radio(props: RadioProps) {
       css={radioCSS({
         isDisabled,
         noPadding,
-        isInline,
       })}
       aria-label={value}
       className="ac-radio"
       {...focusProps}
       onClick={handleOnChangeLabel}
     >
-      <div css={radioLabelCSS}>
+      <>
         <VisuallyHidden>
           <input
             aria-label={value}
@@ -125,8 +122,8 @@ function Radio(props: RadioProps) {
             ref={inputRef}
           />
         </VisuallyHidden>
-        {type === 'default' ? (
-          <>
+        {variant === 'default' ? (
+          <div css={defaultRadioCSS} className="ac-radio--variant-default">
             <Icon
               svg={currentRadioButton}
               css={radioButtonIconCSS({
@@ -139,13 +136,13 @@ function Radio(props: RadioProps) {
             <Text textSize="medium" color={isDisabled ? 'white30' : 'white90'}>
               {label}
             </Text>
-          </>
+          </div>
         ) : (
           <>
             {children && (
               <div
-                className="ac-custom-radio"
-                css={customRadioCSS({
+                className="ac-radio--variant-selector"
+                css={selectorRadioCSS({
                   isDisabled,
                   isSelected,
                 })}
@@ -157,9 +154,11 @@ function Radio(props: RadioProps) {
             )}
           </>
         )}
-      </div>
-      {type === 'default' && children && (
-        <div css={radioChildrenCSS({ isInline })}>{radioChildren}</div>
+      </>
+      {variant === 'default' && children && (
+        <div css={radioChildrenCSS} className="ac-radio--children">
+          {radioChildren}
+        </div>
       )}
     </label>
   );

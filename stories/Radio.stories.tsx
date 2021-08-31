@@ -32,7 +32,7 @@ const Template: Story<RadioGroupProps> = args => (
 
 const CustomExample: Story<RadioGroupProps> = args => (
   <Card title="Radio Info" style={{ width: 500 }}>
-    <RadioGroup type="custom" {...args}>
+    <RadioGroup variant="selector" {...args}>
       <Radio value="dogs" label="Dogs">
         <Text>Dogs</Text>
       </Radio>
@@ -83,16 +83,6 @@ const SomeChildren = () => (
       <ActionButton>Example Button</ActionButton>
     </Radio>
     <Radio value="parrot" label="Parrot" />
-    <Radio
-      value="frog"
-      label="Frog"
-      isInline
-      onClick={e => {
-        console.log('clicked radio option', e.currentTarget.value);
-      }}
-    >
-      <ActionButton>Example Inline Button</ActionButton>
-    </Radio>
   </>
 );
 

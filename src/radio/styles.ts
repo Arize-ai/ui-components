@@ -5,10 +5,6 @@ export const radioGroupLabelCSS = css`
   margin-bottom: ${theme.spacing.padding8}px;
 `;
 
-export const radioLabelCSS = css`
-  display: flex;
-`;
-
 export const radioGroupCSS = ({
   isDisabled = false,
 }: {
@@ -20,14 +16,12 @@ export const radioGroupCSS = ({
 export const radioCSS = ({
   isDisabled = false,
   noPadding = false,
-  isInline = false,
 }: {
   isDisabled?: boolean;
   noPadding?: boolean;
-  isInline?: boolean;
 }) => css`
   display: flex;
-  flex-direction: ${isInline ? 'row' : 'column'};
+  flex-direction: column;
   cursor: ${isDisabled ? 'not-allowed' : 'pointer'};
 
   &:not(:first-of-type) {
@@ -35,7 +29,11 @@ export const radioCSS = ({
   }
 `;
 
-export const customRadioCSS = ({
+export const defaultRadioCSS = css`
+  display: flex;
+`;
+
+export const selectorRadioCSS = ({
   isSelected = false,
   isDisabled = false,
 }: {
@@ -43,13 +41,17 @@ export const customRadioCSS = ({
   isDisabled?: boolean;
 }) => css`
   height: 50px;
-  width: 100%;
   border-radius: 8px;
   border: 2px solid
     ${isSelected ? theme.textColors.white90 : theme.colors.dividerColor};
   color: ${isDisabled ? theme.textColors.white30 : theme.textColors.white90};
   margin-right: ${theme.spacing.padding4}px;
   padding: ${theme.spacing.padding16}px;
+  ${!isDisabled &&
+    `&:hover {
+    border-color: ${theme.components.button.defaultHoverBackgroundColor};
+    transition: border-color 0.2s ease-in-out;
+  }`};
 `;
 
 export const radioButtonIconCSS = ({
@@ -65,13 +67,9 @@ export const radioButtonIconCSS = ({
     `outline: ${theme.spacing.outline.thin}px solid -webkit-focus-ring-color;`}
 `;
 
-export const radioChildrenCSS = ({
-  isInline = false,
-}: {
-  isInline?: boolean;
-}) => css`
+export const radioChildrenCSS = css`
   display: flex;
   padding: 0;
-  margin-top: ${isInline ? 0 : theme.spacing.padding4}px;
+  margin-top: ${theme.spacing.padding4}px;
   flex-direction: column;
 `;

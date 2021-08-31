@@ -8,9 +8,9 @@ import { RadioContext } from './context';
 
 export interface RadioGroupProps {
   /**
-   * (Optional) For the custom style of radio buttons
+   * @default 'default'
    */
-  type?: 'default' | 'custom';
+  variant?: 'default' | 'selector';
   children: ReactNode;
   /**
    * (Optional) For labelling the radio options
@@ -28,7 +28,7 @@ export interface RadioGroupProps {
 }
 
 function RadioGroup(props: RadioGroupProps) {
-  const { children, label, type } = props;
+  const { children, label, variant } = props;
   const labeledById = useId();
 
   const state = useRadioGroupState(props);
@@ -53,13 +53,12 @@ function RadioGroup(props: RadioGroupProps) {
       )}
       <RadioContext.Provider value={state}>
         {children &&
-          React.Children.map(
-            children,
-            child =>
-              child &&
-              // @ts-ignore
-              React.cloneElement(child, { type })
-          )}
+          React.Children.map(children, child => {
+            if (React.isValidElement(child)) {
+              return React.cloneElement(child, { variant });
+            }
+            return null;
+          })}
       </RadioContext.Provider>
     </div>
   );
