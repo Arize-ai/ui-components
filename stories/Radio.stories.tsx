@@ -65,7 +65,7 @@ export const WithMoreChildren = Template.bind({});
 
 export const Disabled = Template.bind({});
 
-export const Custom = SelectorExample.bind({});
+export const Selector = SelectorExample.bind({});
 
 const SomeChildren = () => (
   <>
