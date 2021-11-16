@@ -1,7 +1,7 @@
 import React, { CSSProperties, ReactNode, useState } from 'react';
 import { css } from '@emotion/core';
 import { Text } from '../content';
-import { CardAccordionButton } from './CardAccordionButton';
+import { CollapsibleCardTitle } from './CollapsibleCardTitle';
 import theme from '../theme';
 import { cardCSS, headerCSS, collapsibleCardCSS } from './styles';
 import { classNames } from '../utils';
@@ -57,13 +57,11 @@ export function Card({
   const id = useId();
   const contentId = `${id}-content`,
     headerId = `${id}-heading`;
-
   const defaultTitle = (
     <Text textSize="xlarge" elementType="h3" weight="heavy">
       {title}
     </Text>
   );
-
   const defaultTitleWithExtra =
     titleExtra != null ? (
       <div css={titleWithTitleExtraCSS}>
@@ -73,25 +71,32 @@ export function Card({
     ) : (
       defaultTitle
     );
+  const defaultSubTitle =
+    subTitle != null ? (
+      <Text textSize="medium" elementType="h4" color="white70">
+        {subTitle}
+      </Text>
+    ) : (
+      undefined
+    );
   const titleComponent = collapsible ? (
-    <CardAccordionButton
-      isOpen={isOpen}
-      setIsOpen={setIsOpen}
-      titleEl={defaultTitleWithExtra}
-      contentId={contentId}
-      headerId={headerId}
-      bordered={false}
-      className="ac-card-AccordionButton"
-      extra={
-        subTitle && (
-          <Text textSize="medium" elementType="h4" color="white70">
-            {subTitle}
-          </Text>
-        )
-      }
-    />
+    <div css={headerTitleWrapCSS}>
+      <CollapsibleCardTitle
+        isOpen={isOpen}
+        onOpen={() => setIsOpen(!isOpen)}
+        title={defaultTitleWithExtra}
+        contentId={contentId}
+        headerId={headerId}
+        bordered={false}
+        className="ac-card-collapsible-header"
+        subTitle={defaultSubTitle}
+      />
+    </div>
   ) : (
-    defaultTitleWithExtra
+    <div css={headerTitleWrapCSS}>
+      {defaultTitleWithExtra}
+      {defaultSubTitle}
+    </div>
   );
   return (
     <section
@@ -106,18 +111,16 @@ export function Card({
       })}
     >
       <header css={headerCSS({ bordered: true, height: cardHeaderHeight })}>
-        <div css={headerTitleWrapCSS}>
-          {titleComponent}
-          {subTitle && !collapsible && (
-            <Text textSize="medium" elementType="h4" color="white70">
-              {subTitle}
-            </Text>
-          )}
-        </div>
+        {titleComponent}
         {extra}
       </header>
       <div
-        css={bodyCSS}
+        css={css(
+          bodyCSS,
+          css`
+            ${!isOpen && `display: none;`}
+          `
+        )}
         style={bodyStyle}
         id={contentId}
         aria-labelledby={headerId}

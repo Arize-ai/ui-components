@@ -13,45 +13,43 @@ const titleWrapCSS = css`
     margin: 0;
   }
 `;
-interface CardAccordionButtonProps {
-  titleEl: ReactNode;
+interface CollapsibleCardTitleProps {
+  title: ReactNode;
   /**
    * A unique id for the content of the accordion. Necessary for ally
    */
   contentId: string;
   isOpen: boolean;
-  setIsOpen: (isOpen: boolean) => void;
+  onOpen: () => void;
   /**
    * A unique id for the header of the accordion. Necessary for ally
    */
   headerId: string;
   bordered?: boolean;
   className?: string;
-  extra: ReactNode;
+  subTitle: ReactNode;
 }
-export function CardAccordionButton(props: CardAccordionButtonProps) {
+export function CollapsibleCardTitle(props: CollapsibleCardTitleProps) {
   const {
-    setIsOpen,
+    onOpen,
     isOpen,
-    titleEl,
+    title,
     className,
     contentId,
     headerId,
-    extra,
+    subTitle,
   } = props;
   return (
     <button
       id={headerId}
       className={classNames(className)}
-      onClick={() => {
-        setIsOpen(!isOpen);
-      }}
+      onClick={onOpen}
       aria-controls={contentId}
       aria-expanded={isOpen}
     >
       <Icon
         svg={<ArrowDownFill />}
-        className="ac-card-AccordionButtonIndicator"
+        className="ac-card-collapsible__trigger"
         css={css`
           transition: transform ease var(--accordion-animation-duration);
           transform: rotate(180deg);
@@ -60,8 +58,8 @@ export function CardAccordionButton(props: CardAccordionButtonProps) {
         aria-hidden={true}
       />
       <div css={titleWrapCSS}>
-        {titleEl}
-        {extra}
+        {title}
+        {subTitle}
       </div>
     </button>
   );

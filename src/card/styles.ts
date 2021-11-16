@@ -38,7 +38,7 @@ export const collapsibleCardCSS = ({
   cardHeight: number;
 }) => css`
   ${cardCSS}
-  .ac-card-AccordionButton {
+  .ac-card-collapsible-header {
     padding: 0;
     cursor: pointer;
     display: block;
@@ -58,7 +58,7 @@ export const collapsibleCardCSS = ({
   }
 
   &.is-open {
-    .ac-card-AccordionButtonIndicator {
+    .ac-card-collapsible__trigger {
       transform: rotate(0deg);
     }
   }
