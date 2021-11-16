@@ -2,7 +2,17 @@ import React, { ReactNode } from 'react';
 import { css } from '@emotion/core';
 import { Icon, ArrowDownFill } from '../icon';
 import { classNames } from '../utils';
+import theme from '../theme';
 
+const titleWrapCSS = css`
+  display: flex;
+  flex-direction: column;
+  & > h3,
+  & > h4 {
+    padding: 0;
+    margin: 0;
+  }
+`;
 interface CardAccordionButtonProps {
   titleEl: ReactNode;
   /**
@@ -17,9 +27,18 @@ interface CardAccordionButtonProps {
   headerId: string;
   bordered?: boolean;
   className?: string;
+  extra: ReactNode;
 }
 export function CardAccordionButton(props: CardAccordionButtonProps) {
-  const { setIsOpen, isOpen, titleEl, className, contentId, headerId } = props;
+  const {
+    setIsOpen,
+    isOpen,
+    titleEl,
+    className,
+    contentId,
+    headerId,
+    extra,
+  } = props;
   return (
     <button
       id={headerId}
@@ -36,10 +55,14 @@ export function CardAccordionButton(props: CardAccordionButtonProps) {
         css={css`
           transition: transform ease var(--accordion-animation-duration);
           transform: rotate(180deg);
+          margin-right: ${theme.spacing.padding8}px;
         `}
         aria-hidden={true}
       />
-      {titleEl}
+      <div css={titleWrapCSS}>
+        {titleEl}
+        {extra}
+      </div>
     </button>
   );
 }

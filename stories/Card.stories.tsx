@@ -100,6 +100,15 @@ export const Gallery = () => (
       subTitle="Subtext area"
       style={cardStyle}
       extra={<Button variant="default">Create Dashboard</Button>}
+      collapsible
+    >
+      {''}
+    </Card>
+    <Card
+      title="Collapsible Title"
+      subTitle="Subtext area"
+      style={cardStyle}
+      extra={<Button variant="default">Create Dashboard</Button>}
       titleExtra={<InfoTip>Create Dashboard Info Bubble</InfoTip>}
       collapsible
     >

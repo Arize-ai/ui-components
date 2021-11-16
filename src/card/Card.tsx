@@ -57,23 +57,41 @@ export function Card({
   const id = useId();
   const contentId = `${id}-content`,
     headerId = `${id}-heading`;
-  const headerTitleEl = (
+
+  const defaultTitle = (
     <Text textSize="xlarge" elementType="h3" weight="heavy">
       {title}
     </Text>
   );
-  const titleEl = collapsible ? (
+
+  const defaultTitleWithExtra =
+    titleExtra != null ? (
+      <div css={titleWithTitleExtraCSS}>
+        {defaultTitle}
+        {titleExtra}
+      </div>
+    ) : (
+      defaultTitle
+    );
+  const titleComponent = collapsible ? (
     <CardAccordionButton
       isOpen={isOpen}
       setIsOpen={setIsOpen}
-      titleEl={headerTitleEl}
+      titleEl={defaultTitleWithExtra}
       contentId={contentId}
       headerId={headerId}
       bordered={false}
       className="ac-card-AccordionButton"
+      extra={
+        subTitle && (
+          <Text textSize="medium" elementType="h4" color="white70">
+            {subTitle}
+          </Text>
+        )
+      }
     />
   ) : (
-    headerTitleEl
+    defaultTitleWithExtra
   );
   return (
     <section
@@ -89,15 +107,8 @@ export function Card({
     >
       <header css={headerCSS({ bordered: true, height: cardHeaderHeight })}>
         <div css={headerTitleWrapCSS}>
-          {titleExtra != null ? (
-            <div css={titleWithTitleExtraCSS}>
-              {titleEl}
-              {titleExtra}
-            </div>
-          ) : (
-            titleEl
-          )}
-          {subTitle && (
+          {titleComponent}
+          {subTitle && !collapsible && (
             <Text textSize="medium" elementType="h4" color="white70">
               {subTitle}
             </Text>
