@@ -16,13 +16,13 @@ const titleWrapCSS = css`
 interface CollapsibleCardTitleProps {
   title: ReactNode;
   /**
-   * A unique id for the content of the accordion. Necessary for ally
+   * A unique id for the content of the collapsible card title. Necessary for ally
    */
   contentId: string;
   isOpen: boolean;
   onOpen: () => void;
   /**
-   * A unique id for the header of the accordion. Necessary for ally
+   * A unique id for the header of the collapsible card title. Necessary for ally
    */
   headerId: string;
   bordered?: boolean;
@@ -51,7 +51,7 @@ export function CollapsibleCardTitle(props: CollapsibleCardTitleProps) {
         svg={<ArrowDownFill />}
         className="ac-card-collapsible__trigger"
         css={css`
-          transition: transform ease var(--accordion-animation-duration);
+          transition: transform ease var(--collapsible-card-animation-duration);
           transform: rotate(180deg);
           margin-right: ${theme.spacing.padding8}px;
         `}

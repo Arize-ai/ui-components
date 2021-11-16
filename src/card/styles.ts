@@ -62,8 +62,10 @@ export const collapsibleCardCSS = ({
       transform: rotate(0deg);
     }
   }
-
+  /* required to override any passed in height values in a closed state */
   &:not(.is-open) {
     height: ${cardHeight}px !important;
   }
+
+  --collapsible-card-animation-duration: ${theme.animation.global.duration}ms;
 `;
