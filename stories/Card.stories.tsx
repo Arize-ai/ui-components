@@ -75,6 +75,36 @@ export const Gallery = () => (
     >
       {''}
     </Card>
+    <Card title="Collapsible Title" style={cardStyle} collapsible>
+      {''}
+    </Card>
+    <Card
+      title="Collapsible Title"
+      style={cardStyle}
+      extra={<Button variant="default">Create Dashboard</Button>}
+      collapsible
+    >
+      {''}
+    </Card>
+    <Card
+      title="Collapsible Title"
+      style={cardStyle}
+      extra={<Button variant="default">Create Dashboard</Button>}
+      titleExtra={<InfoTip>Create Dashboard Info Bubble</InfoTip>}
+      collapsible
+    >
+      {''}
+    </Card>
+    <Card
+      title="Collapsible Title"
+      subTitle="Subtext area"
+      style={cardStyle}
+      extra={<Button variant="default">Create Dashboard</Button>}
+      titleExtra={<InfoTip>Create Dashboard Info Bubble</InfoTip>}
+      collapsible
+    >
+      {''}
+    </Card>
     <TabbedCard title="Title" style={cardStyle}>
       <Tabs>
         <TabPane name="Tab 1">{null}</TabPane>

@@ -31,3 +31,39 @@ export const headerCSS = ({
   height: ${height}px;
   ${bordered ? headerBorderCSS : ''}
 `;
+
+export const collapsibleCardCSS = ({
+  cardHeight,
+}: {
+  cardHeight: number;
+}) => css`
+  ${cardCSS}
+  .ac-card-AccordionButton {
+    padding: 0;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    align-items: center;
+    appearance: none;
+    background-color: inherit;
+    border: 0;
+    text-align: start;
+    color: ${theme.colors.text1};
+    /* remove outline - TODO might need to give a visual cue that this area is in focus */
+    outline: none;
+  }
+
+  &.is-open {
+    .ac-card-AccordionButtonIndicator {
+      transform: rotate(0deg);
+    }
+  }
+
+  &:not(.is-open) {
+    height: ${cardHeight}px !important;
+  }
+`;
