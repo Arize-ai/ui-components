@@ -38,6 +38,8 @@ export type CardProps = {
   titleExtra?: ReactNode;
   collapsible?: boolean;
   defaultOpen?: boolean;
+  onToggle?: (open: boolean) => void;
+  id?: string;
 };
 
 export function Card({
@@ -51,11 +53,12 @@ export function Card({
   titleExtra,
   collapsible,
   defaultOpen = true,
+  id,
 }: CardProps) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
-  const id = useId();
-  const contentId = `${id}-content`,
-    headerId = `${id}-heading`;
+  const idPrefix = useId(id);
+  const contentId = `${idPrefix}-content`,
+    headerId = `${idPrefix}-heading`;
   const defaultTitle = (
     <Text textSize="xlarge" elementType="h3" weight="heavy">
       {title}
@@ -105,7 +108,7 @@ export function Card({
         'is-open': isOpen,
       })}
     >
-      <header css={headerCSS({ bordered: true })}>
+      <header css={headerCSS({ bordered: true })} id={headerId}>
         {titleComponent}
         {extra}
       </header>
