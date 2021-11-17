@@ -75,6 +75,28 @@ export const Gallery = () => (
     >
       {''}
     </Card>
+    <TabbedCard title="Title" style={cardStyle}>
+      <Tabs>
+        <TabPane name="Tab 1">{null}</TabPane>
+        <TabPane name="Tab 2">{null}</TabPane>
+      </Tabs>
+    </TabbedCard>
+    <TabbedCard
+      title="Title"
+      extra={<Button variant="default">Create Dashboard</Button>}
+      style={cardStyle}
+    >
+      <Tabs>
+        <TabPane name="Tab 1">{null}</TabPane>
+        <TabPane name="Tab 2">{null}</TabPane>
+      </Tabs>
+    </TabbedCard>
+    <TabbedCard style={cardStyle}>
+      <Tabs>
+        <TabPane name="Tab 1">{null}</TabPane>
+        <TabPane name="Tab 2">{null}</TabPane>
+      </Tabs>
+    </TabbedCard>
     <Card title="Collapsible Title" style={cardStyle} collapsible>
       {''}
     </Card>
@@ -114,28 +136,6 @@ export const Gallery = () => (
     >
       {''}
     </Card>
-    <TabbedCard title="Title" style={cardStyle}>
-      <Tabs>
-        <TabPane name="Tab 1">{null}</TabPane>
-        <TabPane name="Tab 2">{null}</TabPane>
-      </Tabs>
-    </TabbedCard>
-    <TabbedCard
-      title="Title"
-      extra={<Button variant="default">Create Dashboard</Button>}
-      style={cardStyle}
-    >
-      <Tabs>
-        <TabPane name="Tab 1">{null}</TabPane>
-        <TabPane name="Tab 2">{null}</TabPane>
-      </Tabs>
-    </TabbedCard>
-    <TabbedCard style={cardStyle}>
-      <Tabs>
-        <TabPane name="Tab 1">{null}</TabPane>
-        <TabPane name="Tab 2">{null}</TabPane>
-      </Tabs>
-    </TabbedCard>
   </div>
 );
 
