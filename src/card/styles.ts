@@ -1,5 +1,6 @@
 import { css } from '@emotion/core';
 import theme from '../theme';
+const cardHeaderHeight = 68;
 
 export const cardCSS = css`
   display: flex;
@@ -17,7 +18,7 @@ const headerBorderCSS = css`
 
 export const headerCSS = ({
   bordered,
-  height = 68,
+  height = cardHeaderHeight,
 }: {
   bordered: boolean;
   height?: number;
@@ -32,11 +33,7 @@ export const headerCSS = ({
   ${bordered ? headerBorderCSS : ''}
 `;
 
-export const collapsibleCardCSS = ({
-  cardHeight,
-}: {
-  cardHeight: number;
-}) => css`
+export const collapsibleCardCSS = css`
   ${cardCSS}
   .ac-card-collapsible-header {
     padding: 0;
@@ -62,9 +59,9 @@ export const collapsibleCardCSS = ({
       transform: rotate(0deg);
     }
   }
-  /* required to override any passed in height values in a closed state */
+  /* shrink the height to the card title so the body is hidden*/
   &:not(.is-open) {
-    height: ${cardHeight}px !important;
+    height: ${cardHeaderHeight}px !important;
   }
 
   --collapsible-card-animation-duration: ${theme.animation.global.duration}ms;

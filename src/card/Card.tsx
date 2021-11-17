@@ -7,7 +7,6 @@ import { cardCSS, headerCSS, collapsibleCardCSS } from './styles';
 import { classNames } from '../utils';
 import { useId } from '@react-aria/utils';
 
-const cardHeaderHeight = 68;
 const headerTitleWrapCSS = css`
   display: flex;
   flex-direction: column;
@@ -62,7 +61,7 @@ export function Card({
       {title}
     </Text>
   );
-  const defaultTitleWithExtra =
+  const titleEl =
     titleExtra != null ? (
       <div css={titleWithTitleExtraCSS}>
         {defaultTitle}
@@ -71,7 +70,7 @@ export function Card({
     ) : (
       defaultTitle
     );
-  const defaultSubTitle =
+  const subTitleEl =
     subTitle != null ? (
       <Text textSize="medium" elementType="h4" color="white70">
         {subTitle}
@@ -84,33 +83,29 @@ export function Card({
       <CollapsibleCardTitle
         isOpen={isOpen}
         onOpen={() => setIsOpen(!isOpen)}
-        title={defaultTitleWithExtra}
+        title={titleEl}
         contentId={contentId}
         headerId={headerId}
         bordered={false}
         className="ac-card-collapsible-header"
-        subTitle={defaultSubTitle}
+        subTitle={subTitleEl}
       />
     </div>
   ) : (
     <div css={headerTitleWrapCSS}>
-      {defaultTitleWithExtra}
-      {defaultSubTitle}
+      {titleEl}
+      {subTitleEl}
     </div>
   );
   return (
     <section
-      css={
-        collapsible
-          ? collapsibleCardCSS({ cardHeight: cardHeaderHeight })
-          : cardCSS
-      }
+      css={collapsible ? collapsibleCardCSS : cardCSS}
       style={style}
       className={classNames('ac-card', className, {
         'is-open': isOpen,
       })}
     >
-      <header css={headerCSS({ bordered: true, height: cardHeaderHeight })}>
+      <header css={headerCSS({ bordered: true })}>
         {titleComponent}
         {extra}
       </header>
