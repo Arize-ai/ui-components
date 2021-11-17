@@ -56,9 +56,9 @@ export function Card({
   id,
 }: CardProps) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
-  const generatedId = useId();
-  const contentId = `${id ?? generatedId}-content`,
-    headerId = `${id ?? generatedId}-heading`;
+  const idPrefix = useId(id);
+  const contentId = `${idPrefix}-content`,
+    headerId = `${idPrefix}-heading`;
   const defaultTitle = (
     <Text textSize="xlarge" elementType="h3" weight="heavy">
       {title}
