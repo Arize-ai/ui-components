@@ -22,11 +22,13 @@ const arizeColors = {
   arizePink: '#CA2A76',
   arizeGreen: '#48BB95',
   arizeBlue: '#227C9D',
+  arizeLightBlue: '#72D9FF',
 };
 
 const textColors = {
   white90: `rgba(255, 255, 255, 0.9)`,
   white70: `rgba(255, 255, 255, 0.7)`,
+  white50: `rgba(255, 255, 255, 0.5)`,
   white30: `rgba(255, 255, 255, 0.3)`,
   inherit: 'inherit',
 };
@@ -54,7 +56,7 @@ const theme = {
     statusWarning: '#E69958',
     statusDanger: '#F85149',
     dividerColor: '#32383f',
-    hoverBgColor: '#23292F',
+    hoverBgColor: 'rgba(255,255,255, 0.1)',
   },
   textColors,
   labelColors,
