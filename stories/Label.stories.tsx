@@ -15,12 +15,6 @@ const meta: Meta = {
   component: Label,
   decorators: [withDesign],
   argTypes: {
-    isOpen: {
-      control: {
-        type: 'radio',
-        default: false,
-      },
-    },
     children: {
       control: {
         type: 'text',
