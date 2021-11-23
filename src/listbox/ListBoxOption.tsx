@@ -47,14 +47,7 @@ export function ListBoxOption<T>(props: OptionProps<T>) {
   let state = useContext(ListBoxContext);
 
   let ref = useRef<HTMLDivElement>();
-  let {
-    optionProps,
-    labelProps,
-    descriptionProps,
-    isSelected,
-    isDisabled,
-    isFocused,
-  } = useOption(
+  let { optionProps, isSelected, isDisabled, isFocused } = useOption(
     {
       'aria-label': item['aria-label'],
       key,

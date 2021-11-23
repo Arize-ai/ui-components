@@ -50,7 +50,7 @@ interface ListBoxBaseProps<T>
 /** @private */
 export function useListBoxLayout<T>(state: ListState<T>) {
   let collator = useCollator({ usage: 'search', sensitivity: 'base' });
-  let layout = useMemo(
+  let layout = useMemo<ListLayout<T>>(
     () =>
       new ListLayout<T>({
         estimatedRowHeight: 32,
