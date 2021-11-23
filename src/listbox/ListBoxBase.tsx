@@ -195,6 +195,7 @@ function ListBoxBase<T>(
               </div>
             );
           }
+          return null;
         }}
       </Virtualizer>
     </ListBoxContext.Provider>
