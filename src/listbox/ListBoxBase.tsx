@@ -162,8 +162,8 @@ function ListBoxBase<T>(
           } else if (type === 'loader') {
             return (
               // aria-selected isn't needed here since this option is not selectable.
-              // eslint-disable-next-line jsx-a11y/role-has-required-aria-props
               <div
+                // eslint-disable-next-line jsx-a11y/role-has-required-aria-props
                 role="option"
                 style={{
                   display: 'flex',
