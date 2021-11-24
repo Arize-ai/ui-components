@@ -29,9 +29,4 @@ export interface MultipleSelection {
   disabledKeys?: Iterable<Key>;
 }
 
-export interface SpectrumSelectionProps {
-  /** How selection should be displayed. */
-  selectionStyle?: 'checkbox' | 'highlight';
-}
-
 export type FocusStrategy = 'first' | 'last';
