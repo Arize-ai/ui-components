@@ -29,6 +29,9 @@ const menuItemCSS = css`
   &.focus-ring {
     background-color: ${theme.colors.hoverBgColor};
   }
+  &.is-selectable {
+    cursor: pointer;
+  }
   /* show focus in other ways */
   outline: none;
 `;
