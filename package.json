@@ -1,5 +1,5 @@
 {
-  "version": "0.2.24",
+  "version": "0.2.26",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -55,11 +55,11 @@
   "size-limit": [
     {
       "path": "dist/components.cjs.production.min.js",
-      "limit": "70 KB"
+      "limit": "100 KB"
     },
     {
       "path": "dist/components.esm.js",
-      "limit": "70 KB"
+      "limit": "100 KB"
     }
   ],
   "devDependencies": {
@@ -102,16 +102,24 @@
     "@react-aria/dialog": "^3.1.2",
     "@react-aria/focus": "^3.2.3",
     "@react-aria/interactions": "^3.3.3",
+    "@react-aria/listbox": "^3.3.1",
     "@react-aria/overlays": "^3.6.1",
     "@react-aria/radio": "^3.1.3",
+    "@react-aria/select": "^3.5.0",
+    "@react-aria/separator": "^3.1.3",
     "@react-aria/tooltip": "^3.1.1",
     "@react-aria/utils": "^3.6.0",
+    "@react-aria/virtualizer": "^3.3.4",
     "@react-aria/visually-hidden": "^3.2.1",
-    "@react-spectrum/utils": "^3.5.1",
+    "@react-stately/collections": "^3.3.4",
+    "@react-stately/layout": "^3.4.2",
+    "@react-stately/list": "^3.3.0",
     "@react-stately/overlays": "^3.1.1",
     "@react-stately/radio": "^3.3.0",
+    "@react-stately/select": "^3.1.3",
     "@react-stately/tooltip": "^3.0.3",
     "@react-stately/utils": "^3.2.0",
+    "@react-stately/virtualizer": "^3.1.5",
     "@react-types/shared": "^3.5.0",
     "clsx": "^1.1.1",
     "react-transition-group": "^4.4.1"

@@ -52,6 +52,10 @@ export interface TextProps extends HTMLProps<HTMLSpanElement> {
    * The disabled state of the text
    */
   isDisabled?: boolean;
+  /**
+   * Additional class names to add
+   */
+  className?: string;
 }
 
 const textCSS = (color: Color) => css`

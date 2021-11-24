@@ -9,6 +9,7 @@ import { useFocusableRef } from '../utils/useDOMRef';
 import theme from '../theme';
 import { Text } from '../content';
 import { Icon, ArrowIosDownwardOutline } from '../icon';
+import { AddonableProps } from '../types';
 
 const addonBeforeCSS = css`
   background-color: ${theme.colors.gray400};
@@ -28,17 +29,12 @@ function AddonBefore({ children }: { children: ReactNode }) {
     </div>
   );
 }
-export interface DropdownButtonProps {
+export interface DropdownButtonProps extends AddonableProps {
   /** Whether the button is disabled. */
   isDisabled?: boolean;
   /** The content to display in the button. */
   children?: ReactNode;
   style?: CSSProperties;
-  /**
-   * A label that can be appended to the beginning of the button
-   * (e.x. dataset, formula, etc.). Useful when there is no form label
-   */
-  addonBefore?: ReactNode;
 }
 
 /**
@@ -68,10 +64,12 @@ function DropdownButton(
       style={style}
       css={css`
         background-color: ${theme.colors.gray500};
+        min-width: 200px;
         border: none;
         border-radius: 4px;
         color: ${theme.textColors.white90};
         display: flex;
+        justify-content: center;
         align-items: center;
         padding: 0;
         overflow: hidden;
@@ -88,15 +86,16 @@ function DropdownButton(
         }
         .ac-dropdown-button__text {
           flex: 1 1 auto;
-          margin: ${theme.spacing.margin8}px 4px ${theme.spacing.margin8}px
-            ${theme.spacing.margin8}px;
+          text-align: left;
+          margin: ${theme.spacing.margin8}px ${theme.spacing.margin8}px
+            ${theme.spacing.margin8}px ${theme.spacing.margin16}px;
           display: inline-block;
           text-overflow: ellipsis;
           white-space: nowrap;
           overflow: hidden;
         }
         .ac-icon-wrap {
-          margin-right: ${theme.spacing.margin8}px;
+          margin-right: 10px;
           flex: fixed;
           width: 16px;
           height: 16px;
