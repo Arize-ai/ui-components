@@ -19,7 +19,7 @@ type IconOptions = {
    */
   filled?: boolean;
 };
-export function useSeverityIcon(
+export function getSeverityIcon(
   severity: SeverityLevel,
   { filled }: IconOptions = { filled: true }
 ) {

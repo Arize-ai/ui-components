@@ -3,7 +3,7 @@ import { css } from '@emotion/core';
 import { NoticeConfig } from './types';
 import { Text } from '../content';
 import { useSeverityStyle } from '../alert/useSeverityStyle';
-import { useSeverityIcon } from '../alert/useSeverityIcon';
+import { getSeverityIcon } from '../alert/getSeverityIcon';
 import { Icon, CloseOutline } from '../icon';
 import theme from '../theme';
 import { DEFAULT_EXPIRE_MS } from './constants';
@@ -38,6 +38,7 @@ export function Notice({
       return () => clearTimeout(timer);
     }
     return () => {}; // Void function
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Get the styles for the specific variant
@@ -64,7 +65,7 @@ export function Notice({
           }
         `}
       >
-        {useSeverityIcon(variant)}
+        {getSeverityIcon(variant)}
 
         <Text elementType="h5" textSize="large" weight="heavy" color="inherit">
           {title}

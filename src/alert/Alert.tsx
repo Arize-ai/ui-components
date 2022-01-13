@@ -5,7 +5,7 @@ import { classNames } from '../utils';
 import { Text } from '../content';
 import { Icon, CloseOutline } from '../icon';
 import { useSeverityStyle } from './useSeverityStyle';
-import { useSeverityIcon } from './useSeverityIcon';
+import { getSeverityIcon } from './getSeverityIcon';
 import { SeverityLevel } from '../types';
 export interface AlertProps {
   variant: SeverityLevel;
@@ -57,7 +57,7 @@ export const Alert = ({
   let variantStyle = useSeverityStyle(variant);
 
   if (!icon && showIcon) {
-    icon = useSeverityIcon(variant);
+    icon = getSeverityIcon(variant);
   }
   return (
     <div
