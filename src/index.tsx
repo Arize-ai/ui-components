@@ -14,6 +14,7 @@ export * from './alert';
 export * from './dropdown';
 export * from './listbox';
 export * from './picker';
+export * from './notification';
 
 // export interface Props extends HTMLAttributes<HTMLDivElement> {
 //   /** custom content, defaults to 'the snozzberries taste like snozzberries' */

@@ -94,6 +94,7 @@ function Text(props: TextProps, ref: DOMRef<HTMLHeadingElement>) {
 
   return (
     <TextTag
+      className="ac-text"
       {...otherProps}
       css={css`
         ${textCSS(color)};
