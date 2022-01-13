@@ -1,20 +1,14 @@
 import React, { ReactNode, SyntheticEvent } from 'react';
 import { css } from '@emotion/core';
-import { transparentize } from 'polished';
 import theme from '../theme';
 import { classNames } from '../utils';
 import { Text } from '../content';
-import {
-  Icon,
-  InfoOutline,
-  AlertTriangleOutline,
-  AlertCircleOutline,
-  CheckmarkCircleOutline,
-  CloseOutline,
-} from '../icon';
-
+import { Icon, CloseOutline } from '../icon';
+import { useSeverityStyle } from './useSeverityStyle';
+import { useSeverityIcon } from './useSeverityIcon';
+import { SeverityLevel } from '../types';
 export interface AlertProps {
-  variant: 'warning' | 'info' | 'danger' | 'success';
+  variant: SeverityLevel;
   children?: ReactNode;
   /**
    * Title of the alert. Optional
@@ -49,30 +43,6 @@ export interface AlertProps {
   extra?: ReactNode;
 }
 
-const warningCSS = css`
-  border: 1px solid ${theme.colors.statusWarning};
-  background-color: ${transparentize(0.85, theme.colors.statusWarning)};
-  color: ${theme.colors.statusWarning};
-`;
-
-const infoCSS = css`
-  border: 1px solid ${theme.colors.statusInfo};
-  background-color: ${transparentize(0.85, theme.colors.statusInfo)};
-  color: ${theme.colors.statusInfo};
-`;
-
-const dangerCSS = css`
-  border: 1px solid ${theme.colors.statusDanger};
-  background-color: ${transparentize(0.85, theme.colors.statusDanger)};
-  color: ${theme.colors.statusDanger};
-`;
-
-const successCSS = css`
-  border: 1px solid ${theme.colors.statusSuccess};
-  background-color: ${transparentize(0.85, theme.colors.statusSuccess)};
-  color: ${theme.colors.statusSuccess};
-`;
-
 export const Alert = ({
   variant,
   title,
@@ -84,37 +54,10 @@ export const Alert = ({
   banner = false,
   extra,
 }: AlertProps) => {
-  let variantStyle;
-  switch (variant) {
-    case 'warning':
-      variantStyle = warningCSS;
-      break;
-    case 'info':
-      variantStyle = infoCSS;
-      break;
-    case 'danger':
-      variantStyle = dangerCSS;
-      break;
-    case 'success':
-      variantStyle = successCSS;
-      break;
-  }
+  let variantStyle = useSeverityStyle(variant);
 
   if (!icon && showIcon) {
-    switch (variant) {
-      case 'warning':
-        icon = <Icon svg={<AlertTriangleOutline />} />;
-        break;
-      case 'info':
-        icon = <Icon svg={<InfoOutline />} />;
-        break;
-      case 'danger':
-        icon = <Icon svg={<AlertCircleOutline />} />;
-        break;
-      case 'success':
-        icon = <Icon svg={<CheckmarkCircleOutline />} />;
-        break;
-    }
+    icon = useSeverityIcon(variant);
   }
   return (
     <div

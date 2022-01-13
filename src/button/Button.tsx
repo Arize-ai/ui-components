@@ -1,6 +1,4 @@
 import React, { ReactNode, SyntheticEvent } from 'react';
-import { css } from '@emotion/core';
-import theme from '../theme';
 import Spinner from '../Spinner';
 import { Text } from '../content';
 import { FocusableRef } from '../types';
@@ -10,57 +8,7 @@ import { mergeProps } from '@react-aria/utils';
 import { useButton } from '@react-aria/button';
 import { useHover } from '@react-aria/interactions';
 import { BaseButtonProps } from './types';
-
-const buttonCSS = css`
-  border: 1px solid ${theme.colors.dark1};
-  font-size: ${theme.typography.sizes.medium};
-  font-weight: 600;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: content-box;
-  border-radius: 4px;
-  &:not([disabled]) {
-    color: ${theme.textColors.white90};
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-  }
-  &[disabled] {
-    color: ${theme.textColors.white70};
-    cursor: not-allowed;
-  }
-  &[data-size='normal'][data-childless='false'] {
-    padding: ${theme.spacing.padding8}px ${theme.spacing.padding16}px;
-  }
-  &[data-size='compact'][data-childless='false'] {
-    padding: ${theme.spacing.padding4}px ${theme.spacing.padding8}px;
-  }
-  &[data-size='normal'][data-childless='true'] {
-    padding: ${theme.spacing.padding8}px ${theme.spacing.padding8}px;
-  }
-  &[data-size='compact'][data-childless='true'] {
-    padding: ${theme.spacing.padding4}px ${theme.spacing.padding4}px;
-  }
-  &[data-variant='primary'] {
-    background-color: ${theme.colors.arizeBlue};
-    border-color: ${theme.components.button.primaryBorderColor};
-    &:hover:not([disabled]) {
-      background-color: ${theme.components.button.primaryHoverBackgroundColor};
-    }
-  }
-  &[data-variant='default'] {
-    background-color: ${theme.colors.gray500};
-    border-color: ${theme.components.button.defaultBorderColor};
-    &:hover:not([disabled]) {
-      background-color: ${theme.components.button.defaultHoverBackgroundColor};
-    }
-  }
-  &[data-childless='false'] > i,
-  & > .ac-spinner {
-    margin-right: ${theme.spacing.margin4}px;
-  }
-`;
+import { buttonCSS } from './styles';
 
 export interface ButtonProps extends BaseButtonProps {
   children?: ReactNode | string;
