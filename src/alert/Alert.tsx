@@ -53,7 +53,6 @@ export const Alert = ({
   onDismissClick,
   banner = false,
   extra,
-  ...otherProps
 }: AlertProps) => {
   let variantStyle = useSeverityStyle(variant);
 
@@ -62,7 +61,6 @@ export const Alert = ({
   }
   return (
     <div
-      {...otherProps}
       css={css`
         padding: ${theme.spacing.margin8}px ${theme.spacing.margin16}px;
         border-radius: 4px;
