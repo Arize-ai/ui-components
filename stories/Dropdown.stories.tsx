@@ -174,6 +174,7 @@ export const DropdownWithListBox = () => {
             selectionMode="multiple"
             selectedKeys={selectedKeys}
             onSelectionChange={selected =>
+              // @ts-ignore we know the keys are strings
               setSelectedKeys(Array.from(selected))
             }
           >
