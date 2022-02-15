@@ -187,7 +187,9 @@ export const DropdownWithListBox = () => {
           </ListBox>
         }
       >
-        {selectedKeys.join(', ')}
+        {selectedKeys.length < 2
+          ? selectedKeys.join(', ')
+          : `${selectedKeys.length} selected`}
       </Dropdown>
     </Provider>
   );
