@@ -82,3 +82,22 @@ const ListBoxWithSections: Story<ListBoxProps<string>> = args => {
 };
 
 export const listBoxWithSections = ListBoxWithSections.bind({});
+
+const ListBoxMultiSelect: Story<ListBoxProps<string>> = args => {
+  return (
+    <ListBox
+      style={{ width: 200 }}
+      aria-label="Pick your favorite"
+      selectionMode="multiple"
+    >
+      <Item key="Aardvark">Aardvark</Item>
+      <Item key="Kangaroo">Kangaroo</Item>
+      <Item key="Snake">Snake</Item>
+      <Item key="Danni">Danni</Item>
+      <Item key="Devon">Devon</Item>
+      <Item key="Ross">Ross</Item>
+    </ListBox>
+  );
+};
+
+export const listBoxMultiSelect = ListBoxMultiSelect.bind({});

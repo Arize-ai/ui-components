@@ -11,6 +11,8 @@ import {
   Button,
   Radio,
   RadioGroup,
+  ListBox,
+  Item,
 } from '../src';
 
 const meta: Meta = {
@@ -150,6 +152,44 @@ export const Controlled = () => {
         }
       >
         {value}
+      </Dropdown>
+    </Provider>
+  );
+};
+
+export const DropdownWithListBox = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [selectedKeys, setSelectedKeys] = useState(['dogs']);
+  return (
+    <Provider>
+      <Dropdown
+        triggerProps={{
+          isOpen: isOpen,
+          onOpenChange: open => setIsOpen(open),
+        }}
+        menu={
+          <ListBox
+            style={{ width: 200 }}
+            aria-label="Pick your favorite"
+            selectionMode="multiple"
+            selectedKeys={selectedKeys}
+            onSelectionChange={selected =>
+              // @ts-ignore we know the keys are strings
+              setSelectedKeys(Array.from(selected))
+            }
+          >
+            <Item key="Aardvark">Aardvark</Item>
+            <Item key="Kangaroo">Kangaroo</Item>
+            <Item key="Snake">Snake</Item>
+            <Item key="Danni">Danni</Item>
+            <Item key="Devon">Devon</Item>
+            <Item key="Ross">Ross</Item>
+          </ListBox>
+        }
+      >
+        {selectedKeys.length < 2
+          ? selectedKeys.join(', ')
+          : `${selectedKeys.length} selected`}
       </Dropdown>
     </Provider>
   );
