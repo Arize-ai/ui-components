@@ -63,6 +63,7 @@ export class Notification extends Component<
     return (
       <Overlay isOpen>
         <div
+          className="ac-notification-container"
           css={css`
             position: fixed;
             bottom: ${theme.spacing.margin24}px;
