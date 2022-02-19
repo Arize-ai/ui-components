@@ -1,3 +1,4 @@
+import { lighten } from 'polished';
 const baseColors = {
   dark1: '#0B1015', // body bg
   dark2: '#17202A', // nav bg
@@ -25,6 +26,12 @@ const arizeColors = {
   arizeLightBlue: '#72D9FF',
 };
 
+const borderColors = {
+  grayBorder: '#2e363e',
+  lightGrayBorder: '#768CA3',
+  lightGrayHoverBorder: lighten(0.2, '#768CA3'),
+};
+
 const textColors = {
   white90: `rgba(255, 255, 255, 0.9)`,
   white70: `rgba(255, 255, 255, 0.7)`,
@@ -48,9 +55,9 @@ const theme = {
     ...baseColors,
     ...arizeColors,
     ...grayColors,
+    ...borderColors,
     primary: '#db247c', // pink
     secondary: '#db247c', // blue
-    grayBorder: '#2e363e',
     statusInfo: '#72D9FF',
     statusSuccess: '#7EE787', // RGB independent success color
     statusWarning: '#E69958',
@@ -73,14 +80,22 @@ const theme = {
       borderColor: '#6F7D8C',
     },
     dropdown: {
-      borderColor: 'rgba(118, 140, 163, .6)',
-      activeBorderColor: 'rgba(118, 140, 163, 1)',
-      activeBackgroundColor: '#313A44',
+      borderColor: borderColors.lightGrayBorder,
+      hoverBorderColor: borderColors.lightGrayHoverBorder,
+      activeBorderColor: arizeColors.arizeLightBlue,
+      activeBackgroundColor: lighten(0.05, grayColors.gray500),
+    },
+    textField: {
+      borderColor: borderColors.lightGrayBorder,
+      hoverBorderColor: borderColors.lightGrayHoverBorder,
+      activeBorderColor: arizeColors.arizeLightBlue,
+      backgroundColor: grayColors.gray500,
+      activeBackgroundColor: lighten(0.05, grayColors.gray500),
     },
     button: {
       primaryBorderColor: '#5BAECC',
       primaryHoverBackgroundColor: '#5BAECC',
-      defaultBorderColor: '#768CA3',
+      defaultBorderColor: borderColors.lightGrayBorder,
       defaultHoverBackgroundColor: '#64768A',
     },
   },
@@ -153,6 +168,13 @@ const theme = {
        */
       duration: 200,
     },
+  },
+  /**
+   * The height of a single line of form input etc.
+   */
+  singleLineHeight: 38,
+  borderRadius: {
+    medium: 4,
   },
 };
 

@@ -66,7 +66,7 @@ function DropdownButton(
         background-color: ${theme.colors.gray500};
         min-width: 200px;
         border: none;
-        border-radius: 4px;
+        border-radius: ${theme.borderRadius.medium}px;
         color: ${theme.textColors.white90};
         display: flex;
         justify-content: center;
@@ -78,8 +78,11 @@ function DropdownButton(
         transition: all 0.2s ease-in-out;
         /** provide an alternate highlight */
         outline: none;
+        &.is-hovered {
+          border: 1px solid ${theme.components.dropdown.hoverBorderColor};
+          background-color: ${theme.components.dropdown.activeBackgroundColor};
+        }
         &.is-active,
-        &.is-hovered,
         &:focus {
           border: 1px solid ${theme.components.dropdown.activeBorderColor};
           background-color: ${theme.components.dropdown.activeBackgroundColor};

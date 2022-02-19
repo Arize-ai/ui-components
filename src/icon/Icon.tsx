@@ -1,4 +1,5 @@
 import React, { ReactNode, HTMLAttributes } from 'react';
+import { classNames } from '../utils';
 import { css } from '@emotion/core';
 
 interface IconProps extends HTMLAttributes<HTMLElement> {
@@ -8,10 +9,10 @@ interface IconProps extends HTMLAttributes<HTMLElement> {
 /**
  * Wraps the svg in a reasonable size and applies a color
  */
-export const Icon = ({ svg, style, ...restProps }: IconProps) => {
+export const Icon = ({ svg, style, className, ...restProps }: IconProps) => {
   return (
     <i
-      className="ac-icon-wrap"
+      className={classNames('ac-icon-wrap', className)}
       css={css`
         width: 1em;
         height: 1em;
