@@ -52,6 +52,7 @@ function Field(props: FieldProps, ref: RefObject<HTMLElement>) {
       {
         'ac-field--positionTop': labelPosition === 'top',
         'ac-field--positionSide': labelPosition === 'side',
+        'ac-field--hasHelpText': hasHelpText,
       },
       wrapperClassName
     );
@@ -104,7 +105,7 @@ function Field(props: FieldProps, ref: RefObject<HTMLElement>) {
           </FieldLabel>
         )}
         {children}
-        {renderHelpText()}
+        {hasHelpText && renderHelpText()}
       </div>
     );
   }

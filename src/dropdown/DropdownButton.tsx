@@ -7,28 +7,10 @@ import { useHover } from '@react-aria/interactions';
 import { FocusableRef } from '../types';
 import { useFocusableRef } from '../utils/useDOMRef';
 import theme from '../theme';
-import { Text } from '../content';
+import { Text, AddonBefore } from '../content';
 import { Icon, ArrowIosDownwardOutline } from '../icon';
 import { AddonableProps } from '../types';
 
-const addonBeforeCSS = css`
-  background-color: ${theme.colors.gray400};
-  padding: ${theme.spacing.padding8}px;
-  flex: none;
-`;
-
-/**
- * A label element that describes the button
- */
-function AddonBefore({ children }: { children: ReactNode }) {
-  return (
-    <div css={addonBeforeCSS}>
-      <Text textSize="medium" weight="heavy" color="white70">
-        {children}
-      </Text>
-    </div>
-  );
-}
 export interface DropdownButtonProps extends AddonableProps {
   /** Whether the button is disabled. */
   isDisabled?: boolean;

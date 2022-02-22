@@ -5,8 +5,9 @@ import {
   TextFieldRef,
 } from './TextFieldBase';
 import { useTextField } from '@react-aria/textfield';
+import { AddonableProps } from '../types';
 
-export interface TextFieldProps extends AriaTextFieldProps {}
+export interface TextFieldProps extends AriaTextFieldProps, AddonableProps {}
 function TextField(props: TextFieldProps, ref: RefObject<TextFieldRef>) {
   let inputRef = useRef<HTMLInputElement>();
   let {

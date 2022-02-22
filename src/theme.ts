@@ -1,4 +1,4 @@
-import { lighten } from 'polished';
+import { lighten, darken } from 'polished';
 const baseColors = {
   dark1: '#0B1015', // body bg
   dark2: '#17202A', // nav bg
@@ -83,14 +83,14 @@ const theme = {
       borderColor: borderColors.lightGrayBorder,
       hoverBorderColor: borderColors.lightGrayHoverBorder,
       activeBorderColor: arizeColors.arizeLightBlue,
-      activeBackgroundColor: lighten(0.05, grayColors.gray500),
+      activeBackgroundColor: darken(0.05, grayColors.gray500),
     },
     textField: {
       borderColor: borderColors.lightGrayBorder,
       hoverBorderColor: borderColors.lightGrayHoverBorder,
       activeBorderColor: arizeColors.arizeLightBlue,
       backgroundColor: grayColors.gray500,
-      activeBackgroundColor: lighten(0.05, grayColors.gray500),
+      activeBackgroundColor: darken(0.05, grayColors.gray500),
     },
     button: {
       primaryBorderColor: '#5BAECC',

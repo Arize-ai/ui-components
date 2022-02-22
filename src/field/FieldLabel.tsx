@@ -58,8 +58,8 @@ function FieldLabel(props: FieldLabelProps, ref: DOMRef<HTMLLabelElement>) {
       className={labelClassNames}
       htmlFor={ElementType === 'label' ? labelFor || htmlFor : undefined}
       css={css`
-        font-size: ${theme.typography.sizes.medium.fontSize}px;
-        font-weight: ${theme.typography.sizes.medium.lineHeight}px;
+        font-size: ${theme.typography.sizes.small.fontSize}px;
+        font-weight: ${theme.typography.sizes.small.lineHeight}px;
         color: ${theme.textColors.white90};
         padding: ${theme.spacing.padding4}px 0;
         display: inline-block;

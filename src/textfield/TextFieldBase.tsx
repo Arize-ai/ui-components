@@ -32,7 +32,9 @@ import {
   TextInputDOMProps,
   AriaValidationProps,
   FocusableRefValue,
+  AddonableProps,
 } from '../types';
+import { AddonBefore } from '../content';
 import { useHover } from '@react-aria/interactions';
 import theme from '../theme';
 
@@ -77,6 +79,7 @@ export interface AriaTextFieldProps
 
 interface TextFieldBaseProps
   extends Omit<AriaTextFieldProps, 'onChange'>,
+    AddonableProps,
     PressEvents {
   wrapperChildren?: ReactElement | ReactElement[];
   inputClassName?: string;
@@ -118,8 +121,10 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
     inputRef,
     isLoading,
     loadingIndicator,
+    addonBefore,
   } = props;
   let { hoverProps, isHovered } = useHover({ isDisabled });
+  let [isFocused, setIsFocused] = React.useState(false);
   let domRef = useRef<HTMLDivElement>(null);
   let defaultInputRef = useRef<HTMLInputElement | HTMLTextAreaElement>(null);
   inputRef = inputRef || defaultInputRef;
@@ -155,20 +160,23 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         'ac-textfield--valid': validationState === 'valid',
         'ac-textfield--loadable': loadingIndicator,
         'ac-textfield--multiline': multiLine,
+        'is-hovered': isHovered,
+        'is-focused': isFocused,
       })}
       css={css`
         display: flex;
         flex-direction: row;
         align-items: center;
-        min-width: 400px;
+        min-width: 250px;
         border: 1px solid ${theme.colors.lightGrayBorder};
         border-radius: ${theme.borderRadius.medium}px;
         background-color: ${theme.components.textField.backgroundColor};
+        transition: all 0.2s ease-in-out;
         &.is-hovered {
           border: 1px solid ${theme.components.textField.hoverBorderColor};
           background-color: ${theme.components.textField.activeBackgroundColor};
         }
-        &:focus {
+        &.is-focused {
           border: 1px solid ${theme.components.textField.activeBorderColor};
           background-color: ${theme.components.textField.activeBackgroundColor};
         }
@@ -200,22 +208,22 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         }
       `}
     >
+      {addonBefore != null ? <AddonBefore>{addonBefore}</AddonBefore> : null}
       <FocusRing
         focusRingClass={'focus-ring'}
         isTextInput
         autoFocus={autoFocus}
       >
         <ElementType
-          {...mergeProps(inputProps, hoverProps)}
+          {...mergeProps(inputProps, hoverProps, {
+            onFocus: () => {
+              setIsFocused(true);
+            },
+            onBlur: () => setIsFocused(false),
+          })}
           ref={inputRef as any}
           rows={multiLine ? 1 : undefined}
-          className={classNames(
-            'ac-textfield__input',
-            {
-              'is-hovered': isHovered,
-            },
-            inputClassName
-          )}
+          className={classNames('ac-textfield__input', inputClassName)}
         />
       </FocusRing>
       {validationState && !isLoading ? validation : null}

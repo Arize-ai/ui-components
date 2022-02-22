@@ -44,6 +44,14 @@ export const Gallery = () => (
       validationState={'invalid'}
       errorMessage="This field is required"
     />
+    <TextField
+      label="Charge"
+      placeholder="enter your amount"
+      isRequired
+      validationState={'invalid'}
+      addonBefore="$"
+      errorMessage="This field is required"
+    />
   </div>
 );
 
