@@ -22,6 +22,7 @@ import React, {
 import {
   InputBase,
   LabelableProps,
+  ExtendableLabelProps,
   ValueBase,
   TextInputBase,
   FocusableProps,
@@ -34,7 +35,7 @@ import {
   FocusableRefValue,
   AddonableProps,
 } from '../types';
-import { AddonBefore } from '../content';
+import { AddonBefore } from '../field';
 import { useHover } from '@react-aria/interactions';
 import theme from '../theme';
 
@@ -45,7 +46,8 @@ export interface TextFieldProps
     FocusableProps,
     TextInputBase,
     ValueBase<string>,
-    LabelableProps {}
+    LabelableProps,
+    ExtendableLabelProps {}
 
 /**
  * Extend the base interface with a11y props

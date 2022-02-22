@@ -3,7 +3,7 @@ import { DOMRef } from '@react-types/shared';
 import { css } from '@emotion/core';
 import { filterDOMProps } from '@react-aria/utils';
 import React, { ReactNode, ElementType, HTMLAttributes } from 'react';
-import { DOMProps, LabelPosition, Alignment } from '../types';
+import { DOMProps, LabelableProps, ExtendableLabelProps } from '../types';
 import theme from '../theme';
 
 interface LabelProps {
@@ -13,12 +13,11 @@ interface LabelProps {
   elementType?: ElementType;
 }
 
-interface FieldLabelPropsBase extends LabelProps, DOMProps {
-  labelPosition?: LabelPosition; // default top
-  labelAlign?: Alignment; // default start
-  isRequired?: boolean;
-
-  necessityIndicator?: 'icon' | 'label'; // default icon
+interface FieldLabelPropsBase
+  extends LabelProps,
+    LabelableProps,
+    ExtendableLabelProps,
+    DOMProps {
   includeNecessityIndicatorInAccessibilityName?: boolean;
 }
 
@@ -31,6 +30,7 @@ function FieldLabel(props: FieldLabelProps, ref: DOMRef<HTMLLabelElement>) {
     children,
     labelPosition = 'top',
     labelAlign = labelPosition === 'side' ? 'start' : null,
+    labelExtra,
     isRequired,
     necessityIndicator = 'icon',
     includeNecessityIndicatorInAccessibilityName = false,
@@ -84,6 +84,16 @@ function FieldLabel(props: FieldLabelProps, ref: DOMRef<HTMLLabelElement>) {
         </span>
       )}
       {necessityIndicator === 'icon' && isRequired && icon}
+      {labelExtra && (
+        <span
+          className="ac-field-label__label-extra"
+          css={css`
+            margin-left: ${theme.spacing.padding4}px;
+          `}
+        >
+          {labelExtra}
+        </span>
+      )}
     </ElementType>
   );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
 import { TextField, TextFieldProps } from '../src';
+import InfoTip from './components/InfoTip';
 
 const meta: Meta = {
   title: 'TextField',
@@ -46,6 +47,7 @@ export const Gallery = () => (
     />
     <TextField
       label="Charge"
+      labelExtra={<InfoTip>The amount you will be charged</InfoTip>}
       placeholder="enter your amount"
       isRequired
       validationState={'invalid'}

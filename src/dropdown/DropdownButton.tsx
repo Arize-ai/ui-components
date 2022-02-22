@@ -7,7 +7,8 @@ import { useHover } from '@react-aria/interactions';
 import { FocusableRef } from '../types';
 import { useFocusableRef } from '../utils/useDOMRef';
 import theme from '../theme';
-import { Text, AddonBefore } from '../content';
+import { Text } from '../content';
+import { AddonBefore } from '../field';
 import { Icon, ArrowIosDownwardOutline } from '../icon';
 import { AddonableProps } from '../types';
 

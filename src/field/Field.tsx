@@ -25,6 +25,7 @@ export interface FieldProps
 function Field(props: FieldProps, ref: RefObject<HTMLElement>) {
   let {
     label,
+    labelExtra,
     labelPosition = 'top' as LabelPosition,
     labelAlign,
     isRequired,
@@ -94,6 +95,7 @@ function Field(props: FieldProps, ref: RefObject<HTMLElement>) {
             {...labelProps}
             labelPosition={labelPosition}
             labelAlign={labelAlign}
+            labelExtra={labelExtra}
             isRequired={isRequired}
             necessityIndicator={necessityIndicator}
             includeNecessityIndicatorInAccessibilityName={
