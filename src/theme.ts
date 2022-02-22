@@ -83,14 +83,14 @@ const theme = {
       borderColor: borderColors.lightGrayBorder,
       hoverBorderColor: borderColors.lightGrayHoverBorder,
       activeBorderColor: arizeColors.arizeLightBlue,
-      activeBackgroundColor: darken(0.05, grayColors.gray500),
+      activeBackgroundColor: darken(0.02, grayColors.gray500),
     },
     textField: {
       borderColor: borderColors.lightGrayBorder,
       hoverBorderColor: borderColors.lightGrayHoverBorder,
       activeBorderColor: arizeColors.arizeLightBlue,
       backgroundColor: grayColors.gray500,
-      activeBackgroundColor: darken(0.05, grayColors.gray500),
+      activeBackgroundColor: darken(0.02, grayColors.gray500),
     },
     button: {
       primaryBorderColor: '#5BAECC',
@@ -172,7 +172,7 @@ const theme = {
   /**
    * The height of a single line of form input etc.
    */
-  singleLineHeight: 38,
+  singleLineHeight: 36,
   borderRadius: {
     medium: 4,
   },
