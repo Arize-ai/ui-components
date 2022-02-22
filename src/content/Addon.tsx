@@ -11,11 +11,11 @@ const addonBeforeCSS = css`
 `;
 
 /**
- * A label element that describes the button
+ * A label element that describes a button or an input field
  */
 export function AddonBefore({ children }: { children: ReactNode }) {
   return (
-    <div css={addonBeforeCSS}>
+    <div css={addonBeforeCSS} className="ac-addon ac-addon--before">
       <Text textSize="medium" weight="heavy" color="white70">
         {children}
       </Text>
