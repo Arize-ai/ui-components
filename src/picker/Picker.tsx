@@ -145,7 +145,9 @@ function Picker<T extends object>(
     </Popover>
   );
 
-  let contents = state.selectedItem ? state.selectedItem.rendered : placeholder;
+  let contents = state.selectedItem
+    ? state.selectedItem.textValue || state.selectedItem.rendered
+    : placeholder;
   if (typeof contents === 'string') {
     contents = (
       <Text
@@ -160,7 +162,7 @@ function Picker<T extends object>(
 
   return (
     <div
-      className={classNames('ac-dropdown', {
+      className={classNames('ac-dropdown ac-dropdown--picker', {
         'is-disabled': isDisabled,
       })}
       ref={domRef}
