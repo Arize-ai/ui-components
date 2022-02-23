@@ -79,7 +79,7 @@
     "@types/react-transition-group": "^4.4.1",
     "babel-loader": "^8.1.0",
     "babel-plugin-polished": "^1.1.0",
-    "chromatic": "^5.2.0",
+    "chromatic": "^6.5.1",
     "husky": "^4.3.0",
     "polished": "^4.1.0",
     "react": "^17.0.1",

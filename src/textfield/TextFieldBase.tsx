@@ -183,7 +183,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
           border: 1px solid ${theme.components.textField.activeBorderColor};
           background-color: ${theme.components.textField.activeBackgroundColor};
         }
-        ::placeholder {
+        .ac-textfield__input::placeholder {
           color: ${theme.textColors.white50};
           font-style: italic;
         }
