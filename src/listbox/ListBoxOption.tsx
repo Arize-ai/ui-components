@@ -99,9 +99,15 @@ export function ListBoxOption<T>(props: OptionProps<T>) {
           css={css`
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             color: ${theme.textColors.white90};
             padding: ${theme.spacing.padding8}px ${theme.spacing.padding16}px;
+            position: relative;
+            & > .ac-icon-wrap {
+              position: absolute;
+              top: ${theme.spacing.padding8}px;
+              right: ${theme.spacing.padding8}px;
+            }
           `}
         >
           {contents}

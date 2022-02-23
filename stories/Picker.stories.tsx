@@ -94,7 +94,7 @@ const Gallery: Story<void> = () => {
     <Provider>
       <div
         css={css`
-          .ac-dropdown + .ac-dropdown {
+          & > * + * {
             margin-top: 16px;
           }
         `}
@@ -116,35 +116,44 @@ const Gallery: Story<void> = () => {
           <Item key="sometimes">Sometimes</Item>
           <Item key="always">Always</Item>
         </Picker>
-        <Picker
-          selectedKey={frequency}
-          onSelectionChange={selected => setFrequency(selected as string)}
+        <div
+          css={css`
+            .ac-dropdown--picker,
+            .ac-dropdown--picker .ac-dropdown-button {
+              width: 250px;
+            }
+          `}
         >
-          <Item key="rarely" textValue="Rarely">
-            <div css={itemWithDescriptionCSS}>
-              <Text>Rarely</Text>
-              <Text color="white70" textSize="small">
-                Only run on occasion
-              </Text>
-            </div>
-          </Item>
-          <Item key="sometimes" textValue="Sometimes">
-            <div css={itemWithDescriptionCSS}>
-              <Text>Sometimes</Text>
-              <Text color="white70" textSize="small">
-                Run once a day
-              </Text>
-            </div>
-          </Item>
-          <Item key="always" textValue="Always">
-            <div css={itemWithDescriptionCSS}>
-              <Text>Always</Text>
-              <Text color="white70" textSize="small">
-                Run continuously
-              </Text>
-            </div>
-          </Item>
-        </Picker>
+          <Picker
+            selectedKey={frequency}
+            onSelectionChange={selected => setFrequency(selected as string)}
+          >
+            <Item key="rarely" textValue="Rarely">
+              <div css={itemWithDescriptionCSS}>
+                <Text>Rarely</Text>
+                <Text color="white70" textSize="small">
+                  Only run on occasion
+                </Text>
+              </div>
+            </Item>
+            <Item key="sometimes" textValue="Sometimes">
+              <div css={itemWithDescriptionCSS}>
+                <Text>Sometimes</Text>
+                <Text color="white70" textSize="small">
+                  Run once a day so that things are synchronized on the daily
+                </Text>
+              </div>
+            </Item>
+            <Item key="always" textValue="Always">
+              <div css={itemWithDescriptionCSS}>
+                <Text>Always</Text>
+                <Text color="white70" textSize="small">
+                  Run continuously so that everything stays up to date
+                </Text>
+              </div>
+            </Item>
+          </Picker>
+        </div>
       </div>
     </Provider>
   );
