@@ -11,6 +11,7 @@ import React, {
   ReactNode,
   ReactElement,
 } from 'react';
+import { useFormProps } from '../form';
 
 export interface FieldProps
   extends FieldLabelProps,
@@ -23,6 +24,7 @@ export interface FieldProps
 }
 
 function Field(props: FieldProps, ref: RefObject<HTMLElement>) {
+  props = useFormProps(props);
   let {
     label,
     labelExtra,

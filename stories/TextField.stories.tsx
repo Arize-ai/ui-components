@@ -10,11 +10,11 @@ const meta: Meta = {
   decorators: [withDesign],
   parameters: {
     controls: { expanded: true },
-    // design: {
-    //   type: 'figma',
-    //   url:
-    //     'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=76%3A505',
-    // },
+    design: {
+      type: 'figma',
+      url:
+        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=76%3A505',
+    },
   },
 };
 
@@ -53,6 +53,14 @@ export const Gallery = () => (
       validationState={'invalid'}
       addonBefore="$"
       errorMessage="This field is required"
+    />
+    <TextField
+      label="Charge"
+      labelExtra={<InfoTip>The amount you will be charged</InfoTip>}
+      placeholder="enter your amount"
+      isDisabled
+      addonBefore="$"
+      value="100"
     />
   </div>
 );

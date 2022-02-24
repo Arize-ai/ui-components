@@ -112,6 +112,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
     label,
     validationState,
     isDisabled,
+    isReadOnly,
     multiLine,
     autoFocus,
     inputClassName,
@@ -164,6 +165,8 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         'ac-textfield--multiline': multiLine,
         'is-hovered': isHovered,
         'is-focused': isFocused,
+        'is-disabled': isDisabled,
+        'is-readonly': isReadOnly,
       })}
       css={css`
         display: flex;
@@ -175,13 +178,21 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         background-color: ${theme.components.textField.backgroundColor};
         transition: all 0.2s ease-in-out;
         overflow: hidden;
-        &.is-hovered {
+        &.is-hovered[:not(.is-disabled)] {
           border: 1px solid ${theme.components.textField.hoverBorderColor};
           background-color: ${theme.components.textField.activeBackgroundColor};
         }
         &.is-focused {
           border: 1px solid ${theme.components.textField.activeBorderColor};
           background-color: ${theme.components.textField.activeBackgroundColor};
+        }
+        &.is-disabled,
+        &.is-readonly {
+          border: 1px solid ${theme.components.textField.backgroundColor};
+          background-color: ${theme.components.textField.backgroundColor};
+          .ac-textfield__input {
+            color: ${theme.textColors.white70};
+          }
         }
         .ac-textfield__input::placeholder {
           color: ${theme.textColors.white50};
