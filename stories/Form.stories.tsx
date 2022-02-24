@@ -2,6 +2,7 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { Form, FormProps, TextField } from '../src';
 import InfoTip from './components/InfoTip';
+import { useForm, Controller } from 'react-hook-form';
 
 const meta: Meta = {
   title: 'Form',
@@ -21,36 +22,58 @@ const meta: Meta = {
 export default meta;
 
 const Template: Story<FormProps> = args => {
-  const [name, setName] = React.useState('');
-  const [email, setEmail] = React.useState('');
+  const { control, handleSubmit } = useForm();
+  const onSubmit = (d: any) => {
+    alert(JSON.stringify(d));
+  };
   return (
-    <Form {...args}>
-      <TextField
-        label="Name"
-        placeholder="enter your name"
-        isRequired
-        errorMessage={!name ? 'This field is required' : null}
-        value={name}
-        validationState={!name ? 'invalid' : null}
-        onChange={v => setName(v)}
+    // @ts-ignore
+    <Form {...args} action="" onSubmit={handleSubmit(onSubmit)}>
+      <Controller
+        name={'name'}
+        control={control}
+        rules={{ required: 'This field is required' }}
+        render={({
+          field: { onChange, value },
+          fieldState: { invalid, error },
+        }) => (
+          <TextField
+            onChange={onChange}
+            value={value}
+            validationState={invalid ? 'invalid' : undefined}
+            label={'Name'}
+            placeholder={'enter your name'}
+            errorMessage={error?.message}
+          />
+        )}
       />
-      <TextField
-        label="Email"
-        placeholder="enter your email address"
-        isRequired
-        errorMessage={!email ? 'This field is required' : null}
-        value={email}
-        onChange={v => setEmail(v)}
+      <Controller
+        name={'email'}
+        control={control}
+        render={({ field: { onChange, value } }) => (
+          <TextField onChange={onChange} value={value} label={'Email'} />
+        )}
       />
-      <TextField
-        label="Charge"
-        labelExtra={<InfoTip>The amount you will be charged</InfoTip>}
-        placeholder="enter your amount"
-        isRequired
-        validationState={'invalid'}
-        addonBefore="$"
-        errorMessage="This field is required"
+      <Controller
+        name={'Occupation'}
+        control={control}
+        render={({ field: { onChange, value } }) => (
+          <TextField onChange={onChange} value={value} label={'Occupation'} />
+        )}
       />
+      <Controller
+        name={'chargeAmount'}
+        control={control}
+        render={({ field: { onChange, value } }) => (
+          <TextField
+            addonBefore="$"
+            onChange={onChange}
+            value={value}
+            label={'Charge Amount'}
+          />
+        )}
+      />
+      <input type="submit" />
     </Form>
   );
 };
