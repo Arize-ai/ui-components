@@ -5,9 +5,12 @@ import { Text } from '../content/Text';
 
 const addonBeforeCSS = css`
   background-color: ${theme.colors.gray400};
-  padding: ${theme.spacing.padding8}px;
+  padding: 0 ${theme.spacing.padding8}px;
   flex: none;
   box-sizing: border-box;
+  height: ${theme.singleLineHeight}px;
+  display: flex;
+  align-items: center;
 `;
 
 /**

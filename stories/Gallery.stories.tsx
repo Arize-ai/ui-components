@@ -11,7 +11,6 @@ import {
   Provider,
   Field,
 } from '../src';
-
 // @ts-ignore
 import chartFile from './images/chart.png';
 
