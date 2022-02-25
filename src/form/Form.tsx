@@ -5,7 +5,6 @@ import {
   LabelableProps,
   DOMProps,
   AriaLabelingProps,
-  ValidationState,
 } from '../types';
 import { classNames, useDOMRef } from '../utils';
 import { filterDOMProps } from '@react-aria/utils';
