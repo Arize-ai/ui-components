@@ -15,6 +15,7 @@ export * from './dropdown';
 export * from './listbox';
 export * from './picker';
 export * from './notification';
+export * from './field';
 export * from './textfield';
 export * from './form';
 // export interface Props extends HTMLAttributes<HTMLDivElement> {

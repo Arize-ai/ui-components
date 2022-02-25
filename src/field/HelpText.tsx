@@ -7,9 +7,9 @@ import theme from '../theme';
 
 export interface HelpTextComponentProps extends HelpTextProps, Validation {
   /** Props for the help text description element. */
-  descriptionProps: HTMLAttributes<HTMLElement>;
+  descriptionProps?: HTMLAttributes<HTMLElement>;
   /** Props for the help text error message element. */
-  errorMessageProps: HTMLAttributes<HTMLElement>;
+  errorMessageProps?: HTMLAttributes<HTMLElement>;
   /** Whether the description is displayed with lighter text. */
   isDisabled?: boolean;
   /** Whether an error icon is rendered. */

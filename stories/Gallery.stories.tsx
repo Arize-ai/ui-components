@@ -9,6 +9,7 @@ import {
   TextField,
   Dropdown,
   Provider,
+  Field,
 } from '../src';
 
 // @ts-ignore
@@ -99,7 +100,14 @@ const Template: Story = args => {
             `}
           >
             <TextField label="name" placeholder="enter your name" />
-            <Dropdown menu={<div>Hello</div>}>Action</Dropdown>
+            <TextField
+              label="email"
+              addonBefore="mail"
+              placeholder="enter your email"
+            />
+            <Field label="Perform action">
+              <Dropdown menu={<div>Hello</div>}>Action</Dropdown>
+            </Field>
             <Button variant="primary">Submit</Button>
           </div>
         </Card>

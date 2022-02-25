@@ -24,7 +24,7 @@ export interface FieldProps
     Validation {
   children: ReactElement;
   label?: ReactNode;
-  labelProps: HTMLAttributes<HTMLElement>;
+  labelProps?: HTMLAttributes<HTMLElement>;
   wrapperClassName?: string;
 }
 
