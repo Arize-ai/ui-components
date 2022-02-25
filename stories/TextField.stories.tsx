@@ -80,7 +80,9 @@ export const Gallery = () => (
 );
 
 const Template: Story<TextFieldProps> = args => (
-  <TextField {...args}>Label Text</TextField>
+  <Form>
+    <TextField {...args}>Label Text</TextField>
+  </Form>
 );
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
