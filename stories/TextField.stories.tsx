@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
-import { TextField, TextFieldProps } from '../src';
+import { Form, TextField, TextFieldProps } from '../src';
 import InfoTip from './components/InfoTip';
 
 const meta: Meta = {
@@ -24,7 +24,7 @@ export default meta;
  * A gallery of all the variants
  */
 export const Gallery = () => (
-  <div>
+  <Form>
     <TextField label="Name" placeholder="enter your name" />
     <TextField
       label="Name"
@@ -47,7 +47,9 @@ export const Gallery = () => (
     />
     <TextField
       label="Charge"
-      labelExtra={<InfoTip>The amount you will be charged</InfoTip>}
+      labelExtra={
+        <InfoTip postfix={false}>The amount you will be charged</InfoTip>
+      }
       placeholder="enter your amount"
       isRequired
       validationState={'invalid'}
@@ -55,14 +57,26 @@ export const Gallery = () => (
       errorMessage="This field is required"
     />
     <TextField
-      label="Charge"
-      labelExtra={<InfoTip>The amount you will be charged</InfoTip>}
+      label="Disabled"
+      labelExtra={
+        <InfoTip postfix={false}>The amount you will be charged</InfoTip>
+      }
       placeholder="enter your amount"
       isDisabled
       addonBefore="$"
       value="100"
     />
-  </div>
+    <TextField
+      label="Read Only"
+      labelExtra={
+        <InfoTip postfix={false}>The amount you will be charged</InfoTip>
+      }
+      placeholder="enter your amount"
+      isReadOnly
+      addonBefore="$"
+      value="100"
+    />
+  </Form>
 );
 
 const Template: Story<TextFieldProps> = args => (

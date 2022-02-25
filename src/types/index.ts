@@ -8,3 +8,4 @@ export * from './severity';
 export * from './input';
 export * from './events';
 export * from './dom';
+export * from './provider';

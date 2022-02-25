@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css, keyframes } from '@emotion/core';
 import { classNames } from '../utils';
 import { HelpText, HelpTextComponentProps } from './HelpText';
 import { FieldLabel, FieldLabelProps } from './FieldLabel';
@@ -12,6 +12,11 @@ import React, {
   ReactElement,
 } from 'react';
 import { useFormProps } from '../form';
+
+const appearKeyframes = keyframes`
+    0% {  opacity: 0; }
+    100% { opacity: 1; }
+`;
 
 export interface FieldProps
   extends FieldLabelProps,
@@ -64,7 +69,7 @@ function Field(props: FieldProps, ref: RefObject<HTMLElement>) {
       children,
       // @ts-ignore
       mergeProps(children.props, {
-        className: 'ac-field',
+        className: 'ac-field__field',
       })
     );
 
@@ -90,6 +95,10 @@ function Field(props: FieldProps, ref: RefObject<HTMLElement>) {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
+          .ac-help-text--danger {
+            /* Animate in the help text */
+            animation: ${appearKeyframes} ${0.3}s forwards ease-in-out;
+          }
         `}
       >
         {label && (

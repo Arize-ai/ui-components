@@ -1,7 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { Form, FormProps, TextField } from '../src';
-import InfoTip from './components/InfoTip';
 import { useForm, Controller } from 'react-hook-form';
 
 const meta: Meta = {
@@ -81,5 +80,7 @@ const Template: Story<FormProps> = args => {
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
+
+export const Disabled = Template.bind({ isDisabled: true });
 
 Default.args = { type: 'primary', children: 'Button' };

@@ -1,6 +1,4 @@
-// import AlertMedium from '@spectrum-icons/ui/AlertMedium';
-// import CheckmarkMedium from '@spectrum-icons/ui/CheckmarkMedium';
-import { css } from '@emotion/core';
+import { css, keyframes } from '@emotion/core';
 import { classNames, createFocusableRef } from '../utils';
 import { Field } from '../field';
 import { FocusRing } from '@react-aria/focus';
@@ -38,6 +36,11 @@ import {
 import { AddonBefore } from '../field';
 import { useHover } from '@react-aria/interactions';
 import theme from '../theme';
+
+const appearKeyframes = keyframes`
+    0% {  opacity: 0; }
+    100% { opacity: 1; }
+`;
 
 export interface TextFieldProps
   extends InputBase,
@@ -149,9 +152,9 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
   let ElementType: React.ElementType = multiLine ? 'textarea' : 'input';
   let isInvalid = validationState === 'invalid';
 
-  let validation = (
+  const validation = (
     <Icon
-      className="ac-textfield__validation-icon"
+      className={`ac-textfield__validation-icon ac-textfield__validation-icon--${validationState}`}
       svg={<AlertCircleOutline />}
     />
   );
@@ -172,7 +175,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         display: flex;
         flex-direction: row;
         align-items: center;
-        min-width: 250px;
+        min-width: 270px;
         border: 1px solid ${theme.colors.lightGrayBorder};
         border-radius: ${theme.borderRadius.medium}px;
         background-color: ${theme.components.textField.backgroundColor};
@@ -186,16 +189,15 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
           border: 1px solid ${theme.components.textField.activeBorderColor};
           background-color: ${theme.components.textField.activeBackgroundColor};
         }
-        &.is-disabled,
-        &.is-readonly {
+        &.is-disabled {
           border: 1px solid ${theme.components.textField.backgroundColor};
           background-color: ${theme.components.textField.backgroundColor};
           .ac-textfield__input {
-            color: ${theme.textColors.white70};
+            color: ${theme.textColors.white50};
           }
         }
         .ac-textfield__input::placeholder {
-          color: ${theme.textColors.white50};
+          color: ${theme.textColors.white30};
           font-style: italic;
         }
         .ac-textfield__input {
@@ -216,9 +218,13 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
           border: 1px solid ${theme.colors.statusDanger};
         }
         .ac-textfield__validation-icon {
-          color: inherit;
+          /* Animate in the icon */
+          animation: ${appearKeyframes} ${0.2}s forwards ease-in-out;
           flex: none;
           margin-right: ${theme.spacing.padding8}px;
+          &.ac-textfield__validation-icon--invalid {
+            color: ${theme.colors.statusDanger};
+          }
         }
       `}
     >
@@ -251,7 +257,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
       textField,
       mergeProps(textField.props, {
         // TODO support muli-line text areas
-        className: multiLine ? 'ac-field--multiline' : '',
+        className: multiLine ? 'ac-text-field--multiline' : '',
       })
     );
   }

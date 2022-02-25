@@ -11,7 +11,7 @@ import { classNames, useDOMRef } from '../utils';
 import { filterDOMProps } from '@react-aria/utils';
 import React, { useContext, ReactElement, FormEventHandler } from 'react';
 import { css } from '@emotion/core';
-import theme from '../theme';
+import { Provider } from '../provider';
 
 let FormContext = React.createContext<LabelableProps>({});
 
@@ -35,15 +35,8 @@ export interface FormProps extends DOMProps, AriaLabelingProps, LabelableProps {
 
   /** Whether the Form elements are disabled. */
   isDisabled?: boolean;
-  /** Whether user input is required on each of the Form elements before Form submission. */
-  isRequired?: boolean;
   /** Whether the Form elements can be selected but not changed by the user. */
   isReadOnly?: boolean;
-  /**
-   * Whether the Form elements should display their "valid" or "invalid" visual styling.
-   * @default 'valid'
-   */
-  validationState?: ValidationState;
   /**
    * Where to send the form-data when the form is submitted.
    */
@@ -78,7 +71,6 @@ function Form(props: FormProps, ref: DOMRef<HTMLFormElement>) {
     necessityIndicator,
     isDisabled,
     isReadOnly,
-    validationState,
     ...otherProps
   } = props;
   let domRef = useDOMRef(ref);
@@ -102,12 +94,16 @@ function Form(props: FormProps, ref: DOMRef<HTMLFormElement>) {
         'ac-form--positionTop': labelPosition === 'top',
       })}
       css={css`
-        & > *:not(:last-child):not(.ac-field--hasHelpText) {
-          margin-bottom: ${theme.spacing.margin24}px;
+        .ac-field:not(:last-child):not(.ac-field--hasHelpText) {
+          margin-bottom: 20px;
         }
       `}
     >
-      <FormContext.Provider value={ctx}>{children}</FormContext.Provider>
+      <FormContext.Provider value={ctx}>
+        <Provider isDisabled={isDisabled} isReadOnly={isReadOnly}>
+          {children}
+        </Provider>
+      </FormContext.Provider>
     </form>
   );
 }
