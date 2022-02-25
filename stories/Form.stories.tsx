@@ -81,6 +81,6 @@ const Template: Story<FormProps> = args => {
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 
-export const Disabled = Template.bind({ isDisabled: true });
+export const Disabled = Template.bind({}, { isDisabled: true });
 
 Default.args = { type: 'primary', children: 'Button' };
