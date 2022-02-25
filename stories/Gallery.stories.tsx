@@ -91,8 +91,14 @@ const Template: Story = args => {
               display: flex;
               align-items: flex-end;
               flex-direction: row;
-              .ac-textfield {
+              .ac-field {
                 margin-right: 8px;
+              }
+              .email-textfield {
+                flex: 1 1 auto;
+                .ac-textfield {
+                  width: 100%;
+                }
               }
               .ac-button {
                 margin-left: 8px;
@@ -104,6 +110,7 @@ const Template: Story = args => {
               label="email"
               addonBefore="mail"
               placeholder="enter your email"
+              className="email-textfield"
             />
             <Field label="Perform action">
               <Dropdown menu={<div>Hello</div>}>Action</Dropdown>

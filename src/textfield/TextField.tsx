@@ -8,7 +8,9 @@ import { useTextField } from '@react-aria/textfield';
 import { AddonableProps } from '../types';
 import { useProviderProps } from '../provider';
 
-export interface TextFieldProps extends AriaTextFieldProps, AddonableProps {}
+export interface TextFieldProps extends AriaTextFieldProps, AddonableProps {
+  className?: string;
+}
 function TextField(props: TextFieldProps, ref: RefObject<TextFieldRef>) {
   // Call use provider props so the textfield can inherit from the provider
   // E.x. disabled, readOnly, etc.

@@ -99,6 +99,7 @@ interface TextFieldBaseProps
   inputRef?: RefObject<HTMLInputElement | HTMLTextAreaElement>;
   loadingIndicator?: ReactElement;
   isLoading?: boolean;
+  className?: string;
 }
 
 export interface TextFieldRef
@@ -128,6 +129,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
     isLoading,
     loadingIndicator,
     addonBefore,
+    className,
   } = props;
   let { hoverProps, isHovered } = useHover({ isDisabled });
   let [isFocused, setIsFocused] = React.useState(false);
@@ -271,6 +273,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
       errorMessageProps={errorMessageProps}
       showErrorIcon={false}
       ref={domRef}
+      wrapperClassName={className}
     >
       {textField}
     </Field>
