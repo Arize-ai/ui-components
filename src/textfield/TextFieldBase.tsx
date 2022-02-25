@@ -181,6 +181,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         background-color: ${theme.components.textField.backgroundColor};
         transition: all 0.2s ease-in-out;
         overflow: hidden;
+        font-size: ${theme.typography.sizes.medium.fontSize}px;
         &.is-hovered[:not(.is-disabled)] {
           border: 1px solid ${theme.components.textField.hoverBorderColor};
           background-color: ${theme.components.textField.activeBackgroundColor};
