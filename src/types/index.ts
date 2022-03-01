@@ -5,3 +5,7 @@ export * from './selection';
 export * from './select';
 export * from './labelable';
 export * from './severity';
+export * from './input';
+export * from './events';
+export * from './dom';
+export * from './provider';

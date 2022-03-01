@@ -50,6 +50,7 @@ function InfoTip({ children, postfix = true }: InfoTipProps) {
             background: 'transparent',
             cursor: 'pointer',
             color: 'inherit',
+            verticalAlign: 'bottom',
           }}
         >
           <Icon

@@ -28,6 +28,13 @@ export interface LabelableProps {
   isRequired?: boolean;
 }
 
+export interface ExtendableLabelProps {
+  /**
+   * An extra element to add at the end of the label
+   */
+  labelExtra?: ReactNode;
+}
+
 /**
  * An interface for things that support addon labels
  */

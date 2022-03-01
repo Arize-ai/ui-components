@@ -1,5 +1,5 @@
 {
-  "version": "0.3.4",
+  "version": "0.4.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -55,11 +55,11 @@
   "size-limit": [
     {
       "path": "dist/components.cjs.production.min.js",
-      "limit": "100 KB"
+      "limit": "150 KB"
     },
     {
       "path": "dist/components.esm.js",
-      "limit": "100 KB"
+      "limit": "150 KB"
     }
   ],
   "devDependencies": {
@@ -79,11 +79,12 @@
     "@types/react-transition-group": "^4.4.1",
     "babel-loader": "^8.1.0",
     "babel-plugin-polished": "^1.1.0",
-    "chromatic": "^5.2.0",
+    "chromatic": "^6.5.1",
     "husky": "^4.3.0",
     "polished": "^4.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-hook-form": "^7.27.1",
     "react-is": "^17.0.1",
     "size-limit": "^4.6.2",
     "storybook-addon-designs": "^5.4.5",
@@ -107,6 +108,7 @@
     "@react-aria/radio": "^3.1.3",
     "@react-aria/select": "^3.5.0",
     "@react-aria/separator": "^3.1.3",
+    "@react-aria/textfield": "^3.5.2",
     "@react-aria/tooltip": "^3.1.1",
     "@react-aria/utils": "^3.6.0",
     "@react-aria/virtualizer": "^3.3.4",

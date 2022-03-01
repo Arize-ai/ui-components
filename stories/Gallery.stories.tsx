@@ -1,8 +1,16 @@
 import React from 'react';
 import { css } from '@emotion/core';
 import { Meta, Story } from '@storybook/react';
-import { Alert, Card, useNotification, Button } from '../src';
-
+import {
+  Alert,
+  Card,
+  useNotification,
+  Button,
+  TextField,
+  Dropdown,
+  Provider,
+  Field,
+} from '../src';
 // @ts-ignore
 import chartFile from './images/chart.png';
 
@@ -23,54 +31,95 @@ export default meta;
 const Template: Story = args => {
   const [notify, holder] = useNotification();
   return (
-    <div>
-      <Card
-        title="Prediction Volume"
-        bodyStyle={{ padding: 0 }}
-        extra={
-          <Button
-            variant="default"
-            onClick={() => {
-              notify({
-                variant: 'success',
-                title: 'Awesome!',
-                message: 'Things worked as expected',
-                action: {
-                  text: 'Try This',
-                  onClick: () => {},
-                },
-              });
-            }}
-          >
-            Notify
-          </Button>
-        }
+    <Provider>
+      <div
+        css={css`
+          .ac-card + .ac-card {
+            margin-top: 16px;
+          }
+        `}
       >
-        <div
-          css={css`
-            position: relative;
-            .ac-alert {
-              position: absolute;
-              left: 0;
-              right: 0;
-            }
-          `}
+        <Card
+          title="Prediction Volume"
+          bodyStyle={{ padding: 0 }}
+          extra={
+            <Button
+              variant="default"
+              onClick={() => {
+                notify({
+                  variant: 'success',
+                  title: 'Awesome!',
+                  message: 'Things worked as expected',
+                  action: {
+                    text: 'Try This',
+                    onClick: () => {},
+                  },
+                });
+              }}
+            >
+              Notify
+            </Button>
+          }
         >
-          <Alert variant="info" banner title="Heads up">
-            Your predictions may be delayed by up to 10 minutes
-          </Alert>
-
-          <img
-            src={chartFile}
-            alt="chart image"
+          <div
             css={css`
-              margin: 24px;
+              position: relative;
+              .ac-alert {
+                position: absolute;
+                left: 0;
+                right: 0;
+              }
             `}
-          />
-        </div>
-      </Card>
-      {holder}
-    </div>
+          >
+            <Alert variant="info" banner title="Heads up">
+              Your predictions may be delayed by up to 10 minutes
+            </Alert>
+
+            <img
+              src={chartFile}
+              alt="chart image"
+              css={css`
+                margin: 24px;
+              `}
+            />
+          </div>
+        </Card>
+        <Card title="Example Form">
+          <div
+            css={css`
+              display: flex;
+              align-items: flex-end;
+              flex-direction: row;
+              .ac-field {
+                margin-right: 8px;
+              }
+              .email-textfield {
+                flex: 1 1 auto;
+                .ac-textfield {
+                  width: 100%;
+                }
+              }
+              .ac-button {
+                margin-left: 8px;
+              }
+            `}
+          >
+            <TextField label="name" placeholder="enter your name" />
+            <TextField
+              label="email"
+              addonBefore="mail"
+              placeholder="enter your email"
+              className="email-textfield"
+            />
+            <Field label="Perform action">
+              <Dropdown menu={<div>Hello</div>}>Action</Dropdown>
+            </Field>
+            <Button variant="primary">Submit</Button>
+          </div>
+        </Card>
+        {holder}
+      </div>
+    </Provider>
   );
 };
 
