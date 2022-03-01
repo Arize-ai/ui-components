@@ -162,3 +162,36 @@ const Gallery: Story<void> = () => {
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const gallery = Gallery.bind({});
+
+const ItemsViaProps: Story<PickerProps<string>> = args => {
+  const [frequency, setFrequency] = React.useState<string>('rarely');
+  return (
+    <Provider>
+      <Picker
+        addonBefore={'Frequency'}
+        {...args}
+        selectedKey={frequency}
+        onSelectionChange={selected => setFrequency(selected as string)}
+        items={[
+          { id: 1, name: 'Aardvark' },
+          { id: 2, name: 'Cat' },
+          { id: 3, name: 'Dog' },
+          { id: 4, name: 'Kangaroo' },
+          { id: 5, name: 'Koala' },
+          { id: 6, name: 'Penguin' },
+          { id: 7, name: 'Snake' },
+          { id: 8, name: 'Turtle' },
+          { id: 9, name: 'Wombat' },
+        ]}
+      >
+        {item => <Item>{item.name}</Item>}
+      </Picker>
+      <br />
+      <Text>Selected Value: {frequency}</Text>
+    </Provider>
+  );
+};
+
+// By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
+// https://storybook.js.org/docs/react/workflows/unit-testing
+export const itemsViaProps = ItemsViaProps.bind({});

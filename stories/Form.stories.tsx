@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Form, FormProps, TextField } from '../src';
+import { Form, FormProps, TextField, Picker, Item, Field } from '../src';
 import { useForm, Controller } from 'react-hook-form';
 
 const meta: Meta = {
@@ -72,6 +72,23 @@ const Template: Story<FormProps> = args => {
           />
         )}
       />
+      <Field label="Pricing">
+        <Controller
+          name={'tier'}
+          control={control}
+          render={({ field: { onChange, value } }) => (
+            <Picker
+              addonBefore="$"
+              onSelectionChange={onChange}
+              selectedKey={value}
+              label={'Charge Amount'}
+            >
+              <Item>Free</Item>
+              <Item>Paid</Item>
+            </Picker>
+          )}
+        />
+      </Field>
       <input type="submit" />
     </Form>
   );
