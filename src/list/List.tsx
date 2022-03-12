@@ -10,6 +10,13 @@ import { css } from '@emotion/core';
 import theme from '../theme';
 
 export type ListSize = 'small' | 'default';
+
+const interactiveListCSS = css`
+  & > li:hover {
+    background-color: ${theme.colors.hoverBgColor};
+    cursor: pointer;
+  }
+`;
 export interface ListProps extends HTMLProps<HTMLUListElement> {
   /**
    * The list size
@@ -38,22 +45,22 @@ export function List({
 }: ListProps) {
   return (
     <ul
-      css={css`
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        ${interactive &&
-          `& > li:hover {
-          background-color: ${theme.colors.hoverBgColor};
-          cursor: pointer;
-        }`}
-      `}
+      className="ac-list"
+      css={css(
+        css`
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        `,
+        interactive ? interactiveListCSS : null
+      )}
     >
       {Children.map(children, child => {
         if (isValidElement(child)) {
           return cloneElement(child, {
             listSize,
             noPadding,
+            interactive,
           });
         }
         return null;
@@ -119,11 +126,12 @@ export function ListItem({
   children,
   listSize = 'default',
   noPadding = false,
-  interactive = true,
+  interactive = false,
   onClick,
 }: ListItemProps) {
   return (
     <li
+      className="ac-list-item"
       css={listItemCSS({ listSize, noPadding, interactive })}
       onClick={onClick}
     >
