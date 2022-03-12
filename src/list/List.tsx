@@ -60,7 +60,6 @@ export function List({
           return cloneElement(child, {
             listSize,
             noPadding,
-            interactive,
           });
         }
         return null;
