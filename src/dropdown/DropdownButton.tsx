@@ -13,12 +13,68 @@ import { Icon, ArrowIosDownwardOutline } from '../icon';
 import { AddonableProps } from '../types';
 
 export interface DropdownButtonProps extends AddonableProps {
+  /**
+   * Whether the button should be displayed with a quiet style.
+   * @default false
+   */
+  isQuiet?: boolean;
   /** Whether the button is disabled. */
   isDisabled?: boolean;
   /** The content to display in the button. */
   children?: ReactNode;
   style?: CSSProperties;
 }
+
+const buttonBaseCSS = css`
+  min-width: 200px;
+  border: none;
+  background-color: transparent;
+  color: ${theme.textColors.white90};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  /** provide an alternate highlight */
+  outline: none;
+  .ac-dropdown-button__text {
+    flex: 1 1 auto;
+    text-align: left;
+    margin: ${theme.spacing.margin8}px ${theme.spacing.margin8}px
+      ${theme.spacing.margin8}px ${theme.spacing.margin16}px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .ac-icon-wrap {
+    margin-right: 10px;
+    flex: fixed;
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+  }
+`;
+
+/**
+ * Styles to add in addition to the base button styles for non-quiet
+ */
+const nonQuietButtonCSS = css`
+  border: 1px solid ${theme.components.dropdown.borderColor};
+  border-radius: ${theme.borderRadius.medium}px;
+  background-color: ${theme.colors.gray500};
+  &.is-hovered {
+    border: 1px solid ${theme.components.dropdown.hoverBorderColor};
+    background-color: ${theme.components.dropdown.activeBackgroundColor};
+  }
+  &.is-active,
+  &:focus {
+    border: 1px solid ${theme.components.dropdown.activeBorderColor};
+    background-color: ${theme.components.dropdown.activeBackgroundColor};
+  }
+`;
 
 /**
  * A button that displays
@@ -31,7 +87,14 @@ function DropdownButton(
   ref: FocusableRef<HTMLButtonElement>
 ) {
   let domRef = useFocusableRef(ref);
-  const { isDisabled, children, style, addonBefore, ...otherProps } = props;
+  const {
+    isQuiet = false,
+    isDisabled,
+    children,
+    style,
+    addonBefore,
+    ...otherProps
+  } = props;
   const { buttonProps, isPressed } = useButton(props, domRef);
   const { hoverProps, isHovered } = useHover({ isDisabled });
 
@@ -45,49 +108,7 @@ function DropdownButton(
         'is-hovered': isHovered,
       })}
       style={style}
-      css={css`
-        background-color: ${theme.colors.gray500};
-        min-width: 200px;
-        border: none;
-        border-radius: ${theme.borderRadius.medium}px;
-        color: ${theme.textColors.white90};
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        overflow: hidden;
-        cursor: pointer;
-        border: 1px solid ${theme.components.dropdown.borderColor};
-        transition: all 0.2s ease-in-out;
-        /** provide an alternate highlight */
-        outline: none;
-        &.is-hovered {
-          border: 1px solid ${theme.components.dropdown.hoverBorderColor};
-          background-color: ${theme.components.dropdown.activeBackgroundColor};
-        }
-        &.is-active,
-        &:focus {
-          border: 1px solid ${theme.components.dropdown.activeBorderColor};
-          background-color: ${theme.components.dropdown.activeBackgroundColor};
-        }
-        .ac-dropdown-button__text {
-          flex: 1 1 auto;
-          text-align: left;
-          margin: ${theme.spacing.margin8}px ${theme.spacing.margin8}px
-            ${theme.spacing.margin8}px ${theme.spacing.margin16}px;
-          display: inline-block;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          overflow: hidden;
-        }
-        .ac-icon-wrap {
-          margin-right: 10px;
-          flex: fixed;
-          width: 16px;
-          height: 16px;
-          font-size: 16px;
-        }
-      `}
+      css={css(buttonBaseCSS, !isQuiet && nonQuietButtonCSS)}
     >
       {addonBefore != null ? <AddonBefore>{addonBefore}</AddonBefore> : null}
       <Text className="ac-dropdown-button__text" textSize="medium">

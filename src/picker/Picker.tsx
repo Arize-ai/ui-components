@@ -25,6 +25,7 @@ function Picker<T extends object>(
   ref: DOMRef<HTMLDivElement>
 ) {
   let {
+    isQuiet = false,
     isDisabled,
     direction = 'bottom',
     align = 'start',
@@ -162,9 +163,13 @@ function Picker<T extends object>(
 
   return (
     <div
-      className={classNames('ac-dropdown ac-dropdown--picker', {
-        'is-disabled': isDisabled,
-      })}
+      className={classNames(
+        'ac-dropdown ac-dropdown--picker',
+        {
+          'is-disabled': isDisabled,
+        },
+        props.className
+      )}
       ref={domRef}
       css={css`
         .ac-dropdown-button__text {
@@ -186,6 +191,7 @@ function Picker<T extends object>(
         <DropdownButton
           // @ts-ignore
           ref={triggerRef}
+          isQuiet={isQuiet}
           isActive={state.isOpen}
           isDisabled={isDisabled}
           autoFocus={autoFocus}

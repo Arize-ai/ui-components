@@ -4,6 +4,7 @@ import { InputBase, TextInputBase } from './input';
 import { AriaLabelingProps, DOMProps, FocusableDOMProps } from './dom';
 import { SingleSelection } from './selection';
 import { FocusableProps } from './events';
+import { StyleProps } from './style';
 
 export interface SelectProps<T>
   extends CollectionBase<T>,
@@ -40,7 +41,15 @@ export interface AriaSelectProps<T>
   name?: string;
 }
 
-export interface PickerProps<T> extends AriaSelectProps<T>, AddonableProps {
+export interface PickerProps<T>
+  extends AriaSelectProps<T>,
+    AddonableProps,
+    StyleProps {
+  /**
+   * Whether the picker should be displayed with a quiet style.
+   * @default false
+   */
+  isQuiet?: boolean;
   /** Alignment of the menu relative to the input target.
    * @default 'start'
    */
