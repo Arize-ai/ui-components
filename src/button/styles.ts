@@ -46,6 +46,13 @@ export const buttonCSS = css`
       background-color: ${theme.components.button.defaultHoverBackgroundColor};
     }
   }
+  &[data-variant='danger'] {
+    background-color: ${theme.colors.statusDanger};
+    border-color: ${theme.components.button.dangerBorderColor};
+    &:hover:not([disabled]) {
+      background-color: ${theme.components.button.dangerHoverBackgroundColor};
+    }
+  }
   &[data-childless='false'] > i,
   & > .ac-spinner {
     margin-right: ${theme.spacing.margin4}px;

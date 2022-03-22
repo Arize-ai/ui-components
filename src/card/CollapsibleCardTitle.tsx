@@ -52,7 +52,7 @@ export function CollapsibleCardTitle(props: CollapsibleCardTitleProps) {
         className="ac-card-collapsible__trigger"
         css={css`
           transition: transform ease var(--collapsible-card-animation-duration);
-          transform: rotate(180deg);
+          transform: rotate(-90deg);
           margin-right: ${theme.spacing.padding8}px;
         `}
         aria-hidden={true}

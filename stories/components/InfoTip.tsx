@@ -38,7 +38,7 @@ interface InfoTipProps {
  */
 function InfoTip({ children, postfix = true }: InfoTipProps) {
   return (
-    <TooltipTrigger delay={0} offset={8}>
+    <TooltipTrigger delay={0} offset={0}>
       {[
         <ActionButton
           key="info-icon"

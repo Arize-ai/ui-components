@@ -18,9 +18,11 @@ const headerBorderCSS = css`
 
 export const headerCSS = ({
   bordered,
+  collapsible,
   height = cardHeaderHeight,
 }: {
   bordered: boolean;
+  collapsible: boolean;
   height?: number;
 }) => css`
   display: flex;
@@ -30,6 +32,12 @@ export const headerCSS = ({
   align-items: center;
   padding: 0 16px;
   height: ${height}px;
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: ${collapsible
+      ? theme.colors.hoverBgColor
+      : 'transparent'};
+  }
   ${bordered ? headerBorderCSS : ''}
 `;
 
@@ -43,7 +51,6 @@ export const collapsibleCardCSS = css`
     display: flex;
     flex-direction: row;
     flex: 1 1 auto;
-    justify-content: space-between;
     align-items: center;
     appearance: none;
     background-color: inherit;
