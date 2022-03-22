@@ -2,6 +2,7 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { Accordion, AccordionProps, AccordionItem, Card } from '../src';
 import { withDesign } from 'storybook-addon-designs';
+import InfoTip from './components/InfoTip';
 
 const meta: Meta = {
   title: 'Accordion',
@@ -38,7 +39,11 @@ const Template: Story<AccordionProps> = args => (
     style={{ width: 700 }}
   >
     <Accordion>
-      <AccordionItem title="2 Predictions" id="predictions">
+      <AccordionItem
+        title="2 Predictions"
+        titleExtra={<InfoTip>Description of predictions</InfoTip>}
+        id="predictions"
+      >
         <AccordionContents />
       </AccordionItem>
       <AccordionItem title="100 Features" id="features">

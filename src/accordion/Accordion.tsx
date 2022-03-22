@@ -31,6 +31,10 @@ export function Accordion({ children }: AccordionProps) {
 export interface AccordionItemProps {
   title: string;
   /**
+   * An extra interactive element to be displayed next to the header
+   */
+  titleExtra?: ReactNode;
+  /**
    * A unique id for this part of the UI. Necessary for ally
    */
   id: string;
@@ -39,10 +43,26 @@ export interface AccordionItemProps {
 }
 
 export function AccordionItem(props: AccordionItemProps) {
-  const { title, id, defaultIsOpen = true, children } = props;
+  const { title, titleExtra, id, defaultIsOpen = true, children } = props;
   const [isOpen, setIsOpen] = useState(defaultIsOpen);
   const contentId = `${id}-content`,
     headerId = `${id}-heading`;
+
+  // Display the titleExtra inline
+  const titleEl = titleExtra ? (
+    <div
+      css={css`
+        display: flex;
+        flex-direction: row;
+      `}
+    >
+      <Text textSize="large">{title}</Text>
+      {titleExtra}
+    </div>
+  ) : (
+    <Text textSize="large">{title}</Text>
+  );
+
   return (
     <div
       className={classNames('ac-accordion-item', {
@@ -85,7 +105,7 @@ export function AccordionItem(props: AccordionItemProps) {
           aria-controls={contentId}
           aria-expanded={isOpen}
         >
-          <Text textSize="large">{title}</Text>
+          {titleEl}
           <Icon
             svg={<ArrowIosDownwardOutline />}
             className="ac-accordion-itemIndicator"

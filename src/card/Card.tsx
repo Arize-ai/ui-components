@@ -8,6 +8,7 @@ import { classNames } from '../utils';
 import { useId } from '@react-aria/utils';
 
 const headerTitleWrapCSS = css`
+  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   & > h3,
@@ -51,7 +52,7 @@ export function Card({
   extra,
   className,
   titleExtra,
-  collapsible,
+  collapsible = false,
   defaultOpen = true,
   id,
 }: CardProps) {
@@ -108,7 +109,7 @@ export function Card({
         'is-open': isOpen,
       })}
     >
-      <header css={headerCSS({ bordered: true })} id={headerId}>
+      <header css={headerCSS({ bordered: true, collapsible })} id={headerId}>
         {titleComponent}
         {extra}
       </header>
