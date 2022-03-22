@@ -50,6 +50,10 @@ export const Gallery = () => {
             Create Dashboard
           </Button>
           <Button variant="primary" icon={plusIcon} title="add" />
+          <Button variant="danger" icon={plusIcon}>
+            Delete Dashboard
+          </Button>
+          <Button variant="danger" icon={plusIcon} title="add" />
         </ButtonGroup>
       </li>
       <li>
@@ -64,6 +68,7 @@ export const Gallery = () => {
             Create Dashboard
           </Button>
           <Button variant="primary" icon={plusIcon} disabled title="add" />
+          <Button variant="danger" icon={plusIcon} disabled title="delete" />
         </ButtonGroup>
       </li>
       <li>
@@ -76,6 +81,7 @@ export const Gallery = () => {
             Create Dashboard
           </Button>
           <Button variant="default" icon={plusIcon} title="add" />
+          <Button variant="danger" icon={plusIcon} title="delete" />
         </ButtonGroup>
       </li>
       <li>
@@ -94,6 +100,12 @@ export const Gallery = () => {
             variant="primary"
             icon={plusIcon}
             title="add"
+          />
+          <Button
+            size="compact"
+            variant="danger"
+            icon={plusIcon}
+            title="delete"
           />
         </ButtonGroup>
       </li>

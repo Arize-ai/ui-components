@@ -97,6 +97,8 @@ const theme = {
       primaryHoverBackgroundColor: '#5BAECC',
       defaultBorderColor: borderColors.lightGrayBorder,
       defaultHoverBackgroundColor: '#64768A',
+      dangerBorderColor: lighten(0.1, '#F85149'),
+      dangerHoverBackgroundColor: lighten(0.1, '#F85149'),
     },
   },
   typography: {
