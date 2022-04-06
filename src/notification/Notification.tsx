@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, CSSProperties } from 'react';
 import { css } from '@emotion/core';
 import { Overlay } from '../overlays';
 import { Notice } from './Notice';
@@ -10,7 +10,12 @@ import {
   TRANSITION_EXIT_DURATION_MS,
 } from './constants';
 
-export type NotificationProps = {};
+export type NotificationProps = {
+  /**
+   * If provided, the notification container will use this style as a final override
+   */
+  style?: CSSProperties;
+};
 
 type NotificationState = {
   notices: NoticeDefinition[];
@@ -72,6 +77,7 @@ export class Notification extends Component<
               margin-top: ${theme.spacing.margin16}px;
             }
           `}
+          {...this.props}
         >
           <TransitionGroup className="ac-notice-list">
             {this.state.notices.map(notice => (
