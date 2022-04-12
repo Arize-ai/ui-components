@@ -103,7 +103,7 @@ const theme = {
   },
   typography: {
     weights: {
-      heavy: 500,
+      heavy: 600,
       normal: 400,
     },
     sizes: {
