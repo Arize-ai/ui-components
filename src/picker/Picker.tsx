@@ -134,7 +134,7 @@ function Picker<T extends object>(
       isOpen={state.isOpen}
       // @ts-ignore
       style={style}
-      className="ac-dropdown"
+      className={classNames('ac-dropdown', props.className)}
       // @ts-ignore
       ref={dropdownRef}
       placement={placement}
