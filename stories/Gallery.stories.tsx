@@ -47,7 +47,10 @@ const Template: Story = args => {
               variant="default"
               onClick={() => {
                 notify({
-                  variant: 'success',
+                  // @ts-ignore
+                  variant: ['info', 'success', 'warning', 'danger'][
+                    Math.floor(Math.random() * 4)
+                  ],
                   title: 'Awesome!',
                   message: 'Things worked as expected',
                   action: {

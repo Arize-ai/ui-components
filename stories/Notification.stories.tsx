@@ -86,3 +86,34 @@ const Template: Story<any> = args => {
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
+
+export const WithCustomStyle = () => {
+  const [notice, holder] = useNotification({
+    style: { bottom: 100, right: 30 },
+  });
+  return (
+    <Provider>
+      <button
+        onClick={() => {
+          notice({
+            // @ts-ignore
+            variant: ['info', 'success', 'warning', 'danger'][
+              Math.floor(Math.random() * 4)
+            ],
+            title: 'Clicked',
+            message: 'Do you see this?',
+            action: {
+              text: 'Try This',
+              onClick: () => {
+                alert('Done');
+              },
+            },
+          });
+        }}
+      >
+        Click Me
+      </button>
+      {holder}
+    </Provider>
+  );
+};
