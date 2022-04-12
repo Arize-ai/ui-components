@@ -1,42 +1,39 @@
 import { css } from '@emotion/core';
-import { transparentize } from 'polished';
+import { transparentize, darken } from 'polished';
 import theme from '../theme';
 
 export const baseSeverityCSS = css`
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(10px);
 `;
-export const warningCSS = css(
-  baseSeverityCSS,
-  css`
-    border: 1px solid ${theme.colors.statusWarning};
-    background-color: ${transparentize(0.85, theme.colors.statusWarning)};
-    color: ${theme.colors.statusWarning};
-  `
-);
 
-export const infoCSS = css(
-  baseSeverityCSS,
-  css`
-    border: 1px solid ${theme.colors.statusInfo};
-    background-color: ${transparentize(0.85, theme.colors.statusInfo)};
-    color: ${theme.colors.statusInfo};
-  `
-);
+const bgDarken = 0.4,
+  bgTransparentize = 0.5,
+  // FireFox does not support backdrop-filter so needs to be less transparent and darker
+  bgDarkenFallback = 0.45,
+  bgTransparentizeFallback = 0.1;
 
-export const dangerCSS = css(
-  baseSeverityCSS,
-  css`
-    border: 1px solid ${theme.colors.statusDanger};
-    background-color: ${transparentize(0.85, theme.colors.statusDanger)};
-    color: ${theme.colors.statusDanger};
-  `
-);
+const generateSeverityCSS = (severityColor: string) =>
+  css(
+    baseSeverityCSS,
+    css`
+      border: 1px solid ${severityColor};
+      /* FireFox Only style */
+      background-color: ${transparentize(
+        bgTransparentizeFallback,
+        darken(bgDarkenFallback, severityColor)
+      )};
+      color: ${severityColor};
+      /* background-filter support (Chrome / Safari) */
+      @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+        background-color: ${transparentize(
+          bgTransparentize,
+          darken(bgDarken, severityColor)
+        )};
+      }
+    `
+  );
 
-export const successCSS = css(
-  baseSeverityCSS,
-  css`
-    border: 1px solid ${theme.colors.statusSuccess};
-    background-color: ${transparentize(0.85, theme.colors.statusSuccess)};
-    color: ${theme.colors.statusSuccess};
-  `
-);
+export const warningCSS = generateSeverityCSS(theme.colors.statusWarning);
+export const infoCSS = generateSeverityCSS(theme.colors.statusInfo);
+export const dangerCSS = generateSeverityCSS(theme.colors.statusDanger);
+export const successCSS = generateSeverityCSS(theme.colors.statusSuccess);
