@@ -101,6 +101,8 @@ function Picker<T extends object>(
         // @ts-ignore
         layout={layout}
         state={state}
+        // Set max height: inherit so dropdown menu scrolling works
+        style={{ maxHeight: 'inherit' }}
         isLoading={isLoadingMore}
         onLoadMore={props.onLoadMore}
       />
