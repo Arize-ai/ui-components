@@ -26,7 +26,6 @@ export function DropdownMenu({
         padding: ${isPadded ? theme.spacing.padding8 : 0}px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
         border: 1px solid ${theme.components.dropdown.borderColor};
-
         max-height: inherit;
       `}
       style={style}
