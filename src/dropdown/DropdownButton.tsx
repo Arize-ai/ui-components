@@ -20,6 +20,7 @@ export interface DropdownButtonProps extends AddonableProps {
   isQuiet?: boolean;
   /** Whether the button is disabled. */
   isDisabled?: boolean;
+  isActive?: boolean;
   /** The content to display in the button. */
   children?: ReactNode;
   style?: CSSProperties;
@@ -90,6 +91,7 @@ function DropdownButton(
   const {
     isQuiet = false,
     isDisabled,
+    isActive,
     children,
     style,
     addonBefore,
@@ -103,7 +105,7 @@ function DropdownButton(
       {...mergeProps(buttonProps, hoverProps, otherProps)}
       ref={domRef}
       className={classNames('ac-dropdown-button', {
-        'is-active': isPressed,
+        'is-active': isActive || isPressed,
         'is-disabled': isDisabled,
         'is-hovered': isHovered,
       })}

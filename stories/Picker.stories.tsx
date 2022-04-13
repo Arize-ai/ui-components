@@ -211,3 +211,33 @@ const ItemsViaProps: Story<PickerProps<string>> = args => {
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const itemsViaProps = ItemsViaProps.bind({});
+
+let longList = [];
+
+for (var i = 0; i < 100; i++) {
+  longList.push({ id: i, name: `Item ${i}` });
+}
+
+const Long: Story<PickerProps<string>> = args => {
+  const [frequency, setFrequency] = React.useState<string>('rarely');
+  return (
+    <Provider>
+      <Picker
+        addonBefore={'Frequency'}
+        {...args}
+        selectedKey={frequency}
+        onSelectionChange={selected => setFrequency(selected as string)}
+        items={longList}
+        isOpen
+      >
+        {item => <Item>{item.name}</Item>}
+      </Picker>
+      <br />
+      <Text>Selected Value: {frequency}</Text>
+    </Provider>
+  );
+};
+
+// By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
+// https://storybook.js.org/docs/react/workflows/unit-testing
+export const long = Long.bind({});

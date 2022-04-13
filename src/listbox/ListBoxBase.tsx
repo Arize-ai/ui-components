@@ -139,7 +139,7 @@ function ListBoxBase<T>(
         focusedKey={state.selectionManager.focusedKey}
         sizeToFit="height"
         scrollDirection="vertical"
-        className="ac-Menu"
+        className="ac-menu"
         layout={layout}
         collection={state.collection}
         // @ts-ignore assume there is a header
