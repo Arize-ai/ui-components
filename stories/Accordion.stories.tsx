@@ -37,6 +37,7 @@ const Template: Story<AccordionProps> = args => (
     subTitle={'An overview of the the health of your model'}
     bodyStyle={{ padding: 0, overflow: 'hidden' }}
     style={{ width: 700 }}
+    collapsible
   >
     <Accordion>
       <AccordionItem

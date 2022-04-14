@@ -64,11 +64,7 @@ const Button = (props: ButtonProps, ref: FocusableRef<HTMLButtonElement>) => {
     >
       {loading ? <Spinner /> : null}
       {!loading && icon ? icon : null}
-      <Text
-        textSize="medium"
-        color={isDisabled ? 'white70' : 'white90'}
-        weight="heavy"
-      >
+      <Text textSize="medium" color={isDisabled ? 'white70' : 'white90'}>
         {children}
       </Text>
     </button>

@@ -11,6 +11,7 @@ import {
   Provider,
   Field,
 } from '../src';
+import { Icon, SearchOutline } from '../src/icon';
 // @ts-ignore
 import chartFile from './images/chart.png';
 
@@ -43,25 +44,40 @@ const Template: Story = args => {
           title="Prediction Volume"
           bodyStyle={{ padding: 0 }}
           extra={
-            <Button
-              variant="default"
-              onClick={() => {
-                notify({
-                  // @ts-ignore
-                  variant: ['info', 'success', 'warning', 'danger'][
-                    Math.floor(Math.random() * 4)
-                  ],
-                  title: 'Awesome!',
-                  message: 'Things worked as expected',
-                  action: {
-                    text: 'Try This',
-                    onClick: () => {},
-                  },
-                });
-              }}
+            <div
+              css={css`
+                display: flex;
+                flex-direction: row;
+                & > * + * {
+                  margin-left: 8px;
+                }
+              `}
             >
-              Notify
-            </Button>
+              <Button
+                variant="default"
+                onClick={() => {
+                  notify({
+                    // @ts-ignore
+                    variant: ['info', 'success', 'warning', 'danger'][
+                      Math.floor(Math.random() * 4)
+                    ],
+                    title: 'Awesome!',
+                    message: 'Things worked as expected',
+                    action: {
+                      text: 'Try This',
+                      onClick: () => {},
+                    },
+                  });
+                }}
+              >
+                Notify
+              </Button>
+              <Button
+                variant="default"
+                icon={<Icon svg={<SearchOutline />} />}
+              />
+              <TextField></TextField>
+            </div>
           }
         >
           <div

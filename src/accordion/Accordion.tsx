@@ -98,6 +98,10 @@ export function AccordionItem(props: AccordionItemProps) {
             border-bottom: 1px solid ${theme.colors.dividerColor};
             /* remove outline - TODO might need to give a visual cue that this area is in focus */
             outline: none;
+            transition: background-color 0.2s ease-in-out;
+            &:hover {
+              background-color: ${theme.colors.hoverBgColor};
+            }
           `}
           onClick={() => {
             setIsOpen(!isOpen);

@@ -29,7 +29,12 @@ const sizes = [
  */
 export const Gallery = () => {
   return (
-    <div>
+    <div
+      css={css`
+        display: flex;
+        flex-direction: row;
+      `}
+    >
       <p
         css={css`
           .ac-text {
@@ -41,7 +46,7 @@ export const Gallery = () => {
           return (
             // @ts-ignore
             <Text key={size} textSize={size}>
-              {size}
+              {`I will not waste chalk`}
             </Text>
           );
         })}
@@ -57,7 +62,7 @@ export const Gallery = () => {
           return (
             // @ts-ignore
             <Text key={size} textSize={size} weight="heavy">
-              {size}
+              {`I will not waste chalk`}
             </Text>
           );
         })}
