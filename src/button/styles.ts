@@ -13,12 +13,14 @@ export const buttonCSS = css`
   border-radius: 4px;
   color: ${theme.textColors.white90};
   cursor: pointer;
+  /* Disable outline since there are other mechanisms to show focus */
+  outline: noe;
   &:not([disabled]) {
     transition: all 0.2s ease-in-out;
   }
   &[disabled] {
     color: ${theme.textColors.white70};
-    cursor: not-allowed;
+    cursor: default;
   }
   &[data-size='normal'][data-childless='false'] {
     padding: ${theme.spacing.padding8}px ${theme.spacing.padding16}px;
@@ -42,6 +44,12 @@ export const buttonCSS = css`
   &[data-variant='default'] {
     background-color: ${theme.colors.gray500};
     border-color: ${theme.components.button.defaultBorderColor};
+    &:hover:not([disabled]) {
+      background-color: ${theme.components.button.defaultHoverBackgroundColor};
+    }
+  }
+  &[data-variant='quiet'] {
+    background-color: ${theme.colors.gray500};
     &:hover:not([disabled]) {
       background-color: ${theme.components.button.defaultHoverBackgroundColor};
     }

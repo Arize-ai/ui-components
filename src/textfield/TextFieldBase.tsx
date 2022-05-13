@@ -42,7 +42,7 @@ const appearKeyframes = keyframes`
     100% { opacity: 1; }
 `;
 
-export interface TextFieldProps
+interface TextFieldProps
   extends InputBase,
     Validation,
     HelpTextProps,
@@ -100,6 +100,7 @@ interface TextFieldBaseProps
   loadingIndicator?: ReactElement;
   isLoading?: boolean;
   className?: string;
+  variant?: 'default' | 'quiet';
 }
 
 export interface TextFieldRef
@@ -130,6 +131,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
     loadingIndicator,
     addonBefore,
     className,
+    variant = 'default',
   } = props;
   let { hoverProps, isHovered } = useHover({ isDisabled });
   let [isFocused, setIsFocused] = React.useState(false);
@@ -173,22 +175,25 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         'is-disabled': isDisabled,
         'is-readonly': isReadOnly,
       })}
+      data-variant={variant}
       css={css`
         display: flex;
         flex-direction: row;
         align-items: center;
         min-width: 270px;
-        border: 1px solid ${theme.colors.lightGrayBorder};
-        border-radius: ${theme.borderRadius.medium}px;
         background-color: ${theme.components.textField.backgroundColor};
         transition: all 0.2s ease-in-out;
         overflow: hidden;
         font-size: ${theme.typography.sizes.medium.fontSize}px;
-        &.is-hovered[:not(.is-disabled)] {
+        &[data-variant='default'] {
+          border: 1px solid ${theme.colors.lightGrayBorder};
+          border-radius: ${theme.borderRadius.medium}px;
+        }
+        &.is-hovered:not(.is-disabled)[data-variant='default'] {
           border: 1px solid ${theme.components.textField.hoverBorderColor};
           background-color: ${theme.components.textField.activeBackgroundColor};
         }
-        &.is-focused {
+        &.is-focused[data-variant='default'] {
           border: 1px solid ${theme.components.textField.activeBorderColor};
           background-color: ${theme.components.textField.activeBackgroundColor};
         }

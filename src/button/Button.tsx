@@ -12,7 +12,7 @@ import { buttonCSS } from './styles';
 
 export interface ButtonProps extends BaseButtonProps {
   children?: ReactNode | string;
-  variant: 'primary' | 'default' | 'danger';
+  variant: 'primary' | 'default' | 'danger' | 'quiet';
   disabled?: boolean;
   className?: string;
   onClick?: (e: SyntheticEvent<HTMLButtonElement>) => void;
