@@ -14,7 +14,7 @@ export const buttonCSS = css`
   color: ${theme.textColors.white90};
   cursor: pointer;
   /* Disable outline since there are other mechanisms to show focus */
-  outline: noe;
+  outline: none;
   &:not([disabled]) {
     transition: all 0.2s ease-in-out;
   }
