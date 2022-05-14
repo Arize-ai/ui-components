@@ -19,12 +19,15 @@ export function CompactSearchField(props: CompactSearchFieldProps) {
   const { isSearching = false, onFocus, onBlur } = props;
   const inputRef = React.useRef<TextFieldRef>(null);
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
+  const [isActive, setIsActive] = useState<boolean>(false);
 
+  // Focus the input when the search button is clicked
   useEffect(() => {
     if (isExpanded) {
       inputRef.current?.focus();
     }
   }, [isExpanded]);
+
   return (
     <div
       css={css`
@@ -33,6 +36,7 @@ export function CompactSearchField(props: CompactSearchFieldProps) {
         border: 1px solid ${theme.components.textField.borderColor};
         border-radius: ${theme.rounding.rounding4}px;
         overflow: hidden;
+        transition: all 0.2s ease-in-out;
         & > .ac-button {
           flex: none;
           border: none;
@@ -59,9 +63,13 @@ export function CompactSearchField(props: CompactSearchFieldProps) {
             width: 200px;
           }
         }
+        &.is-active {
+          border-color: ${theme.components.textField.activeBorderColor};
+        }
       `}
       className={classNames('ac-compact-search-field', {
         'is-expanded': isExpanded,
+        'is-active': isActive,
       })}
     >
       <Button
@@ -77,9 +85,11 @@ export function CompactSearchField(props: CompactSearchFieldProps) {
         {...props}
         variant="quiet"
         onFocus={e => {
+          setIsActive(true);
           onFocus && onFocus(e);
         }}
         onBlur={e => {
+          setIsActive(false);
           onBlur && onBlur(e);
         }}
       />
