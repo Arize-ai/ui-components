@@ -5,7 +5,7 @@ export const buttonCSS = css`
   border: 1px solid ${theme.colors.dark1};
   font-size: ${theme.typography.sizes.medium};
   font-weight: 600;
-
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;

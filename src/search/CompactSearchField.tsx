@@ -83,6 +83,7 @@ export function CompactSearchField(props: CompactSearchFieldProps) {
       <TextField
         ref={inputRef}
         {...props}
+        type="search"
         variant="quiet"
         onFocus={e => {
           setIsActive(true);
