@@ -1,5 +1,11 @@
 import React from 'react';
+import { css, keyframes } from '@emotion/core';
 
+const loadingCircleKeyframes = keyframes`
+ 100% {
+    transform: rotate(360deg);
+  }
+`;
 /**
  * Raw svg icons from eva. Easily stylizable via CSS
  * @src https://akveo.github.io/eva-icons/#/
@@ -401,6 +407,59 @@ export const SearchOutline = () => (
       <g data-name="search">
         <rect width="24" height="24" opacity="0" />
         <path d="M20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8 7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 11a6 6 0 1 1 6 6 6 6 0 0 1-6-6z" />
+      </g>
+    </g>
+  </svg>
+);
+
+export const LoadingOutline = () => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    css={css`
+      animation: ${loadingCircleKeyframes} 1s infinite linear;
+    `}
+  >
+    <g id="loading">
+      <mask
+        id="mask0_804_24"
+        style={{ maskType: 'alpha' }}
+        maskUnits="userSpaceOnUse"
+        x="2"
+        y="2"
+        width="20"
+        height="20"
+      >
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M2 12C2 6.486 6.486 2 12 2C17.514 2 22 6.486 22 12C22 17.514 17.514 22 12 22C6.486 22 2 17.514 2 12ZM4 12C4 16.411 7.589 20 12 20C16.411 20 20 16.411 20 12C20 7.589 16.411 4 12 4C7.589 4 4 7.589 4 12Z"
+          fill="inherit"
+        />
+      </mask>
+      <g mask="url(#mask0_804_24)">
+        <path
+          id="Union"
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2C11.4477 2 11 2.44772 11 3C11 3.55228 11.4477 4 12 4V12H20C20 12.5523 20.4477 13 21 13C21.5523 13 22 12.5523 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612Z"
+          fill="inherit"
+        />
+      </g>
+    </g>
+  </svg>
+);
+
+export const CloseCircleOutline = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g data-name="Layer 2">
+      <g data-name="close-circle">
+        <rect width="24" height="24" opacity="0" />
+        <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z" />
+        <path d="M14.71 9.29a1 1 0 0 0-1.42 0L12 10.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l1.3 1.29-1.3 1.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l1.29-1.3 1.29 1.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42L13.41 12l1.3-1.29a1 1 0 0 0 0-1.42z" />
       </g>
     </g>
   </svg>

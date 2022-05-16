@@ -10,7 +10,9 @@ import { useProviderProps } from '../provider';
 
 export interface TextFieldProps extends AriaTextFieldProps, AddonableProps {
   className?: string;
+  variant?: 'default' | 'quiet';
 }
+
 function TextField(props: TextFieldProps, ref: RefObject<TextFieldRef>) {
   // Call use provider props so the textfield can inherit from the provider
   // E.x. disabled, readOnly, etc.

@@ -42,7 +42,7 @@ const appearKeyframes = keyframes`
     100% { opacity: 1; }
 `;
 
-export interface TextFieldProps
+interface TextFieldProps
   extends InputBase,
     Validation,
     HelpTextProps,
@@ -100,6 +100,7 @@ interface TextFieldBaseProps
   loadingIndicator?: ReactElement;
   isLoading?: boolean;
   className?: string;
+  variant?: 'default' | 'quiet';
 }
 
 export interface TextFieldRef
@@ -130,6 +131,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
     loadingIndicator,
     addonBefore,
     className,
+    variant = 'default',
   } = props;
   let { hoverProps, isHovered } = useHover({ isDisabled });
   let [isFocused, setIsFocused] = React.useState(false);
@@ -173,22 +175,25 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         'is-disabled': isDisabled,
         'is-readonly': isReadOnly,
       })}
+      data-variant={variant}
       css={css`
         display: flex;
         flex-direction: row;
         align-items: center;
         min-width: 270px;
-        border: 1px solid ${theme.colors.lightGrayBorder};
-        border-radius: ${theme.borderRadius.medium}px;
         background-color: ${theme.components.textField.backgroundColor};
         transition: all 0.2s ease-in-out;
         overflow: hidden;
         font-size: ${theme.typography.sizes.medium.fontSize}px;
-        &.is-hovered[:not(.is-disabled)] {
+        &[data-variant='default'] {
+          border: 1px solid ${theme.colors.lightGrayBorder};
+          border-radius: ${theme.borderRadius.medium}px;
+        }
+        &.is-hovered:not(.is-disabled)[data-variant='default'] {
           border: 1px solid ${theme.components.textField.hoverBorderColor};
           background-color: ${theme.components.textField.activeBackgroundColor};
         }
-        &.is-focused {
+        &.is-focused[data-variant='default'] {
           border: 1px solid ${theme.components.textField.activeBorderColor};
           background-color: ${theme.components.textField.activeBackgroundColor};
         }
@@ -228,6 +233,14 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
           &.ac-textfield__validation-icon--invalid {
             color: ${theme.colors.statusDanger};
           }
+        }
+        /* Style for type=search */
+        input[type='search']::-webkit-search-cancel-button {
+          -webkit-appearance: none;
+          width: 16px;
+          height: 16px;
+          background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='rgba(255,255,255, 0.7)'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
+          cursor: pointer;
         }
       `}
     >

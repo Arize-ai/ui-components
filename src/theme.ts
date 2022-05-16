@@ -162,7 +162,9 @@ const theme = {
       thin: 2,
     },
   },
-
+  rounding: {
+    rounding4: 4,
+  },
   animation: {
     global: {
       /**
