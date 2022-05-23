@@ -86,6 +86,18 @@ export const Gallery = () => {
       </li>
       <li>
         <ButtonGroup>
+          <Button variant="default" disabled>Create Dashboard</Button>
+          <Button variant="default" icon={plusIcon} disabled>
+            Create Dashboard
+          </Button>
+          <Button variant="default" icon={plusIcon} disabled>
+            Create Dashboard
+          </Button>
+          <Button variant="default" icon={plusIcon} title="add" disabled/>
+        </ButtonGroup>
+      </li>
+      <li>
+        <ButtonGroup>
           <Button size="compact" variant="primary">
             Create Dashboard
           </Button>

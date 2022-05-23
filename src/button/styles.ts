@@ -19,8 +19,15 @@ export const buttonCSS = css`
     transition: all 0.2s ease-in-out;
   }
   &[disabled] {
-    color: ${theme.textColors.white70};
+    color: ${theme.textColors.white30};
     cursor: default;
+    span {
+      color: ${theme.textColors.white30};
+    }
+
+    svg {
+      filter: opacity(30%);
+    }
   }
   &[data-size='normal'][data-childless='false'] {
     padding: ${theme.spacing.padding8}px ${theme.spacing.padding16}px;
