@@ -2,7 +2,8 @@ import React, { ReactNode, useRef, useMemo } from 'react';
 import { Notification, NotificationProps } from './Notification';
 import { NoticeConfig } from './types';
 
-type NoticeFn = (noticeArgs: NoticeConfig) => void;
+export type NoticeFn = (noticeArgs: NoticeConfig) => void;
+
 export function useNotification(
   options?: NotificationProps
 ): [NoticeFn, ReactNode] {
