@@ -1,4 +1,4 @@
-import React, { ReactNode, SyntheticEvent } from 'react';
+import React, { isValidElement, ReactNode, SyntheticEvent } from 'react';
 import { useRadio } from '@react-aria/radio';
 import { useRadioProvider } from './context';
 import { Icon } from '../icon';
@@ -11,15 +11,18 @@ import {
   radioChildrenCSS,
   defaultRadioCSS,
   selectorRadioCSS,
+  getRadioCSS,
 } from './styles';
 import { useId } from '@react-aria/utils';
 import { Text } from '../content';
+import { RadioVariant } from './types';
+import { classNames } from '../utils';
 
 export type RadioProps = {
   /**
    * @default default
    */
-  variant?: 'default' | 'selector';
+  variant?: RadioVariant;
   /**
    * For the "default" variant, this is one or group of
    * components that will sit under the radio option
@@ -94,9 +97,7 @@ function Radio(props: RadioProps) {
     ? React.Children.map(
         props.children,
         child =>
-          child &&
-          // @ts-ignore
-          React.cloneElement(child, { isDisabled })
+          isValidElement(child) && React.cloneElement(child, { isDisabled })
       )
     : null;
 
@@ -108,7 +109,10 @@ function Radio(props: RadioProps) {
         noPadding,
       })}
       aria-label={value}
-      className="ac-radio"
+      className={classNames('ac-radio', {
+        'is-disabled': isDisabled,
+        'is-selected': isSelected,
+      })}
       {...focusProps}
       onClick={handleOnChangeLabel}
     >
@@ -122,7 +126,16 @@ function Radio(props: RadioProps) {
         />
       </VisuallyHidden>
       {variant === 'default' ? (
-        <div css={defaultRadioCSS} className="ac-radio--variant-default">
+        <div
+          css={getRadioCSS(variant)({
+            isDisabled,
+            isSelected,
+          })}
+          className={classNames(`ac-radio--variant-${variant}`, {
+            'is-disabled': isDisabled,
+            'is-selected': isSelected,
+          })}
+        >
           <Icon
             svg={currentRadioButton}
             css={radioButtonIconCSS({
@@ -140,8 +153,11 @@ function Radio(props: RadioProps) {
         <>
           {children && (
             <div
-              className="ac-radio--variant-selector"
-              css={selectorRadioCSS({
+              className={classNames(`ac-radio--variant-${variant}`, {
+                'is-disabled': isDisabled,
+                'is-selected': isSelected,
+              })}
+              css={getRadioCSS(variant)({
                 isDisabled,
                 isSelected,
               })}

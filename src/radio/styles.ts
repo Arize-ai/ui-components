@@ -1,5 +1,12 @@
 import theme from '../theme';
-import { css } from '@emotion/core';
+import { css, SerializedStyles } from '@emotion/core';
+import { RadioVariant } from './types';
+
+type RadioStyleProps = {
+  isSelected?: boolean;
+  isDisabled?: boolean;
+  noPadding?: boolean;
+};
 
 export const radioGroupLabelCSS = css`
   margin-bottom: ${theme.spacing.padding8}px;
@@ -16,10 +23,7 @@ export const radioGroupCSS = ({
 export const radioCSS = ({
   isDisabled = false,
   noPadding = false,
-}: {
-  isDisabled?: boolean;
-  noPadding?: boolean;
-}) => css`
+}: RadioStyleProps) => css`
   display: flex;
   flex-direction: column;
   cursor: ${isDisabled ? 'not-allowed' : 'pointer'};
@@ -29,17 +33,14 @@ export const radioCSS = ({
   }
 `;
 
-export const defaultRadioCSS = css`
+export const defaultRadioCSS = () => css`
   display: flex;
 `;
 
 export const selectorRadioCSS = ({
   isSelected = false,
   isDisabled = false,
-}: {
-  isSelected?: boolean;
-  isDisabled?: boolean;
-}) => css`
+}: RadioStyleProps) => css`
   height: 50px;
   border-radius: 8px;
   border: 2px solid
@@ -54,6 +55,24 @@ export const selectorRadioCSS = ({
     transition: border-color 0.2s ease-in-out;
   }`};
 `;
+
+export const inlineButtonRadioCSS = () => css``;
+
+export const getRadioCSS = (
+  variant: RadioVariant
+): ((props: RadioStyleProps) => SerializedStyles) => {
+  switch (variant) {
+    case 'default': {
+      return defaultRadioCSS;
+    }
+    case 'selector': {
+      return selectorRadioCSS;
+    }
+    case 'inline-button': {
+      return inlineButtonRadioCSS;
+    }
+  }
+};
 
 export const radioButtonIconCSS = ({
   isFocusVisible = false,

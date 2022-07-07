@@ -1,16 +1,18 @@
-import React, { ReactNode } from 'react';
+import React, { isValidElement, ReactNode } from 'react';
 import { useRadioGroupState } from '@react-stately/radio';
 import { useRadioGroup } from '@react-aria/radio';
 import { useId } from '@react-aria/utils';
 import { radioGroupCSS, radioGroupLabelCSS } from './styles';
 import { Text } from '../content';
 import { RadioContext } from './context';
+import { RadioVariant } from './types';
+import { classNames } from '../utils';
 
 export interface RadioGroupProps {
   /**
    * @default 'default'
    */
-  variant?: 'default' | 'selector';
+  variant?: RadioVariant;
   children: ReactNode;
   /**
    * (Optional) For labelling the radio options
@@ -43,7 +45,7 @@ function RadioGroup(props: RadioGroupProps) {
       role="radiogroup"
       css={radioGroupCSS(state)}
       {...radioGroupProps}
-      className="ac-radio-group"
+      className={classNames('ac-radio-group', `ac-radio-group--${variant}`)}
       {...labelProps}
     >
       {label && (
@@ -54,7 +56,7 @@ function RadioGroup(props: RadioGroupProps) {
       <RadioContext.Provider value={state}>
         {children &&
           React.Children.map(children, child => {
-            if (React.isValidElement(child)) {
+            if (isValidElement(child)) {
               return React.cloneElement(child, { variant });
             }
             return null;
