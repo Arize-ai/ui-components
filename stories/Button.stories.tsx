@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/core';
 import { Meta, Story } from '@storybook/react';
-import { ButtonGroup } from '../src/button';
+import { ButtonToolbar } from '../src/button';
 import { Button, ButtonProps } from '../src/button';
 import { Icon, PlusCircleOutline } from '../src/icon';
 import { withDesign } from 'storybook-addon-designs';
@@ -41,7 +41,7 @@ export const Gallery = () => {
       `}
     >
       <li>
-        <ButtonGroup>
+        <ButtonToolbar>
           <Button variant="primary">Create Dashboard</Button>
           <Button variant="primary" icon={plusIcon}>
             Create Dashboard
@@ -54,10 +54,10 @@ export const Gallery = () => {
             Delete Dashboard
           </Button>
           <Button variant="danger" icon={plusIcon} title="add" />
-        </ButtonGroup>
+        </ButtonToolbar>
       </li>
       <li>
-        <ButtonGroup>
+        <ButtonToolbar>
           <Button variant="primary" disabled>
             Create Dashboard
           </Button>
@@ -69,10 +69,10 @@ export const Gallery = () => {
           </Button>
           <Button variant="primary" icon={plusIcon} disabled title="add" />
           <Button variant="danger" icon={plusIcon} disabled title="delete" />
-        </ButtonGroup>
+        </ButtonToolbar>
       </li>
       <li>
-        <ButtonGroup>
+        <ButtonToolbar>
           <Button variant="default">Create Dashboard</Button>
           <Button variant="default" icon={plusIcon}>
             Create Dashboard
@@ -82,10 +82,10 @@ export const Gallery = () => {
           </Button>
           <Button variant="default" icon={plusIcon} title="add" />
           <Button variant="danger" icon={plusIcon} title="delete" />
-        </ButtonGroup>
+        </ButtonToolbar>
       </li>
       <li>
-        <ButtonGroup>
+        <ButtonToolbar>
           <Button size="compact" variant="primary">
             Create Dashboard
           </Button>
@@ -107,10 +107,10 @@ export const Gallery = () => {
             icon={plusIcon}
             title="delete"
           />
-        </ButtonGroup>
+        </ButtonToolbar>
       </li>
       <li>
-        <ButtonGroup>
+        <ButtonToolbar>
           <Button size="compact" variant="default">
             Create Dashboard
           </Button>
@@ -126,7 +126,7 @@ export const Gallery = () => {
             icon={plusIcon}
             title="add"
           />
-        </ButtonGroup>
+        </ButtonToolbar>
       </li>
     </ul>
   );
