@@ -3,25 +3,8 @@ import { css } from '@emotion/core';
 import { DOMRef } from '../types';
 import { useDOMRef } from '../utils/useDOMRef';
 import theme from '../theme';
-
-const {
-  typography: { sizes, weights },
-} = theme;
-
-type Size =
-  | 'xxxlarge'
-  | 'xxlarge'
-  | 'xlarge'
-  | 'large'
-  | 'medium'
-  | 'small'
-  | 'xsmall';
-
-type Weight = 'heavy' | 'normal';
-
-type Color = 'white90' | 'white70' | 'white30' | 'inherit';
-
-type TextElementType = 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
+import { Color, Size, TextElementType, Weight } from './types';
+import { textSizeCSS, textWeightCSS } from './styles';
 
 export interface TextProps extends HTMLProps<HTMLSpanElement> {
   /**
@@ -62,18 +45,6 @@ const textCSS = (color: Color) => css`
   /* default to no margin */
   margin: 0;
   color: ${theme.textColors[color]};
-`;
-
-const textSizeCSS = (size: Size) => {
-  const sizing = sizes[size];
-  return css`
-    font-size: ${sizing.fontSize}px;
-    line-height: ${sizing.lineHeight}px;
-  `;
-};
-
-const textWeightCSS = (weight: Weight) => css`
-  font-weight: ${weight === 'heavy' ? weights.heavy : weights.normal};
 `;
 
 /**

@@ -20,6 +20,7 @@ const meta: Meta = {
 export default meta;
 const DefaultChildren = [
   <Radio value="dogs" label="Dogs" />,
+  <Radio value="horses" label="Horses" />,
   <Radio value="cats" label="Cats" isDisabled />,
 ];
 const Template: Story<RadioGroupProps> = args => {
@@ -82,6 +83,21 @@ const SomeChildren = () => (
     <Radio value="parrot" label="Parrot" />
   </>
 );
+
+export const Gallery: Story<RadioGroupProps> = args => {
+  return (
+    <Card title="Radio Info" style={{ width: 300 }}>
+      <RadioGroup {...args} variant="inline-button">
+        {args.children || DefaultChildren}
+      </RadioGroup>
+      <br />
+      <br />
+      <RadioGroup {...args} variant="inline-button" size="compact">
+        {args.children || DefaultChildren}
+      </RadioGroup>
+    </Card>
+  );
+};
 
 WithMoreChildren.args = {
   children: SomeChildren(),

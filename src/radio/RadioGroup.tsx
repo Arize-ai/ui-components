@@ -5,7 +5,7 @@ import { useId } from '@react-aria/utils';
 import { radioGroupCSS, radioGroupLabelCSS } from './styles';
 import { Text } from '../content';
 import { RadioContext } from './context';
-import { RadioVariant } from './types';
+import { RadioSize, RadioVariant } from './types';
 import { classNames } from '../utils';
 
 export interface RadioGroupProps {
@@ -13,6 +13,11 @@ export interface RadioGroupProps {
    * @default 'default'
    */
   variant?: RadioVariant;
+  /**
+   * The size of the radio. Only relevant to `inline-button`
+   * @default 'normal'
+   */
+  size?: RadioSize;
   children: ReactNode;
   /**
    * (Optional) For labelling the radio options
@@ -30,7 +35,7 @@ export interface RadioGroupProps {
 }
 
 function RadioGroup(props: RadioGroupProps) {
-  const { children, label, variant } = props;
+  const { children, label, variant, size = 'normal' } = props;
   const labeledById = useId();
 
   const state = useRadioGroupState(props);
@@ -57,7 +62,7 @@ function RadioGroup(props: RadioGroupProps) {
         {children &&
           React.Children.map(children, child => {
             if (isValidElement(child)) {
-              return React.cloneElement(child, { variant });
+              return React.cloneElement(child, { variant, size });
             }
             return null;
           })}

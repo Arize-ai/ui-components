@@ -6,10 +6,13 @@ import {
   Card,
   useNotification,
   Button,
+  Text,
   TextField,
   Dropdown,
   Provider,
   Field,
+  RadioGroup,
+  Radio,
 } from '../src';
 import { Icon, SearchOutline } from '../src/icon';
 // @ts-ignore
@@ -132,6 +135,18 @@ const Template: Story = args => {
             />
             <Field label="Perform action">
               <Dropdown menu={<div>Hello</div>}>Action</Dropdown>
+            </Field>
+            <Field label="animal">
+              <RadioGroup variant="inline-button" defaultValue={'dogs'}>
+                <Radio value="dogs" label="Dogs">
+                  Dogs
+                </Radio>
+                ,
+                <Radio value="cats" label="Cats">
+                  Cats
+                </Radio>
+                ,
+              </RadioGroup>
             </Field>
             <Button variant="primary">Submit</Button>
           </div>
