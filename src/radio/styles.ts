@@ -2,6 +2,7 @@ import theme from '../theme';
 import { css, SerializedStyles } from '@emotion/core';
 import { RadioVariant } from './types';
 import { textSizeCSS } from '../content/styles';
+import { transparentize } from 'polished';
 
 type RadioStyleProps = {
   isSelected?: boolean;
@@ -78,7 +79,7 @@ export const inlineButtonRadioCSS = () =>
     css`
       transition: all 0.2s ease-in-out;
       &.is-selected {
-        background-color: ${theme.colors.arizeBlue};
+        background-color: ${transparentize(0.1, theme.colors.arizeBlue)};
         &:hover {
           background-color: ${theme.components.button
             .primaryHoverBackgroundColor};
