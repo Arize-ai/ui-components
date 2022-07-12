@@ -1,27 +1,53 @@
-import React, { ReactNode } from 'react';
 import { css } from '@emotion/core';
+import React, {
+  Children,
+  isValidElement,
+  cloneElement,
+  ReactNode,
+  HTMLAttributes,
+} from 'react';
 import theme from '../theme';
+import { ButtonProps } from './Button';
 
-type ButtonGroupProps = {
+export interface ButtonGroupProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
-};
+  size?: ButtonProps['size'];
+  /**
+   * Must provide an aria label for the group
+   */
+  ['aria-label']: string;
+}
 
-/**
- * ButtonGroup expects Buttons as children and should be used to manage button layouts
- */
-export function ButtonGroup({ children }: ButtonGroupProps) {
+const buttonGroupCSS = css`
+  display: inline-flex;
+  border-radius: ${theme.borderRadius.medium}px;
+  border: 1px solid ${theme.components.button.defaultBorderColor};
+  overflow: hidden;
+  & > .ac-button {
+    border-radius: 0;
+    border: none;
+  }
+  & > .ac-button + .ac-button {
+    border-left: 1px solid ${theme.components.button.defaultBorderColor};
+  }
+`;
+
+export function ButtonGroup({ children, size, ...divProps }: ButtonGroupProps) {
   return (
     <div
       className="ac-button-group"
-      css={css`
-        display: flex;
-        flex-direction: row;
-        & > .ac-button + .ac-button {
-          margin-left: ${theme.spacing.margin8}px;
-        }
-      `}
+      role="group"
+      css={buttonGroupCSS}
+      {...divProps}
     >
-      {children}
+      {Children.map(children, child => {
+        if (isValidElement(child)) {
+          return cloneElement(child, {
+            size,
+          });
+        }
+        return null;
+      })}
     </div>
   );
 }

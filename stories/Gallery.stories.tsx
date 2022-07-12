@@ -6,10 +6,14 @@ import {
   Card,
   useNotification,
   Button,
+  Text,
   TextField,
   Dropdown,
   Provider,
   Field,
+  RadioGroup,
+  Radio,
+  ButtonToolbar,
 } from '../src';
 import { Icon, SearchOutline } from '../src/icon';
 // @ts-ignore
@@ -53,29 +57,31 @@ const Template: Story = args => {
                 }
               `}
             >
-              <Button
-                variant="default"
-                onClick={() => {
-                  notify({
-                    // @ts-ignore
-                    variant: ['info', 'success', 'warning', 'danger'][
-                      Math.floor(Math.random() * 4)
-                    ],
-                    title: 'Awesome!',
-                    message: 'Things worked as expected',
-                    action: {
-                      text: 'Try This',
-                      onClick: () => {},
-                    },
-                  });
-                }}
-              >
-                Notify
-              </Button>
-              <Button
-                variant="default"
-                icon={<Icon svg={<SearchOutline />} />}
-              />
+              <ButtonToolbar>
+                <Button
+                  variant="default"
+                  onClick={() => {
+                    notify({
+                      // @ts-ignore
+                      variant: ['info', 'success', 'warning', 'danger'][
+                        Math.floor(Math.random() * 4)
+                      ],
+                      title: 'Awesome!',
+                      message: 'Things worked as expected',
+                      action: {
+                        text: 'Try This',
+                        onClick: () => {},
+                      },
+                    });
+                  }}
+                >
+                  Notify
+                </Button>
+                <Button
+                  variant="default"
+                  icon={<Icon svg={<SearchOutline />} />}
+                />
+              </ButtonToolbar>
               <TextField></TextField>
             </div>
           }
@@ -132,6 +138,18 @@ const Template: Story = args => {
             />
             <Field label="Perform action">
               <Dropdown menu={<div>Hello</div>}>Action</Dropdown>
+            </Field>
+            <Field label="animal">
+              <RadioGroup variant="inline-button" defaultValue={'dogs'}>
+                <Radio value="dogs" label="Dogs">
+                  Dogs
+                </Radio>
+                ,
+                <Radio value="cats" label="Cats">
+                  Cats
+                </Radio>
+                ,
+              </RadioGroup>
             </Field>
             <Button variant="primary">Submit</Button>
           </div>

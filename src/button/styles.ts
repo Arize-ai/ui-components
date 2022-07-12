@@ -4,14 +4,13 @@ import { transparentize } from 'polished';
 
 export const buttonCSS = css`
   border: 1px solid ${theme.colors.dark1};
-  font-size: ${theme.typography.sizes.medium};
   font-weight: 600;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: content-box;
-  border-radius: 4px;
+  border-radius: ${theme.borderRadius.medium}px;
   color: ${theme.textColors.white90};
   cursor: pointer;
   /* Disable outline since there are other mechanisms to show focus */
