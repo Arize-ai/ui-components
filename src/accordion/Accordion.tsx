@@ -94,7 +94,7 @@ export function AccordionItem(props: AccordionItemProps) {
             background-color: inherit;
             border: 0;
             text-align: start;
-            color: ${theme.colors.text1};
+            color: ${theme.textColors.white90};
             border-bottom: 1px solid ${theme.colors.dividerColor};
             /* remove outline - TODO might need to give a visual cue that this area is in focus */
             outline: none;

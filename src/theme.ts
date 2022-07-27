@@ -5,12 +5,6 @@ const baseColors = {
   dark3: '#707070',
   dark4: '#1C232B', // card bg
   dark5: '#2D353E',
-  // TODO to be deprecated
-  text1: '#FFFFFF',
-  text2: '#D4D4D5',
-  text3: '#BBBDBF',
-  text4: '#D4D4D5',
-  text5: '#A3A6A9',
 };
 
 const grayColors = {
