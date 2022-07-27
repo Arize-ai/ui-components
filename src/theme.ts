@@ -1,11 +1,4 @@
 import { lighten, darken } from 'polished';
-const baseColors = {
-  dark1: '#0B1015', // body bg
-  dark2: '#17202A', // nav bg
-  dark3: '#707070',
-  dark4: '#1C232B', // card bg
-  dark5: '#2D353E',
-};
 
 const grayColors = {
   gray500: '#2D353E',
@@ -46,7 +39,6 @@ const labelColors = {
 
 const theme = {
   colors: {
-    ...baseColors,
     ...arizeColors,
     ...grayColors,
     ...borderColors,
@@ -93,6 +85,9 @@ const theme = {
       defaultHoverBackgroundColor: '#64768A',
       dangerBorderColor: lighten(0.1, '#F85149'),
       dangerHoverBackgroundColor: lighten(0.1, '#F85149'),
+    },
+    card: {
+      bgColor: '#1C232B',
     },
   },
   typography: {

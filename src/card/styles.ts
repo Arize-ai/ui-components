@@ -5,7 +5,7 @@ const cardHeaderHeight = 68;
 export const cardCSS = css`
   display: flex;
   flex-direction: column;
-  background-color: ${theme.colors.dark4};
+  background-color: ${theme.components.card.bgColor};
   color: ${theme.textColors.white90};
   border-radius: 8px;
   border: 1px solid ${theme.colors.dividerColor};
@@ -13,7 +13,7 @@ export const cardCSS = css`
 `;
 
 const headerBorderCSS = css`
-  border-bottom: 1px solid ${theme.colors.dark5};
+  border-bottom: 1px solid ${theme.colors.gray500};
 `;
 
 export const headerCSS = ({
