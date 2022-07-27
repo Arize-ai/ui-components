@@ -37,7 +37,7 @@ const labelColors = {
   gray: 'rgba(255, 255, 255, 0.7)',
 };
 
-const theme = {
+export const theme = {
   colors: {
     ...arizeColors,
     ...grayColors,
