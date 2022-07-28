@@ -42,8 +42,6 @@ export const theme = {
     ...arizeColors,
     ...grayColors,
     ...borderColors,
-    primary: '#db247c', // pink
-    secondary: '#db247c', // blue
     statusInfo: '#72D9FF',
     statusSuccess: '#7EE787', // RGB independent success color
     statusWarning: '#E69958',
