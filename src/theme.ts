@@ -1,17 +1,4 @@
 import { lighten, darken } from 'polished';
-const baseColors = {
-  dark1: '#0B1015', // body bg
-  dark2: '#17202A', // nav bg
-  dark3: '#707070',
-  dark4: '#1C232B', // card bg
-  dark5: '#2D353E',
-  // TODO to be deprecated
-  text1: '#FFFFFF',
-  text2: '#D4D4D5',
-  text3: '#BBBDBF',
-  text4: '#D4D4D5',
-  text5: '#A3A6A9',
-};
 
 const grayColors = {
   gray500: '#2D353E',
@@ -50,14 +37,11 @@ const labelColors = {
   gray: 'rgba(255, 255, 255, 0.7)',
 };
 
-const theme = {
+export const theme = {
   colors: {
-    ...baseColors,
     ...arizeColors,
     ...grayColors,
     ...borderColors,
-    primary: '#db247c', // pink
-    secondary: '#db247c', // blue
     statusInfo: '#72D9FF',
     statusSuccess: '#7EE787', // RGB independent success color
     statusWarning: '#E69958',
@@ -99,6 +83,9 @@ const theme = {
       defaultHoverBackgroundColor: '#64768A',
       dangerBorderColor: lighten(0.1, '#F85149'),
       dangerHoverBackgroundColor: lighten(0.1, '#F85149'),
+    },
+    card: {
+      bgColor: '#1C232B',
     },
   },
   typography: {

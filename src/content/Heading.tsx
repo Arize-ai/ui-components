@@ -30,7 +30,7 @@ export interface HeadingProps {
 const headingCSS = css`
   /* default to no margin */
   margin: 0;
-  color: ${theme.colors.text1};
+  color: ${theme.textColors.white90};
 `;
 
 const headingSizeCSS = (level: Level) => {

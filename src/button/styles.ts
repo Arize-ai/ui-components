@@ -3,7 +3,7 @@ import theme from '../theme';
 import { transparentize } from 'polished';
 
 export const buttonCSS = css`
-  border: 1px solid ${theme.colors.dark1};
+  border: 1px solid ${theme.components.button.defaultBorderColor};
   font-weight: 600;
   margin: 0;
   display: flex;

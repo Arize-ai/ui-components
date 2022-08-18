@@ -5,15 +5,15 @@ const cardHeaderHeight = 68;
 export const cardCSS = css`
   display: flex;
   flex-direction: column;
-  background-color: ${theme.colors.dark4};
-  color: ${theme.colors.text1};
+  background-color: ${theme.components.card.bgColor};
+  color: ${theme.textColors.white90};
   border-radius: 8px;
   border: 1px solid ${theme.colors.dividerColor};
   overflow: hidden;
 `;
 
 const headerBorderCSS = css`
-  border-bottom: 1px solid ${theme.colors.dark5};
+  border-bottom: 1px solid ${theme.colors.gray500};
 `;
 
 export const headerCSS = ({
@@ -56,7 +56,7 @@ export const collapsibleCardCSS = css`
     background-color: inherit;
     border: 0;
     text-align: start;
-    color: ${theme.colors.text1};
+    color: ${theme.textColors.white90};
     /* remove outline - TODO might need to give a visual cue that this area is in focus */
     outline: none;
   }
