@@ -1,6 +1,14 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Form, FormProps, TextField, Picker, Item, Field } from '../src';
+import {
+  Form,
+  FormProps,
+  TextField,
+  Picker,
+  Item,
+  Field,
+  Button,
+} from '../src';
 import { useForm, Controller } from 'react-hook-form';
 
 const meta: Meta = {
@@ -89,7 +97,7 @@ const Template: Story<FormProps> = args => {
           )}
         />
       </Field>
-      <input type="submit" />
+      <Button variant="primary" type="submit" />
     </Form>
   );
 };
