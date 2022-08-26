@@ -25,7 +25,6 @@ interface CollapsibleCardTitleProps {
    * A unique id for the header of the collapsible card title. Necessary for ally
    */
   headerId: string;
-  bordered?: boolean;
   className?: string;
   subTitle: ReactNode;
 }

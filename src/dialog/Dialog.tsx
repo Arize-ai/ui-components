@@ -1,15 +1,31 @@
-import { ActionButton } from '../button';
-import { classNames, unwrapDOMRef, useDOMRef } from '../utils';
+import { Button } from '../button';
+import { classNames, useDOMRef } from '../utils';
 import { CloseOutline, Icon } from '../icon';
 import { DialogContext, DialogContextValue } from './context';
-import { DismissButton } from '@react-aria/overlays';
 import { DOMRef } from '@react-types/shared';
 import { FocusScope } from '@react-aria/focus';
 import { mergeProps } from '@react-aria/utils';
-import React, { useContext, useMemo, useRef } from 'react';
+import React, { useContext } from 'react';
 import { useDialog } from '@react-aria/dialog';
 import { DialogProps } from '../types/dialog';
+import { Heading } from '../content';
+import { css } from '@emotion/core';
+import theme from '../theme';
 
+const dialogCSS = css`
+  outline: none;
+  &.ac-dialog--slideOver {
+    &.ac-dialog--small {
+      width: 400px;
+    }
+    &.ac-dialog--medium {
+      width: 700px;
+    }
+    &.ac-dialog--large {
+      width: 900px;
+    }
+  }
+`;
 let sizeMap = {
   S: 'small',
   M: 'medium',
@@ -26,12 +42,12 @@ function Dialog(props: DialogProps, ref: DOMRef) {
     isDismissable = contextProps.isDismissable,
     onDismiss = contextProps.onClose,
     size,
-    ...otherProps
+    title,
   } = props;
   let domRef = useDOMRef(ref);
   size = size || 'S';
   let sizeVariant = sizeMap[size];
-  let { dialogProps, titleProps } = useDialog(
+  const { dialogProps, titleProps } = useDialog(
     mergeProps(contextProps, props),
     domRef
   );
@@ -42,16 +58,36 @@ function Dialog(props: DialogProps, ref: DOMRef) {
         {...dialogProps}
         className={classNames('ac-dialog', {
           [`ac-dialog--${sizeVariant}`]: sizeVariant,
+          [`ac-dialog--${type}`]: type,
           'ac-dialog--dismissable': isDismissable,
         })}
         ref={domRef}
+        css={dialogCSS}
       >
+        <Heading
+          level={2}
+          {...titleProps}
+          css={css`
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: ${theme.spacing.padding8}px ${theme.spacing.padding16}px;
+            border-bottom: 1px solid ${theme.colors.gray500};
+          `}
+        >
+          {title}
+          {isDismissable && (
+            <Button
+              variant="default"
+              aria-label="dismiss"
+              onClick={onDismiss}
+              icon={<Icon svg={<CloseOutline />} />}
+              size="compact"
+            />
+          )}
+        </Heading>
         {children}
-        {isDismissable && (
-          <ActionButton aria-label="dismiss" onPress={onDismiss}>
-            <Icon svg={CloseOutline} />
-          </ActionButton>
-        )}
       </section>
     </FocusScope>
   );

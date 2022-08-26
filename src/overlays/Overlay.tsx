@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { OverlayProps } from '../types';
 import { OpenTransition } from './OpenTransition';
 
-function Overlay(props: OverlayProps) {
+function Overlay(props: OverlayProps): any {
   let {
     children,
     isOpen,

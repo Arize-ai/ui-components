@@ -212,7 +212,7 @@ const ItemsViaProps: Story<PickerProps<string>> = args => {
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const itemsViaProps = ItemsViaProps.bind({});
 
-let longList = [];
+let longList: Array<{ id: number; name: string }> = [];
 
 for (var i = 0; i < 100; i++) {
   longList.push({ id: i, name: `Item ${i}` });
