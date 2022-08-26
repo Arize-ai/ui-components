@@ -26,7 +26,8 @@ const meta: Meta = {
 export default meta;
 
 const Template: Story<DialogProps> = args => {
-  args.title = args.title || 'Title';
+  const { isDismissable, onDismiss, ...props } = args;
+  props.title = props.title || 'Title';
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Provider>
@@ -39,7 +40,7 @@ const Template: Story<DialogProps> = args => {
         onDismiss={() => setIsOpen(false)}
       >
         {isOpen && (
-          <Dialog {...args}>
+          <Dialog {...props}>
             <Text>hello</Text>
           </Dialog>
         )}

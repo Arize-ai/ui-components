@@ -29,6 +29,7 @@ const modalCSS = css`
   opacity: 0;
   &.ac-modal--slideOver {
     border-left: 1px solid ${theme.colors.gray500};
+    box-shadow: -10px 0px 30px 10px rgba(0, 0, 0, 0.1);
     /* Start offset by the animation distance */
     transform: translateX(500px);
 

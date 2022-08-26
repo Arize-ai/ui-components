@@ -8,12 +8,10 @@ const underlayCSS = css`
   visibility: none;
 
   // Exit animations
-  transition: opacity 100ms cubic-bezier(0, 0, 0.4, 1) 100ms,
-    visibility 0ms linear 100ms;
+  transition: opacity 0.2s ease-out 0.2s;
   &.is-open {
     /* Entry animations */
-    transition: opacity 100ms cubic-bezier(0.5, 0, 1, 1) 0;
-
+    transition: opacity 0.2s ease-in 0.1s;
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
