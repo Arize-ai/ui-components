@@ -87,6 +87,9 @@ export const theme = {
     card: {
       bgColor: '#1C232B',
     },
+    modal: {
+      bgColor: '#1C232B',
+    },
   },
   typography: {
     weights: {

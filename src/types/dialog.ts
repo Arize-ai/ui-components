@@ -25,6 +25,7 @@ export interface AriaDialogProps extends DOMProps, AriaLabelingProps {
 }
 
 export interface DialogProps extends AriaDialogProps {
+  title: ReactNode;
   /** The contents of the Dialog. */
   children: ReactNode;
   /** The size of the Dialog. Only applies to "modal" type Dialogs. */

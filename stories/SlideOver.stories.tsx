@@ -1,23 +1,18 @@
 import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
-import {
-  Provider,
-  SlideOverProps,
-  Text,
-  Button,
-  DialogContainer,
-  Dialog,
-  Heading,
-} from '../src';
-
-import css from '@emotion/css';
+import { Provider, Text, Button, DialogContainer, Dialog } from '../src';
+import { DialogProps } from '../src/types/dialog';
 
 const meta: Meta = {
   title: 'SlideOver',
-  component: DialogContainer,
+  component: Dialog,
   decorators: [withDesign],
-  argTypes: {},
+  argTypes: {
+    title: {
+      control: 'text',
+    },
+  },
   parameters: {
     controls: { expanded: true },
     design: {
@@ -30,7 +25,8 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<SlideOverProps> = args => {
+const Template: Story<DialogProps> = args => {
+  args.title = args.title || 'Title';
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Provider>
@@ -43,8 +39,7 @@ const Template: Story<SlideOverProps> = args => {
         onDismiss={() => setIsOpen(false)}
       >
         {isOpen && (
-          <Dialog>
-            <Heading>Example Slide Over</Heading>
+          <Dialog {...args}>
             <Text>hello</Text>
           </Dialog>
         )}
@@ -56,5 +51,3 @@ const Template: Story<SlideOverProps> = args => {
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
-
-Default.args = {};

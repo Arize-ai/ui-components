@@ -11,17 +11,39 @@ import { Underlay } from './Underlay';
 const modalWrapperCSS = css`
   box-sizing: border-box;
   height: var(--ac-visual-viewport-height);
-
-  pointer-events: none;
   z-index: 2;
   transition: visibility 0ms linear 130ms;
   display: flex;
   position: fixed;
-  top: 0;
-  right: 0;
+  pointer-events: none;
+  &.ac-modal-wrapper--slideOver {
+    top: 0;
+    right: 0;
+  }
 `;
+
+const transitionAnimationTime = '0.2s';
 const modalCSS = css`
-  background-color: ${theme.colors.gray500};
+  background-color: ${theme.components.modal.bgColor};
+  pointer-events: auto;
+  opacity: 0;
+  &.ac-modal--slideOver {
+    border-left: 1px solid ${theme.colors.gray500};
+    /* Start offset by the animation distance */
+    transform: translateX(500px);
+
+    /* Exit animations */
+    transition: opacity ${transitionAnimationTime} cubic-bezier(0.5, 0, 1, 1),
+      transform ${transitionAnimationTime} cubic-bezier(0, 0, 0.4, 1);
+    &.is-open {
+      /* Entry animations */
+      transition: transform 200ms cubic-bezier(0, 0, 0.4, 1),
+        opacity 200ms cubic-bezier(0, 0, 0.4, 1);
+      opacity: 0.9999;
+      visibility: visible;
+      transform: translateX(0);
+    }
+  }
 `;
 interface ModalWrapperProps extends HTMLAttributes<HTMLElement> {
   children: ReactNode;
@@ -36,7 +58,6 @@ const ModalWrapper = forwardRef<HTMLDivElement>(function(
   props: ModalWrapperProps,
   ref: RefObject<HTMLDivElement>
 ) {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   let { children, isOpen, type, overlayProps, ...otherProps } = props;
 
   usePreventScroll();
@@ -78,9 +99,9 @@ const ModalWrapper = forwardRef<HTMLDivElement>(function(
 
 function Modal(props: ModalProps, ref: DOMRef<HTMLElement>) {
   const { children, onClose, type, ...otherProps } = props;
-  let domRef = useDOMRef(ref);
+  const domRef = useDOMRef(ref);
 
-  let { overlayProps, underlayProps } = useOverlay(props, domRef);
+  const { overlayProps, underlayProps } = useOverlay(props, domRef);
   return (
     <Overlay {...otherProps}>
       <Underlay {...underlayProps} />

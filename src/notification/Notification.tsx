@@ -79,8 +79,10 @@ export class Notification extends Component<
           `}
           {...this.props}
         >
+          {/* @ts-ignore */}
           <TransitionGroup className="ac-notice-list">
             {this.state.notices.map(notice => (
+              /* @ts-ignore */
               <CSSTransition
                 key={notice.id}
                 timeout={{
