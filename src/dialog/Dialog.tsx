@@ -43,6 +43,7 @@ function Dialog(props: DialogProps, ref: DOMRef) {
     onDismiss = contextProps.onClose,
     size,
     title,
+    extra,
   } = props;
   let domRef = useDOMRef(ref);
   size = size || 'S';
@@ -77,15 +78,27 @@ function Dialog(props: DialogProps, ref: DOMRef) {
           `}
         >
           {title}
-          {isDismissable && (
-            <Button
-              variant="default"
-              aria-label="dismiss"
-              onClick={onDismiss}
-              icon={<Icon svg={<CloseOutline />} />}
-              size="compact"
-            />
-          )}
+          <div
+            css={css`
+              display: flex;
+              flex-direction: row;
+              .ac-dialog__dismiss-button {
+                margin-left: ${theme.spacing.margin8}px;
+              }
+            `}
+          >
+            {extra}
+            {isDismissable && (
+              <Button
+                variant="default"
+                aria-label="dismiss"
+                onClick={onDismiss}
+                icon={<Icon svg={<CloseOutline />} />}
+                size="compact"
+                className="ac-dialog__dismiss-button"
+              />
+            )}
+          </div>
         </Heading>
         {children}
       </section>
