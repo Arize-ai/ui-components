@@ -1,8 +1,20 @@
 import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
-import { Provider, Text, Button, DialogContainer, Dialog } from '../src';
+import {
+  Provider,
+  Text,
+  Button,
+  DialogContainer,
+  Dialog,
+  ButtonGroup,
+} from '../src';
 import { DialogProps } from '../src/types/dialog';
+import {
+  ArrowIosDownwardOutline,
+  ArrowIosUpwardOutline,
+  Icon,
+} from '../src/icon';
 
 const meta: Meta = {
   title: 'SlideOver',
@@ -52,3 +64,33 @@ const Template: Story<DialogProps> = args => {
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
+
+export const Paginated: Story<DialogProps> = args => {
+  const { isDismissable, onDismiss, ...props } = args;
+  props.title = props.title || 'Title';
+  return (
+    <Provider>
+      <DialogContainer type="slideOver" isDismissable onDismiss={() => {}}>
+        <Dialog
+          {...props}
+          extra={
+            <ButtonGroup aria-label="pagination" size="compact">
+              {[
+                <Button
+                  variant="default"
+                  icon={<Icon svg={<ArrowIosUpwardOutline />} />}
+                />,
+                <Button
+                  variant="default"
+                  icon={<Icon svg={<ArrowIosDownwardOutline />} />}
+                />,
+              ]}
+            </ButtonGroup>
+          }
+        >
+          <Text>hello</Text>
+        </Dialog>
+      </DialogContainer>
+    </Provider>
+  );
+};
