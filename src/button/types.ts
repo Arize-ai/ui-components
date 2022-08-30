@@ -1,10 +1,13 @@
 import { ReactNode } from 'react';
+import { AriaLabelingProps, FocusableDOMProps } from '../types';
 
-export interface BaseButtonProps {
+interface AriaBaseButtonProps extends FocusableDOMProps, AriaLabelingProps {
   /**
-   * A custom id for ally, analytics
+   * The behavior of the button when used in an HTML form.
    */
-  id?: string;
+  type?: 'button' | 'submit' | 'reset';
+}
+export interface BaseButtonProps extends AriaBaseButtonProps {
   /** Whether the button is disabled. */
   isDisabled?: boolean;
   /** The content to display in the button. */

@@ -42,7 +42,9 @@ export const Gallery = () => {
     >
       <li>
         <ButtonToolbar>
-          <Button variant="primary">Create Dashboard</Button>
+          <Button id="primary-test-button" variant="primary">
+            Create Dashboard
+          </Button>
           <Button variant="primary" icon={plusIcon}>
             Create Dashboard
           </Button>
