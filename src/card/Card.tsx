@@ -90,7 +90,6 @@ export function Card({
         title={titleEl}
         contentId={contentId}
         headerId={headerId}
-        bordered={false}
         className="ac-card-collapsible-header"
         subTitle={subTitleEl}
       />

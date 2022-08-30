@@ -49,8 +49,10 @@ export const buttonCSS = css`
     }
   }
   &[data-variant='quiet'] {
-    background-color: ${transparentize(0.1, theme.colors.gray500)};
+    background-color: transparent;
+    border-color: transparent;
     &:hover:not([disabled]) {
+      border-color: transparent;
       background-color: ${theme.components.button.defaultHoverBackgroundColor};
     }
   }

@@ -1,5 +1,5 @@
 {
-  "version": "0.4.15",
+  "version": "0.5.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -25,8 +25,8 @@
   },
   "peerDependencies": {
     "@emotion/core": ">=10",
-    "react": ">=16",
-    "react-dom": ">=16"
+    "react": ">=18",
+    "react-dom": ">=18"
   },
   "husky": {
     "hooks": {
@@ -55,11 +55,11 @@
   "size-limit": [
     {
       "path": "dist/components.cjs.production.min.js",
-      "limit": "150 KB"
+      "limit": "170 KB"
     },
     {
       "path": "dist/components.esm.js",
-      "limit": "150 KB"
+      "limit": "170 KB"
     }
   ],
   "devDependencies": {
@@ -74,27 +74,25 @@
     "@storybook/addon-links": "^6.0.26",
     "@storybook/addons": "^6.0.26",
     "@storybook/react": "^6.0.26",
-    "@types/react": "^16.9.53",
-    "@types/react-dom": "^16.9.8",
-    "@types/react-transition-group": "^4.4.1",
+    "@types/react": "18",
+    "@types/react-dom": "18",
     "babel-loader": "^8.1.0",
     "babel-plugin-polished": "^1.1.0",
     "chromatic": "^6.5.1",
     "husky": "^4.3.0",
     "polished": "^4.2.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "18",
+    "react-dom": "18",
     "react-hook-form": "^7.27.1",
     "react-is": "^17.0.1",
     "size-limit": "^4.6.2",
     "storybook-addon-designs": "^5.4.5",
-    "tsdx": "0.14.1",
     "tslib": "^2.0.3",
     "typescript": "^4.0.3"
   },
   "resolutions": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^18",
+    "react-dom": "^18",
     "**/@typescript-eslint/eslint-plugin": "^4.1.1",
     "**/@typescript-eslint/parser": "^4.1.1"
   },
@@ -102,6 +100,7 @@
     "@react-aria/button": "^3.3.1",
     "@react-aria/dialog": "^3.1.2",
     "@react-aria/focus": "^3.2.3",
+    "@react-aria/i18n": "^3.5.1",
     "@react-aria/interactions": "^3.3.3",
     "@react-aria/listbox": "^3.3.1",
     "@react-aria/overlays": "^3.6.1",
@@ -123,8 +122,10 @@
     "@react-stately/utils": "^3.2.0",
     "@react-stately/virtualizer": "^3.1.5",
     "@react-types/shared": "^3.5.0",
+    "@types/react-transition-group": "^4.4.5",
     "clsx": "^1.1.1",
-    "react-transition-group": "^4.4.1"
+    "react-transition-group": "^4.4.5",
+    "tsdx": "^0.14.1"
   },
   "description": "Re-usable React components",
   "directories": {

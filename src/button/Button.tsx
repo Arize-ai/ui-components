@@ -38,6 +38,7 @@ const Button = (props: ButtonProps, ref: FocusableRef<HTMLButtonElement>) => {
     variant,
     onClick,
     icon,
+    className,
     size = 'normal',
     ...otherProps
   } = props;
@@ -51,7 +52,7 @@ const Button = (props: ButtonProps, ref: FocusableRef<HTMLButtonElement>) => {
       {...mergeProps(buttonProps, hoverProps, otherProps)}
       ref={domRef}
       css={buttonCSS}
-      className={classNames('ac-button', {
+      className={classNames('ac-button', className, {
         'is-active': isPressed,
         'is-disabled': isDisabled,
         'is-hovered': isHovered,

@@ -1,21 +1,9 @@
-import React, { ReactNode, useState, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import ReactDOM from 'react-dom';
+import { OverlayProps } from '../types';
 import { OpenTransition } from './OpenTransition';
 
-export interface OverlayProps {
-  children: ReactNode;
-  isOpen?: boolean;
-  container?: Element;
-  isKeyboardDismissDisabled?: boolean;
-  onEnter?: () => void;
-  onEntering?: () => void;
-  onEntered?: () => void;
-  onExit?: () => void;
-  onExiting?: () => void;
-  onExited?: () => void;
-}
-
-function Overlay(props: OverlayProps) {
+function Overlay(props: OverlayProps): any {
   let {
     children,
     isOpen,

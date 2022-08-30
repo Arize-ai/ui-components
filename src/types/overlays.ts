@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import { ReactElement, ReactNode } from 'react';
 
 export type PopoverClose = (close: () => void) => ReactElement;
 
@@ -75,4 +75,30 @@ export interface PositionProps {
   // boundaryElement?: Element,
   /** Whether the element is rendered. */
   isOpen?: boolean;
+}
+
+export interface OverlayProps {
+  children: ReactNode;
+  isOpen?: boolean;
+  container?: Element;
+  isKeyboardDismissDisabled?: boolean;
+  onEnter?: () => void;
+  onEntering?: () => void;
+  onEntered?: () => void;
+  onExit?: () => void;
+  onExiting?: () => void;
+  onExited?: () => void;
+}
+export interface ModalProps extends OverlayProps {
+  children: ReactElement;
+  isOpen?: boolean;
+  onClose?: () => void;
+  type?: 'modal' | 'slideOver';
+  isDismissable?: boolean;
+}
+
+export interface SlideOverProps extends OverlayProps {
+  children: ReactElement;
+  isOpen?: boolean;
+  onClose?: () => void;
 }
