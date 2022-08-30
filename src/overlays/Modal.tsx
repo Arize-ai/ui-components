@@ -22,7 +22,8 @@ const modalWrapperCSS = css`
   }
 `;
 
-const transitionAnimationTime = '0.2s';
+const exitTransitionAnimationTime = '0.1s';
+const enterTransitionAnimationTime = '0.2s';
 const modalCSS = css`
   background-color: ${theme.components.modal.bgColor};
   pointer-events: auto;
@@ -34,12 +35,14 @@ const modalCSS = css`
     transform: translateX(500px);
 
     /* Exit animations */
-    transition: opacity ${transitionAnimationTime} cubic-bezier(0.5, 0, 1, 1),
-      transform ${transitionAnimationTime} cubic-bezier(0, 0, 0.4, 1);
+    transition: opacity ${exitTransitionAnimationTime}
+        cubic-bezier(0.5, 0, 1, 1),
+      transform ${exitTransitionAnimationTime} cubic-bezier(0, 0, 0.4, 1);
     &.is-open {
       /* Entry animations */
-      transition: transform 200ms cubic-bezier(0, 0, 0.4, 1),
-        opacity 200ms cubic-bezier(0, 0, 0.4, 1);
+      transition: transform ${enterTransitionAnimationTime}
+          cubic-bezier(0, 0, 0.4, 1),
+        opacity ${enterTransitionAnimationTime} cubic-bezier(0, 0, 0.4, 1);
       opacity: 0.9999;
       visibility: visible;
       transform: translateX(0);
