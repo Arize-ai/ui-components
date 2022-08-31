@@ -101,6 +101,7 @@ interface TextFieldBaseProps
   isLoading?: boolean;
   className?: string;
   variant?: 'default' | 'quiet';
+  height?: number;
 }
 
 export interface TextFieldRef
@@ -132,6 +133,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
     addonBefore,
     className,
     variant = 'default',
+    height,
   } = props;
   let { hoverProps, isHovered } = useHover({ isDisabled });
   let [isFocused, setIsFocused] = React.useState(false);
@@ -179,6 +181,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
       css={css`
         display: flex;
         flex-direction: row;
+        position: relative;
         align-items: center;
         min-width: 270px;
         background-color: ${theme.components.textField.backgroundColor};
@@ -213,12 +216,21 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
           box-sizing: border-box;
           background-color: transparent;
           color: ${theme.textColors.white90};
-          height: ${theme.singleLineHeight}px;
+          height: ${height ?? theme.singleLineHeight}px;
           padding: ${theme.spacing.padding4}px ${theme.spacing.padding8}px;
           transition: all 0.2s ease-in-out;
           /** provide an alternate highlight */
           outline: none;
           border: none;
+        }
+
+        &.ac-textfield--multiline {
+          height: ${height ?? theme.singleLineHeight}px;
+
+          textarea {
+            resize: none;
+            overflow-y: scroll;
+          }
         }
 
         &.ac-textfield--invalid {
@@ -228,8 +240,9 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         .ac-textfield__validation-icon {
           /* Animate in the icon */
           animation: ${appearKeyframes} ${0.2}s forwards ease-in-out;
-          flex: none;
-          margin-right: ${theme.spacing.padding8}px;
+          top: ${theme.spacing.padding8}px;
+          right: ${theme.spacing.padding8}px;
+          position: absolute;
           &.ac-textfield__validation-icon--invalid {
             color: ${theme.colors.statusDanger};
           }
@@ -272,8 +285,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
     textField = React.cloneElement(
       textField,
       mergeProps(textField.props, {
-        // TODO support muli-line text areas
-        className: multiLine ? 'ac-text-field--multiline' : '',
+        className: multiLine ? 'ac-textfield--multiline' : '',
       })
     );
   }
