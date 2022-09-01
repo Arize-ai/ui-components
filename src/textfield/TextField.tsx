@@ -17,13 +17,12 @@ function TextField(props: TextFieldProps, ref: RefObject<TextFieldRef>) {
   // Call use provider props so the textfield can inherit from the provider
   // E.x. disabled, readOnly, etc.
   props = useProviderProps(props);
-  let inputRef = useRef<HTMLInputElement>();
+  let inputRef = useRef<HTMLInputElement>(null);
   let {
     labelProps,
     inputProps,
     descriptionProps,
     errorMessageProps,
-    // @ts-ignore
   } = useTextField(props, inputRef);
   return (
     <TextFieldBase
@@ -33,7 +32,6 @@ function TextField(props: TextFieldProps, ref: RefObject<TextFieldRef>) {
       descriptionProps={descriptionProps}
       errorMessageProps={errorMessageProps}
       ref={ref}
-      // @ts-ignore
       inputRef={inputRef}
     />
   );

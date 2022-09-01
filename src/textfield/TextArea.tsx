@@ -18,7 +18,7 @@ export interface TextAreaProps extends AriaTextFieldProps, AddonableProps {
 }
 function TextArea(props: TextAreaProps, ref: RefObject<TextFieldRef>) {
   props = useProviderProps(props);
-  let {
+  const {
     isDisabled = false,
     isReadOnly = false,
     isRequired = false,
@@ -28,14 +28,14 @@ function TextArea(props: TextAreaProps, ref: RefObject<TextFieldRef>) {
   } = props;
 
   // not in stately because this is so we know when to re-measure, which is a spectrum design
-  let [inputValue, setInputValue] = useControlledState(
+  const [inputValue, setInputValue] = useControlledState(
     props.value,
     props.defaultValue,
     () => {}
   );
   let inputRef = useRef<HTMLTextAreaElement>(null);
 
-  let onHeightChange = useCallback(() => {
+  const onHeightChange = useCallback(() => {
     // Quiet textareas always grow based on their text content.
     // Standard textareas also grow by default, unless an explicit height is set.
     const input = inputRef.current;
@@ -46,7 +46,7 @@ function TextArea(props: TextAreaProps, ref: RefObject<TextFieldRef>) {
       // Firefox scroll position is lost when overflow: 'hidden' is applied so we skip applying it.
       // The measure/applied height is also incorrect/reset if we turn on and off
       // overflow: hidden in Firefox https://bugzilla.mozilla.org/show_bug.cgi?id=1787062
-      let isFirefox = 'MozAppearance' in input.style;
+      const isFirefox = 'MozAppearance' in input.style;
       if (!isFirefox) {
         input.style.overflow = 'hidden';
       }
