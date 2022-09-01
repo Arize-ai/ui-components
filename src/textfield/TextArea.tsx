@@ -33,16 +33,16 @@ function TextArea(props: TextAreaProps, ref: RefObject<TextFieldRef>) {
     props.defaultValue,
     () => {}
   );
-  let inputRef = useRef<HTMLTextAreaElement>();
+  let inputRef = useRef<HTMLTextAreaElement>(null);
 
   let onHeightChange = useCallback(() => {
     // Quiet textareas always grow based on their text content.
     // Standard textareas also grow by default, unless an explicit height is set.
-    let input = inputRef.current;
+    const input = inputRef.current;
 
     if (input && !height) {
-      let prevAlignment = input.style.alignSelf;
-      let prevOverflow = input.style.overflow;
+      const prevAlignment = input.style.alignSelf;
+      const prevOverflow = input.style.overflow;
       // Firefox scroll position is lost when overflow: 'hidden' is applied so we skip applying it.
       // The measure/applied height is also incorrect/reset if we turn on and off
       // overflow: hidden in Firefox https://bugzilla.mozilla.org/show_bug.cgi?id=1787062
@@ -77,7 +77,6 @@ function TextArea(props: TextAreaProps, ref: RefObject<TextFieldRef>) {
       onChange: chain(onChange, setInputValue),
       inputElementType: 'textarea',
     },
-    // @ts-ignore
     inputRef
   );
 
@@ -94,7 +93,6 @@ function TextArea(props: TextAreaProps, ref: RefObject<TextFieldRef>) {
       isReadOnly={isReadOnly}
       isRequired={isRequired}
       height={height}
-      // @ts-ignore
       inputRef={inputRef}
     />
   );

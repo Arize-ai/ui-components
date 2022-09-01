@@ -236,6 +236,12 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         &.ac-textfield--invalid {
           color: ${theme.colors.statusDanger};
           border: 1px solid ${theme.colors.statusDanger};
+          .ac-textfield__input {
+            // Make room for the invalid icon (outer padding + icon width + inner padding)
+            padding-right: ${theme.spacing.padding8 +
+              24 +
+              theme.spacing.padding4}px;
+          }
         }
         .ac-textfield__validation-icon {
           /* Animate in the icon */
