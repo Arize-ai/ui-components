@@ -65,6 +65,9 @@ export const theme = {
       backgroundColor: grayColors.gray600,
       borderColor: grayColors.gray400,
     },
+    tabs: {
+      borderColor: grayColors.gray400,
+    },
     tooltip: {
       backgroundColor: '#3C4C5D',
     },

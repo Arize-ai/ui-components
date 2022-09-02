@@ -37,6 +37,7 @@ export function CompactSearchField(props: CompactSearchFieldProps) {
         border-radius: ${theme.rounding.rounding4}px;
         overflow: hidden;
         transition: all 0.2s ease-in-out;
+        background-color: ${theme.components.textField.backgroundColor};
         & > .ac-button {
           flex: none;
           border: none;

@@ -116,7 +116,7 @@ export function Card({
         css={css(
           bodyCSS,
           css`
-            ${!isOpen && `display: none;`}
+            ${!isOpen && `display: none !important;`}
           `
         )}
         style={bodyStyle}

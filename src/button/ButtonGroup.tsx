@@ -5,6 +5,7 @@ import React, {
   cloneElement,
   ReactNode,
   HTMLAttributes,
+  ReactElement,
 } from 'react';
 import theme from '../theme';
 import { ButtonProps } from './Button';
@@ -42,7 +43,7 @@ export function ButtonGroup({ children, size, ...divProps }: ButtonGroupProps) {
     >
       {Children.map(children, child => {
         if (isValidElement(child)) {
-          return cloneElement(child, {
+          return cloneElement(child as ReactElement<ButtonProps>, {
             size,
           });
         }

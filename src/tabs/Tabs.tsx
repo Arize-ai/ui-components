@@ -4,6 +4,7 @@ import React, {
   cloneElement,
   ReactNode,
   isValidElement,
+  ReactElement,
 } from 'react';
 import { Text } from '../content';
 import { css } from '@emotion/core';
@@ -16,7 +17,7 @@ type Tab = TabPaneProps & {
 
 const tabListCSS = css`
   overflow: hidden;
-  border-bottom: 0.5px solid ${theme.colors.grayBorder};
+  border-bottom: 1px solid ${theme.components.tabs.borderColor};
 
   button {
     box-sizing: border-box; /* place the border inside */
@@ -32,7 +33,7 @@ const tabListCSS = css`
   }
 
   button:hover {
-    opacity: 0.8;
+    border-color: rgba(255, 255, 255, 0.2);
   }
 
   button[data-selected='true'] {
@@ -97,7 +98,7 @@ export function Tabs({ children, className, onChange }: TabsProps) {
       <div>
         {Children.map(children, (child, index) => {
           if (isValidElement(child)) {
-            return cloneElement(child, {
+            return cloneElement(child as ReactElement<TabPaneChildFCProps>, {
               isSelected: index === selectedIndex,
             });
           }
@@ -108,10 +109,11 @@ export function Tabs({ children, className, onChange }: TabsProps) {
   );
 }
 
+type TabPaneChildFCProps = { isSelected: boolean };
 /**
  * Function component child for lazy loading support. See storybook
  */
-type TabPaneChildFC = (args: { isSelected: boolean }) => ReactNode;
+type TabPaneChildFC = (props: TabPaneChildFCProps) => ReactNode;
 type TabPaneProps = {
   name: string;
   children: ReactNode | TabPaneChildFC;
