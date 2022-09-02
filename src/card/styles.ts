@@ -5,15 +5,15 @@ const cardHeaderHeight = 68;
 export const cardCSS = css`
   display: flex;
   flex-direction: column;
-  background-color: ${theme.components.card.bgColor};
+  background-color: ${theme.components.card.backgroundColor};
   color: ${theme.textColors.white90};
   border-radius: 8px;
-  border: 1px solid ${theme.colors.dividerColor};
+  border: 1px solid ${theme.components.card.borderColor};
   overflow: hidden;
 `;
 
 const headerBorderCSS = css`
-  border-bottom: 1px solid ${theme.colors.gray500};
+  border-bottom: 1px solid ${theme.components.card.borderColor};
 `;
 
 export const headerCSS = ({

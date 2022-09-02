@@ -29,10 +29,12 @@ export function Accordion({ children, variant = 'default' }: AccordionProps) {
         &.ac-accordion--default {
           --accordion-padding-top: ${theme.spacing.padding16}px;
           --accordion-padding-side: ${theme.spacing.padding16}px;
+          --accordion-font-size: ${theme.typography.sizes.large.fontSize}px;
         }
         &.ac-accordion--compact {
-          --accordion-padding-top: ${theme.spacing.padding4}px;
+          --accordion-padding-top: ${theme.spacing.padding8}px;
           --accordion-padding-side: ${theme.spacing.padding16}px;
+          --accordion-font-size: ${theme.typography.sizes.medium.fontSize}px;
       `}
     >
       {children}
@@ -68,11 +70,11 @@ export function AccordionItem(props: AccordionItemProps) {
         flex-direction: row;
       `}
     >
-      <Text textSize="large">{title}</Text>
+      <span className="ac-accordion-item__title">{title}</span>
       {titleExtra}
     </div>
   ) : (
-    <Text textSize="large">{title}</Text>
+    <span className="ac-accordion-item__title">{title}</span>
   );
 
   return (
@@ -107,12 +109,15 @@ export function AccordionItem(props: AccordionItemProps) {
             border: 0;
             text-align: start;
             color: ${theme.textColors.white90};
-            border-bottom: 1px solid ${theme.colors.dividerColor};
+            border-bottom: 1px solid ${theme.components.accordion.borderColor};
             /* remove outline - TODO might need to give a visual cue that this area is in focus */
             outline: none;
             transition: background-color 0.2s ease-in-out;
             &:hover {
               background-color: ${theme.colors.hoverBgColor};
+            }
+            .ac-accordion-item__title {
+              font-size: var(--accordion-font-size);
             }
           `}
           onClick={() => {

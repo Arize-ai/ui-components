@@ -8,6 +8,7 @@ const {
 
 export const textWeightCSS = (weight: Weight) => css`
   font-weight: ${weight === 'heavy' ? weights.heavy : weights.normal};
+  font-style: ${weight === 'heavy' ? 'medium' : 'normal'};
 `;
 
 export const textSizeCSS = (size: Size) => {
