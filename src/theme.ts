@@ -99,7 +99,7 @@ export const theme = {
   },
   typography: {
     weights: {
-      heavy: 600,
+      heavy: 500,
       normal: 400,
     },
     sizes: {
