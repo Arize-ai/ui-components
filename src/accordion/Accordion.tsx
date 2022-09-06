@@ -11,7 +11,7 @@ export interface AccordionProps {
    * The variant of the accordion (e.g. sizing)
    * @default "default"
    */
-  variant: 'default' | 'compact';
+  variant?: 'default' | 'compact';
 }
 
 /**
