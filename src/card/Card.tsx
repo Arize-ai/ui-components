@@ -119,6 +119,7 @@ export function Card({
             ${!isOpen && `display: none !important;`}
           `
         )}
+        className="ac-card__body"
         style={bodyStyle}
         id={contentId}
         aria-labelledby={headerId}
