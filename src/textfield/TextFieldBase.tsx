@@ -218,7 +218,6 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
           color: ${theme.textColors.white90};
           height: ${height ?? theme.singleLineHeight}px;
           padding: ${theme.spacing.padding4}px ${theme.spacing.padding8}px;
-          margin-right: 36px;
           transition: all 0.2s ease-in-out;
           /** provide an alternate highlight */
           outline: none;

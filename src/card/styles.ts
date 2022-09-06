@@ -69,6 +69,7 @@ export const collapsibleCardCSS = css`
   /* shrink the height to the card title so the body is hidden*/
   &:not(.is-open) {
     height: ${cardHeaderHeight}px !important;
+    overflow: hidden;
   }
 
   --collapsible-card-animation-duration: ${theme.animation.global.duration}ms;
