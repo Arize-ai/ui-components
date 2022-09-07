@@ -33,7 +33,7 @@ const meta: Meta = {
 
 export default meta;
 
-const cardStyle = { width: 407, height: 198, margin: '8px' };
+const cardStyle = { width: 400, height: 200, margin: '10px' };
 
 /**
  * Gallery of all the variants

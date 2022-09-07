@@ -14,7 +14,7 @@ export const cardCSS = css`
     --card-header-height: 68px;
   }
   &.ac-card--compact {
-    --card-header-height: 48px;
+    --card-header-height: 46px;
   }
 `;
 
