@@ -62,7 +62,7 @@ export const theme = {
       borderColor: grayColors.gray400,
     },
     accordion: {
-      backgroundColor: grayColors.gray600,
+      backgroundColor: grayColors.gray500,
       borderColor: grayColors.gray400,
     },
     tabs: {

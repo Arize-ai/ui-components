@@ -24,7 +24,7 @@ export function Accordion({ children, variant = 'default' }: AccordionProps) {
       className={`ac-accordion ac-accordion--${variant}`}
       role="region"
       css={css`
-        background-color: ${theme.components.accordion.backgroundColor};
+      
         --accordion-animation-duration: ${theme.animation.global.duration}ms;
         &.ac-accordion--default {
           --accordion-padding-top: ${theme.spacing.padding16}px;
@@ -112,6 +112,7 @@ export function AccordionItem(props: AccordionItemProps) {
             border-bottom: 1px solid ${theme.components.accordion.borderColor};
             /* remove outline - TODO might need to give a visual cue that this area is in focus */
             outline: none;
+            background-color: ${theme.components.accordion.backgroundColor};
             transition: background-color 0.2s ease-in-out;
             &:hover {
               background-color: ${theme.colors.hoverBgColor};
