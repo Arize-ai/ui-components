@@ -3,6 +3,7 @@ import { CardBaseProps } from './Card';
 import { css } from '@emotion/core';
 import { Text } from '../content';
 import { cardCSS, headerCSS } from './styles';
+import { classNames } from '../utils';
 
 const tabbedCardCSS = css`
   &[data-has-title='false'] {
@@ -15,12 +16,22 @@ const tabbedCardCSS = css`
 export interface TabbedCardProps extends CardBaseProps {}
 
 export function TabbedCard(props: TabbedCardProps) {
-  const { title, children, extra, variant = 'default', ...restProps } = props;
+  const {
+    title,
+    children,
+    extra,
+    variant = 'default',
+    className,
+    ...restProps
+  } = props;
   const hasTitle = title != null;
   return (
     <section
       css={css(cardCSS, tabbedCardCSS)}
-      className={`ac-card ac-card--${variant} ac-card--tabbed`}
+      className={classNames(
+        `ac-card ac-card--${variant} ac-card--tabbed`,
+        className
+      )}
       data-has-title={hasTitle}
       {...restProps}
     >
