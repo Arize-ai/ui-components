@@ -1,9 +1,13 @@
 import { lighten, darken } from 'polished';
 
 const grayColors = {
-  gray500: '#2D353E',
-  gray400: '#39424D',
-  gray200: '#646A70', // disabled text
+  gray800: '#1d2126',
+  gray700: '#23282e',
+  gray600: '#282e35',
+  gray500: '#2f353d',
+  gray400: '#3d434a',
+  gray300: '#4a5057',
+  gray200: '#585d64', // disabled text
 };
 
 const arizeColors = {
@@ -53,8 +57,16 @@ export const theme = {
   labelColors,
   // Add any component specific overrides here
   components: {
+    card: {
+      backgroundColor: grayColors.gray800,
+      borderColor: grayColors.gray400,
+    },
     accordion: {
-      backgroundColor: '#1E2329',
+      backgroundColor: grayColors.gray500,
+      borderColor: grayColors.gray400,
+    },
+    tabs: {
+      borderColor: grayColors.gray400,
     },
     tooltip: {
       backgroundColor: '#3C4C5D',
@@ -84,16 +96,13 @@ export const theme = {
       dangerBorderColor: lighten(0.1, '#F85149'),
       dangerHoverBackgroundColor: lighten(0.1, '#F85149'),
     },
-    card: {
-      bgColor: '#1C232B',
-    },
     modal: {
       bgColor: '#1C232B',
     },
   },
   typography: {
     weights: {
-      heavy: 600,
+      heavy: 500,
       normal: 400,
     },
     sizes: {

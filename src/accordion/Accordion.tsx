@@ -1,26 +1,40 @@
 import React, { useState, ReactNode } from 'react';
 import { css } from '@emotion/core';
-import { Heading, Text } from '../content';
+import { Heading } from '../content';
 import { Icon, ArrowIosDownwardOutline } from '../icon';
 import { classNames } from '../utils/classNames';
 import theme from '../theme';
 
 export interface AccordionProps {
   children: ReactNode;
+  /**
+   * The variant of the accordion (e.g. sizing)
+   * @default "default"
+   */
+  variant?: 'default' | 'compact';
 }
 
 /**
  * Accordion component for having collapsible sections
  * @see https://www.w3.org/TR/wai-aria-practices-1.1/#accordion
  */
-export function Accordion({ children }: AccordionProps) {
+export function Accordion({ children, variant = 'default' }: AccordionProps) {
   return (
     <div
-      className="ac-accordion"
+      className={`ac-accordion ac-accordion--${variant}`}
       role="region"
       css={css`
-        background-color: ${theme.components.accordion.backgroundColor};
+      
         --accordion-animation-duration: ${theme.animation.global.duration}ms;
+        &.ac-accordion--default {
+          --accordion-padding-top: ${theme.spacing.padding16}px;
+          --accordion-padding-side: ${theme.spacing.padding16}px;
+          --accordion-font-size: ${theme.typography.sizes.large.fontSize}px;
+        }
+        &.ac-accordion--compact {
+          --accordion-padding-top: ${theme.spacing.padding8}px;
+          --accordion-padding-side: ${theme.spacing.padding16}px;
+          --accordion-font-size: ${theme.typography.sizes.medium.fontSize}px;
       `}
     >
       {children}
@@ -56,11 +70,11 @@ export function AccordionItem(props: AccordionItemProps) {
         flex-direction: row;
       `}
     >
-      <Text textSize="large">{title}</Text>
+      <span className="ac-accordion-item__title">{title}</span>
       {titleExtra}
     </div>
   ) : (
-    <Text textSize="large">{title}</Text>
+    <span className="ac-accordion-item__title">{title}</span>
   );
 
   return (
@@ -82,7 +96,7 @@ export function AccordionItem(props: AccordionItemProps) {
           id={headerId}
           css={css`
             cursor: pointer;
-            padding: 16px 16px;
+            padding: var(--accordion-padding-top) var(--accordion-padding-side);
             display: block;
             width: 100%;
             display: flex;
@@ -95,12 +109,16 @@ export function AccordionItem(props: AccordionItemProps) {
             border: 0;
             text-align: start;
             color: ${theme.textColors.white90};
-            border-bottom: 1px solid ${theme.colors.dividerColor};
+            border-bottom: 1px solid ${theme.components.accordion.borderColor};
             /* remove outline - TODO might need to give a visual cue that this area is in focus */
             outline: none;
+            background-color: ${theme.components.accordion.backgroundColor};
             transition: background-color 0.2s ease-in-out;
             &:hover {
               background-color: ${theme.colors.hoverBgColor};
+            }
+            .ac-accordion-item__title {
+              font-size: var(--accordion-font-size);
             }
           `}
           onClick={() => {

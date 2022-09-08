@@ -4,6 +4,8 @@ import React, {
   cloneElement,
   ReactNode,
   isValidElement,
+  ReactElement,
+  HtmlHTMLAttributes,
 } from 'react';
 import { Text } from '../content';
 import { css } from '@emotion/core';
@@ -16,7 +18,7 @@ type Tab = TabPaneProps & {
 
 const tabListCSS = css`
   overflow: hidden;
-  border-bottom: 0.5px solid ${theme.colors.grayBorder};
+  border-bottom: 1px solid ${theme.components.tabs.borderColor};
 
   button {
     box-sizing: border-box; /* place the border inside */
@@ -32,7 +34,7 @@ const tabListCSS = css`
   }
 
   button:hover {
-    opacity: 0.8;
+    border-color: rgba(255, 255, 255, 0.2);
   }
 
   button[data-selected='true'] {
@@ -82,6 +84,7 @@ export function Tabs({ children, className, onChange }: TabsProps) {
                 setSelectedIndex(index);
                 onChange && onChange(index);
               }}
+              {...tab?.tabListItemProps}
             >
               <Text
                 textSize="medium"
@@ -97,7 +100,7 @@ export function Tabs({ children, className, onChange }: TabsProps) {
       <div>
         {Children.map(children, (child, index) => {
           if (isValidElement(child)) {
-            return cloneElement(child, {
+            return cloneElement(child as ReactElement<TabPaneChildFCProps>, {
               isSelected: index === selectedIndex,
             });
           }
@@ -108,25 +111,33 @@ export function Tabs({ children, className, onChange }: TabsProps) {
   );
 }
 
+type TabPaneChildFCProps = { isSelected: boolean };
 /**
  * Function component child for lazy loading support. See storybook
  */
-type TabPaneChildFC = (args: { isSelected: boolean }) => ReactNode;
-type TabPaneProps = {
+type TabPaneChildFC = (props: TabPaneChildFCProps) => ReactNode;
+interface TabPaneProps
+  extends Omit<HtmlHTMLAttributes<HTMLDivElement>, 'children'> {
   name: string;
   children: ReactNode | TabPaneChildFC;
   className?: string;
-};
+  /**
+   * Props for the tablist item. Use for data-testid etc.
+   */
+  tabListItemProps?: { [`data-testid`]: string };
+}
 
 export const TabPane = ({
   name,
   children,
   className,
   isSelected = false,
+  ...divProps
 }: TabPaneProps & { isSelected?: boolean }) => {
   return (
     <div
       data-tab-name={name}
+      {...divProps}
       hidden={!isSelected}
       role="tabpanel"
       className={className}

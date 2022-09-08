@@ -39,7 +39,7 @@ const Template: Story<AccordionProps> = args => (
     style={{ width: 700 }}
     collapsible
   >
-    <Accordion>
+    <Accordion {...args}>
       <AccordionItem
         title="2 Predictions"
         titleExtra={<InfoTip>Description of predictions</InfoTip>}
@@ -60,3 +60,6 @@ const Template: Story<AccordionProps> = args => (
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
+
+export const Compact = Template.bind({});
+Compact.args = { variant: 'compact' };

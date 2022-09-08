@@ -36,7 +36,11 @@ const tabContents = css`
 const Template: Story<TabsProps> = args => (
   <div style={{ width: 500 }}>
     <Tabs {...args}>
-      <TabPane name="Tab 1" css={tabContents}>
+      <TabPane
+        name="Tab 1"
+        css={tabContents}
+        tabListItemProps={{ 'data-testid': 'first tab' }}
+      >
         Tab 1 contents
       </TabPane>
       <TabPane name="Tab 2" css={tabContents}>

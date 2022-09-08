@@ -6,6 +6,7 @@ import theme from '../theme';
 import { cardCSS, headerCSS, collapsibleCardCSS } from './styles';
 import { classNames } from '../utils';
 import { useId } from '@react-aria/utils';
+import { CardVariant } from './types';
 
 const headerTitleWrapCSS = css`
   flex: 1 1 auto;
@@ -28,24 +29,31 @@ const bodyCSS = css`
   padding: ${theme.spacing.padding16}px;
 `;
 
-export type CardProps = {
+export interface CardBaseProps {
   title?: string;
   subTitle?: string;
+  variant?: CardVariant;
   children: ReactNode;
   style?: CSSProperties;
   bodyStyle?: CSSProperties;
   extra?: ReactNode; // Extra controls on the header
   className?: string;
   titleExtra?: ReactNode;
+  id?: string;
+}
+
+interface CollapsibleCardProps {
   collapsible?: boolean;
   defaultOpen?: boolean;
   onToggle?: (open: boolean) => void;
-  id?: string;
-};
+}
+
+export interface CardProps extends CardBaseProps, CollapsibleCardProps {}
 
 export function Card({
   title,
   subTitle,
+  variant = 'default',
   children,
   style,
   bodyStyle,
@@ -60,8 +68,10 @@ export function Card({
   const idPrefix = useId(id);
   const contentId = `${idPrefix}-content`,
     headerId = `${idPrefix}-heading`;
+  const titleSize = variant === 'default' ? 'xlarge' : 'large';
+  const subTitleSize = variant === 'default' ? 'medium' : 'xsmall';
   const defaultTitle = (
-    <Text textSize="xlarge" elementType="h3" weight="heavy">
+    <Text textSize={titleSize} elementType="h3" weight="heavy">
       {title}
     </Text>
   );
@@ -76,14 +86,15 @@ export function Card({
     );
   const subTitleEl =
     subTitle != null ? (
-      <Text textSize="medium" elementType="h4" color="white70">
+      <Text textSize={subTitleSize} elementType="h4" color="white70">
         {subTitle}
       </Text>
     ) : (
       undefined
     );
+  const titleClassName = `ac-card__title-wrap ac-card__title-wrap--${variant}`;
   const titleComponent = collapsible ? (
-    <div css={headerTitleWrapCSS}>
+    <div css={headerTitleWrapCSS} className={titleClassName}>
       <CollapsibleCardTitle
         isOpen={isOpen}
         onOpen={() => setIsOpen(!isOpen)}
@@ -95,7 +106,7 @@ export function Card({
       />
     </div>
   ) : (
-    <div css={headerTitleWrapCSS}>
+    <div css={headerTitleWrapCSS} className={titleClassName}>
       {titleEl}
       {subTitleEl}
     </div>
@@ -104,7 +115,7 @@ export function Card({
     <section
       css={collapsible ? collapsibleCardCSS : cardCSS}
       style={style}
-      className={classNames('ac-card', className, {
+      className={classNames('ac-card', `ac-card--${variant}`, className, {
         'is-open': isOpen,
       })}
     >
@@ -116,9 +127,10 @@ export function Card({
         css={css(
           bodyCSS,
           css`
-            ${!isOpen && `display: none;`}
+            ${!isOpen && `display: none !important;`}
           `
         )}
+        className="ac-card__body"
         style={bodyStyle}
         id={contentId}
         aria-labelledby={headerId}

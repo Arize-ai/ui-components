@@ -1,45 +1,51 @@
 import { css } from '@emotion/core';
 import theme from '../theme';
-const cardHeaderHeight = 68;
 
 export const cardCSS = css`
   display: flex;
   flex-direction: column;
-  background-color: ${theme.components.card.bgColor};
+  background-color: ${theme.components.card.backgroundColor};
   color: ${theme.textColors.white90};
   border-radius: 8px;
-  border: 1px solid ${theme.colors.dividerColor};
+  border: 1px solid ${theme.components.card.borderColor};
   overflow: hidden;
+  /* variant variables */
+  &.ac-card--default {
+    --card-header-height: 68px;
+  }
+  &.ac-card--compact {
+    --card-header-height: 46px;
+  }
 `;
 
 const headerBorderCSS = css`
-  border-bottom: 1px solid ${theme.colors.gray500};
+  border-bottom: 1px solid ${theme.components.card.borderColor};
 `;
 
 export const headerCSS = ({
   bordered,
   collapsible,
-  height = cardHeaderHeight,
 }: {
   bordered: boolean;
   collapsible: boolean;
-  height?: number;
-}) => css`
-  display: flex;
-  flex-direction: row;
-  flex: none;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 16px;
-  height: ${height}px;
-  transition: background-color 0.2s ease-in-out;
-  &:hover {
-    background-color: ${collapsible
-      ? theme.colors.hoverBgColor
-      : 'transparent'};
-  }
-  ${bordered ? headerBorderCSS : ''}
-`;
+}) => {
+  return css`
+    display: flex;
+    flex-direction: row;
+    flex: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: var(--card-header-height);
+    transition: background-color 0.2s ease-in-out;
+    &:hover {
+      background-color: ${collapsible
+        ? theme.colors.hoverBgColor
+        : 'transparent'};
+    }
+    ${bordered ? headerBorderCSS : ''}
+  `;
+};
 
 export const collapsibleCardCSS = css`
   ${cardCSS}
@@ -66,9 +72,10 @@ export const collapsibleCardCSS = css`
       transform: rotate(0deg);
     }
   }
-  /* shrink the height to the card title so the body is hidden*/
+  /* shrink the height to the card title so the body is hidden */
   &:not(.is-open) {
-    height: ${cardHeaderHeight}px !important;
+    height: var(--card-header-height) !important;
+    overflow: hidden;
   }
 
   --collapsible-card-animation-duration: ${theme.animation.global.duration}ms;
