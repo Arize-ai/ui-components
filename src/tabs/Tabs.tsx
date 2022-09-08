@@ -6,10 +6,12 @@ import React, {
   isValidElement,
   ReactElement,
   HtmlHTMLAttributes,
+  ButtonHTMLAttributes,
 } from 'react';
 import { Text } from '../content';
 import { css } from '@emotion/core';
 import theme from '../theme';
+import { IntrinsicHTMLElements } from '../types';
 
 type Tab = TabPaneProps & {
   key: string;
@@ -84,6 +86,7 @@ export function Tabs({ children, className, onChange }: TabsProps) {
                 setSelectedIndex(index);
                 onChange && onChange(index);
               }}
+              {...tab?.tabListItemProps}
             >
               <Text
                 textSize="medium"
@@ -120,6 +123,10 @@ interface TabPaneProps
   name: string;
   children: ReactNode | TabPaneChildFC;
   className?: string;
+  /**
+   * Props for the tablist item. Use for data-testid etc.
+   */
+  tabListItemProps?: { [`data-testid`]: string };
 }
 
 export const TabPane = ({
