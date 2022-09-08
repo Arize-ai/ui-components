@@ -6,12 +6,10 @@ import React, {
   isValidElement,
   ReactElement,
   HtmlHTMLAttributes,
-  ButtonHTMLAttributes,
 } from 'react';
 import { Text } from '../content';
 import { css } from '@emotion/core';
 import theme from '../theme';
-import { IntrinsicHTMLElements } from '../types';
 
 type Tab = TabPaneProps & {
   key: string;
