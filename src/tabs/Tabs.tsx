@@ -5,6 +5,7 @@ import React, {
   ReactNode,
   isValidElement,
   ReactElement,
+  HtmlHTMLAttributes,
 } from 'react';
 import { Text } from '../content';
 import { css } from '@emotion/core';
@@ -114,21 +115,24 @@ type TabPaneChildFCProps = { isSelected: boolean };
  * Function component child for lazy loading support. See storybook
  */
 type TabPaneChildFC = (props: TabPaneChildFCProps) => ReactNode;
-type TabPaneProps = {
+interface TabPaneProps
+  extends Omit<HtmlHTMLAttributes<HTMLDivElement>, 'children'> {
   name: string;
   children: ReactNode | TabPaneChildFC;
   className?: string;
-};
+}
 
 export const TabPane = ({
   name,
   children,
   className,
   isSelected = false,
+  ...divProps
 }: TabPaneProps & { isSelected?: boolean }) => {
   return (
     <div
       data-tab-name={name}
+      {...divProps}
       hidden={!isSelected}
       role="tabpanel"
       className={className}
