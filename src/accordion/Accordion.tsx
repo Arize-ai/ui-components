@@ -54,10 +54,21 @@ export interface AccordionItemProps {
   id: string;
   defaultIsOpen?: boolean;
   children: ReactNode;
+  /**
+   * Callback function for when the collapsed state changes
+   */
+  onChange?: (isOpen: boolean) => void;
 }
 
 export function AccordionItem(props: AccordionItemProps) {
-  const { title, titleExtra, id, defaultIsOpen = true, children } = props;
+  const {
+    title,
+    titleExtra,
+    id,
+    defaultIsOpen = true,
+    onChange,
+    children,
+  } = props;
   const [isOpen, setIsOpen] = useState(defaultIsOpen);
   const contentId = `${id}-content`,
     headerId = `${id}-heading`;
@@ -122,7 +133,9 @@ export function AccordionItem(props: AccordionItemProps) {
             }
           `}
           onClick={() => {
-            setIsOpen(!isOpen);
+            const newIsOpen = !isOpen;
+            setIsOpen(newIsOpen);
+            onChange && onChange(newIsOpen);
           }}
           aria-controls={contentId}
           aria-expanded={isOpen}
