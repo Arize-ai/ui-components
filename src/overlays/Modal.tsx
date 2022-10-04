@@ -19,6 +19,7 @@ const modalWrapperCSS = css`
   &.ac-modal-wrapper--slideOver {
     top: 0;
     right: 0;
+    bottom: 0;
   }
 `;
 
