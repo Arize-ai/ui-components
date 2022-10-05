@@ -15,11 +15,11 @@ import theme from '../theme';
 const dialogCSS = css`
   outline: none;
   &.ac-dialog--slideOver {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     &.ac-dialog--small {
       width: 400px;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
     }
     &.ac-dialog--medium {
       width: 700px;
