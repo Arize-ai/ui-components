@@ -15,6 +15,9 @@ import theme from '../theme';
 const dialogCSS = css`
   outline: none;
   &.ac-dialog--slideOver {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     &.ac-dialog--small {
       width: 400px;
     }
@@ -75,6 +78,7 @@ function Dialog(props: DialogProps, ref: DOMRef) {
             align-items: center;
             padding: ${theme.spacing.padding8}px ${theme.spacing.padding16}px;
             border-bottom: 1px solid ${theme.colors.gray500};
+            flex: none;
           `}
         >
           {title}

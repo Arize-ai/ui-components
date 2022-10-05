@@ -8,6 +8,7 @@ import {
   DialogContainer,
   Dialog,
   ButtonGroup,
+  Card,
 } from '../src';
 import { DialogProps } from '../src/types/dialog';
 import {
@@ -15,6 +16,7 @@ import {
   ArrowIosUpwardOutline,
   Icon,
 } from '../src/icon';
+import { css } from '@emotion/core';
 
 const meta: Meta = {
   title: 'SlideOver',
@@ -37,6 +39,46 @@ const meta: Meta = {
 
 export default meta;
 
+const content = (
+  <div
+    css={css`
+      flex: 1 1 auto;
+      overflow-y: scroll;
+    `}
+    data-testid="scroll-container"
+  >
+    <div data-testid="scroll-content">
+      <Card title="Section 1">
+        <Text>hello</Text>
+      </Card>
+      <Card title="Section 2">
+        <Text>hello</Text>
+      </Card>
+      <Card title="Section 3">
+        <Text>hello</Text>
+      </Card>
+      <Card title="Section 4">
+        <Text>hello</Text>
+      </Card>
+      <Card title="Section 5">
+        <Text>hello</Text>
+      </Card>
+      <Card title="Section 6">
+        <Text>hello</Text>
+      </Card>
+      <Card title="Section 7">
+        <Text>hello</Text>
+      </Card>
+      <Card title="Section 8">
+        <Text>hello</Text>
+      </Card>
+      <Card title="Section 9">
+        <Text>hello</Text>
+      </Card>
+    </div>
+  </div>
+);
+
 const Template: Story<DialogProps> = args => {
   const { isDismissable, onDismiss, ...props } = args;
   props.title = props.title || 'Title';
@@ -51,11 +93,7 @@ const Template: Story<DialogProps> = args => {
         isDismissable
         onDismiss={() => setIsOpen(false)}
       >
-        {isOpen && (
-          <Dialog {...props}>
-            <Text>hello</Text>
-          </Dialog>
-        )}
+        {isOpen && <Dialog {...props}>{content}</Dialog>}
       </DialogContainer>
     </Provider>
   );
@@ -88,7 +126,7 @@ export const Paginated: Story<DialogProps> = args => {
             </ButtonGroup>
           }
         >
-          <Text>hello</Text>
+          {content}
         </Dialog>
       </DialogContainer>
     </Provider>
