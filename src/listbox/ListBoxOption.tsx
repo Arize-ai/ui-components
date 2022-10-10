@@ -1,5 +1,4 @@
 import { Icon, CheckmarkOutline } from '../icon';
-import { css } from '@emotion/core';
 import { classNames } from '../utils';
 import { FocusRing } from '@react-aria/focus';
 import { isFocusVisible, useHover } from '@react-aria/interactions';
@@ -10,7 +9,7 @@ import React, { useContext } from 'react';
 import { Text } from '../content';
 import { useOption } from '@react-aria/listbox';
 import { useRef } from 'react';
-import theme from '../theme';
+import { menuItemCSS } from '../menu/styles';
 
 interface OptionProps<T> {
   item: Node<T>;
@@ -18,23 +17,6 @@ interface OptionProps<T> {
   shouldFocusOnHover?: boolean;
   shouldUseVirtualFocus?: boolean;
 }
-
-const menuItemCSS = css`
-  &.is-selected {
-    i {
-      color: ${theme.colors.arizeLightBlue};
-    }
-  }
-  &.is-hovered,
-  &.focus-ring {
-    background-color: ${theme.colors.hoverBgColor};
-  }
-  &.is-selectable {
-    cursor: pointer;
-  }
-  /* show focus in other ways */
-  outline: none;
-`;
 
 /** @private */
 export function ListBoxOption<T>(props: OptionProps<T>) {
@@ -94,25 +76,8 @@ export function ListBoxOption<T>(props: OptionProps<T>) {
         })}
         css={menuItemCSS}
       >
-        <div
-          className="ac-menu-item"
-          css={css`
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            color: ${theme.textColors.white90};
-            padding: ${theme.spacing.padding8}px ${theme.spacing.padding16}px;
-            position: relative;
-            & > .ac-icon-wrap {
-              position: absolute;
-              top: ${theme.spacing.padding8}px;
-              right: ${theme.spacing.padding8}px;
-            }
-          `}
-        >
-          {contents}
-          {isSelected && <Icon svg={<CheckmarkOutline />} />}
-        </div>
+        {contents}
+        {isSelected && <Icon svg={<CheckmarkOutline />} />}
       </div>
     </FocusRing>
   );

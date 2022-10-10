@@ -8,9 +8,11 @@ import {
   Provider,
   PopoverTriggerProps,
   Placement,
+  Button,
 } from '../src';
 
 import css from '@emotion/css';
+import { Icon, PlusCircleOutline } from '../src/icon';
 
 const placements: Placement[] = [
   'bottom',
@@ -69,7 +71,12 @@ const Template: Story<PopoverTriggerProps> = args => {
           return (
             <li key={index} style={{ margin: '24px 0' }}>
               <PopoverTrigger placement={placement}>
-                <ActionButton>{placement}</ActionButton>
+                <Button
+                  variant="default"
+                  icon={<Icon svg={<PlusCircleOutline />} />}
+                >
+                  {placement}
+                </Button>
                 <Card
                   title="Popover Title"
                   bodyStyle={{ padding: 0, minWidth: 300 }}

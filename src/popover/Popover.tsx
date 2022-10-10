@@ -31,6 +31,7 @@ function Popover(props: PopoverProps, ref: DOMRef<HTMLDivElement>) {
     style,
     ...otherProps
   } = props;
+  console.log('style', style);
   const domRef = useDOMRef(ref);
   // Handle interacting outside the popover and pressing
   // the Escape key to close the modal.
@@ -57,7 +58,7 @@ function Popover(props: PopoverProps, ref: DOMRef<HTMLDivElement>) {
           {...mergeProps(overlayProps, otherProps, dialogProps, modalProps)}
           ref={domRef}
           style={style}
-          className={classNames('popover', `popover--${placement}`, {
+          className={classNames('ac-popover', `ac-popover--${placement}`, {
             'is-open': isOpen,
           })}
           css={popoverCSS({ placement })}
