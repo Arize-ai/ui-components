@@ -22,6 +22,7 @@ export * from './search';
 export * from './overlays';
 export * from './dialog';
 export * from './view';
+export * from './menu';
 export { theme } from './theme';
 // export interface Props extends HTMLAttributes<HTMLDivElement> {
 //   /** custom content, defaults to 'the snozzberries taste like snozzberries' */

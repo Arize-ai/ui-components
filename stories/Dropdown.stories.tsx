@@ -85,7 +85,7 @@ export const Gallery = () => (
 
 const Template: Story<DropdownProps> = args => (
   <Provider>
-    <Dropdown menu={<Menu />} {...args}>
+    <Dropdown {...args} menu={<Menu />}>
       Click Me
     </Dropdown>
   </Provider>
