@@ -9,6 +9,7 @@ const RadioContext = React.createContext<RadioGroupState>({
   setSelectedValue: () => {},
   lastFocusedValue: null,
   setLastFocusedValue: () => {},
+  validationState: 'valid',
 });
 
 export function useRadioProvider() {
