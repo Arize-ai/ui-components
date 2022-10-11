@@ -95,8 +95,6 @@ function MenuTrigger(props: MenuTriggerProps, ref: DOMRef<HTMLElement>) {
     onClose: state.close,
   });
 
-  console.dir(menuTriggerRef);
-
   const menuContext = {
     ...menuProps,
     ref: menuRef,

@@ -94,7 +94,7 @@ const Template: Story<DropdownProps> = args => (
       </div>
       <div>
         <Heading>With Section</Heading>
-        <ActionMenu isOpen>
+        <ActionMenu>
           <Section title="File">
             <Item key="new">New</Item>
             <Item key="open">Open...</Item>

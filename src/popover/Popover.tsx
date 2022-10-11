@@ -31,7 +31,6 @@ function Popover(props: PopoverProps, ref: DOMRef<HTMLDivElement>) {
     style,
     ...otherProps
   } = props;
-  console.log('style', style);
   const domRef = useDOMRef(ref);
   // Handle interacting outside the popover and pressing
   // the Escape key to close the modal.

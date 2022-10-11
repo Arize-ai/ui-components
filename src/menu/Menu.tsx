@@ -12,7 +12,6 @@ import { MenuItem } from './MenuItem';
 import { MenuSection } from './MenuSection';
 import { mergeProps, useSyncRef } from '@react-aria/utils';
 import React, { Key, ReactElement, useContext } from 'react';
-import { SpectrumMenuProps } from '@react-types/menu';
 import { useMenu } from '@react-aria/menu';
 import { useTreeState } from '@react-stately/tree';
 import theme from '../theme';
@@ -101,6 +100,6 @@ function Menu<T extends object>(
 // forwardRef doesn't support generic parameters, so cast the result to the correct type
 // https://stackoverflow.com/questions/58469229/react-with-typescript-generics-while-using-react-forwardref
 const _Menu = React.forwardRef(Menu) as <T>(
-  props: SpectrumMenuProps<T> & { ref?: DOMRef<HTMLUListElement> }
+  props: MenuComponentProps<T> & { ref?: DOMRef<HTMLUListElement> }
 ) => ReactElement;
 export { _Menu as Menu };

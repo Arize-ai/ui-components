@@ -1,6 +1,7 @@
-import React, { ReactNode, CSSProperties } from 'react';
+import React, { ReactNode, CSSProperties, ReactElement } from 'react';
 import { css } from '@emotion/core';
 import theme from '../theme';
+import { DOMRef } from '../types';
 
 interface DropdownMenuProps {
   children: ReactNode;
@@ -12,11 +13,10 @@ interface DropdownMenuProps {
   style?: CSSProperties;
 }
 
-export function DropdownMenu({
-  children,
-  isPadded = false,
-  style,
-}: DropdownMenuProps) {
+function DropdownMenu<T extends object>(
+  { children, isPadded = false, style }: DropdownMenuProps,
+  ref: DOMRef<HTMLDivElement>
+) {
   return (
     <div
       css={css`
@@ -34,3 +34,13 @@ export function DropdownMenu({
     </div>
   );
 }
+
+/**
+ * Menus display a list of actions or options that a user can choose.
+ */
+// forwardRef doesn't support generic parameters, so cast the result to the correct type
+// https://stackoverflow.com/questions/58469229/react-with-typescript-generics-while-using-react-forwardref
+const _DropdownMenu = React.forwardRef(DropdownMenu) as <T>(
+  props: DropdownMenuProps & { ref?: DOMRef<HTMLUListElement> }
+) => ReactElement;
+export { _DropdownMenu as DropdownMenu };
