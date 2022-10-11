@@ -13,9 +13,9 @@ interface DropdownMenuProps {
   style?: CSSProperties;
 }
 
-function DropdownMenu<T extends object>(
+function DropdownMenu(
   { children, isPadded = false, style }: DropdownMenuProps,
-  ref: DOMRef<HTMLDivElement>
+  _ref: DOMRef<HTMLDivElement>
 ) {
   return (
     <div
@@ -40,7 +40,7 @@ function DropdownMenu<T extends object>(
  */
 // forwardRef doesn't support generic parameters, so cast the result to the correct type
 // https://stackoverflow.com/questions/58469229/react-with-typescript-generics-while-using-react-forwardref
-const _DropdownMenu = React.forwardRef(DropdownMenu) as <T>(
+const _DropdownMenu = React.forwardRef(DropdownMenu) as (
   props: DropdownMenuProps & { ref?: DOMRef<HTMLUListElement> }
 ) => ReactElement;
 export { _DropdownMenu as DropdownMenu };
