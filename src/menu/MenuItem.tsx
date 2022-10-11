@@ -55,10 +55,11 @@ export function MenuItem<T>(props: MenuItemProps<T>) {
     typeof rendered === 'string' ? <Text>{rendered}</Text> : rendered;
 
   return (
-    <FocusRing focusRingClass={'ac-focus-ring'}>
+    <FocusRing focusRingClass={'ac-focus-ring'} key={key}>
       <li
         {...mergeProps(menuItemProps, hoverProps)}
         ref={ref}
+        key={key}
         className={classNames('ac-menu-item', {
           'is-disabled': isDisabled,
           'is-selected': isSelected,
