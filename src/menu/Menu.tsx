@@ -60,7 +60,7 @@ function Menu<T extends object>(
   let state = useTreeState(completeProps);
   let { menuProps } = useMenu(completeProps, state, domRef);
   useSyncRef(contextProps, domRef);
-  const items = [...state.collection];
+  const items = Array.from(state.collection);
   return (
     <ul {...menuProps} ref={domRef} className={'ac-menu'} css={menuULCSS}>
       {items.map(item => {
