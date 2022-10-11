@@ -58,7 +58,7 @@ export function MenuSection<T>(props: MenuSectionProps<T>) {
             padding: 0;
           `}
         >
-          {[...item.childNodes].map(node => {
+          {Array.from(item.childNodes).map(node => {
             let item = (
               <MenuItem
                 key={node.key}
