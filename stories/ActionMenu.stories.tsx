@@ -4,9 +4,6 @@ import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
 import {
   Provider,
-  List,
-  ListItem,
-  Dropdown,
   DropdownProps,
   ActionMenu,
   Item,

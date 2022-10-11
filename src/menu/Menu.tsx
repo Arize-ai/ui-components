@@ -84,6 +84,8 @@ function Menu<T extends object>(
           />
         );
 
+        console.dir(item);
+
         if (item.wrapper) {
           menuItem = item.wrapper(menuItem);
         }
