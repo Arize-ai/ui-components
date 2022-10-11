@@ -4,6 +4,8 @@ import React, { Fragment, Key } from 'react';
 import { TreeState } from '@react-stately/tree';
 import { useMenuSection } from '@react-aria/menu';
 import { useSeparator } from '@react-aria/separator';
+import { css } from '@emotion/core';
+import theme from '../theme';
 
 interface MenuSectionProps<T> {
   item: Node<T>;
@@ -26,15 +28,36 @@ export function MenuSection<T>(props: MenuSectionProps<T>) {
   return (
     <Fragment>
       {item.key !== state.collection.getFirstKey() && (
-        <li {...separatorProps} className={'ac-menu-divider'} />
+        <li
+          {...separatorProps}
+          className={'ac-menu-divider'}
+          css={css`
+            border-bottom: 1px solid ${theme.components.dropdown.borderColor};
+          `}
+        />
       )}
       <li {...itemProps}>
         {item.rendered && (
-          <span {...headingProps} className={'ac-menu__section-heading'}>
+          <span
+            {...headingProps}
+            className={'ac-menu__section-heading'}
+            css={css`
+              display: inline-block;
+              margin: ${theme.spacing.margin8}px ${theme.spacing.margin16}px;
+              font-size: ${theme.typography.sizes.small.fontSize}px;
+              color: ${theme.textColors.white70};
+            `}
+          >
             {item.rendered}
           </span>
         )}
-        <ul {...groupProps} className={'ac-menu'}>
+        <ul
+          {...groupProps}
+          className={'ac-menu'}
+          css={css`
+            padding: 0;
+          `}
+        >
           {[...item.childNodes].map(node => {
             let item = (
               <MenuItem

@@ -10,6 +10,8 @@ import {
   DropdownProps,
   ActionMenu,
   Item,
+  Heading,
+  Section,
 } from '../src';
 import { Icon, PlusCircleOutline } from '../src/icon';
 
@@ -37,13 +39,15 @@ const Template: Story<DropdownProps> = args => (
     <div
       css={css`
         margin: 24px;
+        > * {
+          margin-bottom: 16px;
+        }
       `}
     >
       <div
         css={css`
           display: flex;
           gap: 4px;
-          margin-bottom: 16px;
         `}
       >
         <ActionMenu
@@ -86,6 +90,20 @@ const Template: Story<DropdownProps> = args => (
           <Item key="one">One</Item>
           <Item key="two">Two</Item>
           <Item key="three">Three</Item>
+        </ActionMenu>
+      </div>
+      <div>
+        <Heading>With Section</Heading>
+        <ActionMenu isOpen>
+          <Section title="File">
+            <Item key="new">New</Item>
+            <Item key="open">Open...</Item>
+          </Section>
+          <Section title="Save">
+            <Item key="save">Save</Item>
+            <Item key="saveAs">Save As...</Item>
+            <Item key="saveAll">Save All</Item>
+          </Section>
         </ActionMenu>
       </div>
     </div>

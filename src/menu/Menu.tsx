@@ -46,7 +46,7 @@ const menuULCSS = css`
   max-height: inherit;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: ${theme.spacing.padding4}px 0;
 `;
 function Menu<T extends object>(
   props: MenuComponentProps<T>,
