@@ -60,10 +60,10 @@ function Menu<T extends object>(
   let state = useTreeState(completeProps);
   let { menuProps } = useMenu(completeProps, state, domRef);
   useSyncRef(contextProps, domRef);
-
+  const items = [...state.collection];
   return (
     <ul {...menuProps} ref={domRef} className={'ac-menu'} css={menuULCSS}>
-      {[...state.collection].map(item => {
+      {items.map(item => {
         if (item.type === 'section') {
           return (
             <MenuSection
@@ -83,8 +83,6 @@ function Menu<T extends object>(
             onAction={completeProps.onAction}
           />
         );
-
-        console.dir(item);
 
         if (item.wrapper) {
           menuItem = item.wrapper(menuItem);
