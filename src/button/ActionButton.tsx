@@ -5,7 +5,7 @@ import { useButton } from '@react-aria/button';
 import { useHover } from '@react-aria/interactions';
 import { FocusableRef, PressEvents } from '../types';
 import { useFocusableRef } from '../utils/useDOMRef';
-import { BaseButtonProps } from './types';
+import { BaseButtonProps } from '../types/button';
 
 interface ActionButtonProps extends BaseButtonProps, PressEvents {
   style?: CSSProperties;

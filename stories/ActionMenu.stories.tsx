@@ -10,7 +10,7 @@ import {
   Heading,
   Section,
 } from '../src';
-import { Icon, PlusCircleOutline } from '../src/icon';
+import { AlertTriangleFilled, Icon, PlusCircleOutline } from '../src/icon';
 
 const meta: Meta = {
   title: 'ActionMenu',
@@ -44,6 +44,8 @@ const Template: Story<DropdownProps> = args => (
       <div
         css={css`
           display: flex;
+          align-items: flex-end;
+          justify-content: baseline;
           gap: 4px;
         `}
       >
@@ -58,6 +60,25 @@ const Template: Story<DropdownProps> = args => (
         <ActionMenu
           {...args}
           onAction={action => alert('You clicked on ' + action)}
+          align="end"
+        >
+          <Item key="one">One</Item>
+          <Item key="two">Two</Item>
+          <Item key="three">Three</Item>
+        </ActionMenu>
+        <ActionMenu
+          {...args}
+          onAction={action => alert('You clicked on ' + action)}
+          buttonSize="compact"
+        >
+          <Item key="one">One</Item>
+          <Item key="two">Two</Item>
+          <Item key="three">Three</Item>
+        </ActionMenu>
+        <ActionMenu
+          {...args}
+          onAction={action => alert('You clicked on ' + action)}
+          buttonSize="compact"
           align="end"
         >
           <Item key="one">One</Item>
@@ -100,6 +121,21 @@ const Template: Story<DropdownProps> = args => (
             <Item key="save">Save</Item>
             <Item key="saveAs">Save As...</Item>
             <Item key="saveAll">Save All</Item>
+          </Section>
+        </ActionMenu>
+      </div>
+      <div>
+        <Heading>With Icons</Heading>
+        <ActionMenu isOpen>
+          <Section title="File">
+            <Item key="new">
+              <Icon svg={<PlusCircleOutline />} />
+              New
+            </Item>
+            <Item key="open">
+              <Icon svg={<AlertTriangleFilled />} />
+              Triage
+            </Item>
           </Section>
         </ActionMenu>
       </div>

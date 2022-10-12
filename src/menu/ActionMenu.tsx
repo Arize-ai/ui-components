@@ -11,7 +11,7 @@ function ActionMenu<T extends object>(
   props: ActionMenuProps<T>,
   ref: FocusableRef<HTMLButtonElement>
 ) {
-  const { children, buttonText, icon } = props;
+  const { children, buttonText, buttonSize, icon } = props;
   const buttonProps = filterDOMProps(props, { labelable: true });
   if (buttonProps['aria-label'] === undefined) {
     buttonProps['aria-label'] = 'actions';
@@ -32,6 +32,7 @@ function ActionMenu<T extends object>(
         ref={ref}
         {...buttonProps}
         children={buttonText}
+        size={buttonSize}
       />
       <Menu
         children={children}

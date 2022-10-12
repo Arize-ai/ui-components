@@ -10,3 +10,4 @@ export * from './events';
 export * from './dom';
 export * from './provider';
 export * from './menu';
+export * from './button';

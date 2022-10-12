@@ -77,7 +77,12 @@ export function ListBoxOption<T>(props: OptionProps<T>) {
         css={menuItemCSS}
       >
         {contents}
-        {isSelected && <Icon svg={<CheckmarkOutline />} />}
+        {isSelected && (
+          <Icon
+            svg={<CheckmarkOutline />}
+            className="ac-menu-item__selected-checkmark"
+          />
+        )}
       </div>
     </FocusRing>
   );

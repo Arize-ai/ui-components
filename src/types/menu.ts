@@ -1,3 +1,4 @@
+import { ButtonProps } from './button';
 import {
   Alignment,
   AriaLabelingProps,
@@ -99,4 +100,9 @@ export interface ActionMenuProps<T>
    * Optional button text to elaborate on the menu
    */
   buttonText?: ReactNode;
+  /**
+   * The size of the button
+   * @optional
+   */
+  buttonSize?: ButtonProps['size'];
 }
