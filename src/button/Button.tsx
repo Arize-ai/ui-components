@@ -54,4 +54,4 @@ const Button = (props: ButtonProps, ref: FocusableRef<HTMLButtonElement>) => {
 };
 
 let _Button = React.forwardRef(Button);
-export { _Button as Button };
+export { _Button as Button, ButtonProps };
