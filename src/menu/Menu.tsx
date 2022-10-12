@@ -42,6 +42,7 @@ const menuULCSS = css`
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
   outline: none;
   border: 1px solid ${theme.components.dropdown.borderColor};
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
   max-height: inherit;
   list-style: none;
   margin: 0;

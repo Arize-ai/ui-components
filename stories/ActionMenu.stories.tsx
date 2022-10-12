@@ -126,7 +126,7 @@ const Template: Story<DropdownProps> = args => (
       </div>
       <div>
         <Heading>With Icons</Heading>
-        <ActionMenu isOpen>
+        <ActionMenu>
           <Section title="File">
             <Item key="new">
               <Icon svg={<PlusCircleOutline />} />

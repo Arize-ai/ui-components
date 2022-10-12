@@ -3,9 +3,11 @@ import { filterDOMProps } from '@react-aria/utils';
 import { FocusableRef } from '@react-types/shared';
 import { Menu } from './Menu';
 import { MenuTrigger } from './MenuTrigger';
-import { Icon, MoreHorizontalOutline } from '../icon';
+import { ArrowIosDownwardOutline, Icon, MoreHorizontalOutline } from '../icon';
 import React, { forwardRef, ReactElement } from 'react';
 import { ActionMenuProps } from '../types';
+import { css } from '@emotion/core';
+import theme from '../theme';
 
 function ActionMenu<T extends object>(
   props: ActionMenuProps<T>,
@@ -15,6 +17,29 @@ function ActionMenu<T extends object>(
   const buttonProps = filterDOMProps(props, { labelable: true });
   if (buttonProps['aria-label'] === undefined) {
     buttonProps['aria-label'] = 'actions';
+  }
+  let buttonChildren;
+
+  if (buttonText) {
+    buttonChildren = (
+      <span
+        css={css`
+          display: flex;
+          align-items: center;
+          .ac-icon-wrap {
+            flex: fixed;
+            padding-left: ${theme.spacing.padding8}px;
+            width: 16px;
+            height: 16px;
+            font-size: 16px;
+            margin-right: -4px;
+          }
+        `}
+      >
+        {buttonText}
+        <Icon svg={<ArrowIosDownwardOutline />} />
+      </span>
+    );
   }
 
   return (
@@ -31,7 +56,7 @@ function ActionMenu<T extends object>(
         icon={icon ?? <Icon svg={<MoreHorizontalOutline />} />}
         ref={ref}
         {...buttonProps}
-        children={buttonText}
+        children={buttonChildren}
         size={buttonSize}
       />
       <Menu
