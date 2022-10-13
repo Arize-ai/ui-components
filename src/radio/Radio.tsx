@@ -1,4 +1,9 @@
-import React, { isValidElement, ReactNode, SyntheticEvent } from 'react';
+import React, {
+  isValidElement,
+  ReactElement,
+  ReactNode,
+  SyntheticEvent,
+} from 'react';
 import { useRadio } from '@react-aria/radio';
 import { useRadioProvider } from './context';
 import { Icon } from '../icon';
@@ -100,7 +105,7 @@ function Radio(props: RadioProps) {
   const radioChildren = children
     ? React.Children.map(props.children, child =>
         isValidElement(child)
-          ? React.cloneElement(child, { isDisabled })
+          ? React.cloneElement(child as ReactElement<any>, { isDisabled })
           : child
       )
     : null;

@@ -5,6 +5,7 @@ import React, {
   isValidElement,
   SyntheticEvent,
   HTMLProps,
+  ReactElement,
 } from 'react';
 import { css } from '@emotion/core';
 import theme from '../theme';
@@ -57,7 +58,7 @@ export function List({
     >
       {Children.map(children, child => {
         if (isValidElement(child)) {
-          return cloneElement(child, {
+          return cloneElement(child as ReactElement<ListItemProps>, {
             listSize,
             noPadding,
           });
