@@ -4,7 +4,7 @@ import { FocusableRef } from '@react-types/shared';
 import { Menu } from './Menu';
 import { MenuTrigger } from './MenuTrigger';
 import { ArrowIosDownwardOutline, Icon, MoreHorizontalOutline } from '../icon';
-import React, { forwardRef, ReactElement } from 'react';
+import React, { forwardRef } from 'react';
 import { ActionMenuProps } from '../types';
 import { css } from '@emotion/core';
 import theme from '../theme';
@@ -78,7 +78,5 @@ function ActionMenu<T extends object>(
 /**
  * ActionMenu combines an ActionButton with a Menu for simple "more actions" use cases.
  */
-const _ActionMenu = forwardRef(ActionMenu) as <T>(
-  props: ActionMenuProps<T> & { ref?: FocusableRef<HTMLButtonElement> }
-) => ReactElement;
+const _ActionMenu = forwardRef(ActionMenu);
 export { _ActionMenu as ActionMenu };
