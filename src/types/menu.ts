@@ -105,4 +105,9 @@ export interface ActionMenuProps<T>
    * @optional
    */
   buttonSize?: ButtonProps['size'];
+  /**
+   * The variant of the button
+   * @optional
+   */
+  buttonVariant?: ButtonProps['variant'];
 }

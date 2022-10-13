@@ -85,6 +85,17 @@ const Template: Story<DropdownProps> = args => (
           <Item key="two">Two</Item>
           <Item key="three">Three</Item>
         </ActionMenu>
+        <ActionMenu
+          {...args}
+          onAction={action => alert('You clicked on ' + action)}
+          buttonSize="compact"
+          align="end"
+          buttonVariant="quiet"
+        >
+          <Item key="one">One</Item>
+          <Item key="two">Two</Item>
+          <Item key="three">Three</Item>
+        </ActionMenu>
       </div>
       <div
         css={css`

@@ -13,7 +13,13 @@ function ActionMenu<T extends object>(
   props: ActionMenuProps<T>,
   ref: FocusableRef<HTMLButtonElement>
 ) {
-  const { children, buttonText, buttonSize, icon } = props;
+  const {
+    children,
+    buttonText,
+    buttonSize,
+    buttonVariant = 'default',
+    icon,
+  } = props;
   const buttonProps = filterDOMProps(props, { labelable: true });
   if (buttonProps['aria-label'] === undefined) {
     buttonProps['aria-label'] = 'actions';
@@ -52,12 +58,12 @@ function ActionMenu<T extends object>(
       shouldFlip={props.shouldFlip}
     >
       <Button
-        variant="default"
         icon={icon ?? <Icon svg={<MoreHorizontalOutline />} />}
         ref={ref}
         {...buttonProps}
         children={buttonChildren}
         size={buttonSize}
+        variant={buttonVariant}
       />
       <Menu
         children={children}

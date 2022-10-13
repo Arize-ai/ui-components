@@ -8,6 +8,7 @@ export const menuItemCSS = css`
   align-items: flex-start;
   color: ${theme.textColors.white90};
   padding: ${theme.spacing.padding8}px ${theme.spacing.padding16}px;
+  font-size: ${theme.typography.sizes.medium.fontSize}px;
   min-width: 80px;
   cursor: pointer;
   position: relative;
