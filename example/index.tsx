@@ -20,6 +20,8 @@ import {
   Label,
   LabelGroup,
   Alert,
+  ActionMenu,
+  Item,
 } from '../.';
 
 const { TabPane } = Tabs;
@@ -77,7 +79,14 @@ const App = () => {
             </TabPane>
           </Tabs>
         </TabbedCard>
-        <Card title="Radio Form">
+        <Card
+          title="Radio Form"
+          extra={
+            <ActionMenu align="end">
+              <Item>Copy</Item>
+            </ActionMenu>
+          }
+        >
           <RadioGroup
             label="here are the animals to choose from"
             defaultValue="cats"
