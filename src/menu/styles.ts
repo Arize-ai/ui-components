@@ -5,7 +5,7 @@ export const menuItemCSS = css`
   /* show focus in other ways */
   outline: none;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   color: ${theme.textColors.white90};
   padding: ${theme.spacing.padding8}px ${theme.spacing.padding16}px;
   font-size: ${theme.typography.sizes.medium.fontSize}px;
