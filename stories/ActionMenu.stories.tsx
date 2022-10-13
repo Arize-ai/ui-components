@@ -123,7 +123,7 @@ const Template: Story<DropdownProps> = args => (
       </div>
       <div>
         <Heading>With Section</Heading>
-        <ActionMenu>
+        <ActionMenu onAction={action => alert(action)}>
           <Section title="File">
             <Item key="new">New</Item>
             <Item key="open">Open...</Item>
@@ -138,6 +138,21 @@ const Template: Story<DropdownProps> = args => (
       <div>
         <Heading>With Icons</Heading>
         <ActionMenu>
+          <Section title="File">
+            <Item key="new">
+              <Icon svg={<PlusCircleOutline />} />
+              New
+            </Item>
+            <Item key="open">
+              <Icon svg={<AlertTriangleFilled />} />
+              Triage
+            </Item>
+          </Section>
+        </ActionMenu>
+      </div>
+      <div>
+        <Heading>With Disabled</Heading>
+        <ActionMenu disabledKeys={['new']} isOpen>
           <Section title="File">
             <Item key="new">
               <Icon svg={<PlusCircleOutline />} />

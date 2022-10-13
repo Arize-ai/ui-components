@@ -35,4 +35,8 @@ export const menuItemCSS = css`
   &.is-selectable {
     cursor: pointer;
   }
+  &.is-disabled {
+    cursor: not-allowed;
+    color: ${theme.textColors.white50};
+  }
 `;
