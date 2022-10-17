@@ -1,5 +1,5 @@
 {
-  "version": "0.6.4",
+  "version": "0.7.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -9,7 +9,7 @@
   ],
   "source": "src/index.tsx",
   "engines": {
-    "node": ">=12"
+    "node": ">=14"
   },
   "scripts": {
     "start": "tsdx watch",
@@ -65,9 +65,9 @@
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@emotion/babel-plugin": "^11.2.0",
-    "@emotion/babel-preset-css-prop": "^10.0.27",
-    "@emotion/core": "^10.0.35",
-    "@size-limit/preset-small-lib": "^4.6.2",
+    "@emotion/babel-preset-css-prop": "10.0.27",
+    "@emotion/core": "10.0.35",
+    "@size-limit/preset-small-lib": "^8.1.0",
     "@storybook/addon-a11y": "^6.1.21",
     "@storybook/addon-essentials": "^6.0.26",
     "@storybook/addon-info": "^5.3.21",
@@ -76,17 +76,19 @@
     "@storybook/react": "^6.0.26",
     "@types/react": "18",
     "@types/react-dom": "18",
+    "@types/react-transition-group": "^4.4.5",
     "babel-loader": "^8.1.0",
     "babel-plugin-polished": "^1.1.0",
     "chromatic": "^6.5.1",
-    "husky": "^4.3.0",
+    "husky": "^8.0.1",
     "polished": "^4.2.2",
     "react": "18",
     "react-dom": "18",
     "react-hook-form": "^7.27.1",
-    "react-is": "^17.0.1",
-    "size-limit": "^4.6.2",
-    "storybook-addon-designs": "^5.4.5",
+    "react-is": "^18.2.0",
+    "size-limit": "^8.1.0",
+    "storybook-addon-designs": "^6.3.1",
+    "tsdx": "^0.14.1",
     "tslib": "^2.0.3",
     "typescript": "^4.0.3"
   },
@@ -110,11 +112,11 @@
     "@react-aria/textfield": "^3.7.2",
     "@react-aria/tooltip": "^3.3.2",
     "@react-aria/utils": "^3.14.0",
-    "@react-aria/virtualizer": "^3.3.4",
+    "@react-aria/virtualizer": "^3.5.1",
     "@react-aria/visually-hidden": "^3.5.0",
-    "@react-stately/collections": "^3.4.4",
+    "@react-stately/collections": "3.3.4",
     "@react-stately/layout": "^3.8.0",
-    "@react-stately/list": "^3.5.4",
+    "@react-stately/list": "3.3.0",
     "@react-stately/overlays": "^3.4.2",
     "@react-stately/radio": "^3.6.0",
     "@react-stately/select": "^3.3.2",
@@ -123,10 +125,10 @@
     "@react-stately/virtualizer": "^3.3.1",
     "@react-types/shared": "^3.15.0",
     "@storybook/addon-measure": "^6.5.10",
-    "@types/react-transition-group": "^4.4.5",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
     "clsx": "^1.1.1",
-    "react-transition-group": "^4.4.5",
-    "tsdx": "^0.14.1"
+    "react-transition-group": "^4.4.5"
   },
   "description": "Re-usable React components",
   "directories": {

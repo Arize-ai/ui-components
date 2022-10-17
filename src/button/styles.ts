@@ -9,7 +9,7 @@ export const buttonCSS = css`
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: content-box;
+  box-sizing: border-box;
   border-radius: ${theme.borderRadius.medium}px;
   color: ${theme.textColors.white90};
   cursor: pointer;

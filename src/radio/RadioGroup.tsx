@@ -1,4 +1,4 @@
-import React, { isValidElement, ReactNode } from 'react';
+import React, { isValidElement, ReactElement, ReactNode } from 'react';
 import { useRadioGroupState } from '@react-stately/radio';
 import { useRadioGroup } from '@react-aria/radio';
 import { useId } from '@react-aria/utils';
@@ -7,6 +7,7 @@ import { Text } from '../content';
 import { RadioContext } from './context';
 import { RadioSize, RadioVariant } from './types';
 import { classNames } from '../utils';
+import { RadioProps } from './Radio';
 
 export interface RadioGroupProps {
   /**
@@ -62,7 +63,10 @@ function RadioGroup(props: RadioGroupProps) {
         {children &&
           React.Children.map(children, child => {
             if (isValidElement(child)) {
-              return React.cloneElement(child, { variant, size });
+              return React.cloneElement(child as ReactElement<RadioProps>, {
+                variant,
+                size,
+              });
             }
             return null;
           })}
