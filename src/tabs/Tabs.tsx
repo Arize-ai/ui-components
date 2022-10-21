@@ -97,7 +97,7 @@ export function Tabs({ children, className, onChange }: TabsProps) {
           );
         })}
       </div>
-      <div>
+      <div className="ac-tabs__pane-container">
         {Children.map(children, (child, index) => {
           if (isValidElement(child)) {
             return cloneElement(child as ReactElement<TabPaneChildFCProps>, {
