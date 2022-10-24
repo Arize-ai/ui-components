@@ -39,7 +39,7 @@ const Template: Story<FormProps> = args => {
       <Controller
         name={'name'}
         control={control}
-        rules={{ required: 'This field is required' }}
+        rules={{ required: 'This field is required', min: 10, max: 20 }}
         render={({
           field: { onChange, value },
           fieldState: { invalid, error },
@@ -97,7 +97,9 @@ const Template: Story<FormProps> = args => {
           )}
         />
       </Field>
-      <Button variant="primary" type="submit" />
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
     </Form>
   );
 };

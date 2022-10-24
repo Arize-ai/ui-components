@@ -3,7 +3,7 @@ import { classNames, createFocusableRef } from '../utils';
 import { Field } from '../field';
 import { FocusRing } from '@react-aria/focus';
 import { mergeProps } from '@react-aria/utils';
-import { PressEvents } from '@react-types/shared';
+import { PressEvents, StyleProps } from '@react-types/shared';
 import { Icon, AlertCircleOutline } from '../icon';
 import React, {
   HTMLAttributes,
@@ -85,7 +85,8 @@ export interface AriaTextFieldProps
 interface TextFieldBaseProps
   extends Omit<AriaTextFieldProps, 'onChange'>,
     AddonableProps,
-    PressEvents {
+    PressEvents,
+    StyleProps {
   wrapperChildren?: ReactElement | ReactElement[];
   inputClassName?: string;
   validationIconClassName?: string;
@@ -101,7 +102,6 @@ interface TextFieldBaseProps
   isLoading?: boolean;
   className?: string;
   variant?: 'default' | 'quiet';
-  height?: number;
 }
 
 export interface TextFieldRef
@@ -184,6 +184,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         position: relative;
         align-items: center;
         min-width: 270px;
+        width: 100%;
         background-color: ${theme.components.textField.backgroundColor};
         transition: all 0.2s ease-in-out;
         overflow: hidden;
@@ -199,6 +200,9 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         &.is-focused[data-variant='default'] {
           border: 1px solid ${theme.components.textField.activeBorderColor};
           background-color: ${theme.components.textField.activeBackgroundColor};
+          &.ac-textfield--invalid {
+            border: 1px solid ${theme.colors.statusDanger};
+          }
         }
         &.is-disabled {
           border: 1px solid ${theme.components.textField.backgroundColor};
@@ -282,7 +286,9 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
           className={classNames('ac-textfield__input', inputClassName)}
         />
       </FocusRing>
-      {validationState && !isLoading ? validation : null}
+      {validationState && validationState === 'invalid' && !isLoading
+        ? validation
+        : null}
       {isLoading && loadingIndicator}
       {wrapperChildren}
     </div>
