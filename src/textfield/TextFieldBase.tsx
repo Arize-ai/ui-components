@@ -189,6 +189,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         transition: all 0.2s ease-in-out;
         overflow: hidden;
         font-size: ${theme.typography.sizes.medium.fontSize}px;
+        box-sizing: border-box;
         &[data-variant='default'] {
           border: 1px solid ${theme.colors.lightGrayBorder};
           border-radius: ${theme.borderRadius.medium}px;
