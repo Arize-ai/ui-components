@@ -91,6 +91,7 @@ export function WithValidation() {
   const isValid = val.length > 10 && val.length < 15;
   return (
     <Form>
+      <TextField label="Field" value={val} onChange={setVal} />
       <TextField
         label="Field"
         validationState={isValid ? 'valid' : 'invalid'}
@@ -98,15 +99,8 @@ export function WithValidation() {
         errorMessage={
           isValid ? null : 'Value must be between 10 and 15 characters'
         }
-        onChange={setVal}
-      />
-      <TextField
-        label="Field"
-        validationState={isValid ? 'valid' : 'invalid'}
-        value={val}
-        errorMessage={
-          isValid ? null : 'Value must be between 10 and 15 characters'
-        }
+        addonBefore="Name"
+        isRequired
         onChange={setVal}
       />
       <TextField

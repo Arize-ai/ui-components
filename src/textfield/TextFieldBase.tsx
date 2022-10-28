@@ -160,6 +160,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
 
   const validation = (
     <Icon
+      key="validation-icon"
       className={`ac-textfield__validation-icon ac-textfield__validation-icon--${validationState}`}
       svg={<AlertCircleOutline />}
     />
@@ -269,13 +270,16 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         }
       `}
     >
-      {addonBefore != null ? <AddonBefore>{addonBefore}</AddonBefore> : null}
+      {addonBefore != null ? (
+        <AddonBefore key="addon-before">{addonBefore}</AddonBefore>
+      ) : null}
       <FocusRing
         focusRingClass={'focus-ring'}
         isTextInput
         autoFocus={autoFocus}
       >
         <ElementType
+          key="element"
           {...mergeProps(inputProps, hoverProps, {
             onFocus: () => {
               setIsFocused(true);
