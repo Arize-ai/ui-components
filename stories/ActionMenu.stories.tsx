@@ -165,6 +165,21 @@ const Template: Story<DropdownProps> = args => (
           </Section>
         </ActionMenu>
       </div>
+      <div>
+        <Heading>Fully Disabled</Heading>
+        <ActionMenu icon={<Icon svg={<PlusCircleOutline />} />} isDisabled={true} buttonText={'Add Dashboard'}>
+          <Section title="File">
+            <Item key="new">
+              <Icon svg={<PlusCircleOutline />} />
+              New
+            </Item>
+            <Item key="open">
+              <Icon svg={<AlertTriangleFilled />} />
+              Triage
+            </Item>
+          </Section>
+        </ActionMenu>
+      </div>
     </div>
   </Provider>
 );

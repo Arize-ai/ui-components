@@ -64,6 +64,7 @@ function ActionMenu<T extends object>(
         children={buttonChildren}
         size={buttonSize}
         variant={buttonVariant}
+        disabled={props.isDisabled}
       />
       <Menu
         children={children}
