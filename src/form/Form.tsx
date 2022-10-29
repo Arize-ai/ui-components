@@ -95,7 +95,7 @@ function Form(props: FormProps, ref: DOMRef<HTMLFormElement>) {
       css={css`
         & > div,
         & {
-          & > .ac-field:not(:last-child):not(.ac-field--hasHelpText) {
+          & > .ac-field:not(.ac-field--hasHelpText) {
             margin-bottom: 20px;
           }
           & > .ac-field {
