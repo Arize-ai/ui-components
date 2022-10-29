@@ -104,7 +104,6 @@ export function WithValidation() {
         onChange={setVal}
       />
       <TextField
-        label="Field"
         validationState={isValid ? 'valid' : 'invalid'}
         value={val}
         errorMessage={

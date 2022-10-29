@@ -54,81 +54,71 @@ function Field(props: FieldProps, ref: RefObject<HTMLElement>) {
   let hasHelpText =
     !!description || (errorMessage && validationState === 'invalid');
 
-  if (label || hasHelpText) {
-    let labelWrapperClass = classNames(
-      'ac-field',
-      {
-        'ac-field--positionTop': labelPosition === 'top',
-        'ac-field--positionSide': labelPosition === 'side',
-        'ac-field--hasHelpText': hasHelpText,
-      },
-      wrapperClassName
-    );
+  let labelWrapperClass = classNames(
+    'ac-field',
+    {
+      'ac-field--positionTop': labelPosition === 'top',
+      'ac-field--positionSide': labelPosition === 'side',
+      'ac-field--hasHelpText': hasHelpText,
+    },
+    wrapperClassName
+  );
 
-    children = React.cloneElement(
-      children,
-      // @ts-ignore
-      mergeProps(children.props, {
-        className: 'ac-field__field',
-      })
-    );
-
-    let renderHelpText = () => (
-      <HelpText
-        descriptionProps={descriptionProps}
-        errorMessageProps={errorMessageProps}
-        description={description}
-        errorMessage={errorMessage}
-        validationState={validationState}
-        isDisabled={isDisabled}
-        // labelAlign={labelAlign} TODO support different alignments
-        showErrorIcon={showErrorIcon}
-      />
-    );
-
-    return (
-      <div
-        ref={ref as RefObject<HTMLDivElement>}
-        className={labelWrapperClass}
-        css={css`
-          /* For now assume vertical alignment of labels */
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          .ac-help-text--danger {
-            /* Animate in the help text */
-            animation: ${appearKeyframes} ${0.3}s forwards ease-in-out;
-          }
-        `}
-      >
-        {label && (
-          <FieldLabel
-            {...labelProps}
-            labelPosition={labelPosition}
-            labelAlign={labelAlign}
-            labelExtra={labelExtra}
-            isRequired={isRequired}
-            necessityIndicator={necessityIndicator}
-            includeNecessityIndicatorInAccessibilityName={
-              includeNecessityIndicatorInAccessibilityName
-            }
-            elementType={elementType}
-          >
-            {label}
-          </FieldLabel>
-        )}
-        {children}
-        {hasHelpText && renderHelpText()}
-      </div>
-    );
-  }
-
-  return React.cloneElement(
+  children = React.cloneElement(
     children,
     // @ts-ignore
     mergeProps(children.props, {
-      ref,
+      className: 'ac-field__field',
     })
+  );
+
+  let renderHelpText = () => (
+    <HelpText
+      descriptionProps={descriptionProps}
+      errorMessageProps={errorMessageProps}
+      description={description}
+      errorMessage={errorMessage}
+      validationState={validationState}
+      isDisabled={isDisabled}
+      // labelAlign={labelAlign} TODO support different alignments
+      showErrorIcon={showErrorIcon}
+    />
+  );
+
+  return (
+    <div
+      ref={ref as RefObject<HTMLDivElement>}
+      className={labelWrapperClass}
+      css={css`
+        /* For now assume vertical alignment of labels */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .ac-help-text--danger {
+          /* Animate in the help text */
+          animation: ${appearKeyframes} ${0.3}s forwards ease-in-out;
+        }
+      `}
+    >
+      {label && (
+        <FieldLabel
+          {...labelProps}
+          labelPosition={labelPosition}
+          labelAlign={labelAlign}
+          labelExtra={labelExtra}
+          isRequired={isRequired}
+          necessityIndicator={necessityIndicator}
+          includeNecessityIndicatorInAccessibilityName={
+            includeNecessityIndicatorInAccessibilityName
+          }
+          elementType={elementType}
+        >
+          {label}
+        </FieldLabel>
+      )}
+      {children}
+      {hasHelpText && renderHelpText()}
+    </div>
   );
 }
 
