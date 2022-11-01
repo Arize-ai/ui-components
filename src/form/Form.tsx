@@ -105,6 +105,9 @@ function Form(props: FormProps, ref: DOMRef<HTMLFormElement>) {
                 width: 100%;
               }
             }
+            & > .ac-dropdown-button {
+              width: 100%;
+            }
           }
         }
       `}

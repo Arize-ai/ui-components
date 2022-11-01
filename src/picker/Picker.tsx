@@ -19,11 +19,15 @@ import { PickerProps } from '../types';
 import { Text } from '../content';
 import { useSelectState } from '@react-stately/select';
 import theme from '../theme';
+import { useProviderProps } from '../provider';
 
 function Picker<T extends object>(
   props: PickerProps<T>,
   ref: DOMRef<HTMLDivElement>
 ) {
+  // Call use provider props so the textfield can inherit from the provider
+  // E.x. disabled, readOnly, etc.
+  props = useProviderProps(props);
   let {
     isQuiet = false,
     isDisabled,

@@ -5,6 +5,7 @@ import { DropdownTrigger, DropdownTriggerProps } from './DropdownTrigger';
 import { useResizeObserver } from '@react-aria/utils';
 import { FocusableRefValue } from '../types';
 import { useUnwrapDOMRef } from '../utils';
+import { useProviderProps } from '../provider';
 
 export type DropdownProps = {
   /**
@@ -23,23 +24,33 @@ export type DropdownProps = {
    * the dropdown button props
    */
   buttonProps?: DropdownButtonProps;
+  /**
+   * Whether or not the dropdown is disabled
+   */
+  isDisabled?: boolean;
 };
 
-export function Dropdown({
-  menu,
-  children,
-  triggerProps = { placement: 'bottom left' },
-  buttonProps,
-}: DropdownProps) {
-  let triggerRef = useRef<FocusableRefValue<HTMLButtonElement>>(null);
-  let unwrappedTriggerRef = useUnwrapDOMRef(triggerRef);
+export function Dropdown(props: DropdownProps) {
+  // Call use provider props so the textfield can inherit from the provider
+  // E.x. disabled, readOnly, etc.
+  props = useProviderProps(props);
+  let {
+    menu,
+    children,
+    triggerProps = { placement: 'bottom left' },
+    isDisabled,
+    buttonProps,
+  } = props;
+  buttonProps = { ...buttonProps, isDisabled };
+  const triggerRef = useRef<FocusableRefValue<HTMLButtonElement>>(null);
+  const unwrappedTriggerRef = useUnwrapDOMRef(triggerRef);
 
   // Measure the width of the button to inform the width of the menu (below).
-  let [buttonWidth, setButtonWidth] = useState<number>();
+  const [buttonWidth, setButtonWidth] = useState<number>();
 
-  let onResize = useCallback(() => {
+  const onResize = useCallback(() => {
     if (unwrappedTriggerRef.current) {
-      let width = unwrappedTriggerRef.current.offsetWidth;
+      const width = unwrappedTriggerRef.current.offsetWidth;
       setButtonWidth(width);
     }
   }, [unwrappedTriggerRef, setButtonWidth]);

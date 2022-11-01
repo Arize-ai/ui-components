@@ -8,6 +8,7 @@ import {
   Item,
   Field,
   Button,
+  Dropdown,
 } from '../src';
 import { useForm, Controller } from 'react-hook-form';
 
@@ -94,6 +95,15 @@ const Template: Story<FormProps> = args => {
               <Item>Free</Item>
               <Item>Paid</Item>
             </Picker>
+          )}
+        />
+      </Field>
+      <Field label="Dropdown">
+        <Controller
+          name={'dropdown'}
+          control={control}
+          render={({ field: { onChange, value } }) => (
+            <Dropdown menu={<div></div>}>Some Dropdown</Dropdown>
           )}
         />
       </Field>
