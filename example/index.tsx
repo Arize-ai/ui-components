@@ -22,6 +22,8 @@ import {
   Alert,
   ActionMenu,
   Item,
+  TextField,
+  Form,
 } from '../.';
 
 const { TabPane } = Tabs;
@@ -104,9 +106,32 @@ const App = () => {
             </Radio>
           </RadioGroup>
         </Card>
+        <FormCard />
       </div>
     </Provider>
   );
 };
+
+function FormCard() {
+  const [val, setVal] = React.useState('');
+  const isValid = val.length > 10 && val.length < 15;
+  return (
+    <Card title="Form">
+      <Form>
+        <TextField
+          label="Field"
+          validationState={isValid ? 'valid' : 'invalid'}
+          value={val}
+          errorMessage={
+            isValid ? null : 'Value must be between 10 and 15 characters'
+          }
+          addonBefore="Name"
+          isRequired
+          onChange={setVal}
+        />
+      </Form>
+    </Card>
+  );
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));

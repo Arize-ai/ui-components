@@ -5,11 +5,13 @@ import {
   TextFieldRef,
 } from './TextFieldBase';
 import { useTextField } from '@react-aria/textfield';
-import { AddonableProps } from '../types';
+import { AddonableProps, StyleProps } from '../types';
 import { useProviderProps } from '../provider';
 
-export interface TextFieldProps extends AriaTextFieldProps, AddonableProps {
-  className?: string;
+export interface TextFieldProps
+  extends AriaTextFieldProps,
+    AddonableProps,
+    StyleProps {
   variant?: 'default' | 'quiet';
 }
 

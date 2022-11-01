@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Item, Picker, PickerProps, Text, Field } from '../src';
+import { Item, Picker, PickerProps, Text, Field, Button } from '../src';
 import { Provider } from '../src';
 import { css } from '@emotion/core';
 
@@ -42,7 +42,9 @@ const Template: Story<PickerProps<string>> = args => (
 export const Default = Template.bind({});
 
 const Controlled: Story<PickerProps<string>> = args => {
-  const [frequency, setFrequency] = React.useState<string>('rarely');
+  const [frequency, setFrequency] = React.useState<string | undefined>(
+    'rarely'
+  );
   return (
     <Provider>
       <Picker
@@ -56,6 +58,9 @@ const Controlled: Story<PickerProps<string>> = args => {
       </Picker>
       <br />
       <Text>Selected Value: {frequency}</Text>
+      <Button variant="default" onClick={() => setFrequency(undefined)}>
+        Reset
+      </Button>
     </Provider>
   );
 };

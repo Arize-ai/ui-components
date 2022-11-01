@@ -8,9 +8,12 @@ import { useTextField } from '@react-aria/textfield';
 import { chain, useLayoutEffect } from '@react-aria/utils';
 import { useControlledState } from '@react-stately/utils';
 import { useProviderProps } from '../provider';
-import { AddonableProps } from '../types';
+import { AddonableProps, StyleProps } from '../types';
 
-export interface TextAreaProps extends AriaTextFieldProps, AddonableProps {
+export interface TextAreaProps
+  extends AriaTextFieldProps,
+    AddonableProps,
+    StyleProps {
   className?: string;
   variant?: 'default' | 'quiet';
   /** The height of the text area */

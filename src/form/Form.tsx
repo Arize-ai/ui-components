@@ -93,8 +93,22 @@ function Form(props: FormProps, ref: DOMRef<HTMLFormElement>) {
         'ac-form--positionTop': labelPosition === 'top',
       })}
       css={css`
-        .ac-field:not(:last-child):not(.ac-field--hasHelpText) {
-          margin-bottom: 20px;
+        & > div,
+        & {
+          & > .ac-field:not(.ac-field--hasHelpText) {
+            margin-bottom: 20px;
+          }
+          & > .ac-field {
+            & > .ac-dropdown {
+              width: 100%;
+              & > .ac-dropdown-button {
+                width: 100%;
+              }
+            }
+            & > .ac-dropdown-button {
+              width: 100%;
+            }
+          }
         }
       `}
     >

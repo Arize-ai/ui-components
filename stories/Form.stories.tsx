@@ -8,6 +8,7 @@ import {
   Item,
   Field,
   Button,
+  Dropdown,
 } from '../src';
 import { useForm, Controller } from 'react-hook-form';
 
@@ -39,7 +40,7 @@ const Template: Story<FormProps> = args => {
       <Controller
         name={'name'}
         control={control}
-        rules={{ required: 'This field is required' }}
+        rules={{ required: 'This field is required', min: 10, max: 20 }}
         render={({
           field: { onChange, value },
           fieldState: { invalid, error },
@@ -97,7 +98,18 @@ const Template: Story<FormProps> = args => {
           )}
         />
       </Field>
-      <Button variant="primary" type="submit" />
+      <Field label="Dropdown">
+        <Controller
+          name={'dropdown'}
+          control={control}
+          render={({ field: { onChange, value } }) => (
+            <Dropdown menu={<div></div>}>Some Dropdown</Dropdown>
+          )}
+        />
+      </Field>
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
     </Form>
   );
 };

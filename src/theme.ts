@@ -76,6 +76,7 @@ export const theme = {
       borderColor: '#6F7D8C',
     },
     dropdown: {
+      backgroundColor: grayColors.gray500,
       borderColor: borderColors.lightGrayBorder,
       hoverBorderColor: borderColors.lightGrayHoverBorder,
       activeBorderColor: arizeColors.arizeLightBlue,

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
 import { Form, TextField, TextFieldProps } from '../src';
@@ -75,6 +75,7 @@ export const Gallery = () => (
       isReadOnly
       addonBefore="$"
       value="100"
+      width={800}
     />
   </Form>
 );
@@ -85,6 +86,34 @@ const Template: Story<TextFieldProps> = args => (
   </Form>
 );
 
+export function WithValidation() {
+  const [val, setVal] = useState<string>('');
+  const isValid = val.length > 10 && val.length < 15;
+  return (
+    <Form>
+      <TextField label="Field" value={val} onChange={setVal} />
+      <TextField
+        label="Field"
+        validationState={isValid ? 'valid' : 'invalid'}
+        value={val}
+        errorMessage={
+          isValid ? null : 'Value must be between 10 and 15 characters'
+        }
+        addonBefore="Name"
+        isRequired
+        onChange={setVal}
+      />
+      <TextField
+        validationState={isValid ? 'valid' : 'invalid'}
+        value={val}
+        errorMessage={
+          isValid ? null : 'Value must be between 10 and 15 characters'
+        }
+        onChange={setVal}
+      />
+    </Form>
+  );
+}
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
