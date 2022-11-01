@@ -49,6 +49,10 @@
     {
       "name": "Manisha Sharma",
       "email": "manisha@arize.com"
+    },
+    {
+      "name": "Nik Leach",
+      "email": "nick@arize.com"
     }
   ],
   "module": "dist/components.esm.js",
