@@ -228,7 +228,7 @@ function Picker<T extends object>(
   );
 
   let wrapperClassName = label
-    ? classNames('ac-field', {
+    ? classNames('ac-field', props.className, {
         'ac-dropdown-field-wrapper--quiet': isQuiet,
         'ac-Dropdown-field-wrapper--positionSide': labelPosition === 'side',
       })
