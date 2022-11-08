@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Item, Picker, PickerProps, Text, Field, Button } from '../src';
+import { Item, Picker, PickerProps, Text, Button } from '../src';
 import { Provider } from '../src';
 import { css } from '@emotion/core';
 
@@ -104,39 +104,36 @@ const Gallery: Story<void> = () => {
           }
         `}
       >
-        <Field label="With Addon">
-          <Picker
-            addonBefore={'Frequency'}
-            selectedKey={frequency}
-            onSelectionChange={selected => setFrequency(selected as string)}
-          >
-            <Item key="rarely">Rarely</Item>
-            <Item key="sometimes">Sometimes</Item>
-            <Item key="always">Always</Item>
-          </Picker>
-        </Field>
-        <Field label="Simple">
-          <Picker
-            selectedKey={frequency}
-            onSelectionChange={selected => setFrequency(selected as string)}
-          >
-            <Item key="rarely">Rarely</Item>
-            <Item key="sometimes">Sometimes</Item>
-            <Item key="always">Always</Item>
-          </Picker>
-        </Field>
-        <Field label="isQuiet">
-          <Picker
-            isQuiet
-            selectedKey={frequency}
-            onSelectionChange={selected => setFrequency(selected as string)}
-            className="picker-quiet"
-          >
-            <Item key="rarely">Rarely</Item>
-            <Item key="sometimes">Sometimes</Item>
-            <Item key="always">Always</Item>
-          </Picker>
-        </Field>
+        <Picker
+          label="With Addon"
+          addonBefore={'Frequency'}
+          selectedKey={frequency}
+          onSelectionChange={selected => setFrequency(selected as string)}
+        >
+          <Item key="rarely">Rarely</Item>
+          <Item key="sometimes">Sometimes</Item>
+          <Item key="always">Always</Item>
+        </Picker>
+        <Picker
+          label="Simple"
+          selectedKey={frequency}
+          onSelectionChange={selected => setFrequency(selected as string)}
+        >
+          <Item key="rarely">Rarely</Item>
+          <Item key="sometimes">Sometimes</Item>
+          <Item key="always">Always</Item>
+        </Picker>
+        <Picker
+          label="isQuiet"
+          isQuiet
+          selectedKey={frequency}
+          onSelectionChange={selected => setFrequency(selected as string)}
+          className="picker-quiet"
+        >
+          <Item key="rarely">Rarely</Item>
+          <Item key="sometimes">Sometimes</Item>
+          <Item key="always">Always</Item>
+        </Picker>
         <div
           css={css`
             .ac-dropdown--picker,
