@@ -2,7 +2,12 @@ import { css } from '@emotion/core';
 import { Popover } from '../popover';
 import { classNames, useDOMRef, useUnwrapDOMRef } from '../utils';
 import { useOverlayPosition } from '@react-aria/overlays';
-import { DOMRef, DOMRefValue, FocusableRefValue } from '../types';
+import {
+  DOMRef,
+  DOMRefValue,
+  FocusableRefValue,
+  LabelPosition,
+} from '../types';
 import { HiddenSelect, useSelect } from '@react-aria/select';
 import { ListBoxBase, useListBoxLayout } from '../listbox';
 import { FocusScope } from '@react-aria/focus';
@@ -20,6 +25,7 @@ import { Text } from '../content';
 import { useSelectState } from '@react-stately/select';
 import theme from '../theme';
 import { useProviderProps } from '../provider';
+import { Field } from '../field';
 
 function Picker<T extends object>(
   props: PickerProps<T>,
@@ -35,6 +41,7 @@ function Picker<T extends object>(
     align = 'start',
     shouldFlip = true,
     placeholder = 'Select an option...',
+    labelPosition = 'top' as LabelPosition,
     label,
     name,
     autoFocus,
@@ -56,7 +63,13 @@ function Picker<T extends object>(
   // so that the layout information can be cached even while the listbox is not mounted.
   // We also use the layout as the keyboard delegate for type to select.
   let layout = useListBoxLayout(state);
-  let { triggerProps, menuProps } = useSelect(
+  let {
+    labelProps,
+    triggerProps,
+    menuProps,
+    descriptionProps,
+    errorMessageProps,
+  } = useSelect(
     {
       ...props,
       keyboardDelegate: layout,
@@ -167,7 +180,7 @@ function Picker<T extends object>(
     );
   }
 
-  return (
+  const picker = (
     <div
       className={classNames(
         'ac-dropdown ac-dropdown--picker',
@@ -212,6 +225,29 @@ function Picker<T extends object>(
       </PressResponder>
       {state.collection.size === 0 ? null : overlay}
     </div>
+  );
+
+  let wrapperClassName = label
+    ? classNames('ac-field', props.className, {
+        'ac-dropdown-field-wrapper--quiet': isQuiet,
+        'ac-Dropdown-field-wrapper--positionSide': labelPosition === 'side',
+      })
+    : '';
+
+  return (
+    <Field
+      {...props}
+      ref={domRef}
+      wrapperClassName={wrapperClassName}
+      labelProps={labelProps}
+      descriptionProps={descriptionProps}
+      errorMessageProps={errorMessageProps}
+      showErrorIcon={false}
+      includeNecessityIndicatorInAccessibilityName
+      elementType="span"
+    >
+      {picker}
+    </Field>
   );
 }
 
