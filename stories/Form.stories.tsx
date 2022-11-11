@@ -52,6 +52,7 @@ const Template: Story<FormProps> = args => {
             label={'Name'}
             placeholder={'enter your name'}
             errorMessage={error?.message}
+            description="The name of the account"
           />
         )}
       />
@@ -81,24 +82,24 @@ const Template: Story<FormProps> = args => {
           />
         )}
       />
-      <Field label="Pricing">
-        <Controller
-          name={'tier'}
-          control={control}
-          render={({ field: { onChange, value } }) => (
-            <Picker
-              addonBefore="$"
-              onSelectionChange={onChange}
-              selectedKey={value}
-              label={'Charge Amount'}
-            >
-              <Item>Free</Item>
-              <Item>Paid</Item>
-            </Picker>
-          )}
-        />
-      </Field>
-      <Field label="Dropdown">
+
+      <Controller
+        name={'tier'}
+        control={control}
+        render={({ field: { onChange, value } }) => (
+          <Picker
+            addonBefore="$"
+            onSelectionChange={onChange}
+            selectedKey={value}
+            label={'Charge Amount'}
+          >
+            <Item>Free</Item>
+            <Item>Paid</Item>
+          </Picker>
+        )}
+      />
+
+      <Field label="Dropdown" description="This is a dropdown">
         <Controller
           name={'dropdown'}
           control={control}
