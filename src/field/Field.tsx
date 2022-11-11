@@ -71,7 +71,6 @@ function Field(props: FieldProps, ref: RefObject<HTMLElement>) {
       className: 'ac-field__field',
     })
   );
-
   let renderHelpText = () => (
     <HelpText
       descriptionProps={descriptionProps}

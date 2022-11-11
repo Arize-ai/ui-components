@@ -77,6 +77,18 @@ export const Gallery = () => (
       value="100"
       width={800}
     />
+    <TextField
+      label="With Description"
+      description="This is the description"
+      labelExtra={
+        <InfoTip postfix={false}>The amount you will be charged</InfoTip>
+      }
+      placeholder="enter your amount"
+      isReadOnly
+      addonBefore="$"
+      value="100"
+      width={800}
+    />
   </Form>
 );
 
