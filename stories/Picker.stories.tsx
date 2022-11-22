@@ -3,6 +3,7 @@ import { Meta, Story } from '@storybook/react';
 import { Item, Picker, PickerProps, Text, Button } from '../src';
 import { Provider } from '../src';
 import { css } from '@emotion/core';
+import InfoTip from './components/InfoTip';
 
 const itemWithDescriptionCSS = css`
   display: flex;
@@ -170,6 +171,16 @@ const Gallery: Story<void> = () => {
                 </Text>
               </div>
             </Item>
+          </Picker>
+          <Picker
+            label="With label extra"
+            labelExtra={<InfoTip>This is info</InfoTip>}
+            selectedKey={frequency}
+            onSelectionChange={selected => setFrequency(selected as string)}
+          >
+            <Item key="rarely">Rarely</Item>
+            <Item key="sometimes">Sometimes</Item>
+            <Item key="always">Always</Item>
           </Picker>
         </div>
       </div>

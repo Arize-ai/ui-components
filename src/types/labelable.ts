@@ -7,6 +7,8 @@ export type NecessityIndicator = 'icon' | 'label';
 export interface LabelableProps {
   /** The content to display as the label. */
   label?: ReactNode;
+  /** The content to display next to a  label. */
+  labelExtra?: ReactNode;
   /**
    * The label's overall position relative to the element it is labeling.
    * @default 'top'
