@@ -3,8 +3,6 @@ import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
 import { Provider, Modal, ModalProps, Text, Button } from '../src';
 
-import css from '@emotion/css';
-
 const meta: Meta = {
   title: 'Modal',
   component: Modal,
