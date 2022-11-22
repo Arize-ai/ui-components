@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import css from '@emotion/css';
+import { css } from '@emotion/core';
 import theme from '../theme';
 
 export const LabelGroup = ({ children }: { children: ReactNode }) => {
