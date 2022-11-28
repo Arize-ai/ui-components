@@ -1,11 +1,9 @@
-import React from 'react';
-import * as Icons from '../src/icon/Icons';
-import { Icon } from '../src/icon';
+import React, { ReactElement } from 'react';
+import { Icon, Icons } from '../src';
 import { Meta, Story } from '@storybook/react';
-import theme from '../src/theme';
 
 function IconsGrid() {
-  const iconsArray = [];
+  const iconsArray: ReactElement[] = [];
 
   Object.keys(Icons).forEach(name => {
     if (Icons[name]) {
@@ -21,7 +19,6 @@ function IconsGrid() {
             height: 40,
             alignItems: 'center',
             justifyContent: 'center',
-            background: theme.colors.dark4,
             borderRadius: 3,
           }}
           title={name}

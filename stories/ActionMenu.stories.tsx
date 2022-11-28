@@ -152,7 +152,7 @@ const Template: Story<DropdownProps> = args => (
       </div>
       <div>
         <Heading>With Disabled</Heading>
-        <ActionMenu disabledKeys={['new']} isOpen>
+        <ActionMenu disabledKeys={['new']}>
           <Section title="File">
             <Item key="new">
               <Icon svg={<PlusCircleOutline />} />
@@ -167,7 +167,11 @@ const Template: Story<DropdownProps> = args => (
       </div>
       <div>
         <Heading>Fully Disabled</Heading>
-        <ActionMenu icon={<Icon svg={<PlusCircleOutline />} />} isDisabled={true} buttonText={'Add Dashboard'}>
+        <ActionMenu
+          icon={<Icon svg={<PlusCircleOutline />} />}
+          isDisabled={true}
+          buttonText={'Add Dashboard'}
+        >
           <Section title="File">
             <Item key="new">
               <Icon svg={<PlusCircleOutline />} />
