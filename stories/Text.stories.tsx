@@ -1,6 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/core';
-import { Meta, Story } from '@storybook/react';
+import { Meta } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
 import { Text, TextProps } from '../src';
 
@@ -15,7 +15,7 @@ const meta: Meta = {
 
 export default meta;
 
-const sizes = [
+const sizes: TextProps['textSize'][] = [
   'xsmall',
   'small',
   'medium',
@@ -44,7 +44,6 @@ export const Gallery = () => {
       >
         {sizes.map(size => {
           return (
-            // @ts-ignore
             <Text key={size} textSize={size}>
               {`I will not waste chalk`}
             </Text>
