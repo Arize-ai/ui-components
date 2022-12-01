@@ -8,6 +8,7 @@ const grayColors = {
   gray400: '#3d434a',
   gray300: '#4a5057',
   gray200: '#585d64', // disabled text
+  gray100: '#666b71',
 };
 
 const arizeColors = {
@@ -77,7 +78,7 @@ export const theme = {
     },
     dropdown: {
       backgroundColor: grayColors.gray500,
-      borderColor: borderColors.lightGrayBorder,
+      borderColor: grayColors.gray100,
       hoverBorderColor: borderColors.lightGrayHoverBorder,
       activeBorderColor: arizeColors.arizeLightBlue,
       activeBackgroundColor: darken(0.02, grayColors.gray500),
@@ -179,6 +180,9 @@ export const theme = {
   singleLineHeight: 36,
   borderRadius: {
     medium: 4,
+  },
+  opacity: {
+    disabled: 0.4,
   },
 };
 

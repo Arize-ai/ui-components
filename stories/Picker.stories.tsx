@@ -13,15 +13,20 @@ const itemWithDescriptionCSS = css`
 const meta: Meta = {
   title: 'Picker',
   component: Picker,
-  parameters: {
-    controls: { expanded: true },
-  },
   argTypes: {
     children: {
       control: {
         type: 'text',
         default: 'Label',
       },
+    },
+  },
+  parameters: {
+    controls: { expanded: true },
+    design: {
+      type: 'figma',
+      url:
+        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=3084%3A9231&t=7kKAE3O8yOxScyZ3-1',
     },
   },
 };
@@ -127,6 +132,17 @@ const Gallery: Story<void> = () => {
         <Picker
           label="isQuiet"
           isQuiet
+          selectedKey={frequency}
+          onSelectionChange={selected => setFrequency(selected as string)}
+          className="picker-quiet"
+        >
+          <Item key="rarely">Rarely</Item>
+          <Item key="sometimes">Sometimes</Item>
+          <Item key="always">Always</Item>
+        </Picker>
+        <Picker
+          label="disabled"
+          isDisabled
           selectedKey={frequency}
           onSelectionChange={selected => setFrequency(selected as string)}
           className="picker-quiet"

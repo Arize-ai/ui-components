@@ -207,8 +207,9 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
           }
         }
         &.is-disabled {
-          border: 1px solid ${theme.components.textField.backgroundColor};
+          border: 1px solid ${theme.colors.lightGrayBorder};
           background-color: ${theme.components.textField.backgroundColor};
+          opacity: ${theme.opacity.disabled};
           .ac-textfield__input {
             color: ${theme.textColors.white50};
           }

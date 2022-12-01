@@ -58,7 +58,7 @@ const buttonBaseCSS = css`
     font-size: 16px;
   }
   &[disabled] {
-    color: ${theme.textColors.white30};
+    opacity: ${theme.opacity.disabled};
   }
 `;
 
@@ -80,7 +80,7 @@ const nonQuietButtonCSS = css`
   }
   &[disabled] {
     cursor: default;
-    border-color: ${theme.components.dropdown.backgroundColor};
+    border: 1px solid ${theme.components.dropdown.borderColor};
   }
 `;
 
@@ -120,11 +120,7 @@ function DropdownButton(
       css={css(buttonBaseCSS, !isQuiet && nonQuietButtonCSS)}
     >
       {addonBefore != null ? <AddonBefore>{addonBefore}</AddonBefore> : null}
-      <Text
-        className="ac-dropdown-button__text"
-        textSize="medium"
-        color={isDisabled ? 'white30' : 'white90'}
-      >
+      <Text className="ac-dropdown-button__text" textSize="medium">
         {children}
       </Text>
       <Icon svg={<ArrowIosDownwardOutline />} />

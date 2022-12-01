@@ -20,7 +20,7 @@ function DropdownMenu(
   return (
     <div
       css={css`
-        background-color: ${theme.colors.gray500};
+        background-color: ${theme.colors.gray600};
         border-radius: 4px;
         color: ${theme.textColors.white90};
         padding: ${isPadded ? theme.spacing.padding8 : 0}px;
