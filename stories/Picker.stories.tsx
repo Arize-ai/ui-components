@@ -140,6 +140,17 @@ const Gallery: Story<void> = () => {
           <Item key="sometimes">Sometimes</Item>
           <Item key="always">Always</Item>
         </Picker>
+        <Picker
+          label="disabled"
+          isDisabled
+          selectedKey={frequency}
+          onSelectionChange={selected => setFrequency(selected as string)}
+          className="picker-quiet"
+        >
+          <Item key="rarely">Rarely</Item>
+          <Item key="sometimes">Sometimes</Item>
+          <Item key="always">Always</Item>
+        </Picker>
         <div
           css={css`
             .ac-dropdown--picker,

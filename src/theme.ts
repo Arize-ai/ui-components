@@ -181,6 +181,9 @@ export const theme = {
   borderRadius: {
     medium: 4,
   },
+  opacity: {
+    disabled: 0.4,
+  },
 };
 
 export default theme;

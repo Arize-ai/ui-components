@@ -20,7 +20,7 @@ export const buttonCSS = css`
   }
   &[disabled] {
     cursor: default;
-    opacity: 0.4;
+    opacity: ${theme.opacity.disabled};
   }
   &[data-size='normal'][data-childless='false'] {
     padding: ${theme.spacing.padding8}px ${theme.spacing.padding16}px;

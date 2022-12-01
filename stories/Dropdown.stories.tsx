@@ -66,6 +66,15 @@ export const Gallery = () => (
       </li>
       <li>
         <Dropdown
+          menu={<Menu />}
+          buttonProps={{ addonBefore: 'Dataset A' }}
+          isDisabled
+        >
+          DIsabled
+        </Dropdown>
+      </li>
+      <li>
+        <Dropdown
           menu={
             <List listSize="small">
               <ListItem>hello</ListItem>
