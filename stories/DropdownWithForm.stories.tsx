@@ -53,10 +53,6 @@ function DropdownMenu() {
     return binningStrategy === 3 || binningStrategy === 4;
   }, [binningStrategy]);
 
-  useEffect(() => {
-    window.dispatchEvent(new Event('resize'));
-  }, [strategyNeedsForm]);
-
   const textFieldLabel =
     binningStrategy === 3 ? 'Number of Bins' : 'Custom Bins';
 
@@ -64,10 +60,51 @@ function DropdownMenu() {
     <div
       css={css`
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         justify-content: flex-end;
+        position: relative;
       `}
     >
+      <section
+        css={css`
+          padding: 12px;
+          box-sizing: border-box;
+          position: absolute;
+          border-left: 1px solid #768ca3;
+          border-top: 1px solid #768ca3;
+          border-bottom: 1px solid #768ca3;
+          border-radius: 4px;
+          top: -1px;
+          bottom: 0px;
+          right: 251px;
+          transition: width 0.3s ease-in-out;
+          background-color: #282e35;
+          &[data-hidden='true'] {
+            width: 0;
+            overflow: hidden;
+            padding: 0;
+            border: none;
+        `}
+        data-hidden={!strategyNeedsForm}
+      >
+        <Form>
+          <TextField
+            label={textFieldLabel}
+            validationState={'invalid'}
+            errorMessage="Random error message to see what it looks like on invalid entry"
+          />
+        </Form>
+        <div
+          css={css`
+            border-top: 1px solid #768ca3;
+            padding-top: 8px;
+            display: flex;
+            flex-direction: row-reverse;
+          `}
+        >
+          <Button variant="primary">Apply</Button>
+        </div>
+      </section>
       <ListBox
         style={{ width: 250, flex: 'none' }}
         aria-label="Binning strategy"
@@ -80,39 +117,6 @@ function DropdownMenu() {
       >
         {(item) => <Item key={item.id}>{item.name}</Item>}
       </ListBox>
-      <section
-        css={css`
-          padding: 12px;
-          box-sizing: border-box;
-          transition: width 0.3s ease-in-out;
-          border-right: 1px solid #768ca3;
-          &[data-hidden='true'] {
-            width: 0;
-            overflow: hidden;
-            padding: 0;
-            border-right: none;
-        `}
-        data-hidden={!strategyNeedsForm}
-      >
-        <Form>
-          <TextField label={textFieldLabel} />
-        </Form>
-        <div
-          css={css`
-            border-top: 1px solid #768ca3;
-          `}
-        >
-          <Button
-            css={css`
-              margin-left: auto;
-              margin-top: 12px;
-            `}
-            variant="primary"
-          >
-            Apply
-          </Button>
-        </div>
-      </section>
     </div>
   );
 }
@@ -125,7 +129,7 @@ export const DropdownWithForm = () => (
     >
       <Dropdown
         menu={<DropdownMenu />}
-        triggerProps={{ placement: 'bottom right', isOpen: true }}
+        triggerProps={{ placement: 'bottom left', isOpen: true }}
         buttonProps={{ addonBefore: 'Bin Option', style: { maxWidth: 250 } }}
       >
         Select Binning
