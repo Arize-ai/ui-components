@@ -33,7 +33,8 @@ const meta: Meta = {
     controls: { expanded: true },
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/Zz1WXrITnlcYnIs55prawf/H2---Monitors?node-id=867%3A7920&t=5fgjUv2krdFhxCMZ-1',
+      url:
+        'https://www.figma.com/file/Zz1WXrITnlcYnIs55prawf/H2---Monitors?node-id=867%3A7920&t=5fgjUv2krdFhxCMZ-1',
     },
   },
 };
@@ -67,7 +68,6 @@ function DropdownMenu() {
     >
       <section
         css={css`
-          padding: 12px;
           box-sizing: border-box;
           position: absolute;
           border-left: 1px solid #768ca3;
@@ -79,11 +79,17 @@ function DropdownMenu() {
           right: 251px;
           transition: width 0.3s ease-in-out;
           background-color: #282e35;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .ac-form {
+            padding: 8px;
+          }
+          transition: all 0.2s ease-in-out;
           &[data-hidden='true'] {
-            width: 0;
-            overflow: hidden;
-            padding: 0;
-            border: none;
+            opacity: 0;
+            right: 220px;
+          }
         `}
         data-hidden={!strategyNeedsForm}
       >
@@ -91,18 +97,21 @@ function DropdownMenu() {
           <TextField
             label={textFieldLabel}
             validationState={'invalid'}
-            errorMessage="Random error message to see what it looks like on invalid entry"
+            errorMessage="Random error message to see what it"
           />
         </Form>
         <div
           css={css`
             border-top: 1px solid #768ca3;
-            padding-top: 8px;
+            padding: 8px;
             display: flex;
             flex-direction: row-reverse;
+            flex: none;
           `}
         >
-          <Button variant="primary">Apply</Button>
+          <Button variant="primary" size="compact">
+            Apply
+          </Button>
         </div>
       </section>
       <ListBox
@@ -110,12 +119,12 @@ function DropdownMenu() {
         aria-label="Binning strategy"
         items={options}
         selectionMode="single"
-        onSelectionChange={(selection) => {
+        onSelectionChange={selection => {
           const id = [...selection][0];
           setBinningStrategy(parseInt(id as string, 10));
         }}
       >
-        {(item) => <Item key={item.id}>{item.name}</Item>}
+        {item => <Item key={item.id}>{item.name}</Item>}
       </ListBox>
     </div>
   );
@@ -129,7 +138,7 @@ export const DropdownWithForm = () => (
     >
       <Dropdown
         menu={<DropdownMenu />}
-        triggerProps={{ placement: 'bottom left', isOpen: true }}
+        triggerProps={{ placement: 'bottom right', isOpen: true }}
         buttonProps={{ addonBefore: 'Bin Option', style: { maxWidth: 250 } }}
       >
         Select Binning
