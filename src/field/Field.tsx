@@ -1,4 +1,4 @@
-import { css, keyframes } from '@emotion/core';
+import { css, keyframes } from '@emotion/react';
 import { classNames } from '../utils';
 import { HelpText, HelpTextComponentProps } from './HelpText';
 import { FieldLabel, FieldLabelProps } from './FieldLabel';

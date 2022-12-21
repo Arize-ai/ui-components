@@ -1,5 +1,5 @@
 import React, { ElementType, ReactNode, forwardRef } from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { DOMRef } from '../types';
 import { useDOMRef } from '../utils/useDOMRef';
 import theme from '../theme';

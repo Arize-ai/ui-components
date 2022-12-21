@@ -9,7 +9,7 @@ import {
 import { classNames, useDOMRef } from '../utils';
 import { filterDOMProps } from '@react-aria/utils';
 import React, { useContext, ReactElement, FormEventHandler } from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { Provider } from '../provider';
 
 let FormContext = React.createContext<LabelableProps>({});

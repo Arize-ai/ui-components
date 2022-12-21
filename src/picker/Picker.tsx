@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { Popover } from '../popover';
 import { classNames, useDOMRef, useUnwrapDOMRef } from '../utils';
 import { useOverlayPosition } from '@react-aria/overlays';

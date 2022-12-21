@@ -1,5 +1,5 @@
 import React, { Component, CSSProperties } from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { Overlay } from '../overlays';
 import { Notice } from './Notice';
 import theme from '../theme';

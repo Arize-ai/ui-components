@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { NoticeConfig } from './types';
 import { Text } from '../content';
 import { useSeverityStyle } from '../alert/useSeverityStyle';

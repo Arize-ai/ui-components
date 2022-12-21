@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import React, { ReactNode, HTMLAttributes, ElementType } from 'react';
 import { classNames } from '../utils';
 import theme from '../theme';

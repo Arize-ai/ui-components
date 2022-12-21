@@ -1,6 +1,6 @@
 import React, { ReactNode, HTMLAttributes } from 'react';
 import { classNames } from '../utils';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 interface IconProps extends HTMLAttributes<HTMLElement> {
   svg: ReactNode;

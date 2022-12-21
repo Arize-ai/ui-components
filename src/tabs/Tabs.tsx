@@ -8,7 +8,7 @@ import React, {
   HtmlHTMLAttributes,
 } from 'react';
 import { Text } from '../content';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import theme from '../theme';
 
 type Tab = TabPaneProps & {

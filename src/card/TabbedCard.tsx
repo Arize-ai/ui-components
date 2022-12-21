@@ -1,6 +1,6 @@
 import React from 'react';
 import { CardBaseProps } from './Card';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { Text } from '../content';
 import { cardCSS, headerCSS } from './styles';
 import { classNames } from '../utils';

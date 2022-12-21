@@ -1,6 +1,6 @@
 import { classNames } from '../utils';
 import React from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 const underlayCSS = css`
   background: rgba(0, 0, 0, 0.3);

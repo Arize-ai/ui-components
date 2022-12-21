@@ -1,5 +1,5 @@
 import React, { ReactNode, SyntheticEvent } from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import theme from '../theme';
 import { classNames } from '../utils';
 import { Text } from '../content';

@@ -1,5 +1,5 @@
 import theme from '../theme';
-import { css, SerializedStyles } from '@emotion/core';
+import { css, SerializedStyles } from '@emotion/react';
 import { RadioVariant } from './types';
 import { textSizeCSS } from '../content/styles';
 import { transparentize } from 'polished';

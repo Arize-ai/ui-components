@@ -9,7 +9,7 @@ import React, { useContext } from 'react';
 import { useDialog } from '@react-aria/dialog';
 import { DialogProps } from '../types/dialog';
 import { Heading } from '../content';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import theme from '../theme';
 
 const dialogCSS = css`

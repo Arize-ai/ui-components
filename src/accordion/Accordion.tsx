@@ -1,5 +1,5 @@
 import React, { useState, ReactNode } from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { Heading } from '../content';
 import { Icon, ArrowIosDownwardOutline } from '../icon';
 import { classNames } from '../utils/classNames';

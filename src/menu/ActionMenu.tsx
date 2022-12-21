@@ -6,7 +6,7 @@ import { MenuTrigger } from './MenuTrigger';
 import { ArrowIosDownwardOutline, Icon, MoreHorizontalOutline } from '../icon';
 import React, { forwardRef } from 'react';
 import { ActionMenuProps } from '../types';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import theme from '../theme';
 
 function ActionMenu<T extends object>(

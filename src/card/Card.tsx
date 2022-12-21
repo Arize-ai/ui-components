@@ -1,5 +1,5 @@
 import React, { CSSProperties, ReactNode, useState } from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { Text } from '../content';
 import { CollapsibleCardTitle } from './CollapsibleCardTitle';
 import theme from '../theme';

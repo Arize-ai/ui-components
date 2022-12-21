@@ -1,4 +1,4 @@
-import { css, keyframes } from '@emotion/core';
+import { css, keyframes } from '@emotion/react';
 import {
   TRANSITION_ENTER_DURATION_MS,
   TRANSITION_EXIT_DURATION_MS,
