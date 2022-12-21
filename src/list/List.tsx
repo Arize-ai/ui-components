@@ -7,7 +7,7 @@ import React, {
   HTMLProps,
   ReactElement,
 } from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import theme from '../theme';
 
 export type ListSize = 'small' | 'default';

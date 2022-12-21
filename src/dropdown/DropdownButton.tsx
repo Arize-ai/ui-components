@@ -1,5 +1,5 @@
 import React, { ReactNode, CSSProperties } from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { classNames } from '../utils/classNames';
 import { mergeProps } from '@react-aria/utils';
 import { useButton } from '@react-aria/button';

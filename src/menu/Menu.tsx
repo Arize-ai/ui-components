@@ -15,7 +15,7 @@ import React, { Key, ReactElement, useContext } from 'react';
 import { useMenu } from '@react-aria/menu';
 import { useTreeState } from '@react-stately/tree';
 import theme from '../theme';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 export interface MenuProps<T> extends CollectionBase<T>, MultipleSelection {
   /** Where the focus should be set. */

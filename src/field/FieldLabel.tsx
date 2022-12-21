@@ -1,6 +1,6 @@
 import { classNames, useDOMRef } from '../utils';
 import { DOMRef } from '@react-types/shared';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { filterDOMProps } from '@react-aria/utils';
 import React, { ReactNode, ElementType, HTMLAttributes } from 'react';
 import { DOMProps, LabelableProps, ExtendableLabelProps } from '../types';

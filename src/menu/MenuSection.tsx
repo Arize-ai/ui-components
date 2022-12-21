@@ -4,7 +4,7 @@ import React, { Fragment, Key } from 'react';
 import { TreeState } from '@react-stately/tree';
 import { useMenuSection } from '@react-aria/menu';
 import { useSeparator } from '@react-aria/separator';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import theme from '../theme';
 
 interface MenuSectionProps<T> {

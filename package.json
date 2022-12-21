@@ -24,7 +24,6 @@
     "chromatic": "npx chromatic --project-token 1yugawkzsgd"
   },
   "peerDependencies": {
-    "@emotion/core": ">=10",
     "react": ">=18",
     "react-dom": ">=18"
   },
@@ -70,7 +69,6 @@
     "@babel/core": "^7.12.3",
     "@emotion/babel-plugin": "^11.2.0",
     "@emotion/babel-preset-css-prop": "10.0.27",
-    "@emotion/core": "10.0.35",
     "@size-limit/preset-small-lib": "^8.1.0",
     "@storybook/addon-a11y": "^6.1.21",
     "@storybook/addon-essentials": "^6.0.26",
@@ -103,6 +101,7 @@
     "**/@typescript-eslint/parser": "^4.1.1"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
     "@react-aria/button": "^3.6.2",
     "@react-aria/dialog": "^3.4.0",
     "@react-aria/focus": "^3.9.0",

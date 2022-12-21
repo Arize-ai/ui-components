@@ -2,7 +2,7 @@
 import { classNames, useDOMRef } from '../utils';
 import { DOMRef, HelpTextProps, Validation } from '../types';
 import React, { HTMLAttributes } from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import theme from '../theme';
 
 export interface HelpTextComponentProps extends HelpTextProps, Validation {

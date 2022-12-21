@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { useModal, useOverlay, usePreventScroll } from '@react-aria/overlays';
 import { mergeProps, useViewportSize } from '@react-aria/utils';
 import React, { forwardRef, HTMLAttributes, ReactNode, RefObject } from 'react';
