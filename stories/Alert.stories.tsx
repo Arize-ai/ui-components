@@ -1,5 +1,5 @@
 import React from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
 import { Alert, AlertProps } from '../src/alert';
 import { Button } from '../src/button';
