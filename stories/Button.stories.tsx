@@ -1,5 +1,5 @@
 import React from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
 import { ButtonToolbar } from '../src/button';
 import { Button, ButtonProps } from '../src/button';

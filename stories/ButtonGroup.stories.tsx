@@ -1,5 +1,5 @@
 import React from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { Meta } from '@storybook/react';
 import { ButtonGroup, Button } from '../src';
 import { Icon, PlusCircleOutline, MinusCircleOutline } from '../src/icon';

@@ -16,7 +16,7 @@ import {
   ArrowIosUpwardOutline,
   Icon,
 } from '../src/icon';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 const meta: Meta = {
   title: 'SlideOver',

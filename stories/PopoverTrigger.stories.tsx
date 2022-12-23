@@ -10,7 +10,7 @@ import {
   Placement,
   Button,
 } from '../src';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { Icon, PlusCircleOutline } from '../src/icon';
 
 const placements: Placement[] = [

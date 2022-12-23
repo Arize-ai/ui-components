@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { TooltipTrigger, ActionButton, Tooltip } from '../../src';
 import { Icon } from '../../src/icon';
 

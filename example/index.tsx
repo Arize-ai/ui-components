@@ -2,7 +2,7 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { jsx } from '@emotion/core';
+import { jsx } from '@emotion/react';
 import {
   Provider,
   ActionButton,

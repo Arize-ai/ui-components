@@ -1,5 +1,5 @@
 import React from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { Meta } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
 import { Text, TextProps } from '../src';

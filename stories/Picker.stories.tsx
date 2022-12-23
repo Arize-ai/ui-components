@@ -2,7 +2,7 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { Item, Picker, PickerProps, Text, Button } from '../src';
 import { Provider } from '../src';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import InfoTip from './components/InfoTip';
 
 const itemWithDescriptionCSS = css`

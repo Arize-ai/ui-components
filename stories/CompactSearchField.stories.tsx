@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import {
   Provider,
   CompactSearchField,
