@@ -86,7 +86,16 @@
     "storybook-addon-designs": "^6.3.1",
     "tsdx": "^0.14.1",
     "tslib": "^2.0.3",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.3",
+    "@storybook/addon-a11y": "^6.5.15",
+    "@storybook/addon-essentials": "^6.5.15",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-links": "^6.5.15",
+    "@storybook/addon-measure": "^6.5.10",
+    "@storybook/addons": "^6.5.15",
+    "@storybook/react": "^6.5.15",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0"
   },
   "resolutions": {
     "react": "^18",
@@ -121,15 +130,6 @@
     "@react-stately/utils": "^3.5.1",
     "@react-stately/virtualizer": "^3.3.1",
     "@react-types/shared": "^3.15.0",
-    "@storybook/addon-a11y": "^6.5.15",
-    "@storybook/addon-essentials": "^6.5.15",
-    "@storybook/addon-info": "^5.3.21",
-    "@storybook/addon-links": "^6.5.15",
-    "@storybook/addon-measure": "^6.5.10",
-    "@storybook/addons": "^6.5.15",
-    "@storybook/react": "^6.5.15",
-    "@typescript-eslint/eslint-plugin": "^5.39.0",
-    "@typescript-eslint/parser": "^5.39.0",
     "clsx": "^1.1.1",
     "react-transition-group": "^4.4.5"
   },
