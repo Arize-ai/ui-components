@@ -19,6 +19,7 @@ export interface ButtonProps extends BaseButtonProps {
   variant: 'primary' | 'default' | 'danger' | 'quiet';
   disabled?: boolean;
   className?: string;
+  accessKey?: string;
   onClick?: (e: SyntheticEvent<HTMLButtonElement>) => void;
   loading?: boolean;
   icon?: ReactNode;

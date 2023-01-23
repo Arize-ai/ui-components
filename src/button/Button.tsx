@@ -20,6 +20,7 @@ const Button = (props: ButtonProps, ref: FocusableRef<HTMLButtonElement>) => {
     onClick,
     icon,
     className,
+    accessKey,
     size = 'normal',
     ...otherProps
   } = props;
@@ -43,6 +44,7 @@ const Button = (props: ButtonProps, ref: FocusableRef<HTMLButtonElement>) => {
       data-childless={isChildless}
       disabled={isDisabled}
       onClick={isDisabled ? undefined : onClick}
+      accesskey={accessKey}
     >
       {loading ? <Spinner /> : null}
       {!loading && icon ? icon : null}
