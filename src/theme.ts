@@ -1,6 +1,7 @@
 import { lighten, darken } from 'polished';
 
 const grayColors = {
+  gray900: '#181B1F',
   gray800: '#1d2126',
   gray700: '#23282e',
   gray600: '#282e35',
