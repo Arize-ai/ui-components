@@ -105,6 +105,7 @@
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
+    "@react-aria/breadcrumbs": "^3.4.1",
     "@react-aria/button": "^3.6.2",
     "@react-aria/dialog": "^3.4.0",
     "@react-aria/focus": "^3.9.0",
