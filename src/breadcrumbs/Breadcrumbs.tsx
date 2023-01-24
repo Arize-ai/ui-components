@@ -25,7 +25,16 @@ const ulCSS = css`
   padding: 0;
   list-style-type: none;
   display: flex;
-  color: ${theme.textColors.white90};
+  color: ${theme.textColors.white70};
+  li:last-of-type {
+    font-weight: ${theme.typography.weights.heavy};
+    color: ${theme.textColors.white90};
+  }
+  li:not(:last-of-type):hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: ${theme.textColors.white90};
+  }
 `;
 
 const liCSS = css`
@@ -36,6 +45,13 @@ const liCSS = css`
   align-items: center;
   display: inline-flex;
   position: relative;
+
+  .ac-breadcrumbs-item-link {
+    padding: 0 ${theme.spacing.padding8}px;
+  }
+  .ac-icon-wrap {
+    color: ${theme.textColors.white70};
+  }
 `;
 
 function Breadcrumbs<T>(props: SpectrumBreadcrumbsProps<T>, ref: DOMRef) {
@@ -48,7 +64,6 @@ function Breadcrumbs<T>(props: SpectrumBreadcrumbsProps<T>, ref: DOMRef) {
     isDisabled,
     onAction,
     autoFocusCurrent,
-    ..._otherProps
   } = props;
 
   // Not using React.Children.toArray because it mutates the key prop.
