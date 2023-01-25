@@ -6,7 +6,7 @@ import { Breadcrumbs, Item, Provider } from '../src';
 import { withDesign } from 'storybook-addon-designs';
 
 const meta: Meta = {
-  title: 'Breadcrumbs',
+  title: 'Breadcrumbs (Beta)',
   component: Breadcrumbs,
   decorators: [withDesign],
   argTypes: {

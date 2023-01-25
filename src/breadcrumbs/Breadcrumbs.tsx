@@ -47,7 +47,8 @@ const liCSS = css`
   position: relative;
 
   .ac-breadcrumbs-item-link {
-    padding: 0 ${theme.spacing.padding8}px;
+    padding: 0 ${theme.spacing.padding4}px;
+    outline: none;
   }
   .ac-icon-wrap {
     color: ${theme.textColors.white70};
