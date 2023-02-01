@@ -17,9 +17,9 @@ function ListBox<T extends object>(
   props: ListBoxProps<T>,
   ref: DOMRef<HTMLDivElement>
 ) {
-  let state = useListState(props);
-  let layout = useListBoxLayout(state);
-  let domRef = useDOMRef(ref);
+  const state = useListState(props);
+  const layout = useListBoxLayout(state);
+  const domRef = useDOMRef(ref);
 
   return <ListBoxBase {...props} ref={domRef} state={state} layout={layout} />;
 }

@@ -11,6 +11,7 @@ import { Text } from '../content';
 import { css } from '@emotion/react';
 import theme from '../theme';
 import { Orientation } from '../types/orientation';
+import { transparentize } from 'polished';
 
 type Tab = TabPaneProps & {
   key: string;
@@ -29,10 +30,8 @@ const tabsContainerCSS = css`
 const tabListCSS = css`
   display: flex;
   --tab-border-color: ${theme.components.tabs.borderColor};
+  --tab-hover-color: ${transparentize(0.2, theme.colors.arizeBlue)};
   --tab-selected-border-color: ${theme.colors.arizeBlue};
-  overflow button:hover {
-    border-color: rgba(255, 255, 255, 0.2);
-  }
 
   button {
     box-sizing: border-box; /* place the border inside */
@@ -49,8 +48,12 @@ const tabListCSS = css`
 
   &[data-orientation='horizontal'] {
     flex-direction: row;
+    border-bottom: 1px solid var(--tab-border-color);
     button {
-      border-bottom: 2px solid var(--tab-border-color);
+      border-bottom: 2px solid transparent;
+      &:hover {
+        border-color: var(--tab-hover-color);
+      }
       &[data-selected='true'] {
         border-color: var(--tab-selected-border-color);
       }
@@ -58,8 +61,12 @@ const tabListCSS = css`
   }
   &[data-orientation='vertical'] {
     flex-direction: column;
+    border-right: 1px solid var(--tab-border-color);
     button {
-      border-right: 2px solid var(--tab-border-color);
+      border-right: 2px solid transparent;
+      &:hover {
+        border-color: var(--tab-hover-color);
+      }
       &[data-selected='true'] {
         border-color: var(--tab-selected-border-color);
       }
