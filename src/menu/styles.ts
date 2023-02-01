@@ -30,7 +30,7 @@ export const menuItemCSS = css`
   }
   &.is-hovered,
   &.focus-ring {
-    background-color: ${theme.colors.hoverBgColor};
+    background-color: ${theme.colors.gray500};
   }
   &.is-selectable {
     cursor: pointer;

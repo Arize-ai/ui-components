@@ -53,7 +53,7 @@ export const theme = {
     statusWarning: '#E69958',
     statusDanger: '#F85149',
     dividerColor: '#32383f',
-    hoverBgColor: 'rgba(255,255,255, 0.1)',
+    hoverBgColor: grayColors.gray400,
   },
   textColors,
   labelColors,

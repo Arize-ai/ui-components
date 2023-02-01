@@ -3,6 +3,7 @@ import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
 import { Tabs, TabsProps } from '../src/tabs/Tabs';
+import { Heading } from '../src/content';
 
 const { TabPane } = Tabs;
 
@@ -29,23 +30,17 @@ const meta: Meta = {
 
 export default meta;
 
-const tabContents = css`
+const tabContentCSS = css`
   padding: 20px;
   color: white;
 `;
 const Template: Story<TabsProps> = args => (
   <div style={{ width: 500 }}>
     <Tabs {...args}>
-      <TabPane
-        name="Tab 1"
-        css={tabContents}
-        tabListItemProps={{ 'data-testid': 'first tab' }}
-      >
+      <TabPane name="Tab 1" tabListItemProps={{ 'data-testid': 'first tab' }}>
         Tab 1 contents
       </TabPane>
-      <TabPane name="Tab 2" css={tabContents}>
-        Tab 2 contents
-      </TabPane>
+      <TabPane name="Tab 2">Tab 2 contents</TabPane>
     </Tabs>
   </div>
 );
@@ -64,20 +59,54 @@ const LazyLoadingTabContents = ({ isSelected }: { isSelected: boolean }) => {
       }, 1000);
     }
   }, [isSelected]);
-  return <span>{content}</span>;
+  return <span css={tabContentCSS}>{content}</span>;
 };
 
 export const LazyLoading: Story<TabsProps> = args => (
-  <div style={{ width: 500 }}>
+  <div style={{ width: 500 }} css={tabContentCSS}>
     <Tabs {...args}>
-      <TabPane name="Tab 1" css={tabContents}>
+      <TabPane name="Tab 1">
         {({ isSelected }) => <LazyLoadingTabContents isSelected={isSelected} />}
       </TabPane>
-      <TabPane name="Tab 2" css={tabContents}>
+      <TabPane name="Tab 2">
         {({ isSelected }) => <LazyLoadingTabContents isSelected={isSelected} />}
       </TabPane>
     </Tabs>
   </div>
 );
 
+export const Gallery: Story<TabsProps> = args => (
+  <div style={{ width: 500 }}>
+    <section>
+      <Heading>Horizontal</Heading>
+      <Tabs orientation="horizontal">
+        <TabPane name="Tab 1">
+          {({ isSelected }) => (
+            <LazyLoadingTabContents isSelected={isSelected} />
+          )}
+        </TabPane>
+        <TabPane name="Tab 2">
+          {({ isSelected }) => (
+            <LazyLoadingTabContents isSelected={isSelected} />
+          )}
+        </TabPane>
+      </Tabs>
+    </section>
+    <section>
+      <Heading>Vertical</Heading>
+      <Tabs orientation="vertical">
+        <TabPane name="Tab 1">
+          {({ isSelected }) => (
+            <LazyLoadingTabContents isSelected={isSelected} />
+          )}
+        </TabPane>
+        <TabPane name="Tab 2">
+          {({ isSelected }) => (
+            <LazyLoadingTabContents isSelected={isSelected} />
+          )}
+        </TabPane>
+      </Tabs>
+    </section>
+  </div>
+);
 Default.args = {};

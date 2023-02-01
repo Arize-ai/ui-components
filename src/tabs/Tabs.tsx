@@ -10,15 +10,28 @@ import React, {
 import { Text } from '../content';
 import { css } from '@emotion/react';
 import theme from '../theme';
+import { Orientation } from '../types/orientation';
+import { transparentize } from 'polished';
 
 type Tab = TabPaneProps & {
   key: string;
   node: ReactNode;
 };
 
+const tabsContainerCSS = css`
+  display: flex;
+  &[data-orientation='horizontal'] {
+    flex-direction: column;
+  }
+  &[data-orientation='vertical'] {
+    flex-direction: row;
+  }
+`;
 const tabListCSS = css`
-  overflow: hidden;
-  border-bottom: 1px solid ${theme.components.tabs.borderColor};
+  display: flex;
+  --tab-border-color: ${theme.components.tabs.borderColor};
+  --tab-hover-color: ${transparentize(0.2, theme.colors.arizeBlue)};
+  --tab-selected-border-color: ${theme.colors.arizeBlue};
 
   button {
     box-sizing: border-box; /* place the border inside */
@@ -29,16 +42,35 @@ const tabListCSS = css`
     padding: 0 ${theme.spacing.padding16}px;
     height: 30px;
     transition: 0.3s;
-    border-bottom: 4px solid transparent;
     font-weight: bold;
+    border-color: var(--tab-border-color);
   }
 
-  button:hover {
-    border-color: rgba(255, 255, 255, 0.2);
+  &[data-orientation='horizontal'] {
+    flex-direction: row;
+    border-bottom: 1px solid var(--tab-border-color);
+    button {
+      border-bottom: 2px solid transparent;
+      &:hover {
+        border-color: var(--tab-hover-color);
+      }
+      &[data-selected='true'] {
+        border-color: var(--tab-selected-border-color);
+      }
+    }
   }
-
-  button[data-selected='true'] {
-    border-bottom: 4px solid ${theme.colors.arizeBlue};
+  &[data-orientation='vertical'] {
+    flex-direction: column;
+    border-right: 1px solid var(--tab-border-color);
+    button {
+      border-right: 2px solid transparent;
+      &:hover {
+        border-color: var(--tab-hover-color);
+      }
+      &[data-selected='true'] {
+        border-color: var(--tab-selected-border-color);
+      }
+    }
   }
 `;
 
@@ -61,17 +93,31 @@ export type TabsProps = {
   children: ReactNode[];
   className?: string;
   onChange?: (index: number) => void;
+  /**
+   * The orientation of the tabs. Defaults to horizontal
+   * @default horizontal
+   */
+  orientation?: Orientation;
 };
 
 /**
  * A re-usable, accessible tabs component
  */
-export function Tabs({ children, className, onChange }: TabsProps) {
+export function Tabs({
+  children,
+  className,
+  onChange,
+  orientation = 'horizontal',
+}: TabsProps) {
   const tabs = parseTabList(children);
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   return (
-    <div className={`ac-tabs ${className}`}>
-      <div role="tablist" data-orientation="horizontal" css={tabListCSS}>
+    <div
+      className={`ac-tabs ${className}`}
+      data-orientation={orientation}
+      css={tabsContainerCSS}
+    >
+      <div role="tablist" data-orientation={orientation} css={tabListCSS}>
         {tabs.map((tab, index) => {
           const isSelected = index === selectedIndex;
           return (
