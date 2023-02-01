@@ -6,8 +6,15 @@ import { css } from '@emotion/react';
 import theme from '../theme';
 
 export interface NavListProps<T>
-  extends Omit<ListBoxProps<T>, 'selectionMode' | 'defaultSelectedKeys'> {
-  defaultSelectedKey: Key;
+  extends Omit<
+    ListBoxProps<T>,
+    | 'selectionMode'
+    | 'defaultSelectedKeys'
+    | 'onSelectionChange'
+    | 'disallowEmptySelection'
+  > {
+  defaultSelectedKey?: Key;
+  onSelectionChange?: (key: Key) => void;
 }
 
 const navCSS = css`
@@ -38,16 +45,22 @@ const navCSS = css`
   }
 `;
 function NavList<T>(props: NavListProps<T>, ref: DOMRef<HTMLElement>) {
-  const { defaultSelectedKey } = props;
+  const { defaultSelectedKey, onSelectionChange, ...listBoxProps } = props;
   const domRef = useDOMRef<HTMLElement>(ref);
   return (
     <nav ref={domRef} css={navCSS} className="ac-nav-list">
       <ListBox
-        {...props}
+        {...listBoxProps}
         selectionMode="single"
         defaultSelectedKeys={
           defaultSelectedKey ? [defaultSelectedKey] : undefined
         }
+        onSelectionChange={keys => {
+          if (keys !== 'all' && onSelectionChange) {
+            onSelectionChange(keys.values().next().value);
+          }
+        }}
+        disallowEmptySelection
       ></ListBox>
     </nav>
   );

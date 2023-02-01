@@ -14,7 +14,7 @@ const meta: Meta = {
 export default meta;
 
 const Template: Story<NavListProps<string>> = args => {
-  const [selection, setSelection] = useState('all');
+  const [selection, setSelection] = useState('all_monitors');
   return (
     <main
       css={css`
@@ -29,7 +29,9 @@ const Template: Story<NavListProps<string>> = args => {
       <NavList
         aria-label="navigation"
         defaultSelectedKey={'all_monitors'}
-        onSelectionChange={s => setSelection(s.toString())}
+        onSelectionChange={s => {
+          setSelection(s.toString());
+        }}
       >
         <Item key="all_monitors">All Monitors</Item>
         <Item key="presets">Monitor Presets</Item>
