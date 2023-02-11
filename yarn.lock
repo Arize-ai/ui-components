@@ -2125,6 +2125,18 @@
     "@react-types/shared" "^3.16.0"
     "@swc/helpers" "^0.4.14"
 
+"@react-aria/progress@^3.3.4":
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/@react-aria/progress/-/progress-3.3.4.tgz#21138195532ae8807fb1dfc2f8162c6032d513dc"
+  integrity sha512-MVlWdH7L2e0u1SvkVk+C6/onS8opex9rIKUKHM08s++y80Xe3BIAh8jd5tgdlutDtcZ1kKgfb4bet9dvjymo4A==
+  dependencies:
+    "@react-aria/i18n" "^3.6.3"
+    "@react-aria/label" "^3.4.4"
+    "@react-aria/utils" "^3.14.2"
+    "@react-types/progress" "^3.2.5"
+    "@react-types/shared" "^3.16.0"
+    "@swc/helpers" "^0.4.14"
+
 "@react-aria/radio@^3.4.0":
   version "3.4.2"
   resolved "https://registry.yarnpkg.com/@react-aria/radio/-/radio-3.4.2.tgz#bcd2deb8326f934046545fee9b2568f9d3b0655b"
@@ -2475,6 +2487,13 @@
   version "3.6.5"
   resolved "https://registry.yarnpkg.com/@react-types/overlays/-/overlays-3.6.5.tgz#466b325d9be51f67beb98b7bec3fd9295c72efac"
   integrity sha512-IeWcF+YTucCYYHagNh8fZLH6R4YUONO1VHY57WJyIHwMy0qgEaKSQCwq72VO1fQJ0ySZgOgm31FniOyKkg6+eQ==
+  dependencies:
+    "@react-types/shared" "^3.16.0"
+
+"@react-types/progress@^3.2.5":
+  version "3.2.5"
+  resolved "https://registry.yarnpkg.com/@react-types/progress/-/progress-3.2.5.tgz#71780e48402cb25813c8edd07ee6075cdd972488"
+  integrity sha512-pFSqaj6rlSdPqGHVErJ8G3RkIyYigoJ3EVozvhR9bcKkLlhnzJiFgOZl+k5u/ZKJOA+YHivIHJwg+Kl1sG0J6A==
   dependencies:
     "@react-types/shared" "^3.16.0"
 

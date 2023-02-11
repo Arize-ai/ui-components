@@ -12,3 +12,4 @@ export * from './provider';
 export * from './menu';
 export * from './button';
 export * from './style';
+export * from './progress';

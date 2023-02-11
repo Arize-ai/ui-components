@@ -8,6 +8,8 @@ import {
   TooltipTriggerProps,
   Tooltip,
   Placement,
+  TriggerWrap,
+  Card,
 } from '../src';
 
 import css from '@emotion/css';
@@ -53,6 +55,39 @@ export const Gallery = () => (
           <li key={index} style={{ margin: '10px 0' }}>
             <TooltipTrigger placement={placement}>
               <ActionButton>{placement}</ActionButton>
+              <Tooltip>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </Tooltip>
+            </TooltipTrigger>
+          </li>
+        );
+      })}
+    </ul>
+  </Provider>
+);
+
+const focusableCSS = css`
+  &:focus {
+    outline: 1px solid blue;
+  }
+`;
+export const OnFocusableElement = () => (
+  <Provider>
+    <ul
+      style={{
+        listStyle: 'none',
+        marginLeft: '200px',
+        marginTop: '100px',
+        width: 200,
+      }}
+    >
+      {placements.map((placement, index) => {
+        return (
+          <li key={index} style={{ margin: '10px 0' }}>
+            <TooltipTrigger placement={placement}>
+              <TriggerWrap css={focusableCSS} tabIndex={index}>
+                <Card title={`Card ${index}`}>{index}</Card>
+              </TriggerWrap>
               <Tooltip>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </Tooltip>
