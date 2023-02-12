@@ -95,7 +95,7 @@
     "storybook-addon-designs": "^6.3.1",
     "tsdx": "^0.14.1",
     "tslib": "^2.0.3",
-    "typescript": "^4.0.3"
+    "typescript": "^4.9.5"
   },
   "resolutions": {
     "react": "^18",
@@ -113,6 +113,7 @@
     "@react-aria/interactions": "^3.12.0",
     "@react-aria/listbox": "^3.7.0",
     "@react-aria/overlays": "^3.11.0",
+    "@react-aria/progress": "^3.3.4",
     "@react-aria/radio": "^3.4.0",
     "@react-aria/select": "^3.8.2",
     "@react-aria/separator": "^3.2.4",
