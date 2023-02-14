@@ -59,7 +59,6 @@ export const Gallery = () => {
       >
         {sizes.map(size => {
           return (
-            // @ts-ignore
             <Text key={size} textSize={size} weight="heavy">
               {`I will not waste chalk`}
             </Text>
