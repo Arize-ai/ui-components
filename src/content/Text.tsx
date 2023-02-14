@@ -50,7 +50,7 @@ const textCSS = (color: Color) => css`
 /**
  * Text is used to create various sizes of typographic hierarchies.
  */
-function Text(props: TextProps, ref: DOMRef<HTMLHeadingElement>) {
+function Text(props: TextProps, ref: DOMRef<HTMLSpanElement>) {
   const { isDisabled = false } = props;
   const {
     children,
