@@ -41,6 +41,13 @@ export const buttonCSS = css`
       background-color: ${theme.components.button.primaryHoverBackgroundColor};
     }
   }
+  &[data-variant='success'] {
+    background-color: ${theme.components.button.successColor};
+    border-color: ${theme.components.button.successBorderColor};
+    &:hover:not([disabled]) {
+      background-color: ${theme.components.button.successHoverBackgroundColor};
+    }
+  }
   &[data-variant='default'] {
     background-color: ${theme.colors.gray500};
     border-color: ${theme.components.button.defaultBorderColor};

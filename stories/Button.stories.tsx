@@ -3,10 +3,11 @@ import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
 import { ButtonToolbar } from '../src/button';
 import { Button, ButtonProps } from '../src/button';
-import { Icon, PlusCircleOutline } from '../src/icon';
+import { CheckmarkCircleOutline, Icon, PlusCircleOutline } from '../src/icon';
 import { withDesign } from 'storybook-addon-designs';
 
 const plusIcon = <Icon svg={<PlusCircleOutline />} />;
+const checkmarkIcon = <Icon svg={<CheckmarkCircleOutline />} />;
 
 const meta: Meta = {
   title: 'Button',
@@ -23,8 +24,7 @@ const meta: Meta = {
     controls: { expanded: true },
     design: {
       type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=0%3A1',
+      url: 'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=0%3A1',
     },
   },
 };
@@ -130,10 +130,17 @@ export const Gallery = () => {
           />
         </ButtonToolbar>
       </li>
+      <li>
+        <ButtonToolbar>
+          <Button variant="success" icon={checkmarkIcon}>
+            Enabled
+          </Button>
+        </ButtonToolbar>
+      </li>
     </ul>
   );
 };
-const Template: Story<ButtonProps> = args => <Button {...args} />;
+const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
@@ -152,3 +159,7 @@ Loading.args = {
   loading: true,
   children: 'Create Dashboard',
 };
+
+export const Success = Template.bind({});
+
+Success.args = { variant: 'success', children: 'Enabled', icon: checkmarkIcon };
