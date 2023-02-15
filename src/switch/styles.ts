@@ -34,7 +34,7 @@ export const switchCSS = css`
   }
 
   &.is-disabled {
-    --ac-switch-label-color-default: var(--spectrum-disabled-content-color);
+    --ac-switch-label-color-default: var(--ac-disabled-content-color);
   }
 
   .ac-switch-element {
