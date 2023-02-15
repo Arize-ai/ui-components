@@ -24,7 +24,8 @@ const meta: Meta = {
     controls: { expanded: true },
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=0%3A1',
+      url:
+        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=0%3A1',
     },
   },
 };
@@ -56,6 +57,10 @@ export const Gallery = () => {
             Delete Dashboard
           </Button>
           <Button variant="danger" icon={plusIcon} title="add" />
+          <Button variant="success" icon={checkmarkIcon}>
+            Delete Dashboard
+          </Button>
+          <Button variant="success" icon={checkmarkIcon} title="add" />
         </ButtonToolbar>
       </li>
       <li>
@@ -71,6 +76,7 @@ export const Gallery = () => {
           </Button>
           <Button variant="primary" icon={plusIcon} disabled title="add" />
           <Button variant="danger" icon={plusIcon} disabled title="delete" />
+          <Button variant="success" icon={plusIcon} disabled title="add" />
         </ButtonToolbar>
       </li>
       <li>
@@ -84,6 +90,7 @@ export const Gallery = () => {
           </Button>
           <Button variant="default" icon={plusIcon} title="add" />
           <Button variant="danger" icon={plusIcon} title="delete" />
+          <Button variant="success" icon={checkmarkIcon} title="success" />
         </ButtonToolbar>
       </li>
       <li>
@@ -109,6 +116,12 @@ export const Gallery = () => {
             icon={plusIcon}
             title="delete"
           />
+          <Button
+            size="compact"
+            variant="success"
+            icon={plusIcon}
+            title="success"
+          />
         </ButtonToolbar>
       </li>
       <li>
@@ -128,19 +141,18 @@ export const Gallery = () => {
             icon={plusIcon}
             title="add"
           />
-        </ButtonToolbar>
-      </li>
-      <li>
-        <ButtonToolbar>
-          <Button variant="success" icon={checkmarkIcon}>
-            Enabled
-          </Button>
+          <Button
+            size="compact"
+            variant="success"
+            icon={checkmarkIcon}
+            title="success"
+          />
         </ButtonToolbar>
       </li>
     </ul>
   );
 };
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+const Template: Story<ButtonProps> = args => <Button {...args} />;
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
