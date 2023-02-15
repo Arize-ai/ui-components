@@ -3,10 +3,11 @@ import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
 import { ButtonToolbar } from '../src/button';
 import { Button, ButtonProps } from '../src/button';
-import { Icon, PlusCircleOutline } from '../src/icon';
+import { CheckmarkCircleOutline, Icon, PlusCircleOutline } from '../src/icon';
 import { withDesign } from 'storybook-addon-designs';
 
 const plusIcon = <Icon svg={<PlusCircleOutline />} />;
+const checkmarkIcon = <Icon svg={<CheckmarkCircleOutline />} />;
 
 const meta: Meta = {
   title: 'Button',
@@ -56,6 +57,10 @@ export const Gallery = () => {
             Delete Dashboard
           </Button>
           <Button variant="danger" icon={plusIcon} title="add" />
+          <Button variant="success" icon={checkmarkIcon}>
+            Delete Dashboard
+          </Button>
+          <Button variant="success" icon={checkmarkIcon} title="add" />
         </ButtonToolbar>
       </li>
       <li>
@@ -71,6 +76,7 @@ export const Gallery = () => {
           </Button>
           <Button variant="primary" icon={plusIcon} disabled title="add" />
           <Button variant="danger" icon={plusIcon} disabled title="delete" />
+          <Button variant="success" icon={plusIcon} disabled title="add" />
         </ButtonToolbar>
       </li>
       <li>
@@ -84,6 +90,7 @@ export const Gallery = () => {
           </Button>
           <Button variant="default" icon={plusIcon} title="add" />
           <Button variant="danger" icon={plusIcon} title="delete" />
+          <Button variant="success" icon={checkmarkIcon} title="success" />
         </ButtonToolbar>
       </li>
       <li>
@@ -109,6 +116,12 @@ export const Gallery = () => {
             icon={plusIcon}
             title="delete"
           />
+          <Button
+            size="compact"
+            variant="success"
+            icon={plusIcon}
+            title="success"
+          />
         </ButtonToolbar>
       </li>
       <li>
@@ -127,6 +140,12 @@ export const Gallery = () => {
             variant="default"
             icon={plusIcon}
             title="add"
+          />
+          <Button
+            size="compact"
+            variant="success"
+            icon={checkmarkIcon}
+            title="success"
           />
         </ButtonToolbar>
       </li>
@@ -152,3 +171,7 @@ Loading.args = {
   loading: true,
   children: 'Create Dashboard',
 };
+
+export const Success = Template.bind({});
+
+Success.args = { variant: 'success', children: 'Enabled', icon: checkmarkIcon };
