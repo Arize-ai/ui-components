@@ -60,14 +60,24 @@ const Template: Story<FormProps> = args => {
         name={'email'}
         control={control}
         render={({ field: { onChange, value } }) => (
-          <TextField onChange={onChange} value={value} label={'Email'} />
+          <TextField
+            onChange={onChange}
+            value={value}
+            label={'Email'}
+            description="The user's email address"
+          />
         )}
       />
       <Controller
         name={'Occupation'}
         control={control}
         render={({ field: { onChange, value } }) => (
-          <TextField onChange={onChange} value={value} label={'Occupation'} />
+          <TextField
+            onChange={onChange}
+            value={value}
+            label={'Occupation'}
+            description="The job of the user"
+          />
         )}
       />
       <Controller
@@ -79,6 +89,7 @@ const Template: Story<FormProps> = args => {
             onChange={onChange}
             value={value}
             label={'Charge Amount'}
+            description="The amount to charge the user"
           />
         )}
       />
