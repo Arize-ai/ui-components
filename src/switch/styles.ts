@@ -15,12 +15,13 @@ export const switchCSS = css`
   --ac-switch-handle-background-color-selected: ${theme.colors.arizeLightBlue};
 
   --ac-switch-min-height: 30px;
-  --ac-switch-control-width: 35px;
-  --ac-switch-control-height: 10px;
-  --ac-switch-handle-height: 20px;
-  --ac-switch-control-label-spacing: ${theme.spacing.margin4}px;
+  --ac-switch-control-width: 34px;
+  --ac-switch-control-height: 14px;
+  --ac-switch-handle-size: 20px;
+  --ac-switch-control-label-spacing: ${theme.spacing.margin8}px;
   --ac-switch-spacing-top-to-control: 10px;
-  --ac-switch-spacing-top-to-label: 4px;
+  --ac-switch-spacing-top-to-label: 3px;
+  --ac-switch-spacing-label-to-handle: ${theme.spacing.margin8}px;
 
   --ac-switch-font-size: ${theme.typography.sizes.medium.fontSize}px;
 
@@ -33,8 +34,28 @@ export const switchCSS = css`
     vertical-align: top;
   }
 
+  &.ac-switch--label-placement-start {
+    flex-direction: row-reverse;
+    gap: var(--ac-switch-spacing-label-to-handle);
+  }
+
+  &.ac-switch--label-placement-end {
+    flex-direction: row;
+    gap: var(--ac-switch-spacing-label-to-handle);
+  }
+
   &.is-disabled {
-    --ac-switch-label-color-default: var(--ac-disabled-content-color);
+    opacity: ${theme.opacity.disabled};
+  }
+
+  &.is-hovered,
+  &.is-selected {
+    &:after {
+      background-color: var(--ac-switch-handle-background-color-selected);
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+    }
   }
 
   .ac-switch-element {
@@ -69,12 +90,12 @@ export const switchCSS = css`
       transition: background 100ms ease-in-out, border 100ms ease-in-out,
         transform 100ms ease-in-out, box-shadow 100ms ease-in-out;
 
-      inline-size: var(--ac-switch-handle-height);
-      block-size: var(--ac-switch-handle-height);
+      inline-size: var(--ac-switch-handle-size);
+      block-size: var(--ac-switch-handle-size);
 
-      inset-block-start: calc(var(--ac-switch-control-height) / -2);
+      inset-block-start: calc(var(--ac-switch-control-height) / -4);
       inset-inline-start: 0;
-      border-radius: calc(var(--ac-switch-handle-height) / 2);
+      border-radius: calc(var(--ac-switch-handle-size) / 2);
       background-color: var(--ac-switch-handle-background-color);
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
     }
@@ -119,7 +140,7 @@ export const switchCSS = css`
 
   .ac-switch-label {
     color: ${theme.textColors.white90};
-    margin-inline: var(--ac-switch-control-label-spacing);
+    // margin-inline: var(--ac-switch-control-label-spacing);
     margin-block-start: var(--ac-switch-spacing-top-to-label);
     margin-block-end: 0;
     font-size: var(--ac-switch-font-size);

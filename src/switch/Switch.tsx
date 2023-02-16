@@ -52,9 +52,15 @@ export interface AriaSwitchBase
 }
 export interface AriaSwitchProps extends BaseSwitchProps, AriaSwitchBase {}
 
-export interface SwitchProps extends AriaSwitchProps {}
+export interface SwitchProps extends AriaSwitchProps {
+  /**
+   * The label's overall position relative to the element it is labeling.
+   * @default 'end'
+   */
+  labelPlacement?: 'start' | 'end';
+}
 function Switch(props: SwitchProps, ref: FocusableRef<HTMLLabelElement>) {
-  const { isDisabled, autoFocus, children } = props;
+  const { isDisabled, autoFocus, children, labelPlacement = 'end' } = props;
   const { hoverProps, isHovered } = useHover({ isDisabled: isDisabled });
   const domRef = useFocusableRef(ref);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -67,6 +73,8 @@ function Switch(props: SwitchProps, ref: FocusableRef<HTMLLabelElement>) {
       ref={domRef}
       className={classNames({
         'ac-switch': true,
+        'ac-switch--label-placement-end': labelPlacement === 'end',
+        'ac-switch--label-placement-start': labelPlacement === 'start',
         'is-disabled': isDisabled,
         'is-hovered': isHovered,
         'is-selected': state.isSelected,

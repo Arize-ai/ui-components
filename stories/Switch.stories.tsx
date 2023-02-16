@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
-import { Switch, SwitchProps } from '../src';
+import { Heading, Switch, SwitchProps } from '../src';
 import { Icon, PlusCircleOutline } from '../src/icon';
 import { withDesign } from 'storybook-addon-designs';
 
@@ -32,24 +32,49 @@ export default meta;
 
 export const Gallery = () => {
   return (
-    <ul
-      css={css`
-        & > li {
-          margin-bottom: 8px;
-          list-style: none;
-        }
-      `}
-    >
-      <li>
-        <Switch>Send Emails</Switch>
-      </li>
-      <li>
-        <Switch isDisabled>Send Emails (disabled)</Switch>
-      </li>
-      <li>
-        <Switch isSelected>Send Emails (selected)</Switch>
-      </li>
-    </ul>
+    <div>
+      <ul
+        css={css`
+          & > li {
+            margin-bottom: 8px;
+            list-style: none;
+          }
+        `}
+      >
+        <li>
+          <Switch>Send Emails</Switch>
+        </li>
+        <li>
+          <Switch isDisabled>Send Emails (disabled)</Switch>
+        </li>
+        <li>
+          <Switch isDisabled isSelected>
+            Send Emails (disabled)
+          </Switch>
+        </li>
+        <li>
+          <Switch isSelected>Send Emails (selected)</Switch>
+        </li>
+      </ul>
+      <section>
+        <Heading>Label Placement</Heading>
+        <ul
+          css={css`
+            & > li {
+              margin-bottom: 8px;
+              list-style: none;
+            }
+          `}
+        >
+          <li>
+            <Switch labelPlacement="end">Send Emails</Switch>
+          </li>
+          <li>
+            <Switch labelPlacement="start" isSelected>Send Emails</Switch>
+          </li>
+        </ul>
+      </section>
+    </div>
   );
 };
 const Template: Story<SwitchProps> = args => <Switch {...args} />;
