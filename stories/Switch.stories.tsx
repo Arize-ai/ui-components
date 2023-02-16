@@ -53,7 +53,7 @@ export const Gallery = () => {
           </Switch>
         </li>
         <li>
-          <Switch isSelected>Send Emails (selected)</Switch>
+          <Switch isSelected>Send Emails (selected, controlled)</Switch>
         </li>
       </ul>
       <section>
@@ -67,10 +67,12 @@ export const Gallery = () => {
           `}
         >
           <li>
-            <Switch labelPlacement="end">Send Emails</Switch>
+            <Switch labelPlacement="start">Send Emails</Switch>
           </li>
           <li>
-            <Switch labelPlacement="start" isSelected>Send Emails</Switch>
+            <Switch labelPlacement="start" isSelected>
+              Send Emails (selected, controlled)
+            </Switch>
           </li>
         </ul>
       </section>

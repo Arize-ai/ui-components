@@ -15,9 +15,10 @@ export const switchCSS = css`
   --ac-switch-handle-background-color-selected: ${theme.colors.arizeLightBlue};
 
   --ac-switch-min-height: 30px;
-  --ac-switch-control-width: 34px;
-  --ac-switch-control-height: 14px;
+  --ac-switch-rail-width: 34px;
+  --ac-switch-rail-height: 14px;
   --ac-switch-handle-size: 20px;
+  --ac-switch-halo-size: 28px;
   --ac-switch-control-label-spacing: ${theme.spacing.margin8}px;
   --ac-switch-spacing-top-to-control: 10px;
   --ac-switch-spacing-top-to-label: 3px;
@@ -46,6 +47,9 @@ export const switchCSS = css`
 
   &.is-disabled {
     opacity: ${theme.opacity.disabled};
+    .ac-switch-input {
+      cursor: not-allowed;
+    }
   }
 
   &.is-hovered,
@@ -64,10 +68,10 @@ export const switchCSS = css`
 
     /* positions the pseudo elements relative to this one */
     position: relative;
-    inline-size: var(--ac-switch-control-width);
+    inline-size: var(--ac-switch-rail-width);
     /* Fix vertical alignment when not wrapping since we're flex-start */
     margin-block: calc(
-      var(--ac-switch-min-height) - var(--ac-switch-control-height) -
+      var(--ac-switch-min-height) - var(--ac-switch-rail-height) -
         var(--ac-switch-spacing-top-to-control)
     );
     margin-inline: 0;
@@ -75,10 +79,10 @@ export const switchCSS = css`
     flex-shrink: 0;
     vertical-align: middle;
     transition: background 100ms ease-in-out, border 100ms ease-in-out;
-    block-size: var(--ac-switch-control-height);
+    block-size: var(--ac-switch-rail-height);
     inset-inline-start: 0;
     inset-inline-end: 0;
-    border-radius: calc(var(--ac-switch-control-height) / 2);
+    border-radius: calc(var(--ac-switch-rail-height) / 2);
     background-color: var(--ac-switch-background-color);
 
     /* :before is used for the handle of the switch */
@@ -93,28 +97,35 @@ export const switchCSS = css`
       inline-size: var(--ac-switch-handle-size);
       block-size: var(--ac-switch-handle-size);
 
-      inset-block-start: calc(var(--ac-switch-control-height) / -4);
+      inset-block-start: calc(
+        -1 * (var(--ac-switch-handle-size) - var(--ac-switch-rail-height)) / 2
+      );
       inset-inline-start: 0;
       border-radius: calc(var(--ac-switch-handle-size) / 2);
       background-color: var(--ac-switch-handle-background-color);
-      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     }
 
     /* :after is used for the focus halo */
     &:after {
-      border-radius: calc(
-        var(--mod-switch-control-height, var(--ac-switch-control-height)) / 2
-      );
-      content: '';
       display: block;
       position: absolute;
-      inset-inline-start: 0;
-      inset-inline-end: 0;
-      inset-block-end: 0;
-      inset-block-start: 0;
-      margin: 0;
+      content: '';
+      box-sizing: border-box;
+      transition: background 100ms ease-in-out, border 100ms ease-in-out,
+        transform 100ms ease-in-out, box-shadow 100ms ease-in-out;
 
-      transition: opacity 100ms ease-out, margin 100ms ease-out;
+      inline-size: var(--ac-switch-halo-size);
+      block-size: var(--ac-switch-halo-size);
+
+      inset-block-start: calc(var(--ac-switch-halo-size) / -4);
+      inset-inline-start: calc(
+        -1 * (var(--ac-switch-halo-size) - var(--ac-switch-handle-size)) / 2
+      );
+      border-radius: calc(var(--ac-switch-halo-size) / 2);
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+      background-color: var(--ac-switch-handle-background-color);
+      opacity: 0;
     }
   }
 
@@ -153,8 +164,19 @@ export const switchCSS = css`
 
     &:before {
       border-color: var(--ac-switch-handle-border-color-selected);
-      transform: translateX(calc(var(--ac-switch-control-width) - 100%));
+      transform: translateX(calc(var(--ac-switch-rail-width) - 100%));
       background-color: var(--ac-switch-handle-background-color-selected);
+    }
+    &:after {
+      border-color: var(--ac-switch-handle-border-color-selected);
+      transform: translateX(calc(100% - var(--ac-switch-halo-size) / 2));
+      background-color: var(--ac-switch-handle-background-color-selected);
+    }
+  }
+
+  &.is-hovered .ac-switch-element {
+    &:after {
+      opacity: 0.4;
     }
   }
 `;
