@@ -16,7 +16,7 @@ export interface BaseButtonProps extends AriaBaseButtonProps {
 
 export interface ButtonProps extends BaseButtonProps {
   children?: ReactNode | string;
-  variant: 'primary' | 'default' | 'danger' | 'quiet';
+  variant: 'primary' | 'default' | 'danger' | 'quiet' | 'success';
   disabled?: boolean;
   className?: string;
   onClick?: (e: SyntheticEvent<HTMLButtonElement>) => void;

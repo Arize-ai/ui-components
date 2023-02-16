@@ -98,6 +98,9 @@ export const theme = {
       defaultHoverBackgroundColor: '#64768A',
       dangerBorderColor: lighten(0.1, '#F85149'),
       dangerHoverBackgroundColor: lighten(0.1, '#F85149'),
+      successColor: '#3C6E40',
+      successBorderColor: '#7EE787',
+      successHoverBackgroundColor: '#7EE787',
     },
     modal: {
       bgColor: '#1C232B',
