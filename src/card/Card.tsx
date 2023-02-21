@@ -48,7 +48,7 @@ interface CollapsibleCardProps {
   /**
    * Callback function for when the collapsed state changes
    */
-  onToggle?: (isOpen: boolean) => void;
+  onOpenChange?: (isOpen: boolean) => void;
 }
 
 export interface CardProps extends CardBaseProps, CollapsibleCardProps {}
@@ -66,7 +66,7 @@ export function Card({
   collapsible = false,
   defaultOpen = true,
   id,
-  onToggle,
+  onOpenChange,
 }: CardProps) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
   const idPrefix = useId(id);
@@ -104,7 +104,7 @@ export function Card({
         onOpen={() => {
           const newIsOpen = !isOpen;
           setIsOpen(newIsOpen);
-          onToggle && onToggle(newIsOpen);
+          onOpenChange && onOpenChange(newIsOpen);
         }}
         title={titleEl}
         contentId={contentId}
