@@ -6,6 +6,7 @@ import {
   Item,
   Picker,
   Provider,
+  TextArea,
   TextField,
 } from '../src';
 import { withDesign } from 'storybook-addon-designs';
@@ -49,11 +50,16 @@ export const Gallery = () => {
         </li>
         <li>
           <FieldColorDesignation color={'lightyellow'}>
-            <TextField addonBefore="metric" aria-label="Metric" />
+            <TextField
+              addonBefore="metric"
+              aria-label="Metric"
+              value="12/21/2020"
+              isReadOnly
+            />
           </FieldColorDesignation>
         </li>
         <li>
-          <FieldColorDesignation color={'lightyellow'}>
+          <FieldColorDesignation color={'turquoise'}>
             <Picker
               aria-label="With Addon"
               addonBefore={'Frequency'}
@@ -63,6 +69,11 @@ export const Gallery = () => {
               <Item key="sometimes">Sometimes</Item>
               <Item key="always">Always</Item>
             </Picker>
+          </FieldColorDesignation>
+        </li>
+        <li>
+          <FieldColorDesignation color={'orange'}>
+            <TextArea aria-label="textfield" />
           </FieldColorDesignation>
         </li>
       </ul>

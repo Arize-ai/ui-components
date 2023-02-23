@@ -6,6 +6,9 @@ import React, { ReactNode } from 'react';
  */
 type FieldColorDesignationProps = {
   children: ReactNode;
+  /**
+   * The color to use for the field's border
+   */
   color: string;
 };
 
