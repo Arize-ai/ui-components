@@ -191,8 +191,14 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         overflow: hidden;
         font-size: ${theme.typography.sizes.medium.fontSize}px;
         box-sizing: border-box;
+        --ac-textfield-border-color: ${theme.colors.lightGrayBorder};
+        border: 1px solid
+          var(
+            --ac-field-border-color-override,
+            var(--ac-textfield-border-color)
+          );
         &[data-variant='default'] {
-          border: 1px solid ${theme.colors.lightGrayBorder};
+          --ac-textfield-border-color: ${theme.colors.lightGrayBorder};
           border-radius: ${theme.borderRadius.medium}px;
         }
         &.is-hovered:not(.is-disabled)[data-variant='default'] {

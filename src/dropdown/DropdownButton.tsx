@@ -66,7 +66,12 @@ const buttonBaseCSS = css`
  * Styles to add in addition to the base button styles for non-quiet
  */
 const nonQuietButtonCSS = css`
-  border: 1px solid ${theme.components.dropdown.borderColor};
+  --ac-dropdown-button-border-color: ${theme.components.dropdown.borderColor};
+  border: 1px solid
+    var(
+      --ac-field-border-color-override,
+      var(--ac-dropdown-button-border-color)
+    );
   border-radius: ${theme.borderRadius.medium}px;
   background-color: ${theme.components.dropdown.backgroundColor};
   &.is-hovered {
