@@ -10,7 +10,7 @@ const grayColors = {
   gray300: '#4a5057',
   gray200: '#585d64', // disabled text
   gray100: '#666b71',
-};
+} as const;
 
 const arizeColors = {
   arizePink: '#CA2A76',
@@ -31,7 +31,7 @@ const textColors = {
   white50: `rgba(255, 255, 255, 0.5)`,
   white30: `rgba(255, 255, 255, 0.3)`,
   inherit: 'inherit',
-};
+} as const;
 
 const labelColors = {
   white: `rgba(255, 255, 255, 0.9)`,
@@ -41,7 +41,15 @@ const labelColors = {
   blue: '#72D9FF',
   purple: '#ADA1FF',
   gray: 'rgba(255, 255, 255, 0.7)',
-};
+} as const;
+
+/**
+ * Colors to designate specific meaning (e.g. primary / reference)
+ */
+export const designationColors = {
+  designationTurquoise: '#9efcfd',
+  designationPurple: '#ADA1FF',
+} as const;
 
 export const theme = {
   colors: {

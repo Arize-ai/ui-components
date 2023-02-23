@@ -2,8 +2,10 @@ import React from 'react';
 import { css } from '@emotion/react';
 import { Meta } from '@storybook/react';
 import {
+  Dropdown,
   FieldColorDesignation,
   Item,
+  ListBox,
   Picker,
   Provider,
   TextArea,
@@ -44,12 +46,12 @@ export const Gallery = () => {
         `}
       >
         <li>
-          <FieldColorDesignation color={'lightgreen'}>
+          <FieldColorDesignation color={'designationTurquoise'}>
             <TextField addonBefore="metric" aria-label="Metric" />
           </FieldColorDesignation>
         </li>
         <li>
-          <FieldColorDesignation color={'lightyellow'}>
+          <FieldColorDesignation color={'designationPurple'}>
             <TextField
               addonBefore="metric"
               aria-label="Metric"
@@ -59,7 +61,7 @@ export const Gallery = () => {
           </FieldColorDesignation>
         </li>
         <li>
-          <FieldColorDesignation color={'turquoise'}>
+          <FieldColorDesignation color={'designationTurquoise'}>
             <Picker
               aria-label="With Addon"
               addonBefore={'Frequency'}
@@ -72,8 +74,30 @@ export const Gallery = () => {
           </FieldColorDesignation>
         </li>
         <li>
-          <FieldColorDesignation color={'orange'}>
+          <FieldColorDesignation color={'designationTurquoise'}>
             <TextArea aria-label="textfield" />
+          </FieldColorDesignation>
+        </li>
+        <li>
+          <FieldColorDesignation color={'designationTurquoise'}>
+            <Dropdown
+              menu={
+                <ListBox
+                  style={{ width: 200 }}
+                  aria-label="Pick your favorite"
+                  selectionMode="multiple"
+                >
+                  <Item key="Aardvark">Aardvark</Item>
+                  <Item key="Kangaroo">Kangaroo</Item>
+                  <Item key="Snake">Snake</Item>
+                  <Item key="Danni">Danni</Item>
+                  <Item key="Devon">Devon</Item>
+                  <Item key="Ross">Ross</Item>
+                </ListBox>
+              }
+            >
+              Animals
+            </Dropdown>
           </FieldColorDesignation>
         </li>
       </ul>

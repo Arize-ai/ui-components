@@ -1,5 +1,5 @@
 import React, { CSSProperties } from 'react';
-import { theme, Text, Heading } from '../src';
+import { theme, designationColors, Text, Heading } from '../src';
 import { Meta, Story } from '@storybook/react';
 // @ts-ignore
 import { withDesign } from 'storybook-addon-designs';
@@ -64,6 +64,19 @@ function Colors() {
     );
   });
 
+  const designations = (
+    <section>
+      <Heading>Designation Colors</Heading>
+      <ul style={listStyle}>
+        {Object.keys(designationColors).map((c, i) => (
+          <li key={i}>
+            <Color color={designationColors[c]} name={c} />
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+
   return (
     <main>
       <ul style={listStyle}>
@@ -72,6 +85,7 @@ function Colors() {
         ))}
       </ul>
       <br />
+      {designations}
       {components}
     </main>
   );
