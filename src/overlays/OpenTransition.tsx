@@ -14,6 +14,7 @@ export function OpenTransition(props: OpenTransitionProps) {
     <Transition timeout={{ enter: 0, exit: 350 }} {...props}>
       {state =>
         React.Children.map(props.children, child => {
+          console.log('element inside transition: ', child);
           return (
             // @ts-ignore
             child && React.cloneElement(child, { isOpen: !!OPEN_STATES[state] })

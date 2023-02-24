@@ -1,4 +1,4 @@
-import React, { Component, CSSProperties } from 'react';
+import React, { Component, CSSProperties, ReactNode } from 'react';
 import { css } from '@emotion/react';
 import { Overlay } from '../overlays';
 import { Notice } from './Notice';
@@ -29,6 +29,27 @@ const getUuid = () => {
   uuidSeed += 1;
   return `ac-notification-${uuidSeed}`;
 };
+
+function NotificationContainer(props: { children: ReactNode }) {
+  const { isOpen, ...passThroughProps } = props;
+  return (
+    <div
+      className="ac-notification-container"
+      css={css`
+        position: fixed;
+        bottom: ${theme.spacing.margin24}px;
+        right: ${theme.spacing.margin24}px;
+        & .ac-notice + .ac-notice {
+          margin-top: ${theme.spacing.margin16}px;
+        }
+      `}
+      {...passThroughProps}
+    >
+      {props.children}
+    </div>
+  );
+}
+
 /**
  * The notifications holder (container overlay) where the messages are rendered
  */
@@ -67,22 +88,9 @@ export class Notification extends Component<
   render() {
     return (
       <Overlay isOpen>
-        <div
-          className="ac-notification-container"
-          css={css`
-            position: fixed;
-            bottom: ${theme.spacing.margin24}px;
-            right: ${theme.spacing.margin24}px;
-            & .ac-notice + .ac-notice {
-              margin-top: ${theme.spacing.margin16}px;
-            }
-          `}
-          {...this.props}
-        >
-          {/* @ts-ignore */}
+        <NotificationContainer {...this.props}>
           <TransitionGroup className="ac-notice-list">
             {this.state.notices.map(notice => (
-              /* @ts-ignore */
               <CSSTransition
                 key={notice.id}
                 timeout={{
@@ -99,7 +107,7 @@ export class Notification extends Component<
               </CSSTransition>
             ))}
           </TransitionGroup>
-        </div>
+        </NotificationContainer>
       </Overlay>
     );
   }
