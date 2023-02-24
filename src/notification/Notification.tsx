@@ -1,5 +1,6 @@
 import React, { Component, CSSProperties, ReactNode } from 'react';
 import { css } from '@emotion/react';
+import { omit } from 'lodash';
 import { Overlay } from '../overlays';
 import { Notice } from './Notice';
 import theme from '../theme';
@@ -31,7 +32,8 @@ const getUuid = () => {
 };
 
 function NotificationContainer(props: { children: ReactNode }) {
-  const { isOpen, ...passThroughProps } = props;
+  const { ...passThroughProps } = props;
+  const allowedProps = omit(passThroughProps, 'isOpen');
   return (
     <div
       className="ac-notification-container"
@@ -43,7 +45,7 @@ function NotificationContainer(props: { children: ReactNode }) {
           margin-top: ${theme.spacing.margin16}px;
         }
       `}
-      {...passThroughProps}
+      {...allowedProps}
     >
       {props.children}
     </div>
