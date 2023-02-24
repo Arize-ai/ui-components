@@ -1,6 +1,5 @@
 import React, { Component, CSSProperties, ReactNode } from 'react';
 import { css } from '@emotion/react';
-import { omit } from 'lodash';
 import { Overlay } from '../overlays';
 import { Notice } from './Notice';
 import theme from '../theme';
@@ -31,9 +30,26 @@ const getUuid = () => {
   return `ac-notification-${uuidSeed}`;
 };
 
-function NotificationContainer(props: { children: ReactNode }) {
-  const { ...passThroughProps } = props;
-  const allowedProps = omit(passThroughProps, 'isOpen');
+/**
+ * Props that are passed through to the child via a React.cloneElement
+ */
+type PropsFromOverlay = {
+  /**
+   * Transition group state for the notification container
+   * Marked as optional because it is not passed in directly
+   */
+  isOpen?: boolean;
+};
+
+interface NotificationContainerProps extends PropsFromOverlay {
+  children: ReactNode;
+}
+
+/**
+ * The container for the notifications that is used in the CSS transition group
+ */
+function NotificationContainer(props: NotificationContainerProps) {
+  const { isOpen, ...passThroughProps } = props;
   return (
     <div
       className="ac-notification-container"
@@ -45,7 +61,7 @@ function NotificationContainer(props: { children: ReactNode }) {
           margin-top: ${theme.spacing.margin16}px;
         }
       `}
-      {...allowedProps}
+      {...passThroughProps}
     >
       {props.children}
     </div>
