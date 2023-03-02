@@ -5,11 +5,24 @@ import { css } from '@emotion/react';
 interface IconProps extends HTMLAttributes<HTMLElement> {
   svg: ReactNode;
   style?: React.CSSProperties;
+  /**
+   * Passed through by wrapping components.
+   * @private
+   * @default false
+   */
+  isDisabled?: boolean;
 }
+
 /**
  * Wraps the svg in a reasonable size and applies a color
  */
-export const Icon = ({ svg, style, className, ...restProps }: IconProps) => {
+export const Icon = ({
+  svg,
+  style,
+  className,
+  isDisabled: _isDisabled,
+  ...restProps
+}: IconProps) => {
   return (
     <i
       className={classNames('ac-icon-wrap', className)}
