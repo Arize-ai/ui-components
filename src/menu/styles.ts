@@ -28,7 +28,7 @@ export const menuItemCSS = css`
       color: ${theme.colors.arizeLightBlue};
     }
   }
-  &.is-hovered,
+  &:focus,
   &.focus-ring {
     background-color: ${theme.colors.gray500};
   }
