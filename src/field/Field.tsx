@@ -28,8 +28,9 @@ export interface FieldProps
   wrapperClassName?: string;
   /**
    * Whether the button should be displayed with an inline style
-   *  @default false
-   * */
+   * with respect to other elements
+   * @default false
+   */
   isInline?: boolean;
 }
 

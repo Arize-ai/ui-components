@@ -141,6 +141,7 @@ function FormCard() {
             onSelectionChange={(selected) => setEvalMetric(selected as string)}
             isInline
             isQuiet
+            isUnderlined
           >
             <Item key="PSI">PSI</Item>
             <Item key="ActualsAverage">Actuals Average</Item>
@@ -154,6 +155,7 @@ function FormCard() {
             }
             isInline
             isQuiet
+            isUnderlined
           >
             <Item key="feature">feature</Item>
             <Item key="tag">tag</Item>
@@ -165,6 +167,7 @@ function FormCard() {
             }
             isInline
             isQuiet
+            isUnderlined
           >
             <Item key="state">state</Item>
             <Item key="country">country</Item>
