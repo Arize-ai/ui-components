@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Item, Picker, PickerProps, Text, Button } from '../src';
+import { Item, Picker, PickerProps, Text, Button, theme } from '../src';
 import { Provider } from '../src';
 import { css } from '@emotion/react';
 import InfoTip from './components/InfoTip';
@@ -14,10 +14,33 @@ const meta: Meta = {
   title: 'Picker',
   component: Picker,
   argTypes: {
+    label: {
+      control: {
+        type: 'text',
+        defaultValue: 'Picker Label',
+      },
+    },
+    isQuiet: {
+      control: {
+        type: 'boolean',
+        defaultValue: false,
+      },
+    },
+    isInline: {
+      control: {
+        type: 'boolean',
+        defaultValue: false,
+      },
+    },
+    isUnderlined: {
+      control: {
+        type: 'boolean',
+        defaultValue: false,
+      },
+    },
     children: {
       control: {
         type: 'text',
-        default: 'Label',
       },
     },
   },
@@ -25,15 +48,14 @@ const meta: Meta = {
     controls: { expanded: true },
     design: {
       type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=3084%3A9231&t=7kKAE3O8yOxScyZ3-1',
+      url: 'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=3084%3A9231&t=7kKAE3O8yOxScyZ3-1',
     },
   },
 };
 
 export default meta;
 
-const Template: Story<PickerProps<string>> = args => (
+const Template: Story<PickerProps<string>> = (args) => (
   <Provider>
     <Picker {...args}>
       <Item key="rarely">Rarely</Item>
@@ -47,16 +69,15 @@ const Template: Story<PickerProps<string>> = args => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 
-const Controlled: Story<PickerProps<string>> = args => {
-  const [frequency, setFrequency] = React.useState<string | undefined>(
-    'rarely'
-  );
+const Controlled: Story<PickerProps<string>> = (args) => {
+  const [frequency, setFrequency] =
+    React.useState<string | undefined>('rarely');
   return (
     <Provider>
       <Picker
         {...args}
         selectedKey={frequency}
-        onSelectionChange={selected => setFrequency(selected as string)}
+        onSelectionChange={(selected) => setFrequency(selected as string)}
       >
         <Item key="rarely">Rarely</Item>
         <Item key="sometimes">Sometimes</Item>
@@ -75,7 +96,7 @@ const Controlled: Story<PickerProps<string>> = args => {
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const controlled = Controlled.bind({});
 
-const WithAddon: Story<PickerProps<string>> = args => {
+const WithAddon: Story<PickerProps<string>> = (args) => {
   const [frequency, setFrequency] = React.useState<string>('rarely');
   return (
     <Provider>
@@ -83,7 +104,7 @@ const WithAddon: Story<PickerProps<string>> = args => {
         addonBefore={'Frequency'}
         {...args}
         selectedKey={frequency}
-        onSelectionChange={selected => setFrequency(selected as string)}
+        onSelectionChange={(selected) => setFrequency(selected as string)}
       >
         <Item key="rarely">Rarely</Item>
         <Item key="sometimes">Sometimes</Item>
@@ -114,7 +135,7 @@ const Gallery: Story<void> = () => {
           label="With Addon"
           addonBefore={'Frequency'}
           selectedKey={frequency}
-          onSelectionChange={selected => setFrequency(selected as string)}
+          onSelectionChange={(selected) => setFrequency(selected as string)}
         >
           <Item key="rarely">Rarely</Item>
           <Item key="sometimes">Sometimes</Item>
@@ -123,7 +144,7 @@ const Gallery: Story<void> = () => {
         <Picker
           label="Simple"
           selectedKey={frequency}
-          onSelectionChange={selected => setFrequency(selected as string)}
+          onSelectionChange={(selected) => setFrequency(selected as string)}
         >
           <Item key="rarely">Rarely</Item>
           <Item key="sometimes">Sometimes</Item>
@@ -133,7 +154,7 @@ const Gallery: Story<void> = () => {
           label="isQuiet"
           isQuiet
           selectedKey={frequency}
-          onSelectionChange={selected => setFrequency(selected as string)}
+          onSelectionChange={(selected) => setFrequency(selected as string)}
           className="picker-quiet"
         >
           <Item key="rarely">Rarely</Item>
@@ -144,7 +165,7 @@ const Gallery: Story<void> = () => {
           label="disabled"
           isDisabled
           selectedKey={frequency}
-          onSelectionChange={selected => setFrequency(selected as string)}
+          onSelectionChange={(selected) => setFrequency(selected as string)}
           className="picker-quiet"
         >
           <Item key="rarely">Rarely</Item>
@@ -161,7 +182,7 @@ const Gallery: Story<void> = () => {
         >
           <Picker
             selectedKey={frequency}
-            onSelectionChange={selected => setFrequency(selected as string)}
+            onSelectionChange={(selected) => setFrequency(selected as string)}
           >
             <Item key="rarely" textValue="Rarely">
               <div css={itemWithDescriptionCSS}>
@@ -192,7 +213,7 @@ const Gallery: Story<void> = () => {
             label="With label extra"
             labelExtra={<InfoTip>This is info</InfoTip>}
             selectedKey={frequency}
-            onSelectionChange={selected => setFrequency(selected as string)}
+            onSelectionChange={(selected) => setFrequency(selected as string)}
           >
             <Item key="rarely">Rarely</Item>
             <Item key="sometimes">Sometimes</Item>
@@ -208,7 +229,7 @@ const Gallery: Story<void> = () => {
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const gallery = Gallery.bind({});
 
-const ItemsViaProps: Story<PickerProps<string>> = args => {
+const ItemsViaProps: Story<PickerProps<string>> = (args) => {
   const [frequency, setFrequency] = React.useState<string>('rarely');
   return (
     <Provider>
@@ -216,7 +237,7 @@ const ItemsViaProps: Story<PickerProps<string>> = args => {
         addonBefore={'Frequency'}
         {...args}
         selectedKey={frequency}
-        onSelectionChange={selected => setFrequency(selected as string)}
+        onSelectionChange={(selected) => setFrequency(selected as string)}
         items={[
           { id: 1, name: 'Aardvark' },
           { id: 2, name: 'Cat' },
@@ -229,7 +250,7 @@ const ItemsViaProps: Story<PickerProps<string>> = args => {
           { id: 9, name: 'Wombat' },
         ]}
       >
-        {item => <Item>{item.name}</Item>}
+        {(item) => <Item>{item.name}</Item>}
       </Picker>
       <br />
       <Text>Selected Value: {frequency}</Text>
@@ -247,7 +268,7 @@ for (var i = 0; i < 100; i++) {
   longList.push({ id: i, name: `Item ${i}` });
 }
 
-const Long: Story<PickerProps<string>> = args => {
+const Long: Story<PickerProps<string>> = (args) => {
   const [frequency, setFrequency] = React.useState<string>('rarely');
   return (
     <Provider>
@@ -255,11 +276,11 @@ const Long: Story<PickerProps<string>> = args => {
         addonBefore={'Frequency'}
         {...args}
         selectedKey={frequency}
-        onSelectionChange={selected => setFrequency(selected as string)}
+        onSelectionChange={(selected) => setFrequency(selected as string)}
         items={longList}
         isOpen
       >
-        {item => <Item>{item.name}</Item>}
+        {(item) => <Item>{item.name}</Item>}
       </Picker>
       <br />
       <Text>Selected Value: {frequency}</Text>
@@ -270,3 +291,36 @@ const Long: Story<PickerProps<string>> = args => {
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const long = Long.bind({});
+
+const QuietInline: Story<PickerProps<string>> = (args) => {
+  const [frequency, setFrequency] = React.useState<string>('rarely');
+  return (
+    <Provider>
+      <div
+        css={css`
+          .ac-dropdown-button__text > div > span {
+            color: ${theme.colors.arizeLightBlue};
+          }
+        `}
+      >
+        <Text>Inline quiet styles</Text>
+        <Picker
+          selectedKey={frequency}
+          onSelectionChange={(selected) => setFrequency(selected as string)}
+          isInline
+          isQuiet
+          isUnderlined
+        >
+          <Item key="rarely">Rarely</Item>
+          <Item key="sometimes">Sometimes</Item>
+          <Item key="always">Always</Item>
+        </Picker>
+        <Text>appear in a sentance.</Text>
+      </div>
+    </Provider>
+  );
+};
+
+// By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
+// https://storybook.js.org/docs/react/workflows/unit-testing
+export const quietInline = QuietInline.bind({});

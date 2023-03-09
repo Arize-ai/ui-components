@@ -67,4 +67,13 @@ export interface PickerProps<T>
    * When you reach the bottom of a loading list
    */
   onLoadMore?: () => void;
+  /**
+   * Whether the button should be displayed with an inline field style
+   * @default false
+   */
+  isInline?: boolean;
+  /**
+   * Whether the button should be displayed with an underline style
+   */
+  isUnderlined?: boolean;
 }

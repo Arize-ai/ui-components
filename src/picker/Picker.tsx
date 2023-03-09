@@ -46,6 +46,8 @@ function Picker<T extends object>(
     name,
     autoFocus,
     addonBefore,
+    isInline,
+    isUnderlined,
   } = props;
 
   let state = useSelectState(props);
@@ -145,7 +147,8 @@ function Picker<T extends object>(
 
   let style = {
     ...overlayProps.style,
-    minWidth: buttonWidth,
+    // underline style popover width should not conform to the button width
+    minWidth: isUnderlined ? '200px' : buttonWidth,
   };
 
   const overlay = (
@@ -217,6 +220,7 @@ function Picker<T extends object>(
           className={classNames('ac-dropdown-trigger', {
             'is-hovered': isHovered,
           })}
+          isUnderlined={isUnderlined}
           {...{ addonBefore }}
         >
           <div>{contents}</div>
@@ -245,6 +249,7 @@ function Picker<T extends object>(
       showErrorIcon={false}
       includeNecessityIndicatorInAccessibilityName
       elementType="span"
+      isInline={isInline}
     >
       {picker}
     </Field>

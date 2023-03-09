@@ -24,6 +24,11 @@ export interface DropdownButtonProps extends AddonableProps {
   /** The content to display in the button. */
   children?: ReactNode;
   style?: CSSProperties;
+  /**
+   * Whether the button should be displayed with an underline style
+   *  @default false
+   */
+  isUnderlined?: boolean;
 }
 
 const buttonBaseCSS = css`
@@ -89,6 +94,30 @@ const nonQuietButtonCSS = css`
   }
 `;
 
+const underlinedButtonCSS = css`
+  min-width: max-content;
+  --ac-dropdown-button-border-color: ${theme.components.dropdown.borderColor};
+
+  border-bottom: 1px solid
+    var(
+      --ac-field-border-color-override,
+      var(--ac-dropdown-button-border-color)
+    );
+
+  &.is-hovered {
+    border-bottom: 1px solid ${theme.components.dropdown.hoverBorderColor};
+  }
+
+  &.is-active,
+  &:focus {
+    border-bottom: 1px solid ${theme.components.dropdown.activeBorderColor};
+  }
+  &[disabled] {
+    cursor: default;
+    border-bottom: 1px solid ${theme.components.dropdown.borderColor};
+  }
+`;
+
 /**
  * A button that displays
  * @param props
@@ -101,6 +130,7 @@ function DropdownButton(
 ) {
   let domRef = useFocusableRef(ref);
   const {
+    isUnderlined = false,
     isQuiet = false,
     isDisabled,
     isActive,
@@ -122,7 +152,11 @@ function DropdownButton(
         'is-hovered': isHovered,
       })}
       style={style}
-      css={css(buttonBaseCSS, !isQuiet && nonQuietButtonCSS)}
+      css={css(
+        buttonBaseCSS,
+        !isQuiet && nonQuietButtonCSS,
+        isUnderlined && underlinedButtonCSS
+      )}
     >
       {addonBefore != null ? <AddonBefore>{addonBefore}</AddonBefore> : null}
       <Text className="ac-dropdown-button__text" textSize="medium">

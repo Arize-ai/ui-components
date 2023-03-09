@@ -26,7 +26,24 @@ export interface FieldProps
   label?: ReactNode;
   labelProps?: HTMLAttributes<HTMLElement>;
   wrapperClassName?: string;
+  /**
+   * Whether the button should be displayed with an inline style
+   *  @default false
+   * */
+  isInline?: boolean;
 }
+
+const verticallyAlignedField = css`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+const inlineField = css`
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
 
 function Field(props: FieldProps, ref: RefObject<HTMLElement>) {
   props = useFormProps(props);
@@ -50,6 +67,7 @@ function Field(props: FieldProps, ref: RefObject<HTMLElement>) {
     errorMessageProps = {},
     elementType,
     wrapperClassName,
+    isInline,
   } = props;
   let hasHelpText =
     !!description || (errorMessage && validationState === 'invalid');
@@ -89,10 +107,7 @@ function Field(props: FieldProps, ref: RefObject<HTMLElement>) {
       ref={ref as RefObject<HTMLDivElement>}
       className={labelWrapperClass}
       css={css`
-        /* For now assume vertical alignment of labels */
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        ${isInline ? inlineField : verticallyAlignedField}
         .ac-help-text--danger {
           /* Animate in the help text */
           animation: ${appearKeyframes} ${0.3}s forwards ease-in-out;

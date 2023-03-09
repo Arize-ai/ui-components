@@ -24,6 +24,7 @@ import {
   Item,
   TextField,
   Form,
+  Picker,
 } from '../.';
 
 const { TabPane } = Tabs;
@@ -115,6 +116,10 @@ const App = () => {
 function FormCard() {
   const [val, setVal] = React.useState('');
   const isValid = val.length > 10 && val.length < 15;
+  const [evalMetric, setEvalMetric] = React.useState<string>('PSI');
+  const [dimensionName, setDimensionName] = React.useState<string>('feature');
+  const [dimensionValue, setDimensionValue] = React.useState<string>('state');
+
   return (
     <Card title="Form">
       <Form>
@@ -129,6 +134,45 @@ function FormCard() {
           isRequired
           onChange={setVal}
         />
+        <div style={{ width: 400 }}>
+          <Text>Monitoring</Text>
+          <Picker
+            selectedKey={evalMetric}
+            onSelectionChange={(selected) => setEvalMetric(selected as string)}
+            isInline
+            isQuiet
+          >
+            <Item key="PSI">PSI</Item>
+            <Item key="ActualsAverage">Actuals Average</Item>
+            <Item key="PredictionAverage">Prediction Average</Item>
+          </Picker>
+          <Text>for</Text>
+          <Picker
+            selectedKey={dimensionName}
+            onSelectionChange={(selected) =>
+              setDimensionName(selected as string)
+            }
+            isInline
+            isQuiet
+          >
+            <Item key="feature">feature</Item>
+            <Item key="tag">tag</Item>
+          </Picker>
+          <Picker
+            selectedKey={dimensionValue}
+            onSelectionChange={(selected) =>
+              setDimensionValue(selected as string)
+            }
+            isInline
+            isQuiet
+          >
+            <Item key="state">state</Item>
+            <Item key="country">country</Item>
+            <Item key="restaraunt">restaraunt</Item>
+            <Item key="numberofhours">number of hours</Item>
+          </Picker>
+          <Text>for your production stream.</Text>
+        </div>
       </Form>
     </Card>
   );
