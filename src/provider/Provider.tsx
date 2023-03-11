@@ -29,6 +29,7 @@ export function useProviderProps<T>(props: T): T {
   return Object.assign(
     {},
     {
+      isQuiet: context.isQuiet,
       isDisabled: context.isDisabled,
       isReadOnly: context.isReadOnly,
     },

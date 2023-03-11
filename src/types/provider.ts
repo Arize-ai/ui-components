@@ -1,6 +1,8 @@
 import { ReactNode } from 'react';
 
 interface ContextProps {
+  /** Whether descendants should be displayed with the quiet style. */
+  isQuiet?: boolean;
   /** Whether descendants should be disabled. */
   isDisabled?: boolean;
   /** Whether descendants should be read only. */

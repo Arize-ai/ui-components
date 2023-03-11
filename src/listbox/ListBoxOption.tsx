@@ -67,6 +67,7 @@ export function ListBoxOption<T>(props: OptionProps<T>) {
             shouldUseVirtualFocus && isFocused && isKeyboardModality,
           'is-disabled': isDisabled,
           'is-selected': isSelected,
+          'is-private-focused': isFocused,
           'is-selectable': state.selectionManager.selectionMode !== 'none',
           // When shouldFocusOnHover is false, apply hover styles both when hovered with the mouse.
           // Otherwise, apply hover styles when focused using non-keyboard modality.

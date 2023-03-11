@@ -48,14 +48,14 @@ function Picker<T extends object>(
     addonBefore,
   } = props;
 
+  console.log(`isQuiet: ${isQuiet}`);
+
   let state = useSelectState(props);
   let domRef = useDOMRef(ref);
 
-  let dropdownRef = useRef<DOMRefValue<HTMLDivElement>>();
-  // @ts-ignore
+  let dropdownRef = useRef<DOMRefValue<HTMLDivElement>>(null);
   let unwrappedDropdownRef = useUnwrapDOMRef(dropdownRef);
-  let triggerRef = useRef<FocusableRefValue<HTMLElement>>();
-  // @ts-ignore
+  const triggerRef = useRef<FocusableRefValue<HTMLElement>>(null);
   let unwrappedTriggerRef = useUnwrapDOMRef(triggerRef);
   let listboxRef = useRef();
 
@@ -186,6 +186,7 @@ function Picker<T extends object>(
         'ac-dropdown ac-dropdown--picker',
         {
           'is-disabled': isDisabled,
+          'ac-dropdown--quiet': isQuiet,
         },
         props.className
       )}

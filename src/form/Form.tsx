@@ -31,7 +31,8 @@ const formPropNames = new Set([
 export interface FormProps extends DOMProps, AriaLabelingProps, LabelableProps {
   /** The contents of the Form. */
   children: ReactElement<LabelableProps> | ReactElement<LabelableProps>[];
-
+  /** Whether the Form elements are displayed with their quiet style. */
+  isQuiet?: boolean;
   /** Whether the Form elements are disabled. */
   isDisabled?: boolean;
   /** Whether the Form elements can be selected but not changed by the user. */
@@ -70,6 +71,7 @@ function Form(props: FormProps, ref: DOMRef<HTMLFormElement>) {
     necessityIndicator,
     isDisabled,
     isReadOnly,
+    isQuiet,
     ...otherProps
   } = props;
   let domRef = useDOMRef(ref);
@@ -113,7 +115,11 @@ function Form(props: FormProps, ref: DOMRef<HTMLFormElement>) {
       `}
     >
       <FormContext.Provider value={ctx}>
-        <Provider isDisabled={isDisabled} isReadOnly={isReadOnly}>
+        <Provider
+          isQuiet={isQuiet}
+          isDisabled={isDisabled}
+          isReadOnly={isReadOnly}
+        >
           {children}
         </Provider>
       </FormContext.Provider>

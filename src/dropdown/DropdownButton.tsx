@@ -11,6 +11,7 @@ import { Text } from '../content';
 import { AddonBefore } from '../field';
 import { Icon, ArrowIosDownwardOutline } from '../icon';
 import { AddonableProps } from '../types';
+import { FocusRing } from '@react-aria/focus';
 
 export interface DropdownButtonProps extends AddonableProps {
   /**
@@ -107,29 +108,34 @@ function DropdownButton(
     children,
     style,
     addonBefore,
+    // TODO: add support for autoFocus
+    // autoFocus,
     ...otherProps
   } = props;
   const { buttonProps, isPressed } = useButton(props, domRef);
   const { hoverProps, isHovered } = useHover({ isDisabled });
 
   return (
-    <button
-      {...mergeProps(buttonProps, hoverProps, otherProps)}
-      ref={domRef}
-      className={classNames('ac-dropdown-button', {
-        'is-active': isActive || isPressed,
-        'is-disabled': isDisabled,
-        'is-hovered': isHovered,
-      })}
-      style={style}
-      css={css(buttonBaseCSS, !isQuiet && nonQuietButtonCSS)}
-    >
-      {addonBefore != null ? <AddonBefore>{addonBefore}</AddonBefore> : null}
-      <Text className="ac-dropdown-button__text" textSize="medium">
-        {children}
-      </Text>
-      <Icon svg={<ArrowIosDownwardOutline />} />
-    </button>
+    <FocusRing focusRingClass="focus-ring">
+      <button
+        {...mergeProps(buttonProps, hoverProps, otherProps)}
+        ref={domRef}
+        className={classNames('ac-dropdown-button', {
+          'ac-dropdown-button--quiet': isQuiet,
+          'is-active': isActive || isPressed,
+          'is-disabled': isDisabled,
+          'is-hovered': isHovered,
+        })}
+        style={style}
+        css={css(buttonBaseCSS, !isQuiet && nonQuietButtonCSS)}
+      >
+        {addonBefore != null ? <AddonBefore>{addonBefore}</AddonBefore> : null}
+        <Text className="ac-dropdown-button__text" textSize="medium">
+          {children}
+        </Text>
+        <Icon svg={<ArrowIosDownwardOutline />} />
+      </button>
+    </FocusRing>
   );
 }
 

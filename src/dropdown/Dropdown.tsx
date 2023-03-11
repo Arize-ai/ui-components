@@ -25,6 +25,10 @@ export type DropdownProps = {
    */
   buttonProps?: DropdownButtonProps;
   /**
+   * display the dropdown as quiet
+   */
+  isQuiet?: boolean;
+  /**
    * Whether or not the dropdown is disabled
    */
   isDisabled?: boolean;
@@ -38,10 +42,11 @@ export function Dropdown(props: DropdownProps) {
     menu,
     children,
     triggerProps = { placement: 'bottom left' },
+    isQuiet = false,
     isDisabled,
     buttonProps,
   } = props;
-  buttonProps = { ...buttonProps, isDisabled };
+  buttonProps = { ...buttonProps, isDisabled, isQuiet };
   const triggerRef = useRef<FocusableRefValue<HTMLButtonElement>>(null);
   const unwrappedTriggerRef = useUnwrapDOMRef(triggerRef);
 
