@@ -101,7 +101,8 @@ interface TextFieldBaseProps
   loadingIndicator?: ReactElement;
   isLoading?: boolean;
   className?: string;
-  variant?: 'default' | 'quiet';
+  /** Whether the input should be displayed with a quiet style. */
+  isQuiet?: boolean;
 }
 
 export interface TextFieldRef
@@ -117,6 +118,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
   let {
     label,
     validationState,
+    isQuiet = false,
     isDisabled,
     isReadOnly,
     multiLine,
@@ -132,7 +134,6 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
     loadingIndicator,
     addonBefore,
     className,
-    variant = 'default',
     height,
   } = props;
   let { hoverProps, isHovered } = useHover({ isDisabled });
@@ -169,6 +170,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
   let textField = (
     <div
       className={classNames('ac-textfield', {
+        'ac-textfield--quiet': isQuiet,
         'ac-textfield--invalid': isInvalid,
         'ac-textfield--valid': validationState === 'valid',
         'ac-textfield--loadable': loadingIndicator,
@@ -178,7 +180,6 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         'is-disabled': isDisabled,
         'is-readonly': isReadOnly,
       })}
-      data-variant={variant}
       css={css`
         display: flex;
         flex-direction: row;
@@ -186,40 +187,86 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         align-items: center;
         min-width: 270px;
         width: 100%;
-        background-color: ${theme.components.textField.backgroundColor};
+
         transition: all 0.2s ease-in-out;
         overflow: hidden;
         font-size: ${theme.typography.sizes.medium.fontSize}px;
         box-sizing: border-box;
         --ac-textfield-border-color: ${theme.colors.lightGrayBorder};
-        border: 1px solid
+        border-bottom: 1px solid
           var(
             --ac-field-border-color-override,
             var(--ac-textfield-border-color)
           );
-        &[data-variant='default'] {
-          --ac-textfield-border-color: ${theme.colors.lightGrayBorder};
-          border-radius: ${theme.borderRadius.medium}px;
-        }
-        &.is-hovered:not(.is-disabled)[data-variant='default'] {
-          border: 1px solid ${theme.components.textField.hoverBorderColor};
-          background-color: ${theme.components.textField.activeBackgroundColor};
-        }
-        &.is-focused[data-variant='default'] {
-          border: 1px solid ${theme.components.textField.activeBorderColor};
-          background-color: ${theme.components.textField.activeBackgroundColor};
-          &.ac-textfield--invalid {
-            border: 1px solid ${theme.colors.statusDanger};
+
+        --ac-textfield-border-color: ${theme.colors.lightGrayBorder};
+
+        &.ac-textfield--quiet {
+          border-top: 1px solid transparent;
+          border-left: 1px solid transparent;
+          border-right: 1px solid transparent;
+          &.is-hovered:not(.is-disabled) {
+            border-bottom: 1px solid
+              ${theme.components.textField.hoverBorderColor};
+          }
+          &.is-focused:not(.is-disabled) {
+            border-bottom: 1px solid
+              ${theme.components.textField.activeBorderColor};
+
+            &.ac-textfield--invalid {
+              border-bottom: 1px solid ${theme.colors.statusDanger};
+            }
+          }
+          &.is-disabled {
+            border-bottom: 1px solid ${theme.colors.lightGrayBorder};
+            opacity: ${theme.opacity.disabled};
+            .ac-textfield__input {
+              color: ${theme.textColors.white50};
+            }
           }
         }
-        &.is-disabled {
-          border: 1px solid ${theme.colors.lightGrayBorder};
+        // The default style for the textfield
+        &:not(.ac-textfield--quiet) {
           background-color: ${theme.components.textField.backgroundColor};
-          opacity: ${theme.opacity.disabled};
-          .ac-textfield__input {
-            color: ${theme.textColors.white50};
+          border-radius: ${theme.borderRadius.medium}px;
+          border-top: 1px solid
+            var(
+              --ac-field-border-color-override,
+              var(--ac-textfield-border-color)
+            );
+          border-left: 1px solid
+            var(
+              --ac-field-border-color-override,
+              var(--ac-textfield-border-color)
+            );
+          border-right: 1px solid
+            var(
+              --ac-field-border-color-override,
+              var(--ac-textfield-border-color)
+            );
+          &.is-hovered:not(.is-disabled) {
+            border: 1px solid ${theme.components.textField.hoverBorderColor};
+            background-color: ${theme.components.textField
+              .activeBackgroundColor};
+          }
+          &.is-focused:not(.is-disabled) {
+            border: 1px solid ${theme.components.textField.activeBorderColor};
+            background-color: ${theme.components.textField
+              .activeBackgroundColor};
+            &.ac-textfield--invalid {
+              border: 1px solid ${theme.colors.statusDanger};
+            }
+          }
+          &.is-disabled {
+            border: 1px solid ${theme.colors.lightGrayBorder};
+            background-color: ${theme.components.textField.backgroundColor};
+            opacity: ${theme.opacity.disabled};
+            .ac-textfield__input {
+              color: ${theme.textColors.white50};
+            }
           }
         }
+
         .ac-textfield__input::placeholder {
           color: ${theme.textColors.white30};
           font-style: italic;

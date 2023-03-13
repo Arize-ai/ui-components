@@ -64,6 +64,32 @@ const buttonBaseCSS = css`
 `;
 
 /**
+ * Styles to add in addition to the base button styles for quiet
+ */
+const quietButtonCSS = css`
+  --ac-dropdown-button-border-color: ${theme.components.dropdown.borderColor};
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid
+    var(
+      --ac-field-border-color-override,
+      var(--ac-dropdown-button-border-color)
+    );
+  &.is-hovered {
+    border-bottom: 1px solid ${theme.components.dropdown.hoverBorderColor};
+  }
+  &.is-active,
+  &:focus {
+    border-bottom: 1px solid ${theme.components.dropdown.activeBorderColor};
+  }
+  &[disabled] {
+    cursor: default;
+    border-bottom: 1px solid ${theme.components.dropdown.borderColor};
+  }
+`;
+
+/**
  * Styles to add in addition to the base button styles for non-quiet
  */
 const nonQuietButtonCSS = css`
@@ -127,7 +153,7 @@ function DropdownButton(
           'is-hovered': isHovered,
         })}
         style={style}
-        css={css(buttonBaseCSS, !isQuiet && nonQuietButtonCSS)}
+        css={css(buttonBaseCSS, isQuiet ? quietButtonCSS : nonQuietButtonCSS)}
       >
         {addonBefore != null ? <AddonBefore>{addonBefore}</AddonBefore> : null}
         <Text className="ac-dropdown-button__text" textSize="medium">
