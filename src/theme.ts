@@ -88,13 +88,13 @@ export const theme = {
     dropdown: {
       backgroundColor: grayColors.gray500,
       borderColor: grayColors.gray100,
-      hoverBorderColor: borderColors.lightGrayHoverBorder,
+      hoverBorderColor: lighten(0.2, grayColors.gray100),
       activeBorderColor: arizeColors.arizeLightBlue,
       activeBackgroundColor: darken(0.02, grayColors.gray500),
     },
     textField: {
-      borderColor: borderColors.lightGrayBorder,
-      hoverBorderColor: borderColors.lightGrayHoverBorder,
+      borderColor: grayColors.gray100,
+      hoverBorderColor: lighten(0.2, grayColors.gray100),
       activeBorderColor: arizeColors.arizeLightBlue,
       backgroundColor: grayColors.gray500,
       activeBackgroundColor: darken(0.02, grayColors.gray500),

@@ -122,11 +122,9 @@ const textFieldBaseCSS = (height?: number) => css`
   overflow: hidden;
   font-size: ${theme.typography.sizes.medium.fontSize}px;
   box-sizing: border-box;
-  --ac-textfield-border-color: ${theme.colors.lightGrayBorder};
+  --ac-textfield-border-color: ${theme.components.textField.borderColor};
   border-bottom: 1px solid
     var(--ac-field-border-color-override, var(--ac-textfield-border-color));
-
-  --ac-textfield-border-color: ${theme.colors.lightGrayBorder};
 
   &.ac-textfield--quiet {
     border-top: 1px solid transparent;
@@ -179,6 +177,9 @@ const textFieldBaseCSS = (height?: number) => css`
         color: ${theme.textColors.white50};
       }
     }
+    .ac-textfield__input {
+      padding: ${theme.spacing.padding4}px ${theme.spacing.padding8}px;
+    }
   }
 
   .ac-textfield__input::placeholder {
@@ -191,7 +192,6 @@ const textFieldBaseCSS = (height?: number) => css`
     background-color: transparent;
     color: ${theme.textColors.white90};
     height: ${height ?? theme.singleLineHeight}px;
-    padding: ${theme.spacing.padding4}px ${theme.spacing.padding8}px;
     transition: all 0.2s ease-in-out;
     /** provide an alternate highlight */
     outline: none;

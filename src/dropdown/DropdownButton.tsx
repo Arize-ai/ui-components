@@ -28,7 +28,6 @@ export interface DropdownButtonProps extends AddonableProps {
 }
 
 const buttonBaseCSS = css`
-  min-width: 200px;
   border: none;
   background-color: transparent;
   color: ${theme.textColors.white90};
@@ -44,15 +43,13 @@ const buttonBaseCSS = css`
   .ac-dropdown-button__text {
     flex: 1 1 auto;
     text-align: left;
-    margin: ${theme.spacing.margin8}px ${theme.spacing.margin8}px
-      ${theme.spacing.margin8}px ${theme.spacing.margin16}px;
     display: inline-block;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
   }
   .ac-icon-wrap {
-    margin-right: 10px;
+    margin: 10px 0 10px 10px;
     flex: fixed;
     width: 16px;
     height: 16px;
@@ -71,11 +68,8 @@ const quietButtonCSS = css`
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   border-top: 1px solid transparent;
-  border-bottom: 1px solid
-    var(
-      --ac-field-border-color-override,
-      var(--ac-dropdown-button-border-color)
-    );
+  border-bottom: 1px solid transparent;
+  margin: ${theme.spacing.margin8}px 0 ${theme.spacing.margin8}px 0;
   &.is-hovered {
     border-bottom: 1px solid ${theme.components.dropdown.hoverBorderColor};
   }
@@ -93,6 +87,8 @@ const quietButtonCSS = css`
  * Styles to add in addition to the base button styles for non-quiet
  */
 const nonQuietButtonCSS = css`
+  min-width: 200px;
+  padding: 0 ${theme.spacing.margin8}px 0 0;
   --ac-dropdown-button-border-color: ${theme.components.dropdown.borderColor};
   border: 1px solid
     var(
@@ -113,6 +109,10 @@ const nonQuietButtonCSS = css`
   &[disabled] {
     cursor: default;
     border: 1px solid ${theme.components.dropdown.borderColor};
+  }
+  .ac-dropdown-button__text {
+    margin: ${theme.spacing.margin8}px ${theme.spacing.margin8}px
+      ${theme.spacing.margin8}px ${theme.spacing.margin16}px;
   }
 `;
 

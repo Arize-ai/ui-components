@@ -46,6 +46,7 @@ function Picker<T extends object>(
     name,
     autoFocus,
     addonBefore,
+    menuWidth,
   } = props;
 
   console.log(`isQuiet: ${isQuiet}`);
@@ -143,9 +144,16 @@ function Picker<T extends object>(
 
   useLayoutEffect(onResize, [state.selectedKey, onResize]);
 
+  // If quiet, use the default width, otherwise match the width of the button. This can be overridden by the menuWidth prop.
+  // Always have a minimum width of the button width. When quiet, there is an extra offset to add.
+  // Not using style props for this because they don't support `calc`.
+  let width = isQuiet ? null : buttonWidth;
+
   let style = {
     ...overlayProps.style,
-    minWidth: buttonWidth,
+    width: menuWidth ? menuWidth : width,
+    // TODO: move to a css variable
+    minWidth: isQuiet ? '200px' : buttonWidth,
   };
 
   const overlay = (
@@ -192,6 +200,7 @@ function Picker<T extends object>(
       )}
       ref={domRef}
       css={css`
+        --ac-dropdown-min-width: 200px;
         .ac-dropdown-button__text {
           .is-placeholder {
             color: ${theme.textColors.white50};
