@@ -21,11 +21,11 @@ import { DropdownMenu, DropdownButton } from '../dropdown';
 import { PressResponder, useHover } from '@react-aria/interactions';
 import React, { ReactElement, useCallback, useRef, useState } from 'react';
 import { PickerProps } from '../types';
-import { Text } from '../content';
 import { useSelectState } from '@react-stately/select';
 import theme from '../theme';
 import { useProviderProps } from '../provider';
 import { Field } from '../field';
+import { dimensionValue } from '../utils/styleProps';
 
 function Picker<T extends object>(
   props: PickerProps<T>,
@@ -48,8 +48,6 @@ function Picker<T extends object>(
     addonBefore,
     menuWidth,
   } = props;
-
-  console.log(`isQuiet: ${isQuiet}`);
 
   let state = useSelectState(props);
   let domRef = useDOMRef(ref);
@@ -151,7 +149,7 @@ function Picker<T extends object>(
 
   let style = {
     ...overlayProps.style,
-    width: menuWidth ? menuWidth : width,
+    width: menuWidth ? dimensionValue(menuWidth) : width,
     // TODO: move to a css variable
     minWidth: isQuiet ? '200px' : buttonWidth,
   };
@@ -178,13 +176,13 @@ function Picker<T extends object>(
     : placeholder;
   if (typeof contents === 'string') {
     contents = (
-      <Text
+      <span
         className={classNames({
           'is-placeholder': state.selectedItem == null,
         })}
       >
         {contents}
-      </Text>
+      </span>
     );
   }
 
@@ -203,7 +201,7 @@ function Picker<T extends object>(
         --ac-dropdown-min-width: 200px;
         .ac-dropdown-button__text {
           .is-placeholder {
-            color: ${theme.textColors.white50};
+            color: ${theme.textColors.white70};
           }
         }
       `}

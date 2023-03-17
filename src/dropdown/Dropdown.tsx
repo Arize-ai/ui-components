@@ -26,6 +26,8 @@ export type DropdownProps = {
   buttonProps?: DropdownButtonProps;
   /**
    * display the dropdown as quiet
+   * Can be provided via the Form as well
+   * @default false
    */
   isQuiet?: boolean;
   /**

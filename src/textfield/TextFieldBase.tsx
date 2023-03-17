@@ -3,7 +3,7 @@ import { classNames, createFocusableRef } from '../utils';
 import { Field } from '../field';
 import { FocusRing } from '@react-aria/focus';
 import { mergeProps } from '@react-aria/utils';
-import { PressEvents, StyleProps } from '@react-types/shared';
+import { PressEvents } from '@react-types/shared';
 import { Icon, AlertCircleOutline } from '../icon';
 import React, {
   HTMLAttributes,
@@ -32,10 +32,12 @@ import {
   AriaValidationProps,
   FocusableRefValue,
   AddonableProps,
+  StyleProps,
 } from '../types';
 import { AddonBefore } from '../field';
 import { useHover } from '@react-aria/interactions';
 import theme from '../theme';
+import { dimensionValue } from '../utils/styleProps';
 
 const appearKeyframes = keyframes`
     0% {  opacity: 0; }
@@ -110,13 +112,15 @@ interface TextFieldBaseProps
   isQuiet?: boolean;
 }
 
-const textFieldBaseCSS = (height?: number) => css`
+const textFieldBaseCSS = (styleProps: StyleProps) => css`
   display: flex;
   flex-direction: row;
   position: relative;
   align-items: center;
-  min-width: 270px;
-  width: 100%;
+  min-width: ${styleProps.width
+    ? dimensionValue(styleProps.width)
+    : dimensionValue('static-size-3400')};
+  width: ${styleProps.width ? dimensionValue(styleProps.width) : '100%'};
 
   transition: all 0.2s ease-in-out;
   overflow: hidden;
@@ -135,17 +139,13 @@ const textFieldBaseCSS = (height?: number) => css`
     }
     &.is-focused:not(.is-disabled) {
       border-bottom: 1px solid ${theme.components.textField.activeBorderColor};
-
-      &.ac-textfield--invalid {
-        border-bottom: 1px solid ${theme.colors.statusDanger};
-      }
     }
     &.is-disabled {
       border-bottom: 1px solid ${theme.colors.lightGrayBorder};
       opacity: ${theme.opacity.disabled};
-      .ac-textfield__input {
-        color: ${theme.textColors.white50};
-      }
+    }
+    &.ac-textfield--invalid:not(.is-disabled) {
+      border-bottom: 1px solid ${theme.colors.statusDanger};
     }
   }
   // The default style for the textfield
@@ -180,6 +180,10 @@ const textFieldBaseCSS = (height?: number) => css`
     .ac-textfield__input {
       padding: ${theme.spacing.padding4}px ${theme.spacing.padding8}px;
     }
+
+    &.ac-textfield--invalid:not(.is-disabled) {
+      border: 1px solid ${theme.colors.statusDanger};
+    }
   }
 
   .ac-textfield__input::placeholder {
@@ -190,8 +194,8 @@ const textFieldBaseCSS = (height?: number) => css`
     flex: 1 1 auto;
     box-sizing: border-box;
     background-color: transparent;
-    color: ${theme.textColors.white90};
-    height: ${height ?? theme.singleLineHeight}px;
+    color: var(--ac-field-text-color-override, ${theme.textColors.white90});
+    height: ${styleProps.height ?? theme.singleLineHeight}px;
     transition: all 0.2s ease-in-out;
     /** provide an alternate highlight */
     outline: none;
@@ -199,8 +203,8 @@ const textFieldBaseCSS = (height?: number) => css`
   }
 
   &.ac-textfield--multiline {
-    height: ${height ?? theme.singleLineHeight}px;
-    ${height && `padding-top: ${theme.spacing.padding4}px;`}
+    height: ${styleProps.height ?? theme.singleLineHeight}px;
+    ${styleProps.height && `padding-top: ${theme.spacing.padding4}px;`}
 
     textarea {
       resize: none;
@@ -210,7 +214,6 @@ const textFieldBaseCSS = (height?: number) => css`
 
   &.ac-textfield--invalid {
     color: ${theme.colors.statusDanger};
-    border: 1px solid ${theme.colors.statusDanger};
     .ac-textfield__input {
       // Make room for the invalid icon (outer padding + icon width + inner padding)
       padding-right: ${theme.spacing.padding8 + 24 + theme.spacing.padding4}px;
@@ -271,6 +274,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
     addonBefore,
     className,
     height,
+    width,
   } = props;
   let { hoverProps, isHovered } = useHover({ isDisabled });
   let [isFocused, setIsFocused] = React.useState(false);
@@ -317,7 +321,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         'is-disabled': isDisabled,
         'is-readonly': isReadOnly,
       })}
-      css={textFieldBaseCSS(height as number)}
+      css={textFieldBaseCSS({ height, width })}
     >
       {addonBefore != null ? (
         <AddonBefore key="addon-before">{addonBefore}</AddonBefore>

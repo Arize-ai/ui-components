@@ -7,7 +7,6 @@ import { useHover } from '@react-aria/interactions';
 import { FocusableRef } from '../types';
 import { useFocusableRef } from '../utils/useDOMRef';
 import theme from '../theme';
-import { Text } from '../content';
 import { AddonBefore } from '../field';
 import { Icon, ArrowIosDownwardOutline } from '../icon';
 import { AddonableProps } from '../types';
@@ -47,6 +46,7 @@ const buttonBaseCSS = css`
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    color: var(--ac-field-text-color-override, ${theme.textColors.white90});
   }
   .ac-icon-wrap {
     margin: 10px 0 10px 10px;
@@ -68,7 +68,11 @@ const quietButtonCSS = css`
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid
+    var(
+      --ac-field-border-color-override,
+      var(--ac-dropdown-button-border-color)
+    );
   margin: ${theme.spacing.margin8}px 0 ${theme.spacing.margin8}px 0;
   &.is-hovered {
     border-bottom: 1px solid ${theme.components.dropdown.hoverBorderColor};
@@ -156,9 +160,17 @@ function DropdownButton(
         css={css(buttonBaseCSS, isQuiet ? quietButtonCSS : nonQuietButtonCSS)}
       >
         {addonBefore != null ? <AddonBefore>{addonBefore}</AddonBefore> : null}
-        <Text className="ac-dropdown-button__text" textSize="medium">
+        <span
+          className="ac-dropdown-button__text"
+          css={css`
+            color: var(
+              --ac-field-text-color-override,
+              ${theme.textColors.white90}
+            );
+          `}
+        >
           {children}
-        </Text>
+        </span>
         <Icon svg={<ArrowIosDownwardOutline />} />
       </button>
     </FocusRing>

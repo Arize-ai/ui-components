@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { OverlayProvider } from '@react-aria/overlays';
 import { ProviderProps, ProviderContext } from '../types';
+import { GlobalStyles } from './GlobalStyles';
 
 const Context = React.createContext<ProviderContext | null>(null);
 
@@ -8,6 +9,7 @@ export function Provider(props: ProviderProps) {
   const { children, ...context } = props;
   return (
     <Context.Provider value={context}>
+      <GlobalStyles />
       <OverlayProvider>{children}</OverlayProvider>
     </Context.Provider>
   );
