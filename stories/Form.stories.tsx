@@ -14,6 +14,7 @@ import {
   Provider,
 } from '../src';
 import { useForm, Controller } from 'react-hook-form';
+import dedent from 'ts-dedent';
 
 const meta: Meta = {
   title: 'Form',
@@ -291,10 +292,15 @@ export const FormWithInlineSections: Story<FormProps> = () => {
           <Controller
             name={'time'}
             control={control}
-            render={({ field: { onChange, value } }) => (
+            rules={{ required: 'This field is required', min: 10, max: 20 }}
+            render={({
+              field: { onChange, value },
+              fieldState: { invalid, error },
+            }) => (
               <TextField
                 onChange={onChange}
                 value={value}
+                validationState={invalid ? 'invalid' : undefined}
                 aria-label={'time'}
                 type="number"
                 width={'static-size-900'}
@@ -318,6 +324,15 @@ export const FormWithInlineSections: Story<FormProps> = () => {
       </Form>
     </Provider>
   );
+};
+
+FormWithInlineSections.parameters = {
+  docs: {
+    description: {
+      story: dedent`
+      InlineFormSection allows you to create a an inline mad-lib style form. Make sure to add the appropriate aria-labels to your form elements.`,
+    },
+  },
 };
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test

@@ -130,62 +130,6 @@ const textFieldBaseCSS = (styleProps: StyleProps) => css`
   border-bottom: 1px solid
     var(--ac-field-border-color-override, var(--ac-textfield-border-color));
 
-  &.ac-textfield--quiet {
-    border-top: 1px solid transparent;
-    border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
-    &.is-hovered:not(.is-disabled) {
-      border-bottom: 1px solid ${theme.components.textField.hoverBorderColor};
-    }
-    &.is-focused:not(.is-disabled) {
-      border-bottom: 1px solid ${theme.components.textField.activeBorderColor};
-    }
-    &.is-disabled {
-      border-bottom: 1px solid ${theme.colors.lightGrayBorder};
-      opacity: ${theme.opacity.disabled};
-    }
-    &.ac-textfield--invalid:not(.is-disabled) {
-      border-bottom: 1px solid ${theme.colors.statusDanger};
-    }
-  }
-  // The default style for the textfield
-  &:not(.ac-textfield--quiet) {
-    background-color: ${theme.components.textField.backgroundColor};
-    border-radius: ${theme.borderRadius.medium}px;
-    border-top: 1px solid
-      var(--ac-field-border-color-override, var(--ac-textfield-border-color));
-    border-left: 1px solid
-      var(--ac-field-border-color-override, var(--ac-textfield-border-color));
-    border-right: 1px solid
-      var(--ac-field-border-color-override, var(--ac-textfield-border-color));
-    &.is-hovered:not(.is-disabled) {
-      border: 1px solid ${theme.components.textField.hoverBorderColor};
-      background-color: ${theme.components.textField.activeBackgroundColor};
-    }
-    &.is-focused:not(.is-disabled) {
-      border: 1px solid ${theme.components.textField.activeBorderColor};
-      background-color: ${theme.components.textField.activeBackgroundColor};
-      &.ac-textfield--invalid {
-        border: 1px solid ${theme.colors.statusDanger};
-      }
-    }
-    &.is-disabled {
-      border: 1px solid ${theme.colors.lightGrayBorder};
-      background-color: ${theme.components.textField.backgroundColor};
-      opacity: ${theme.opacity.disabled};
-      .ac-textfield__input {
-        color: ${theme.textColors.white50};
-      }
-    }
-    .ac-textfield__input {
-      padding: ${theme.spacing.padding4}px ${theme.spacing.padding8}px;
-    }
-
-    &.ac-textfield--invalid:not(.is-disabled) {
-      border: 1px solid ${theme.colors.statusDanger};
-    }
-  }
-
   .ac-textfield__input::placeholder {
     color: ${theme.textColors.white30};
     font-style: italic;
@@ -212,23 +156,6 @@ const textFieldBaseCSS = (styleProps: StyleProps) => css`
     }
   }
 
-  &.ac-textfield--invalid {
-    color: ${theme.colors.statusDanger};
-    .ac-textfield__input {
-      // Make room for the invalid icon (outer padding + icon width + inner padding)
-      padding-right: ${theme.spacing.padding8 + 24 + theme.spacing.padding4}px;
-    }
-  }
-  .ac-textfield__validation-icon {
-    /* Animate in the icon */
-    animation: ${appearKeyframes} ${0.2}s forwards ease-in-out;
-    top: ${theme.spacing.padding8}px;
-    right: ${theme.spacing.padding8}px;
-    position: absolute;
-    &.ac-textfield__validation-icon--invalid {
-      color: ${theme.colors.statusDanger};
-    }
-  }
   /* Style for type=search */
   input[type='search']::-webkit-search-cancel-button {
     -webkit-appearance: none;
@@ -240,6 +167,101 @@ const textFieldBaseCSS = (styleProps: StyleProps) => css`
 
   &.ac-textfield--nested {
     border: none;
+  }
+`;
+
+const quietTextfieldBaseCSS = css`
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  &.is-hovered:not(.is-disabled) {
+    border-bottom: 1px solid ${theme.components.textField.hoverBorderColor};
+  }
+  &.is-focused:not(.is-disabled) {
+    border-bottom: 1px solid ${theme.components.textField.activeBorderColor};
+  }
+  &.is-disabled {
+    border-bottom: 1px solid ${theme.colors.lightGrayBorder};
+    opacity: ${theme.opacity.disabled};
+  }
+  &.ac-textfield--invalid:not(.is-disabled) {
+    border-bottom: 1px solid ${theme.colors.statusDanger};
+  }
+  &.ac-textfield--invalid.ac-textfield__input {
+    // Make room for the invalid icon
+    padding-right: 24px;
+    color: ${theme.colors.statusDanger};
+  }
+
+  .ac-textfield__validation-icon {
+    /* Animate in the icon */
+    animation: ${appearKeyframes} ${0.2}s forwards ease-in-out;
+    top: ${theme.spacing.padding8}px;
+    right: 0;
+    position: absolute;
+    &.ac-textfield__validation-icon--invalid {
+      color: ${theme.colors.statusDanger};
+    }
+  }
+`;
+
+const standardTextfieldBaseCSS = css`
+  background-color: ${theme.components.textField.backgroundColor};
+  border-radius: ${theme.borderRadius.medium}px;
+  border-top: 1px solid
+    var(--ac-field-border-color-override, var(--ac-textfield-border-color));
+  border-left: 1px solid
+    var(--ac-field-border-color-override, var(--ac-textfield-border-color));
+  border-right: 1px solid
+    var(--ac-field-border-color-override, var(--ac-textfield-border-color));
+  &.is-hovered:not(.is-disabled) {
+    border: 1px solid ${theme.components.textField.hoverBorderColor};
+    background-color: ${theme.components.textField.activeBackgroundColor};
+  }
+  &.is-focused:not(.is-disabled) {
+    border: 1px solid ${theme.components.textField.activeBorderColor};
+    background-color: ${theme.components.textField.activeBackgroundColor};
+    &.ac-textfield--invalid {
+      border: 1px solid ${theme.colors.statusDanger};
+      .ac-textfield__input {
+        color: ${theme.colors.statusDanger};
+      }
+    }
+  }
+  &.is-disabled {
+    border: 1px solid ${theme.colors.lightGrayBorder};
+    background-color: ${theme.components.textField.backgroundColor};
+    opacity: ${theme.opacity.disabled};
+    .ac-textfield__input {
+      color: ${theme.textColors.white50};
+    }
+  }
+  .ac-textfield__input {
+    padding: ${theme.spacing.padding4}px ${theme.spacing.padding8}px;
+  }
+
+  &.ac-textfield--invalid:not(.is-disabled) {
+    border: 1px solid ${theme.colors.statusDanger};
+    .ac-textfield__input {
+      color: ${theme.colors.statusDanger};
+    }
+  }
+
+  &.ac-textfield--invalid .ac-textfield__input {
+    // Make room for the invalid icon (outer padding + icon width + inner padding)
+    padding-right: ${theme.spacing.padding8 + 24 + theme.spacing.padding4}px;
+    color: ${theme.colors.statusDanger};
+  }
+
+  .ac-textfield__validation-icon {
+    /* Animate in the icon */
+    animation: ${appearKeyframes} ${0.2}s forwards ease-in-out;
+    top: ${theme.spacing.padding8}px;
+    right: ${theme.spacing.padding8}px;
+    position: absolute;
+    &.ac-textfield__validation-icon--invalid {
+      color: ${theme.colors.statusDanger};
+    }
   }
 `;
 
@@ -321,7 +343,10 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         'is-disabled': isDisabled,
         'is-readonly': isReadOnly,
       })}
-      css={textFieldBaseCSS({ height, width })}
+      css={css(
+        textFieldBaseCSS({ height, width }),
+        isQuiet ? quietTextfieldBaseCSS : standardTextfieldBaseCSS
+      )}
     >
       {addonBefore != null ? (
         <AddonBefore key="addon-before">{addonBefore}</AddonBefore>

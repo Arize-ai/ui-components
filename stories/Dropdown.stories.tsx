@@ -77,10 +77,8 @@ export const Gallery = () => (
         <Dropdown
           menu={
             <List listSize="small">
-              <ListItem>hello</ListItem>
-              <ListItem>
-                hello asdfasdfasdfasdfasdfasdfasdfasdfasdadsfad
-              </ListItem>
+              <ListItem>Long item</ListItem>
+              <ListItem>A really long item</ListItem>
             </List>
           }
           buttonProps={{ addonBefore: 'Dataset A', style: { maxWidth: 250 } }}
