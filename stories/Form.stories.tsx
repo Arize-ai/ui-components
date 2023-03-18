@@ -131,6 +131,14 @@ const Template: Story<FormProps> = args => {
   );
 };
 
+// By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
+// https://storybook.js.org/docs/react/workflows/unit-testing
+export const Default = Template.bind({});
+
+export const Disabled = Template.bind({}, { isDisabled: true });
+
+Default.args = { type: 'primary', children: 'Button' };
+
 export const QuietForm: Story<FormProps> = () => {
   const { control, handleSubmit } = useForm();
   const onSubmit = (d: any) => {
@@ -432,11 +440,3 @@ export const FormWithInlineSectionsDisabled: Story<FormProps> = () => {
     </Provider>
   );
 };
-
-// By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
-// https://storybook.js.org/docs/react/workflows/unit-testing
-export const Default = Template.bind({});
-
-export const Disabled = Template.bind({}, { isDisabled: true });
-
-Default.args = { type: 'primary', children: 'Button' };
