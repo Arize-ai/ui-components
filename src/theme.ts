@@ -194,7 +194,7 @@ export const theme = {
     medium: 4,
   },
   opacity: {
-    disabled: 0.4,
+    disabled: 0.6,
   },
 };
 
