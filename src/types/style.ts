@@ -7,7 +7,7 @@ export interface StyleProps {
   /** The width of the element. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/width). */
   width?: DimensionValue;
   /** The height of the element. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/height). */
-  height?: number;
+  height?: string | number;
   /** The minimum width of the element. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/min-width). */
   minWidth?: string | number;
   /** The minimum height of the element. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/min-height). */
