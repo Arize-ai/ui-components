@@ -65,7 +65,7 @@ export interface FormProps extends DOMProps, AriaLabelingProps, LabelableProps {
    * The layout of the form.
    * @default 'vertical'
    */
-  layout: 'vertical' | 'inline';
+  layout?: 'vertical' | 'inline';
 }
 
 const formCSS = css`
