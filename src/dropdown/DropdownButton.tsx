@@ -11,6 +11,7 @@ import { AddonBefore } from '../field';
 import { Icon, ArrowIosDownwardOutline } from '../icon';
 import { AddonableProps } from '../types';
 import { FocusRing } from '@react-aria/focus';
+import { textSizeCSS } from '../content/styles';
 
 export interface DropdownButtonProps extends AddonableProps {
   /**
@@ -157,7 +158,11 @@ function DropdownButton(
           'is-hovered': isHovered,
         })}
         style={style}
-        css={css(buttonBaseCSS, isQuiet ? quietButtonCSS : nonQuietButtonCSS)}
+        css={css(
+          buttonBaseCSS,
+          textSizeCSS('medium'),
+          isQuiet ? quietButtonCSS : nonQuietButtonCSS
+        )}
       >
         {addonBefore != null ? <AddonBefore>{addonBefore}</AddonBefore> : null}
         <span
