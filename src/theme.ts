@@ -111,7 +111,7 @@ export const theme = {
       successHoverBackgroundColor: '#7EE787',
     },
     modal: {
-      bgColor: '#1C232B',
+      backgroundColor: grayColors.gray800,
     },
   },
   typography: {

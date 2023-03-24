@@ -26,7 +26,7 @@ const modalWrapperCSS = css`
 const exitTransitionAnimationTime = '0.1s';
 const enterTransitionAnimationTime = '0.2s';
 const modalCSS = css`
-  background-color: ${theme.components.modal.bgColor};
+  background-color: ${theme.components.modal.backgroundColor};
   pointer-events: auto;
   opacity: 0;
   &.ac-modal--slideOver {
