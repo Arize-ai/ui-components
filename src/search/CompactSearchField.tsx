@@ -7,7 +7,7 @@ import { classNames } from '../utils';
 import theme from '../theme';
 
 export interface CompactSearchFieldProps
-  extends Omit<TextFieldProps, 'variant'> {
+  extends Omit<TextFieldProps, 'isNested'> {
   /**
    * Whether or not there is a search in-flight
    * @default false
@@ -44,6 +44,7 @@ export function CompactSearchField(props: CompactSearchFieldProps) {
           border-radius: 0;
         }
         & .ac-textfield {
+          border: none;
           border-radius: 0 ${theme.rounding.rounding4}px
             ${theme.rounding.rounding4}px 0;
           // The button padding provides enough space
@@ -84,8 +85,8 @@ export function CompactSearchField(props: CompactSearchFieldProps) {
       <TextField
         ref={inputRef}
         {...props}
+        isNested
         type="search"
-        variant="quiet"
         onFocus={e => {
           setIsActive(true);
           onFocus && onFocus(e);

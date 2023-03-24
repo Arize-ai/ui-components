@@ -7,10 +7,11 @@ import { useHover } from '@react-aria/interactions';
 import { FocusableRef } from '../types';
 import { useFocusableRef } from '../utils/useDOMRef';
 import theme from '../theme';
-import { Text } from '../content';
 import { AddonBefore } from '../field';
 import { Icon, ArrowIosDownwardOutline } from '../icon';
 import { AddonableProps } from '../types';
+import { FocusRing } from '@react-aria/focus';
+import { textSizeCSS } from '../content/styles';
 
 export interface DropdownButtonProps extends AddonableProps {
   /**
@@ -27,7 +28,6 @@ export interface DropdownButtonProps extends AddonableProps {
 }
 
 const buttonBaseCSS = css`
-  min-width: 200px;
   border: none;
   background-color: transparent;
   color: ${theme.textColors.white90};
@@ -43,15 +43,14 @@ const buttonBaseCSS = css`
   .ac-dropdown-button__text {
     flex: 1 1 auto;
     text-align: left;
-    margin: ${theme.spacing.margin8}px ${theme.spacing.margin8}px
-      ${theme.spacing.margin8}px ${theme.spacing.margin16}px;
     display: inline-block;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    color: var(--ac-field-text-color-override, ${theme.textColors.white90});
   }
   .ac-icon-wrap {
-    margin-right: 10px;
+    margin: 10px 0 10px 10px;
     flex: fixed;
     width: 16px;
     height: 16px;
@@ -63,9 +62,38 @@ const buttonBaseCSS = css`
 `;
 
 /**
+ * Styles to add in addition to the base button styles for quiet
+ */
+const quietButtonCSS = css`
+  --ac-dropdown-button-border-color: ${theme.components.dropdown.borderColor};
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid
+    var(
+      --ac-field-border-color-override,
+      var(--ac-dropdown-button-border-color)
+    );
+  margin: ${theme.spacing.margin8}px 0 ${theme.spacing.margin8}px 0;
+  &.is-hovered {
+    border-bottom: 1px solid ${theme.components.dropdown.hoverBorderColor};
+  }
+  &.is-active,
+  &:focus {
+    border-bottom: 1px solid ${theme.components.dropdown.activeBorderColor};
+  }
+  &[disabled] {
+    cursor: default;
+    border-bottom: 1px solid ${theme.components.dropdown.borderColor};
+  }
+`;
+
+/**
  * Styles to add in addition to the base button styles for non-quiet
  */
 const nonQuietButtonCSS = css`
+  min-width: 200px;
+  padding: 0 ${theme.spacing.margin8}px 0 0;
   --ac-dropdown-button-border-color: ${theme.components.dropdown.borderColor};
   border: 1px solid
     var(
@@ -87,6 +115,10 @@ const nonQuietButtonCSS = css`
     cursor: default;
     border: 1px solid ${theme.components.dropdown.borderColor};
   }
+  .ac-dropdown-button__text {
+    margin: ${theme.spacing.margin8}px ${theme.spacing.margin8}px
+      ${theme.spacing.margin8}px ${theme.spacing.margin16}px;
+  }
 `;
 
 /**
@@ -107,29 +139,46 @@ function DropdownButton(
     children,
     style,
     addonBefore,
+    // TODO: add support for autoFocus
+    // autoFocus,
     ...otherProps
   } = props;
   const { buttonProps, isPressed } = useButton(props, domRef);
   const { hoverProps, isHovered } = useHover({ isDisabled });
 
   return (
-    <button
-      {...mergeProps(buttonProps, hoverProps, otherProps)}
-      ref={domRef}
-      className={classNames('ac-dropdown-button', {
-        'is-active': isActive || isPressed,
-        'is-disabled': isDisabled,
-        'is-hovered': isHovered,
-      })}
-      style={style}
-      css={css(buttonBaseCSS, !isQuiet && nonQuietButtonCSS)}
-    >
-      {addonBefore != null ? <AddonBefore>{addonBefore}</AddonBefore> : null}
-      <Text className="ac-dropdown-button__text" textSize="medium">
-        {children}
-      </Text>
-      <Icon svg={<ArrowIosDownwardOutline />} />
-    </button>
+    <FocusRing focusRingClass="focus-ring">
+      <button
+        {...mergeProps(buttonProps, hoverProps, otherProps)}
+        ref={domRef}
+        className={classNames('ac-dropdown-button', {
+          'ac-dropdown-button--quiet': isQuiet,
+          'is-active': isActive || isPressed,
+          'is-disabled': isDisabled,
+          'is-hovered': isHovered,
+        })}
+        style={style}
+        css={css(
+          buttonBaseCSS,
+          textSizeCSS('medium'),
+          isQuiet ? quietButtonCSS : nonQuietButtonCSS
+        )}
+      >
+        {addonBefore != null ? <AddonBefore>{addonBefore}</AddonBefore> : null}
+        <span
+          className="ac-dropdown-button__text"
+          css={css`
+            color: var(
+              --ac-field-text-color-override,
+              ${theme.textColors.white90}
+            );
+          `}
+        >
+          {children}
+        </span>
+        <Icon svg={<ArrowIosDownwardOutline />} />
+      </button>
+    </FocusRing>
   );
 }
 

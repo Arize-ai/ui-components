@@ -139,6 +139,7 @@ const Gallery: Story<void> = () => {
           <Item key="rarely">Rarely</Item>
           <Item key="sometimes">Sometimes</Item>
           <Item key="always">Always</Item>
+          <Item key="something">Something weirdly really long</Item>
         </Picker>
         <Picker
           label="disabled"
@@ -263,6 +264,50 @@ const Long: Story<PickerProps<string>> = args => {
       </Picker>
       <br />
       <Text>Selected Value: {frequency}</Text>
+    </Provider>
+  );
+};
+
+export const Inline: Story<PickerProps<string>> = args => {
+  const [subject, setSubject] = React.useState<string>('boy');
+  const [food, setFood] = React.useState<string>('cake');
+  return (
+    <Provider>
+      <p
+        css={css`
+          display: flex;
+          flex-direction: row;
+          align-items: baseline;
+          gap: 4px;
+        `}
+      >
+        <Text>Once Upon a time there was a little</Text>
+        <Picker
+          {...args}
+          selectedKey={subject}
+          onSelectionChange={selected => setSubject(selected as string)}
+          items={[
+            { id: 'boy', name: 'body' },
+            { id: 'dog', name: 'dog' },
+          ]}
+          isQuiet
+        >
+          {item => <Item key={item.id}>{item.name}</Item>}
+        </Picker>
+        <Text>Who liked</Text>
+        <Picker
+          {...args}
+          selectedKey={food}
+          onSelectionChange={selected => setFood(selected as string)}
+          items={[
+            { id: 'cake', name: 'cake' },
+            { id: 'chips', name: 'chips' },
+          ]}
+          isQuiet
+        >
+          {item => <Item key={item.id}>{item.name}</Item>}
+        </Picker>
+      </p>
     </Provider>
   );
 };

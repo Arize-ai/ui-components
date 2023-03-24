@@ -12,7 +12,12 @@ export interface TextFieldProps
   extends AriaTextFieldProps,
     AddonableProps,
     StyleProps {
-  variant?: 'default' | 'quiet';
+  /**
+   * Whether the input is nested within another input composite component
+   * @private
+   * @default false
+   */
+  isNested?: boolean;
 }
 
 function TextField(props: TextFieldProps, ref: RefObject<TextFieldRef>) {

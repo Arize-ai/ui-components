@@ -3,7 +3,7 @@ import { classNames, createFocusableRef } from '../utils';
 import { Field } from '../field';
 import { FocusRing } from '@react-aria/focus';
 import { mergeProps } from '@react-aria/utils';
-import { PressEvents, StyleProps } from '@react-types/shared';
+import { PressEvents } from '@react-types/shared';
 import { Icon, AlertCircleOutline } from '../icon';
 import React, {
   HTMLAttributes,
@@ -32,10 +32,12 @@ import {
   AriaValidationProps,
   FocusableRefValue,
   AddonableProps,
+  StyleProps,
 } from '../types';
 import { AddonBefore } from '../field';
 import { useHover } from '@react-aria/interactions';
 import theme from '../theme';
+import { dimensionValue } from '../utils/styleProps';
 
 const appearKeyframes = keyframes`
     0% {  opacity: 0; }
@@ -91,6 +93,11 @@ interface TextFieldBaseProps
   inputClassName?: string;
   validationIconClassName?: string;
   multiLine?: boolean;
+  /**
+   * Whether the input is nested within another input composite component
+   * @default false
+   */
+  isNested?: boolean;
   labelProps?: LabelHTMLAttributes<HTMLLabelElement>;
   inputProps:
     | InputHTMLAttributes<HTMLInputElement>
@@ -101,8 +108,162 @@ interface TextFieldBaseProps
   loadingIndicator?: ReactElement;
   isLoading?: boolean;
   className?: string;
-  variant?: 'default' | 'quiet';
+  /** Whether the input should be displayed with a quiet style. */
+  isQuiet?: boolean;
 }
+
+const textFieldBaseCSS = (styleProps: StyleProps) => css`
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  min-width: ${styleProps.width
+    ? dimensionValue(styleProps.width)
+    : dimensionValue('static-size-3400')};
+  width: ${styleProps.width ? dimensionValue(styleProps.width) : '100%'};
+
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  font-size: ${theme.typography.sizes.medium.fontSize}px;
+  box-sizing: border-box;
+  --ac-textfield-border-color: ${theme.components.textField.borderColor};
+  border-bottom: 1px solid
+    var(--ac-field-border-color-override, var(--ac-textfield-border-color));
+
+  .ac-textfield__input::placeholder {
+    color: ${theme.textColors.white30};
+    font-style: italic;
+  }
+  .ac-textfield__input {
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: var(--ac-field-text-color-override, ${theme.textColors.white90});
+    height: ${styleProps.height ?? theme.singleLineHeight}px;
+    transition: all 0.2s ease-in-out;
+    /** provide an alternate highlight */
+    outline: none;
+    border: none;
+  }
+
+  &.ac-textfield--multiline {
+    height: ${styleProps.height ?? theme.singleLineHeight}px;
+    ${styleProps.height && `padding-top: ${theme.spacing.padding4}px;`}
+
+    textarea {
+      resize: none;
+      overflow-y: scroll;
+    }
+  }
+
+  /* Style for type=search */
+  input[type='search']::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='rgba(255,255,255, 0.7)'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
+    cursor: pointer;
+  }
+
+  &.ac-textfield--nested {
+    border: none;
+  }
+`;
+
+const quietTextfieldBaseCSS = css`
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  &.is-hovered:not(.is-disabled) {
+    border-bottom: 1px solid ${theme.components.textField.hoverBorderColor};
+  }
+  &.is-focused:not(.is-disabled) {
+    border-bottom: 1px solid ${theme.components.textField.activeBorderColor};
+  }
+  &.is-disabled {
+    border-bottom: 1px solid ${theme.colors.lightGrayBorder};
+    opacity: ${theme.opacity.disabled};
+  }
+  &.ac-textfield--invalid:not(.is-disabled) {
+    border-bottom: 1px solid ${theme.colors.statusDanger};
+  }
+  &.ac-textfield--invalid.ac-textfield__input {
+    // Make room for the invalid icon
+    padding-right: 24px;
+    color: ${theme.colors.statusDanger};
+  }
+
+  .ac-textfield__validation-icon {
+    /* Animate in the icon */
+    animation: ${appearKeyframes} ${0.2}s forwards ease-in-out;
+    top: ${theme.spacing.padding8}px;
+    right: 0;
+    position: absolute;
+    &.ac-textfield__validation-icon--invalid {
+      color: ${theme.colors.statusDanger};
+    }
+  }
+`;
+
+const standardTextfieldBaseCSS = css`
+  background-color: ${theme.components.textField.backgroundColor};
+  border-radius: ${theme.borderRadius.medium}px;
+  border-top: 1px solid
+    var(--ac-field-border-color-override, var(--ac-textfield-border-color));
+  border-left: 1px solid
+    var(--ac-field-border-color-override, var(--ac-textfield-border-color));
+  border-right: 1px solid
+    var(--ac-field-border-color-override, var(--ac-textfield-border-color));
+  &.is-hovered:not(.is-disabled) {
+    border: 1px solid ${theme.components.textField.hoverBorderColor};
+    background-color: ${theme.components.textField.activeBackgroundColor};
+  }
+  &.is-focused:not(.is-disabled) {
+    border: 1px solid ${theme.components.textField.activeBorderColor};
+    background-color: ${theme.components.textField.activeBackgroundColor};
+    &.ac-textfield--invalid {
+      border: 1px solid ${theme.colors.statusDanger};
+      .ac-textfield__input {
+        color: ${theme.colors.statusDanger};
+      }
+    }
+  }
+  &.is-disabled {
+    border: 1px solid ${theme.colors.lightGrayBorder};
+    background-color: ${theme.components.textField.backgroundColor};
+    opacity: ${theme.opacity.disabled};
+    .ac-textfield__input {
+      color: ${theme.textColors.white50};
+    }
+  }
+  .ac-textfield__input {
+    padding: ${theme.spacing.padding4}px ${theme.spacing.padding8}px;
+  }
+
+  &.ac-textfield--invalid:not(.is-disabled) {
+    border: 1px solid ${theme.colors.statusDanger};
+    .ac-textfield__input {
+      color: ${theme.colors.statusDanger};
+    }
+  }
+
+  &.ac-textfield--invalid .ac-textfield__input {
+    // Make room for the invalid icon (outer padding + icon width + inner padding)
+    padding-right: ${theme.spacing.padding8 + 24 + theme.spacing.padding4}px;
+    color: ${theme.colors.statusDanger};
+  }
+
+  .ac-textfield__validation-icon {
+    /* Animate in the icon */
+    animation: ${appearKeyframes} ${0.2}s forwards ease-in-out;
+    top: ${theme.spacing.padding8}px;
+    right: ${theme.spacing.padding8}px;
+    position: absolute;
+    &.ac-textfield__validation-icon--invalid {
+      color: ${theme.colors.statusDanger};
+    }
+  }
+`;
 
 export interface TextFieldRef
   extends FocusableRefValue<
@@ -117,7 +278,9 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
   let {
     label,
     validationState,
+    isQuiet = false,
     isDisabled,
+    isNested,
     isReadOnly,
     multiLine,
     autoFocus,
@@ -132,8 +295,8 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
     loadingIndicator,
     addonBefore,
     className,
-    variant = 'default',
     height,
+    width,
   } = props;
   let { hoverProps, isHovered } = useHover({ isDisabled });
   let [isFocused, setIsFocused] = React.useState(false);
@@ -169,6 +332,8 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
   let textField = (
     <div
       className={classNames('ac-textfield', {
+        'ac-textfield--quiet': isQuiet,
+        'ac-textfield--nested': isNested,
         'ac-textfield--invalid': isInvalid,
         'ac-textfield--valid': validationState === 'valid',
         'ac-textfield--loadable': loadingIndicator,
@@ -178,104 +343,10 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         'is-disabled': isDisabled,
         'is-readonly': isReadOnly,
       })}
-      data-variant={variant}
-      css={css`
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        align-items: center;
-        min-width: 270px;
-        width: 100%;
-        background-color: ${theme.components.textField.backgroundColor};
-        transition: all 0.2s ease-in-out;
-        overflow: hidden;
-        font-size: ${theme.typography.sizes.medium.fontSize}px;
-        box-sizing: border-box;
-        --ac-textfield-border-color: ${theme.colors.lightGrayBorder};
-        border: 1px solid
-          var(
-            --ac-field-border-color-override,
-            var(--ac-textfield-border-color)
-          );
-        &[data-variant='default'] {
-          --ac-textfield-border-color: ${theme.colors.lightGrayBorder};
-          border-radius: ${theme.borderRadius.medium}px;
-        }
-        &.is-hovered:not(.is-disabled)[data-variant='default'] {
-          border: 1px solid ${theme.components.textField.hoverBorderColor};
-          background-color: ${theme.components.textField.activeBackgroundColor};
-        }
-        &.is-focused[data-variant='default'] {
-          border: 1px solid ${theme.components.textField.activeBorderColor};
-          background-color: ${theme.components.textField.activeBackgroundColor};
-          &.ac-textfield--invalid {
-            border: 1px solid ${theme.colors.statusDanger};
-          }
-        }
-        &.is-disabled {
-          border: 1px solid ${theme.colors.lightGrayBorder};
-          background-color: ${theme.components.textField.backgroundColor};
-          opacity: ${theme.opacity.disabled};
-          .ac-textfield__input {
-            color: ${theme.textColors.white50};
-          }
-        }
-        .ac-textfield__input::placeholder {
-          color: ${theme.textColors.white30};
-          font-style: italic;
-        }
-        .ac-textfield__input {
-          flex: 1 1 auto;
-          box-sizing: border-box;
-          background-color: transparent;
-          color: ${theme.textColors.white90};
-          height: ${height ?? theme.singleLineHeight}px;
-          padding: ${theme.spacing.padding4}px ${theme.spacing.padding8}px;
-          transition: all 0.2s ease-in-out;
-          /** provide an alternate highlight */
-          outline: none;
-          border: none;
-        }
-
-        &.ac-textfield--multiline {
-          height: ${height ?? theme.singleLineHeight}px;
-          ${height && `padding-top: ${theme.spacing.padding4}px;`}
-
-          textarea {
-            resize: none;
-            overflow-y: scroll;
-          }
-        }
-
-        &.ac-textfield--invalid {
-          color: ${theme.colors.statusDanger};
-          border: 1px solid ${theme.colors.statusDanger};
-          .ac-textfield__input {
-            // Make room for the invalid icon (outer padding + icon width + inner padding)
-            padding-right: ${theme.spacing.padding8 +
-              24 +
-              theme.spacing.padding4}px;
-          }
-        }
-        .ac-textfield__validation-icon {
-          /* Animate in the icon */
-          animation: ${appearKeyframes} ${0.2}s forwards ease-in-out;
-          top: ${theme.spacing.padding8}px;
-          right: ${theme.spacing.padding8}px;
-          position: absolute;
-          &.ac-textfield__validation-icon--invalid {
-            color: ${theme.colors.statusDanger};
-          }
-        }
-        /* Style for type=search */
-        input[type='search']::-webkit-search-cancel-button {
-          -webkit-appearance: none;
-          width: 16px;
-          height: 16px;
-          background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='rgba(255,255,255, 0.7)'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
-          cursor: pointer;
-        }
-      `}
+      css={css(
+        textFieldBaseCSS({ height, width }),
+        isQuiet ? quietTextfieldBaseCSS : standardTextfieldBaseCSS
+      )}
     >
       {addonBefore != null ? (
         <AddonBefore key="addon-before">{addonBefore}</AddonBefore>

@@ -5,6 +5,7 @@ import { AriaLabelingProps, DOMProps, FocusableDOMProps } from './dom';
 import { SingleSelection } from './selection';
 import { FocusableProps } from './events';
 import { StyleProps } from './style';
+import { DimensionValue } from './core';
 
 export interface SelectProps<T>
   extends CollectionBase<T>,
@@ -63,6 +64,10 @@ export interface PickerProps<T>
   autoFocus?: boolean;
   /** Whether or not the picker is loading */
   isLoading?: boolean;
+  /**
+   * The width of the menu.
+   */
+  menuWidth?: DimensionValue;
   /**
    * When you reach the bottom of a loading list
    */

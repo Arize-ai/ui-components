@@ -11,6 +11,7 @@ import { filterDOMProps } from '@react-aria/utils';
 import React, { useContext, ReactElement, FormEventHandler } from 'react';
 import { css } from '@emotion/react';
 import { Provider } from '../provider';
+import theme from '../theme';
 
 let FormContext = React.createContext<LabelableProps>({});
 
@@ -31,7 +32,8 @@ const formPropNames = new Set([
 export interface FormProps extends DOMProps, AriaLabelingProps, LabelableProps {
   /** The contents of the Form. */
   children: ReactElement<LabelableProps> | ReactElement<LabelableProps>[];
-
+  /** Whether the Form elements are displayed with their quiet style. */
+  isQuiet?: boolean;
   /** Whether the Form elements are disabled. */
   isDisabled?: boolean;
   /** Whether the Form elements can be selected but not changed by the user. */
@@ -59,17 +61,61 @@ export interface FormProps extends DOMProps, AriaLabelingProps, LabelableProps {
    * Fired on form submission.
    */
   onSubmit?: FormEventHandler;
+  /**
+   * The layout of the form.
+   * @default 'vertical'
+   */
+  layout?: 'vertical' | 'inline';
 }
+
+const formCSS = css`
+  // Vertical layout style
+  &.ac-form--vertical {
+    & > div,
+    & {
+      & > .ac-field:not(.ac-field--hasHelpText) {
+        margin-bottom: 20px;
+      }
+      & > .ac-field {
+        & > .ac-dropdown {
+          width: 100%;
+          & > .ac-dropdown-button {
+            width: 100%;
+          }
+        }
+        & > .ac-dropdown-button {
+          width: 100%;
+        }
+      }
+    }
+  }
+  // Inline layout style
+  &.ac-form--inline {
+    & > div,
+    & {
+      width: 100%;
+      display: inline-flex;
+      flex-direction: row;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.5em;
+
+      --ac-field-text-color-override: ${theme.colors.arizeLightBlue};
+    }
+  }
+`;
 
 function Form(props: FormProps, ref: DOMRef<HTMLFormElement>) {
   let {
     children,
     labelPosition = 'top' as LabelPosition,
     labelAlign = 'start' as Alignment,
+    layout = 'vertical',
     isRequired,
     necessityIndicator,
     isDisabled,
     isReadOnly,
+    isQuiet,
     ...otherProps
   } = props;
   let domRef = useDOMRef(ref);
@@ -91,29 +137,17 @@ function Form(props: FormProps, ref: DOMRef<HTMLFormElement>) {
       className={classNames('ac-form', {
         'ac-form--positionSide': labelPosition === 'side',
         'ac-form--positionTop': labelPosition === 'top',
+        'ac-form--vertical': layout === 'vertical',
+        'ac-form--inline': layout !== 'vertical',
       })}
-      css={css`
-        & > div,
-        & {
-          & > .ac-field:not(.ac-field--hasHelpText) {
-            margin-bottom: 20px;
-          }
-          & > .ac-field {
-            & > .ac-dropdown {
-              width: 100%;
-              & > .ac-dropdown-button {
-                width: 100%;
-              }
-            }
-            & > .ac-dropdown-button {
-              width: 100%;
-            }
-          }
-        }
-      `}
+      css={formCSS}
     >
       <FormContext.Provider value={ctx}>
-        <Provider isDisabled={isDisabled} isReadOnly={isReadOnly}>
+        <Provider
+          isQuiet={isQuiet}
+          isDisabled={isDisabled}
+          isReadOnly={isReadOnly}
+        >
           {children}
         </Provider>
       </FormContext.Provider>
