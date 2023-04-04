@@ -13,8 +13,6 @@ import React, { ReactNode } from 'react';
 
 import { Icon, InfoOutline, QuestionOutline } from '../icon';
 import { HelpTooltip, TooltipTrigger } from '../tooltip';
-import { css } from '@emotion/react';
-import theme from '../theme';
 
 export interface ContextualHelpProps
   extends OverlayTriggerProps,
