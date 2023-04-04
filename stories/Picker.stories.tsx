@@ -1,6 +1,13 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Item, Picker, PickerProps, Text, Button } from '../src';
+import {
+  Item,
+  Picker,
+  PickerProps,
+  Text,
+  Button,
+  ContextualHelp,
+} from '../src';
 import { Provider } from '../src';
 import { css } from '@emotion/react';
 import InfoTip from './components/InfoTip';
@@ -191,7 +198,7 @@ const Gallery: Story<void> = () => {
           </Picker>
           <Picker
             label="With label extra"
-            labelExtra={<InfoTip>This is info</InfoTip>}
+            labelExtra={<ContextualHelp>This is info</ContextualHelp>}
             selectedKey={frequency}
             onSelectionChange={selected => setFrequency(selected as string)}
           >

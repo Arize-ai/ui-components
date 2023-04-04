@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
-import { Form, TextArea, TextAreaProps } from '../src';
+import { ContextualHelp, Form, TextArea, TextAreaProps } from '../src';
 import InfoTip from './components/InfoTip';
 
 const meta: Meta = {
@@ -54,7 +54,7 @@ export const Gallery = () => (
     <TextArea
       label="Charge"
       labelExtra={
-        <InfoTip postfix={false}>The amount you will be charged</InfoTip>
+        <ContextualHelp>The amount you will be charged</ContextualHelp>
       }
       placeholder="Enter your amount"
       isRequired
@@ -64,7 +64,7 @@ export const Gallery = () => (
     <TextArea
       label="Disabled"
       labelExtra={
-        <InfoTip postfix={false}>The amount you will be charged</InfoTip>
+        <ContextualHelp>The amount you will be charged</ContextualHelp>
       }
       placeholder="Enter your amount"
       isDisabled
@@ -73,7 +73,7 @@ export const Gallery = () => (
     <TextArea
       label="Read Only"
       labelExtra={
-        <InfoTip postfix={false}>The amount you will be charged</InfoTip>
+        <ContextualHelp>The amount you will be charged</ContextualHelp>
       }
       placeholder="Enter your amount"
       isReadOnly

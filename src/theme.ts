@@ -80,6 +80,7 @@ export const theme = {
     },
     tooltip: {
       backgroundColor: '#3C4C5D',
+      borderColor: lighten(0.3, '#3C4C5D'),
     },
     actionTooltip: {
       backgroundColor: '#2D3845',
