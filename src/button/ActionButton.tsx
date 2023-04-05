@@ -6,9 +6,16 @@ import { useHover } from '@react-aria/interactions';
 import { FocusableRef, PressEvents } from '../types';
 import { useFocusableRef } from '../utils/useDOMRef';
 import { BaseButtonProps } from '../types/button';
+import { css } from '@emotion/react';
+import { theme } from '../theme';
 
 interface ActionButtonProps extends BaseButtonProps, PressEvents {
   style?: CSSProperties;
+  /**
+   * Whether the button gets button styles removed or not
+   * @default false
+   */
+  isQuiet?: boolean;
 }
 
 /**
@@ -22,7 +29,7 @@ function ActionButton(
   ref: FocusableRef<HTMLButtonElement>
 ) {
   let domRef = useFocusableRef(ref);
-  const { isDisabled, children, style, ...otherProps } = props;
+  const { isDisabled, children, style, isQuiet = false, ...otherProps } = props;
   const { buttonProps, isPressed } = useButton(props, domRef);
   const { hoverProps, isHovered } = useHover({ isDisabled });
 
@@ -36,11 +43,31 @@ function ActionButton(
         'is-hovered': isHovered,
       })}
       style={style}
+      css={isQuiet ? quietButtonCSS : null}
     >
       {children}
     </button>
   );
 }
+
+const quietButtonCSS = css`
+  border: none;
+  margin: 0;
+  padding: 0.2em;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  border-radius: ${theme.rounding.rounding4}px;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    opacity: 1;
+    background-color: ${theme.colors.gray500};
+  }
+  svg {
+    padding: var(--ac-dimension-size-85);
+  }
+`;
 
 /**
  * ActionButtons allow users to perform an action.

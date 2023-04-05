@@ -1,8 +1,19 @@
 import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
-import { Form, TextField, TextFieldProps } from '../src';
+import {
+  Form,
+  TextField,
+  TextFieldProps,
+  ContextualHelp,
+  Heading,
+  Section,
+  Text,
+  Content,
+  theme,
+} from '../src';
 import InfoTip from './components/InfoTip';
+import { css } from '@emotion/react';
 
 const meta: Meta = {
   title: 'TextField',
@@ -20,6 +31,29 @@ const meta: Meta = {
 
 export default meta;
 
+const contextualHelp = (
+  <ContextualHelp>
+    <Heading level={3} weight="heavy">
+      Need help?
+    </Heading>
+    <Content>
+      <Text elementType="p" textSize="small">
+        If you're having issues accessing your account, contact our customer
+        support team for help.
+      </Text>
+    </Content>
+    <footer
+      css={css`
+        .ac-text {
+          text-decoration: underline;
+          color: ${theme.colors.arizeLightBlue};
+        }
+      `}
+    >
+      <Text textSize="small">Learn more about accounts</Text>
+    </footer>
+  </ContextualHelp>
+);
 /**
  * A gallery of all the variants
  */
@@ -47,9 +81,7 @@ export const Gallery = () => (
     />
     <TextField
       label="Charge"
-      labelExtra={
-        <InfoTip postfix={false}>The amount you will be charged</InfoTip>
-      }
+      labelExtra={contextualHelp}
       placeholder="enter your amount"
       isRequired
       validationState={'invalid'}
@@ -58,9 +90,7 @@ export const Gallery = () => (
     />
     <TextField
       label="Disabled"
-      labelExtra={
-        <InfoTip postfix={false}>The amount you will be charged</InfoTip>
-      }
+      labelExtra={contextualHelp}
       placeholder="enter your amount"
       isDisabled
       addonBefore="$"
@@ -68,9 +98,7 @@ export const Gallery = () => (
     />
     <TextField
       label="Read Only"
-      labelExtra={
-        <InfoTip postfix={false}>The amount you will be charged</InfoTip>
-      }
+      labelExtra={contextualHelp}
       placeholder="enter your amount"
       isReadOnly
       addonBefore="$"
@@ -80,9 +108,7 @@ export const Gallery = () => (
     <TextField
       label="With Description"
       description="This is the description"
-      labelExtra={
-        <InfoTip postfix={false}>The amount you will be charged</InfoTip>
-      }
+      labelExtra={contextualHelp}
       placeholder="enter your amount"
       isReadOnly
       addonBefore="$"

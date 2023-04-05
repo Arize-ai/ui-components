@@ -92,11 +92,7 @@ function Heading(props: HeadingProps, ref: DOMRef<HTMLHeadingElement>) {
   return (
     <HeadingTag
       {...otherProps}
-      css={css`
-        ${headingCSS};
-        ${headingSizeCSS(level)};
-        ${headingWeightCSS(weight)};
-      `}
+      css={css(headingCSS, headingSizeCSS(level), headingWeightCSS(weight))}
       ref={domRef}
     >
       {children}

@@ -28,7 +28,7 @@ export interface DialogProps extends AriaDialogProps {
   /**
    * The title that will be displayed at the top of the dialog.
    */
-  title: ReactNode;
+  title?: ReactNode;
   /**
    * component to display on the top-right of the dialog. Useful for things like pagination
    */

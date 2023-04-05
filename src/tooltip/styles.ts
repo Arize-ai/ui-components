@@ -33,6 +33,7 @@ export const tooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
     --tooltip-animation-distance: ${theme.spacing.tooltip.offset}px;
     --tooltip-target-offset: ${theme.spacing.tooltip.offset}px;
     --tooltip-tip-width: 8px;
+    --tooltip-max-inline-size: 200px;
     color: ${theme.textColors.white90};
     background-color: ${tooltipStyles.backgroundColor};
     position: relative;
@@ -48,7 +49,7 @@ export const tooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
     padding: ${theme.spacing.padding8}px;
     border-radius: 4px;
     min-height: 24px;
-    max-inline-size: 200px;
+    max-inline-size: var(--tooltip-max-inline-size);
 
     word-break: break-word;
     -webkit-font-smoothing: antialiased;
@@ -156,6 +157,7 @@ export const actionTooltipCSS = ({
     --tooltip-animation-distance: ${theme.spacing.tooltip.offset}px;
     --tooltip-target-offset: ${theme.spacing.tooltip.offset}px;
     --tooltip-tip-width: 8px;
+    --tooltip-max-inline-size: 500px;
     color: ${theme.textColors.white90};
     background-color: ${actionTooltipStyles.backgroundColor};
     border-radius: 8px;
@@ -172,7 +174,7 @@ export const actionTooltipCSS = ({
 
     border-radius: 4px;
     min-height: 24px;
-    max-inline-size: 500px;
+    max-inline-size: var(--tooltip-max-inline-size);
 
     word-break: break-word;
     -webkit-font-smoothing: antialiased;
@@ -195,3 +197,67 @@ export const actionTooltipHeaderWrap = css`
   border-bottom: 1px solid ${actionTooltipStyles.borderColor};
   padding: ${theme.spacing.padding8}px;
 `;
+
+export const helpTooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
+  let transformCSS = css``;
+  switch (placement) {
+    case 'bottom':
+      transformCSS = css`
+        transform: translateY(var(--tooltip-animation-distance));
+      `;
+      break;
+    case 'top':
+      transformCSS = css`
+        transform: translateY(calc(-1 * var(--tooltip-animation-distance)));
+      `;
+      break;
+    case 'left':
+      transformCSS = css`
+        transform: translateX(calc(-1 * var(--tooltip-animation-distance)));
+      `;
+      break;
+    case 'right':
+      transformCSS = css`
+        transform: translateX(var(--tooltip-animation-distance));
+      `;
+      break;
+  }
+  return css`
+    --tooltip-animation-distance: ${theme.spacing.tooltip.offset}px;
+    --tooltip-target-offset: ${theme.spacing.tooltip.offset}px;
+    --tooltip-max-inline-size: 300px;
+    color: ${theme.textColors.white90};
+    background-color: ${tooltipStyles.backgroundColor};
+    position: relative;
+    box-sizing: border-box;
+    font-size: ${theme.typography.sizes.medium.fontSize}px;
+
+    vertical-align: top;
+
+    width: auto;
+    padding: ${theme.spacing.padding16}px;
+    border-radius: ${theme.rounding.rounding4}px;
+    border: 1px solid ${tooltipStyles.borderColor};
+    min-height: 24px;
+    max-inline-size: var(--tooltip-max-inline-size);
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.1);
+
+    word-break: break-word;
+    -webkit-font-smoothing: antialiased;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: transform 200ms ease-in-out, opacity 200ms ease-in-out,
+      visibility 200ms linear;
+    &.is-open {
+      visibility: visible;
+      opacity: 1;
+      transition-delay: 0ms;
+      pointer-events: auto;
+      ${transformCSS};
+    }
+    .ac-content {
+      margin: ${theme.spacing.margin8}px 0 ${theme.spacing.margin8}px 0;
+    }
+  `;
+};
