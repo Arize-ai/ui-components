@@ -50,41 +50,7 @@ export const Gallery = () => {
         flex-wrap: wrap;
       `}
     >
-      <View title="Title" style={viewStyle} />
-      <View
-        title={
-          <div
-            css={css`
-              display: flex;
-              align-items: center;
-              gap: 8px;
-            `}
-          >
-            <Text>Metric</Text>
-            <Provider>
-              <Picker>
-                <Item>First Item</Item>
-              </Picker>
-            </Provider>
-          </div>
-        }
-        titleExtra={
-          <ButtonGroup aria-label="some group">
-            <Button variant="default" icon={plusIcon} />
-            <Button variant="default" icon={minusIcon} />
-          </ButtonGroup>
-        }
-        style={viewStyle}
-      />
-      <View
-        title="Title"
-        titleExtra={
-          <Button variant="default" size="normal">
-            Create Dashboard
-          </Button>
-        }
-        style={viewStyle}
-      />
+      <View>View</View>
     </div>
   );
 };
