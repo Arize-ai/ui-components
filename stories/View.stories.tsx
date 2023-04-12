@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { View, ViewProps } from '../src';
+import { Provider, View, ViewProps } from '../src';
 import { Icon, PlusCircleOutline, MinusCircleOutline } from '../src/icon';
 import { withDesign } from 'storybook-addon-designs';
 import { css } from '@emotion/react';
@@ -15,6 +15,12 @@ const meta: Meta = {
         type: 'text',
       },
     },
+    padding: {
+      control: {
+        type: 'select',
+        options: ['static-size-50', 'static-size-100', 'static-size-200'],
+      },
+    },
   },
   parameters: {
     controls: { expanded: true },
@@ -27,19 +33,19 @@ const meta: Meta = {
 
 export default meta;
 
-export const Gallery = () => {
+const Template = args => {
   return (
-    <div
-      css={css`
-        display: flex;
-        flex-wrap: wrap;
-      `}
-    >
-      <View>This is a View</View>
-    </div>
+    <Provider>
+      <div
+        css={css`
+          display: flex;
+          flex-wrap: wrap;
+        `}
+      >
+        <View {...args}>This is a View</View>
+      </div>
+    </Provider>
   );
 };
-
-const Template: Story<ViewProps> = args => <View {...args} />;
 
 export const Default = Template.bind({});
