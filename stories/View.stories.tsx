@@ -1,22 +1,9 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import {
-  Text,
-  Button,
-  View,
-  ViewProps,
-  Picker,
-  Item,
-  Provider,
-  ButtonGroup,
-  Card,
-} from '../src';
+import { View, ViewProps } from '../src';
 import { Icon, PlusCircleOutline, MinusCircleOutline } from '../src/icon';
 import { withDesign } from 'storybook-addon-designs';
 import { css } from '@emotion/react';
-
-const plusIcon = <Icon svg={<PlusCircleOutline />} />;
-const minusIcon = <Icon svg={<MinusCircleOutline />} />;
 
 const meta: Meta = {
   title: 'View',
@@ -40,8 +27,6 @@ const meta: Meta = {
 
 export default meta;
 
-const viewStyle = { width: 800, height: 200, margin: '10px' };
-
 export const Gallery = () => {
   return (
     <div
@@ -50,7 +35,7 @@ export const Gallery = () => {
         flex-wrap: wrap;
       `}
     >
-      <View>View</View>
+      <View>This is a View</View>
     </div>
   );
 };

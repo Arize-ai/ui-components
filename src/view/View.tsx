@@ -1,8 +1,9 @@
 import React, { JSXElementConstructor, ReactNode, forwardRef } from 'react';
-import { DOMRef } from '../types';
+import { css } from '@emotion/react';
+import theme from '../theme';
+import { DOMRef, DimensionValue } from '../types';
 import { useDOMRef } from '../utils';
 import { useId } from '@react-aria/utils';
-import { viewCSS } from './styles';
 
 export interface ViewProps {
   /**
@@ -11,19 +12,31 @@ export interface ViewProps {
   children?: ReactNode;
   /**
    * The element to render as the node.
+   * @default 'section'
    */
   elementType?: string | JSXElementConstructor<any>;
+  padding?: DimensionValue;
   id?: string;
 }
 
 function View(props: ViewProps, ref: DOMRef) {
-  const { children, elementType: ElementType = 'section', id } = props;
+  const {
+    children,
+    elementType: ElementType = 'section',
+    padding = 16,
+    id,
+  } = props;
   const viewId = useId(id);
   const domRef = useDOMRef(ref);
   return (
     <ElementType
       ref={domRef}
-      css={viewCSS}
+      css={css`
+        color: ${theme.textColors.white90};
+        border: 1px solid ${theme.components.card.borderColor};
+        overflow: hidden;
+        padding: ${padding}px;
+      `}
       className="ac-view"
       aria-labelledby={viewId}
     >
