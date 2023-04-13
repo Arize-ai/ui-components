@@ -16,25 +16,52 @@ export interface ViewProps {
    * @default 'div'
    */
   elementType?: string | JSXElementConstructor<any>;
-  padding?: 'static-size-50' | 'static-size-100' | 'static-size-200'; // TODO use Extract
-  // borderRadius?: string;
-  // BorderColor[ColorVersion]
-  // BackgroundColor[ColorVersion]
+  padding?: Extract<
+    DimensionValue,
+    'static-size-50' | 'static-size-100' | 'static-size-200'
+  >;
+  borderRadius?: string;
+  borderColor?: string;
+  backgroundColor?: string;
+  width?: DimensionValue;
+  height?: DimensionValue;
   id?: string;
 }
 
 function View(props: ViewProps, ref: DOMRef) {
-  const { children, elementType: ElementType = 'div', padding, id } = props;
+  const {
+    children,
+    elementType: ElementType = 'div',
+    padding,
+    borderRadius,
+    borderColor,
+    backgroundColor,
+    width = 'static-size-4000',
+    height = 'static-size-4000',
+    id,
+  } = props;
   const viewId = useId(id);
   const domRef = useDOMRef(ref);
   return (
     <ElementType
       ref={domRef}
       css={css`
-        color: ${theme.textColors.white90};
-        border: 1px solid ${theme.components.card.borderColor};
         overflow: hidden;
         padding: ${padding != null ? dimensionValue(padding) : 0};
+        border: 1px solid
+          ${
+            borderColor != null
+              ? borderColor
+              : theme.components.card.borderColor
+          };
+        background-color: ${
+          backgroundColor != null
+            ? backgroundColor
+            : theme.components.card.backgroundColor
+        }
+        border-radius: ${borderRadius != null ? `${borderRadius}px` : 0};
+        width: ${width != null ? dimensionValue(width) : 0};
+        height: ${height != null ? dimensionValue(height) : 0};
       `}
       className="ac-view"
       aria-labelledby={viewId}
