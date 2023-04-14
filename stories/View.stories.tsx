@@ -63,6 +63,7 @@ export const Gallery = args => {
             padding="static-size-100"
             borderRadius="medium"
             borderColor="light"
+            {...args}
           >
             <Form>
               <TextField />

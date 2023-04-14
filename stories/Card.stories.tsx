@@ -6,7 +6,7 @@ import { Card, CardProps, TabbedCard } from '../src/card';
 import { Tabs } from '../src/tabs';
 import { Button } from '../src/button';
 import InfoTip from './components/InfoTip';
-import { Heading } from '../src';
+import { Heading, Provider } from '../src';
 
 const { TabPane } = Tabs;
 
@@ -185,28 +185,32 @@ const GalleryCards = (props: { variant: CardProps['variant'] }) => {
 
 export const Gallery = () => {
   return (
-    <div>
-      <section>
-        <Heading>Default variant</Heading>
-        <GalleryCards variant="default" />
-      </section>
-      <section>
-        <Heading>Compact variant</Heading>
-        <GalleryCards variant="compact" />
-      </section>
-    </div>
+    <Provider>
+      <div>
+        <section>
+          <Heading>Default variant</Heading>
+          <GalleryCards variant="default" />
+        </section>
+        <section>
+          <Heading>Compact variant</Heading>
+          <GalleryCards variant="compact" />
+        </section>
+      </div>
+    </Provider>
   );
 };
 
 const Template: Story<CardProps> = args => (
-  <Card
-    title="Title"
-    subTitle="Subtext area"
-    style={{ width: 400, height: 200 }}
-    {...args}
-  >
-    Content goes here
-  </Card>
+  <Provider>
+    <Card
+      title="Title"
+      subTitle="Subtext area"
+      style={{ width: 400, height: 200 }}
+      {...args}
+    >
+      Content goes here
+    </Card>
+  </Provider>
 );
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
