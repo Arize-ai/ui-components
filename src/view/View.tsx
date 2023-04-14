@@ -1,6 +1,5 @@
 import React, { JSXElementConstructor, ReactNode, forwardRef } from 'react';
 import { css } from '@emotion/react';
-import theme from '../theme';
 import { DOMRef, DimensionValue } from '../types';
 import { useDOMRef } from '../utils';
 import { useId } from '@react-aria/utils';
