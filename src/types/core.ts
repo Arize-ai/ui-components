@@ -89,3 +89,11 @@ export type DimensionValue =
   // This allows autocomplete to work properly and not collapse the above options into just `string`.
   // https://github.com/microsoft/TypeScript/issues/29729.
   | (string & {});
+
+type BorderColorAlias = 'light' | 'dark';
+
+export type BorderRadiusValue = 'small' | 'medium';
+
+export type BorderColorValue = BorderColorAlias;
+
+export type BackgroundColorValue = BorderColorAlias;

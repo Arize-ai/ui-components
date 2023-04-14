@@ -1,6 +1,12 @@
 import React, { JSXElementConstructor, ReactNode, forwardRef } from 'react';
 import { css } from '@emotion/react';
-import { DOMRef, DimensionValue } from '../types';
+import {
+  BackgroundColorValue,
+  BorderColorValue,
+  BorderRadiusValue,
+  DOMRef,
+  DimensionValue,
+} from '../types';
 import { useDOMRef } from '../utils';
 import { useId } from '@react-aria/utils';
 import { dimensionValue } from '../utils/styleProps';
@@ -19,9 +25,9 @@ export interface ViewProps {
     DimensionValue,
     'static-size-50' | 'static-size-100' | 'static-size-200'
   >;
-  borderRadius?: 'small' | 'medium';
-  borderColor?: 'light' | 'dark';
-  backgroundColor?: 'light' | 'dark';
+  borderRadius?: BorderRadiusValue;
+  borderColor?: BorderColorValue;
+  backgroundColor?: BackgroundColorValue;
   width?: DimensionValue;
   height?: DimensionValue;
   id?: string;
@@ -35,8 +41,8 @@ function View(props: ViewProps, ref: DOMRef) {
     borderRadius,
     borderColor,
     backgroundColor,
-    width = 'static-size-4000',
-    height = 'static-size-4000',
+    width,
+    height,
     id,
   } = props;
   const viewId = useId(id);
@@ -57,8 +63,8 @@ function View(props: ViewProps, ref: DOMRef) {
         border-radius: ${borderRadius != null
           ? `var(--ac-global-rounding-${borderRadius})`
           : 0};
-        width: ${width != null ? dimensionValue(width) : 0};
-        height: ${height != null ? dimensionValue(height) : 0};
+        width: ${width != null ? dimensionValue(width) : 'auto'};
+        height: ${height != null ? dimensionValue(height) : 'auto'};
       `}
       className="ac-view"
       aria-labelledby={viewId}
