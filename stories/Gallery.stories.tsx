@@ -14,8 +14,11 @@ import {
   RadioGroup,
   Radio,
   ButtonToolbar,
+  View,
+  Heading,
+  ButtonGroup,
 } from '../src';
-import { Icon, SearchOutline } from '../src/icon';
+import { Icon, Icons, SearchOutline } from '../src/icon';
 // @ts-ignore
 import chartFile from './images/chart.png';
 
@@ -39,13 +42,14 @@ const Template: Story = args => {
     <Provider>
       <div
         css={css`
-          .ac-card + .ac-card {
-            margin-top: 16px;
-          }
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
         `}
       >
         <Card
           title="Prediction Volume"
+          variant="compact"
           bodyStyle={{ padding: 0 }}
           extra={
             <div
@@ -109,7 +113,7 @@ const Template: Story = args => {
             />
           </div>
         </Card>
-        <Card title="Example Form">
+        <Card title="Example Form" variant="compact">
           <div
             css={css`
               display: flex;
@@ -154,6 +158,52 @@ const Template: Story = args => {
             <Button variant="primary">Submit</Button>
           </div>
         </Card>
+        <View
+          backgroundColor="dark"
+          padding="static-size-200"
+          borderRadius="medium"
+          borderColor="dark"
+        >
+          <div
+            css={css`
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+            `}
+          >
+            <Heading level={3}>Drift Over Time</Heading>
+            <ButtonGroup aria-label="zoom control">
+              <Button
+                variant="default"
+                icon={<Icon svg={<Icons.ArrowIosBackOutline />} />}
+                size="compact"
+              />
+              <Button
+                variant="default"
+                icon={<Icon svg={<Icons.PlusCircleOutline />} />}
+                size="compact"
+              />
+              <Button
+                variant="default"
+                icon={<Icon svg={<Icons.PlusCircleOutline />} />}
+                size="compact"
+              />
+              <Button
+                variant="default"
+                icon={<Icon svg={<Icons.ArrowIosForwardOutline />} />}
+                size="compact"
+              />
+            </ButtonGroup>
+          </div>
+          <img
+            src={chartFile}
+            alt="chart image"
+            css={css`
+              margin: 24px;
+            `}
+          />
+        </View>
         {holder}
       </div>
     </Provider>

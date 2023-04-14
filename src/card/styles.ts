@@ -4,10 +4,10 @@ import theme from '../theme';
 export const cardCSS = css`
   display: flex;
   flex-direction: column;
-  background-color: ${theme.components.card.backgroundColor};
+  background-color: var(--ac-global-background-color-dark);
   color: ${theme.textColors.white90};
-  border-radius: 8px;
-  border: 1px solid ${theme.components.card.borderColor};
+  border-radius: var(--ac-global-rounding-medium);
+  border: 1px solid var(--ac-global-border-color-dark);
   overflow: hidden;
   /* variant variables */
   &.ac-card--default {
@@ -19,7 +19,7 @@ export const cardCSS = css`
 `;
 
 const headerBorderCSS = css`
-  border-bottom: 1px solid ${theme.components.card.borderColor};
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
 `;
 
 export const headerCSS = ({

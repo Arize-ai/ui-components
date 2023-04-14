@@ -20,9 +20,9 @@ export interface ViewProps {
     DimensionValue,
     'static-size-50' | 'static-size-100' | 'static-size-200'
   >;
-  borderRadius?: string;
-  borderColor?: string;
-  backgroundColor?: string;
+  borderRadius?: 'small' | 'medium';
+  borderColor?: 'light' | 'dark';
+  backgroundColor?: 'light' | 'dark';
   width?: DimensionValue;
   height?: DimensionValue;
   id?: string;
@@ -49,17 +49,15 @@ function View(props: ViewProps, ref: DOMRef) {
         overflow: hidden;
         padding: ${padding != null ? dimensionValue(padding) : 0};
         border: 1px solid
-          ${
-            borderColor != null
-              ? borderColor
-              : theme.components.card.borderColor
-          };
-        background-color: ${
-          backgroundColor != null
-            ? backgroundColor
-            : theme.components.card.backgroundColor
-        }
-        border-radius: ${borderRadius != null ? `${borderRadius}px` : 0};
+          ${borderColor != null
+            ? `var(--ac-global-border-color-${borderColor})`
+            : 'transparent'};
+        background-color: ${backgroundColor != null
+          ? `var(--ac-global-background-color-${backgroundColor})`
+          : 'transparent'};
+        border-radius: ${borderRadius != null
+          ? `var(--ac-global-rounding-${borderRadius})`
+          : 0};
         width: ${width != null ? dimensionValue(width) : 0};
         height: ${height != null ? dimensionValue(height) : 0};
       `}
