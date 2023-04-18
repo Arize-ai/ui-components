@@ -90,10 +90,9 @@ export type DimensionValue =
   // https://github.com/microsoft/TypeScript/issues/29729.
   | (string & {});
 
-type BorderColorAlias = 'light' | 'dark';
 
 export type BorderRadiusValue = 'small' | 'medium';
 
-export type BorderColorValue = BorderColorAlias;
+export type BorderColorValue = 'light' | 'dark';
 
-export type BackgroundColorValue = BorderColorAlias;
+export type BackgroundColorValue = 'light' | 'dark';

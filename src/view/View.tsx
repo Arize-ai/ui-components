@@ -67,7 +67,7 @@ function View(props: ViewProps, ref: DOMRef) {
         height: ${height != null ? dimensionValue(height) : 'auto'};
       `}
       className="ac-view"
-      aria-labelledby={viewId}
+      id={viewId}
     >
       {children}
     </ElementType>
