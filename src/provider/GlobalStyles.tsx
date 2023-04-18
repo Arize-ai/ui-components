@@ -60,6 +60,26 @@ export const globalCSS = css`
     --ac-global-dimension-static-grid-columns: 12;
     --ac-global-dimension-static-grid-fluid-width: 100%;
     --ac-global-dimension-static-grid-fixed-max-width: 1280px;
+
+    /* Colors */
+    --ac-global-color-gray-900: #181b1f;
+    --ac-global-color-gray-800: #1d2126;
+    --ac-global-color-gray-700: #23282e;
+    --ac-global-color-gray-600: #282e35;
+    --ac-global-color-gray-500: #2f353d;
+    --ac-global-color-gray-400: #3d434a;
+    --ac-global-color-gray-300: #4a5057;
+    --ac-global-color-gray-200: #585d64;
+    --ac-global-color-gray-100: #666b71;
+
+    --ac-global-background-color-light: var(--ac-global-color-gray-500);
+    --ac-global-background-color-dark: var(--ac-global-color-gray-900);
+
+    --ac-global-border-color-light: var(--ac-global-color-gray-100);
+    --ac-global-border-color-dark: var(--ac-global-color-gray-400);
+
+    --ac-global-rounding-small: var(--ac-global-dimension-static-size-50);
+    --ac-global-rounding-medium: var(--ac-global-dimension-static-size-100);
   }
 `;
 

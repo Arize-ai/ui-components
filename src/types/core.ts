@@ -86,4 +86,12 @@ export type DimensionValue =
   | 'single-line-height'
   | 'single-line-width'
   | number
-  | string;
+  // This allows autocomplete to work properly and not collapse the above options into just `string`.
+  // https://github.com/microsoft/TypeScript/issues/29729.
+  | (string & {});
+
+export type BorderRadiusValue = 'small' | 'medium';
+
+export type BorderColorValue = 'light' | 'dark';
+
+export type BackgroundColorValue = 'light' | 'dark';
