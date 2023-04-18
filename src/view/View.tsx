@@ -8,7 +8,6 @@ import {
   DimensionValue,
 } from '../types';
 import { useDOMRef } from '../utils';
-import { useId } from '@react-aria/utils';
 import { dimensionValue } from '../utils/styleProps';
 
 export interface ViewProps {
@@ -45,7 +44,6 @@ function View(props: ViewProps, ref: DOMRef) {
     height,
     id,
   } = props;
-  const viewId = useId(id);
   const domRef = useDOMRef(ref);
   return (
     <ElementType
@@ -67,7 +65,7 @@ function View(props: ViewProps, ref: DOMRef) {
         height: ${height != null ? dimensionValue(height) : 'auto'};
       `}
       className="ac-view"
-      id={viewId}
+      id={id}
     >
       {children}
     </ElementType>
