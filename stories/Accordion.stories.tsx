@@ -1,6 +1,12 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Accordion, AccordionProps, AccordionItem, Card } from '../src';
+import {
+  Accordion,
+  AccordionProps,
+  AccordionItem,
+  Card,
+  Provider,
+} from '../src';
 import { withDesign } from 'storybook-addon-designs';
 import InfoTip from './components/InfoTip';
 
@@ -32,29 +38,31 @@ const AccordionContents = () => (
 export default meta;
 
 const Template: Story<AccordionProps> = args => (
-  <Card
-    title="Model Health"
-    subTitle={'An overview of the the health of your model'}
-    bodyStyle={{ padding: 0, overflow: 'hidden' }}
-    style={{ width: 700 }}
-    collapsible
-  >
-    <Accordion {...args}>
-      <AccordionItem
-        title="2 Predictions"
-        titleExtra={<InfoTip>Description of predictions</InfoTip>}
-        id="predictions"
-      >
-        <AccordionContents />
-      </AccordionItem>
-      <AccordionItem title="100 Features" id="features">
-        <AccordionContents />
-      </AccordionItem>
-      <AccordionItem title="10 Actuals" id="actuals">
-        <AccordionContents />
-      </AccordionItem>
-    </Accordion>
-  </Card>
+  <Provider>
+    <Card
+      title="Model Health"
+      subTitle={'An overview of the the health of your model'}
+      bodyStyle={{ padding: 0, overflow: 'hidden' }}
+      style={{ width: 700 }}
+      collapsible
+    >
+      <Accordion {...args}>
+        <AccordionItem
+          title="2 Predictions"
+          titleExtra={<InfoTip>Description of predictions</InfoTip>}
+          id="predictions"
+        >
+          <AccordionContents />
+        </AccordionItem>
+        <AccordionItem title="100 Features" id="features">
+          <AccordionContents />
+        </AccordionItem>
+        <AccordionItem title="10 Actuals" id="actuals">
+          <AccordionContents />
+        </AccordionItem>
+      </Accordion>
+    </Card>
+  </Provider>
 );
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
