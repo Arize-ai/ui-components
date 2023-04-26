@@ -117,9 +117,11 @@ const textFieldBaseCSS = (styleProps: StyleProps) => css`
   flex-direction: row;
   position: relative;
   align-items: center;
-  min-width: ${styleProps.width
-    ? dimensionValue(styleProps.width)
-    : dimensionValue('static-size-3400')};
+  min-width: ${
+    styleProps.width
+      ? dimensionValue(styleProps.width)
+      : dimensionValue('static-size-3400')
+  };
   width: ${styleProps.width ? dimensionValue(styleProps.width) : '100%'};
 
   transition: all 0.2s ease-in-out;
@@ -185,12 +187,12 @@ const quietTextfieldBaseCSS = css`
     opacity: ${theme.opacity.disabled};
   }
   &.ac-textfield--invalid:not(.is-disabled) {
-    border-bottom: 1px solid ${theme.colors.statusDanger};
+    border-bottom: 1px solid var(--ac-global-color-danger);
   }
   &.ac-textfield--invalid.ac-textfield__input {
     // Make room for the invalid icon
     padding-right: 24px;
-    color: ${theme.colors.statusDanger};
+    color: var(--ac-global-color-danger);
   }
 
   .ac-textfield__validation-icon {
@@ -200,7 +202,7 @@ const quietTextfieldBaseCSS = css`
     right: 0;
     position: absolute;
     &.ac-textfield__validation-icon--invalid {
-      color: ${theme.colors.statusDanger};
+      color: var(--ac-global-color-danger);
     }
   }
 `;
@@ -222,9 +224,9 @@ const standardTextfieldBaseCSS = css`
     border: 1px solid ${theme.components.textField.activeBorderColor};
     background-color: ${theme.components.textField.activeBackgroundColor};
     &.ac-textfield--invalid {
-      border: 1px solid ${theme.colors.statusDanger};
+      border: 1px solid var(--ac-global-color-danger);
       .ac-textfield__input {
-        color: ${theme.colors.statusDanger};
+        color: var(--ac-global-color-danger);
       }
     }
   }
@@ -241,16 +243,16 @@ const standardTextfieldBaseCSS = css`
   }
 
   &.ac-textfield--invalid:not(.is-disabled) {
-    border: 1px solid ${theme.colors.statusDanger};
+    border: 1px solid var(--ac-global-color-danger);
     .ac-textfield__input {
-      color: ${theme.colors.statusDanger};
+      color: var(--ac-global-color-danger);
     }
   }
 
   &.ac-textfield--invalid .ac-textfield__input {
     // Make room for the invalid icon (outer padding + icon width + inner padding)
     padding-right: ${theme.spacing.padding8 + 24 + theme.spacing.padding4}px;
-    color: ${theme.colors.statusDanger};
+    color: var(--ac-global-color-danger);
   }
 
   .ac-textfield__validation-icon {
@@ -260,7 +262,7 @@ const standardTextfieldBaseCSS = css`
     right: ${theme.spacing.padding8}px;
     position: absolute;
     &.ac-textfield__validation-icon--invalid {
-      color: ${theme.colors.statusDanger};
+      color: var(--ac-global-color-danger);
     }
   }
 `;

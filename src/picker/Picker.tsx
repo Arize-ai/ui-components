@@ -47,6 +47,7 @@ function Picker<T extends object>(
     autoFocus,
     addonBefore,
     menuWidth,
+    validationState,
   } = props;
 
   let state = useSelectState(props);
@@ -179,6 +180,7 @@ function Picker<T extends object>(
       <span
         className={classNames({
           'is-placeholder': state.selectedItem == null,
+          'ac-dropdown__content': true,
         })}
       >
         {contents}
@@ -225,6 +227,7 @@ function Picker<T extends object>(
           className={classNames('ac-dropdown-trigger', {
             'is-hovered': isHovered,
           })}
+          validationState={validationState}
           {...{ addonBefore }}
         >
           <div>{contents}</div>
