@@ -44,6 +44,10 @@ const tabListCSS = css`
     transition: 0.3s;
     font-weight: bold;
     border-color: var(--tab-border-color);
+
+    display: flex;
+    align-items: center;
+    gap: var(--ac-global-dimension-static-size-65);
   }
 
   &[data-orientation='horizontal'] {
@@ -139,6 +143,7 @@ export function Tabs({
               >
                 {tab.name}
               </Text>
+              {tab?.extra}
             </button>
           );
         })}
@@ -165,6 +170,7 @@ type TabPaneChildFC = (props: TabPaneChildFCProps) => ReactNode;
 interface TabPaneProps
   extends Omit<HtmlHTMLAttributes<HTMLDivElement>, 'children'> {
   name: string;
+  extra?: ReactNode;
   children: ReactNode | TabPaneChildFC;
   className?: string;
   /**
