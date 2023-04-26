@@ -47,7 +47,7 @@ const tabListCSS = css`
 
     display: flex;
     align-items: center;
-    gap: ${theme.spacing.padding4}px;
+    gap: var(--ac-global-dimension-static-size-65);
   }
 
   &[data-orientation='horizontal'] {

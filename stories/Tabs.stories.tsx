@@ -90,6 +90,11 @@ export const WithExtra: Story<TabsProps> = args => (
             <LazyLoadingTabContents isSelected={isSelected} />
           )}
         </TabPane>
+        <TabPane name="Tab 2" extra={<Counter>2</Counter>}>
+          {({ isSelected }) => (
+            <LazyLoadingTabContents isSelected={isSelected} />
+          )}
+        </TabPane>
       </Tabs>
     </div>
   </Provider>

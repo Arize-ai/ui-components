@@ -12,8 +12,7 @@ type CounterProps = PropsWithChildren<{
 
 const counterCSS = css`
   display: inline-block;
-  padding: var(--ac-global-dimension-static-size-25)
-    var(--ac-global-dimension-static-size-100);
+  padding: 0 var(--ac-global-dimension-static-size-65);
   border-radius: calc(
     (
       ${theme.typography.sizes.small.lineHeight}px + 2 *
@@ -32,7 +31,7 @@ const counterCSS = css`
 export function Counter(props: CounterProps) {
   const { children, variant = 'default' } = props;
   return (
-    <span css={counterCSS} data-variant={variant}>
+    <span css={counterCSS} data-variant={variant} className="ac-counter">
       {children}
     </span>
   );
