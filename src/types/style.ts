@@ -198,14 +198,6 @@ export interface ViewStyleProps extends StyleProps {
   // transforms?
 }
 
-const borderStyleProps = {
-  borderWidth: 'borderStyle',
-  borderLeftWidth: 'borderLeftStyle',
-  borderRightWidth: 'borderRightStyle',
-  borderTopWidth: 'borderTopStyle',
-  borderBottomWidth: 'borderBottomStyle',
-};
-
 export interface BoxAlignmentStyleProps {
   /**
    * The distribution of space around items along the main axis. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content).
