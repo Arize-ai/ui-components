@@ -1,4 +1,9 @@
-import { DimensionValue } from './core';
+import {
+  BackgroundColorValue,
+  BorderColorValue,
+  BorderRadiusValue,
+  DimensionValue,
+} from './core';
 
 export interface StyleProps {
   /** Sets the CSS [className](https://developer.mozilla.org/en-US/docs/Web/API/Element/className) for the element. Only use as a **last resort**. **/
@@ -25,21 +30,21 @@ export interface ViewStyleProps extends StyleProps {
   backgroundColor?: Responsive<BackgroundColorValue>;
 
   /** The width of the element's border on all four sides. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-width). */
-  borderWidth?: Responsive<BorderSizeValue>;
+  // borderWidth?: Responsive<BorderSizeValue>;
   /** The width of the border on the logical start side, depending on the layout direction. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-width). */
-  borderStartWidth?: Responsive<BorderSizeValue>;
+  // borderStartWidth?: Responsive<BorderSizeValue>;
   /** The width of the border on the logical end side, depending on the layout direction. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-width). */
-  borderEndWidth?: Responsive<BorderSizeValue>;
+  // borderEndWidth?: Responsive<BorderSizeValue>;
   // borderLeftWidth?: BorderSizeValue,
   // borderRightWidth?: BorderSizeValue,
   /** The width of the top border. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-width). */
-  borderTopWidth?: Responsive<BorderSizeValue>;
+  // borderTopWidth?: Responsive<BorderSizeValue>;
   /** The width of the bottom border. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-width). */
-  borderBottomWidth?: Responsive<BorderSizeValue>;
+  // borderBottomWidth?: Responsive<BorderSizeValue>;
   /** The width of the left and right borders. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-width). */
-  borderXWidth?: Responsive<BorderSizeValue>;
+  // borderXWidth?: Responsive<BorderSizeValue>;
   /** The width of the top and bottom borders. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-width). */
-  borderYWidth?: Responsive<BorderSizeValue>;
+  // borderYWidth?: Responsive<BorderSizeValue>;
 
   /** The color of the element's border on all four sides. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-color). */
   borderColor?: Responsive<BorderColorValue>;
