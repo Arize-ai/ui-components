@@ -1,18 +1,20 @@
 import React, { useId } from 'react';
 import { css } from '@emotion/react';
 import { StyleProps } from '../../types';
+import { useStyleProps } from '../../utils';
 
 export const EmptyDocuments = (props: StyleProps) => {
   // Create a unique ID so that more than one gradient def can exist
   // TODO - try to hoist the gradient defs to be global
   const id = useId();
   const linearGradientIdPrefix = `#${id}-linear-gradient`;
+  const { styleProps } = useStyleProps(props);
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 140 164"
-      {...props}
+      {...(styleProps as any)}
       css={css`
         .cls-1 {
           isolation: isolate;

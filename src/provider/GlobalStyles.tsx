@@ -1,5 +1,65 @@
 import { Global, css } from '@emotion/react';
 
+/**
+ * Medium size root CSS variables
+ */
+export const mediumRootCSS = css`
+  :root {
+    --ac-global-dimension-scale-factor: 1;
+    --ac-global-dimension-size-0: 0px;
+    --ac-global-dimension-size-10: 1px;
+    --ac-global-dimension-size-25: 2px;
+    --ac-global-dimension-size-30: 2px;
+    --ac-global-dimension-size-40: 3px;
+    --ac-global-dimension-size-50: 4px;
+    --ac-global-dimension-size-65: 5px;
+    --ac-global-dimension-size-75: 6px;
+    --ac-global-dimension-size-85: 7px;
+    --ac-global-dimension-size-100: 8px;
+    --ac-global-dimension-size-115: 9px;
+    --ac-global-dimension-size-125: 10px;
+    --ac-global-dimension-size-130: 11px;
+    --ac-global-dimension-size-150: 12px;
+    --ac-global-dimension-size-160: 13px;
+    --ac-global-dimension-size-175: 14px;
+    --ac-global-dimension-size-185: 15px;
+    --ac-global-dimension-size-200: 16px;
+    --ac-global-dimension-size-225: 18px;
+    --ac-global-dimension-size-250: 20px;
+    --ac-global-dimension-size-275: 22px;
+    --ac-global-dimension-size-300: 24px;
+    --ac-global-dimension-size-325: 26px;
+    --ac-global-dimension-size-350: 28px;
+    --ac-global-dimension-size-400: 32px;
+    --ac-global-dimension-size-450: 36px;
+    --ac-global-dimension-size-500: 40px;
+    --ac-global-dimension-size-550: 44px;
+    --ac-global-dimension-size-600: 48px;
+    --ac-global-dimension-size-650: 52px;
+    --ac-global-dimension-size-675: 54px;
+    --ac-global-dimension-size-700: 56px;
+    --ac-global-dimension-size-750: 60px;
+    --ac-global-dimension-size-800: 64px;
+    --ac-global-dimension-size-900: 72px;
+    --ac-global-dimension-size-1000: 80px;
+    --ac-global-dimension-size-1125: 90px;
+    --ac-global-dimension-size-1200: 96px;
+    --ac-global-dimension-size-1250: 100px;
+    --ac-global-dimension-size-1600: 128px;
+    --ac-global-dimension-size-1700: 136px;
+    --ac-global-dimension-size-1800: 144px;
+    --ac-global-dimension-size-2000: 160px;
+    --ac-global-dimension-size-2400: 192px;
+    --ac-global-dimension-size-2500: 200px;
+    --ac-global-dimension-size-3000: 240px;
+    --ac-global-dimension-size-3400: 272px;
+    --ac-global-dimension-size-3600: 288px;
+    --ac-global-dimension-size-4600: 368px;
+    --ac-global-dimension-size-5000: 400px;
+    --ac-global-dimension-size-6000: 480px;
+  }
+`;
+
 export const globalCSS = css`
   :root {
     --ac-global-dimension-static-size-0: 0px;
@@ -85,9 +145,33 @@ export const globalCSS = css`
 
     --ac-global-rounding-small: var(--ac-global-dimension-static-size-50);
     --ac-global-rounding-medium: var(--ac-global-dimension-static-size-100);
+
+    --ac-alias-border-size-thin: var(--ac-global-dimension-static-size-10);
+    --ac-alias-border-size-thick: var(--ac-global-dimension-static-size-25);
+    --ac-alias-border-size-thicker: var(--ac-global-dimension-static-size-50);
+    --ac-alias-border-size-thickest: var(--ac-global-dimension-static-size-100);
+    --ac-alias-border-offset-thin: var(--ac-global-dimension-static-size-25);
+    --ac-alias-border-offset-thick: var(--ac-global-dimension-static-size-50);
+    --ac-alias-border-offset-thicker: var(
+      --ac-global-dimension-static-size-100
+    );
+    --ac-alias-border-offset-thickest: var(
+      --ac-global-dimension-static-size-200
+    );
+    --ac-alias-grid-baseline: var(--ac-global-dimension-static-size-100);
+    --ac-alias-grid-gutter-xsmall: var(--ac-global-dimension-static-size-200);
+    --ac-alias-grid-gutter-small: var(--ac-global-dimension-static-size-300);
+    --ac-alias-grid-gutter-medium: var(--ac-global-dimension-static-size-400);
+    --ac-alias-grid-gutter-large: var(--ac-global-dimension-static-size-500);
+    --ac-alias-grid-gutter-xlarge: var(--ac-global-dimension-static-size-600);
+    --ac-alias-grid-margin-xsmall: var(--ac-global-dimension-static-size-200);
+    --ac-alias-grid-margin-small: var(--ac-global-dimension-static-size-300);
+    --ac-alias-grid-margin-medium: var(--ac-global-dimension-static-size-400);
+    --ac-alias-grid-margin-large: var(--ac-global-dimension-static-size-500);
+    --ac-alias-grid-margin-xlarge: var(--ac-global-dimension-static-size-600);
   }
 `;
 
 export function GlobalStyles() {
-  return <Global styles={globalCSS} />;
+  return <Global styles={css(globalCSS, mediumRootCSS)} />;
 }

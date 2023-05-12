@@ -1,18 +1,22 @@
-import { CSSProperties } from 'react';
+import { CSSProperties, HTMLAttributes } from 'react';
 import {
   BackgroundColorValue,
   BorderColorValue,
   BorderRadiusValue,
+  BorderSizeValue,
   ColorValue,
   DimensionValue,
   Direction,
   Responsive,
+  ResponsiveProp,
+  StyleProps,
   ViewStyleProps,
 } from '../types';
+import { useLocale } from '@react-aria/i18n';
 
 type Breakpoint = 'base' | 'S' | 'M' | 'L' | string;
 type StyleName = string | string[] | ((dir: Direction) => string);
-type StyleHandler = (value: any) => string;
+type StyleHandler = (value: any) => string | undefined;
 export interface StyleHandlers {
   [key: string]: [StyleName, StyleHandler];
 }
@@ -152,6 +156,14 @@ export function dimensionValue(value: DimensionValue) {
   return `var(--ac-global-dimension-${value})`;
 }
 
+export function responsiveDimensionValue(
+  value: Responsive<DimensionValue>,
+  matchedBreakpoints: Breakpoint[]
+) {
+  value = getResponsiveProp(value, matchedBreakpoints);
+  return dimensionValue(value);
+}
+
 export function convertStyleProps(
   props: ViewStyleProps,
   handlers: StyleHandlers,
@@ -170,20 +182,24 @@ export function convertStyleProps(
       name = name(direction);
     }
 
-    let prop = getResponsiveProp(props[key], matchedBreakpoints);
+    let prop = getResponsiveProp(
+      props[key as keyof ViewStyleProps],
+      matchedBreakpoints
+    );
     let value = convert(prop);
     if (Array.isArray(name)) {
       for (let k of name) {
-        style[k] = value;
+        (style as any)[k] = value;
       }
     } else {
-      style[name] = value;
+      (style as any)[name] = value;
     }
   }
 
   for (let prop in borderStyleProps) {
-    if (style[prop]) {
-      style[borderStyleProps[prop]] = 'solid';
+    if (style[prop as keyof typeof borderStyleProps]) {
+      (style as any)[borderStyleProps[prop as keyof typeof borderStyleProps]] =
+        'solid';
       style.boxSizing = 'border-box';
     }
   }
@@ -220,12 +236,32 @@ function borderColorValue(value: BorderColorValue) {
   )})`;
 }
 
-// function borderSizeValue(value: BorderSizeValue) {
-//   return `var(--ac-alias-border-size-${value})`;
-// }
+function borderSizeValue(value: BorderSizeValue) {
+  return `var(--ac-alias-border-size-${value})`;
+}
+
+export function passthroughStyle(value) {
+  return value;
+}
 
 function borderRadiusValue(value: BorderRadiusValue) {
   return `var(--ac-alias-border-radius-${value})`;
+}
+
+function hiddenValue(value: boolean) {
+  return value ? 'none' : undefined;
+}
+
+function anyValue(value: any) {
+  return value;
+}
+
+function flexValue(value: boolean | number | string) {
+  if (typeof value === 'boolean') {
+    return value ? '1' : undefined;
+  }
+
+  return '' + value;
 }
 
 export function getResponsiveProp<T>(
@@ -239,7 +275,58 @@ export function getResponsiveProp<T>(
         return prop[breakpoint];
       }
     }
-    return (prop as ResponsiveProp<T>).base;
+    return (prop as ResponsiveProp<T>).base as T;
   }
   return prop as T;
+}
+
+type StylePropsOptions = {
+  matchedBreakpoints?: Breakpoint[];
+};
+
+export function useStyleProps<T extends StyleProps>(
+  props: T,
+  handlers: StyleHandlers = baseStyleProps,
+  options: StylePropsOptions = {}
+) {
+  let { ...otherProps } = props;
+  let { direction } = useLocale();
+  let { matchedBreakpoints = ['base'] } = options;
+  let styles = convertStyleProps(
+    props,
+    handlers,
+    direction,
+    matchedBreakpoints
+  );
+  let style = { ...styles };
+
+  // @ts-ignore
+  if (otherProps.className) {
+    console.warn(
+      'The className prop is unsafe and is unsupported in Arize Components. ' +
+        'Please use style props with Spectrum variables, or UNSAFE_className if you absolutely must do something custom. ' +
+        'Note that this may break in future versions due to DOM structure changes.'
+    );
+  }
+
+  // @ts-ignore
+  if (otherProps.style) {
+    console.warn(
+      'The style prop is unsafe and is unsupported in React Arize Components. ' +
+        'Please use style props with Spectrum variables, or UNSAFE_style if you absolutely must do something custom. ' +
+        'Note that this may break in future versions due to DOM structure changes.'
+    );
+  }
+
+  let styleProps: HTMLAttributes<HTMLElement> = {
+    style,
+  };
+
+  if (getResponsiveProp(props.isHidden, matchedBreakpoints)) {
+    styleProps.hidden = true;
+  }
+
+  return {
+    styleProps,
+  };
 }
