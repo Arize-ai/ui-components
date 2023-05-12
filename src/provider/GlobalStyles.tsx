@@ -140,6 +140,7 @@ export const globalCSS = css`
     --ac-global-background-color-dark: var(--ac-global-color-gray-900);
     --ac-global-background-color-danger: var(--ac-global-color-danger);
 
+    --ac-global-border-color-default: var(--ac-global-color-gray-100);
     --ac-global-border-color-light: var(--ac-global-color-gray-100);
     --ac-global-border-color-dark: var(--ac-global-color-gray-400);
 

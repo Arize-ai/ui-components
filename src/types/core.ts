@@ -91,7 +91,7 @@ export type DimensionValue =
   | (string & {});
 
 export type BorderRadiusValue = 'small' | 'medium';
-export type BorderColorValue = 'light' | 'dark';
+export type BorderColorValue = 'default' | 'light' | 'dark';
 export type BorderSizeValue = 'thin' | 'thick' | 'thicker' | 'thickest';
 export type BackgroundColorValue = 'light' | 'dark';
 

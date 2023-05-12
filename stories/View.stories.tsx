@@ -113,6 +113,7 @@ export const Gallery = args => {
         </Card>
         <View
           backgroundColor="light"
+          borderWidth="thin"
           padding="static-size-100"
           borderRadius="medium"
           borderColor="light"
@@ -138,6 +139,7 @@ export const Gallery = args => {
         </View>
         <View
           backgroundColor="light"
+          borderWidth="thin"
           padding="static-size-100"
           borderRadius="medium"
           borderColor="light"

@@ -218,7 +218,7 @@ function colorValue(value: ColorValue, type: ColorType = 'default') {
 }
 
 function backgroundColorValue(value: BackgroundColorValue) {
-  return `var(--ac-alias-background-color-${value}, ${colorValue(
+  return `var(--ac-global-background-color-${value}, ${colorValue(
     value as ColorValue,
     'background'
   )})`;
@@ -226,11 +226,11 @@ function backgroundColorValue(value: BackgroundColorValue) {
 
 function borderColorValue(value: BorderColorValue) {
   // TODO support default color
-  // if (value === 'default') {
-  //   return 'var(--ac-alias-border-color)';
-  // }
+  if (value === 'default') {
+    return 'var(--ac-global-border-color)';
+  }
 
-  return `var(--ac-alias-border-color-${value}, ${colorValue(
+  return `var(--ac-global-border-color-${value}, ${colorValue(
     value as ColorValue,
     'border'
   )})`;
@@ -245,7 +245,7 @@ export function passthroughStyle(value) {
 }
 
 function borderRadiusValue(value: BorderRadiusValue) {
-  return `var(--ac-alias-border-radius-${value})`;
+  return `var(--ac-global-rounding-${value})`;
 }
 
 function hiddenValue(value: boolean) {
