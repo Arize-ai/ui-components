@@ -147,10 +147,7 @@ export function dimensionValue(value: DimensionValue) {
   }
 
   if (FUNC_RE.test(value)) {
-    return value.replace(
-      AC_VARIABLE_RE,
-      'var(--ac-global-dimension-$&, var(--ac-alias-$&))'
-    );
+    return value.replace(AC_VARIABLE_RE, 'var(--ac-global-dimension-$&)');
   }
 
   return `var(--ac-global-dimension-${value})`;
@@ -237,7 +234,7 @@ function borderColorValue(value: BorderColorValue) {
 }
 
 function borderSizeValue(value: BorderSizeValue) {
-  return `var(--ac-alias-border-size-${value})`;
+  return `var(--ac-global-border-size-${value})`;
 }
 
 export function passthroughStyle(value) {

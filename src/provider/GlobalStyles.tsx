@@ -147,29 +147,31 @@ export const globalCSS = css`
     --ac-global-rounding-small: var(--ac-global-dimension-static-size-50);
     --ac-global-rounding-medium: var(--ac-global-dimension-static-size-100);
 
-    --ac-alias-border-size-thin: var(--ac-global-dimension-static-size-10);
-    --ac-alias-border-size-thick: var(--ac-global-dimension-static-size-25);
-    --ac-alias-border-size-thicker: var(--ac-global-dimension-static-size-50);
-    --ac-alias-border-size-thickest: var(--ac-global-dimension-static-size-100);
-    --ac-alias-border-offset-thin: var(--ac-global-dimension-static-size-25);
-    --ac-alias-border-offset-thick: var(--ac-global-dimension-static-size-50);
-    --ac-alias-border-offset-thicker: var(
+    --ac-global-border-size-thin: var(--ac-global-dimension-static-size-10);
+    --ac-global-border-size-thick: var(--ac-global-dimension-static-size-25);
+    --ac-global-border-size-thicker: var(--ac-global-dimension-static-size-50);
+    --ac-global-border-size-thickest: var(
       --ac-global-dimension-static-size-100
     );
-    --ac-alias-border-offset-thickest: var(
+    --ac-global-border-offset-thin: var(--ac-global-dimension-static-size-25);
+    --ac-global-border-offset-thick: var(--ac-global-dimension-static-size-50);
+    --ac-global-border-offset-thicker: var(
+      --ac-global-dimension-static-size-100
+    );
+    --ac-global-border-offset-thickest: var(
       --ac-global-dimension-static-size-200
     );
-    --ac-alias-grid-baseline: var(--ac-global-dimension-static-size-100);
-    --ac-alias-grid-gutter-xsmall: var(--ac-global-dimension-static-size-200);
-    --ac-alias-grid-gutter-small: var(--ac-global-dimension-static-size-300);
-    --ac-alias-grid-gutter-medium: var(--ac-global-dimension-static-size-400);
-    --ac-alias-grid-gutter-large: var(--ac-global-dimension-static-size-500);
-    --ac-alias-grid-gutter-xlarge: var(--ac-global-dimension-static-size-600);
-    --ac-alias-grid-margin-xsmall: var(--ac-global-dimension-static-size-200);
-    --ac-alias-grid-margin-small: var(--ac-global-dimension-static-size-300);
-    --ac-alias-grid-margin-medium: var(--ac-global-dimension-static-size-400);
-    --ac-alias-grid-margin-large: var(--ac-global-dimension-static-size-500);
-    --ac-alias-grid-margin-xlarge: var(--ac-global-dimension-static-size-600);
+    --ac-global-grid-baseline: var(--ac-global-dimension-static-size-100);
+    --ac-global-grid-gutter-xsmall: var(--ac-global-dimension-static-size-200);
+    --ac-global-grid-gutter-small: var(--ac-global-dimension-static-size-300);
+    --ac-global-grid-gutter-medium: var(--ac-global-dimension-static-size-400);
+    --ac-global-grid-gutter-large: var(--ac-global-dimension-static-size-500);
+    --ac-global-grid-gutter-xlarge: var(--ac-global-dimension-static-size-600);
+    --ac-global-grid-margin-xsmall: var(--ac-global-dimension-static-size-200);
+    --ac-global-grid-margin-small: var(--ac-global-dimension-static-size-300);
+    --ac-global-grid-margin-medium: var(--ac-global-dimension-static-size-400);
+    --ac-global-grid-margin-large: var(--ac-global-dimension-static-size-500);
+    --ac-global-grid-margin-xlarge: var(--ac-global-dimension-static-size-600);
   }
 `;
 
