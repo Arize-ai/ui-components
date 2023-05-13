@@ -221,8 +221,22 @@ const Template: Story = args => {
                 `}
               />
             </View>
-            <View width="size-2400" backgroundColor="light">
-              <Heading>Statistic</Heading>
+            <View
+              width="size-2400"
+              backgroundColor="light"
+              borderColor="dark"
+              borderLeftWidth="thin"
+            >
+              <Flex
+                direction="column"
+                alignItems="center"
+                justifyContent="center"
+                gap={'size-100'}
+                height="100%"
+              >
+                <Heading>Statistic</Heading>
+                <Text textSize="xxlarge">437</Text>
+              </Flex>
             </View>
           </Flex>
         </View>

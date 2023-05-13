@@ -131,7 +131,7 @@ export interface ViewStyleProps extends StyleProps {
   borderStartWidth?: Responsive<BorderSizeValue>;
   /** The width of the border on the logical end side, depending on the layout direction. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-width). */
   borderEndWidth?: Responsive<BorderSizeValue>;
-  // borderLeftWidth?: BorderSizeValue,
+  borderLeftWidth?: BorderSizeValue;
   borderRightWidth?: BorderSizeValue;
   /** The width of the top border. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-width). */
   borderTopWidth?: Responsive<BorderSizeValue>;
