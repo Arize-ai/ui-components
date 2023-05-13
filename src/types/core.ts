@@ -93,7 +93,7 @@ export type DimensionValue =
 export type BorderRadiusValue = 'small' | 'medium';
 export type BorderColorValue = 'default' | 'light' | 'dark';
 export type BorderSizeValue = 'thin' | 'thick' | 'thicker' | 'thickest';
-export type BackgroundColorValue = 'light' | 'dark';
+export type BackgroundColorValue = 'light' | 'dark' | ColorValue;
 
 export type ColorValue =
   | 'gray-100'

@@ -223,7 +223,7 @@ const Template: Story = args => {
             </View>
             <View
               width="size-2400"
-              backgroundColor="light"
+              backgroundColor="gray-800"
               borderColor="dark"
               borderLeftWidth="thin"
             >
