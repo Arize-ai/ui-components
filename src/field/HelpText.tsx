@@ -1,4 +1,3 @@
-// import AlertMedium from '@spectrum-icons/ui/AlertMedium';
 import { classNames, useDOMRef } from '../utils';
 import { DOMRef, HelpTextProps, Validation } from '../types';
 import React, { HTMLAttributes } from 'react';
