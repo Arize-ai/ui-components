@@ -17,6 +17,7 @@ import {
   View,
   Heading,
   ButtonGroup,
+  Flex,
 } from '../src';
 import { Icon, Icons, SearchOutline } from '../src/icon';
 // @ts-ignore
@@ -203,6 +204,41 @@ const Template: Story = args => {
               margin: 24px;
             `}
           />
+        </View>
+        <View
+          backgroundColor="dark"
+          borderWidth="thin"
+          borderRadius="medium"
+          borderColor="dark"
+        >
+          <Flex direction="row">
+            <View flex>
+              <img
+                src={chartFile}
+                alt="chart image"
+                css={css`
+                  margin: 24px;
+                `}
+              />
+            </View>
+            <View
+              width="size-2400"
+              backgroundColor="gray-800"
+              borderColor="dark"
+              borderLeftWidth="thin"
+            >
+              <Flex
+                direction="column"
+                alignItems="center"
+                justifyContent="center"
+                gap={'size-100'}
+                height="100%"
+              >
+                <Heading>Statistic</Heading>
+                <Text textSize="xxlarge">437</Text>
+              </Flex>
+            </View>
+          </Flex>
         </View>
         {holder}
       </div>

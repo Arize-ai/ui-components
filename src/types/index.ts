@@ -15,3 +15,4 @@ export * from './button';
 export * from './style';
 export * from './progress';
 export * from './style';
+export * from './locale';
