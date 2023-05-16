@@ -63,7 +63,8 @@ export interface AriaMenuProps<T>
   extends MenuProps<T>,
     DOMProps,
     AriaLabelingProps {}
-export interface SpectrumMenuProps<T> extends AriaMenuProps<T>, StyleProps {}
+
+export interface ArizeMenuProps<T> extends AriaMenuProps<T>, StyleProps {}
 
 export interface ActionMenuProps<T>
   extends CollectionBase<T>,
@@ -88,7 +89,7 @@ export interface ActionMenuProps<T>
   shouldFlip?: boolean;
   /** Whether the button is disabled. */
   isDisabled?: boolean;
-  /** Whether the button should be displayed with a [quiet style](https://spectrum.adobe.com/page/action-button/#Quiet). */
+  /** Whether the button should be displayed with a quiet style. */
   isQuiet?: boolean;
   /** Whether the element should receive focus on render. */
   autoFocus?: boolean;

@@ -98,7 +98,7 @@ function flexWrapValue(value: boolean | 'wrap' | 'nowrap') {
 }
 
 /**
- * A layout container using flexbox. Provides Spectrum dimension values, and supports the gap
+ * A layout container using flexbox. Provides AC dimension values, and supports the gap
  * property to define consistent spacing between items.
  */
 const _Flex = forwardRef(Flex);

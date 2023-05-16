@@ -2,9 +2,6 @@ import { css } from '@emotion/react';
 import theme from '../theme';
 
 export const switchCSS = css`
-  --ac-switch-label-color-default: var(
-    --spectrum-neutral-content-color-default
-  );
   --ac-switch-label-color-disabled: ${theme.textColors.white50};
 
   --ac-switch-background-color: ${theme.colors.gray300};

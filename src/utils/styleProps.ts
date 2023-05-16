@@ -301,7 +301,7 @@ export function useStyleProps<T extends StyleProps>(
   if (otherProps.className) {
     console.warn(
       'The className prop is unsafe and is unsupported in Arize Components. ' +
-        'Please use style props with Spectrum variables, or UNSAFE_className if you absolutely must do something custom. ' +
+        'Please use style props with AC variables, or UNSAFE_className if you absolutely must do something custom. ' +
         'Note that this may break in future versions due to DOM structure changes.'
     );
   }
@@ -310,7 +310,7 @@ export function useStyleProps<T extends StyleProps>(
   if (otherProps.style) {
     console.warn(
       'The style prop is unsafe and is unsupported in React Arize Components. ' +
-        'Please use style props with Spectrum variables, or UNSAFE_style if you absolutely must do something custom. ' +
+        'Please use style props with AC variables, or UNSAFE_style if you absolutely must do something custom. ' +
         'Note that this may break in future versions due to DOM structure changes.'
     );
   }
