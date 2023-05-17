@@ -25,6 +25,9 @@ export interface TooltipTriggerProps
    * By default, opens for both focus and hover. Can be made to open only for focus.
    */
   trigger?: 'focus';
+  /**
+   * The first child is the element that triggers the tooltip while the second is the tooltip itself
+   */
   children: [ReactElement, ReactElement];
 }
 

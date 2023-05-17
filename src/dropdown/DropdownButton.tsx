@@ -101,14 +101,17 @@ const quietButtonCSS = css`
   }
 
   &.ac-dropdown-button--invalid {
-    border-color: var(--ac-global-color-danger);
+    border-bottom-color: var(--ac-global-color-danger);
     div.ac-dropdown__content {
       color: var(--ac-global-color-danger);
     }
   }
   // Make room for the invalid icon
-  &.ac-dropdown-button--invalid > div.ac-dropdown__content {
+  &.ac-dropdown-button > .ac-dropdown-button__text {
     padding-right: ${theme.spacing.padding24}px;
+  }
+  &.ac-dropdown-button--invalid > .ac-dropdown-button__text {
+    padding-right: 0;
   }
 `;
 

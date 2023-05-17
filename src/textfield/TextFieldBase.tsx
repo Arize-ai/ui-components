@@ -170,6 +170,8 @@ const textFieldBaseCSS = (styleProps: StyleProps) => css`
   &.ac-textfield--nested {
     border: none;
   }
+  /* Validation styles */
+  --ac-validation-icon-width: var(--ac-global-dimension-size-300);
 `;
 
 const quietTextfieldBaseCSS = css`
@@ -191,7 +193,7 @@ const quietTextfieldBaseCSS = css`
   }
   &.ac-textfield--invalid.ac-textfield__input {
     // Make room for the invalid icon
-    padding-right: 24px;
+    padding-right: var(--ac-validation-icon-width);
     color: var(--ac-global-color-danger);
   }
 
@@ -251,7 +253,9 @@ const standardTextfieldBaseCSS = css`
 
   &.ac-textfield--invalid .ac-textfield__input {
     // Make room for the invalid icon (outer padding + icon width + inner padding)
-    padding-right: ${theme.spacing.padding8 + 24 + theme.spacing.padding4}px;
+    padding-right: calc(${
+      theme.spacing.padding8
+    } + var(--ac-validation-icon-width) + ${theme.spacing.padding4}px);
     color: var(--ac-global-color-danger);
   }
 
