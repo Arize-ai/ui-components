@@ -53,12 +53,20 @@ const buttonBaseCSS = css`
     overflow: hidden;
     color: var(--ac-field-text-color-override, ${theme.textColors.white90});
   }
-  .ac-icon-wrap:not(.ac-dropdown-button__validation-icon) {
+  .ac-dropdown-button__dropdown-icon {
     margin: 10px 0 10px 10px;
     flex: fixed;
     width: 16px;
     height: 16px;
     font-size: 16px;
+  }
+  
+  /* Validation styles */
+  --ac-validation-icon-width: var(--ac-global-dimension-size-300);
+  
+  // prepend some space before the icon
+  .ac-dropdown-button__validation-icon {
+    margin: 0 0 0 10px;
   }
   &[disabled] {
     opacity: ${theme.opacity.disabled};
@@ -71,6 +79,17 @@ const buttonBaseCSS = css`
     &.ac-dropdown-button__validation-icon--invalid {
       color: var(--ac-global-color-danger);
     }
+  }
+  
+  // Make room for the invalid icon
+  &.ac-dropdown-button > .ac-dropdown-button__text {
+    padding-right: calc(${
+      theme.spacing.padding8
+    }px + var(--ac-validation-icon-width));
+  }
+  
+  &.ac-dropdown-button--invalid > .ac-dropdown-button__text {
+    padding-right: 0;
   }
 `;
 
@@ -99,19 +118,11 @@ const quietButtonCSS = css`
     cursor: default;
     border-bottom: 1px solid ${theme.components.dropdown.borderColor};
   }
-
   &.ac-dropdown-button--invalid {
     border-bottom-color: var(--ac-global-color-danger);
     div.ac-dropdown__content {
       color: var(--ac-global-color-danger);
     }
-  }
-  // Make room for the invalid icon
-  &.ac-dropdown-button > .ac-dropdown-button__text {
-    padding-right: ${theme.spacing.padding24}px;
-  }
-  &.ac-dropdown-button--invalid > .ac-dropdown-button__text {
-    padding-right: 0;
   }
 `;
 
@@ -227,7 +238,10 @@ function DropdownButton(
           {children}
         </span>
         {validationState && validationState === 'invalid' ? validation : null}
-        <Icon svg={<ArrowIosDownwardOutline />} />
+        <Icon
+          className="ac-dropdown-button__dropdown-icon"
+          svg={<ArrowIosDownwardOutline />}
+        />
       </button>
     </FocusRing>
   );
