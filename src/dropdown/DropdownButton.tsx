@@ -1,19 +1,23 @@
 import React, { ReactNode, CSSProperties } from 'react';
-import { css } from '@emotion/react';
+import { css, keyframes } from '@emotion/react';
 import { classNames } from '../utils/classNames';
 import { mergeProps } from '@react-aria/utils';
 import { useButton } from '@react-aria/button';
 import { useHover } from '@react-aria/interactions';
-import { FocusableRef } from '../types';
+import { FocusableRef, Validation } from '../types';
 import { useFocusableRef } from '../utils/useDOMRef';
 import theme from '../theme';
 import { AddonBefore } from '../field';
-import { Icon, ArrowIosDownwardOutline } from '../icon';
+import { Icon, ArrowIosDownwardOutline, AlertCircleOutline } from '../icon';
 import { AddonableProps } from '../types';
 import { FocusRing } from '@react-aria/focus';
 import { textSizeCSS } from '../content/styles';
 
-export interface DropdownButtonProps extends AddonableProps {
+const appearKeyframes = keyframes`
+    0% {  opacity: 0; }
+    100% { opacity: 1; }
+`;
+export interface DropdownButtonProps extends AddonableProps, Validation {
   /**
    * Whether the button should be displayed with a quiet style.
    * @default false
@@ -49,15 +53,43 @@ const buttonBaseCSS = css`
     overflow: hidden;
     color: var(--ac-field-text-color-override, ${theme.textColors.white90});
   }
-  .ac-icon-wrap {
+  .ac-dropdown-button__dropdown-icon {
     margin: 10px 0 10px 10px;
     flex: fixed;
     width: 16px;
     height: 16px;
     font-size: 16px;
   }
+  
+  /* Validation styles */
+  --ac-validation-icon-width: var(--ac-global-dimension-size-300);
+  
+  // prepend some space before the icon
+  .ac-dropdown-button__validation-icon {
+    margin: 0 0 0 10px;
+  }
   &[disabled] {
     opacity: ${theme.opacity.disabled};
+  }
+  .ac-dropdown-button__validation-icon {
+    /* Animate in the icon */
+    animation: ${appearKeyframes} ${0.2}s forwards ease-in-out;
+    top: ${theme.spacing.padding8}px;
+    right: 0;
+    &.ac-dropdown-button__validation-icon--invalid {
+      color: var(--ac-global-color-danger);
+    }
+  }
+  
+  // Make room for the invalid icon
+  &.ac-dropdown-button > .ac-dropdown-button__text {
+    padding-right: calc(${
+      theme.spacing.padding8
+    }px + var(--ac-validation-icon-width));
+  }
+  
+  &.ac-dropdown-button--invalid > .ac-dropdown-button__text {
+    padding-right: 0;
   }
 `;
 
@@ -85,6 +117,12 @@ const quietButtonCSS = css`
   &[disabled] {
     cursor: default;
     border-bottom: 1px solid ${theme.components.dropdown.borderColor};
+  }
+  &.ac-dropdown-button--invalid {
+    border-bottom-color: var(--ac-global-color-danger);
+    div.ac-dropdown__content {
+      color: var(--ac-global-color-danger);
+    }
   }
 `;
 
@@ -119,6 +157,18 @@ const nonQuietButtonCSS = css`
     margin: ${theme.spacing.margin8}px ${theme.spacing.margin8}px
       ${theme.spacing.margin8}px ${theme.spacing.margin16}px;
   }
+
+  &.ac-dropdown-button--invalid {
+    border: 1px solid var(--ac-global-color-danger);
+    div.ac-dropdown__content {
+      color: var(--ac-global-color-danger);
+    }
+  }
+
+  // Make room for the invalid icon (outer padding + icon width + inner padding)
+  &.ac-dropdown-button--invalid > div.ac-dropdown__content {
+    padding-right: ${theme.spacing.padding8 + 24 + theme.spacing.padding4}px;
+  }
 `;
 
 /**
@@ -139,13 +189,22 @@ function DropdownButton(
     children,
     style,
     addonBefore,
+    validationState,
     // TODO: add support for autoFocus
     // autoFocus,
     ...otherProps
   } = props;
   const { buttonProps, isPressed } = useButton(props, domRef);
   const { hoverProps, isHovered } = useHover({ isDisabled });
+  const isInvalid = validationState === 'invalid';
 
+  const validation = (
+    <Icon
+      key="validation-icon"
+      className={`ac-dropdown-button__validation-icon ac-dropdown-button__validation-icon--${validationState}`}
+      svg={<AlertCircleOutline />}
+    />
+  );
   return (
     <FocusRing focusRingClass="focus-ring">
       <button
@@ -156,6 +215,8 @@ function DropdownButton(
           'is-active': isActive || isPressed,
           'is-disabled': isDisabled,
           'is-hovered': isHovered,
+          'ac-dropdown-button--invalid': isInvalid,
+          'ac-dropdown-button--valid': validationState === 'valid',
         })}
         style={style}
         css={css(
@@ -176,7 +237,11 @@ function DropdownButton(
         >
           {children}
         </span>
-        <Icon svg={<ArrowIosDownwardOutline />} />
+        {validationState && validationState === 'invalid' ? validation : null}
+        <Icon
+          className="ac-dropdown-button__dropdown-icon"
+          svg={<ArrowIosDownwardOutline />}
+        />
       </button>
     </FocusRing>
   );

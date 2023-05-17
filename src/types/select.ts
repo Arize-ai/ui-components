@@ -1,11 +1,12 @@
 import { LabelableProps, Alignment, AddonableProps } from './labelable';
 import { CollectionBase } from './collection';
-import { InputBase, TextInputBase } from './input';
+import { HelpTextProps, InputBase, TextInputBase } from './input';
 import { AriaLabelingProps, DOMProps, FocusableDOMProps } from './dom';
 import { SingleSelection } from './selection';
 import { FocusableProps } from './events';
 import { StyleProps } from './style';
 import { DimensionValue } from './core';
+import { Validation, AriaValidationProps } from '../types';
 
 export interface SelectProps<T>
   extends CollectionBase<T>,
@@ -31,7 +32,8 @@ export interface AriaSelectProps<T>
   extends SelectProps<T>,
     DOMProps,
     AriaLabelingProps,
-    FocusableDOMProps {
+    FocusableDOMProps,
+    AriaValidationProps {
   /**
    * Describes the type of autocomplete functionality the input should provide if any. See [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefautocomplete).
    */
@@ -45,7 +47,9 @@ export interface AriaSelectProps<T>
 export interface PickerProps<T>
   extends AriaSelectProps<T>,
     AddonableProps,
-    StyleProps {
+    StyleProps,
+    Validation,
+    HelpTextProps {
   /**
    * Whether the picker should be displayed with a quiet style.
    * @default false

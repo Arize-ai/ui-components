@@ -11,6 +11,8 @@ import {
   Dropdown,
   Text,
   Provider,
+  Tooltip,
+  TooltipTrigger,
 } from '../src';
 import { useForm, Controller } from 'react-hook-form';
 import dedent from 'ts-dedent';
@@ -32,7 +34,7 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<FormProps> = args => {
+const Template: Story<FormProps> = (args) => {
   const { control, handleSubmit } = useForm();
   const onSubmit = (d: any) => {
     alert(JSON.stringify(d));
@@ -100,12 +102,19 @@ const Template: Story<FormProps> = args => {
         <Controller
           name={'tier'}
           control={control}
-          render={({ field: { onChange, value } }) => (
+          rules={{ required: 'This field is required' }}
+          render={({
+            field: { onChange, value },
+            fieldState: { invalid, error },
+          }) => (
             <Picker
               addonBefore="$"
               onSelectionChange={onChange}
               selectedKey={value}
               label={'Charge Amount'}
+              validationState={invalid ? 'invalid' : undefined}
+              errorMessage={error?.message}
+              aria-errormessage={error?.message}
             >
               <Item>Free</Item>
               <Item>Paid</Item>
@@ -203,11 +212,19 @@ export const QuietForm: Story<FormProps> = () => {
       <Controller
         name={'tier'}
         control={control}
-        render={({ field: { onChange, value } }) => (
+        rules={{ required: 'This field is required' }}
+        render={({
+          field: { onChange, value },
+          fieldState: { invalid, error },
+        }) => (
           <Picker
+            addonBefore="$"
             onSelectionChange={onChange}
             selectedKey={value}
             label={'Charge Amount'}
+            validationState={invalid ? 'invalid' : undefined}
+            errorMessage={error?.message}
+            aria-errormessage={error?.message}
           >
             <Item>Free</Item>
             <Item>Paid</Item>
@@ -248,7 +265,7 @@ const Break = () => (
   />
 );
 
-export const InlineForm: Story<FormProps> = props => {
+export const InlineForm: Story<FormProps> = (props) => {
   const { control, handleSubmit } = useForm();
   const onSubmit = (d: any) => {
     alert(JSON.stringify(d));
@@ -266,16 +283,39 @@ export const InlineForm: Story<FormProps> = props => {
         <Controller
           name={'name'}
           control={control}
-          rules={{ required: 'This field is required', min: 10, max: 20 }}
-          render={({ field: { onChange, value }, fieldState: { invalid } }) => (
-            <TextField
-              onChange={onChange}
-              value={value}
-              validationState={invalid ? 'invalid' : undefined}
-              aria-label={'Name'}
-              placeholder={'e.g. drift monitor'}
-            />
-          )}
+          rules={{
+            required: 'This field is required',
+            validate: (value) => {
+              if (value.length > 10) {
+                return 'Monitor name too long';
+              }
+              return true;
+            },
+          }}
+          render={({
+            field: { onChange, value },
+            fieldState: { invalid, error },
+          }) => {
+            const monitorNameTextField = (
+              <TextField
+                onChange={onChange}
+                value={value}
+                validationState={invalid ? 'invalid' : undefined}
+                aria-label={'Name'}
+                placeholder={'e.g. drift monitor'}
+                aria-errormessage={error?.message}
+                name="monitorName"
+              />
+            );
+            return error?.message ? (
+              <TooltipTrigger delay={0}>
+                {monitorNameTextField}
+                <Tooltip key="monitorNameTooltip">{error.message}</Tooltip>
+              </TooltipTrigger>
+            ) : (
+              monitorNameTextField
+            );
+          }}
         />
         <Text>with a description</Text>
         <Controller
@@ -302,12 +342,36 @@ export const InlineForm: Story<FormProps> = props => {
         <Controller
           name={'type'}
           control={control}
-          render={({ field: { onChange, value } }) => (
-            <Picker aria-label="Picker" defaultSelectedKey={'psi'}>
-              <Item key="psi">PSI</Item>
-              <Item key="kl">KL Divergence</Item>
-            </Picker>
-          )}
+          rules={{
+            required: 'This field is required',
+            validate: (value) => value !== 'psi' || 'Psi is not supported',
+          }}
+          render={({
+            field: { onChange, value },
+            fieldState: { invalid, error },
+          }) => {
+            const metricPicker = (
+              <Picker
+                aria-label="Picker"
+                defaultSelectedKey={'psi'}
+                selectedKey={value}
+                onSelectionChange={onChange}
+                validationState={invalid ? 'invalid' : undefined}
+                aria-errormessage={error?.message}
+              >
+                <Item key="psi">PSI</Item>
+                <Item key="kl">KL Divergence</Item>
+              </Picker>
+            );
+            return error?.message ? (
+              <TooltipTrigger delay={0}>
+                {metricPicker}
+                <Tooltip key="monitorNameTooltip">{error.message}</Tooltip>
+              </TooltipTrigger>
+            ) : (
+              metricPicker
+            );
+          }}
         />
         <Break />
         <Text>evaluating every</Text>
@@ -326,6 +390,8 @@ export const InlineForm: Story<FormProps> = props => {
               aria-label={'time'}
               type="number"
               width={'static-size-900'}
+              errorMessage={error?.message}
+              aria-errormessage={error?.message}
             />
           )}
         />
