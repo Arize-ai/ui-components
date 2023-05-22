@@ -3,11 +3,12 @@ import { DropdownButton, DropdownButtonProps } from './DropdownButton';
 import { DropdownMenu } from './DropdownMenu';
 import { DropdownTrigger, DropdownTriggerProps } from './DropdownTrigger';
 import { useResizeObserver } from '@react-aria/utils';
-import { FocusableRefValue } from '../types';
+import { DOMProps, FocusableRefValue } from '../types';
 import { useUnwrapDOMRef } from '../utils';
 import { useProviderProps } from '../provider';
+import { filterDOMProps } from '@react-aria/utils';
 
-export type DropdownProps = {
+export interface DropdownProps extends DOMProps {
   /**
    * The content of the dropdown menu
    */
@@ -47,6 +48,7 @@ export function Dropdown(props: DropdownProps) {
     isQuiet = false,
     isDisabled,
     buttonProps,
+    ...otherProps
   } = props;
   buttonProps = { ...buttonProps, isDisabled, isQuiet };
   const triggerRef = useRef<FocusableRefValue<HTMLButtonElement>>(null);
@@ -71,10 +73,11 @@ export function Dropdown(props: DropdownProps) {
   const menuStyle = {
     minWidth: buttonWidth,
   };
-
+  const domProps = filterDOMProps(otherProps as DOMProps)
+  const buttonComponentProps = {...buttonProps, ...domProps}
   return (
     <DropdownTrigger {...triggerProps}>
-      <DropdownButton ref={triggerRef} {...buttonProps}>
+      <DropdownButton ref={triggerRef} {...buttonComponentProps}>
         {children}
       </DropdownButton>
       <DropdownMenu style={menuStyle}>{menu}</DropdownMenu>

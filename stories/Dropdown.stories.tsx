@@ -57,7 +57,9 @@ export const Gallery = () => (
       `}
     >
       <li>
-        <Dropdown menu={<Menu />}>Click Me</Dropdown>
+        <Dropdown menu={<Menu />} data-testid="dropdown-test-id">
+          Click Me
+        </Dropdown>
       </li>
       <li>
         <Dropdown menu={<Menu />} buttonProps={{ addonBefore: 'Dataset A' }}>
