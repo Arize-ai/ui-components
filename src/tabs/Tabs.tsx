@@ -50,6 +50,10 @@ const tabListCSS = css`
     gap: var(--ac-global-dimension-static-size-65);
   }
 
+  button[data-is-hidden='true'] {
+    display: none;
+  }
+
   &[data-orientation='horizontal'] {
     flex-direction: row;
     border-bottom: 1px solid var(--tab-border-color);
@@ -120,6 +124,7 @@ export function Tabs({
       className={`ac-tabs ${className}`}
       data-orientation={orientation}
       css={tabsContainerCSS}
+      data-selected-tab-index={selectedIndex}
     >
       <div role="tablist" data-orientation={orientation} css={tabListCSS}>
         {tabs.map((tab, index) => {
@@ -128,6 +133,8 @@ export function Tabs({
             <button
               key={tab.key}
               data-selected={isSelected}
+              data-tab-index={index}
+              data-is-hidden={tab.hidden}
               role="tab"
               onClick={e => {
                 e.preventDefault();
@@ -153,6 +160,7 @@ export function Tabs({
           if (isValidElement(child)) {
             return cloneElement(child as ReactElement<TabPaneChildFCProps>, {
               isSelected: index === selectedIndex,
+              index,
             });
           }
           return null;
@@ -162,7 +170,16 @@ export function Tabs({
   );
 }
 
-type TabPaneChildFCProps = { isSelected: boolean };
+type TabPaneChildFCProps = {
+  /**
+   * Whether or not the tab is selected
+   */
+  isSelected: boolean;
+  /**
+   * The numeric index managed by the Tabs component. If a tab is hidden, it will still count towards the index
+   */
+  index: number;
+};
 /**
  * Function component child for lazy loading support. See storybook
  */
@@ -177,6 +194,12 @@ interface TabPaneProps
    * Props for the tablist item. Use for data-testid etc.
    */
   tabListItemProps?: { [`data-testid`]: string };
+  /**
+   * Whether or not the tab should be conditionally hidden or not.
+   * Useful when trying to hide a tab based on permissions or some other hueristic
+   * @default false
+   */
+  hidden?: boolean;
 }
 
 export const TabPane = ({
@@ -184,13 +207,15 @@ export const TabPane = ({
   children,
   className,
   isSelected = false,
+  hidden = false,
+  index,
   ...divProps
-}: TabPaneProps & { isSelected?: boolean }) => {
+}: TabPaneProps & { isSelected?: boolean; index?: number }) => {
   return (
     <div
       data-tab-name={name}
       {...divProps}
-      hidden={!isSelected}
+      hidden={!isSelected || hidden}
       role="tabpanel"
       className={className}
       tabIndex={isSelected ? 0 : -1}
@@ -198,7 +223,9 @@ export const TabPane = ({
         outline: none;
       `}
     >
-      {typeof children === 'function' ? children({ isSelected }) : children}
+      {typeof children === 'function'
+        ? children({ isSelected, index: index! })
+        : children}
     </div>
   );
 };

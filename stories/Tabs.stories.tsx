@@ -90,9 +90,40 @@ export const WithExtra: Story<TabsProps> = args => (
             <LazyLoadingTabContents isSelected={isSelected} />
           )}
         </TabPane>
-        <TabPane name="Tab 2" extra={<Counter>2</Counter>}>
+        <TabPane name="Tab 3" extra={<Counter>2</Counter>}>
           {({ isSelected }) => (
             <LazyLoadingTabContents isSelected={isSelected} />
+          )}
+        </TabPane>
+      </Tabs>
+    </div>
+  </Provider>
+);
+
+export const WithHidden: Story<TabsProps> = args => (
+  <Provider>
+    <div style={{ width: 500 }} css={tabContentCSS}>
+      <Tabs {...args}>
+        <TabPane name="Tab 1" extra={<Counter>12</Counter>}>
+          {({ isSelected }) => (
+            <LazyLoadingTabContents isSelected={isSelected} />
+          )}
+        </TabPane>
+        <TabPane
+          name="Tab 2"
+          hidden={true}
+          extra={<Counter variant="danger">23</Counter>}
+        >
+          {({ isSelected }) => (
+            <LazyLoadingTabContents isSelected={isSelected} />
+          )}
+        </TabPane>
+        <TabPane name="Tab 3">
+          {({ isSelected, index }) => (
+            <div data-testid={'should-be-tab-3'} css={tabContentCSS}>
+              <Heading level={2}>{`Tab content for index: ${index}`}</Heading>
+              <LazyLoadingTabContents isSelected={isSelected} />
+            </div>
           )}
         </TabPane>
       </Tabs>
