@@ -60,10 +60,10 @@ const buttonBaseCSS = css`
     height: 16px;
     font-size: 16px;
   }
-  
+
   /* Validation styles */
   --ac-validation-icon-width: var(--ac-global-dimension-size-300);
-  
+
   // prepend some space before the icon
   .ac-dropdown-button__validation-icon {
     margin: 0 0 0 10px;
@@ -80,14 +80,14 @@ const buttonBaseCSS = css`
       color: var(--ac-global-color-danger);
     }
   }
-  
+
   // Make room for the invalid icon
   &.ac-dropdown-button > .ac-dropdown-button__text {
-    padding-right: calc(${
-      theme.spacing.padding8
-    }px + var(--ac-validation-icon-width));
+    padding-right: calc(
+      ${theme.spacing.padding8}px + var(--ac-validation-icon-width)
+    );
   }
-  
+
   &.ac-dropdown-button--invalid > .ac-dropdown-button__text {
     padding-right: 0;
   }
