@@ -24,6 +24,14 @@ const sizes: TextProps['textSize'][] = [
   'xxlarge',
   'xxxlarge',
 ];
+
+const colors: TextProps['color'][] = [
+  'white30',
+  'white70',
+  'white90',
+  'designationPurple',
+  'designationTurquoise',
+];
 /**
  * A gallery of all the variants
  */
@@ -32,7 +40,7 @@ export const Gallery = () => {
     <div
       css={css`
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
       `}
     >
       <p
@@ -60,6 +68,42 @@ export const Gallery = () => {
         {sizes.map(size => {
           return (
             <Text key={size} textSize={size} weight="heavy">
+              {`I will not waste chalk`}
+            </Text>
+          );
+        })}
+      </p>
+      <p
+        css={css`
+          .ac-text {
+            display: block;
+          }
+        `}
+      >
+        {colors.map(color => {
+          return (
+            <Text key={color} textSize="xlarge" color={color} weight="heavy">
+              {`I will not waste chalk`}
+            </Text>
+          );
+        })}
+      </p>
+      <p
+        css={css`
+          .ac-text {
+            display: block;
+          }
+        `}
+      >
+        {colors.map(color => {
+          return (
+            <Text
+              key={color}
+              fontStyle="italic"
+              textSize="xlarge"
+              color={color}
+              weight="heavy"
+            >
               {`I will not waste chalk`}
             </Text>
           );
