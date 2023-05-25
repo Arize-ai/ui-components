@@ -38,14 +38,15 @@ const labelColors = {
  * Colors to designate specific meaning (e.g. primary / reference)
  */
 export const designationColors = {
-  designationTurquoise: '#9efcfd',
-  designationPurple: '#ADA1FF',
+  designationTurquoise: colorPalette.turquoiseColors.turquoise500,
+  designationPurple: colorPalette.purpleColors.purple500,
 } as const;
 
+const { grayColors } = _colorPalette;
 export const theme = {
   colors: {
     ...arizeColors,
-    ..._colorPalette.grayColors,
+    ...grayColors,
     ...borderColors,
     statusInfo: '#72D9FF',
     statusSuccess: '#7EE787', // RGB independent success color
