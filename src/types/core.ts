@@ -106,3 +106,5 @@ export type ColorValue =
   | 'gray-800'
   | 'gray-900'
   | 'danger';
+
+export type TextColorValue = 'white90' | 'white70' | 'white30' | 'inherit';

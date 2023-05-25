@@ -1,9 +1,9 @@
 import React, { ElementType, ReactNode, forwardRef, HTMLProps } from 'react';
 import { css } from '@emotion/react';
-import { DOMRef } from '../types';
+import { DOMRef, TextColorValue } from '../types';
 import { useDOMRef } from '../utils/useDOMRef';
 import theme from '../theme';
-import { Color, Size, TextElementType, Weight } from './types';
+import { Size, TextElementType, Weight } from './types';
 import { textSizeCSS, textWeightCSS } from './styles';
 
 export interface TextProps extends HTMLProps<HTMLSpanElement> {
@@ -30,7 +30,7 @@ export interface TextProps extends HTMLProps<HTMLSpanElement> {
    * The color of the text
    * @default 'white90'
    */
-  color?: Color;
+  color?: TextColorValue;
   /**
    * The disabled state of the text
    */
@@ -41,7 +41,7 @@ export interface TextProps extends HTMLProps<HTMLSpanElement> {
   className?: string;
 }
 
-const textCSS = (color: Color) => css`
+const textCSS = (color: TextColorValue) => css`
   /* default to no margin */
   margin: 0;
   color: ${theme.textColors[color]};

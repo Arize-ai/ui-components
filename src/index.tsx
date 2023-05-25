@@ -32,7 +32,7 @@ export * from './empty';
 export * from './contextualhelp';
 export * from './counter';
 export * from './layout';
-export { theme, designationColors } from './theme';
+export { theme, designationColors, colorPalette } from './theme';
 // export interface Props extends HTMLAttributes<HTMLDivElement> {
 //   /** custom content, defaults to 'the snozzberries taste like snozzberries' */
 //   children?: ReactChild;

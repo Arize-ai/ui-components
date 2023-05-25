@@ -9,8 +9,6 @@ export type Size =
 
 export type Weight = 'heavy' | 'normal';
 
-export type Color = 'white90' | 'white70' | 'white30' | 'inherit';
-
 export type TextElementType =
   | 'span'
   | 'h1'
