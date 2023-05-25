@@ -85,14 +85,17 @@ function Colors() {
             </li>
           ))}
         </ul>
+        z
       </section>
     );
   });
 
+  const designationColorKeys = Object.keys(designationColors);
   const designations = (
     <section>
       <Heading>Designation Colors</Heading>
       <ul style={listStyle}>
+<<<<<<< HEAD
         {Object.keys(designationColors)
           .filter(c => c.startsWith('designation'))
           .map((c, i) => (
@@ -100,16 +103,44 @@ function Colors() {
               <Color color={designationColors[c]} name={c} />
             </li>
           ))}
+=======
+        {designationColorKeys.map((c, i) => (
+          <li key={i}>
+            <Color color={designationColors[c]} name={c} />
+          </li>
+        ))}
+>>>>>>> 2afd5d8 (WIP)
       </ul>
     </section>
   );
 
+<<<<<<< HEAD
   const colorPaletteSection = (
     <section>
       <Heading>Color Palette</Heading>
       <ColorGradient colorGradient={colorPalette.purpleColors} />
       <ColorGradient colorGradient={colorPalette.turquoiseColors} />
       <ColorGradient colorGradient={colorPalette.grayColors} />
+=======
+  const colorGroups = Object.keys(colorPalette);
+  const colorPaletteEl = (
+    <section>
+      <Heading>Color Palette</Heading>
+      {/* <div>
+        {colorGroups.map((colorGroup, i) => {
+          return (
+            <div>
+              {colorGroup}
+              <ul>
+                {colorPalette[colorGroup].map(color => (
+                  <li>{color}</li>
+                ))}
+              </ul>
+            </div>
+          );
+        })}
+      </div> */}
+>>>>>>> 2afd5d8 (WIP)
     </section>
   );
 
@@ -123,6 +154,7 @@ function Colors() {
       <br />
       {colorPaletteSection}
       {designations}
+      {colorPaletteEl}
       {components}
     </main>
   );

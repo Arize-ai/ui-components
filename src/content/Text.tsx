@@ -5,10 +5,17 @@ import React, {
   CSSProperties,
 } from 'react';
 import { css } from '@emotion/react';
+<<<<<<< HEAD
 import { ColorValue, DOMProps, DOMRef, StyleProps } from '../types';
 import { useDOMRef } from '../utils/useDOMRef';
 import theme, { designationColors } from '../theme';
 import { TextColor, Size, TextElementType, Weight } from './types';
+=======
+import { DOMRef, TextColorValue } from '../types';
+import { useDOMRef } from '../utils/useDOMRef';
+import theme from '../theme';
+import { Size, TextElementType, Weight } from './types';
+>>>>>>> 2afd5d8 (WIP)
 import { textSizeCSS, textWeightCSS } from './styles';
 import { filterDOMProps } from '@react-aria/utils';
 import { colorValue, useStyleProps } from '../utils';
@@ -37,12 +44,16 @@ export interface TextProps extends DOMProps, StyleProps {
    * The color of the text
    * @default 'white90'
    */
+<<<<<<< HEAD
   color?: TextColor;
   /**
    * The font style
    * @default 'normal'
    */
   fontStyle?: CSSProperties['fontStyle'];
+=======
+  color?: TextColorValue;
+>>>>>>> 2afd5d8 (WIP)
   /**
    * The disabled state of the text
    */
@@ -53,6 +64,7 @@ export interface TextProps extends DOMProps, StyleProps {
   className?: string;
 }
 
+<<<<<<< HEAD
 const getTextColor = (color: TextColor) => {
   if (color.startsWith('designation')) {
     // Return the designation color (e.x. the main primary / reference colors)
@@ -65,6 +77,9 @@ const getTextColor = (color: TextColor) => {
   return colorValue(color as ColorValue);
 };
 const textCSS = (color: TextColor) => css`
+=======
+const textCSS = (color: TextColorValue) => css`
+>>>>>>> 2afd5d8 (WIP)
   /* default to no margin */
   margin: 0;
   color: ${getTextColor(color)};

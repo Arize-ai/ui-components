@@ -11,6 +11,7 @@ export type Size =
 
 export type Weight = 'heavy' | 'normal';
 
+<<<<<<< HEAD
 export type TextColor =
   | 'white90'
   | 'white70'
@@ -19,6 +20,8 @@ export type TextColor =
   | DesignationColorValue
   | ColorValue;
 
+=======
+>>>>>>> 2afd5d8 (WIP)
 export type TextElementType =
   | 'span'
   | 'h1'
