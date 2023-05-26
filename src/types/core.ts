@@ -106,3 +106,7 @@ export type ColorValue =
   | 'gray-800'
   | 'gray-900'
   | 'danger';
+
+export type DesignationColorValue =
+  | 'designationPurple'
+  | 'designationTurquoise';

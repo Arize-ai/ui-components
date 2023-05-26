@@ -1,6 +1,7 @@
 import { css } from '@emotion/react';
 import React, { ReactNode } from 'react';
 import { designationColors } from '../theme';
+import { DesignationColorValue } from '../types';
 
 /**
  * A decorative wrapper around a field to designate the field's color.
@@ -11,7 +12,7 @@ type FieldColorDesignationProps = {
   /**
    * The color to use for the field's border
    */
-  color: keyof typeof designationColors;
+  color: DesignationColorValue;
 };
 
 export function FieldColorDesignation(props: FieldColorDesignationProps) {

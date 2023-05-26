@@ -1,5 +1,5 @@
 import React, { CSSProperties } from 'react';
-import { theme, designationColors, Text, Heading } from '../src';
+import { theme, designationColors, colorPalette, Text, Heading } from '../src';
 import { Meta, Story } from '@storybook/react';
 // @ts-ignore
 import { withDesign } from 'storybook-addon-designs';
@@ -27,14 +27,38 @@ function Color({ color, name }) {
       <div
         style={{
           backgroundColor: color,
-          width: '100px',
-          height: '100px',
+          width: '60px',
+          height: '60px',
           marginRight: '10px',
           borderRadius: 3,
         }}
       />
-      <Text style={{ userSelect: 'none' }}>{color}</Text>
-      <Text>{name}</Text>
+      <Text style={{ userSelect: 'none' }} textSize="xsmall">
+        {color}
+      </Text>
+      <Text textSize="xsmall">{name}</Text>
+    </div>
+  );
+}
+
+function ColorGradient({ colorGradient }) {
+  console.log(colorGradient);
+  return (
+    <div
+      style={{
+        marginBottom: '5px',
+        marginTop: '5px',
+        display: 'flex',
+        flexDirection: 'row',
+      }}
+    >
+      <ul css={listStyle}>
+        {Object.keys(colorGradient).map((color, i) => (
+          <li key={i}>
+            <Color color={colorGradient[color]} name={color} />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
@@ -56,6 +80,7 @@ function Colors() {
         <ul style={listStyle}>
           {colors.map((c, i) => (
             <li key={i}>
+              {c}
               <Color color={theme.components[key][c]} name={c} />
             </li>
           ))}
@@ -68,12 +93,23 @@ function Colors() {
     <section>
       <Heading>Designation Colors</Heading>
       <ul style={listStyle}>
-        {Object.keys(designationColors).map((c, i) => (
-          <li key={i}>
-            <Color color={designationColors[c]} name={c} />
-          </li>
-        ))}
+        {Object.keys(designationColors)
+          .filter(c => c.startsWith('designation'))
+          .map((c, i) => (
+            <li key={i}>
+              <Color color={designationColors[c]} name={c} />
+            </li>
+          ))}
       </ul>
+    </section>
+  );
+
+  const colorPaletteSection = (
+    <section>
+      <Heading>Color Palette</Heading>
+      <ColorGradient colorGradient={colorPalette.purpleColors} />
+      <ColorGradient colorGradient={colorPalette.turquoiseColors} />
+      <ColorGradient colorGradient={colorPalette.grayColors} />
     </section>
   );
 
@@ -85,6 +121,7 @@ function Colors() {
         ))}
       </ul>
       <br />
+      {colorPaletteSection}
       {designations}
       {components}
     </main>

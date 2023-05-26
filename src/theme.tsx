@@ -1,16 +1,7 @@
 import { lighten, darken } from 'polished';
+import * as _colorPalette from './colorPalette';
 
-const grayColors = {
-  gray900: '#181B1F',
-  gray800: '#1d2126',
-  gray700: '#23282e',
-  gray600: '#282e35',
-  gray500: '#2f353d',
-  gray400: '#3d434a',
-  gray300: '#4a5057',
-  gray200: '#585d64', // disabled text
-  gray100: '#666b71',
-} as const;
+export const colorPalette = _colorPalette;
 
 const arizeColors = {
   arizePink: '#CA2A76',
@@ -47,10 +38,11 @@ const labelColors = {
  * Colors to designate specific meaning (e.g. primary / reference)
  */
 export const designationColors = {
-  designationTurquoise: '#9efcfd',
-  designationPurple: '#ADA1FF',
+  designationTurquoise: colorPalette.turquoiseColors.turquoise500,
+  designationPurple: colorPalette.purpleColors.purple500,
 } as const;
 
+const { grayColors } = _colorPalette;
 export const theme = {
   colors: {
     ...arizeColors,
@@ -61,22 +53,22 @@ export const theme = {
     statusWarning: '#E69958',
     statusDanger: '#F85149',
     dividerColor: '#32383f',
-    hoverBgColor: grayColors.gray400,
+    hoverBgColor: _colorPalette.grayColors.gray400,
   },
   textColors,
   labelColors,
   // Add any component specific overrides here
   components: {
     card: {
-      backgroundColor: grayColors.gray800,
-      borderColor: grayColors.gray400,
+      backgroundColor: _colorPalette.grayColors.gray800,
+      borderColor: _colorPalette.grayColors.gray400,
     },
     accordion: {
-      backgroundColor: grayColors.gray500,
-      borderColor: grayColors.gray400,
+      backgroundColor: _colorPalette.grayColors.gray500,
+      borderColor: _colorPalette.grayColors.gray400,
     },
     tabs: {
-      borderColor: grayColors.gray400,
+      borderColor: _colorPalette.grayColors.gray400,
     },
     tooltip: {
       backgroundColor: '#3C4C5D',
@@ -87,18 +79,18 @@ export const theme = {
       borderColor: '#6F7D8C',
     },
     dropdown: {
-      backgroundColor: grayColors.gray500,
-      borderColor: grayColors.gray100,
-      hoverBorderColor: lighten(0.2, grayColors.gray100),
+      backgroundColor: _colorPalette.grayColors.gray500,
+      borderColor: _colorPalette.grayColors.gray100,
+      hoverBorderColor: lighten(0.2, _colorPalette.grayColors.gray100),
       activeBorderColor: arizeColors.arizeLightBlue,
-      activeBackgroundColor: darken(0.02, grayColors.gray500),
+      activeBackgroundColor: darken(0.02, _colorPalette.grayColors.gray500),
     },
     textField: {
-      borderColor: grayColors.gray100,
-      hoverBorderColor: lighten(0.2, grayColors.gray100),
+      borderColor: _colorPalette.grayColors.gray100,
+      hoverBorderColor: lighten(0.2, _colorPalette.grayColors.gray100),
       activeBorderColor: arizeColors.arizeLightBlue,
-      backgroundColor: grayColors.gray500,
-      activeBackgroundColor: darken(0.02, grayColors.gray500),
+      backgroundColor: _colorPalette.grayColors.gray500,
+      activeBackgroundColor: darken(0.02, _colorPalette.grayColors.gray500),
     },
     button: {
       primaryBorderColor: '#5BAECC',
@@ -112,7 +104,7 @@ export const theme = {
       successHoverBackgroundColor: '#7EE787',
     },
     modal: {
-      backgroundColor: grayColors.gray800,
+      backgroundColor: _colorPalette.grayColors.gray800,
     },
   },
   typography: {

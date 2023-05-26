@@ -1,10 +1,17 @@
-import React, { ElementType, ReactNode, forwardRef, HTMLProps } from 'react';
+import React, {
+  ElementType,
+  ReactNode,
+  forwardRef,
+  HTMLProps,
+  CSSProperties,
+} from 'react';
 import { css } from '@emotion/react';
 import { DOMRef } from '../types';
 import { useDOMRef } from '../utils/useDOMRef';
-import theme from '../theme';
-import { Color, Size, TextElementType, Weight } from './types';
+import theme, { designationColors } from '../theme';
+import { TextColor, Size, TextElementType, Weight } from './types';
 import { textSizeCSS, textWeightCSS } from './styles';
+import { filterDOMProps } from '@react-aria/utils';
 
 export interface TextProps extends HTMLProps<HTMLSpanElement> {
   /**
@@ -30,7 +37,12 @@ export interface TextProps extends HTMLProps<HTMLSpanElement> {
    * The color of the text
    * @default 'white90'
    */
-  color?: Color;
+  color?: TextColor;
+  /**
+   * The font style
+   * @default 'normal'
+   */
+  fontStyle?: CSSProperties['fontStyle'];
   /**
    * The disabled state of the text
    */
@@ -41,10 +53,17 @@ export interface TextProps extends HTMLProps<HTMLSpanElement> {
   className?: string;
 }
 
-const textCSS = (color: Color) => css`
+const getTextColor = (color: TextColor) => {
+  if (color.startsWith('designation')) {
+    // Return the designation color (e.x. the main primary / reference colors)
+    return designationColors[color];
+  }
+  return theme.textColors[color];
+};
+const textCSS = (color: TextColor) => css`
   /* default to no margin */
   margin: 0;
-  color: ${theme.textColors[color]};
+  color: ${getTextColor(color)};
 `;
 
 /**
@@ -58,6 +77,7 @@ function Text(props: TextProps, ref: DOMRef<HTMLSpanElement>) {
     textSize = 'medium',
     elementType = 'span',
     weight = 'normal',
+    fontStyle = 'normal',
     ...otherProps
   } = props;
   const TextTag = elementType as ElementType;
@@ -66,11 +86,12 @@ function Text(props: TextProps, ref: DOMRef<HTMLSpanElement>) {
   return (
     <TextTag
       className="ac-text"
-      {...otherProps}
+      {...filterDOMProps(otherProps)}
       css={css`
         ${textCSS(color)};
         ${textSizeCSS(textSize)};
         ${textWeightCSS(weight)};
+        font-style: ${fontStyle};
       `}
       ref={domRef}
     >
