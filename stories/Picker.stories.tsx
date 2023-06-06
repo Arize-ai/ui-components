@@ -7,6 +7,7 @@ import {
   Text,
   Button,
   ContextualHelp,
+  Section,
 } from '../src';
 import { Provider } from '../src';
 import { css } from '@emotion/react';
@@ -95,6 +96,33 @@ const WithAddon: Story<PickerProps<string>> = args => {
         <Item key="rarely">Rarely</Item>
         <Item key="sometimes">Sometimes</Item>
         <Item key="always">Always</Item>
+      </Picker>
+      <br />
+      <Text>Selected Value: {frequency}</Text>
+    </Provider>
+  );
+};
+
+export const WithSections: Story<PickerProps<string>> = args => {
+  const [frequency, setFrequency] = React.useState<string>('rarely');
+  return (
+    <Provider>
+      <Picker
+        isOpen
+        {...args}
+        selectedKey={frequency}
+        onSelectionChange={selected => setFrequency(selected as string)}
+      >
+        <Section title="Animals">
+          <Item key="Aardvark">Aardvark</Item>
+          <Item key="Kangaroo">Kangaroo</Item>
+          <Item key="Snake">Snake</Item>
+        </Section>
+        <Section title="People">
+          <Item key="Danni">Danni</Item>
+          <Item key="Devon">Devon</Item>
+          <Item key="Ross">Ross</Item>
+        </Section>
       </Picker>
       <br />
       <Text>Selected Value: {frequency}</Text>
