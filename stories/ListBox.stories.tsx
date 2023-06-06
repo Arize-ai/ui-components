@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
-import { ListBox, Item, ListBoxProps, Section } from '../src';
+import { ListBox, Item, ListBoxProps, Section, Provider } from '../src';
 
 const meta: Meta = {
   title: 'ListBox',
@@ -62,22 +62,24 @@ export const listOptions = ListOptions.bind({});
 
 const ListBoxWithSections: Story<ListBoxProps<string>> = args => {
   return (
-    <ListBox
-      style={{ width: 200 }}
-      aria-label="Pick your favorite"
-      selectionMode="single"
-    >
-      <Section title="Animals">
-        <Item key="Aardvark">Aardvark</Item>
-        <Item key="Kangaroo">Kangaroo</Item>
-        <Item key="Snake">Snake</Item>
-      </Section>
-      <Section title="People">
-        <Item key="Danni">Danni</Item>
-        <Item key="Devon">Devon</Item>
-        <Item key="Ross">Ross</Item>
-      </Section>
-    </ListBox>
+    <Provider>
+      <ListBox
+        style={{ width: 200 }}
+        aria-label="Pick your favorite"
+        selectionMode="single"
+      >
+        <Section title="Animals">
+          <Item key="Aardvark">Aardvark</Item>
+          <Item key="Kangaroo">Kangaroo</Item>
+          <Item key="Snake">Snake</Item>
+        </Section>
+        <Section title="People">
+          <Item key="Danni">Danni</Item>
+          <Item key="Devon">Devon</Item>
+          <Item key="Ross">Ross</Item>
+        </Section>
+      </ListBox>
+    </Provider>
   );
 };
 
