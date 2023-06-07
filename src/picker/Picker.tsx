@@ -204,6 +204,7 @@ function Picker<T extends object>(
         .ac-dropdown-button__text {
           .is-placeholder {
             color: ${theme.textColors.white70};
+            font-style: italic;
           }
         }
       `}
