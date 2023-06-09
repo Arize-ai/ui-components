@@ -53,7 +53,7 @@ function ActionButton(
 const quietButtonCSS = css`
   border: none;
   margin: 0;
-  padding: 0.2em;
+  padding: 0 0;
   color: inherit;
   background: none;
   cursor: pointer;
@@ -62,7 +62,6 @@ const quietButtonCSS = css`
   transition: all 0.2s ease-in-out;
   &:hover {
     opacity: 1;
-    background-color: ${theme.colors.gray500};
   }
   svg {
     padding: var(--ac-dimension-size-85);
