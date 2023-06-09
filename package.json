@@ -1,5 +1,5 @@
 {
-  "version": "0.12.1",
+  "version": "0.12.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -80,11 +80,12 @@
     "@types/react": "18",
     "@types/react-dom": "18",
     "@types/react-transition-group": "^4.4.5",
-    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.9",
     "@typescript-eslint/parser": "^5.39.0",
     "babel-loader": "^9.1.2",
     "babel-plugin-polished": "^1.1.0",
     "chromatic": "^6.5.1",
+    "eslint": "7.17.0",
     "husky": "^8.0.1",
     "polished": "^4.2.2",
     "react": "18",
@@ -102,7 +103,8 @@
     "react": "^18",
     "react-dom": "^18",
     "**/@typescript-eslint/eslint-plugin": "^4.1.1",
-    "**/@typescript-eslint/parser": "^4.1.1"
+    "**/@typescript-eslint/parser": "^4.1.1",
+    "eslint": "7.17.0"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -135,6 +137,7 @@
     "@react-stately/virtualizer": "^3.3.1",
     "@react-types/shared": "^3.15.0",
     "clsx": "^1.1.1",
+    "eslint-config-prettier": "^8.8.0",
     "react-transition-group": "^4.4.5"
   },
   "description": "Re-usable React components",
