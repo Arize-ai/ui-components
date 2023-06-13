@@ -1,6 +1,6 @@
 import React, { useId } from 'react';
 import { css } from '@emotion/react';
-import { StyleProps } from '@arizeai/components';
+import { StyleProps } from '../../types';
 import { useStyleProps } from '../../utils';
 export const NotFoundSVG = (props: StyleProps) => {
   // Create a unique ID so that more than one gradient def can exist
