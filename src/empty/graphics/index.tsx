@@ -1,2 +1,3 @@
-export * from './EmptyDocuments';
-export * from './EmptyDocuments';
+export * from './EmptyDocumentsSVG';
+export * from './NotFoundSVG';
+export * from './ErrorSVG';

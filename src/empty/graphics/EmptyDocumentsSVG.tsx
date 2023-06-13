@@ -3,7 +3,7 @@ import { css } from '@emotion/react';
 import { StyleProps } from '../../types';
 import { useStyleProps } from '../../utils';
 
-export const EmptyDocuments = (props: StyleProps) => {
+export const EmptyDocumentsSVG = (props: StyleProps) => {
   // Create a unique ID so that more than one gradient def can exist
   // TODO - try to hoist the gradient defs to be global
   const id = useId();

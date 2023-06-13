@@ -25,7 +25,11 @@ const meta: Meta = {
 
 export default meta;
 
-const graphics: EmptyGraphicProps['graphicKey'][] = ['documents'];
+const graphics: EmptyGraphicProps['graphicKey'][] = [
+  'documents',
+  'not found',
+  'error',
+];
 export const Gallery = () => {
   return (
     <ul>
