@@ -1,13 +1,13 @@
 import React, { useMemo } from 'react';
 import { assertUnreachable } from '../utils/typeUtils';
-import { EmptyDocuments } from './graphics';
+import { EmptyDocumentsSVG, NotFoundSVG, ErrorSVG } from './graphics';
 
 export type EmptyGraphicProps = {
   /**
    * The icon to display
    * @default 'documents'
    **/
-  graphicKey: 'documents';
+  graphicKey: 'documents' | 'not found' | 'error';
   /**
    * The size of the icon
    * @default 'S'
@@ -41,7 +41,11 @@ export function EmptyGraphic(props: EmptyGraphicProps) {
   const graphic = useMemo(() => {
     switch (graphicKey) {
       case 'documents':
-        return <EmptyDocuments {...dimensions} />;
+        return <EmptyDocumentsSVG {...dimensions} />;
+      case 'not found':
+        return <NotFoundSVG {...dimensions} />;
+      case 'error':
+        return <ErrorSVG {...dimensions} />;
       default:
         assertUnreachable(graphicKey);
     }
