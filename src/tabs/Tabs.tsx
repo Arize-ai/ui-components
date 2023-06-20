@@ -33,7 +33,7 @@ const tabListCSS = css`
   --tab-hover-color: ${transparentize(0.2, theme.colors.arizeBlue)};
   --tab-selected-border-color: ${theme.colors.arizeBlue};
 
-  button {
+  button[role='tab'] {
     box-sizing: border-box; /* place the border inside */
     background-color: inherit;
     border: none;
@@ -50,14 +50,14 @@ const tabListCSS = css`
     gap: var(--ac-global-dimension-static-size-65);
   }
 
-  button[data-is-hidden='true'] {
+  button[role='tab'][data-is-hidden='true'] {
     display: none;
   }
 
   &[data-orientation='horizontal'] {
     flex-direction: row;
     border-bottom: 1px solid var(--tab-border-color);
-    button {
+    button[role='tab'] {
       border-bottom: 2px solid transparent;
       &:hover {
         border-color: var(--tab-hover-color);
@@ -66,11 +66,17 @@ const tabListCSS = css`
         border-color: var(--tab-selected-border-color);
       }
     }
+    .ac-tabs__extra {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-grow: 1;
+    }
   }
   &[data-orientation='vertical'] {
     flex-direction: column;
     border-right: 1px solid var(--tab-border-color);
-    button {
+    button[role='tab'] {
       border-right: 2px solid transparent;
       &:hover {
         border-color: var(--tab-hover-color);
@@ -78,6 +84,12 @@ const tabListCSS = css`
       &[data-selected='true'] {
         border-color: var(--tab-selected-border-color);
       }
+    }
+    .ac-tabs__extra {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
     }
   }
 `;
@@ -106,6 +118,7 @@ export type TabsProps = {
    * @default horizontal
    */
   orientation?: Orientation;
+  extra?: ReactNode; // Extra controls on the header
 };
 
 /**
@@ -116,6 +129,7 @@ export function Tabs({
   className,
   onChange,
   orientation = 'horizontal',
+  extra,
 }: TabsProps) {
   const tabs = parseTabList(children);
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
@@ -154,6 +168,7 @@ export function Tabs({
             </button>
           );
         })}
+        {extra && <div className="ac-tabs__extra">{extra}</div>}
       </div>
       <div className="ac-tabs__pane-container">
         {Children.map(children, (child, index) => {
