@@ -90,6 +90,7 @@ export const WithExtra: Story<TabsProps> = args => (
             css={css`
               padding: 0 ${theme.spacing.padding16}px;
               border: none;
+              height: 50px;
             `}
           />
         }

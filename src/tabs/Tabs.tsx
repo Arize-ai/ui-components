@@ -40,7 +40,7 @@ const tabListCSS = css`
     outline: none;
     cursor: pointer;
     padding: 0 ${theme.spacing.padding16}px;
-    height: 30px;
+    min-height: 30px;
     transition: 0.3s;
     font-weight: bold;
     border-color: var(--tab-border-color);
