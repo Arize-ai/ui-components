@@ -4,7 +4,6 @@ import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
 import { Tabs, TabsProps } from '../src/tabs/Tabs';
 import { Heading } from '../src/content';
-import theme from '../src/theme';
 import { Button, CloseOutline, Counter, Icon, Provider } from '../src';
 
 const { TabPane } = Tabs;
@@ -87,10 +86,6 @@ export const WithExtra: Story<TabsProps> = args => (
             variant="default"
             size="compact"
             icon={<Icon svg={<CloseOutline />} />}
-            css={css`
-              padding: 0 ${theme.spacing.padding16}px;
-              border: none;
-            `}
           />
         }
       >
