@@ -66,7 +66,7 @@ const tabListCSS = css`
         border-color: var(--tab-selected-border-color);
       }
     }
-    .ac-tabs__extra {
+    .ac-tabs__extra-content {
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -85,7 +85,7 @@ const tabListCSS = css`
         border-color: var(--tab-selected-border-color);
       }
     }
-    .ac-tabs__extra {
+    .ac-tabs__extra-content {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -168,7 +168,7 @@ export function Tabs({
             </button>
           );
         })}
-        {extra && <div className="ac-tabs__extra">{extra}</div>}
+        {extra && <div className="ac-tabs__extra-content">{extra}</div>}
       </div>
       <div className="ac-tabs__pane-container">
         {Children.map(children, (child, index) => {
