@@ -118,7 +118,7 @@ export type TabsProps = {
    * @default horizontal
    */
   orientation?: Orientation;
-  extra?: ReactNode; // Extra controls on the header
+  extra?: ReactNode; // Extra controls on the tablist
 };
 
 /**
