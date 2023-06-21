@@ -4,7 +4,7 @@ import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
 import { Tabs, TabsProps } from '../src/tabs/Tabs';
 import { Heading } from '../src/content';
-import { Counter, Provider } from '../src';
+import { Button, CloseOutline, Counter, Icon, Provider } from '../src';
 
 const { TabPane } = Tabs;
 
@@ -79,7 +79,16 @@ export const LazyLoading: Story<TabsProps> = args => (
 export const WithExtra: Story<TabsProps> = args => (
   <Provider>
     <div style={{ width: 500 }} css={tabContentCSS}>
-      <Tabs {...args}>
+      <Tabs
+        {...args}
+        extra={
+          <Button
+            variant="default"
+            size="compact"
+            icon={<Icon svg={<CloseOutline />} />}
+          />
+        }
+      >
         <TabPane name="Tab 1" extra={<Counter>12</Counter>}>
           {({ isSelected }) => (
             <LazyLoadingTabContents isSelected={isSelected} />
