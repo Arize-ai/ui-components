@@ -2,18 +2,18 @@ import React, {
   ElementType,
   ReactNode,
   forwardRef,
-  HTMLProps,
   CSSProperties,
 } from 'react';
 import { css } from '@emotion/react';
-import { DOMRef } from '../types';
+import { ColorValue, DOMProps, DOMRef, StyleProps } from '../types';
 import { useDOMRef } from '../utils/useDOMRef';
 import theme, { designationColors } from '../theme';
 import { TextColor, Size, TextElementType, Weight } from './types';
 import { textSizeCSS, textWeightCSS } from './styles';
 import { filterDOMProps } from '@react-aria/utils';
+import { colorValue, useStyleProps } from '../utils';
 
-export interface TextProps extends HTMLProps<HTMLSpanElement> {
+export interface TextProps extends DOMProps, StyleProps {
   /**
    * Sets text size
    * @default 'medium'
@@ -58,7 +58,11 @@ const getTextColor = (color: TextColor) => {
     // Return the designation color (e.x. the main primary / reference colors)
     return designationColors[color];
   }
-  return theme.textColors[color];
+  const textColor = theme.textColors[color];
+  if (textColor) {
+    return textColor;
+  }
+  return colorValue(color as ColorValue);
 };
 const textCSS = (color: TextColor) => css`
   /* default to no margin */
@@ -82,11 +86,13 @@ function Text(props: TextProps, ref: DOMRef<HTMLSpanElement>) {
   } = props;
   const TextTag = elementType as ElementType;
   const domRef = useDOMRef(ref);
+  const styleProps = useStyleProps(otherProps);
 
   return (
     <TextTag
       className="ac-text"
       {...filterDOMProps(otherProps)}
+      {...styleProps}
       css={css`
         ${textCSS(color)};
         ${textSizeCSS(textSize)};
