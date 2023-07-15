@@ -1,4 +1,4 @@
-import { DesignationColorValue } from '../types';
+import { ColorValue, DesignationColorValue } from '../types';
 
 export type Size =
   | 'xxxlarge'
@@ -16,7 +16,8 @@ export type TextColor =
   | 'white70'
   | 'white30'
   | 'inherit'
-  | DesignationColorValue;
+  | DesignationColorValue
+  | ColorValue;
 
 export type TextElementType =
   | 'span'

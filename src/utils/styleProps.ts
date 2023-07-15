@@ -209,7 +209,7 @@ function rtl(ltr: string, rtl: string) {
 }
 
 type ColorType = 'default' | 'background' | 'border' | 'icon' | 'status';
-function colorValue(value: ColorValue, type: ColorType = 'default') {
+export function colorValue(value: ColorValue, type: ColorType = 'default') {
   // TODO actually support semantic colors
   return `var(--ac-global-color-${value}, var(--ac-semantic-${value}-color-${type}))`;
 }

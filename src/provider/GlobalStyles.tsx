@@ -192,6 +192,8 @@ export const globalCSS = css`
       --ac-global-color-gray-100: #666b71;
 
       --ac-global-color-danger: #f85149;
+      --ac-global-color-success: #7ee787;
+      --ac-global-color-warning: #e69958;
 
       --ac-global-text-color-900: rgba(255, 255, 255, 0.9);
 

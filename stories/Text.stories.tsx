@@ -2,7 +2,7 @@ import React from 'react';
 import { css } from '@emotion/react';
 import { Meta } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
-import { Text, TextProps } from '../src';
+import { Provider, Text, TextProps } from '../src';
 
 const meta: Meta = {
   title: 'Text',
@@ -31,84 +31,89 @@ const colors: TextProps['color'][] = [
   'white90',
   'designationPurple',
   'designationTurquoise',
+  'success',
+  'danger',
+  'warning',
 ];
 /**
  * A gallery of all the variants
  */
 export const Gallery = () => {
   return (
-    <div
-      css={css`
-        display: flex;
-        flex-direction: column;
-      `}
-    >
-      <p
+    <Provider>
+      <div
         css={css`
-          .ac-text {
-            display: block;
-          }
+          display: flex;
+          flex-direction: column;
         `}
       >
-        {sizes.map(size => {
-          return (
-            <Text key={size} textSize={size}>
-              {`I will not waste chalk`}
-            </Text>
-          );
-        })}
-      </p>
-      <p
-        css={css`
-          .ac-text {
-            display: block;
-          }
-        `}
-      >
-        {sizes.map(size => {
-          return (
-            <Text key={size} textSize={size} weight="heavy">
-              {`I will not waste chalk`}
-            </Text>
-          );
-        })}
-      </p>
-      <p
-        css={css`
-          .ac-text {
-            display: block;
-          }
-        `}
-      >
-        {colors.map(color => {
-          return (
-            <Text key={color} textSize="xlarge" color={color} weight="heavy">
-              {`I will not waste chalk`}
-            </Text>
-          );
-        })}
-      </p>
-      <p
-        css={css`
-          .ac-text {
-            display: block;
-          }
-        `}
-      >
-        {colors.map(color => {
-          return (
-            <Text
-              key={color}
-              fontStyle="italic"
-              textSize="xlarge"
-              color={color}
-              weight="heavy"
-            >
-              {`I will not waste chalk`}
-            </Text>
-          );
-        })}
-      </p>
-    </div>
+        <p
+          css={css`
+            .ac-text {
+              display: block;
+            }
+          `}
+        >
+          {sizes.map(size => {
+            return (
+              <Text key={size} textSize={size}>
+                {`I will not waste chalk`}
+              </Text>
+            );
+          })}
+        </p>
+        <p
+          css={css`
+            .ac-text {
+              display: block;
+            }
+          `}
+        >
+          {sizes.map(size => {
+            return (
+              <Text key={size} textSize={size} weight="heavy">
+                {`I will not waste chalk`}
+              </Text>
+            );
+          })}
+        </p>
+        <p
+          css={css`
+            .ac-text {
+              display: block;
+            }
+          `}
+        >
+          {colors.map(color => {
+            return (
+              <Text key={color} textSize="xlarge" color={color} weight="heavy">
+                {`I will not waste chalk`}
+              </Text>
+            );
+          })}
+        </p>
+        <p
+          css={css`
+            .ac-text {
+              display: block;
+            }
+          `}
+        >
+          {colors.map(color => {
+            return (
+              <Text
+                key={color}
+                fontStyle="italic"
+                textSize="xlarge"
+                color={color}
+                weight="heavy"
+              >
+                {`I will not waste chalk`}
+              </Text>
+            );
+          })}
+        </p>
+      </div>
+    </Provider>
   );
 };
