@@ -79,6 +79,9 @@ export function AccordionItem(props: AccordionItemProps) {
       css={css`
         display: flex;
         flex-direction: row;
+        .ac-accordion-item__title {
+          margin-right: var(--ac-global-dimension-static-size-50);
+        }
       `}
     >
       <span className="ac-accordion-item__title">{title}</span>
