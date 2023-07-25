@@ -7,7 +7,7 @@ type CounterProps = PropsWithChildren<{
    * The color of the counter
    * @default 'default'
    **/
-  variant?: 'default' | 'danger';
+  variant?: 'default' | 'dark' | 'light' | 'danger';
 }>;
 
 const counterCSS = css`
@@ -23,6 +23,12 @@ const counterCSS = css`
   font-size: ${theme.typography.sizes.small.fontSize}px;
   line-height: ${theme.typography.sizes.small.lineHeight}px;
   color: var(--ac-global-text-color-900);
+  &[data-variant='light'] {
+    background-color: var(--ac-global-color-gray-100);
+  }
+  &[data-variant='dark'] {
+    background-color: var(--ac-global-background-color-dark);
+  }
   &[data-variant='danger'] {
     background-color: var(--ac-global-background-color-danger);
   }

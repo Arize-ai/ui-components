@@ -6,6 +6,7 @@ import {
   AccordionItem,
   Card,
   Provider,
+  Counter,
 } from '../src';
 import { withDesign } from 'storybook-addon-designs';
 import InfoTip from './components/InfoTip';
@@ -54,7 +55,11 @@ const Template: Story<AccordionProps> = args => (
         >
           <AccordionContents />
         </AccordionItem>
-        <AccordionItem title="100 Features" id="features">
+        <AccordionItem
+          title="Features"
+          titleExtra={<Counter variant="light">100</Counter>}
+          id="features"
+        >
           <AccordionContents />
         </AccordionItem>
         <AccordionItem title="10 Actuals" id="actuals">
