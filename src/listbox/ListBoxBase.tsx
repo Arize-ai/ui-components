@@ -112,9 +112,14 @@ function ListBoxBase<T>(
       return (
         <ListBoxSection
           key={reusableView.key}
-          reusableView={reusableView}
-          // @ts-ignore assume there is a header
-          header={children.find(c => c.viewType === 'header')}
+          item={reusableView.content}
+          layoutInfo={reusableView.layoutInfo!}
+          virtualizer={reusableView.virtualizer}
+          // @ts-ignore
+          headerLayoutInfo={
+            // @ts-ignore
+            children.find(c => c.viewType === 'header').layoutInfo
+          }
         >
           {renderChildren(children.filter(c => c.viewType === 'item'))}
         </ListBoxSection>
@@ -124,9 +129,13 @@ function ListBoxBase<T>(
     return (
       <VirtualizerItem
         key={reusableView.key}
-        reusableView={reusableView}
-        parent={parent}
-      />
+        // @ts-ignore
+        layoutInfo={reusableView.layoutInfo}
+        virtualizer={reusableView.virtualizer}
+        parent={parent?.layoutInfo ?? undefined}
+      >
+        {reusableView.rendered as ReactNode}
+      </VirtualizerItem>
     );
   };
 
