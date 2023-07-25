@@ -59,7 +59,7 @@ function RadioGroup(props: RadioGroupProps) {
           {label}
         </Text>
       )}
-      <RadioContext.Provider value={state}>
+      <RadioContext.Provider value={{ state }}>
         {children &&
           React.Children.map(children, child => {
             if (isValidElement(child)) {
