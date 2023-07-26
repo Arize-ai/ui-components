@@ -60,7 +60,6 @@ export function useListBoxLayout<T>(state: ListState<T>) {
         placeholderHeight: 32,
         collator,
       }),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     [collator]
   );
 
