@@ -63,7 +63,7 @@ const content = (
       <Card title="Section 5">
         <Text>hello</Text>
       </Card>
-      <Card title="Section 6">
+      {/* <Card title="Section 6">
         <Text>hello</Text>
       </Card>
       <Card title="Section 7">
@@ -74,7 +74,7 @@ const content = (
       </Card>
       <Card title="Section 9">
         <Text>hello</Text>
-      </Card>
+      </Card> */}
     </div>
   </div>
 );

@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 import { useModal, useOverlay, usePreventScroll } from '@react-aria/overlays';
-import { mergeProps, useViewportSize } from '@react-aria/utils';
+import { mergeProps } from '@react-aria/utils';
 import React, { forwardRef, HTMLAttributes, ReactNode, RefObject } from 'react';
 import theme from '../theme';
 import { DOMRef, ModalProps } from '../types';
@@ -10,7 +10,7 @@ import { Underlay } from './Underlay';
 
 const modalWrapperCSS = css`
   box-sizing: border-box;
-  height: var(--ac-visual-viewport-height);
+  height: 100vh;
   z-index: 2;
   transition: visibility 0ms linear 130ms;
   display: flex;
@@ -82,13 +82,8 @@ const ModalWrapper = forwardRef<HTMLDivElement>(function(
     otherProps.className
   );
 
-  let viewport = useViewportSize();
-  let style: any = {
-    '--ac-visual-viewport-height': viewport.height + 'px',
-  };
-
   return (
-    <div className={wrapperClassName} style={style} css={modalWrapperCSS}>
+    <div className={wrapperClassName} css={modalWrapperCSS}>
       <div
         {...mergeProps(otherProps, overlayProps, modalProps)}
         ref={ref}
