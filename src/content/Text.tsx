@@ -86,7 +86,7 @@ function Text(props: TextProps, ref: DOMRef<HTMLSpanElement>) {
   } = props;
   const TextTag = elementType as ElementType;
   const domRef = useDOMRef(ref);
-  const styleProps = useStyleProps(otherProps);
+  const { styleProps } = useStyleProps(otherProps);
 
   return (
     <TextTag
