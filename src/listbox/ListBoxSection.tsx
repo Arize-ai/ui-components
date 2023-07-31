@@ -1,17 +1,21 @@
-import { layoutInfoToStyle, useVirtualizerItem } from '@react-aria/virtualizer';
+import {
+  VirtualizerItemOptions,
+  layoutInfoToStyle,
+  useVirtualizerItem,
+} from '@react-aria/virtualizer';
 import { ListBoxContext } from './ListBoxContext';
 import { Node } from '@react-types/shared';
 import React, { Fragment, ReactNode, useContext, useRef } from 'react';
-import { ReusableView } from '@react-stately/virtualizer';
+import { LayoutInfo } from '@react-stately/virtualizer';
 import { useListBoxSection } from '@react-aria/listbox';
 import { useLocale } from '@react-aria/i18n';
 import { useSeparator } from '@react-aria/separator';
 import { css } from '@emotion/react';
 import theme from '../theme';
 
-interface ListBoxSectionProps<T> {
-  reusableView: ReusableView<Node<T>, unknown>;
-  header: ReusableView<Node<T>, unknown>;
+interface ListBoxSectionProps<T> extends Omit<VirtualizerItemOptions, 'ref'> {
+  headerLayoutInfo: LayoutInfo;
+  item: Node<T>;
   children?: ReactNode;
 }
 
@@ -37,8 +41,7 @@ const dividerCSS = css`
 
 /** @private */
 export function ListBoxSection<T>(props: ListBoxSectionProps<T>) {
-  let { children, reusableView, header } = props;
-  let item = reusableView.content;
+  let { children, layoutInfo, headerLayoutInfo, virtualizer, item } = props;
   let { headingProps, groupProps } = useListBoxSection({
     heading: item.rendered,
     'aria-label': item['aria-label'],
@@ -48,10 +51,10 @@ export function ListBoxSection<T>(props: ListBoxSectionProps<T>) {
     elementType: 'li',
   });
 
-  let headerRef = useRef();
+  let headerRef = useRef(null);
   useVirtualizerItem({
-    reusableView: header,
-    // @ts-ignore
+    layoutInfo: headerLayoutInfo,
+    virtualizer,
     ref: headerRef,
   });
 
@@ -62,10 +65,8 @@ export function ListBoxSection<T>(props: ListBoxSectionProps<T>) {
     <Fragment>
       <div
         role="presentation"
-        // @ts-ignore
         ref={headerRef}
-        // @ts-ignore
-        style={layoutInfoToStyle(header.layoutInfo, direction)}
+        style={layoutInfoToStyle(headerLayoutInfo, direction)}
       >
         {item.key !== state.collection.getFirstKey() && (
           <div
@@ -86,8 +87,7 @@ export function ListBoxSection<T>(props: ListBoxSectionProps<T>) {
       </div>
       <div
         {...groupProps}
-        // @ts-ignore
-        style={layoutInfoToStyle(reusableView.layoutInfo, direction)}
+        style={layoutInfoToStyle(layoutInfo, direction)}
         className="ac-menu"
       >
         {children}

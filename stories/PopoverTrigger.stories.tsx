@@ -9,6 +9,9 @@ import {
   PopoverTriggerProps,
   Placement,
   Button,
+  ListBox,
+  Item,
+  View,
 } from '../src';
 import { css } from '@emotion/react';
 import { Icon, PlusCircleOutline } from '../src/icon';
@@ -103,6 +106,38 @@ const Template: Story<PopoverTriggerProps> = args => {
           );
         })}
       </ul>
+    </Provider>
+  );
+};
+
+export const PopoverTriggerWithListItem = () => {
+  const [items, setItems] = useState(['one', 'two', 'three']);
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <Provider>
+      <PopoverTrigger isOpen={isOpen} onOpenChange={setIsOpen}>
+        <Button variant="default" icon={<Icon svg={<PlusCircleOutline />} />}>
+          Foo
+        </Button>
+        <View
+          minWidth={300}
+          borderColor="light"
+          borderRadius="medium"
+          borderWidth="thick"
+        >
+          <ListBox
+            selectionMode="single"
+            onSelectionChange={() => {
+              setItems(['four', 'five', 'six']);
+              setIsOpen(false);
+            }}
+          >
+            {items.map(item => (
+              <Item key={item}>{item}</Item>
+            ))}
+          </ListBox>
+        </View>
+      </PopoverTrigger>
     </Provider>
   );
 };

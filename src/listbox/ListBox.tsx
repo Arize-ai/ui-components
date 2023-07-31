@@ -1,16 +1,42 @@
 import { DOMRef } from '@react-types/shared';
 import { ListBoxBase, useListBoxLayout } from './ListBoxBase';
-import React, { ReactElement, CSSProperties } from 'react';
+import React, { ReactElement, CSSProperties, ReactNode, Key } from 'react';
 import { useDOMRef } from '../utils';
 import { useListState } from '@react-stately/list';
-import { CollectionBase, MultipleSelection } from '../types';
+import {
+  AriaLabelingProps,
+  CollectionBase,
+  DOMProps,
+  MultipleSelection,
+  SelectionBehavior,
+} from '../types';
 
-export interface ListBoxProps<T> extends CollectionBase<T>, MultipleSelection {
+export interface ListBoxPropsBase<T>
+  extends CollectionBase<T>,
+    MultipleSelection {
   /** Whether to auto focus the listbox. */
   autoFocus?: boolean;
   /** Whether focus should wrap around when the end/start is reached. */
   shouldFocusWrap?: boolean;
   style?: CSSProperties;
+}
+
+interface AriaListBoxPropsBase<T>
+  extends ListBoxPropsBase<T>,
+    DOMProps,
+    AriaLabelingProps {}
+export interface ListBoxProps<T> extends AriaListBoxPropsBase<T> {
+  /**
+   * An optional visual label for the listbox.
+   */
+  label?: ReactNode;
+  /** How multiple selection should behave in the collection. */
+  selectionBehavior?: SelectionBehavior;
+  /**
+   * Handler that is called when a user performs an action on an item. The exact user event depends on
+   * the collection's `selectionBehavior` prop and the interaction modality.
+   */
+  onAction?: (key: Key) => void;
 }
 
 function ListBox<T extends object>(

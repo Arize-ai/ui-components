@@ -83,6 +83,37 @@ const ListBoxWithSections: Story<ListBoxProps<string>> = args => {
   );
 };
 
+export const ListBoxWithTransitions: Story<ListBoxProps<string>> = args => {
+  const [items, setItems] = React.useState<string[]>([
+    'Danni',
+    'Devon',
+    'Ross',
+  ]);
+  return (
+    <Provider>
+      <ListBox
+        style={{ width: 200 }}
+        aria-label="Pick your favorite"
+        selectionMode="single"
+        onSelectionChange={item => {
+          setItems(['foo', 'bar', 'baz']);
+        }}
+      >
+        <Section title="Animals">
+          <Item key="Aardvark">Aardvark</Item>
+          <Item key="Kangaroo">Kangaroo</Item>
+          <Item key="Snake">Snake</Item>
+        </Section>
+        <Section title="People">
+          {items.map(item => (
+            <Item key={item}>{item}</Item>
+          ))}
+        </Section>
+      </ListBox>
+    </Provider>
+  );
+};
+
 export const listBoxWithSections = ListBoxWithSections.bind({});
 
 const ListBoxMultiSelect: Story<ListBoxProps<string>> = args => {

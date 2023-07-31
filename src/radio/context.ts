@@ -1,16 +1,14 @@
 import React from 'react';
 import { RadioGroupState } from '@react-stately/radio';
 
-const RadioContext = React.createContext<RadioGroupState>({
-  name: '',
-  isDisabled: false,
-  isReadOnly: false,
-  selectedValue: null,
-  setSelectedValue: () => {},
-  lastFocusedValue: null,
-  setLastFocusedValue: () => {},
-  validationState: 'valid',
-});
+interface RadioGroupContext {
+  isEmphasized?: boolean;
+  name?: string;
+  validationState?: 'valid' | 'invalid';
+  state: RadioGroupState;
+}
+
+const RadioContext = React.createContext<RadioGroupContext | null>(null);
 
 export function useRadioProvider() {
   return React.useContext(RadioContext);

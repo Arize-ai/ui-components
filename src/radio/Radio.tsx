@@ -59,7 +59,8 @@ export type RadioProps = {
 };
 
 function Radio(props: RadioProps) {
-  const state = useRadioProvider();
+  const radioGroupProps = useRadioProvider();
+  let { state } = radioGroupProps!;
   const {
     variant = 'default',
     size = 'normal',
@@ -75,7 +76,7 @@ function Radio(props: RadioProps) {
   const labeledById = useId();
 
   const { inputProps } = useRadio(
-    { ...props, 'aria-labelledby': labeledById },
+    { ...props, ...radioGroupProps, 'aria-labelledby': labeledById },
     state,
     inputRef
   );

@@ -2,7 +2,8 @@ import React, { HTMLAttributes, MutableRefObject, useContext } from 'react';
 
 type FocusStrategy = 'first' | 'last';
 
-export interface MenuContextValue extends HTMLAttributes<HTMLElement> {
+export interface MenuContextValue
+  extends Omit<HTMLAttributes<HTMLElement>, 'autoFocus'> {
   onClose?: () => void;
   closeOnSelect?: boolean;
   shouldFocusWrap?: boolean;
