@@ -44,14 +44,15 @@ function SliderBase(props: SliderBaseProps, ref: FocusableRef<HTMLDivElement>) {
     Math.abs(Math.sign(minValue) - Math.sign(maxValue)) === 2;
   if (alwaysDisplaySign) {
     if (formatOptions != null) {
+      // @ts-ignore
       if (!('signDisplay' in formatOptions)) {
         formatOptions = {
           ...formatOptions,
           signDisplay: 'exceptZero',
-        };
+        } as Intl.NumberFormatOptions;
       }
     } else {
-      formatOptions = { signDisplay: 'exceptZero' };
+      formatOptions = { signDisplay: 'exceptZero' } as Intl.NumberFormatOptions;
     }
   }
 

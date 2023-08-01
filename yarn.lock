@@ -2140,7 +2140,7 @@
     "@swc/helpers" "^0.5.0"
     clsx "^1.1.1"
 
-"@react-aria/i18n@^3.6.1", "@react-aria/i18n@^3.8.0":
+"@react-aria/i18n@^3.8.0":
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/@react-aria/i18n/-/i18n-3.8.0.tgz#fe0c6b9ad9fe1e8a139c4d514d4240164c699bf8"
   integrity sha512-zeohg7d66zPLnGQl1rJuVJJ/gP7GmUMxEKIFRwE+rg2u02ldKxJMSb8QKGo605QpFWqo7CuuWYvKJP5Mj+Em/w==
