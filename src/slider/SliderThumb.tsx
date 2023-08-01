@@ -10,32 +10,21 @@ import { VisuallyHidden } from '@react-aria/visually-hidden';
 import { css } from '@emotion/react';
 
 const handleCSS = css`
-  top: calc(
-    var(--spectrum-slider-height, var(--spectrum-alias-single-line-height)) / 2
-  );
+  top: calc(var(--ac-slider-height, var(--ac-alias-single-line-height)) / 2);
   z-index: 2;
   box-sizing: border-box;
-  width: var(
-    --spectrum-slider-handle-width,
-    var(--spectrum-global-dimension-size-200)
-  );
-  height: var(
-    --spectrum-slider-handle-height,
-    var(--spectrum-global-dimension-size-200)
-  );
+  width: var(--ac-slider-handle-width, var(--ac-global-dimension-size-200));
+  height: var(--ac-slider-handle-height, var(--ac-global-dimension-size-200));
   border-width: var(
-    --spectrum-slider-handle-border-size,
-    var(--spectrum-alias-border-size-thick)
+    --ac-slider-handle-border-size,
+    var(--ac-alias-border-size-thick)
   );
   border-radius: var(
-    --spectrum-slider-handle-border-radius,
-    var(--spectrum-alias-border-radius-medium)
+    --ac-slider-handle-border-radius,
+    var(--ac-global-rounding-medium)
   );
   transition: border-width
-    var(
-      --spectrum-slider-animation-duration,
-      var(--spectrum-global-animation-duration-100)
-    )
+    var(--ac-slider-animation-duration, var(--ac-global-animation-duration-100))
     ease-in-out;
   border-style: solid;
   outline: none;

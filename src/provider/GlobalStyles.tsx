@@ -249,6 +249,10 @@ export const globalCSS = css`
       --ac-global-grid-margin-xlarge: var(
         --ac-global-dimension-static-size-600
       );
+
+      /* Aliases */
+      --ac-alias-single-line-height: var(--ac-global-dimension-size-400);
+      --ac-alias-single-line-width: var(--ac-global-dimension-size-2400);
     }
   }
 `;
