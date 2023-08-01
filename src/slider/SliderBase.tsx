@@ -7,8 +7,7 @@ import { useNumberFormatter } from '@react-aria/i18n';
 import { useProviderProps } from '../provider';
 import { useSlider } from '@react-aria/slider';
 import { css } from '@emotion/react';
-import theme from '../theme';
-import { labelContainerCSS, sliderCSS } from './styles';
+import { labelCSS, labelContainerCSS, sliderCSS } from './styles';
 export interface SliderBaseChildArguments {
   inputRef: RefObject<HTMLInputElement>;
   trackRef: RefObject<HTMLElement>;
@@ -20,10 +19,6 @@ export interface SliderBaseProps<T = number[]> extends BarSliderBase<T> {
   classes?: string[] | Object;
   style?: CSSProperties;
 }
-
-const labelCSS = css`
-  color: ${theme.textColors.white90};
-`;
 
 const controlsCSS = css`
   min-height: var(--ac-slider-height, var(--ac-alias-single-line-height));

@@ -5,8 +5,9 @@ export const sliderCSS = css`
   --ac-slider-track-height: var(--ac-global-dimension-size-30);
   --ac-slider-handle-width: var(--ac-global-dimension-size-250);
   --ac-slider-handle-height: var(--ac-global-dimension-size-250);
+  --ac-slider-handle-halo-width: var(--ac-global-dimension-size-350);
   --ac-slider-handle-border-radius: var(--ac-global-dimension-size-250);
-  --ac-slider-handle-background-color: ${theme.colors.arizeLightBlue};
+  --ac-slider-handle-background-color: white;
   --ac-slider-track-height: var(--ac-global-dimension-size-100);
   width: var(
     --ac-alias-single-line-width,
@@ -33,11 +34,11 @@ export const sliderCSS = css`
     &:first-of-type::before,
     &:last-of-type::before {
       /* The edge tracks */
-      background: var(--ac-global-color-gray-500);
+      background: var(--ac-global-color-gray-300);
     }
     &:not(:first-of-type):not(:last-of-type)::before {
       /* The middle track */
-      background: var(--ac-global-color-gray-100);
+      background: ${theme.colors.arizeLightBlue};
     }
     &:last-of-type {
       margin-left: calc(
@@ -58,7 +59,7 @@ export const sliderCSS = css`
 export const handleCSS = css`
   top: calc(var(--ac-slider-height, var(--ac-alias-single-line-height)) / 2);
   z-index: 2;
-  box-sizing: border-box;
+  box-sizing: content-box;
   width: var(--ac-slider-handle-width, var(--ac-global-dimension-size-200));
   height: var(--ac-slider-handle-height, var(--ac-global-dimension-size-200));
   border-radius: var(
@@ -72,6 +73,27 @@ export const handleCSS = css`
   display: inline-block;
   position: absolute;
   background-color: var(--ac-slider-handle-background-color);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  &:hover::after {
+    content: '';
+    background: white;
+    opacity: 0.5;
+    display: block;
+    width: var(--ac-slider-handle-halo-width);
+    height: var(--ac-slider-handle-halo-width);
+    margin-left: calc(
+      calc(var(--ac-slider-handle-halo-width) - var(--ac-slider-handle-width)) /
+        -2
+    );
+    margin-top: calc(
+      calc(var(--ac-slider-handle-halo-width) - var(--ac-slider-handle-width)) /
+        -2
+    );
+    border-radius: var(
+      --ac-slider-handle-border-radius,
+      var(--ac-global-rounding-medium)
+    );
+  }
 `;
 
 export const labelContainerCSS = css`
@@ -79,4 +101,9 @@ export const labelContainerCSS = css`
   grid-template-areas: 'label contextualHelp value';
   justify-items: start;
   display: grid;
+`;
+
+export const labelCSS = css`
+  color: ${theme.textColors.white90};
+  font-size: var(--ac-global-dimension-static-font-size-100);
 `;
