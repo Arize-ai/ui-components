@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import { LabelPosition, LabelableProps } from './labelable';
 import { RangeInputBase, RangeValue, Validation, ValueBase } from './input';
 import { FocusableProps } from './events';
@@ -8,6 +7,7 @@ import {
   AriaValidationProps,
   DOMProps,
   FocusableDOMProps,
+  InputDOMProps,
 } from './dom';
 
 export interface SliderProps<T = number | number[]>
@@ -66,7 +66,8 @@ export interface AriaSliderThumbProps
     DOMProps,
     FocusableDOMProps,
     AriaLabelingProps,
-    AriaValidationProps {}
+    AriaValidationProps,
+    InputDOMProps {}
 
 export interface BarSliderBase<T> extends AriaSliderProps<T>, ValueBase<T> {
   /**
@@ -89,7 +90,7 @@ export interface BarSliderBase<T> extends AriaSliderProps<T>, ValueBase<T> {
   // contextualHelp?: ReactNode;
 }
 
-export interface ACSliderProps extends BarSliderBase<number> {
+export interface ACSliderProps extends BarSliderBase<number>, InputDOMProps {
   /**
    * Whether a fill color is shown between the start of the slider and the current value.
    */

@@ -8,7 +8,7 @@ import { useProviderProps } from '../provider';
 import { useSlider } from '@react-aria/slider';
 import { css } from '@emotion/react';
 import theme from '../theme';
-
+import { labelContainerCSS, sliderCSS } from './styles';
 export interface SliderBaseChildArguments {
   inputRef: RefObject<HTMLInputElement>;
   trackRef: RefObject<HTMLElement>;
@@ -21,65 +21,8 @@ export interface SliderBaseProps<T = number[]> extends BarSliderBase<T> {
   style?: CSSProperties;
 }
 
-const labelContainerCSS = css`
-  grid-template-columns: auto 1fr auto;
-  grid-template-areas: 'label contextualHelp value';
-  justify-items: start;
-  display: grid;
-`;
-
 const labelCSS = css`
   color: ${theme.textColors.white90};
-`;
-
-const sliderCSS = css`
-  --ac-slider-handle-width: var(--ac-global-dimension-size-200);
-  width: var(
-    --ac-alias-single-line-width,
-    var(--ac-global-dimension-size-2400)
-  );
-  flex-direction: column;
-  display: inline-flex;
-
-  .ac-slider-track {
-    height: var(--ac-slider-track-height, var(--ac-global-border-size-thick));
-    box-sizing: border-box;
-    z-index: 1;
-    top: calc(var(--ac-slider-height, var(--ac-alias-single-line-height)) / 2);
-    margin-top: calc(
-      var(--ac-slider-fill-track-height, var(--ac-alias-border-size-thick)) / -2
-    );
-    pointer-events: none;
-    position: absolute;
-
-    &::before {
-      content: '';
-      height: 100%;
-      display: block;
-    }
-    &:first-of-type::before,
-    &:last-of-type::before {
-      /* The edge tracks */
-      background: var(--ac-global-color-gray-500);
-    }
-    &:not(:first-of-type):not(:last-of-type)::before {
-      /* The middle track */
-      background: var(--ac-global-color-gray-100);
-    }
-    &:last-of-type {
-      margin-left: calc(
-        var(--ac-slider-handle-width, var(--ac-global-dimension-size-200)) / 2 *
-          -1
-      );
-      right: 0;
-      left: auto;
-      padding-left: var(
-        --ac-slider-handle-gap,
-        var(--ac-global-border-size-thicker)
-      );
-      padding-right: 0;
-    }
-  }
 `;
 
 const controlsCSS = css`

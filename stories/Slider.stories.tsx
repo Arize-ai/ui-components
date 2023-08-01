@@ -1,12 +1,12 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
-import { Flex, Provider, RangeSlider, Switch } from '../src';
+import { Flex, Provider, Slider, Switch } from '../src';
 import { withDesign } from 'storybook-addon-designs';
 
 const meta: Meta = {
-  title: 'RangeSlider',
-  component: RangeSlider,
+  title: 'Slider',
+  component: Slider,
   decorators: [withDesign],
   argTypes: {
     children: {
@@ -31,7 +31,7 @@ export const Gallery = () => {
   return (
     <Provider>
       <Flex direction="column">
-        <RangeSlider label="Range" defaultValue={{ start: 12, end: 36 }} />
+        <Slider label="Cost" defaultValue={12} />
         <Switch>Send Emails</Switch>
       </Flex>
     </Provider>
