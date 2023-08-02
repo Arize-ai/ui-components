@@ -25,6 +25,7 @@ export * from './view';
 export * from './menu';
 export * from './icon';
 export * from './breadcrumbs';
+export * from './slider';
 export * from './navlist';
 export * from './progress';
 export * from './switch';

@@ -55,3 +55,28 @@ export interface HelpTextProps {
   /** An error message for the field. */
   errorMessage?: ReactNode;
 }
+
+export interface RangeInputBase<T> {
+  /** The smallest value allowed for the input. */
+  minValue?: T;
+  /** The largest value allowed for the input. */
+  maxValue?: T;
+  /** The amount that the input value changes with each increment or decrement "tick". */
+  step?: T; // ??
+}
+
+export interface ValueBase<T, C = T> {
+  /** The current value (controlled). */
+  value?: T;
+  /** The default value (uncontrolled). */
+  defaultValue?: T;
+  /** Handler that is called when the value changes. */
+  onChange?: (value: C) => void;
+}
+
+export interface RangeValue<T> {
+  /** The start value of the range. */
+  start: T;
+  /** The end value of the range. */
+  end: T;
+}
