@@ -29,7 +29,6 @@ export const sliderCSS = css`
       content: '';
       height: 100%;
       display: block;
-      border-radius: var(--ac-global-border-size-thicker);
     }
     &:first-of-type::before,
     &:last-of-type::before {
@@ -40,18 +39,28 @@ export const sliderCSS = css`
       /* The middle track */
       background: ${theme.colors.arizeLightBlue};
     }
-    &:last-of-type {
+    &:first-of-type {
       margin-left: calc(
+        var(--ac-slider-handle-width, var(--ac-global-dimension-size-200)) / 2 *
+          -1
+      );
+      ::before {
+        border-top-left-radius: var(--ac-global-border-size-thicker);
+        border-bottom-left-radius: var(--ac-global-border-size-thicker);
+      }
+    }
+    &:last-of-type {
+      margin-right: calc(
         var(--ac-slider-handle-width, var(--ac-global-dimension-size-200)) / 2 *
           -1
       );
       right: 0;
       left: auto;
-      padding-left: var(
-        --ac-slider-handle-gap,
-        var(--ac-global-border-size-thicker)
-      );
       padding-right: 0;
+      &::before {
+        border-top-right-radius: var(--ac-global-border-size-thicker);
+        border-bottom-right-radius: var(--ac-global-border-size-thicker);
+      }
     }
   }
 `;

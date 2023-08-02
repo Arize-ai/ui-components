@@ -65,8 +65,7 @@ function Slider(props: ACSliderProps, ref: FocusableRef<HTMLDivElement>) {
               //    width: calc(var(--width) * 1%)M
               // }
               // @ts-ignore
-              '--spectrum-track-background-size': `${(1 /
-                state.getThumbPercent(0)) *
+              '--ac-track-background-size': `${(1 / state.getThumbPercent(0)) *
                 100}%`,
             }}
           />

@@ -22,6 +22,13 @@ export interface SliderBaseProps<T = number[]> extends BarSliderBase<T> {
 
 const controlsCSS = css`
   min-height: var(--ac-slider-height, var(--ac-alias-single-line-height));
+  width: calc(
+    100% - var(--ac-slider-handle-width, var(--ac-global-dimension-size-200)) /
+      2 * 2
+  );
+  margin-left: calc(
+    var(--ac-slider-handle-width, var(--ac-global-dimension-size-200)) / 2
+  );
 `;
 
 function SliderBase(props: SliderBaseProps, ref: FocusableRef<HTMLDivElement>) {

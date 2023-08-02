@@ -32,6 +32,13 @@ export const Gallery = () => {
     <Provider>
       <Flex direction="column">
         <Slider label="Cost" defaultValue={12} />
+        <Slider
+          label="Cost"
+          defaultValue={0.5}
+          minValue={0}
+          maxValue={0.99}
+          step={0.01}
+        />
         <Switch>Send Emails</Switch>
       </Flex>
     </Provider>
