@@ -2,13 +2,13 @@ import { css } from '@emotion/react';
 import theme from '../theme';
 
 export const sliderCSS = css`
-  --ac-slider-track-height: var(--ac-global-dimension-size-30);
+  --ac-slider-track-height: var(--ac-global-dimension-size-75);
   --ac-slider-handle-width: var(--ac-global-dimension-size-250);
   --ac-slider-handle-height: var(--ac-global-dimension-size-250);
   --ac-slider-handle-halo-width: var(--ac-global-dimension-size-350);
   --ac-slider-handle-border-radius: var(--ac-global-dimension-size-250);
   --ac-slider-handle-background-color: white;
-  --ac-slider-track-height: var(--ac-global-dimension-size-100);
+  --ac-slider-track-background-color: var(--ac-global-color-gray-300);
   width: var(
     --ac-alias-single-line-width,
     var(--ac-global-dimension-size-2400)
@@ -33,7 +33,7 @@ export const sliderCSS = css`
     &:first-of-type::before,
     &:last-of-type::before {
       /* The edge tracks */
-      background: var(--ac-global-color-gray-300);
+      background: var(--ac-slider-track-background-color);
     }
     &:not(:first-of-type):not(:last-of-type)::before {
       /* The middle track */

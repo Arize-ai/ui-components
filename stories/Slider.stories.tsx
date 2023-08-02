@@ -48,7 +48,13 @@ export const Gallery = () => {
           maxValue={2}
           step={0.01}
         />
-        <Slider label="Cost" value={1} minValue={0} maxValue={2} step={0.01} />
+        <Slider
+          label="Scale"
+          defaultValue={1}
+          minValue={0}
+          maxValue={100}
+          step={1}
+        />
         <Switch>Send Emails</Switch>
       </Flex>
     </Provider>
