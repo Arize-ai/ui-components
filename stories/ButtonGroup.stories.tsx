@@ -1,8 +1,13 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { Meta } from '@storybook/react';
-import { ButtonGroup, Button } from '../src';
-import { Icon, PlusCircleOutline, MinusCircleOutline } from '../src/icon';
+import { ButtonGroup, Button, ActionMenu, Provider, Item } from '../src';
+import {
+  Icon,
+  Icons,
+  PlusCircleOutline,
+  MinusCircleOutline,
+} from '../src/icon';
 import { withDesign } from 'storybook-addon-designs';
 
 const plusIcon = <Icon svg={<PlusCircleOutline />} />;
@@ -33,37 +38,56 @@ export default meta;
 
 export const Gallery = () => {
   return (
-    <ul
-      css={css`
-        & > li {
-          margin-bottom: 8px;
-        }
-      `}
-    >
-      <li>
-        <ButtonGroup aria-label="some group">
-          <Button variant="default" icon={plusIcon} />
-          <Button variant="default" icon={minusIcon} title="subtract" />
-        </ButtonGroup>
-      </li>
-      <li>
-        <ButtonGroup aria-label="some group">
-          <Button variant="default">Add</Button>
-          <Button variant="default">Remove</Button>
-        </ButtonGroup>
-      </li>
-      <li>
-        <ButtonGroup aria-label="some group" size="compact">
-          <Button variant="default" icon={plusIcon} />
-          <Button variant="default" icon={minusIcon} title="subtract" />
-        </ButtonGroup>
-      </li>
-      <li>
-        <ButtonGroup aria-label="some group" size="compact">
-          <Button variant="default">Add</Button>
-          <Button variant="default">Remove</Button>
-        </ButtonGroup>
-      </li>
-    </ul>
+    <Provider>
+      <ul
+        css={css`
+          & > li {
+            margin-bottom: 8px;
+          }
+        `}
+      >
+        <li>
+          <ButtonGroup aria-label="some group">
+            <Button variant="default" icon={plusIcon} />
+            <Button variant="default" icon={minusIcon} title="subtract" />
+          </ButtonGroup>
+        </li>
+        <li>
+          <ButtonGroup aria-label="some group">
+            <Button variant="default">Add</Button>
+            <Button variant="default">Remove</Button>
+          </ButtonGroup>
+        </li>
+        <li>
+          <ButtonGroup aria-label="some group" size="compact">
+            <Button variant="default" icon={plusIcon} />
+            <Button variant="default" icon={minusIcon} title="subtract" />
+          </ButtonGroup>
+        </li>
+        <li>
+          <ButtonGroup aria-label="some group" size="compact">
+            <Button variant="default">Add</Button>
+            <Button variant="default">Remove</Button>
+          </ButtonGroup>
+        </li>
+        <li>
+          <ButtonGroup aria-label="some group" size="compact">
+            <Button
+              variant="default"
+              icon={<Icon svg={<Icons.PlusCircleOutline />} />}
+            >
+              Add Knowledge Base
+            </Button>
+            <ActionMenu
+              align="end"
+              icon={<Icon svg={<Icons.ArrowIosDownwardOutline />} />}
+            >
+              <Item>Add Dataset</Item>
+              <Item>Add Knowledge Base</Item>
+            </ActionMenu>
+          </ButtonGroup>
+        </li>
+      </ul>
+    </Provider>
   );
 };
