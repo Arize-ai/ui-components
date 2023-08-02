@@ -148,14 +148,15 @@ function SliderBase(props: SliderBaseProps, ref: FocusableRef<HTMLDivElement>) {
         grid-area: value;
         text-align: right;
       `}
-      style={
-        maxLabelLength > 0
-          ? {
-              width: `${maxLabelLength}ch`,
-              minWidth: `${maxLabelLength}ch`,
-            }
-          : undefined
-      }
+      // TODO this is non-deterministic
+      // style={
+      //   maxLabelLength > 0
+      //     ? {
+      //         width: `${maxLabelLength}ch`,
+      //         minWidth: `${maxLabelLength}ch`,
+      //       }
+      //     : undefined
+      // }
     >
       {displayValue}
     </output>

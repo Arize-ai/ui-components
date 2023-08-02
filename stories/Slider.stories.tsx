@@ -28,6 +28,7 @@ const meta: Meta = {
 export default meta;
 
 export const Gallery = () => {
+  const [value, setValue] = React.useState(1);
   return (
     <Provider>
       <Flex direction="column">
@@ -39,6 +40,15 @@ export const Gallery = () => {
           maxValue={0.99}
           step={0.01}
         />
+        <Slider
+          label="Controlled"
+          value={value}
+          onChange={setValue}
+          minValue={0}
+          maxValue={2}
+          step={0.01}
+        />
+        <Slider label="Cost" value={1} minValue={0} maxValue={2} step={0.01} />
         <Switch>Send Emails</Switch>
       </Flex>
     </Provider>
