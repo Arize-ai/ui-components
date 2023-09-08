@@ -129,8 +129,13 @@ export function Tabs({
   orientation = 'horizontal',
   extra,
 }: TabsProps) {
+  // Filter out the nulls from the children so that tabs can be mounted conditionally
+  children = Children.toArray(children).filter(child => child);
   const tabs = parseTabList(children);
-  const [selectedIndex, setSelectedIndex] = useState<number>(0);
+  // Initialize the selected tab to the first non-hidden tab
+  const [selectedIndex, setSelectedIndex] = useState<number>(
+    tabs.findIndex(tab => !tab.hidden)
+  );
   return (
     <div
       className={`ac-tabs ${className}`}
