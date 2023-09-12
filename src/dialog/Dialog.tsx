@@ -27,21 +27,25 @@ const dialogCSS = css`
     &.ac-dialog--large {
       width: 900px;
     }
-
+    &.ac-dialog--extraLarge {
+      width: 1600px;
+      max-width: calc(100vw - var(--ac-global-dimension-static-size-1700));
+    }
     &.ac-dialog--fullscreen {
       width: calc(100vw - var(--ac-global-dimension-static-size-1700));
-      @media (min-width: ${theme.breakpoints.breakpoint1200}px) {
+      @media (min-width: var(--ac-global-dimension-static-breakpoint-medium)) {
         width: calc(100vw - var(--ac-global-dimension-static-size-3400));
       }
     }
   }
 `;
-let sizeMap = {
+const sizeMap: Record<NonNullable<DialogProps['size']>, string> = {
   S: 'small',
   M: 'medium',
   L: 'large',
+  XL: 'extraLarge',
   fullscreen: 'fullscreen',
-  fullscreenTakeover: 'fullscreenTakeover',
+  // fullscreenTakeover: 'fullscreenTakeover',
 };
 
 function Dialog(props: DialogProps, ref: DOMRef) {

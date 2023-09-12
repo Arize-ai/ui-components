@@ -189,12 +189,6 @@ export const theme = {
   opacity: {
     disabled: 0.6,
   },
-  breakpoints: {
-    breakpoint576: 576,
-    breakpoint768: 768,
-    breakpoint992: 992,
-    breakpoint1200: 1200,
-  },
 };
 
 export default theme;
