@@ -27,6 +27,13 @@ const dialogCSS = css`
     &.ac-dialog--large {
       width: 900px;
     }
+
+    &.ac-dialog--fullscreen {
+      width: calc(100vw - var(--ac-global-dimension-static-size-1700));
+      @media (min-width: ${theme.breakpoints.breakpoint1200}px) {
+        width: calc(100vw - var(--ac-global-dimension-static-size-3400));
+      }
+    }
   }
 `;
 let sizeMap = {

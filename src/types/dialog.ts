@@ -36,7 +36,7 @@ export interface DialogProps extends AriaDialogProps {
   /** The contents of the Dialog. */
   children: ReactNode;
   /** The size of the Dialog. Only applies to "modal" type Dialogs. */
-  size?: 'S' | 'M' | 'L';
+  size?: 'S' | 'M' | 'L' | 'fullscreen';
   /** Whether the Dialog is dismissable. See the [examples](#examples) for more details. */
   isDismissable?: boolean;
   /** Handler that is called when the 'x' button of a dismissable Dialog is clicked. */
