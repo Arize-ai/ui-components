@@ -786,7 +786,7 @@ export const ArrowDown = () => (
   </svg>
 );
 
-export const TokenOutline = () => (
+export const TokensOutline = () => (
   <svg
     width="16"
     height="16"
