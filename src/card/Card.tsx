@@ -4,9 +4,10 @@ import { Text } from '../content';
 import { CollapsibleCardTitle } from './CollapsibleCardTitle';
 import theme from '../theme';
 import { cardCSS, headerCSS, collapsibleCardCSS } from './styles';
-import { classNames } from '../utils';
+import { classNames, useStyleProps, viewStyleProps } from '../utils';
 import { useId } from '@react-aria/utils';
 import { CardVariant } from './types';
+import { ViewStyleProps } from '../types';
 
 const headerTitleWrapCSS = css`
   flex: 1 1 auto;
@@ -34,6 +35,9 @@ export interface CardBaseProps {
   subTitle?: string;
   variant?: CardVariant;
   children: ReactNode;
+  /**
+   * @deprecated use style props instead
+   */
   style?: CSSProperties;
   bodyStyle?: CSSProperties;
   extra?: ReactNode; // Extra controls on the header
@@ -51,7 +55,10 @@ interface CollapsibleCardProps {
   onOpenChange?: (isOpen: boolean) => void;
 }
 
-export interface CardProps extends CardBaseProps, CollapsibleCardProps {}
+export interface CardProps
+  extends CardBaseProps,
+    CollapsibleCardProps,
+    ViewStyleProps {}
 
 export function Card({
   title,
@@ -67,7 +74,9 @@ export function Card({
   defaultOpen = true,
   id,
   onOpenChange,
+  ...props
 }: CardProps) {
+  const { styleProps } = useStyleProps(props, viewStyleProps);
   const [isOpen, setIsOpen] = useState(defaultOpen);
   const idPrefix = useId(id);
   const contentId = `${idPrefix}-content`,
@@ -111,6 +120,7 @@ export function Card({
         headerId={headerId}
         className="ac-card-collapsible-header"
         subTitle={subTitleEl}
+        {...styleProps}
       />
     </div>
   ) : (
@@ -122,12 +132,24 @@ export function Card({
   return (
     <section
       css={collapsible ? collapsibleCardCSS : cardCSS}
-      style={style}
       className={classNames('ac-card', `ac-card--${variant}`, className, {
         'is-open': isOpen,
       })}
+      // TODO: deprecate style prop
+      style={{ ...style, ...styleProps.style }}
     >
-      <header css={headerCSS({ bordered: true, collapsible })} id={headerId}>
+      <header
+        css={headerCSS({ bordered: true })}
+        id={headerId}
+        className={classNames({ 'is-collapsible': collapsible })}
+        // Only pass through the borderColor style if it's set
+        style={
+          styleProps.style &&
+          styleProps.style?.borderColor && {
+            borderColor: styleProps.style.borderColor,
+          }
+        }
+      >
         {titleComponent}
         {extra}
       </header>

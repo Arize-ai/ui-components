@@ -1,8 +1,9 @@
 import React, { ReactNode } from 'react';
 import { css } from '@emotion/react';
-import { Icon, ArrowDownFill } from '../icon';
-import { classNames } from '../utils';
+import { Icon, ArrowIosDownwardOutline } from '../icon';
+import { classNames, useStyleProps, viewStyleProps } from '../utils';
 import theme from '../theme';
+import { ViewProps } from '../view';
 
 const titleWrapCSS = css`
   display: flex;
@@ -13,7 +14,7 @@ const titleWrapCSS = css`
     margin: 0;
   }
 `;
-interface CollapsibleCardTitleProps {
+interface CollapsibleCardTitleProps extends ViewProps {
   title: ReactNode;
   /**
    * A unique id for the content of the collapsible card title. Necessary for ally
@@ -38,6 +39,7 @@ export function CollapsibleCardTitle(props: CollapsibleCardTitleProps) {
     headerId,
     subTitle,
   } = props;
+  const { styleProps } = useStyleProps(props, viewStyleProps);
   return (
     <button
       id={headerId}
@@ -45,9 +47,10 @@ export function CollapsibleCardTitle(props: CollapsibleCardTitleProps) {
       onClick={onOpen}
       aria-controls={contentId}
       aria-expanded={isOpen}
+      {...styleProps}
     >
       <Icon
-        svg={<ArrowDownFill />}
+        svg={<ArrowIosDownwardOutline />}
         className="ac-card-collapsible__trigger"
         css={css`
           transition: transform ease var(--collapsible-card-animation-duration);

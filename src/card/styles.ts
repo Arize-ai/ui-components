@@ -22,13 +22,7 @@ const headerBorderCSS = css`
   border-bottom: 1px solid var(--ac-global-border-color-dark);
 `;
 
-export const headerCSS = ({
-  bordered,
-  collapsible,
-}: {
-  bordered: boolean;
-  collapsible: boolean;
-}) => {
+export const headerCSS = ({ bordered }: { bordered: boolean }) => {
   return css`
     display: flex;
     flex-direction: row;
@@ -38,10 +32,8 @@ export const headerCSS = ({
     padding: 0 16px;
     height: var(--card-header-height);
     transition: background-color 0.2s ease-in-out;
-    &:hover {
-      background-color: ${collapsible
-        ? theme.colors.hoverBgColor
-        : 'transparent'};
+    &.is-collapsible:hover {
+      background-color: rgba(255, 255, 255, 0.1);
     }
     ${bordered ? headerBorderCSS : ''}
   `;

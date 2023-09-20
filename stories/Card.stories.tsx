@@ -6,7 +6,7 @@ import { Card, CardProps, TabbedCard } from '../src/card';
 import { Tabs } from '../src/tabs';
 import { Button } from '../src/button';
 import InfoTip from './components/InfoTip';
-import { Heading, Provider } from '../src';
+import { Flex, Heading, Provider } from '../src';
 
 const { TabPane } = Tabs;
 
@@ -196,6 +196,55 @@ export const Gallery = () => {
           <GalleryCards variant="compact" />
         </section>
       </div>
+    </Provider>
+  );
+};
+
+export const Colors = () => {
+  return (
+    <Provider>
+      <Flex direction="column" gap="size-100">
+        <Card
+          title="Title"
+          subTitle="Subtext area"
+          variant="default"
+          backgroundColor="gray-900"
+          borderColor="gray-600"
+        >
+          {''}
+        </Card>
+        <Card
+          title="Title"
+          subTitle="Subtext area"
+          variant="default"
+          backgroundColor="gray-700"
+          borderColor="gray-400"
+        >
+          {''}
+        </Card>
+        <Card
+          title="Title"
+          subTitle="Subtext area"
+          variant="default"
+          backgroundColor="gray-500"
+          borderColor="gray-200"
+          collapsible
+        >
+          {''}
+        </Card>
+        <Card
+          title="Title"
+          subTitle="Subtext area"
+          variant="default"
+          backgroundColor="danger"
+          borderColor="danger"
+        >
+          {''}
+        </Card>
+        <Card title="Title" subTitle="Subtext area" variant="default">
+          {''}
+        </Card>
+      </Flex>
     </Provider>
   );
 };
