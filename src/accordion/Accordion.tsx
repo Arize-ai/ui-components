@@ -13,10 +13,10 @@ export interface AccordionProps {
  * Accordion component for having collapsible sections
  * @see https://www.w3.org/TR/wai-aria-practices-1.1/#accordion
  */
-export function Accordion({ children= 'default' }: AccordionProps) {
+export function Accordion({ children }: AccordionProps) {
   return (
     <div
-      className={`ac-accordion ac-accordion--`}
+      className={`ac-accordion ac-accordion`}
       role="region"
       css={css`
       
