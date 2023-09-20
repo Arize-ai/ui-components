@@ -7,34 +7,27 @@ import theme from '../theme';
 
 export interface AccordionProps {
   children: ReactNode;
-  /**
-   * The variant of the accordion (e.g. sizing)
-   * @default "default"
-   */
-  variant?: 'default' | 'compact';
 }
 
 /**
  * Accordion component for having collapsible sections
  * @see https://www.w3.org/TR/wai-aria-practices-1.1/#accordion
  */
-export function Accordion({ children, variant = 'default' }: AccordionProps) {
+export function Accordion({ children= 'default' }: AccordionProps) {
   return (
     <div
-      className={`ac-accordion ac-accordion--${variant}`}
+      className={`ac-accordion ac-accordion--`}
       role="region"
       css={css`
       
         --accordion-animation-duration: ${theme.animation.global.duration}ms;
+   
         &.ac-accordion--default {
-          --accordion-padding-top: ${theme.spacing.padding16}px;
-          --accordion-padding-side: ${theme.spacing.padding16}px;
-          --accordion-font-size: ${theme.typography.sizes.large.fontSize}px;
-        }
-        &.ac-accordion--compact {
           --accordion-padding-top: ${theme.spacing.padding8}px;
           --accordion-padding-side: ${theme.spacing.padding16}px;
           --accordion-font-size: ${theme.typography.sizes.medium.fontSize}px;
+        }
+        
       `}
     >
       {children}
