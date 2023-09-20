@@ -16,7 +16,7 @@ export interface AccordionProps {
 export function Accordion({ children }: AccordionProps) {
   return (
     <div
-      className={`ac-accordion ac-accordion`}
+      className={`ac-accordion ac-accordion--default`}
       role="region"
       css={css`
       
