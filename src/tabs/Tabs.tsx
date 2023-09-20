@@ -29,9 +29,13 @@ const tabsContainerCSS = css`
 `;
 const tabListCSS = css`
   display: flex;
-  --tab-border-color: ${theme.components.tabs.borderColor};
-  --tab-hover-color: ${transparentize(0.2, theme.colors.arizeBlue)};
-  --tab-selected-border-color: ${theme.colors.arizeBlue};
+  // if nested in a card, inherit the scope's border color
+  --tab-border-color: var(
+    --scope-border-color,
+    var(--ac-global-border-color-default)
+  );
+  --tab-hover-color: ${transparentize(0.2, theme.colors.arizeLightBlue)};
+  --tab-selected-border-color: ${theme.colors.arizeLightBlue};
 
   .ac-tabs__tab-list-item {
     box-sizing: border-box; /* place the border inside */

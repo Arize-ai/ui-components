@@ -6,7 +6,7 @@ import { Card, CardProps, TabbedCard } from '../src/card';
 import { Tabs } from '../src/tabs';
 import { Button } from '../src/button';
 import InfoTip from './components/InfoTip';
-import { Heading, Provider } from '../src';
+import { Flex, Heading, Provider, View } from '../src';
 
 const { TabPane } = Tabs;
 
@@ -196,6 +196,59 @@ export const Gallery = () => {
           <GalleryCards variant="compact" />
         </section>
       </div>
+    </Provider>
+  );
+};
+
+const loremIpsum =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
+export const Colors = () => {
+  const propsArray: Partial<CardProps>[] = [
+    {
+      title: 'Title',
+      subTitle: 'Subtext area',
+      variant: 'compact',
+      backgroundColor: 'light',
+      borderColor: 'light',
+    },
+    {
+      title: 'Title',
+      subTitle: 'Subtext area',
+      variant: 'compact',
+      backgroundColor: 'dark',
+      borderColor: 'dark',
+    },
+    {
+      title: 'Title',
+      subTitle: 'Subtext area',
+      variant: 'compact',
+    },
+  ];
+  return (
+    <Provider>
+      <Flex direction="row" gap="size-100">
+        <Flex direction="column" gap="size-100">
+          {propsArray.map((props, index) => (
+            <Card key={index} {...props}>
+              {loremIpsum}
+            </Card>
+          ))}
+        </Flex>
+        <Flex direction="column" gap="size-100">
+          {propsArray.map((props, index) => (
+            <TabbedCard key={index} {...props}>
+              <Tabs>
+                <TabPane name="Tab 1">
+                  <View padding="size-200">{loremIpsum}</View>
+                </TabPane>
+                <TabPane name="Tab 2">
+                  <View padding="size-200">{loremIpsum}</View>
+                </TabPane>
+              </Tabs>
+            </TabbedCard>
+          ))}
+        </Flex>
+      </Flex>
     </Provider>
   );
 };

@@ -1,13 +1,18 @@
 import { css } from '@emotion/react';
 import theme from '../theme';
 
-export const cardCSS = css`
+type CardStyle = {
+  borderColor: string;
+};
+
+export const cardCSS = (style: CardStyle) => css`
+  --scope-border-color: ${style.borderColor};
   display: flex;
   flex-direction: column;
   background-color: var(--ac-global-background-color-dark);
   color: ${theme.textColors.white90};
   border-radius: var(--ac-global-rounding-medium);
-  border: 1px solid var(--ac-global-border-color-dark);
+  border: 1px solid var(--scope-border-color);
   overflow: hidden;
   /* variant variables */
   &.ac-card--default {
@@ -19,16 +24,10 @@ export const cardCSS = css`
 `;
 
 const headerBorderCSS = css`
-  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  border-bottom: 1px solid var(--scope-border-color);
 `;
 
-export const headerCSS = ({
-  bordered,
-  collapsible,
-}: {
-  bordered: boolean;
-  collapsible: boolean;
-}) => {
+export const headerCSS = ({ bordered }: { bordered: boolean }) => {
   return css`
     display: flex;
     flex-direction: row;
@@ -38,17 +37,15 @@ export const headerCSS = ({
     padding: 0 16px;
     height: var(--card-header-height);
     transition: background-color 0.2s ease-in-out;
-    &:hover {
-      background-color: ${collapsible
-        ? theme.colors.hoverBgColor
-        : 'transparent'};
+    &.is-collapsible:hover {
+      background-color: rgba(255, 255, 255, 0.1);
     }
     ${bordered ? headerBorderCSS : ''}
   `;
 };
 
-export const collapsibleCardCSS = css`
-  ${cardCSS}
+export const collapsibleCardCSS = (style: CardStyle) => css`
+  ${cardCSS(style)}
   .ac-card-collapsible-header {
     padding: 0;
     cursor: pointer;

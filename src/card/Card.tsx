@@ -1,12 +1,19 @@
-import React, { CSSProperties, ReactNode, useState } from 'react';
+import React, {
+  CSSProperties,
+  HTMLAttributes,
+  ReactNode,
+  useMemo,
+  useState,
+} from 'react';
 import { css } from '@emotion/react';
 import { Text } from '../content';
 import { CollapsibleCardTitle } from './CollapsibleCardTitle';
 import theme from '../theme';
 import { cardCSS, headerCSS, collapsibleCardCSS } from './styles';
-import { classNames } from '../utils';
+import { classNames, useStyleProps, viewStyleProps } from '../utils';
 import { useId } from '@react-aria/utils';
 import { CardVariant } from './types';
+import { ViewStyleProps } from '../types';
 
 const headerTitleWrapCSS = css`
   flex: 1 1 auto;
@@ -34,6 +41,9 @@ export interface CardBaseProps {
   subTitle?: string;
   variant?: CardVariant;
   children: ReactNode;
+  /**
+   * @deprecated use style props instead
+   */
   style?: CSSProperties;
   bodyStyle?: CSSProperties;
   extra?: ReactNode; // Extra controls on the header
@@ -51,8 +61,18 @@ interface CollapsibleCardProps {
   onOpenChange?: (isOpen: boolean) => void;
 }
 
-export interface CardProps extends CardBaseProps, CollapsibleCardProps {}
+export interface CardProps
+  extends CardBaseProps,
+    CollapsibleCardProps,
+    ViewStyleProps {}
 
+export function useStyleBorderColor(styleProps: HTMLAttributes<HTMLElement>) {
+  return useMemo<string>(() => {
+    return styleProps.style && styleProps.style?.borderColor
+      ? styleProps.style.borderColor
+      : `var(--ac-global-border-color-default)`;
+  }, [styleProps.style]);
+}
 export function Card({
   title,
   subTitle,
@@ -67,13 +87,16 @@ export function Card({
   defaultOpen = true,
   id,
   onOpenChange,
+  ...props
 }: CardProps) {
+  const { styleProps } = useStyleProps(props, viewStyleProps);
   const [isOpen, setIsOpen] = useState(defaultOpen);
   const idPrefix = useId(id);
   const contentId = `${idPrefix}-content`,
     headerId = `${idPrefix}-heading`;
   const titleSize = variant === 'default' ? 'xlarge' : 'large';
   const subTitleSize = variant === 'default' ? 'medium' : 'xsmall';
+  const borderColor = useStyleBorderColor(styleProps);
   const defaultTitle = (
     <Text textSize={titleSize} elementType="h3" weight="heavy">
       {title}
@@ -111,6 +134,7 @@ export function Card({
         headerId={headerId}
         className="ac-card-collapsible-header"
         subTitle={subTitleEl}
+        {...styleProps}
       />
     </div>
   ) : (
@@ -121,13 +145,22 @@ export function Card({
   );
   return (
     <section
-      css={collapsible ? collapsibleCardCSS : cardCSS}
-      style={style}
+      css={
+        collapsible
+          ? collapsibleCardCSS({ borderColor })
+          : cardCSS({ borderColor })
+      }
       className={classNames('ac-card', `ac-card--${variant}`, className, {
         'is-open': isOpen,
       })}
+      // TODO: deprecate style prop
+      style={{ ...style, ...styleProps.style }}
     >
-      <header css={headerCSS({ bordered: true, collapsible })} id={headerId}>
+      <header
+        css={headerCSS({ bordered: true })}
+        id={headerId}
+        className={classNames({ 'is-collapsible': collapsible })}
+      >
         {titleComponent}
         {extra}
       </header>

@@ -197,12 +197,13 @@ export const globalCSS = css`
 
       --ac-global-text-color-900: rgba(255, 255, 255, 0.9);
 
-      --ac-global-background-color-light: var(--ac-global-color-gray-500);
+      --ac-global-background-color-default: var(--ac-global-color-gray-900);
+      --ac-global-background-color-light: var(--ac-global-color-gray-700);
       --ac-global-background-color-dark: var(--ac-global-color-gray-900);
       --ac-global-background-color-danger: var(--ac-global-color-danger);
 
-      --ac-global-border-color-default: var(--ac-global-color-gray-100);
-      --ac-global-border-color-light: var(--ac-global-color-gray-100);
+      --ac-global-border-color-default: var(--ac-global-color-gray-400);
+      --ac-global-border-color-light: var(--ac-global-color-gray-400);
       --ac-global-border-color-dark: var(--ac-global-color-gray-400);
 
       --ac-global-rounding-small: var(--ac-global-dimension-static-size-50);
