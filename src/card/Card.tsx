@@ -1,4 +1,10 @@
-import React, { CSSProperties, ReactNode, useState } from 'react';
+import React, {
+  CSSProperties,
+  HTMLAttributes,
+  ReactNode,
+  useMemo,
+  useState,
+} from 'react';
 import { css } from '@emotion/react';
 import { Text } from '../content';
 import { CollapsibleCardTitle } from './CollapsibleCardTitle';
@@ -60,6 +66,13 @@ export interface CardProps
     CollapsibleCardProps,
     ViewStyleProps {}
 
+export function useStyleBorderColor(styleProps: HTMLAttributes<HTMLElement>) {
+  return useMemo<string>(() => {
+    return styleProps.style && styleProps.style?.borderColor
+      ? styleProps.style.borderColor
+      : `var(--ac-global-border-color-default)`;
+  }, [styleProps.style]);
+}
 export function Card({
   title,
   subTitle,
@@ -83,6 +96,7 @@ export function Card({
     headerId = `${idPrefix}-heading`;
   const titleSize = variant === 'default' ? 'xlarge' : 'large';
   const subTitleSize = variant === 'default' ? 'medium' : 'xsmall';
+  const borderColor = useStyleBorderColor(styleProps);
   const defaultTitle = (
     <Text textSize={titleSize} elementType="h3" weight="heavy">
       {title}
@@ -131,7 +145,11 @@ export function Card({
   );
   return (
     <section
-      css={collapsible ? collapsibleCardCSS : cardCSS}
+      css={
+        collapsible
+          ? collapsibleCardCSS({ borderColor })
+          : cardCSS({ borderColor })
+      }
       className={classNames('ac-card', `ac-card--${variant}`, className, {
         'is-open': isOpen,
       })}
@@ -142,13 +160,6 @@ export function Card({
         css={headerCSS({ bordered: true })}
         id={headerId}
         className={classNames({ 'is-collapsible': collapsible })}
-        // Only pass through the borderColor style if it's set
-        style={
-          styleProps.style &&
-          styleProps.style?.borderColor && {
-            borderColor: styleProps.style.borderColor,
-          }
-        }
       >
         {titleComponent}
         {extra}

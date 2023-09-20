@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardBaseProps } from './Card';
+import { CardBaseProps, useStyleBorderColor } from './Card';
 import { css } from '@emotion/react';
 import { Text } from '../content';
 import { cardCSS, headerCSS } from './styles';
@@ -27,9 +27,10 @@ export function TabbedCard(props: TabbedCardProps) {
   } = props;
   const { styleProps } = useStyleProps(props, viewStyleProps);
   const hasTitle = title != null;
+  const borderColor = useStyleBorderColor(styleProps);
   return (
     <section
-      css={css(cardCSS, tabbedCardCSS)}
+      css={css(cardCSS({ borderColor }), tabbedCardCSS)}
       className={classNames(
         `ac-card ac-card--${variant} ac-card--tabbed`,
         className

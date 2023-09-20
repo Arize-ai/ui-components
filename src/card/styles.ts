@@ -1,13 +1,18 @@
 import { css } from '@emotion/react';
 import theme from '../theme';
 
-export const cardCSS = css`
+type CardStyle = {
+  borderColor: string;
+};
+
+export const cardCSS = (style: CardStyle) => css`
+  --scope-border-color: ${style.borderColor};
   display: flex;
   flex-direction: column;
   background-color: var(--ac-global-background-color-dark);
   color: ${theme.textColors.white90};
   border-radius: var(--ac-global-rounding-medium);
-  border: 1px solid var(--ac-global-border-color-dark);
+  border: 1px solid var(--scope-border-color);
   overflow: hidden;
   /* variant variables */
   &.ac-card--default {
@@ -19,7 +24,7 @@ export const cardCSS = css`
 `;
 
 const headerBorderCSS = css`
-  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  border-bottom: 1px solid var(--scope-border-color);
 `;
 
 export const headerCSS = ({ bordered }: { bordered: boolean }) => {
@@ -39,8 +44,8 @@ export const headerCSS = ({ bordered }: { bordered: boolean }) => {
   `;
 };
 
-export const collapsibleCardCSS = css`
-  ${cardCSS}
+export const collapsibleCardCSS = (style: CardStyle) => css`
+  ${cardCSS(style)}
   .ac-card-collapsible-header {
     padding: 0;
     cursor: pointer;
