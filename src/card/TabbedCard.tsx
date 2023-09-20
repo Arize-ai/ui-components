@@ -36,7 +36,7 @@ export function TabbedCard(props: TabbedCardProps) {
       {...restProps}
     >
       {hasTitle ? (
-        <header css={headerCSS({ bordered: false, collapsible: false })}>
+        <header css={headerCSS({ bordered: false })}>
           <Text textSize="xlarge" elementType="h3" weight="heavy">
             {title}
           </Text>

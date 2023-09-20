@@ -84,7 +84,7 @@
     "@typescript-eslint/parser": "^5.39.0",
     "babel-loader": "^9.1.2",
     "babel-plugin-polished": "^1.1.0",
-    "chromatic": "^6.5.1",
+    "chromatic": "^7.2.0",
     "eslint": "7.17.0",
     "husky": "^8.0.1",
     "polished": "^4.2.2",

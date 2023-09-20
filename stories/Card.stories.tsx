@@ -232,15 +232,6 @@ export const Colors = () => {
         >
           {''}
         </Card>
-        <Card
-          title="Title"
-          subTitle="Subtext area"
-          variant="default"
-          backgroundColor="danger"
-          borderColor="danger"
-        >
-          {''}
-        </Card>
         <Card title="Title" subTitle="Subtext area" variant="default">
           {''}
         </Card>
