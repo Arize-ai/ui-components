@@ -3,7 +3,7 @@ import { CardBaseProps } from './Card';
 import { css } from '@emotion/react';
 import { Text } from '../content';
 import { cardCSS, headerCSS } from './styles';
-import { classNames } from '../utils';
+import { classNames, useStyleProps, viewStyleProps } from '../utils';
 
 const tabbedCardCSS = css`
   &[data-has-title='false'] {
@@ -22,8 +22,10 @@ export function TabbedCard(props: TabbedCardProps) {
     extra,
     variant = 'default',
     className,
+    style,
     ...restProps
   } = props;
+  const { styleProps } = useStyleProps(props, viewStyleProps);
   const hasTitle = title != null;
   return (
     <section
@@ -34,6 +36,9 @@ export function TabbedCard(props: TabbedCardProps) {
       )}
       data-has-title={hasTitle}
       {...restProps}
+      {...styleProps}
+      // TODO: deprecate style prop
+      style={{ ...style, ...styleProps.style }}
     >
       {hasTitle ? (
         <header css={headerCSS({ bordered: false })}>
