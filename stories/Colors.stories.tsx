@@ -1,8 +1,21 @@
 import React, { CSSProperties } from 'react';
-import { theme, designationColors, colorPalette, Text, Heading } from '../src';
+import {
+  theme,
+  designationColors,
+  colorPalette,
+  Text,
+  Heading,
+  Provider,
+  TooltipTrigger,
+  Tooltip,
+  TriggerWrap,
+} from '../src';
 import { Meta, Story } from '@storybook/react';
 // @ts-ignore
 import { withDesign } from 'storybook-addon-designs';
+import { colorValue } from '../src/utils';
+import { globalColors } from './constants';
+import { css } from '@emotion/react';
 
 const listStyle: CSSProperties = {
   listStyle: 'none',
@@ -14,6 +27,12 @@ const listStyle: CSSProperties = {
   flexWrap: 'wrap',
   gap: '8px',
 };
+
+function GlobalColor({ color }) {
+  const val = colorValue(color);
+  return <Color color={val} name={color} />;
+}
+
 function Color({ color, name }) {
   return (
     <div
@@ -22,20 +41,24 @@ function Color({ color, name }) {
         marginTop: '5px',
         display: 'flex',
         flexDirection: 'column',
+        width: '60px',
+        overflow: 'hidden',
       }}
     >
-      <div
-        style={{
-          backgroundColor: color,
-          width: '60px',
-          height: '60px',
-          marginRight: '10px',
-          borderRadius: 3,
-        }}
-      />
-      <Text style={{ userSelect: 'none' }} textSize="xsmall">
-        {color}
-      </Text>
+      <TooltipTrigger>
+        <TriggerWrap>
+          <div
+            style={{
+              backgroundColor: color,
+              width: '60px',
+              height: '60px',
+              marginRight: '4px',
+              borderRadius: 3,
+            }}
+          />
+        </TriggerWrap>
+        <Tooltip>{color}</Tooltip>
+      </TooltipTrigger>
       <Text textSize="xsmall">{name}</Text>
     </div>
   );
@@ -85,10 +108,12 @@ function Colors() {
             </li>
           ))}
         </ul>
+        z
       </section>
     );
   });
 
+  const designationColorKeys = Object.keys(designationColors);
   const designations = (
     <section>
       <Heading>Designation Colors</Heading>
@@ -113,18 +138,45 @@ function Colors() {
     </section>
   );
 
-  return (
-    <main>
+  const globalColorsEl = (
+    <section>
+      <Heading>Global Colors</Heading>
       <ul style={listStyle}>
-        {colorsArray.map((el, i) => (
-          <li key={i}>{el}</li>
-        ))}
+        {globalColors.map((c, i) => {
+          return (
+            <>
+              {c.endsWith('-100') && (
+                <div
+                  css={css`
+                    width: 100%;
+                  `}
+                />
+              )}
+              <li key={i}>
+                <GlobalColor color={c} />
+              </li>
+            </>
+          );
+        })}
       </ul>
-      <br />
-      {colorPaletteSection}
-      {designations}
-      {components}
-    </main>
+    </section>
+  );
+
+  return (
+    <Provider>
+      <main>
+        <ul style={listStyle}>
+          {colorsArray.map((el, i) => (
+            <li key={i}>{el}</li>
+          ))}
+        </ul>
+        <br />
+        {colorPaletteSection}
+        {designations}
+        {globalColorsEl}
+        {components}
+      </main>
+    </Provider>
   );
 }
 

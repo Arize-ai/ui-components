@@ -202,7 +202,7 @@ const Gallery: Story<void> = () => {
             <Item key="rarely" textValue="Rarely">
               <div css={itemWithDescriptionCSS}>
                 <Text>Rarely</Text>
-                <Text color="white70" textSize="small">
+                <Text color="text-700" textSize="small">
                   Only run on occasion
                 </Text>
               </div>
@@ -210,7 +210,7 @@ const Gallery: Story<void> = () => {
             <Item key="sometimes" textValue="Sometimes">
               <div css={itemWithDescriptionCSS}>
                 <Text>Sometimes</Text>
-                <Text color="white70" textSize="small">
+                <Text color="text-700" textSize="small">
                   Run once a day so that things are synchronized on the daily
                 </Text>
               </div>
@@ -218,7 +218,7 @@ const Gallery: Story<void> = () => {
             <Item key="always" textValue="Always">
               <div css={itemWithDescriptionCSS}>
                 <Text>Always</Text>
-                <Text color="white70" textSize="small">
+                <Text color="text-700" textSize="small">
                   Run continuously so that everything stays up to date
                 </Text>
               </div>

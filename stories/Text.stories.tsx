@@ -2,7 +2,8 @@ import React from 'react';
 import { css } from '@emotion/react';
 import { Meta } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
-import { Provider, Text, TextProps } from '../src';
+import { ColorValue, Provider, Text, TextProps } from '../src';
+import { globalColors } from './constants';
 
 const meta: Meta = {
   title: 'Text',
@@ -26,15 +27,16 @@ const sizes: TextProps['textSize'][] = [
 ];
 
 const colors: TextProps['color'][] = [
-  'white30',
-  'white70',
-  'white90',
+  'text-900',
+  'text-700',
+  'text-300',
   'designationPurple',
   'designationTurquoise',
   'success',
   'danger',
   'warning',
 ];
+
 /**
  * A gallery of all the variants
  */
@@ -92,6 +94,7 @@ export const Gallery = () => {
             );
           })}
         </p>
+
         <p
           css={css`
             .ac-text {
@@ -108,6 +111,22 @@ export const Gallery = () => {
                 color={color}
                 weight="heavy"
               >
+                {`I will not waste chalk`}
+              </Text>
+            );
+          })}
+        </p>
+        <h2>Global Colors</h2>
+        <p
+          css={css`
+            .ac-text {
+              display: block;
+            }
+          `}
+        >
+          {globalColors.map(color => {
+            return (
+              <Text key={color} textSize="xlarge" color={color} weight="heavy">
                 {`I will not waste chalk`}
               </Text>
             );

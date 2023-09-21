@@ -6,12 +6,12 @@ import React, {
 } from 'react';
 import { css } from '@emotion/react';
 import { ColorValue, DOMProps, DOMRef, StyleProps } from '../types';
-import { useDOMRef } from '../utils/useDOMRef';
 import theme, { designationColors } from '../theme';
 import { TextColor, Size, TextElementType, Weight } from './types';
+
 import { textSizeCSS, textWeightCSS } from './styles';
 import { filterDOMProps } from '@react-aria/utils';
-import { colorValue, useStyleProps } from '../utils';
+import { colorValue, useDOMRef, useStyleProps } from '../utils';
 
 export interface TextProps extends DOMProps, StyleProps {
   /**
@@ -35,7 +35,7 @@ export interface TextProps extends DOMProps, StyleProps {
   children: ReactNode;
   /**
    * The color of the text
-   * @default 'white90'
+   * @default 'text-900'
    */
   color?: TextColor;
   /**
@@ -60,10 +60,18 @@ const getTextColor = (color: TextColor) => {
   }
   const textColor = theme.textColors[color];
   if (textColor) {
+    console.warn(
+      `${textColor} is deprecated since it is not light/dark theme compatible.`
+    );
     return textColor;
+  }
+  if (color.startsWith('text-')) {
+    const [, num] = color.split('-');
+    return `var(--ac-global-text-color-${num})`;
   }
   return colorValue(color as ColorValue);
 };
+
 const textCSS = (color: TextColor) => css`
   /* default to no margin */
   margin: 0;
@@ -77,7 +85,7 @@ function Text(props: TextProps, ref: DOMRef<HTMLSpanElement>) {
   const { isDisabled = false } = props;
   const {
     children,
-    color = isDisabled ? 'white30' : 'white90',
+    color = isDisabled ? 'text-300' : 'text-900',
     textSize = 'medium',
     elementType = 'span',
     weight = 'normal',

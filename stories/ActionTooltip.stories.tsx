@@ -58,7 +58,7 @@ const Link = () => (
       text-decoration: none;
     `}
   >
-    <Text color="white90" textSize="large" weight="heavy">
+    <Text color="text-900" textSize="large" weight="heavy">
       View Drift
     </Text>
     <Icon aria-hidden={true} svg={<ArrowIosForwardOutline />}></Icon>

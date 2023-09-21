@@ -19,7 +19,7 @@ const addonBeforeCSS = css`
 export function AddonBefore({ children }: { children: ReactNode }) {
   return (
     <div css={addonBeforeCSS} className="ac-addon ac-addon--before">
-      <Text textSize="medium" weight="heavy" color="white70">
+      <Text textSize="medium" weight="heavy" color="text-700">
         {children}
       </Text>
     </div>

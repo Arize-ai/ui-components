@@ -303,3 +303,14 @@ export type ColorValue =
 export type DesignationColorValue =
   | 'designationPurple'
   | 'designationTurquoise';
+
+export type TextColorValue =
+  | 'white90'
+  | 'white70'
+  | 'white30'
+  // non-static colors
+  | 'text-900'
+  | 'text-700'
+  | 'text-300'
+  | 'inherit'
+  | ColorValue;
