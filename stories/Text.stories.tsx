@@ -27,9 +27,9 @@ const sizes: TextProps['textSize'][] = [
 ];
 
 const colors: TextProps['color'][] = [
-  'white30',
-  'white70',
-  'white90',
+  'text-900',
+  'text-700',
+  'text-300',
   'designationPurple',
   'designationTurquoise',
   'success',
