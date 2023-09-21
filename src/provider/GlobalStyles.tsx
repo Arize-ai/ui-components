@@ -378,6 +378,9 @@ export const globalCSS = css`
       --ac-global-color-warning: #e69958;
 
       --ac-global-text-color-900: rgba(255, 255, 255, 0.9);
+      --ac-global-text-color-700: rgba(255, 255, 255, 0.7);
+      --ac-global-text-color-500: rgba(255, 255, 255, 0.5);
+      --ac-global-text-color-300: rgba(255, 255, 255, 0.3);
 
       --ac-global-background-color-default: var(--ac-global-color-gray-900);
       --ac-global-background-color-light: var(--ac-global-color-gray-700);

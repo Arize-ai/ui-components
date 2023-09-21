@@ -10,6 +10,7 @@ import {
   Responsive,
   ResponsiveProp,
   StyleProps,
+  TextColorValue,
   ViewStyleProps,
 } from '../types';
 import { useLocale } from '@react-aria/i18n';
