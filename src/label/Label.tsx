@@ -1,19 +1,48 @@
 import { css } from '@emotion/react';
-import React, { ReactNode, HTMLAttributes, ElementType } from 'react';
-import { classNames } from '../utils';
+import React, { ReactNode, HTMLAttributes, ElementType, useMemo } from 'react';
+import { classNames, colorValue } from '../utils';
 import theme from '../theme';
 import { Text } from '../content';
+import { ColorValue } from '../types';
 
+type BaseLabelColors =
+  | 'white'
+  | 'blue'
+  | 'orange'
+  | 'green'
+  | 'red'
+  | 'purple'
+  | 'gray';
+
+function isBaseLabelColor(color: string): color is BaseLabelColors {
+  return (
+    color === 'white' ||
+    color === 'blue' ||
+    color === 'orange' ||
+    color === 'green' ||
+    color === 'red' ||
+    color === 'purple' ||
+    color === 'gray'
+  );
+}
 export interface LabelProps extends HTMLAttributes<HTMLElement> {
   icon?: ReactNode;
   children: string | ReactNode;
   onClick?: () => void;
-  color?: 'white' | 'blue' | 'orange' | 'green' | 'red' | 'purple' | 'gray';
+  color?:
+    | 'white'
+    | 'blue'
+    | 'orange'
+    | 'green'
+    | 'red'
+    | 'purple'
+    | 'gray'
+    | ColorValue;
 }
 
-const labelCSS = css`
-  color: ${theme.labelColors.white};
-  border: 1px solid ${theme.labelColors.white};
+const labelCSS = (color: string | null) => css`
+  color: ${color || theme.labelColors.white};
+  border: 1px solid ${color || theme.labelColors.white};
   background-color: transparent;
   padding: 1px 8px;
   border-radius: 10px;
@@ -27,6 +56,7 @@ const labelCSS = css`
       opacity: 0.8;
     }
   }
+  // hard coded values
   &.ac-label--blue {
     color: ${theme.labelColors.blue};
     border: 1px solid ${theme.labelColors.blue};
@@ -82,10 +112,17 @@ export const Label = ({
     classes.push('interactive');
   }
 
+  const globalColor = useMemo<string | null>(() => {
+    if (typeof color === 'string' && isBaseLabelColor(color)) {
+      return null;
+    }
+    return colorValue(color);
+  }, [color]);
+
   return (
     <LabelTag
       className={classNames(classes)}
-      css={labelCSS}
+      css={labelCSS(globalColor)}
       onClick={onClick}
       {...props}
     >
