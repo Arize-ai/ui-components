@@ -1,8 +1,21 @@
 import React, { CSSProperties } from 'react';
-import { theme, designationColors, colorPalette, Text, Heading } from '../src';
+import {
+  theme,
+  designationColors,
+  colorPalette,
+  Text,
+  Heading,
+  Provider,
+  TooltipTrigger,
+  Tooltip,
+  TriggerWrap,
+} from '../src';
 import { Meta, Story } from '@storybook/react';
 // @ts-ignore
 import { withDesign } from 'storybook-addon-designs';
+import { colorValue } from '../src/utils';
+import { globalColors } from './constants';
+import { css } from '@emotion/react';
 
 const listStyle: CSSProperties = {
   listStyle: 'none',
@@ -14,6 +27,12 @@ const listStyle: CSSProperties = {
   flexWrap: 'wrap',
   gap: '8px',
 };
+
+function GlobalColor({ color }) {
+  const val = colorValue(color);
+  return <Color color={val} name={color} />;
+}
+
 function Color({ color, name }) {
   return (
     <div
@@ -22,20 +41,24 @@ function Color({ color, name }) {
         marginTop: '5px',
         display: 'flex',
         flexDirection: 'column',
+        width: '60px',
+        overflow: 'hidden',
       }}
     >
-      <div
-        style={{
-          backgroundColor: color,
-          width: '60px',
-          height: '60px',
-          marginRight: '10px',
-          borderRadius: 3,
-        }}
-      />
-      <Text style={{ userSelect: 'none' }} textSize="xsmall">
-        {color}
-      </Text>
+      <TooltipTrigger>
+        <TriggerWrap>
+          <div
+            style={{
+              backgroundColor: color,
+              width: '60px',
+              height: '60px',
+              marginRight: '4px',
+              borderRadius: 3,
+            }}
+          />
+        </TriggerWrap>
+        <Tooltip>{color}</Tooltip>
+      </TooltipTrigger>
       <Text textSize="xsmall">{name}</Text>
     </div>
   );
@@ -95,7 +118,6 @@ function Colors() {
     <section>
       <Heading>Designation Colors</Heading>
       <ul style={listStyle}>
-<<<<<<< HEAD
         {Object.keys(designationColors)
           .filter(c => c.startsWith('designation'))
           .map((c, i) => (
@@ -103,60 +125,58 @@ function Colors() {
               <Color color={designationColors[c]} name={c} />
             </li>
           ))}
-=======
-        {designationColorKeys.map((c, i) => (
-          <li key={i}>
-            <Color color={designationColors[c]} name={c} />
-          </li>
-        ))}
->>>>>>> 2afd5d8 (WIP)
       </ul>
     </section>
   );
 
-<<<<<<< HEAD
   const colorPaletteSection = (
     <section>
       <Heading>Color Palette</Heading>
       <ColorGradient colorGradient={colorPalette.purpleColors} />
       <ColorGradient colorGradient={colorPalette.turquoiseColors} />
       <ColorGradient colorGradient={colorPalette.grayColors} />
-=======
-  const colorGroups = Object.keys(colorPalette);
-  const colorPaletteEl = (
+    </section>
+  );
+
+  const globalColorsEl = (
     <section>
-      <Heading>Color Palette</Heading>
-      {/* <div>
-        {colorGroups.map((colorGroup, i) => {
+      <Heading>Global Colors</Heading>
+      <ul style={listStyle}>
+        {globalColors.map((c, i) => {
           return (
-            <div>
-              {colorGroup}
-              <ul>
-                {colorPalette[colorGroup].map(color => (
-                  <li>{color}</li>
-                ))}
-              </ul>
-            </div>
+            <>
+              {c.endsWith('-100') && (
+                <div
+                  css={css`
+                    width: 100%;
+                  `}
+                />
+              )}
+              <li key={i}>
+                <GlobalColor color={c} />
+              </li>
+            </>
           );
         })}
-      </div> */}
->>>>>>> 2afd5d8 (WIP)
+      </ul>
     </section>
   );
 
   return (
-    <main>
-      <ul style={listStyle}>
-        {colorsArray.map((el, i) => (
-          <li key={i}>{el}</li>
-        ))}
-      </ul>
-      <br />
-      {colorPaletteSection}
-      {designations}
-      {colorPaletteEl}
-      {components}
-    </main>
+    <Provider>
+      <main>
+        <ul style={listStyle}>
+          {colorsArray.map((el, i) => (
+            <li key={i}>{el}</li>
+          ))}
+        </ul>
+        <br />
+        {colorPaletteSection}
+        {designations}
+        {globalColorsEl}
+        {components}
+      </main>
+    </Provider>
   );
 }
 
