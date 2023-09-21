@@ -60,6 +60,9 @@ const getTextColor = (color: TextColor) => {
   }
   const textColor = theme.textColors[color];
   if (textColor) {
+    console.warn(
+      `${textColor} is deprecated since it is not light/dark theme compatible.`
+    );
     return textColor;
   }
   if (color.startsWith('text-')) {
