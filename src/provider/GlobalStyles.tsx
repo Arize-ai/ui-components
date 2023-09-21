@@ -191,17 +191,6 @@ export const globalCSS = css`
       --ac-global-color-gray-200: #585d64;
       --ac-global-color-gray-100: #666b71;
 
-      --ac-global-color-gray-50: #000;
-      --ac-global-color-gray-75: #0e0e0e;
-      --ac-global-color-gray-100: #1d1d1d;
-      --ac-global-color-gray-200: #303030;
-      --ac-global-color-gray-300: #4b4b4b;
-      --ac-global-color-gray-400: #6a6a6a;
-      --ac-global-color-gray-500: #8d8d8d;
-      --ac-global-color-gray-600: #b0b0b0;
-      --ac-global-color-gray-700: #d0d0d0;
-      --ac-global-color-gray-800: #ebebeb;
-      --ac-global-color-gray-900: #fff;
       --ac-global-color-red-100: #570000;
       --ac-global-color-red-200: #6e0000;
       --ac-global-color-red-300: #8a0000;
