@@ -117,6 +117,8 @@ export type ColorValue =
   | 'blue-1000'
   | 'blue-1100'
   | 'blue-1200'
+  | 'blue-1300'
+  | 'blue-1400'
   | 'red-100'
   | 'red-200'
   | 'red-300'
@@ -293,6 +295,7 @@ export type ColorValue =
   | 'orange-1100'
   | 'orange-1200'
   | 'orange-1300'
+  | 'orange-1400'
   | 'success'
   | 'warning'
   | 'danger';

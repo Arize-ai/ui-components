@@ -191,533 +191,199 @@ export const globalCSS = css`
       --ac-global-color-gray-200: #585d64;
       --ac-global-color-gray-100: #666b71;
 
-      --ac-global-color-blue-100-rgb: 224, 242, 255;
-      --ac-global-color-blue-100: rgba(var(--ac-global-color-blue-100-rgb));
-      --ac-global-color-blue-200-rgb: 202, 232, 255;
-      --ac-global-color-blue-200: rgba(var(--ac-global-color-blue-200-rgb));
-      --ac-global-color-blue-300-rgb: 181, 222, 255;
-      --ac-global-color-blue-300: rgba(var(--ac-global-color-blue-300-rgb));
-      --ac-global-color-blue-400-rgb: 150, 206, 253;
-      --ac-global-color-blue-400: rgba(var(--ac-global-color-blue-400-rgb));
-      --ac-global-color-blue-500-rgb: 120, 187, 250;
-      --ac-global-color-blue-500: rgba(var(--ac-global-color-blue-500-rgb));
-      --ac-global-color-blue-600-rgb: 89, 167, 246;
-      --ac-global-color-blue-600: rgba(var(--ac-global-color-blue-600-rgb));
-      --ac-global-color-blue-700-rgb: 56, 146, 243;
-      --ac-global-color-blue-700: rgba(var(--ac-global-color-blue-700-rgb));
-      --ac-global-color-blue-800-rgb: 20, 122, 243;
-      --ac-global-color-blue-800: rgba(var(--ac-global-color-blue-800-rgb));
-      --ac-global-color-blue-900-rgb: 2, 101, 220;
-      --ac-global-color-blue-900: rgba(var(--ac-global-color-blue-900-rgb));
-      --ac-global-color-blue-1000-rgb: 0, 84, 182;
-      --ac-global-color-blue-1000: rgba(var(--ac-global-color-blue-1000-rgb));
-      --ac-global-color-blue-1100-rgb: 0, 68, 145;
-      --ac-global-color-blue-1100: rgba(var(--ac-global-color-blue-1100-rgb));
-      --ac-global-color-blue-1200-rgb: 0, 53, 113;
-      --ac-global-color-blue-1200: rgba(var(--ac-global-color-blue-1200-rgb));
-      --ac-global-color-blue-1300-rgb: 0, 39, 84;
-      --ac-global-color-blue-1300: rgba(var(--ac-global-color-blue-1300-rgb));
-      --ac-global-color-blue-1400-rgb: 0, 28, 60;
-      --ac-global-color-blue-1400: rgba(var(--ac-global-color-blue-1400-rgb));
-      --ac-global-color-red-100-rgb: 255, 235, 231;
-      --ac-global-color-red-100: rgba(var(--ac-global-color-red-100-rgb));
-      --ac-global-color-red-200-rgb: 255, 221, 214;
-      --ac-global-color-red-200: rgba(var(--ac-global-color-red-200-rgb));
-      --ac-global-color-red-300-rgb: 255, 205, 195;
-      --ac-global-color-red-300: rgba(var(--ac-global-color-red-300-rgb));
-      --ac-global-color-red-400-rgb: 255, 183, 169;
-      --ac-global-color-red-400: rgba(var(--ac-global-color-red-400-rgb));
-      --ac-global-color-red-500-rgb: 255, 155, 136;
-      --ac-global-color-red-500: rgba(var(--ac-global-color-red-500-rgb));
-      --ac-global-color-red-600-rgb: 255, 124, 101;
-      --ac-global-color-red-600: rgba(var(--ac-global-color-red-600-rgb));
-      --ac-global-color-red-700-rgb: 247, 92, 70;
-      --ac-global-color-red-700: rgba(var(--ac-global-color-red-700-rgb));
-      --ac-global-color-red-800-rgb: 234, 56, 41;
-      --ac-global-color-red-800: rgba(var(--ac-global-color-red-800-rgb));
-      --ac-global-color-red-900-rgb: 211, 21, 16;
-      --ac-global-color-red-900: rgba(var(--ac-global-color-red-900-rgb));
-      --ac-global-color-red-1000-rgb: 180, 0, 0;
-      --ac-global-color-red-1000: rgba(var(--ac-global-color-red-1000-rgb));
-      --ac-global-color-red-1100-rgb: 147, 0, 0;
-      --ac-global-color-red-1100: rgba(var(--ac-global-color-red-1100-rgb));
-      --ac-global-color-red-1200-rgb: 116, 0, 0;
-      --ac-global-color-red-1200: rgba(var(--ac-global-color-red-1200-rgb));
-      --ac-global-color-red-1300-rgb: 89, 0, 0;
-      --ac-global-color-red-1300: rgba(var(--ac-global-color-red-1300-rgb));
-      --ac-global-color-red-1400-rgb: 67, 0, 0;
-      --ac-global-color-red-1400: rgba(var(--ac-global-color-red-1400-rgb));
-      --ac-global-color-orange-100-rgb: 255, 236, 204;
-      --ac-global-color-orange-100: rgba(var(--ac-global-color-orange-100-rgb));
-      --ac-global-color-orange-200-rgb: 255, 223, 173;
-      --ac-global-color-orange-200: rgba(var(--ac-global-color-orange-200-rgb));
-      --ac-global-color-orange-300-rgb: 253, 210, 145;
-      --ac-global-color-orange-300: rgba(var(--ac-global-color-orange-300-rgb));
-      --ac-global-color-orange-400-rgb: 255, 187, 99;
-      --ac-global-color-orange-400: rgba(var(--ac-global-color-orange-400-rgb));
-      --ac-global-color-orange-500-rgb: 255, 160, 55;
-      --ac-global-color-orange-500: rgba(var(--ac-global-color-orange-500-rgb));
-      --ac-global-color-orange-600-rgb: 246, 133, 17;
-      --ac-global-color-orange-600: rgba(var(--ac-global-color-orange-600-rgb));
-      --ac-global-color-orange-700-rgb: 228, 111, 0;
-      --ac-global-color-orange-700: rgba(var(--ac-global-color-orange-700-rgb));
-      --ac-global-color-orange-800-rgb: 203, 93, 0;
-      --ac-global-color-orange-800: rgba(var(--ac-global-color-orange-800-rgb));
-      --ac-global-color-orange-900-rgb: 177, 76, 0;
-      --ac-global-color-orange-900: rgba(var(--ac-global-color-orange-900-rgb));
-      --ac-global-color-orange-1000-rgb: 149, 61, 0;
-      --ac-global-color-orange-1000: rgba(
-        var(--ac-global-color-orange-1000-rgb)
-      );
-      --ac-global-color-orange-1100-rgb: 122, 47, 0;
-      --ac-global-color-orange-1100: rgba(
-        var(--ac-global-color-orange-1100-rgb)
-      );
-      --ac-global-color-orange-1200-rgb: 97, 35, 0;
-      --ac-global-color-orange-1200: rgba(
-        var(--ac-global-color-orange-1200-rgb)
-      );
-      --ac-global-color-orange-1300-rgb: 73, 25, 1;
-      --ac-global-color-orange-1300: rgba(
-        var(--ac-global-color-orange-1300-rgb)
-      );
-      --ac-global-color-orange-1400-rgb: 53, 18, 1;
-      --ac-global-color-orange-1400: rgba(
-        var(--ac-global-color-orange-1400-rgb)
-      );
-      --ac-global-color-yellow-100-rgb: 251, 241, 152;
-      --ac-global-color-yellow-100: rgba(var(--ac-global-color-yellow-100-rgb));
-      --ac-global-color-yellow-200-rgb: 248, 231, 80;
-      --ac-global-color-yellow-200: rgba(var(--ac-global-color-yellow-200-rgb));
-      --ac-global-color-yellow-300-rgb: 248, 217, 4;
-      --ac-global-color-yellow-300: rgba(var(--ac-global-color-yellow-300-rgb));
-      --ac-global-color-yellow-400-rgb: 232, 198, 0;
-      --ac-global-color-yellow-400: rgba(var(--ac-global-color-yellow-400-rgb));
-      --ac-global-color-yellow-500-rgb: 215, 179, 0;
-      --ac-global-color-yellow-500: rgba(var(--ac-global-color-yellow-500-rgb));
-      --ac-global-color-yellow-600-rgb: 196, 159, 0;
-      --ac-global-color-yellow-600: rgba(var(--ac-global-color-yellow-600-rgb));
-      --ac-global-color-yellow-700-rgb: 176, 140, 0;
-      --ac-global-color-yellow-700: rgba(var(--ac-global-color-yellow-700-rgb));
-      --ac-global-color-yellow-800-rgb: 155, 120, 0;
-      --ac-global-color-yellow-800: rgba(var(--ac-global-color-yellow-800-rgb));
-      --ac-global-color-yellow-900-rgb: 133, 102, 0;
-      --ac-global-color-yellow-900: rgba(var(--ac-global-color-yellow-900-rgb));
-      --ac-global-color-yellow-1000-rgb: 112, 83, 0;
-      --ac-global-color-yellow-1000: rgba(
-        var(--ac-global-color-yellow-1000-rgb)
-      );
-      --ac-global-color-yellow-1100-rgb: 91, 67, 0;
-      --ac-global-color-yellow-1100: rgba(
-        var(--ac-global-color-yellow-1100-rgb)
-      );
-      --ac-global-color-yellow-1200-rgb: 72, 51, 0;
-      --ac-global-color-yellow-1200: rgba(
-        var(--ac-global-color-yellow-1200-rgb)
-      );
-      --ac-global-color-yellow-1300-rgb: 54, 37, 0;
-      --ac-global-color-yellow-1300: rgba(
-        var(--ac-global-color-yellow-1300-rgb)
-      );
-      --ac-global-color-yellow-1400-rgb: 40, 26, 0;
-      --ac-global-color-yellow-1400: rgba(
-        var(--ac-global-color-yellow-1400-rgb)
-      );
-      --ac-global-color-chartreuse-100-rgb: 219, 252, 110;
-      --ac-global-color-chartreuse-100: rgba(
-        var(--ac-global-color-chartreuse-100-rgb)
-      );
-      --ac-global-color-chartreuse-200-rgb: 203, 244, 67;
-      --ac-global-color-chartreuse-200: rgba(
-        var(--ac-global-color-chartreuse-200-rgb)
-      );
-      --ac-global-color-chartreuse-300-rgb: 188, 233, 42;
-      --ac-global-color-chartreuse-300: rgba(
-        var(--ac-global-color-chartreuse-300-rgb)
-      );
-      --ac-global-color-chartreuse-400-rgb: 170, 216, 22;
-      --ac-global-color-chartreuse-400: rgba(
-        var(--ac-global-color-chartreuse-400-rgb)
-      );
-      --ac-global-color-chartreuse-500-rgb: 152, 197, 10;
-      --ac-global-color-chartreuse-500: rgba(
-        var(--ac-global-color-chartreuse-500-rgb)
-      );
-      --ac-global-color-chartreuse-600-rgb: 135, 177, 3;
-      --ac-global-color-chartreuse-600: rgba(
-        var(--ac-global-color-chartreuse-600-rgb)
-      );
-      --ac-global-color-chartreuse-700-rgb: 118, 156, 0;
-      --ac-global-color-chartreuse-700: rgba(
-        var(--ac-global-color-chartreuse-700-rgb)
-      );
-      --ac-global-color-chartreuse-800-rgb: 103, 136, 0;
-      --ac-global-color-chartreuse-800: rgba(
-        var(--ac-global-color-chartreuse-800-rgb)
-      );
-      --ac-global-color-chartreuse-900-rgb: 87, 116, 0;
-      --ac-global-color-chartreuse-900: rgba(
-        var(--ac-global-color-chartreuse-900-rgb)
-      );
-      --ac-global-color-chartreuse-1000-rgb: 72, 96, 0;
-      --ac-global-color-chartreuse-1000: rgba(
-        var(--ac-global-color-chartreuse-1000-rgb)
-      );
-      --ac-global-color-chartreuse-1100-rgb: 58, 77, 0;
-      --ac-global-color-chartreuse-1100: rgba(
-        var(--ac-global-color-chartreuse-1100-rgb)
-      );
-      --ac-global-color-chartreuse-1200-rgb: 44, 59, 0;
-      --ac-global-color-chartreuse-1200: rgba(
-        var(--ac-global-color-chartreuse-1200-rgb)
-      );
-      --ac-global-color-chartreuse-1300-rgb: 33, 44, 0;
-      --ac-global-color-chartreuse-1300: rgba(
-        var(--ac-global-color-chartreuse-1300-rgb)
-      );
-      --ac-global-color-chartreuse-1400-rgb: 24, 31, 0;
-      --ac-global-color-chartreuse-1400: rgba(
-        var(--ac-global-color-chartreuse-1400-rgb)
-      );
-      --ac-global-color-celery-100-rgb: 205, 252, 191;
-      --ac-global-color-celery-100: rgba(var(--ac-global-color-celery-100-rgb));
-      --ac-global-color-celery-200-rgb: 174, 246, 157;
-      --ac-global-color-celery-200: rgba(var(--ac-global-color-celery-200-rgb));
-      --ac-global-color-celery-300-rgb: 150, 238, 133;
-      --ac-global-color-celery-300: rgba(var(--ac-global-color-celery-300-rgb));
-      --ac-global-color-celery-400-rgb: 114, 224, 106;
-      --ac-global-color-celery-400: rgba(var(--ac-global-color-celery-400-rgb));
-      --ac-global-color-celery-500-rgb: 78, 207, 80;
-      --ac-global-color-celery-500: rgba(var(--ac-global-color-celery-500-rgb));
-      --ac-global-color-celery-600-rgb: 39, 187, 54;
-      --ac-global-color-celery-600: rgba(var(--ac-global-color-celery-600-rgb));
-      --ac-global-color-celery-700-rgb: 7, 167, 33;
-      --ac-global-color-celery-700: rgba(var(--ac-global-color-celery-700-rgb));
-      --ac-global-color-celery-800-rgb: 0, 145, 18;
-      --ac-global-color-celery-800: rgba(var(--ac-global-color-celery-800-rgb));
-      --ac-global-color-celery-900-rgb: 0, 124, 15;
-      --ac-global-color-celery-900: rgba(var(--ac-global-color-celery-900-rgb));
-      --ac-global-color-celery-1000-rgb: 0, 103, 15;
-      --ac-global-color-celery-1000: rgba(
-        var(--ac-global-color-celery-1000-rgb)
-      );
-      --ac-global-color-celery-1100-rgb: 0, 83, 13;
-      --ac-global-color-celery-1100: rgba(
-        var(--ac-global-color-celery-1100-rgb)
-      );
-      --ac-global-color-celery-1200-rgb: 0, 64, 10;
-      --ac-global-color-celery-1200: rgba(
-        var(--ac-global-color-celery-1200-rgb)
-      );
-      --ac-global-color-celery-1300-rgb: 0, 48, 7;
-      --ac-global-color-celery-1300: rgba(
-        var(--ac-global-color-celery-1300-rgb)
-      );
-      --ac-global-color-celery-1400-rgb: 0, 34, 5;
-      --ac-global-color-celery-1400: rgba(
-        var(--ac-global-color-celery-1400-rgb)
-      );
-      --ac-global-color-green-100-rgb: 206, 248, 224;
-      --ac-global-color-green-100: rgba(var(--ac-global-color-green-100-rgb));
-      --ac-global-color-green-200-rgb: 173, 244, 206;
-      --ac-global-color-green-200: rgba(var(--ac-global-color-green-200-rgb));
-      --ac-global-color-green-300-rgb: 137, 236, 188;
-      --ac-global-color-green-300: rgba(var(--ac-global-color-green-300-rgb));
-      --ac-global-color-green-400-rgb: 103, 222, 168;
-      --ac-global-color-green-400: rgba(var(--ac-global-color-green-400-rgb));
-      --ac-global-color-green-500-rgb: 73, 204, 147;
-      --ac-global-color-green-500: rgba(var(--ac-global-color-green-500-rgb));
-      --ac-global-color-green-600-rgb: 47, 184, 128;
-      --ac-global-color-green-600: rgba(var(--ac-global-color-green-600-rgb));
-      --ac-global-color-green-700-rgb: 21, 164, 110;
-      --ac-global-color-green-700: rgba(var(--ac-global-color-green-700-rgb));
-      --ac-global-color-green-800-rgb: 0, 143, 93;
-      --ac-global-color-green-800: rgba(var(--ac-global-color-green-800-rgb));
-      --ac-global-color-green-900-rgb: 0, 122, 77;
-      --ac-global-color-green-900: rgba(var(--ac-global-color-green-900-rgb));
-      --ac-global-color-green-1000-rgb: 0, 101, 62;
-      --ac-global-color-green-1000: rgba(var(--ac-global-color-green-1000-rgb));
-      --ac-global-color-green-1100-rgb: 0, 81, 50;
-      --ac-global-color-green-1100: rgba(var(--ac-global-color-green-1100-rgb));
-      --ac-global-color-green-1200-rgb: 5, 63, 39;
-      --ac-global-color-green-1200: rgba(var(--ac-global-color-green-1200-rgb));
-      --ac-global-color-green-1300-rgb: 10, 46, 29;
-      --ac-global-color-green-1300: rgba(var(--ac-global-color-green-1300-rgb));
-      --ac-global-color-green-1400-rgb: 10, 32, 21;
-      --ac-global-color-green-1400: rgba(var(--ac-global-color-green-1400-rgb));
-      --ac-global-color-seafoam-100-rgb: 206, 247, 243;
-      --ac-global-color-seafoam-100: rgba(
-        var(--ac-global-color-seafoam-100-rgb)
-      );
-      --ac-global-color-seafoam-200-rgb: 170, 241, 234;
-      --ac-global-color-seafoam-200: rgba(
-        var(--ac-global-color-seafoam-200-rgb)
-      );
-      --ac-global-color-seafoam-300-rgb: 140, 233, 226;
-      --ac-global-color-seafoam-300: rgba(
-        var(--ac-global-color-seafoam-300-rgb)
-      );
-      --ac-global-color-seafoam-400-rgb: 101, 218, 210;
-      --ac-global-color-seafoam-400: rgba(
-        var(--ac-global-color-seafoam-400-rgb)
-      );
-      --ac-global-color-seafoam-500-rgb: 63, 201, 193;
-      --ac-global-color-seafoam-500: rgba(
-        var(--ac-global-color-seafoam-500-rgb)
-      );
-      --ac-global-color-seafoam-600-rgb: 15, 181, 174;
-      --ac-global-color-seafoam-600: rgba(
-        var(--ac-global-color-seafoam-600-rgb)
-      );
-      --ac-global-color-seafoam-700-rgb: 0, 161, 154;
-      --ac-global-color-seafoam-700: rgba(
-        var(--ac-global-color-seafoam-700-rgb)
-      );
-      --ac-global-color-seafoam-800-rgb: 0, 140, 135;
-      --ac-global-color-seafoam-800: rgba(
-        var(--ac-global-color-seafoam-800-rgb)
-      );
-      --ac-global-color-seafoam-900-rgb: 0, 119, 114;
-      --ac-global-color-seafoam-900: rgba(
-        var(--ac-global-color-seafoam-900-rgb)
-      );
-      --ac-global-color-seafoam-1000-rgb: 0, 99, 95;
-      --ac-global-color-seafoam-1000: rgba(
-        var(--ac-global-color-seafoam-1000-rgb)
-      );
-      --ac-global-color-seafoam-1100-rgb: 12, 79, 76;
-      --ac-global-color-seafoam-1100: rgba(
-        var(--ac-global-color-seafoam-1100-rgb)
-      );
-      --ac-global-color-seafoam-1200-rgb: 18, 60, 58;
-      --ac-global-color-seafoam-1200: rgba(
-        var(--ac-global-color-seafoam-1200-rgb)
-      );
-      --ac-global-color-seafoam-1300-rgb: 18, 44, 43;
-      --ac-global-color-seafoam-1300: rgba(
-        var(--ac-global-color-seafoam-1300-rgb)
-      );
-      --ac-global-color-seafoam-1400-rgb: 15, 31, 30;
-      --ac-global-color-seafoam-1400: rgba(
-        var(--ac-global-color-seafoam-1400-rgb)
-      );
-      --ac-global-color-cyan-100-rgb: 197, 248, 255;
-      --ac-global-color-cyan-100: rgba(var(--ac-global-color-cyan-100-rgb));
-      --ac-global-color-cyan-200-rgb: 164, 240, 255;
-      --ac-global-color-cyan-200: rgba(var(--ac-global-color-cyan-200-rgb));
-      --ac-global-color-cyan-300-rgb: 136, 231, 250;
-      --ac-global-color-cyan-300: rgba(var(--ac-global-color-cyan-300-rgb));
-      --ac-global-color-cyan-400-rgb: 96, 216, 243;
-      --ac-global-color-cyan-400: rgba(var(--ac-global-color-cyan-400-rgb));
-      --ac-global-color-cyan-500-rgb: 51, 197, 232;
-      --ac-global-color-cyan-500: rgba(var(--ac-global-color-cyan-500-rgb));
-      --ac-global-color-cyan-600-rgb: 18, 176, 218;
-      --ac-global-color-cyan-600: rgba(var(--ac-global-color-cyan-600-rgb));
-      --ac-global-color-cyan-700-rgb: 1, 156, 200;
-      --ac-global-color-cyan-700: rgba(var(--ac-global-color-cyan-700-rgb));
-      --ac-global-color-cyan-800-rgb: 0, 134, 180;
-      --ac-global-color-cyan-800: rgba(var(--ac-global-color-cyan-800-rgb));
-      --ac-global-color-cyan-900-rgb: 0, 113, 159;
-      --ac-global-color-cyan-900: rgba(var(--ac-global-color-cyan-900-rgb));
-      --ac-global-color-cyan-1000-rgb: 0, 93, 137;
-      --ac-global-color-cyan-1000: rgba(var(--ac-global-color-cyan-1000-rgb));
-      --ac-global-color-cyan-1100-rgb: 0, 74, 115;
-      --ac-global-color-cyan-1100: rgba(var(--ac-global-color-cyan-1100-rgb));
-      --ac-global-color-cyan-1200-rgb: 0, 57, 93;
-      --ac-global-color-cyan-1200: rgba(var(--ac-global-color-cyan-1200-rgb));
-      --ac-global-color-cyan-1300-rgb: 0, 42, 70;
-      --ac-global-color-cyan-1300: rgba(var(--ac-global-color-cyan-1300-rgb));
-      --ac-global-color-cyan-1400-rgb: 0, 30, 51;
-      --ac-global-color-cyan-1400: rgba(var(--ac-global-color-cyan-1400-rgb));
-      --ac-global-color-indigo-100-rgb: 237, 238, 255;
-      --ac-global-color-indigo-100: rgba(var(--ac-global-color-indigo-100-rgb));
-      --ac-global-color-indigo-200-rgb: 224, 226, 255;
-      --ac-global-color-indigo-200: rgba(var(--ac-global-color-indigo-200-rgb));
-      --ac-global-color-indigo-300-rgb: 211, 213, 255;
-      --ac-global-color-indigo-300: rgba(var(--ac-global-color-indigo-300-rgb));
-      --ac-global-color-indigo-400-rgb: 193, 196, 255;
-      --ac-global-color-indigo-400: rgba(var(--ac-global-color-indigo-400-rgb));
-      --ac-global-color-indigo-500-rgb: 172, 175, 255;
-      --ac-global-color-indigo-500: rgba(var(--ac-global-color-indigo-500-rgb));
-      --ac-global-color-indigo-600-rgb: 149, 153, 255;
-      --ac-global-color-indigo-600: rgba(var(--ac-global-color-indigo-600-rgb));
-      --ac-global-color-indigo-700-rgb: 126, 132, 252;
-      --ac-global-color-indigo-700: rgba(var(--ac-global-color-indigo-700-rgb));
-      --ac-global-color-indigo-800-rgb: 104, 109, 244;
-      --ac-global-color-indigo-800: rgba(var(--ac-global-color-indigo-800-rgb));
-      --ac-global-color-indigo-900-rgb: 82, 88, 228;
-      --ac-global-color-indigo-900: rgba(var(--ac-global-color-indigo-900-rgb));
-      --ac-global-color-indigo-1000-rgb: 64, 70, 202;
-      --ac-global-color-indigo-1000: rgba(
-        var(--ac-global-color-indigo-1000-rgb)
-      );
-      --ac-global-color-indigo-1100-rgb: 50, 54, 168;
-      --ac-global-color-indigo-1100: rgba(
-        var(--ac-global-color-indigo-1100-rgb)
-      );
-      --ac-global-color-indigo-1200-rgb: 38, 41, 134;
-      --ac-global-color-indigo-1200: rgba(
-        var(--ac-global-color-indigo-1200-rgb)
-      );
-      --ac-global-color-indigo-1300-rgb: 27, 30, 100;
-      --ac-global-color-indigo-1300: rgba(
-        var(--ac-global-color-indigo-1300-rgb)
-      );
-      --ac-global-color-indigo-1400-rgb: 20, 22, 72;
-      --ac-global-color-indigo-1400: rgba(
-        var(--ac-global-color-indigo-1400-rgb)
-      );
-      --ac-global-color-purple-100-rgb: 246, 235, 255;
-      --ac-global-color-purple-100: rgba(var(--ac-global-color-purple-100-rgb));
-      --ac-global-color-purple-200-rgb: 238, 221, 255;
-      --ac-global-color-purple-200: rgba(var(--ac-global-color-purple-200-rgb));
-      --ac-global-color-purple-300-rgb: 230, 208, 255;
-      --ac-global-color-purple-300: rgba(var(--ac-global-color-purple-300-rgb));
-      --ac-global-color-purple-400-rgb: 219, 187, 254;
-      --ac-global-color-purple-400: rgba(var(--ac-global-color-purple-400-rgb));
-      --ac-global-color-purple-500-rgb: 204, 164, 253;
-      --ac-global-color-purple-500: rgba(var(--ac-global-color-purple-500-rgb));
-      --ac-global-color-purple-600-rgb: 189, 139, 252;
-      --ac-global-color-purple-600: rgba(var(--ac-global-color-purple-600-rgb));
-      --ac-global-color-purple-700-rgb: 174, 114, 249;
-      --ac-global-color-purple-700: rgba(var(--ac-global-color-purple-700-rgb));
-      --ac-global-color-purple-800-rgb: 157, 87, 244;
-      --ac-global-color-purple-800: rgba(var(--ac-global-color-purple-800-rgb));
-      --ac-global-color-purple-900-rgb: 137, 61, 231;
-      --ac-global-color-purple-900: rgba(var(--ac-global-color-purple-900-rgb));
-      --ac-global-color-purple-1000-rgb: 115, 38, 211;
-      --ac-global-color-purple-1000: rgba(
-        var(--ac-global-color-purple-1000-rgb)
-      );
-      --ac-global-color-purple-1100-rgb: 93, 19, 183;
-      --ac-global-color-purple-1100: rgba(
-        var(--ac-global-color-purple-1100-rgb)
-      );
-      --ac-global-color-purple-1200-rgb: 71, 12, 148;
-      --ac-global-color-purple-1200: rgba(
-        var(--ac-global-color-purple-1200-rgb)
-      );
-      --ac-global-color-purple-1300-rgb: 51, 16, 106;
-      --ac-global-color-purple-1300: rgba(
-        var(--ac-global-color-purple-1300-rgb)
-      );
-      --ac-global-color-purple-1400-rgb: 35, 15, 73;
-      --ac-global-color-purple-1400: rgba(
-        var(--ac-global-color-purple-1400-rgb)
-      );
-      --ac-global-color-fuchsia-100-rgb: 255, 233, 252;
-      --ac-global-color-fuchsia-100: rgba(
-        var(--ac-global-color-fuchsia-100-rgb)
-      );
-      --ac-global-color-fuchsia-200-rgb: 255, 218, 250;
-      --ac-global-color-fuchsia-200: rgba(
-        var(--ac-global-color-fuchsia-200-rgb)
-      );
-      --ac-global-color-fuchsia-300-rgb: 254, 199, 248;
-      --ac-global-color-fuchsia-300: rgba(
-        var(--ac-global-color-fuchsia-300-rgb)
-      );
-      --ac-global-color-fuchsia-400-rgb: 251, 174, 246;
-      --ac-global-color-fuchsia-400: rgba(
-        var(--ac-global-color-fuchsia-400-rgb)
-      );
-      --ac-global-color-fuchsia-500-rgb: 245, 146, 243;
-      --ac-global-color-fuchsia-500: rgba(
-        var(--ac-global-color-fuchsia-500-rgb)
-      );
-      --ac-global-color-fuchsia-600-rgb: 237, 116, 237;
-      --ac-global-color-fuchsia-600: rgba(
-        var(--ac-global-color-fuchsia-600-rgb)
-      );
-      --ac-global-color-fuchsia-700-rgb: 224, 85, 226;
-      --ac-global-color-fuchsia-700: rgba(
-        var(--ac-global-color-fuchsia-700-rgb)
-      );
-      --ac-global-color-fuchsia-800-rgb: 205, 58, 206;
-      --ac-global-color-fuchsia-800: rgba(
-        var(--ac-global-color-fuchsia-800-rgb)
-      );
-      --ac-global-color-fuchsia-900-rgb: 182, 34, 183;
-      --ac-global-color-fuchsia-900: rgba(
-        var(--ac-global-color-fuchsia-900-rgb)
-      );
-      --ac-global-color-fuchsia-1000-rgb: 157, 3, 158;
-      --ac-global-color-fuchsia-1000: rgba(
-        var(--ac-global-color-fuchsia-1000-rgb)
-      );
-      --ac-global-color-fuchsia-1100-rgb: 128, 0, 129;
-      --ac-global-color-fuchsia-1100: rgba(
-        var(--ac-global-color-fuchsia-1100-rgb)
-      );
-      --ac-global-color-fuchsia-1200-rgb: 100, 6, 100;
-      --ac-global-color-fuchsia-1200: rgba(
-        var(--ac-global-color-fuchsia-1200-rgb)
-      );
-      --ac-global-color-fuchsia-1300-rgb: 71, 14, 70;
-      --ac-global-color-fuchsia-1300: rgba(
-        var(--ac-global-color-fuchsia-1300-rgb)
-      );
-      --ac-global-color-fuchsia-1400-rgb: 50, 13, 49;
-      --ac-global-color-fuchsia-1400: rgba(
-        var(--ac-global-color-fuchsia-1400-rgb)
-      );
-      --ac-global-color-magenta-100-rgb: 255, 234, 241;
-      --ac-global-color-magenta-100: rgba(
-        var(--ac-global-color-magenta-100-rgb)
-      );
-      --ac-global-color-magenta-200-rgb: 255, 220, 232;
-      --ac-global-color-magenta-200: rgba(
-        var(--ac-global-color-magenta-200-rgb)
-      );
-      --ac-global-color-magenta-300-rgb: 255, 202, 221;
-      --ac-global-color-magenta-300: rgba(
-        var(--ac-global-color-magenta-300-rgb)
-      );
-      --ac-global-color-magenta-400-rgb: 255, 178, 206;
-      --ac-global-color-magenta-400: rgba(
-        var(--ac-global-color-magenta-400-rgb)
-      );
-      --ac-global-color-magenta-500-rgb: 255, 149, 189;
-      --ac-global-color-magenta-500: rgba(
-        var(--ac-global-color-magenta-500-rgb)
-      );
-      --ac-global-color-magenta-600-rgb: 250, 119, 170;
-      --ac-global-color-magenta-600: rgba(
-        var(--ac-global-color-magenta-600-rgb)
-      );
-      --ac-global-color-magenta-700-rgb: 239, 90, 152;
-      --ac-global-color-magenta-700: rgba(
-        var(--ac-global-color-magenta-700-rgb)
-      );
-      --ac-global-color-magenta-800-rgb: 222, 61, 130;
-      --ac-global-color-magenta-800: rgba(
-        var(--ac-global-color-magenta-800-rgb)
-      );
-      --ac-global-color-magenta-900-rgb: 200, 34, 105;
-      --ac-global-color-magenta-900: rgba(
-        var(--ac-global-color-magenta-900-rgb)
-      );
-      --ac-global-color-magenta-1000-rgb: 173, 9, 85;
-      --ac-global-color-magenta-1000: rgba(
-        var(--ac-global-color-magenta-1000-rgb)
-      );
-      --ac-global-color-magenta-1100-rgb: 142, 0, 69;
-      --ac-global-color-magenta-1100: rgba(
-        var(--ac-global-color-magenta-1100-rgb)
-      );
-      --ac-global-color-magenta-1200-rgb: 112, 0, 55;
-      --ac-global-color-magenta-1200: rgba(
-        var(--ac-global-color-magenta-1200-rgb)
-      );
-      --ac-global-color-magenta-1300-rgb: 84, 3, 42;
-      --ac-global-color-magenta-1300: rgba(
-        var(--ac-global-color-magenta-1300-rgb)
-      );
-      --ac-global-color-magenta-1400-rgb: 60, 6, 29;
-      --ac-global-color-magenta-1400: rgba(
-        var(--ac-global-color-magenta-1400-rgb)
-      );
-
+      --ac-global-color-gray-50: #000;
+      --ac-global-color-gray-75: #0e0e0e;
+      --ac-global-color-gray-100: #1d1d1d;
+      --ac-global-color-gray-200: #303030;
+      --ac-global-color-gray-300: #4b4b4b;
+      --ac-global-color-gray-400: #6a6a6a;
+      --ac-global-color-gray-500: #8d8d8d;
+      --ac-global-color-gray-600: #b0b0b0;
+      --ac-global-color-gray-700: #d0d0d0;
+      --ac-global-color-gray-800: #ebebeb;
+      --ac-global-color-gray-900: #fff;
+      --ac-global-color-red-100: #570000;
+      --ac-global-color-red-200: #6e0000;
+      --ac-global-color-red-300: #8a0000;
+      --ac-global-color-red-400: #a70000;
+      --ac-global-color-red-500: #c40706;
+      --ac-global-color-red-600: #dd2118;
+      --ac-global-color-red-700: #ee4331;
+      --ac-global-color-red-800: #f9634c;
+      --ac-global-color-red-900: #ff816b;
+      --ac-global-color-red-1000: #ff9e8c;
+      --ac-global-color-red-1100: #ffb7a9;
+      --ac-global-color-red-1200: #ffcdc3;
+      --ac-global-color-red-1300: #ffdfd9;
+      --ac-global-color-red-1400: #ffedea;
+      --ac-global-color-orange-100: #481801;
+      --ac-global-color-orange-200: #5c2000;
+      --ac-global-color-orange-300: #732b00;
+      --ac-global-color-orange-400: #8a3700;
+      --ac-global-color-orange-500: #a24400;
+      --ac-global-color-orange-600: #ba5200;
+      --ac-global-color-orange-700: #d26200;
+      --ac-global-color-orange-800: #e87400;
+      --ac-global-color-orange-900: #f98917;
+      --ac-global-color-orange-1000: #ffa23b;
+      --ac-global-color-orange-1100: #ffbc66;
+      --ac-global-color-orange-1200: #fdd291;
+      --ac-global-color-orange-1300: #ffe2b5;
+      --ac-global-color-orange-1400: #ffefd5;
+      --ac-global-color-yellow-100: #352400;
+      --ac-global-color-yellow-200: #442f00;
+      --ac-global-color-yellow-300: #563e00;
+      --ac-global-color-yellow-400: #674d00;
+      --ac-global-color-yellow-500: #7a5c00;
+      --ac-global-color-yellow-600: #8d6c00;
+      --ac-global-color-yellow-700: #a17e00;
+      --ac-global-color-yellow-800: #b49000;
+      --ac-global-color-yellow-900: #c7a200;
+      --ac-global-color-yellow-1000: #d8b500;
+      --ac-global-color-yellow-1100: #e9c700;
+      --ac-global-color-yellow-1200: #f7d804;
+      --ac-global-color-yellow-1300: #f9e961;
+      --ac-global-color-yellow-1400: #fcf3aa;
+      --ac-global-color-chartreuse-100: #202b00;
+      --ac-global-color-chartreuse-200: #2a3800;
+      --ac-global-color-chartreuse-300: #364800;
+      --ac-global-color-chartreuse-400: #425800;
+      --ac-global-color-chartreuse-500: #4f6900;
+      --ac-global-color-chartreuse-600: #5d7b00;
+      --ac-global-color-chartreuse-700: #6b8e00;
+      --ac-global-color-chartreuse-800: #7aa100;
+      --ac-global-color-chartreuse-900: #8ab403;
+      --ac-global-color-chartreuse-1000: #9ac60b;
+      --ac-global-color-chartreuse-1100: #aad816;
+      --ac-global-color-chartreuse-1200: #bbe829;
+      --ac-global-color-chartreuse-1300: #cdf648;
+      --ac-global-color-chartreuse-1400: #e1fd84;
+      --ac-global-color-celery-100: #002f07;
+      --ac-global-color-celery-200: #003d09;
+      --ac-global-color-celery-300: #004d0c;
+      --ac-global-color-celery-400: #005f0f;
+      --ac-global-color-celery-500: #00710f;
+      --ac-global-color-celery-600: #00840f;
+      --ac-global-color-celery-700: #009714;
+      --ac-global-color-celery-800: #0dab25;
+      --ac-global-color-celery-900: #2dbf3a;
+      --ac-global-color-celery-1000: #50d052;
+      --ac-global-color-celery-1100: #73e06b;
+      --ac-global-color-celery-1200: #93ed83;
+      --ac-global-color-celery-1300: #b4f7a2;
+      --ac-global-color-celery-1400: #d5fcca;
+      --ac-global-color-green-100: #0a2c1c;
+      --ac-global-color-green-200: #073b24;
+      --ac-global-color-green-300: #004c2e;
+      --ac-global-color-green-400: #005d39;
+      --ac-global-color-green-500: #006f45;
+      --ac-global-color-green-600: #008252;
+      --ac-global-color-green-700: #009562;
+      --ac-global-color-green-800: #1ca872;
+      --ac-global-color-green-900: #34bb84;
+      --ac-global-color-green-1000: #4bcd95;
+      --ac-global-color-green-1100: #67dea8;
+      --ac-global-color-green-1200: #89ecbc;
+      --ac-global-color-green-1300: #b1f4d1;
+      --ac-global-color-green-1400: #d6f9e4;
+      --ac-global-color-seafoam-100: #122b2a;
+      --ac-global-color-seafoam-200: #133937;
+      --ac-global-color-seafoam-300: #104946;
+      --ac-global-color-seafoam-400: #035b58;
+      --ac-global-color-seafoam-500: #006c68;
+      --ac-global-color-seafoam-600: #007f79;
+      --ac-global-color-seafoam-700: #00928c;
+      --ac-global-color-seafoam-800: #00a59f;
+      --ac-global-color-seafoam-900: #1ab9b2;
+      --ac-global-color-seafoam-1000: #42cac3;
+      --ac-global-color-seafoam-1100: #66dad3;
+      --ac-global-color-seafoam-1200: #8be8e1;
+      --ac-global-color-seafoam-1300: #b3f2ed;
+      --ac-global-color-seafoam-1400: #d7f8f4;
+      --ac-global-color-cyan-100: #002944;
+      --ac-global-color-cyan-200: #003658;
+      --ac-global-color-cyan-300: #00456c;
+      --ac-global-color-cyan-400: #005680;
+      --ac-global-color-cyan-500: #006793;
+      --ac-global-color-cyan-600: #0079a7;
+      --ac-global-color-cyan-700: #008cba;
+      --ac-global-color-cyan-800: #04a0cd;
+      --ac-global-color-cyan-900: #17b4dd;
+      --ac-global-color-cyan-1000: #39c7ea;
+      --ac-global-color-cyan-1100: #60d8f3;
+      --ac-global-color-cyan-1200: #86e6fa;
+      --ac-global-color-cyan-1300: #aaf2ff;
+      --ac-global-color-cyan-1400: #cef9ff;
+      --ac-global-color-blue-100: #002651;
+      --ac-global-color-blue-200: #00326a;
+      --ac-global-color-blue-300: #004087;
+      --ac-global-color-blue-400: #004ea6;
+      --ac-global-color-blue-500: #005cc8;
+      --ac-global-color-blue-600: #066ce7;
+      --ac-global-color-blue-700: #1d80f5;
+      --ac-global-color-blue-800: #4096f3;
+      --ac-global-color-blue-900: #5eaaf7;
+      --ac-global-color-blue-1000: #7cbdfa;
+      --ac-global-color-blue-1100: #98cefd;
+      --ac-global-color-blue-1200: #b3defe;
+      --ac-global-color-blue-1300: #ceeaff;
+      --ac-global-color-blue-1400: #e3f3ff;
+      --ac-global-color-indigo-100: #1a1d61;
+      --ac-global-color-indigo-200: #23277d;
+      --ac-global-color-indigo-300: #2e329e;
+      --ac-global-color-indigo-400: #3a3fbd;
+      --ac-global-color-indigo-500: #494ed8;
+      --ac-global-color-indigo-600: #5a60eb;
+      --ac-global-color-indigo-700: #6e73f6;
+      --ac-global-color-indigo-800: #8488fd;
+      --ac-global-color-indigo-900: #999dff;
+      --ac-global-color-indigo-1000: #aeb1ff;
+      --ac-global-color-indigo-1100: #c2c4ff;
+      --ac-global-color-indigo-1200: #d4d5ff;
+      --ac-global-color-indigo-1300: #e3e4ff;
+      --ac-global-color-indigo-1400: #f0f0ff;
+      --ac-global-color-purple-100: #321068;
+      --ac-global-color-purple-200: #430d8c;
+      --ac-global-color-purple-300: #5610ad;
+      --ac-global-color-purple-400: #6a1dc8;
+      --ac-global-color-purple-500: #7e31de;
+      --ac-global-color-purple-600: #9146ec;
+      --ac-global-color-purple-700: #a25ef6;
+      --ac-global-color-purple-800: #b277fa;
+      --ac-global-color-purple-900: #c08ffc;
+      --ac-global-color-purple-1000: #cea6fd;
+      --ac-global-color-purple-1100: #dbbcfe;
+      --ac-global-color-purple-1200: #e6cfff;
+      --ac-global-color-purple-1300: #f0e0ff;
+      --ac-global-color-purple-1400: #f8edff;
+      --ac-global-color-fuchsia-100: #460e44;
+      --ac-global-color-fuchsia-200: #5d095c;
+      --ac-global-color-fuchsia-300: #780078;
+      --ac-global-color-fuchsia-400: #920093;
+      --ac-global-color-fuchsia-500: #a913aa;
+      --ac-global-color-fuchsia-600: #bf2bbf;
+      --ac-global-color-fuchsia-700: #d341d5;
+      --ac-global-color-fuchsia-800: #e45be5;
+      --ac-global-color-fuchsia-900: #ef78ee;
+      --ac-global-color-fuchsia-1000: #f695f3;
+      --ac-global-color-fuchsia-1100: #fbaff6;
+      --ac-global-color-fuchsia-1200: #fec7f8;
+      --ac-global-color-fuchsia-1300: #ffdcfa;
+      --ac-global-color-fuchsia-1400: #ffebfc;
+      --ac-global-color-magenta-100: #530329;
+      --ac-global-color-magenta-200: #6a0034;
+      --ac-global-color-magenta-300: #850041;
+      --ac-global-color-magenta-400: #a1004e;
+      --ac-global-color-magenta-500: #ba165d;
+      --ac-global-color-magenta-600: #d12b72;
+      --ac-global-color-magenta-700: #e34589;
+      --ac-global-color-magenta-800: #f1619c;
+      --ac-global-color-magenta-900: #fc7cad;
+      --ac-global-color-magenta-1000: #ff98bf;
+      --ac-global-color-magenta-1100: #ffb3cf;
+      --ac-global-color-magenta-1200: #ffcadd;
+      --ac-global-color-magenta-1300: #ffdde9;
+      --ac-global-color-magenta-1400: #ffecf3;
       --ac-global-color-danger: #f85149;
       --ac-global-color-success: #7ee787;
       --ac-global-color-warning: #e69958;
