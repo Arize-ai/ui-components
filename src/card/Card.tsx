@@ -113,7 +113,7 @@ export function Card({
     );
   const subTitleEl =
     subTitle != null ? (
-      <Text textSize={subTitleSize} elementType="h4" color="white70">
+      <Text textSize={subTitleSize} elementType="h4" color="text-700">
         {subTitle}
       </Text>
     ) : (

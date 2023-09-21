@@ -72,11 +72,11 @@ function ActionTooltip(props: ActionTooltipProps, _ref: DOMRef) {
         css={actionTooltipHeaderWrap}
         className={classNames('ac-action-tooltip__title-wrap')}
       >
-        <Text color="white90" textSize="large" elementType="h5" weight="heavy">
+        <Text color="text-900" textSize="large" elementType="h5" weight="heavy">
           {title}
         </Text>
         {subTitle && (
-          <Text color="white70" textSize="small" elementType="h6">
+          <Text color="text-700" textSize="small" elementType="h6">
             {subTitle}
           </Text>
         )}

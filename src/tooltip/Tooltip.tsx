@@ -41,7 +41,7 @@ function Tooltip(props: TooltipProps, _ref: DOMRef) {
     >
       {props.children && (
         <Text
-          color="white90"
+          color="text-900"
           textSize="medium"
           className={classNames('ac-tooltip-label')}
         >

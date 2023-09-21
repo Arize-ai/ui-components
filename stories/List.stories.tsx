@@ -32,7 +32,7 @@ const Template: Story<ListProps> = args => (
             `}
           >
             <Text textSize="medium" weight="heavy">{`List Item ${num}`}</Text>
-            <Text textSize="small" color="white70">{`Subtext`}</Text>
+            <Text textSize="small" color="text-700">{`Subtext`}</Text>
           </div>
         </ListItem>
       ))}
@@ -68,7 +68,7 @@ const WithLinksTemplate: Story<ListProps> = args => (
               weight="heavy"
               className="list-title"
             >{`Really Really Really Really Really Long List Item ${num}`}</Text>
-            <Text textSize="small" color="white70">{`Subtext`}</Text>
+            <Text textSize="small" color="text-700">{`Subtext`}</Text>
           </a>
         </ListItem>
       ))}
@@ -88,7 +88,7 @@ const Interacting: Story<ListProps> = args => (
             `}
           >
             <Text textSize="medium" weight="heavy">{`List Item ${num}`}</Text>
-            <Text textSize="small" color="white70">{`Subtext`}</Text>
+            <Text textSize="small" color="text-700">{`Subtext`}</Text>
           </div>
         </ListItem>
       ))}
