@@ -35,7 +35,7 @@ export interface TextProps extends DOMProps, StyleProps {
   children: ReactNode;
   /**
    * The color of the text
-   * @default 'white90'
+   * @default 'text-900'
    */
   color?: TextColor;
   /**
@@ -82,7 +82,7 @@ function Text(props: TextProps, ref: DOMRef<HTMLSpanElement>) {
   const { isDisabled = false } = props;
   const {
     children,
-    color = isDisabled ? 'white30' : 'white90',
+    color = isDisabled ? 'text-300' : 'text-900',
     textSize = 'medium',
     elementType = 'span',
     weight = 'normal',
