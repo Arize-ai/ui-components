@@ -1,5 +1,7 @@
 import React from 'react';
 import { css, keyframes } from '@emotion/react';
+import * as primerIcons from "./primerIcons";
+export * from "./featherIcons";
 
 const loadingCircleKeyframes = keyframes`
  100% {
@@ -60,7 +62,6 @@ export const ArrowMix = () => (
         />
     </svg>
 );
-
 
 export const ArrowDownFilled = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -131,6 +132,22 @@ export const CheckmarkOutline = () => (
       </g>
     </g>
   </svg>
+);
+
+export const Column = () => (
+    <svg
+        width="12"
+        height="13"
+        viewBox="0 0 12 13"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M2.2 12.4H9.8C10.0889 12.4 10.375 12.3431 10.6419 12.2325C10.9088 12.122 11.1513 11.9599 11.3556 11.7556C11.5599 11.5513 11.722 11.3088 11.8325 11.0419C11.9431 10.775 12 10.4889 12 10.2V2.2C12 1.91109 11.9431 1.62501 11.8325 1.3581C11.722 1.09118 11.5599 0.848654 11.3556 0.644365C11.1513 0.440076 10.9088 0.278026 10.6419 0.167465C10.375 0.0569049 10.0889 0 9.8 0H2.2C1.61652 0 1.05694 0.231785 0.644365 0.644365C0.231785 1.05694 0 1.61652 0 2.2V10.2C0 10.7835 0.231785 11.3431 0.644365 11.7556C1.05694 12.1682 1.61652 12.4 2.2 12.4ZM4.8 11.2V1.2H7.2V11.2H4.8ZM10.8 2.2V10.2C10.8 10.4652 10.6946 10.7196 10.5071 10.9071C10.3196 11.0946 10.0652 11.2 9.8 11.2H8.4V1.2H9.8C10.0652 1.2 10.3196 1.30536 10.5071 1.49289C10.6946 1.68043 10.8 1.93478 10.8 2.2ZM1.2 2.2C1.2 1.93478 1.30536 1.68043 1.49289 1.49289C1.68043 1.30536 1.93478 1.2 2.2 1.2H3.6V11.2H2.2C1.93478 11.2 1.68043 11.0946 1.49289 10.9071C1.30536 10.7196 1.2 10.4652 1.2 10.2V2.2Z"
+            fill="white"
+            fillOpacity="0.9"
+        />
+    </svg>
 );
 
 export const ClipboardCopy = () => (
@@ -579,6 +596,19 @@ export const Info = () => (
                     opacity="0"
                 ></rect>
                 <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14a1 1 0 0 1-2 0v-5a1 1 0 0 1 2 0zm-1-7a1 1 0 1 1 1-1 1 1 0 0 1-1 1z"></path>
+            </g>
+        </g>
+    </svg>
+);
+
+export const PauseCircle = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <g data-name="Layer 2">
+            <g data-name="pause-circle">
+                <rect width="24" height="24" opacity="0" />
+                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z" />
+                <path d="M15 8a1 1 0 0 0-1 1v6a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1z" />
+                <path d="M9 8a1 1 0 0 0-1 1v6a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1z" />
             </g>
         </g>
     </svg>
@@ -1802,3 +1832,5 @@ export const Search = () => (
         </g>
     </svg>
 );
+
+export const Rocket = primerIcons.Rocket;
