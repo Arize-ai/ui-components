@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { Icon, Icons } from '../src';
+import { Icon, Icons, Tooltip, TooltipTrigger, TriggerWrap } from '../src';
 import { Meta, Story } from '@storybook/react';
 
 function IconsGrid() {
@@ -23,7 +23,12 @@ function IconsGrid() {
           }}
           title={name}
         >
-          <Icon svg={<Svg />} />
+          <TooltipTrigger>
+            <TriggerWrap>
+              <Icon svg={<Svg />} />
+            </TriggerWrap>
+            <Tooltip>{name}</Tooltip>
+          </TooltipTrigger>
         </div>
       );
     }
