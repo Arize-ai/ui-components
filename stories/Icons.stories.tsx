@@ -1,5 +1,15 @@
 import React, { ReactElement } from 'react';
-import { Icon, Icons, Tooltip, TooltipTrigger, TriggerWrap } from '../src';
+import {
+  Flex,
+  Icon,
+  Icons,
+  Provider,
+  Text,
+  Tooltip,
+  TooltipTrigger,
+  TriggerWrap,
+  View,
+} from '../src';
 import { Meta, Story } from '@storybook/react';
 
 function IconsGrid() {
@@ -14,42 +24,62 @@ function IconsGrid() {
             margin: '5px',
             display: 'flex',
             flexDirection: 'column',
+            gap: '8px',
             color: 'white',
-            width: 40,
-            height: 40,
+            width: 120,
+            height: 80,
             alignItems: 'center',
             justifyContent: 'center',
             borderRadius: 3,
           }}
           title={name}
         >
-          <TooltipTrigger>
-            <TriggerWrap>
-              <Icon svg={<Svg />} />
-            </TriggerWrap>
-            <Tooltip>{name}</Tooltip>
-          </TooltipTrigger>
+          <View
+            width="size-400"
+            height="size-400"
+            backgroundColor="light"
+            borderRadius="medium"
+          >
+            <Flex
+              direction="column"
+              alignItems="center"
+              justifyContent="center"
+              height="100%"
+            >
+              <TooltipTrigger>
+                <TriggerWrap>
+                  <Icon svg={<Svg />} />
+                </TriggerWrap>
+                <Tooltip>{name}</Tooltip>
+              </TooltipTrigger>
+            </Flex>
+          </View>
+          <Text color="text-700" textSize="small">
+            {name}
+          </Text>
         </div>
       );
     }
   });
 
   return (
-    <ul
-      style={{
-        listStyle: 'none',
-        margin: 0,
-        padding: 0,
-        color: 'rgb(153,153,153)',
-        display: 'flex',
-        width: 1000,
-        flexWrap: 'wrap',
-      }}
-    >
-      {iconsArray.map((el, i) => (
-        <li key={i}>{el}</li>
-      ))}
-    </ul>
+    <Provider>
+      <ul
+        style={{
+          listStyle: 'none',
+          margin: 0,
+          padding: 0,
+          color: 'rgb(153,153,153)',
+          display: 'flex',
+          width: 1000,
+          flexWrap: 'wrap',
+        }}
+      >
+        {iconsArray.map((el, i) => (
+          <li key={i}>{el}</li>
+        ))}
+      </ul>
+    </Provider>
   );
 }
 
