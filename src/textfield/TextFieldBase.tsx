@@ -117,18 +117,16 @@ const textFieldBaseCSS = (styleProps: StyleProps) => css`
   flex-direction: row;
   position: relative;
   align-items: center;
-  min-width: ${
-    styleProps.width
-      ? dimensionValue(styleProps.width)
-      : dimensionValue('static-size-3400')
-  };
+  min-width: ${styleProps.width
+    ? dimensionValue(styleProps.width)
+    : dimensionValue('static-size-3400')};
   width: ${styleProps.width ? dimensionValue(styleProps.width) : '100%'};
 
   transition: all 0.2s ease-in-out;
   overflow: hidden;
   font-size: ${theme.typography.sizes.medium.fontSize}px;
   box-sizing: border-box;
-  --ac-textfield-border-color: ${theme.components.textField.borderColor};
+  --ac-textfield-border-color: var(--ac-global-input-field-border-color);
   border-bottom: 1px solid
     var(--ac-field-border-color-override, var(--ac-textfield-border-color));
 
@@ -140,7 +138,7 @@ const textFieldBaseCSS = (styleProps: StyleProps) => css`
     flex: 1 1 auto;
     box-sizing: border-box;
     background-color: transparent;
-    color: var(--ac-field-text-color-override, ${theme.textColors.white90});
+    color: var(--ac-field-text-color-override, --ac-global-text-color-900);
     height: ${styleProps.height ?? theme.singleLineHeight}px;
     transition: all 0.2s ease-in-out;
     /** provide an alternate highlight */
@@ -179,10 +177,10 @@ const quietTextfieldBaseCSS = css`
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   &.is-hovered:not(.is-disabled) {
-    border-bottom: 1px solid ${theme.components.textField.hoverBorderColor};
+    border-bottom: 1px solid var(--ac-global-input-field-border-color-active);
   }
   &.is-focused:not(.is-disabled) {
-    border-bottom: 1px solid ${theme.components.textField.activeBorderColor};
+    border-bottom: 1px solid var(--ac-global-input-field-border-color-active);
   }
   &.is-disabled {
     border-bottom: 1px solid ${theme.colors.lightGrayBorder};
@@ -210,7 +208,7 @@ const quietTextfieldBaseCSS = css`
 `;
 
 const standardTextfieldBaseCSS = css`
-  background-color: ${theme.components.textField.backgroundColor};
+  background-color: var(--ac-global-input-field-background-color);
   border-radius: ${theme.borderRadius.medium}px;
   border-top: 1px solid
     var(--ac-field-border-color-override, var(--ac-textfield-border-color));
@@ -219,8 +217,8 @@ const standardTextfieldBaseCSS = css`
   border-right: 1px solid
     var(--ac-field-border-color-override, var(--ac-textfield-border-color));
   &.is-hovered:not(.is-disabled) {
-    border: 1px solid ${theme.components.textField.hoverBorderColor};
-    background-color: ${theme.components.textField.activeBackgroundColor};
+    border: 1px solid var(--ac-global-input-field-border-color-active);
+    background-color: var(--ac-global-input-field-background-color-active);
   }
   &.is-focused:not(.is-disabled) {
     border: 1px solid ${theme.components.textField.activeBorderColor};
@@ -253,9 +251,10 @@ const standardTextfieldBaseCSS = css`
 
   &.ac-textfield--invalid .ac-textfield__input {
     // Make room for the invalid icon (outer padding + icon width + inner padding)
-    padding-right: calc(${
-      theme.spacing.padding8
-    } + var(--ac-validation-icon-width) + ${theme.spacing.padding4}px);
+    padding-right: calc(
+      ${theme.spacing.padding8} + var(--ac-validation-icon-width) +
+        ${theme.spacing.padding4}px
+    );
     color: var(--ac-global-color-danger);
   }
 

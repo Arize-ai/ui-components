@@ -60,7 +60,7 @@ export const mediumRootCSS = css`
   }
 `;
 
-export const globalCSS = css`
+export const darkThemeCSS = css`
   :root {
     --ac-global-dimension-static-size-0: 0px;
     --ac-global-dimension-static-size-10: 1px;
@@ -181,6 +181,10 @@ export const globalCSS = css`
       --ac-global-dimension-static-grid-fixed-max-width: 1280px;
 
       /* Colors */
+
+      // The primary color tint for  the apps
+      --ac-global-primary-color: #72d9ff;
+
       --ac-global-color-gray-900: #181b1f;
       --ac-global-color-gray-800: #1d2126;
       --ac-global-color-gray-700: #23282e;
@@ -391,6 +395,19 @@ export const globalCSS = css`
       --ac-global-border-color-light: var(--ac-global-color-gray-400);
       --ac-global-border-color-dark: var(--ac-global-color-gray-400);
 
+      // Styles for text fields etc
+      --ac-global-input-field-border-color: var(--ac-global-color-gray-100);
+      --ac-global-input-field-border-color-hover: var(
+        --ac-global-color-gray-300
+      );
+      --ac-global-input-field-border-color-active: var(
+        --ac-global-primary-color
+      );
+      --ac-global-input-field-background-color: var(--ac-global-color-gray-600);
+      --ac-global-input-field-background-color-active: var(
+        --ac-global-color-gray-400
+      );
+
       --ac-global-rounding-small: var(--ac-global-dimension-static-size-50);
       --ac-global-rounding-medium: var(--ac-global-dimension-static-size-100);
 
@@ -444,5 +461,5 @@ export const globalCSS = css`
 `;
 
 export function GlobalStyles() {
-  return <Global styles={css(globalCSS, mediumRootCSS)} />;
+  return <Global styles={css(darkThemeCSS, mediumRootCSS)} />;
 }
