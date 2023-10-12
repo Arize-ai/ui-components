@@ -29,6 +29,8 @@ const headerTitleWrapCSS = css`
 const titleWithTitleExtraCSS = css`
   display: flex;
   flex-direction: row;
+  align-items: center;
+  gap: var(--ac-global-dimension-static-size-100);
 `;
 
 const bodyCSS = css`
