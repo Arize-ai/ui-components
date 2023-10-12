@@ -6,7 +6,7 @@ import { Card, CardProps, TabbedCard } from '../src/card';
 import { Tabs } from '../src/tabs';
 import { Button } from '../src/button';
 import InfoTip from './components/InfoTip';
-import { Flex, Heading, Provider, View } from '../src';
+import { Counter, Flex, Heading, Provider, View } from '../src';
 
 const { TabPane } = Tabs;
 
@@ -138,6 +138,7 @@ const GalleryCards = (props: { variant: CardProps['variant'] }) => {
       </Card>
       <Card
         title="Collapsible Title"
+        titleExtra={<Counter variant="light">5</Counter>}
         {...props}
         style={cardStyle}
         extra={
@@ -153,6 +154,7 @@ const GalleryCards = (props: { variant: CardProps['variant'] }) => {
       <Card
         title="Collapsible Title"
         subTitle="Subtext area"
+        titleExtra={<Counter variant="light">5</Counter>}
         style={cardStyle}
         extra={
           <Button variant="default" size={buttonSize}>
