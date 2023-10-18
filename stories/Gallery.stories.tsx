@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropsWithChildren, useState } from 'react';
 import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
 import {
@@ -18,6 +18,7 @@ import {
   Heading,
   ButtonGroup,
   Flex,
+  Switch,
 } from '../src';
 import { Icon, Icons, SearchOutline } from '../src/icon';
 // @ts-ignore
@@ -37,10 +38,46 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story = args => {
+function ThemeToggleWrapper({ children }: PropsWithChildren) {
+  const [isLight, setIsLight] = useState(false);
+  return (
+    <>
+      <button onClick={() => setIsLight(!isLight)}>Toggle Theme</button>
+      <Provider theme={isLight ? 'light' : 'dark'}>
+        <h1>Dark Theme</h1>
+        {children}
+      </Provider>
+    </>
+  );
+}
+
+export function OverviewPage() {
+  return (
+    <ThemeToggleWrapper>
+      <View padding="size-100">
+        <Flex direction="row" gap="size-100">
+          <View
+            borderColor="light"
+            height="size-1200"
+            borderWidth="thin"
+            flex="1 1 auto"
+            borderRadius="medium"
+          />
+          <View width="300px" flex="none">
+            <Card collapsible title="Setup Your Model" variant="compact">
+              Monitors go here
+            </Card>
+          </View>
+        </Flex>
+      </View>
+    </ThemeToggleWrapper>
+  );
+}
+
+export function Gallery() {
   const [notify, holder] = useNotification();
   return (
-    <Provider>
+    <ThemeToggleWrapper>
       <div
         css={css`
           display: flex;
@@ -114,7 +151,11 @@ const Template: Story = args => {
             />
           </div>
         </Card>
-        <Card title="Example Form" variant="compact">
+        <Card
+          title="Example Form"
+          variant="compact"
+          extra={<Switch name="Toggle" />}
+        >
           <div
             css={css`
               display: flex;
@@ -242,10 +283,6 @@ const Template: Story = args => {
         </View>
         {holder}
       </div>
-    </Provider>
+    </ThemeToggleWrapper>
   );
-};
-
-// By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
-// https://storybook.js.org/docs/react/workflows/unit-testing
-export const Default = Template.bind({});
+}

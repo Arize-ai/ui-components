@@ -11,7 +11,7 @@ export const buttonCSS = css`
   align-items: center;
   box-sizing: border-box;
   border-radius: ${theme.borderRadius.medium}px;
-  color: ${theme.textColors.white90};
+  color: var(--ac-global-text-color-900);
   cursor: pointer;
   /* Disable outline since there are other mechanisms to show focus */
   outline: none;

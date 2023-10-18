@@ -6,9 +6,9 @@ import { GlobalStyles } from './GlobalStyles';
 const Context = React.createContext<ProviderContext | null>(null);
 
 export function Provider(props: ProviderProps) {
-  const { children, ...context } = props;
+  const { children, theme = 'dark', ...context } = props;
   return (
-    <Context.Provider value={context}>
+    <Context.Provider value={{ ...context, theme }}>
       <GlobalStyles />
       <OverlayProvider>{children}</OverlayProvider>
     </Context.Provider>

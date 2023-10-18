@@ -10,7 +10,7 @@ export const cardCSS = (style: CardStyle) => css`
   display: flex;
   flex-direction: column;
   background-color: var(--ac-global-background-color-dark);
-  color: ${theme.textColors.white90};
+  color: var(--ac-global-text-color-900);
   border-radius: var(--ac-global-rounding-medium);
   border: 1px solid var(--scope-border-color);
   overflow: hidden;
@@ -59,7 +59,7 @@ export const collapsibleCardCSS = (style: CardStyle) => css`
     background-color: inherit;
     border: 0;
     text-align: start;
-    color: ${theme.textColors.white90};
+    color: var(--ac-global-text-color-900);
     /* remove outline - TODO might need to give a visual cue that this area is in focus */
     outline: none;
   }

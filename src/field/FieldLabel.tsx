@@ -61,7 +61,7 @@ function FieldLabel(props: FieldLabelProps, ref: DOMRef<HTMLLabelElement>) {
         font-size: ${theme.typography.sizes.small.fontSize}px;
         line-height: ${theme.typography.sizes.small.lineHeight}px;
         font-weight: ${theme.typography.weights.heavy};
-        color: ${theme.textColors.white90};
+        color: var(--ac-global-text-color-900);
         padding: ${theme.spacing.padding4}px 0;
         display: inline-flex;
         align-items: center;
