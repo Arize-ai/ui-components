@@ -97,7 +97,7 @@ const buttonBaseCSS = css`
  * Styles to add in addition to the base button styles for quiet
  */
 const quietButtonCSS = css`
-  --ac-dropdown-button-border-color: ${theme.components.dropdown.borderColor};
+  --ac-dropdown-button-border-color: var(--ac-global-border-color-default);
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   border-top: 1px solid transparent;
@@ -108,11 +108,11 @@ const quietButtonCSS = css`
     );
   margin: ${theme.spacing.margin8}px 0 ${theme.spacing.margin8}px 0;
   &.is-hovered {
-    border-bottom: 1px solid ${theme.components.dropdown.hoverBorderColor};
+    border-bottom: 1px solid var(--ac-global-color-grey-500);
   }
   &.is-active,
   &:focus {
-    border-bottom: 1px solid ${theme.components.dropdown.activeBorderColor};
+    border-bottom: 1px solid var(--ac-global-primary-color);
   }
   &[disabled] {
     cursor: default;
@@ -132,22 +132,22 @@ const quietButtonCSS = css`
 const nonQuietButtonCSS = css`
   min-width: 200px;
   padding: 0 ${theme.spacing.margin8}px 0 0;
-  --ac-dropdown-button-border-color: ${theme.components.dropdown.borderColor};
+  --ac-dropdown-button-border-color: var(--ac-global-input-field-border-color);
   border: 1px solid
     var(
       --ac-field-border-color-override,
       var(--ac-dropdown-button-border-color)
     );
   border-radius: ${theme.borderRadius.medium}px;
-  background-color: ${theme.components.dropdown.backgroundColor};
+  background-color: var(--ac-global-input-field-background-color);
   &.is-hovered {
-    border: 1px solid ${theme.components.dropdown.hoverBorderColor};
-    background-color: ${theme.components.dropdown.activeBackgroundColor};
+    border: 1px solid var(--ac-global-input-field-border-color-hover);
+    background-color: var(--ac-global-input-field-background-color-active);
   }
   &.is-active,
   &:focus {
-    border: 1px solid ${theme.components.dropdown.activeBorderColor};
-    background-color: ${theme.components.dropdown.activeBackgroundColor};
+    border: 1px solid var(--ac-global-input-field-border-color-active);
+    background-color: var(--ac-global-input-field-background-color-active);
   }
   &[disabled] {
     cursor: default;
