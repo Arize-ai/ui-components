@@ -353,7 +353,7 @@ export const lightThemeCSS = css`
     /* Colors */
 
     // The primary color tint for  the apps
-    --ac-global-primary-color: #72d9ff;
+    --ac-global-primary-color: #42cafb;
 
     // The newer grays (grey)
     --ac-global-color-grey-50: #ffffff;

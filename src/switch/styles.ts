@@ -8,7 +8,7 @@ export const switchCSS = css`
   --ac-switch-background-color-disabled: var(--ac-global-color-grey-300);
   --ac-switch-background-color-selected: var(--ac-global-primary-color);
 
-  --ac-switch-handle-background-color: var(--ac-global-color-grey-900);
+  --ac-switch-handle-background-color: white;
   --ac-switch-handle-background-color-selected: ${theme.colors.arizeLightBlue};
 
   --ac-switch-min-height: 30px;

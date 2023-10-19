@@ -7,7 +7,7 @@ export const sliderCSS = css`
   --ac-slider-handle-height: var(--ac-global-dimension-size-250);
   --ac-slider-handle-halo-width: var(--ac-global-dimension-size-350);
   --ac-slider-handle-border-radius: var(--ac-global-dimension-size-250);
-  --ac-slider-handle-background-color: var(--ac-global-text-color-900);
+  --ac-slider-handle-background-color: white;
   --ac-slider-track-height: var(--ac-global-dimension-size-100);
   width: var(
     --ac-alias-single-line-width,
