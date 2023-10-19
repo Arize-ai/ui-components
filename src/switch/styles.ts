@@ -4,11 +4,11 @@ import theme from '../theme';
 export const switchCSS = css`
   --ac-switch-label-color-disabled: ${theme.textColors.white50};
 
-  --ac-switch-background-color: ${theme.colors.gray300};
-  --ac-switch-background-color-disabled: ${theme.colors.gray300};
-  --ac-switch-background-color-selected: ${theme.colors.arizeBlue};
+  --ac-switch-background-color: var(--ac-global-color-grey-300);
+  --ac-switch-background-color-disabled: var(--ac-global-color-grey-300);
+  --ac-switch-background-color-selected: var(--ac-global-primary-color);
 
-  --ac-switch-handle-background-color: white;
+  --ac-switch-handle-background-color: var(--ac-global-color-grey-900);
   --ac-switch-handle-background-color-selected: ${theme.colors.arizeLightBlue};
 
   --ac-switch-min-height: 30px;
@@ -147,7 +147,7 @@ export const switchCSS = css`
   }
 
   .ac-switch-label {
-    color: ${theme.textColors.white90};
+    color: var(--ac-global-text-color-900);
     // margin-inline: var(--ac-switch-control-label-spacing);
     margin-block-start: var(--ac-switch-spacing-top-to-label);
     margin-block-end: 0;

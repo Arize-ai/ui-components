@@ -23,6 +23,7 @@ import {
 import { Icon, Icons, SearchOutline } from '../src/icon';
 // @ts-ignore
 import chartFile from './images/chart.png';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const meta: Meta = {
   title: 'Gallery',
@@ -37,22 +38,9 @@ const meta: Meta = {
 
 export default meta;
 
-function ThemeToggleWrapper({ children }: PropsWithChildren) {
-  const [isLight, setIsLight] = useState(true);
-  return (
-    <>
-      <button onClick={() => setIsLight(!isLight)}>Toggle Theme</button>
-      <Provider theme={isLight ? 'light' : 'dark'}>
-        <h1>{isLight ? 'Light Theme' : 'Dark Theme'}</h1>
-        <View backgroundColor="grey-75">{children}</View>
-      </Provider>
-    </>
-  );
-}
-
 export function OverviewPage() {
   return (
-    <ThemeToggleWrapper>
+    <ThemeToggleWrap>
       <View padding="size-100">
         <Flex direction="row" gap="size-100">
           <View
@@ -69,14 +57,14 @@ export function OverviewPage() {
           </View>
         </Flex>
       </View>
-    </ThemeToggleWrapper>
+    </ThemeToggleWrap>
   );
 }
 
 export function Gallery() {
   const [notify, holder] = useNotification();
   return (
-    <ThemeToggleWrapper>
+    <ThemeToggleWrap>
       <div
         css={css`
           display: flex;
@@ -263,7 +251,7 @@ export function Gallery() {
             </View>
             <View
               width="size-2400"
-              backgroundColor="gray-800"
+              backgroundColor="grey-100"
               borderColor="dark"
               borderLeftWidth="thin"
             >
@@ -282,6 +270,6 @@ export function Gallery() {
         </View>
         {holder}
       </div>
-    </ThemeToggleWrapper>
+    </ThemeToggleWrap>
   );
 }
