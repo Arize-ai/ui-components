@@ -30,8 +30,7 @@ const meta: Meta = {
     controls: { expanded: true },
     design: {
       type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=1398%3A4061',
+      url: 'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=1398%3A4061',
     },
   },
 };
@@ -39,13 +38,13 @@ const meta: Meta = {
 export default meta;
 
 function ThemeToggleWrapper({ children }: PropsWithChildren) {
-  const [isLight, setIsLight] = useState(false);
+  const [isLight, setIsLight] = useState(true);
   return (
     <>
       <button onClick={() => setIsLight(!isLight)}>Toggle Theme</button>
       <Provider theme={isLight ? 'light' : 'dark'}>
-        <h1>Dark Theme</h1>
-        {children}
+        <h1>{isLight ? 'Light Theme' : 'Dark Theme'}</h1>
+        <View backgroundColor="grey-75">{children}</View>
       </Provider>
     </>
   );
