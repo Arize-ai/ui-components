@@ -185,6 +185,7 @@ export const darkThemeCSS = css`
       // The primary color tint for  the apps
       --ac-global-primary-color: #72d9ff;
 
+      // These colors are legacy
       --ac-global-color-gray-900: #181b1f;
       --ac-global-color-gray-800: #1d2126;
       --ac-global-color-gray-700: #23282e;
@@ -194,6 +195,19 @@ export const darkThemeCSS = css`
       --ac-global-color-gray-300: #4a5057;
       --ac-global-color-gray-200: #585d64;
       --ac-global-color-gray-100: #666b71;
+
+      // The newer grays (grey)
+      --ac-global-color-grey-50: #000000;
+      --ac-global-color-grey-75: #0e0e0e;
+      --ac-global-color-grey-100: #1d1d1d;
+      --ac-global-color-grey-200: #303030;
+      --ac-global-color-grey-300: #4b4b4b;
+      --ac-global-color-grey-400: #6a6a6a;
+      --ac-global-color-grey-500: #8d8d8d;
+      --ac-global-color-grey-600: #b0b0b0;
+      --ac-global-color-grey-700: #d0d0d0;
+      --ac-global-color-grey-800: #ebebeb;
+      --ac-global-color-grey-900: #ffffff;
 
       --ac-global-color-red-100: #570000;
       --ac-global-color-red-200: #6e0000;
@@ -386,14 +400,14 @@ export const darkThemeCSS = css`
       --ac-global-text-color-500: rgba(255, 255, 255, 0.5);
       --ac-global-text-color-300: rgba(255, 255, 255, 0.3);
 
-      --ac-global-background-color-default: var(--ac-global-color-gray-900);
-      --ac-global-background-color-light: var(--ac-global-color-gray-700);
-      --ac-global-background-color-dark: var(--ac-global-color-gray-900);
+      --ac-global-background-color-default: var(--ac-global-color-grey-100);
+      --ac-global-background-color-light: var(--ac-global-color-grey-300);
+      --ac-global-background-color-dark: var(--ac-global-color-grey-100);
       --ac-global-background-color-danger: var(--ac-global-color-danger);
 
-      --ac-global-border-color-default: var(--ac-global-color-gray-400);
-      --ac-global-border-color-light: var(--ac-global-color-gray-400);
-      --ac-global-border-color-dark: var(--ac-global-color-gray-400);
+      --ac-global-border-color-default: var(--ac-global-color-grey-300);
+      --ac-global-border-color-light: var(--ac-global-color-gray-500);
+      --ac-global-border-color-dark: var(--ac-global-color-gray-300);
 
       // Styles for text fields etc
       --ac-global-input-field-border-color: var(--ac-global-color-gray-100);
