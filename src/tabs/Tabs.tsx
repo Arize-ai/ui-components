@@ -168,7 +168,7 @@ export function Tabs({
               <Text
                 textSize="medium"
                 weight="heavy"
-                color={isSelected ? 'white90' : 'white70'}
+                color={isSelected ? 'text-900' : 'text-700'}
               >
                 {tab.name}
               </Text>

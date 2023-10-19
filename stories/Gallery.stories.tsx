@@ -29,6 +29,7 @@ import {
   TabPane,
   Accordion,
   AccordionItem,
+  CompactSearchField,
 } from '../src';
 import { Icon, Icons, SearchOutline } from '../src/icon';
 // @ts-ignore
@@ -77,16 +78,6 @@ function ZoomControls() {
   );
 }
 
-function Search() {
-  return (
-    <Button
-      variant="default"
-      icon={<Icon svg={<Icons.Search />} />}
-      size="compact"
-    />
-  );
-}
-
 function MainLane(props: PropsWithChildren) {
   return (
     <View flex="1 1 auto">
@@ -118,80 +109,50 @@ export function OverviewPage() {
               variant="compact"
               extra={<ZoomControls />}
             >
-              <div
-                css={css`
-                  display: flex;
-                `}
-              >
+              <Flex direction="row">
                 <img src={chartFile} />
-                <div
-                  css={css`
-                    margin: auto;
-                  `}
-                >
+                <View>
                   <Text textSize="xxlarge">0.0</Text>
                   <Heading>Metric</Heading>
-                </div>
-              </div>
+                </View>
+              </Flex>
             </Card>
             <ModelSchemaCard />
           </MainLane>
           <AsideLane>
-            <Card collapsible title="Setup Your Model" variant="compact">
+            <Card
+              collapsible
+              title="Setup Your Model"
+              variant="compact"
+              bodyStyle={{ padding: 0 }}
+            >
               <List>
                 <ListItem>
-                  <div
-                    css={css`
-                      display: flex;
-                      flex-direction: row;
-                      align-items: center;
-                    `}
-                  >
-                    <div
-                      css={css`
-                        margin-right: 24px;
-                      `}
-                    >
-                      <Icon svg={<Icons.CheckmarkCircleOutline />} />
-                    </div>
-                    <div
-                      css={css`
-                        display: flex;
-                        flex-direction: column;
-                      `}
-                    >
-                      <h3>Send in Production Data</h3>
-                      Make sure your models in production are working the way
-                      you intended
-                    </div>
-                  </div>
+                  <Flex direction="row" gap="size-100" alignItems="center">
+                    <Icon svg={<Icons.AlertCircleOutline />} color="warning" />
+                    <Flex direction="column">
+                      <Heading level={3}>Send in Production Data</Heading>
+                      <Text textSize="medium">
+                        Make sure your models in production are working the way
+                        you intended
+                      </Text>
+                    </Flex>
+                  </Flex>
                 </ListItem>
                 <ListItem>
-                  <div
-                    css={css`
-                      display: flex;
-                      flex-direction: row;
-                      align-items: center;
-                    `}
-                  >
-                    <div
-                      css={css`
-                        margin-right: 24px;
-                      `}
-                    >
-                      <Icon svg={<Icons.CheckmarkCircleOutline />} />
-                    </div>
-                    <div
-                      css={css`
-                        display: flex;
-                        flex-direction: column;
-                      `}
-                    >
-                      <h3>Setup Monitoring</h3>
-                      Recieve alerts when your model experiences drift,
-                      dataquality, and performance degredations.
-                    </div>
-                  </div>
+                  <Flex direction="row" alignItems="center" gap="size-100">
+                    <Icon
+                      svg={<Icons.CheckmarkCircleOutline />}
+                      color="success"
+                    />
+                    <Flex direction="column">
+                      <Heading level={3}>Setup Monitoring</Heading>
+                      <Text textSize="medium">
+                        Recieve alerts when your model experiences drift,
+                        dataquality, and performance degredations.
+                      </Text>
+                    </Flex>
+                  </Flex>
                 </ListItem>
               </List>
             </Card>
@@ -243,7 +204,7 @@ function AccordionDimentions() {
 
 function ModelSchemaCard() {
   return (
-    <TabbedCard title="Model Schema" extra={<Search />}>
+    <TabbedCard title="Model Schema" extra={<CompactSearchField />}>
       <Tabs>
         <TabPane name="All">
           <AccordionDimentions />
@@ -274,6 +235,7 @@ function MonitorsListingCard() {
       title="Monitors"
       variant="compact"
       titleExtra={<InfoTip>toolstip stuff</InfoTip>}
+      bodyStyle={{ padding: 0 }}
     >
       <List>
         <ListItem>
