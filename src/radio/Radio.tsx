@@ -104,7 +104,7 @@ function Radio(props: RadioProps) {
   };
 
   const radioChildren = children
-    ? React.Children.map(props.children, child =>
+    ? React.Children.map(props.children, (child) =>
         isValidElement(child)
           ? React.cloneElement(child as ReactElement<any>, { isDisabled })
           : child
@@ -157,7 +157,7 @@ function Radio(props: RadioProps) {
             aria-label={value}
             aria-hidden={true}
           />
-          <Text textSize="medium" color={isDisabled ? 'white30' : 'white90'}>
+          <Text textSize="medium" color={isDisabled ? 'text-300' : 'text-900'}>
             {label}
           </Text>
         </div>

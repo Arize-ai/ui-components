@@ -2,6 +2,7 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { Radio, RadioGroup, RadioGroupProps } from '../src/radio';
 import { Card, Text, ActionButton } from '../src';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 const meta: Meta = {
   title: 'Radio',
   component: RadioGroup,
@@ -11,8 +12,7 @@ const meta: Meta = {
     },
     design: {
       type: 'figma',
-      url:
-        'https://www.figma.com/file/Gs8BthCViFvipFh0gknwgg/Drift-Monitors?node-id=90%3A44',
+      url: 'https://www.figma.com/file/Gs8BthCViFvipFh0gknwgg/Drift-Monitors?node-id=90%3A44',
     },
   },
 };
@@ -23,24 +23,26 @@ const DefaultChildren = [
   <Radio value="horses" label="Horses" />,
   <Radio value="cats" label="Cats" isDisabled />,
 ];
-const Template: Story<RadioGroupProps> = args => {
+const Template: Story<RadioGroupProps> = (args) => {
   return (
-    <Card title="Radio Info" style={{ width: 300 }}>
-      <RadioGroup
-        {...args}
-        onChange={value => alert('clicked radio option ' + value)}
-      >
-        {args.children || DefaultChildren}
-      </RadioGroup>
-    </Card>
+    <ThemeToggleWrap>
+      <Card title="Radio Info" style={{ width: 300 }}>
+        <RadioGroup
+          {...args}
+          onChange={(value) => alert('clicked radio option ' + value)}
+        >
+          {args.children || DefaultChildren}
+        </RadioGroup>
+      </Card>
+    </ThemeToggleWrap>
   );
 };
 
-const SelectorExample: Story<RadioGroupProps> = args => (
+const SelectorExample: Story<RadioGroupProps> = (args) => (
   <Card title="Radio Info" style={{ width: 500 }}>
     <RadioGroup
       {...args}
-      onChange={value => alert('clicked radio option ' + value)}
+      onChange={(value) => alert('clicked radio option ' + value)}
     >
       <Radio value="dogs" label="Dogs">
         <Text>Dogs</Text>
@@ -84,7 +86,7 @@ const SomeChildren = () => (
   </>
 );
 
-export const Gallery: Story<RadioGroupProps> = args => {
+export const Gallery: Story<RadioGroupProps> = (args) => {
   return (
     <Card title="Radio Info" style={{ width: 300 }}>
       <RadioGroup {...args} variant="inline-button">
