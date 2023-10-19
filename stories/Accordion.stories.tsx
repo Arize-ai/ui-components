@@ -10,6 +10,7 @@ import {
 } from '../src';
 import { withDesign } from 'storybook-addon-designs';
 import InfoTip from './components/InfoTip';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const meta: Meta = {
   title: 'Accordion',
@@ -38,8 +39,8 @@ const AccordionContents = () => (
 
 export default meta;
 
-const Template: Story<AccordionProps> = args => (
-  <Provider>
+const Template: Story<AccordionProps> = (args) => (
+  <ThemeToggleWrap>
     <Card
       title="Model Health"
       subTitle={'An overview of the the health of your model'}
@@ -67,7 +68,7 @@ const Template: Story<AccordionProps> = args => (
         </AccordionItem>
       </Accordion>
     </Card>
-  </Provider>
+  </ThemeToggleWrap>
 );
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
