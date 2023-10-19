@@ -19,15 +19,13 @@ export function Accordion({ children }: AccordionProps) {
       className={`ac-accordion ac-accordion--default`}
       role="region"
       css={css`
-      
         --accordion-animation-duration: ${theme.animation.global.duration}ms;
-   
+
         &.ac-accordion--default {
           --accordion-padding-top: ${theme.spacing.padding8}px;
           --accordion-padding-side: ${theme.spacing.padding16}px;
           --accordion-font-size: ${theme.typography.sizes.medium.fontSize}px;
         }
-        
       `}
     >
       {children}
@@ -115,11 +113,11 @@ export function AccordionItem(props: AccordionItemProps) {
             background-color: inherit;
             border: 0;
             text-align: start;
-            color: ${theme.textColors.white90};
-            border-bottom: 1px solid ${theme.components.accordion.borderColor};
+            color: var(--ac-global-text-color-900);
+            border-bottom: 1px solid var(--ac-global-border-color-dark);
             /* remove outline - TODO might need to give a visual cue that this area is in focus */
             outline: none;
-            background-color: ${theme.components.accordion.backgroundColor};
+            background-color: var(--ac-global-background-color-light);
             transition: background-color 0.2s ease-in-out;
             &:hover {
               background-color: ${theme.colors.hoverBgColor};
@@ -153,7 +151,7 @@ export function AccordionItem(props: AccordionItemProps) {
         id={contentId}
         role="region"
         css={css`
-          border-bottom: 1px solid ${theme.colors.dividerColor};
+          border-bottom: 1px solid var(--ac-global-border-color-dark);
           display: ${isOpen ? 'block' : 'none'};
         `}
         aria-labelledby={headerId}

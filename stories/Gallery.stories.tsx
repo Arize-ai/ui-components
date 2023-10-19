@@ -19,11 +19,15 @@ import {
   ButtonGroup,
   Flex,
   Switch,
+  Accordion,
+  AccordionItem,
+  Counter,
 } from '../src';
 import { Icon, Icons, SearchOutline } from '../src/icon';
 // @ts-ignore
 import chartFile from './images/chart.png';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
+import InfoTip from './components/InfoTip';
 
 const meta: Meta = {
   title: 'Gallery',
@@ -31,8 +35,7 @@ const meta: Meta = {
     controls: { expanded: true },
     design: {
       type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=1398%3A4061',
+      url: 'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=1398%3A4061',
     },
   },
 };
@@ -73,6 +76,47 @@ export function Gallery() {
           gap: 8px;
         `}
       >
+        <Card
+          title="Model Health"
+          subTitle={'An overview of the the health of your model'}
+          bodyStyle={{ padding: 0, overflow: 'hidden' }}
+          collapsible
+        >
+          <Accordion>
+            <AccordionItem
+              title="2 Predictions"
+              titleExtra={<InfoTip>Description of predictions</InfoTip>}
+              id="predictions"
+            >
+              <p style={{ padding: 16, margin: 10 }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </AccordionItem>
+            <AccordionItem
+              title="Features"
+              titleExtra={<Counter variant="light">100</Counter>}
+              id="features"
+            >
+              <p style={{ padding: 16, margin: 10 }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </AccordionItem>
+            <AccordionItem title="10 Actuals" id="actuals">
+              <p style={{ padding: 16, margin: 10 }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </AccordionItem>
+          </Accordion>
+        </Card>
         <Card
           title="Prediction Volume"
           variant="compact"
