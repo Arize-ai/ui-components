@@ -147,6 +147,7 @@ function SliderBase(props: SliderBaseProps, ref: FocusableRef<HTMLDivElement>) {
       css={css`
         grid-area: value;
         text-align: right;
+        color: var(--ac-global-text-color-900);
       `}
       // TODO this is non-deterministic
       // style={
