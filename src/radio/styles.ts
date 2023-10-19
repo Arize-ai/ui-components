@@ -19,16 +19,18 @@ export const radioGroupCSS = ({
 }: {
   isDisabled: boolean;
 }) => css`
-  color: ${isDisabled ? theme.textColors.white30 : theme.textColors.white90};
+  color: ${isDisabled
+    ? 'var(--ac-global-color-text-300)'
+    : 'var(--ac-global-color-text-900)'};
   &.ac-radio-group--inline-button {
     display: inline-flex;
     flex-direction: row;
-    background-color: ${theme.colors.gray500};
-    border: 1px solid ${theme.components.button.defaultBorderColor};
+    background-color: var(--ac-global-color-grey-300);
+    border: 1px solid var(--ac-global-input-field-border-color);
     border-radius: ${theme.borderRadius.medium}px;
     overflow: hidden;
     .ac-radio + .ac-radio {
-      border-left: 1px solid ${theme.components.button.defaultBorderColor};
+      border-left: 1px solid var(--ac-global-input-field-border-color);
     }
   }
 `;
@@ -67,8 +69,8 @@ export const selectorRadioCSS = ({
   margin-right: ${theme.spacing.padding4}px;
   padding: ${theme.spacing.padding16}px;
   ${!isDisabled &&
-    !isSelected &&
-    `&:hover {
+  !isSelected &&
+  `&:hover {
     border-color: ${theme.components.button.defaultHoverBackgroundColor};
     transition: border-color 0.2s ease-in-out;
   }`};
@@ -124,10 +126,12 @@ export const radioButtonIconCSS = ({
   isFocusVisible?: boolean;
   isDisabled?: boolean;
 }) => css`
-  color: ${isDisabled ? theme.textColors.white30 : theme.textColors.white90};
+  color: ${isDisabled
+    ? 'var(--ac-global-text-color-300)'
+    : 'var(--ac-global-text-color-900)'};
   margin-right: ${theme.spacing.padding4}px;
   ${isFocusVisible &&
-    `outline: ${theme.spacing.outline.thin}px solid -webkit-focus-ring-color;`}
+  `outline: ${theme.spacing.outline.thin}px solid -webkit-focus-ring-color;`}
 `;
 
 export const radioChildrenCSS = css`
