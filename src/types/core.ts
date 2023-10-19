@@ -96,6 +96,7 @@ export type BorderSizeValue = 'thin' | 'thick' | 'thicker' | 'thickest';
 export type BackgroundColorValue = 'light' | 'dark' | ColorValue;
 
 export type ColorValue =
+  // Legacy grays
   | 'gray-100'
   | 'gray-200'
   | 'gray-300'
@@ -105,6 +106,18 @@ export type ColorValue =
   | 'gray-700'
   | 'gray-800'
   | 'gray-900'
+  // New Grays
+  | 'grey-50'
+  | 'grey-75'
+  | 'grey-100'
+  | 'grey-200'
+  | 'grey-300'
+  | 'grey-400'
+  | 'grey-500'
+  | 'grey-600'
+  | 'grey-700'
+  | 'grey-800'
+  | 'grey-900'
   | 'blue-100'
   | 'blue-200'
   | 'blue-300'
