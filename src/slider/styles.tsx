@@ -7,7 +7,7 @@ export const sliderCSS = css`
   --ac-slider-handle-height: var(--ac-global-dimension-size-250);
   --ac-slider-handle-halo-width: var(--ac-global-dimension-size-350);
   --ac-slider-handle-border-radius: var(--ac-global-dimension-size-250);
-  --ac-slider-handle-background-color: white;
+  --ac-slider-handle-background-color: var(--ac-global-text-color-900);
   --ac-slider-track-height: var(--ac-global-dimension-size-100);
   width: var(
     --ac-alias-single-line-width,
@@ -33,7 +33,7 @@ export const sliderCSS = css`
     &:first-of-type::before,
     &:last-of-type::before {
       /* The edge tracks */
-      background: var(--ac-global-color-gray-300);
+      background: var(--ac-global-color-grey-300);
     }
     &:not(:first-of-type):not(:last-of-type)::before {
       /* The middle track */
@@ -113,6 +113,6 @@ export const labelContainerCSS = css`
 `;
 
 export const labelCSS = css`
-  color: ${theme.textColors.white90};
+  color: var(--ac-global-text-color-900);
   font-size: var(--ac-global-dimension-static-font-size-100);
 `;

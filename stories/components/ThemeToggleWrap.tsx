@@ -3,7 +3,7 @@ import { Button, Heading, Icon, Icons, Provider, View } from '../../src';
 import { css } from '@emotion/react';
 
 export function ThemeToggleWrap({ children }: PropsWithChildren) {
-  const [isLight, setIsLight] = useState(true);
+  const [isLight, setIsLight] = useState(false);
   return (
     <div
       css={css`
@@ -27,7 +27,6 @@ export function ThemeToggleWrap({ children }: PropsWithChildren) {
         ></Button>
 
         <View backgroundColor="grey-75" padding="size-100">
-          <Heading>{isLight ? 'Light Theme' : 'Dark Theme'}</Heading>
           {children}
         </View>
       </Provider>
