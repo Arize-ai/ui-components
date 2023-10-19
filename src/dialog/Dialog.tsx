@@ -38,6 +38,31 @@ const dialogCSS = css`
       }
     }
   }
+
+  &.ac-dialog--modal {
+    display: flex;
+    flex-direction: column;
+
+    &.ac-dialog--small {
+      width: 500px;
+    }
+    &.ac-dialog--medium {
+      width: 700px;
+    }
+    &.ac-dialog--large {
+      width: 900px;
+    }
+    &.ac-dialog--extraLarge {
+      width: 1600px;
+      max-width: calc(100vw - var(--ac-global-dimension-static-size-1700));
+    }
+    &.ac-dialog--fullscreen {
+      width: calc(100vw - var(--ac-global-dimension-static-size-1700));
+      @media (min-width: var(--ac-global-dimension-static-breakpoint-medium)) {
+        width: calc(100vw - var(--ac-global-dimension-static-size-3400));
+      }
+    }
+  }
 `;
 const sizeMap: Record<NonNullable<DialogProps['size']>, string> = {
   S: 'small',
