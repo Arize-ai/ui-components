@@ -30,7 +30,8 @@ const meta: Meta = {
     controls: { expanded: true },
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=1398%3A4061',
+      url:
+        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=1398%3A4061',
     },
   },
 };
@@ -204,6 +205,7 @@ export function Gallery() {
           padding="static-size-200"
           borderRadius="medium"
           borderColor="dark"
+          borderWidth="thin"
         >
           <div
             css={css`

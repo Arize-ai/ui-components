@@ -559,9 +559,9 @@ export const lightThemeCSS = css`
     --ac-global-text-color-500: rgba(0, 0, 0, 0.5);
     --ac-global-text-color-300: rgba(0, 0, 0, 0.3);
 
-    --ac-global-background-color-default: var(--ac-global-color-gray-900);
-    --ac-global-background-color-light: var(--ac-global-color-gray-700);
-    --ac-global-background-color-dark: var(--ac-global-color-gray-900);
+    --ac-global-background-color-default: var(--ac-global-color-grey-900);
+    --ac-global-background-color-light: var(--ac-global-color-grey-700);
+    --ac-global-background-color-dark: var(--ac-global-color-grey-900);
     --ac-global-background-color-danger: var(--ac-global-color-danger);
 
     --ac-global-border-color-default: var(--ac-global-color-gray-400);
@@ -569,12 +569,12 @@ export const lightThemeCSS = css`
     --ac-global-border-color-dark: var(--ac-global-color-gray-400);
 
     // Styles for text fields etc
-    --ac-global-input-field-border-color: var(--ac-global-color-gray-100);
-    --ac-global-input-field-border-color-hover: var(--ac-global-color-gray-300);
+    --ac-global-input-field-border-color: var(--ac-global-color-grey-400);
+    --ac-global-input-field-border-color-hover: var(--ac-global-color-grey-600);
     --ac-global-input-field-border-color-active: var(--ac-global-primary-color);
-    --ac-global-input-field-background-color: var(--ac-global-color-gray-600);
+    --ac-global-input-field-background-color: var(--ac-global-color-grey-200);
     --ac-global-input-field-background-color-active: var(
-      --ac-global-color-gray-400
+      --ac-global-color-grey-300
     );
 
     --ac-global-rounding-small: var(--ac-global-dimension-static-size-50);
@@ -620,8 +620,8 @@ export const derivedCSS = css`
     --ac-global-background-color-danger: var(--ac-global-color-danger);
 
     --ac-global-border-color-default: var(--ac-global-color-grey-300);
-    --ac-global-border-color-light: var(--ac-global-color-gray-500);
-    --ac-global-border-color-dark: var(--ac-global-color-gray-300);
+    --ac-global-border-color-light: var(--ac-global-color-grey-500);
+    --ac-global-border-color-dark: var(--ac-global-color-grey-300);
 
     // Styles for text fields etc
     --ac-global-input-field-border-color: var(--ac-global-color-gray-100);
