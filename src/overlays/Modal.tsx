@@ -31,6 +31,8 @@ const modalWrapperCSS = css`
 
 const exitTransitionAnimationTime = '0.1s';
 const enterTransitionAnimationTime = '0.2s';
+const enterTransitionDelayAnimationTime = '0.2s';
+
 const modalCSS = css`
   background-color: ${theme.components.modal.backgroundColor};
   pointer-events: auto;
@@ -70,8 +72,9 @@ const modalCSS = css`
     &.is-open {
       /* Entry animations */
       transition: transform ${enterTransitionAnimationTime}
-          cubic-bezier(0, 0, 0.4, 1),
-        opacity ${enterTransitionAnimationTime} cubic-bezier(0, 0, 0.4, 1);
+          cubic-bezier(0, 0, 0.4, 1) ${enterTransitionDelayAnimationTime},
+        opacity ${enterTransitionAnimationTime} cubic-bezier(0, 0, 0.4, 1)
+          ${enterTransitionDelayAnimationTime};
       opacity: 0.9999;
       visibility: visible;
       transform: translateY(0);
