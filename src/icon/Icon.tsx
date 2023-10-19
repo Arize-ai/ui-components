@@ -14,9 +14,9 @@ interface IconProps extends HTMLAttributes<HTMLElement> {
   isDisabled?: boolean;
   /**
    * The color of the icon
-   * @default 'inerit'
+   * @default 'inherit'
    */
-  color?: ColorValue;
+  color?: ColorValue | 'inherit';
 }
 
 /**
@@ -30,7 +30,7 @@ export const Icon = ({
   color = 'inherit',
   ...restProps
 }: IconProps) => {
-  const resolvedColor = colorValue(color);
+  const resolvedColor = color === 'inherit' ? 'inherit' : colorValue(color);
   return (
     <i
       className={classNames('ac-icon-wrap', className)}
