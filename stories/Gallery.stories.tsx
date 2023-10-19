@@ -1,6 +1,6 @@
-import React, { PropsWithChildren, useState } from 'react';
 import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
+import React, { Children, PropsWithChildren, useState } from 'react';
 import {
   Alert,
   Card,
@@ -19,9 +19,16 @@ import {
   ButtonGroup,
   Flex,
   Switch,
+  Counter,
+  ActionTooltip,
+  Content,
+  ListItem,
+  List,
+  TabbedCard,
+  Tabs,
+  TabPane,
   Accordion,
   AccordionItem,
-  Counter,
 } from '../src';
 import { Icon, Icons, SearchOutline } from '../src/icon';
 // @ts-ignore
@@ -35,33 +42,275 @@ const meta: Meta = {
     controls: { expanded: true },
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=1398%3A4061',
+      url:
+        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=1398%3A4061',
     },
   },
 };
 
 export default meta;
 
+function ZoomControls() {
+  return (
+    <ButtonGroup aria-label="zoom control">
+      <Button
+        variant="default"
+        icon={<Icon svg={<Icons.ArrowIosBackOutline />} />}
+        size="compact"
+      />
+      <Button
+        variant="default"
+        icon={<Icon svg={<Icons.PlusCircleOutline />} />}
+        size="compact"
+      />
+      <Button
+        variant="default"
+        icon={<Icon svg={<Icons.PlusCircleOutline />} />}
+        size="compact"
+      />
+      <Button
+        variant="default"
+        icon={<Icon svg={<Icons.ArrowIosForwardOutline />} />}
+        size="compact"
+      />
+    </ButtonGroup>
+  );
+}
+
+function Search() {
+  return (
+    <Button
+      variant="default"
+      icon={<Icon svg={<Icons.Search />} />}
+      size="compact"
+    />
+  );
+}
+
+function MainLane(props: PropsWithChildren) {
+  return (
+    <View flex="1 1 auto">
+      <Flex direction="column" gap="size-100">
+        {props.children}
+      </Flex>
+    </View>
+  );
+}
+
+function AsideLane(props: PropsWithChildren) {
+  return (
+    <View flex="none" width="500px">
+      <Flex direction="column" gap="size-100">
+        {props.children}
+      </Flex>
+    </View>
+  );
+}
+
 export function OverviewPage() {
   return (
     <ThemeToggleWrap>
       <View padding="size-100">
         <Flex direction="row" gap="size-100">
+          <MainLane>
+            <Card
+              title="Performance Over Time"
+              variant="compact"
+              extra={<ZoomControls />}
+            >
+              <div
+                css={css`
+                  display: flex;
+                `}
+              >
+                <img src={chartFile} />
+                <div
+                  css={css`
+                    margin: auto;
+                  `}
+                >
+                  <Text textSize="xxlarge">0.0</Text>
+                  <Heading>Metric</Heading>
+                </div>
+              </div>
+            </Card>
+            <ModelSchemaCard />
+          </MainLane>
+          <AsideLane>
+            <Card collapsible title="Setup Your Model" variant="compact">
+              <List>
+                <ListItem>
+                  <div
+                    css={css`
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                    `}
+                  >
+                    <div
+                      css={css`
+                        margin-right: 24px;
+                      `}
+                    >
+                      <Icon svg={<Icons.CheckmarkCircleOutline />} />
+                    </div>
+                    <div
+                      css={css`
+                        display: flex;
+                        flex-direction: column;
+                      `}
+                    >
+                      <h3>Send in Production Data</h3>
+                      Make sure your models in production are working the way
+                      you intended
+                    </div>
+                  </div>
+                </ListItem>
+                <ListItem>
+                  <div
+                    css={css`
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                    `}
+                  >
+                    <div
+                      css={css`
+                        margin-right: 24px;
+                      `}
+                    >
+                      <Icon svg={<Icons.CheckmarkCircleOutline />} />
+                    </div>
+                    <div
+                      css={css`
+                        display: flex;
+                        flex-direction: column;
+                      `}
+                    >
+                      <h3>Setup Monitoring</h3>
+                      Recieve alerts when your model experiences drift,
+                      dataquality, and performance degredations.
+                    </div>
+                  </div>
+                </ListItem>
+              </List>
+            </Card>
+            <MonitorsListingCard />
+            <ModelBaseline />
+          </AsideLane>
+        </Flex>
+
+        <Flex direction="column" gap="size-100">
           <View
             borderColor="light"
-            height="size-1200"
             borderWidth="thin"
             flex="1 1 auto"
             borderRadius="medium"
-          />
-          <View width="300px" flex="none">
-            <Card collapsible title="Setup Your Model" variant="compact">
-              Monitors go here
-            </Card>
-          </View>
+          ></View>
         </Flex>
       </View>
     </ThemeToggleWrap>
+  );
+}
+
+function AccordionDimentions() {
+  return (
+    <Accordion>
+      <AccordionItem
+        title="Predictions"
+        id="model-health-predictions"
+        defaultIsOpen={false}
+      >
+        beeboop
+      </AccordionItem>
+      <AccordionItem
+        title="Actuals"
+        id="model-health-actual"
+        defaultIsOpen={false}
+      >
+        beeboop
+      </AccordionItem>
+      <AccordionItem
+        title="Features"
+        id="model-health-features"
+        defaultIsOpen={false}
+      >
+        beeboop
+      </AccordionItem>
+    </Accordion>
+  );
+}
+
+function ModelSchemaCard() {
+  return (
+    <TabbedCard title="Model Schema" extra={<Search />}>
+      <Tabs>
+        <TabPane name="All">
+          <AccordionDimentions />
+        </TabPane>
+        <TabPane name="Features">
+          <AccordionDimentions />
+        </TabPane>
+        <TabPane name="Embeddings">
+          <AccordionDimentions />
+        </TabPane>
+        <TabPane name="Tags">
+          <AccordionDimentions />
+        </TabPane>
+        <TabPane name="Predictions">
+          <AccordionDimentions />
+        </TabPane>
+        <TabPane name="Actuals">
+          <AccordionDimentions />
+        </TabPane>
+      </Tabs>
+    </TabbedCard>
+  );
+}
+
+function MonitorsListingCard() {
+  return (
+    <Card
+      title="Monitors"
+      variant="compact"
+      titleExtra={<InfoTip>toolstip stuff</InfoTip>}
+    >
+      <List>
+        <ListItem>
+          <div
+            css={css`
+              display: flex;
+              align-items: center;
+            `}
+          >
+            <div
+              css={css`
+                margin-right: 24px;
+              `}
+            >
+              <Icon svg={<Icons.CheckmarkCircleOutline />} />
+              <h3>Drift</h3>
+            </div>
+          </div>
+        </ListItem>
+        <ListItem>
+          <Icon svg={<Icons.CheckmarkCircleOutline />} />
+          Data Quality
+        </ListItem>
+      </List>
+    </Card>
+  );
+}
+
+function ModelBaseline() {
+  return (
+    <Card
+      title="Model Baseline"
+      variant="compact"
+      titleExtra={<InfoTip>tooltips stuff</InfoTip>}
+    >
+      drift/dataquality/performance stuff
+    </Card>
   );
 }
 
