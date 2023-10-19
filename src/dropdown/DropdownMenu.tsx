@@ -22,7 +22,7 @@ function DropdownMenu(
       css={css`
         background-color: ${theme.colors.gray600};
         border-radius: 4px;
-        color: ${theme.textColors.white90};
+        color: var(--ac-global-color-text-900);
         padding: ${isPadded ? theme.spacing.padding8 : 0}px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
         border: 1px solid ${theme.components.dropdown.borderColor};
