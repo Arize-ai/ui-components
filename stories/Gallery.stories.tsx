@@ -31,7 +31,7 @@ import {
   AccordionItem,
   CompactSearchField,
 } from '../src';
-import { Icon, Icons, SearchOutline } from '../src/icon';
+import { Icon, Icons, SearchOutline, Settings } from '../src/icon';
 // @ts-ignore
 import chartFile from './images/chart.png';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
@@ -43,8 +43,7 @@ const meta: Meta = {
     controls: { expanded: true },
     design: {
       type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=1398%3A4061',
+      url: 'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=1398%3A4061',
     },
   },
 };
@@ -278,6 +277,10 @@ function ModelBaseline() {
 
 export function Gallery() {
   const [notify, holder] = useNotification();
+  function setSearch(e: string): void {
+    throw new Error('Function not implemented.');
+  }
+
   return (
     <ThemeToggleWrap>
       <div
@@ -287,6 +290,25 @@ export function Gallery() {
           gap: 8px;
         `}
       >
+        <Card
+          title="hello"
+          extra={
+            <div
+              css={css`
+                display: flex;
+                & > * + * {
+                  margin-left: 8px;
+                }
+              `}
+            >
+              <Button
+                variant="default"
+                icon={<Icon svg={<Settings />} />}
+              ></Button>
+              <CompactSearchField placeholder="Search..." />
+            </div>
+          }
+        ></Card>
         <Card
           title="Model Health"
           subTitle={'An overview of the the health of your model'}

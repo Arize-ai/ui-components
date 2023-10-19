@@ -9,6 +9,7 @@ import {
   Card,
 } from '../src';
 import { Icon, SearchOutline, Settings } from '../src/icon';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const meta: Meta = {
   title: 'CompactSearchField',
@@ -20,10 +21,10 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<CompactSearchFieldProps> = args => {
+const Template: Story<CompactSearchFieldProps> = (args) => {
   const [search, setSearch] = useState('');
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <Card
         title="hello"
         extra={
@@ -42,14 +43,14 @@ const Template: Story<CompactSearchFieldProps> = args => {
             <CompactSearchField
               {...args}
               placeholder="Search..."
-              onChange={e => setSearch(e)}
+              onChange={(e) => setSearch(e)}
             />
           </div>
         }
       >
         {`Search for: ${search}`}
       </Card>
-    </Provider>
+    </ThemeToggleWrap>
   );
 };
 

@@ -33,11 +33,11 @@ export function CompactSearchField(props: CompactSearchFieldProps) {
       css={css`
         display: inline-flex;
         flex-direction: row;
-        border: 1px solid ${theme.components.textField.borderColor};
+        border: 1px solid var(--ac-global-input-field-border-color);
         border-radius: ${theme.rounding.rounding4}px;
         overflow: hidden;
         transition: all 0.2s ease-in-out;
-        background-color: ${theme.components.textField.backgroundColor};
+        background-color: var(--ac-global-input-field-background-color);
         & > .ac-button {
           flex: none;
           border: none;
@@ -87,11 +87,11 @@ export function CompactSearchField(props: CompactSearchFieldProps) {
         {...props}
         isNested
         type="search"
-        onFocus={e => {
+        onFocus={(e) => {
           setIsActive(true);
           onFocus && onFocus(e);
         }}
-        onBlur={e => {
+        onBlur={(e) => {
           setIsActive(false);
           onBlur && onBlur(e);
         }}

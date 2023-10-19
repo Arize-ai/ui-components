@@ -50,8 +50,8 @@ export const buttonCSS = css`
     }
   }
   &[data-variant='default'] {
-    background-color: var(--ac-global-color-grey-200);
-    border-color: ${theme.components.button.defaultBorderColor};
+    background-color: var(--ac-global-input-field-background-color);
+    border-color: var(--ac-global-input-field-border-color);
     &:hover:not([disabled]) {
       background-color: ${theme.components.button.defaultHoverBackgroundColor};
     }
