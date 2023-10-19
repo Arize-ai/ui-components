@@ -37,6 +37,7 @@ export const buttonCSS = css`
   &[data-variant='primary'] {
     background-color: ${transparentize(0.1, theme.colors.arizeBlue)};
     border-color: ${theme.components.button.primaryBorderColor};
+    color: var(--ac-global-color-white-900);
     &:hover:not([disabled]) {
       background-color: ${theme.components.button.primaryHoverBackgroundColor};
     }

@@ -20,6 +20,7 @@ export function ThemeToggleWrap({ children }: PropsWithChildren) {
         <Button
           className="theme-toggle"
           onClick={() => setIsLight(!isLight)}
+          variant="default"
           icon={
             <Icon
               svg={isLight ? <Icons.SunOutline /> : <Icons.MoonOutline />}
@@ -27,7 +28,11 @@ export function ThemeToggleWrap({ children }: PropsWithChildren) {
           }
         ></Button>
 
-        <View backgroundColor="grey-75" padding="size-100">
+        <View
+          backgroundColor="grey-75"
+          padding="size-100"
+          paddingTop="size-1000"
+        >
           {children}
         </View>
       </Provider>

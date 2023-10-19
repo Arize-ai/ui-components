@@ -142,6 +142,11 @@ export const darkThemeCSS = css`
     --ac-global-color-gray-200: #585d64;
     --ac-global-color-gray-100: #666b71;
 
+    // static colors
+    --ac-global-color-white-900: rgba(255, 255, 255, 0.9);
+    --ac-global-color-white-700: rgba(255, 255, 255, 0.7);
+    --ac-global-color-white-300: rgba(255, 255, 255, 0.3);
+
     // The newer grays (grey)
     --ac-global-color-grey-50: #000000;
     --ac-global-color-grey-75: #0e0e0e;

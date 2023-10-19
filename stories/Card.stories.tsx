@@ -7,6 +7,7 @@ import { Tabs } from '../src/tabs';
 import { Button } from '../src/button';
 import InfoTip from './components/InfoTip';
 import { Counter, Flex, Heading, Provider, View } from '../src';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const { TabPane } = Tabs;
 
@@ -187,7 +188,7 @@ const GalleryCards = (props: { variant: CardProps['variant'] }) => {
 
 export const Gallery = () => {
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <div>
         <section>
           <Heading>Default variant</Heading>
@@ -198,7 +199,7 @@ export const Gallery = () => {
           <GalleryCards variant="compact" />
         </section>
       </div>
-    </Provider>
+    </ThemeToggleWrap>
   );
 };
 
@@ -227,7 +228,7 @@ export const Colors = () => {
     },
   ];
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <Flex direction="row" gap="size-100">
         <Flex direction="column" gap="size-100">
           {propsArray.map((props, index) => (
@@ -251,7 +252,7 @@ export const Colors = () => {
           ))}
         </Flex>
       </Flex>
-    </Provider>
+    </ThemeToggleWrap>
   );
 };
 
