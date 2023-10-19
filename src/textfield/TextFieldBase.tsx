@@ -131,7 +131,7 @@ const textFieldBaseCSS = (styleProps: StyleProps) => css`
     var(--ac-field-border-color-override, var(--ac-textfield-border-color));
 
   .ac-textfield__input::placeholder {
-    color: ${theme.textColors.white30};
+    color: var(--ac-global-color-text-300);
     font-style: italic;
   }
   .ac-textfield__input {
@@ -221,8 +221,8 @@ const standardTextfieldBaseCSS = css`
     background-color: var(--ac-global-input-field-background-color-active);
   }
   &.is-focused:not(.is-disabled) {
-    border: 1px solid ${theme.components.textField.activeBorderColor};
-    background-color: ${theme.components.textField.activeBackgroundColor};
+    border: 1px solid var(--ac-global-input-field-border-color-active);
+    background-color: var(--ac-global-input-field-background-color-active);
     &.ac-textfield--invalid {
       border: 1px solid var(--ac-global-color-danger);
       .ac-textfield__input {
@@ -232,7 +232,7 @@ const standardTextfieldBaseCSS = css`
   }
   &.is-disabled {
     border: 1px solid ${theme.colors.lightGrayBorder};
-    background-color: ${theme.components.textField.backgroundColor};
+    background-color: var(--ac-global-input-field-background-color);
     opacity: ${theme.opacity.disabled};
     .ac-textfield__input {
       color: ${theme.textColors.white50};

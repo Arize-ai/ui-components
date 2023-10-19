@@ -624,12 +624,12 @@ export const derivedCSS = css`
     --ac-global-border-color-dark: var(--ac-global-color-grey-300);
 
     // Styles for text fields etc
-    --ac-global-input-field-border-color: var(--ac-global-color-gray-100);
-    --ac-global-input-field-border-color-hover: var(--ac-global-color-gray-300);
+    --ac-global-input-field-border-color: var(--ac-global-color-grey-400);
+    --ac-global-input-field-border-color-hover: var(--ac-global-color-grey-300);
     --ac-global-input-field-border-color-active: var(--ac-global-primary-color);
-    --ac-global-input-field-background-color: var(--ac-global-color-gray-600);
+    --ac-global-input-field-background-color: var(--ac-global-color-grey-200);
     --ac-global-input-field-background-color-active: var(
-      --ac-global-color-gray-400
+      --ac-global-color-grey-300
     );
 
     --ac-global-rounding-small: var(--ac-global-dimension-static-size-50);

@@ -3,7 +3,7 @@ import theme from '../theme';
 import { transparentize } from 'polished';
 
 export const buttonCSS = css`
-  border: 1px solid ${theme.components.button.defaultBorderColor};
+  border: 1px solid var(--ac-global-border-color-default);
   font-weight: 600;
   margin: 0;
   display: flex;
@@ -49,7 +49,7 @@ export const buttonCSS = css`
     }
   }
   &[data-variant='default'] {
-    background-color: ${theme.colors.gray500};
+    background-color: var(--ac-global-color-grey-200);
     border-color: ${theme.components.button.defaultBorderColor};
     &:hover:not([disabled]) {
       background-color: ${theme.components.button.defaultHoverBackgroundColor};

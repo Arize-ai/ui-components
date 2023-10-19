@@ -4,7 +4,7 @@ import theme from '../theme';
 import { Text } from '../content/Text';
 
 const addonBeforeCSS = css`
-  background-color: ${theme.colors.gray400};
+  background-color: var(--ac-global-color-grey-400);
   padding: 0 ${theme.spacing.padding8}px;
   flex: none;
   box-sizing: border-box;
