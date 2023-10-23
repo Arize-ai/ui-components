@@ -34,8 +34,9 @@ export const tooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
     --tooltip-target-offset: ${theme.spacing.tooltip.offset}px;
     --tooltip-tip-width: 8px;
     --tooltip-max-inline-size: 200px;
-    color: ${theme.textColors.white90};
-    background-color: ${tooltipStyles.backgroundColor};
+    --tooltip-background-color: var(--ac-global-color-grey-200);
+    color: var(--ac-global-text-color-900);
+    background-color: var(--tooltip-background-color);
     position: relative;
 
     display: inline-flex;
@@ -111,7 +112,7 @@ export const tooltipTipCSS = ({ placement }: { placement: PlacementAxis }) => {
   return css(
     css`
       position: absolute;
-      border-color: ${tooltipStyles.backgroundColor};
+      border-color: var(--tooltip-background-color);
       height: 0;
       width: 0;
 
@@ -158,7 +159,7 @@ export const actionTooltipCSS = ({
     --tooltip-target-offset: ${theme.spacing.tooltip.offset}px;
     --tooltip-tip-width: 8px;
     --tooltip-max-inline-size: 500px;
-    color: ${theme.textColors.white90};
+    color: var(--ac-global-text-color-900);
     background-color: ${actionTooltipStyles.backgroundColor};
     border-radius: 8px;
     border: 1px solid ${actionTooltipStyles.borderColor};
@@ -226,8 +227,10 @@ export const helpTooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
     --tooltip-animation-distance: ${theme.spacing.tooltip.offset}px;
     --tooltip-target-offset: ${theme.spacing.tooltip.offset}px;
     --tooltip-max-inline-size: 300px;
-    color: ${theme.textColors.white90};
-    background-color: ${tooltipStyles.backgroundColor};
+    --tooltip-background-color: var(--ac-global-color-grey-100);
+    --tooltip-border-color: var(--ac-global-color-grey-300);
+    color: var(--ac-global-text-color-900);
+    background-color: var(--tooltip-background-color);
     position: relative;
     box-sizing: border-box;
     font-size: ${theme.typography.sizes.medium.fontSize}px;
@@ -236,11 +239,11 @@ export const helpTooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
 
     width: auto;
     padding: ${theme.spacing.padding16}px;
-    border-radius: ${theme.rounding.rounding4}px;
-    border: 1px solid ${tooltipStyles.borderColor};
+    border-radius: var(--ac-global-rounding-medium);
+    border: 1px solid var(--tooltip-border-color);
     min-height: 24px;
     max-inline-size: var(--tooltip-max-inline-size);
-    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.1);
 
     word-break: break-word;
     -webkit-font-smoothing: antialiased;

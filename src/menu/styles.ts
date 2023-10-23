@@ -6,7 +6,7 @@ export const menuItemCSS = css`
   outline: none;
   display: flex;
   align-items: center;
-  color: ${theme.textColors.white90};
+  color: var(--ac-global-text-color-900);
   padding: ${theme.spacing.padding8}px ${theme.spacing.padding16}px;
   font-size: ${theme.typography.sizes.medium.fontSize}px;
   min-width: 80px;
@@ -25,18 +25,18 @@ export const menuItemCSS = css`
 
   &.is-selected {
     i {
-      color: ${theme.colors.arizeLightBlue};
+      color: var(--ac-global-primary-color);
     }
   }
   &.is-hovered,
   &.focus-ring {
-    background-color: ${theme.colors.gray500};
+    background-color: var(--ac-global-menu-item-background-color-hover);
   }
   &.is-selectable {
     cursor: pointer;
   }
   &.is-disabled {
     cursor: not-allowed;
-    color: ${theme.textColors.white50};
+    color: var(--ac-global-color-text-30);
   }
 `;

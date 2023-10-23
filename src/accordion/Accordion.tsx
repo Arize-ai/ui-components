@@ -9,6 +9,34 @@ export interface AccordionProps {
   children: ReactNode;
 }
 
+const accordionItemCSS = css`
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  /* remove outline - TODO might need to give a visual cue that this area is in focus */
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+`;
+
 /**
  * Accordion component for having collapsible sections
  * @see https://www.w3.org/TR/wai-aria-practices-1.1/#accordion
@@ -99,33 +127,7 @@ export function AccordionItem(props: AccordionItemProps) {
       <Heading level={3}>
         <button
           id={headerId}
-          css={css`
-            cursor: pointer;
-            padding: var(--accordion-padding-top) var(--accordion-padding-side);
-            display: block;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            flex: 1 1 auto;
-            justify-content: space-between;
-            align-items: center;
-            appearance: none;
-            background-color: inherit;
-            border: 0;
-            text-align: start;
-            color: var(--ac-global-text-color-900);
-            border-bottom: 1px solid var(--ac-global-border-color-dark);
-            /* remove outline - TODO might need to give a visual cue that this area is in focus */
-            outline: none;
-            background-color: var(--ac-global-background-color-light);
-            transition: background-color 0.2s ease-in-out;
-            &:hover {
-              background-color: ${theme.colors.hoverBgColor};
-            }
-            .ac-accordion-item__title {
-              font-size: var(--accordion-font-size);
-            }
-          `}
+          css={accordionItemCSS}
           onClick={() => {
             const newIsOpen = !isOpen;
             setIsOpen(newIsOpen);

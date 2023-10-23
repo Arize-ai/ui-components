@@ -1,16 +1,28 @@
 import React, { useContext } from 'react';
 import { OverlayProvider } from '@react-aria/overlays';
-import { ProviderProps, ProviderContext } from '../types';
+import { ProviderProps, ProviderContext, ProviderTheme } from '../types';
 import { GlobalStyles } from './GlobalStyles';
 
 const Context = React.createContext<ProviderContext | null>(null);
 
 export function Provider(props: ProviderProps) {
-  const { children, theme = 'dark', ...context } = props;
+  const prevContext = useContext(Context);
+  let { children, theme: propsTheme, ...context } = props;
+  let theme: ProviderTheme = propsTheme || 'dark';
+  let isRootProvider = !prevContext;
+  // If there is a theme higher up in the tree, use that theme
+  if (prevContext && prevContext.theme) {
+    theme = prevContext.theme;
+  }
+  let content = isRootProvider ? (
+    <OverlayProvider>{children}</OverlayProvider>
+  ) : (
+    children
+  );
   return (
     <Context.Provider value={{ ...context, theme }}>
-      <GlobalStyles />
-      <OverlayProvider>{children}</OverlayProvider>
+      {isRootProvider ? <GlobalStyles /> : null}
+      {content}
     </Context.Provider>
   );
 }

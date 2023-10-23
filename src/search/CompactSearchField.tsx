@@ -43,8 +43,11 @@ export function CompactSearchField(props: CompactSearchFieldProps) {
           border: none;
           border-radius: 0;
         }
-        & .ac-textfield {
-          border: none;
+        & .ac-textfield,
+        .ac-textfield:hover,
+        .ac-textfield:active,
+        .ac-textfield:focus {
+          border: none !important;
           border-radius: 0 ${theme.rounding.rounding4}px
             ${theme.rounding.rounding4}px 0;
           // The button padding provides enough space
@@ -87,11 +90,11 @@ export function CompactSearchField(props: CompactSearchFieldProps) {
         {...props}
         isNested
         type="search"
-        onFocus={(e) => {
+        onFocus={e => {
           setIsActive(true);
           onFocus && onFocus(e);
         }}
-        onBlur={(e) => {
+        onBlur={e => {
           setIsActive(false);
           onBlur && onBlur(e);
         }}

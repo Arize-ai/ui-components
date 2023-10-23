@@ -5,9 +5,15 @@ import React, {
   CSSProperties,
 } from 'react';
 import { css } from '@emotion/react';
-import { ColorValue, DOMProps, DOMRef, StyleProps } from '../types';
+import {
+  ColorValue,
+  DOMProps,
+  DOMRef,
+  StyleProps,
+  TextColorValue,
+} from '../types';
 import theme, { designationColors } from '../theme';
-import { TextColor, Size, TextElementType, Weight } from './types';
+import { Size, TextElementType, Weight } from './types';
 
 import { textSizeCSS, textWeightCSS } from './styles';
 import { filterDOMProps } from '@react-aria/utils';
@@ -37,7 +43,7 @@ export interface TextProps extends DOMProps, StyleProps {
    * The color of the text
    * @default 'text-900'
    */
-  color?: TextColor;
+  color?: TextColorValue;
   /**
    * The font style
    * @default 'normal'
@@ -53,7 +59,7 @@ export interface TextProps extends DOMProps, StyleProps {
   className?: string;
 }
 
-const getTextColor = (color: TextColor) => {
+const getTextColor = (color: TextColorValue) => {
   if (color.startsWith('designation')) {
     // Return the designation color (e.x. the main primary / reference colors)
     return designationColors[color];
@@ -72,7 +78,7 @@ const getTextColor = (color: TextColor) => {
   return colorValue(color as ColorValue);
 };
 
-const textCSS = (color: TextColor) => css`
+const textCSS = (color: TextColorValue) => css`
   /* default to no margin */
   margin: 0;
   color: ${getTextColor(color)};

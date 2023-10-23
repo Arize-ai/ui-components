@@ -9,6 +9,7 @@ import {
   MinusCircleOutline,
 } from '../src/icon';
 import { withDesign } from 'storybook-addon-designs';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const plusIcon = <Icon svg={<PlusCircleOutline />} />;
 const minusIcon = <Icon svg={<MinusCircleOutline />} />;
@@ -38,7 +39,7 @@ export default meta;
 
 export const Gallery = () => {
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <ul
         css={css`
           & > li {
@@ -88,6 +89,6 @@ export const Gallery = () => {
           </ButtonGroup>
         </li>
       </ul>
-    </Provider>
+    </ThemeToggleWrap>
   );
 };

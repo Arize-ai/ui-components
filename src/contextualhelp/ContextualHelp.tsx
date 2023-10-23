@@ -51,7 +51,9 @@ function ContextualHelp(
   } = props;
 
   const iconSVG = variant === 'info' ? <InfoOutline /> : <QuestionOutline />;
-  const icon = <Icon svg={iconSVG} style={{ fontSize: 'inherit' }} />;
+  const icon = (
+    <Icon color="grey-900" svg={iconSVG} style={{ fontSize: 'inherit' }} />
+  );
 
   let labelProps = useLabels(otherProps);
 

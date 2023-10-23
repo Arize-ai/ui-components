@@ -13,6 +13,7 @@ import {
 } from '../src';
 
 import css from '@emotion/css';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const placements: Placement[] = [
   'start',
@@ -48,7 +49,7 @@ const meta: Meta = {
 export default meta;
 
 export const Gallery = () => (
-  <Provider>
+  <ThemeToggleWrap>
     <ul style={{ listStyle: 'none', marginLeft: '200px', marginTop: '200px' }}>
       {placements.map((placement, index) => {
         return (
@@ -63,7 +64,7 @@ export const Gallery = () => (
         );
       })}
     </ul>
-  </Provider>
+  </ThemeToggleWrap>
 );
 
 const focusableCSS = css`

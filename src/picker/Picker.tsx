@@ -22,7 +22,6 @@ import { PressResponder, useHover } from '@react-aria/interactions';
 import React, { ReactElement, useCallback, useRef, useState } from 'react';
 import { PickerProps } from '../types';
 import { useSelectState } from '@react-stately/select';
-import theme from '../theme';
 import { useProviderProps } from '../provider';
 import { Field } from '../field';
 import { dimensionValue } from '../utils/styleProps';
@@ -203,7 +202,7 @@ function Picker<T extends object>(
         --ac-dropdown-min-width: 200px;
         .ac-dropdown-button__text {
           .is-placeholder {
-            color: ${theme.textColors.white70};
+            color: var(--ac-global-text-color-700);
             font-style: italic;
           }
         }

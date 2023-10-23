@@ -34,7 +34,7 @@ export interface DropdownButtonProps extends AddonableProps, Validation {
 const buttonBaseCSS = css`
   border: none;
   background-color: transparent;
-  color: var(--ac-global-color-text-900);
+  color: var(--ac-global-text-color-900);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +51,7 @@ const buttonBaseCSS = css`
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    color: var(--ac-field-text-color-override, var(--ac-global-color-text-900));
+    color: var(--ac-field-text-color-override, var(--ac-global-text-color-900));
   }
   .ac-dropdown-button__dropdown-icon {
     margin: 10px 0 10px 10px;
@@ -231,7 +231,7 @@ function DropdownButton(
           css={css`
             color: var(
               --ac-field-text-color-override,
-              ${theme.textColors.white90}
+              var(--ac-global-text-color-900)
             );
           `}
         >

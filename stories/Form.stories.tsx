@@ -16,6 +16,7 @@ import {
 } from '../src';
 import { useForm, Controller } from 'react-hook-form';
 import dedent from 'ts-dedent';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const meta: Meta = {
   title: 'Form',
@@ -34,13 +35,13 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<FormProps> = (args) => {
+const Template: Story<FormProps> = args => {
   const { control, handleSubmit } = useForm();
   const onSubmit = (d: any) => {
     alert(JSON.stringify(d));
   };
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <Form {...args} action="" onSubmit={handleSubmit(onSubmit)}>
         <Controller
           name={'name'}
@@ -135,7 +136,7 @@ const Template: Story<FormProps> = (args) => {
           Submit
         </Button>
       </Form>
-    </Provider>
+    </ThemeToggleWrap>
   );
 };
 
@@ -265,7 +266,7 @@ const Break = () => (
   />
 );
 
-export const InlineForm: Story<FormProps> = (props) => {
+export const InlineForm: Story<FormProps> = props => {
   const { control, handleSubmit } = useForm();
   const onSubmit = (d: any) => {
     alert(JSON.stringify(d));
@@ -285,7 +286,7 @@ export const InlineForm: Story<FormProps> = (props) => {
           control={control}
           rules={{
             required: 'This field is required',
-            validate: (value) => {
+            validate: value => {
               if (value.length > 10) {
                 return 'Monitor name too long';
               }
@@ -344,7 +345,7 @@ export const InlineForm: Story<FormProps> = (props) => {
           control={control}
           rules={{
             required: 'This field is required',
-            validate: (value) => value !== 'psi' || 'Psi is not supported',
+            validate: value => value !== 'psi' || 'Psi is not supported',
           }}
           render={({
             field: { onChange, value },

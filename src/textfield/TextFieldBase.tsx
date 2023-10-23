@@ -131,7 +131,7 @@ const textFieldBaseCSS = (styleProps: StyleProps) => css`
     var(--ac-field-border-color-override, var(--ac-textfield-border-color));
 
   .ac-textfield__input::placeholder {
-    color: var(--ac-global-color-text-300);
+    color: var(--ac-global-text-color-300);
     font-style: italic;
   }
   .ac-textfield__input {

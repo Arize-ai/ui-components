@@ -563,57 +563,6 @@ export const lightThemeCSS = css`
     --ac-global-text-color-700: rgba(0, 0, 0, 0.7);
     --ac-global-text-color-500: rgba(0, 0, 0, 0.5);
     --ac-global-text-color-300: rgba(0, 0, 0, 0.3);
-
-    --ac-global-background-color-default: var(--ac-global-color-grey-900);
-    --ac-global-background-color-light: var(--ac-global-color-grey-700);
-    --ac-global-background-color-dark: var(--ac-global-color-grey-900);
-    --ac-global-background-color-danger: var(--ac-global-color-danger);
-
-    --ac-global-border-color-default: var(--ac-global-color-gray-400);
-    --ac-global-border-color-light: var(--ac-global-color-gray-400);
-    --ac-global-border-color-dark: var(--ac-global-color-gray-400);
-
-    // Styles for text fields etc
-    --ac-global-input-field-border-color: var(--ac-global-color-grey-400);
-    --ac-global-input-field-border-color-hover: var(--ac-global-color-grey-600);
-    --ac-global-input-field-border-color-active: var(--ac-global-primary-color);
-    --ac-global-input-field-background-color: var(--ac-global-color-grey-200);
-    --ac-global-input-field-background-color-active: var(
-      --ac-global-color-grey-300
-    );
-
-    --ac-global-rounding-small: var(--ac-global-dimension-static-size-50);
-    --ac-global-rounding-medium: var(--ac-global-dimension-static-size-100);
-
-    --ac-global-border-size-thin: var(--ac-global-dimension-static-size-10);
-    --ac-global-border-size-thick: var(--ac-global-dimension-static-size-25);
-    --ac-global-border-size-thicker: var(--ac-global-dimension-static-size-50);
-    --ac-global-border-size-thickest: var(
-      --ac-global-dimension-static-size-100
-    );
-    --ac-global-border-offset-thin: var(--ac-global-dimension-static-size-25);
-    --ac-global-border-offset-thick: var(--ac-global-dimension-static-size-50);
-    --ac-global-border-offset-thicker: var(
-      --ac-global-dimension-static-size-100
-    );
-    --ac-global-border-offset-thickest: var(
-      --ac-global-dimension-static-size-200
-    );
-    --ac-global-grid-baseline: var(--ac-global-dimension-static-size-100);
-    --ac-global-grid-gutter-xsmall: var(--ac-global-dimension-static-size-200);
-    --ac-global-grid-gutter-small: var(--ac-global-dimension-static-size-300);
-    --ac-global-grid-gutter-medium: var(--ac-global-dimension-static-size-400);
-    --ac-global-grid-gutter-large: var(--ac-global-dimension-static-size-500);
-    --ac-global-grid-gutter-xlarge: var(--ac-global-dimension-static-size-600);
-    --ac-global-grid-margin-xsmall: var(--ac-global-dimension-static-size-200);
-    --ac-global-grid-margin-small: var(--ac-global-dimension-static-size-300);
-    --ac-global-grid-margin-medium: var(--ac-global-dimension-static-size-400);
-    --ac-global-grid-margin-large: var(--ac-global-dimension-static-size-500);
-    --ac-global-grid-margin-xlarge: var(--ac-global-dimension-static-size-600);
-
-    /* Aliases */
-    --ac-alias-single-line-height: var(--ac-global-dimension-size-400);
-    --ac-alias-single-line-width: var(--ac-global-dimension-size-2400);
   }
 `;
 
@@ -621,6 +570,7 @@ export const derivedCSS = css`
   :root {
     --ac-global-background-color-default: var(--ac-global-color-grey-100);
     --ac-global-background-color-light: var(--ac-global-color-grey-300);
+    --ac-global-background-color-light-hover: var(--ac-global-color-grey-400);
     --ac-global-background-color-dark: var(--ac-global-color-grey-100);
     --ac-global-background-color-danger: var(--ac-global-color-danger);
 
@@ -634,6 +584,13 @@ export const derivedCSS = css`
     --ac-global-input-field-border-color-active: var(--ac-global-primary-color);
     --ac-global-input-field-background-color: var(--ac-global-color-grey-200);
     --ac-global-input-field-background-color-active: var(
+      --ac-global-color-grey-300
+    );
+
+    // Styles for menus
+    --ac-global-menu-border-color: var(--ac-global-color-grey-400);
+    --ac-global-menu-background-color: var(--ac-global-color-grey-200);
+    --ac-global-menu-item-background-color-hover: var(
       --ac-global-color-grey-300
     );
 

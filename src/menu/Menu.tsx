@@ -36,9 +36,9 @@ export interface AriaMenuProps<T>
 export interface MenuComponentProps<T> extends AriaMenuProps<T> {}
 
 const menuULCSS = css`
-  background-color: ${theme.colors.gray500};
-  border-radius: 4px;
-  color: ${theme.textColors.white90};
+  background-color: var(--ac-global-menu-background-color);
+  border-radius: var(--ac-global-rounding-small);
+  color: var(--ac-global-color-text-900);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
   outline: none;
   border: 1px solid ${theme.components.dropdown.borderColor};

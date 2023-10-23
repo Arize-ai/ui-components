@@ -53,7 +53,7 @@ export const buttonCSS = css`
     background-color: var(--ac-global-input-field-background-color);
     border-color: var(--ac-global-input-field-border-color);
     &:hover:not([disabled]) {
-      background-color: ${theme.components.button.defaultHoverBackgroundColor};
+      background-color: var(--ac-global-input-field-border-color-hover);
     }
   }
   &[data-variant='quiet'] {

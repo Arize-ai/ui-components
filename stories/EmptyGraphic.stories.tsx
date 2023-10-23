@@ -2,6 +2,7 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
 import { EmptyGraphic, EmptyGraphicProps } from '../src';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const meta: Meta = {
   title: 'Empty',
@@ -32,22 +33,24 @@ const graphics: EmptyGraphicProps['graphicKey'][] = [
 ];
 export const Gallery = () => {
   return (
-    <ul>
-      {graphics.map((graphicKey, index) => (
-        <li
-          key={index}
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'center',
-          }}
-        >
-          <EmptyGraphic graphicKey={graphicKey} size="S" />
-          <EmptyGraphic graphicKey={graphicKey} size="M" />
-          <EmptyGraphic graphicKey={graphicKey} size="L" />
-        </li>
-      ))}
-    </ul>
+    <ThemeToggleWrap>
+      <ul>
+        {graphics.map((graphicKey, index) => (
+          <li
+            key={index}
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              alignItems: 'center',
+            }}
+          >
+            <EmptyGraphic graphicKey={graphicKey} size="S" />
+            <EmptyGraphic graphicKey={graphicKey} size="M" />
+            <EmptyGraphic graphicKey={graphicKey} size="L" />
+          </li>
+        ))}
+      </ul>
+    </ThemeToggleWrap>
   );
 };
 

@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-type ProviderTheme = 'light' | 'dark';
+export type ProviderTheme = 'light' | 'dark';
 
 interface ContextProps {
   /** Whether descendants should be displayed with the quiet style. */

@@ -60,12 +60,12 @@ const ulCSS = css`
   color: ${theme.textColors.white70};
   li:last-of-type {
     font-weight: ${theme.typography.weights.heavy};
-    color: ${theme.textColors.white90};
+    color: var(--ac-global-text-color-900);
   }
   li:not(:last-of-type):hover {
     text-decoration: underline;
     cursor: pointer;
-    color: ${theme.textColors.white90};
+    color: var(--ac-global-text-color-900);
   }
 `;
 

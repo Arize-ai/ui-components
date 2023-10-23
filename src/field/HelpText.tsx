@@ -39,7 +39,7 @@ function HelpText(props: HelpTextComponentProps, ref: DOMRef<HTMLDivElement>) {
       css={css`
         height: 16px;
         padding: ${theme.spacing.padding4}px 0 0;
-        color: ${theme.textColors.white50};
+        color: var(--ac-global-text-color-500);
         &.ac-help-text--danger {
           color: var(--ac-global-color-danger);
         }

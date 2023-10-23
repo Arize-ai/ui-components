@@ -39,7 +39,7 @@ const AccordionContents = () => (
 
 export default meta;
 
-const Template: Story<AccordionProps> = (args) => (
+const Template: Story<AccordionProps> = args => (
   <ThemeToggleWrap>
     <Card
       title="Model Health"
@@ -74,6 +74,3 @@ const Template: Story<AccordionProps> = (args) => (
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
-
-export const Compact = Template.bind({});
-Compact.args = { variant: 'compact' };

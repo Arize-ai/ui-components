@@ -24,7 +24,7 @@ const counterCSS = css`
   line-height: ${theme.typography.sizes.small.lineHeight}px;
   color: var(--ac-global-text-color-900);
   &[data-variant='light'] {
-    background-color: var(--ac-global-color-gray-100);
+    background-color: var(--ac-global-color-grey-400);
   }
   &[data-variant='dark'] {
     background-color: var(--ac-global-background-color-dark);

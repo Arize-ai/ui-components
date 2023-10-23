@@ -5,6 +5,7 @@ import { ButtonToolbar } from '../src/button';
 import { Button, ButtonProps } from '../src/button';
 import { CheckmarkCircleOutline, Icon, PlusCircleOutline } from '../src/icon';
 import { withDesign } from 'storybook-addon-designs';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const plusIcon = <Icon svg={<PlusCircleOutline />} />;
 const checkmarkIcon = <Icon svg={<CheckmarkCircleOutline />} />;
@@ -34,125 +35,131 @@ export default meta;
 
 export const Gallery = () => {
   return (
-    <ul
-      css={css`
-        & > li {
-          margin-bottom: 8px;
-        }
-      `}
-    >
-      <li>
-        <ButtonToolbar>
-          <Button id="primary-test-button" variant="primary">
-            Create Dashboard
-          </Button>
-          <Button variant="primary" icon={plusIcon}>
-            Create Dashboard
-          </Button>
-          <Button variant="primary" icon={plusIcon}>
-            Create Dashboard
-          </Button>
-          <Button variant="primary" icon={plusIcon} title="add" />
-          <Button variant="danger" icon={plusIcon}>
-            Delete Dashboard
-          </Button>
-          <Button variant="danger" icon={plusIcon} title="add" />
-          <Button variant="success" icon={checkmarkIcon}>
-            Delete Dashboard
-          </Button>
-          <Button variant="success" icon={checkmarkIcon} title="add" />
-        </ButtonToolbar>
-      </li>
-      <li>
-        <ButtonToolbar>
-          <Button variant="primary" disabled>
-            Create Dashboard
-          </Button>
-          <Button variant="primary" icon={plusIcon} disabled>
-            Create Dashboard
-          </Button>
-          <Button variant="primary" icon={plusIcon} disabled>
-            Create Dashboard
-          </Button>
-          <Button variant="primary" icon={plusIcon} disabled title="add" />
-          <Button variant="danger" icon={plusIcon} disabled title="delete" />
-          <Button variant="success" icon={plusIcon} disabled title="add" />
-        </ButtonToolbar>
-      </li>
-      <li>
-        <ButtonToolbar>
-          <Button variant="default">Create Dashboard</Button>
-          <Button variant="default" icon={plusIcon}>
-            Create Dashboard
-          </Button>
-          <Button variant="default" icon={plusIcon}>
-            Create Dashboard
-          </Button>
-          <Button variant="default" icon={plusIcon} title="add" />
-          <Button variant="danger" icon={plusIcon} title="delete" />
-          <Button variant="success" icon={checkmarkIcon} title="success" />
-        </ButtonToolbar>
-      </li>
-      <li>
-        <ButtonToolbar>
-          <Button size="compact" variant="primary">
-            Create Dashboard
-          </Button>
-          <Button size="compact" variant="primary" icon={plusIcon}>
-            Create Dashboard
-          </Button>
-          <Button size="compact" variant="primary" icon={plusIcon}>
-            Create Dashboard
-          </Button>
-          <Button
-            size="compact"
-            variant="primary"
-            icon={plusIcon}
-            title="add"
-          />
-          <Button
-            size="compact"
-            variant="danger"
-            icon={plusIcon}
-            title="delete"
-          />
-          <Button
-            size="compact"
-            variant="success"
-            icon={plusIcon}
-            title="success"
-          />
-        </ButtonToolbar>
-      </li>
-      <li>
-        <ButtonToolbar>
-          <Button size="compact" variant="default">
-            Create Dashboard
-          </Button>
-          <Button size="compact" variant="default" icon={plusIcon}>
-            Create Dashboard
-          </Button>
-          <Button size="compact" variant="default" icon={plusIcon}>
-            Create Dashboard
-          </Button>
-          <Button
-            size="compact"
-            variant="default"
-            icon={plusIcon}
-            title="add"
-          />
-          <Button
-            size="compact"
-            variant="success"
-            icon={checkmarkIcon}
-            title="success"
-          />
-        </ButtonToolbar>
-      </li>
-    </ul>
+    <ThemeToggleWrap>
+      <ul
+        css={css`
+          & > li {
+            margin-bottom: 8px;
+          }
+        `}
+      >
+        <li>
+          <ButtonToolbar>
+            <Button id="primary-test-button" variant="primary">
+              Create Dashboard
+            </Button>
+            <Button variant="primary" icon={plusIcon}>
+              Create Dashboard
+            </Button>
+            <Button variant="primary" icon={plusIcon}>
+              Create Dashboard
+            </Button>
+            <Button variant="primary" icon={plusIcon} title="add" />
+            <Button variant="danger" icon={plusIcon}>
+              Delete Dashboard
+            </Button>
+            <Button variant="danger" icon={plusIcon} title="add" />
+            <Button variant="success" icon={checkmarkIcon}>
+              Delete Dashboard
+            </Button>
+            <Button variant="success" icon={checkmarkIcon} title="add" />
+          </ButtonToolbar>
+        </li>
+        <li>
+          <ButtonToolbar>
+            <Button variant="primary" disabled>
+              Create Dashboard
+            </Button>
+            <Button variant="primary" icon={plusIcon} disabled>
+              Create Dashboard
+            </Button>
+            <Button variant="primary" icon={plusIcon} disabled>
+              Create Dashboard
+            </Button>
+            <Button variant="primary" icon={plusIcon} disabled title="add" />
+            <Button variant="danger" icon={plusIcon} disabled title="delete" />
+            <Button variant="success" icon={plusIcon} disabled title="add" />
+          </ButtonToolbar>
+        </li>
+        <li>
+          <ButtonToolbar>
+            <Button variant="default">Create Dashboard</Button>
+            <Button variant="default" icon={plusIcon}>
+              Create Dashboard
+            </Button>
+            <Button variant="default" icon={plusIcon}>
+              Create Dashboard
+            </Button>
+            <Button variant="default" icon={plusIcon} title="add" />
+            <Button variant="danger" icon={plusIcon} title="delete" />
+            <Button variant="success" icon={checkmarkIcon} title="success" />
+          </ButtonToolbar>
+        </li>
+        <li>
+          <ButtonToolbar>
+            <Button size="compact" variant="primary">
+              Create Dashboard
+            </Button>
+            <Button size="compact" variant="primary" icon={plusIcon}>
+              Create Dashboard
+            </Button>
+            <Button size="compact" variant="primary" icon={plusIcon}>
+              Create Dashboard
+            </Button>
+            <Button
+              size="compact"
+              variant="primary"
+              icon={plusIcon}
+              title="add"
+            />
+            <Button
+              size="compact"
+              variant="danger"
+              icon={plusIcon}
+              title="delete"
+            />
+            <Button
+              size="compact"
+              variant="success"
+              icon={plusIcon}
+              title="success"
+            />
+          </ButtonToolbar>
+        </li>
+        <li>
+          <ButtonToolbar>
+            <Button size="compact" variant="default">
+              Create Dashboard
+            </Button>
+            <Button size="compact" variant="default" icon={plusIcon}>
+              Create Dashboard
+            </Button>
+            <Button size="compact" variant="default" icon={plusIcon}>
+              Create Dashboard
+            </Button>
+            <Button
+              size="compact"
+              variant="default"
+              icon={plusIcon}
+              title="add"
+            />
+            <Button
+              size="compact"
+              variant="success"
+              icon={checkmarkIcon}
+              title="success"
+            />
+          </ButtonToolbar>
+        </li>
+      </ul>
+    </ThemeToggleWrap>
   );
 };
-const Template: Story<ButtonProps> = args => <Button {...args} />;
+const Template: Story<ButtonProps> = args => (
+  <ThemeToggleWrap>
+    <Button {...args} />
+  </ThemeToggleWrap>
+);
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing

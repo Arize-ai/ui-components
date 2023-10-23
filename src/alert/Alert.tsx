@@ -66,7 +66,7 @@ export const Alert = ({
       css={css`
         padding: ${theme.spacing.margin8}px ${theme.spacing.margin16}px;
         border-radius: 4px;
-        color: ${theme.textColors.white90};
+        color: var(--ac-global-text-color-900);
         display: flex;
         flex-direction: row;
         align-items: center;

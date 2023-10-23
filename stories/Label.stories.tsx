@@ -12,6 +12,7 @@ import {
 import { Provider, Heading } from '../src';
 import { ColorValue } from '../src/types';
 import { globalColors } from './constants';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const meta: Meta = {
   title: 'Label',
@@ -51,7 +52,7 @@ const baseColors = [
  * A gallery of all the variants
  */
 export const Gallery = () => (
-  <Provider>
+  <ThemeToggleWrap>
     <LabelGroup>
       <Label color="white">Label</Label>
       <Label color="blue">Label</Label>
@@ -96,7 +97,7 @@ export const Gallery = () => (
         <Label color={color}>{color}</Label>
       ))}
     </LabelGroup>
-  </Provider>
+  </ThemeToggleWrap>
 );
 
 const Template: Story<LabelProps> = args => <Label {...args}>Label Text</Label>;

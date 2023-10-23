@@ -11,6 +11,7 @@ import {
   Section,
 } from '../src';
 import { AlertTriangleFilled, Icon, PlusCircleOutline } from '../src/icon';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const meta: Meta = {
   title: 'ActionMenu',
@@ -32,7 +33,7 @@ const meta: Meta = {
 export default meta;
 
 const Template: Story<DropdownProps> = args => (
-  <Provider>
+  <ThemeToggleWrap>
     <div
       css={css`
         margin: 24px;
@@ -185,7 +186,7 @@ const Template: Story<DropdownProps> = args => (
         </ActionMenu>
       </div>
     </div>
-  </Provider>
+  </ThemeToggleWrap>
 );
 
 export const Default = Template.bind({});
