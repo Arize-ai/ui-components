@@ -10,21 +10,29 @@ import { Underlay } from './Underlay';
 
 const modalWrapperCSS = css`
   box-sizing: border-box;
-  height: 100vh;
   z-index: 2;
   transition: visibility 0ms linear 130ms;
   display: flex;
   position: fixed;
   pointer-events: none;
   &.ac-modal-wrapper--slideOver {
+    height: 100vh;
     top: 0;
     right: 0;
     bottom: 0;
+  }
+
+  &.ac-modal-wrapper--modal {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 `;
 
 const exitTransitionAnimationTime = '0.1s';
 const enterTransitionAnimationTime = '0.2s';
+const enterTransitionDelayAnimationTime = '0.2s';
+
 const modalCSS = css`
   background-color: ${theme.components.modal.backgroundColor};
   pointer-events: auto;
@@ -47,6 +55,29 @@ const modalCSS = css`
       opacity: 0.9999;
       visibility: visible;
       transform: translateX(0);
+    }
+  }
+
+  &.ac-modal--modal {
+    border: 1px solid var(--ac-global-color-gray-500);
+    border-radius: var(--ac-global-rounding-medium);
+    box-shadow: -10px 0px 30px 10px rgba(0, 0, 0, 0.1);
+    /* Start offset by the animation distance */
+    transform: translateY(20px);
+    /* Exit animations */
+    transition: opacity ${exitTransitionAnimationTime}
+        cubic-bezier(0.5, 0, 1, 1),
+      transform ${exitTransitionAnimationTime} cubic-bezier(0, 0, 0.4, 1);
+
+    &.is-open {
+      /* Entry animations */
+      transition: transform ${enterTransitionAnimationTime}
+          cubic-bezier(0, 0, 0.4, 1) ${enterTransitionDelayAnimationTime},
+        opacity ${enterTransitionAnimationTime} cubic-bezier(0, 0, 0.4, 1)
+          ${enterTransitionDelayAnimationTime};
+      opacity: 0.9999;
+      visibility: visible;
+      transform: translateY(0);
     }
   }
 `;
@@ -98,7 +129,7 @@ const ModalWrapper = forwardRef<HTMLDivElement>(function(
 });
 
 function Modal(props: ModalProps, ref: DOMRef<HTMLElement>) {
-  const { children, onClose, type, ...otherProps } = props;
+  const { children, onClose, type = 'modal', ...otherProps } = props;
   const domRef = useDOMRef(ref);
 
   const { overlayProps, underlayProps } = useOverlay(props, domRef);
