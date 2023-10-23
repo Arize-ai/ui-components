@@ -7,7 +7,6 @@ import React, {
   HTMLAttributes,
   ReactElement,
 } from 'react';
-import theme from '../theme';
 import { ButtonProps } from './Button';
 
 export interface ButtonGroupProps extends HTMLAttributes<HTMLDivElement> {
