@@ -129,7 +129,9 @@ export const darkThemeCSS = css`
     /* Colors */
 
     // The primary color tint for  the apps
-    --ac-global-primary-color: #72d9ff;
+    --ac-global-color-primary: rgb(114, 217, 255);
+    --ac-global-color-primary-900: rgba(114, 217, 255, 0.9);
+    --ac-global-color-primary-700: rgba(114, 217, 255, 0.7);
 
     // These colors are legacy
     --ac-global-color-gray-900: #181b1f;
@@ -332,7 +334,7 @@ export const darkThemeCSS = css`
     --ac-global-color-magenta-200: #6a0034;
     --ac-global-color-magenta-300: #850041;
     --ac-global-color-magenta-400: #a1004e;
-    --ac-global-color-magenta-500: #ba165d;
+    --ac-global-color-magenta-500: rgb(186, 22, 93);
     --ac-global-color-magenta-600: #d12b72;
     --ac-global-color-magenta-700: #e34589;
     --ac-global-color-magenta-800: #f1619c;
@@ -342,9 +344,13 @@ export const darkThemeCSS = css`
     --ac-global-color-magenta-1200: #ffcadd;
     --ac-global-color-magenta-1300: #ffdde9;
     --ac-global-color-magenta-1400: #ffecf3;
-    --ac-global-color-danger: #f85149;
-    --ac-global-color-success: #7ee787;
-    --ac-global-color-warning: #e69958;
+
+    // Semantic Colors
+    --ac-global-color-danger: rgb(248, 81, 73);
+    --ac-global-color-danger-900: rgba(248, 81, 73, 0.9);
+    --ac-global-color-danger-700: rgba(248, 81, 73, 0.7);
+    --ac-global-color-success: rgb(126, 231, 135);
+    --ac-global-color-warning: rgb(230, 153, 88);
 
     --ac-global-text-color-900: rgba(255, 255, 255, 0.9);
     --ac-global-text-color-700: rgba(255, 255, 255, 0.7);
@@ -358,7 +364,9 @@ export const lightThemeCSS = css`
     /* Colors */
 
     // The primary color tint for  the apps
-    --ac-global-primary-color: #42cafb;
+    --ac-global-color-primary: rgb(39, 156, 199);
+    --ac-global-color-primary-900: rgb(39, 156, 199, 0.9);
+    --ac-global-color-primary-700: rgb(39, 156, 199, 0.7);
 
     // The newer grays (grey)
     --ac-global-color-grey-50: #ffffff;
@@ -555,9 +563,11 @@ export const lightThemeCSS = css`
     --ac-global-color-magenta-1200: #700037;
     --ac-global-color-magenta-1300: #54032a;
     --ac-global-color-magenta-1400: #3c061d;
-    --ac-global-color-danger: #f85149;
-    --ac-global-color-success: #7ee787;
-    --ac-global-color-warning: #e69958;
+    --ac-global-color-danger: rgb(248, 81, 73);
+    --ac-global-color-danger-900: rgba(248, 81, 73, 0.9);
+    --ac-global-color-danger-700: rgba(248, 81, 73, 0.7);
+    --ac-global-color-success: rgb(126, 231, 135);
+    --ac-global-color-warning: rgb(230, 153, 88);
 
     --ac-global-text-color-900: rgba(0, 0, 0, 0.9);
     --ac-global-text-color-700: rgba(0, 0, 0, 0.7);
@@ -581,7 +591,7 @@ export const derivedCSS = css`
     // Styles for text fields etc
     --ac-global-input-field-border-color: var(--ac-global-color-grey-400);
     --ac-global-input-field-border-color-hover: var(--ac-global-color-grey-300);
-    --ac-global-input-field-border-color-active: var(--ac-global-primary-color);
+    --ac-global-input-field-border-color-active: var(--ac-global-color-primary);
     --ac-global-input-field-background-color: var(--ac-global-color-grey-200);
     --ac-global-input-field-background-color-active: var(
       --ac-global-color-grey-300
@@ -593,6 +603,16 @@ export const derivedCSS = css`
     --ac-global-menu-item-background-color-hover: var(
       --ac-global-color-grey-300
     );
+
+    // Styles for buttons
+    --ac-global-button-primary-background-color: var(
+      --ac-global-color-primary-700
+    );
+    --ac-global-button-primary-border-color: var(--ac-global-color-primary);
+    --ac-global-button-danger-background-color: var(
+      --ac-global-color-danger-700
+    );
+    --ac-global-button-danger-border-color: var(--ac-global-color-danger);
 
     --ac-global-rounding-small: var(--ac-global-dimension-static-size-50);
     --ac-global-rounding-medium: var(--ac-global-dimension-static-size-100);

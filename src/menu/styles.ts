@@ -25,7 +25,7 @@ export const menuItemCSS = css`
 
   &.is-selected {
     i {
-      color: var(--ac-global-primary-color);
+      color: var(--ac-global-color-primary);
     }
   }
   &.is-hovered,

@@ -35,8 +35,8 @@ export const buttonCSS = css`
     padding: ${theme.spacing.padding4}px ${theme.spacing.padding4}px;
   }
   &[data-variant='primary'] {
-    background-color: ${transparentize(0.1, theme.colors.arizeBlue)};
-    border-color: ${theme.components.button.primaryBorderColor};
+    background-color: var(--ac-global-button-primary-background-color);
+    border-color: var(--ac-global-button-primary-border-color);
     color: var(--ac-global-color-white-900);
     &:hover:not([disabled]) {
       background-color: ${theme.components.button.primaryHoverBackgroundColor};
@@ -45,6 +45,7 @@ export const buttonCSS = css`
   &[data-variant='success'] {
     background-color: ${theme.components.button.successColor};
     border-color: ${theme.components.button.successBorderColor};
+    color: var(--ac-global-color-white-900);
     &:hover:not([disabled]) {
       background-color: ${theme.components.button.successHoverBackgroundColor};
     }
@@ -65,8 +66,9 @@ export const buttonCSS = css`
     }
   }
   &[data-variant='danger'] {
-    background-color: ${transparentize(0.3, theme.colors.statusDanger)};
-    border-color: ${theme.components.button.dangerBorderColor};
+    background-color: var(--ac-global-button-danger-background-color);
+    border-color: var(--ac-global-button-danger-border-color);
+    color: var(--ac-global-color-white-900);
     &:hover:not([disabled]) {
       background-color: ${theme.components.button.dangerHoverBackgroundColor};
     }

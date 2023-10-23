@@ -112,7 +112,7 @@ const quietButtonCSS = css`
   }
   &.is-active,
   &:focus {
-    border-bottom: 1px solid var(--ac-global-primary-color);
+    border-bottom: 1px solid var(--ac-global-color-primary);
   }
   &[disabled] {
     cursor: default;
