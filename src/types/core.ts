@@ -326,4 +326,5 @@ export type TextColorValue =
   | 'text-700'
   | 'text-300'
   | 'inherit'
+  | DesignationColorValue
   | ColorValue;
