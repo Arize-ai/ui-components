@@ -1,6 +1,5 @@
 import { css } from '@emotion/react';
 import theme from '../theme';
-import { transparentize } from 'polished';
 
 export const buttonCSS = css`
   border: 1px solid var(--ac-global-border-color-default);
