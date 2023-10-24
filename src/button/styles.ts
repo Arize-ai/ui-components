@@ -38,15 +38,24 @@ export const buttonCSS = css`
     border-color: var(--ac-global-button-primary-border-color);
     color: var(--ac-global-color-white-900);
     &:hover:not([disabled]) {
-      background-color: ${theme.components.button.primaryHoverBackgroundColor};
+      background-color: var(--ac-global-button-primary-background-color-hover);
+    }
+  }
+  &[data-variant='danger'] {
+    background-color: var(--ac-global-button-danger-background-color);
+    border-color: var(--ac-global-button-danger-border-color);
+    color: var(--ac-global-color-white-900);
+    &:hover:not([disabled]) {
+      background-color: var(--ac-global-button-danger-background-color-hover);
     }
   }
   &[data-variant='success'] {
-    background-color: ${theme.components.button.successColor};
-    border-color: ${theme.components.button.successBorderColor};
+    background-color: var(--ac-global-button-success-background-color);
+    border-color: var(--ac-global-button-success-border-color);
+    color: var(--ac-global-color-white-900);
     color: var(--ac-global-color-white-900);
     &:hover:not([disabled]) {
-      background-color: ${theme.components.button.successHoverBackgroundColor};
+      background-color: var(--ac-global-button-success-background-color-hover);
     }
   }
   &[data-variant='default'] {
@@ -64,14 +73,7 @@ export const buttonCSS = css`
       background-color: ${theme.components.button.defaultHoverBackgroundColor};
     }
   }
-  &[data-variant='danger'] {
-    background-color: var(--ac-global-button-danger-background-color);
-    border-color: var(--ac-global-button-danger-border-color);
-    color: var(--ac-global-color-white-900);
-    &:hover:not([disabled]) {
-      background-color: ${theme.components.button.dangerHoverBackgroundColor};
-    }
-  }
+
   &[data-childless='false'] > i,
   & > .ac-spinner {
     margin-right: ${theme.spacing.margin4}px;

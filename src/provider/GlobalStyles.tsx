@@ -345,12 +345,16 @@ export const darkThemeCSS = css`
     --ac-global-color-magenta-1300: #ffdde9;
     --ac-global-color-magenta-1400: #ffecf3;
 
-    // Semantic Colors
+    // Semantic colors
     --ac-global-color-danger: rgb(248, 81, 73);
     --ac-global-color-danger-900: rgba(248, 81, 73, 0.9);
     --ac-global-color-danger-700: rgba(248, 81, 73, 0.7);
     --ac-global-color-success: rgb(126, 231, 135);
+    --ac-global-color-success-900: rgba(126, 231, 135, 0.9);
+    --ac-global-color-success-700: rgba(126, 231, 135, 0.7);
     --ac-global-color-warning: rgb(230, 153, 88);
+    --ac-global-color-warning-900: rgba(230, 153, 88, 0.9);
+    --ac-global-color-warning-700: rgba(230, 153, 88, 0.7);
 
     --ac-global-text-color-900: rgba(255, 255, 255, 0.9);
     --ac-global-text-color-700: rgba(255, 255, 255, 0.7);
@@ -563,11 +567,17 @@ export const lightThemeCSS = css`
     --ac-global-color-magenta-1200: #700037;
     --ac-global-color-magenta-1300: #54032a;
     --ac-global-color-magenta-1400: #3c061d;
+
+    // Semantic colors
     --ac-global-color-danger: rgb(248, 81, 73);
     --ac-global-color-danger-900: rgba(248, 81, 73, 0.9);
     --ac-global-color-danger-700: rgba(248, 81, 73, 0.7);
     --ac-global-color-success: rgb(126, 231, 135);
+    --ac-global-color-success-900: rgba(126, 231, 135, 0.9);
+    --ac-global-color-success-700: rgba(126, 231, 135, 0.7);
     --ac-global-color-warning: rgb(230, 153, 88);
+    --ac-global-color-warning-900: rgba(230, 153, 88, 0.9);
+    --ac-global-color-warning-700: rgba(230, 153, 88, 0.7);
 
     --ac-global-text-color-900: rgba(0, 0, 0, 0.9);
     --ac-global-text-color-700: rgba(0, 0, 0, 0.7);
@@ -608,11 +618,24 @@ export const derivedCSS = css`
     --ac-global-button-primary-background-color: var(
       --ac-global-color-primary-700
     );
+    --ac-global-button-primary-background-color-hover: var(
+      --ac-global-color-primary-900
+    );
     --ac-global-button-primary-border-color: var(--ac-global-color-primary);
     --ac-global-button-danger-background-color: var(
       --ac-global-color-danger-700
     );
+    --ac-global-button-danger-background-color-hover: var(
+      --ac-global-color-danger-900
+    );
     --ac-global-button-danger-border-color: var(--ac-global-color-danger);
+    --ac-global-button-success-background-color: var(
+      --ac-global-color-success-700
+    );
+    --ac-global-button-success-background-color-hover: var(
+      --ac-global-color-success-900
+    );
+    --ac-global-button-success-border-color: var(--ac-global-color-success);
 
     --ac-global-rounding-small: var(--ac-global-dimension-static-size-50);
     --ac-global-rounding-medium: var(--ac-global-dimension-static-size-100);

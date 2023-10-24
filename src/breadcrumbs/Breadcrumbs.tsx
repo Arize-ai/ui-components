@@ -57,7 +57,7 @@ const ulCSS = css`
   padding: 0;
   list-style-type: none;
   display: flex;
-  color: ${theme.textColors.white70};
+  color: var(--ac-global-text-color-700);
   li:last-of-type {
     font-weight: ${theme.typography.weights.heavy};
     color: var(--ac-global-text-color-900);
@@ -83,7 +83,7 @@ const liCSS = css`
     outline: none;
   }
   .ac-icon-wrap {
-    color: ${theme.textColors.white70};
+    color: var(--ac-global-text-color-700);
   }
 `;
 
