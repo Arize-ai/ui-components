@@ -113,7 +113,7 @@ function Dialog(props: DialogProps, ref: DOMRef) {
             justify-content: space-between;
             align-items: center;
             padding: ${theme.spacing.padding8}px ${theme.spacing.padding16}px;
-            border-bottom: 1px solid ${theme.colors.gray500};
+            border-bottom: 1px solid var(--ac-global-border-color-dark);
             flex: none;
           `}
         >

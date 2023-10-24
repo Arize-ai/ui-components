@@ -2,7 +2,7 @@ import { css } from '@emotion/react';
 import { useModal, useOverlay, usePreventScroll } from '@react-aria/overlays';
 import { mergeProps } from '@react-aria/utils';
 import React, { forwardRef, HTMLAttributes, ReactNode, RefObject } from 'react';
-import theme from '../theme';
+
 import { DOMRef, ModalProps } from '../types';
 import { classNames, useDOMRef } from '../utils';
 import { Overlay } from './Overlay';
@@ -34,11 +34,11 @@ const enterTransitionAnimationTime = '0.2s';
 const enterTransitionDelayAnimationTime = '0.2s';
 
 const modalCSS = css`
-  background-color: ${theme.components.modal.backgroundColor};
+  background-color: var(--ac-global-background-color-dark);
   pointer-events: auto;
   opacity: 0;
   &.ac-modal--slideOver {
-    border-left: 1px solid ${theme.colors.gray500};
+    border-left: 1px solid var(--ac-global-border-color-dark);
     box-shadow: -10px 0px 30px 10px rgba(0, 0, 0, 0.1);
     /* Start offset by the animation distance */
     transform: translateX(500px);
@@ -59,7 +59,7 @@ const modalCSS = css`
   }
 
   &.ac-modal--modal {
-    border: 1px solid var(--ac-global-color-gray-500);
+    border: 1px solid var(--ac-global-border-color-light);
     border-radius: var(--ac-global-rounding-medium);
     box-shadow: -10px 0px 30px 10px rgba(0, 0, 0, 0.1);
     /* Start offset by the animation distance */

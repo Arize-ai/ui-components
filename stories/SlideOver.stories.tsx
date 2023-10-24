@@ -9,6 +9,7 @@ import {
   Dialog,
   ButtonGroup,
   Card,
+  Flex,
 } from '../src';
 import { DialogProps } from '../src/types/dialog';
 import {
@@ -17,6 +18,7 @@ import {
   Icon,
 } from '../src/icon';
 import { css } from '@emotion/react';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const meta: Meta = {
   title: 'SlideOver',
@@ -44,10 +46,11 @@ const content = (
     css={css`
       flex: 1 1 auto;
       overflow-y: scroll;
+      padding: var(--ac-global-dimension-static-size-100);
     `}
     data-testid="scroll-container"
   >
-    <div data-testid="scroll-content">
+    <Flex direction="column" gap="size-100">
       <Card title="Section 1">
         <Text>hello</Text>
       </Card>
@@ -75,7 +78,7 @@ const content = (
       <Card title="Section 9">
         <Text>hello</Text>
       </Card>
-    </div>
+    </Flex>
   </div>
 );
 
@@ -84,7 +87,7 @@ const Template: Story<DialogProps> = args => {
   props.title = props.title || 'Title';
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <Button variant="primary" onClick={() => setIsOpen(true)}>
         Open
       </Button>
@@ -95,7 +98,7 @@ const Template: Story<DialogProps> = args => {
       >
         {isOpen && <Dialog {...props}>{content}</Dialog>}
       </DialogContainer>
-    </Provider>
+    </ThemeToggleWrap>
   );
 };
 
@@ -107,7 +110,7 @@ export const Paginated: Story<DialogProps> = args => {
   const { isDismissable, onDismiss, ...props } = args;
   props.title = props.title || 'Title';
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <DialogContainer type="slideOver" isDismissable onDismiss={() => {}}>
         <Dialog
           {...props}
@@ -129,6 +132,6 @@ export const Paginated: Story<DialogProps> = args => {
           {content}
         </Dialog>
       </DialogContainer>
-    </Provider>
+    </ThemeToggleWrap>
   );
 };
