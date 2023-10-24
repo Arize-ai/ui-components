@@ -579,13 +579,13 @@ export const lightThemeCSS = css`
 export const derivedCSS = css`
   :root {
     --ac-global-background-color-default: var(--ac-global-color-grey-100);
-    --ac-global-background-color-light: var(--ac-global-color-grey-300);
-    --ac-global-background-color-light-hover: var(--ac-global-color-grey-400);
+    --ac-global-background-color-light: var(--ac-global-color-grey-200);
+    --ac-global-background-color-light-hover: var(--ac-global-color-grey-300);
     --ac-global-background-color-dark: var(--ac-global-color-grey-100);
     --ac-global-background-color-danger: var(--ac-global-color-danger);
 
     --ac-global-border-color-default: var(--ac-global-color-grey-300);
-    --ac-global-border-color-light: var(--ac-global-color-grey-500);
+    --ac-global-border-color-light: var(--ac-global-color-grey-400);
     --ac-global-border-color-dark: var(--ac-global-color-grey-300);
 
     // Styles for text fields etc

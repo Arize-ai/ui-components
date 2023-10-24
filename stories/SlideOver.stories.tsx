@@ -10,6 +10,7 @@ import {
   ButtonGroup,
   Card,
   Flex,
+  CardProps,
 } from '../src';
 import { DialogProps } from '../src/types/dialog';
 import {
@@ -41,6 +42,12 @@ const meta: Meta = {
 
 export default meta;
 
+const cardProps: Partial<CardProps> = {
+  borderColor: 'light',
+  backgroundColor: 'light',
+  variant: 'compact',
+};
+
 const content = (
   <div
     css={css`
@@ -51,31 +58,31 @@ const content = (
     data-testid="scroll-container"
   >
     <Flex direction="column" gap="size-100">
-      <Card title="Section 1">
+      <Card title="Section 1" {...cardProps}>
         <Text>hello</Text>
       </Card>
-      <Card title="Section 2">
+      <Card title="Section 2" {...cardProps}>
         <Text>hello</Text>
       </Card>
-      <Card title="Section 3">
+      <Card title="Section 3" {...cardProps}>
         <Text>hello</Text>
       </Card>
-      <Card title="Section 4">
+      <Card title="Section 4" {...cardProps}>
         <Text>hello</Text>
       </Card>
-      <Card title="Section 5">
+      <Card title="Section 5" {...cardProps}>
         <Text>hello</Text>
       </Card>
-      <Card title="Section 6">
+      <Card title="Section 6" {...cardProps}>
         <Text>hello</Text>
       </Card>
-      <Card title="Section 7">
+      <Card title="Section 7" {...cardProps}>
         <Text>hello</Text>
       </Card>
-      <Card title="Section 8">
+      <Card title="Section 8" {...cardProps}>
         <Text>hello</Text>
       </Card>
-      <Card title="Section 9">
+      <Card title="Section 9" {...cardProps}>
         <Text>hello</Text>
       </Card>
     </Flex>
