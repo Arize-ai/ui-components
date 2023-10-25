@@ -13,6 +13,7 @@ import {
   Provider,
 } from '../src';
 import { css } from '@emotion/react';
+import { ThemeSplitView } from './components/ThemeSplitView';
 
 const meta: Meta = {
   title: 'TextField',
@@ -57,7 +58,7 @@ const contextualHelp = (
  * A gallery of all the variants
  */
 export const Gallery = () => (
-  <Provider>
+  <ThemeSplitView>
     <Form>
       <TextField label="Name" placeholder="enter your name" />
       <TextField
@@ -116,7 +117,7 @@ export const Gallery = () => (
         width={800}
       />
     </Form>
-  </Provider>
+  </ThemeSplitView>
 );
 
 const Template: Story<TextFieldProps> = args => (

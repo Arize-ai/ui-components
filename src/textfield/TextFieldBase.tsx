@@ -138,7 +138,7 @@ const textFieldBaseCSS = (styleProps: StyleProps) => css`
     flex: 1 1 auto;
     box-sizing: border-box;
     background-color: transparent;
-    color: var(--ac-field-text-color-override, --ac-global-text-color-900);
+    color: var(--ac-field-text-color-override, var(--ac-global-text-color-900));
     height: ${styleProps.height ?? theme.singleLineHeight}px;
     transition: all 0.2s ease-in-out;
     /** provide an alternate highlight */
@@ -235,7 +235,7 @@ const standardTextfieldBaseCSS = css`
     background-color: var(--ac-global-input-field-background-color);
     opacity: ${theme.opacity.disabled};
     .ac-textfield__input {
-      color: ${theme.textColors.white50};
+      color: var(--ac-global-text-color-500);
     }
   }
   .ac-textfield__input {
