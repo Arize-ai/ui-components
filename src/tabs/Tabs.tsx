@@ -11,7 +11,6 @@ import { Text } from '../content';
 import { css } from '@emotion/react';
 import theme from '../theme';
 import { Orientation } from '../types/orientation';
-import { transparentize } from 'polished';
 
 type Tab = TabPaneProps & {
   key: string;

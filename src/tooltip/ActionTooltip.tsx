@@ -5,11 +5,7 @@ import { PlacementAxis, DOMRef } from '../types';
 import { mergeProps } from '@react-aria/utils';
 import { TooltipContext } from './context';
 import { Text } from '../content';
-import {
-  actionTooltipCSS,
-  actionTooltipHeaderWrap,
-  actionTooltipHeaderWrapCSS,
-} from './styles';
+import { actionTooltipCSS, actionTooltipHeaderWrapCSS } from './styles';
 
 interface ActionTooltipProps extends HTMLProps<HTMLDivElement> {
   isOpen?: boolean;
