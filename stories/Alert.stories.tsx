@@ -55,28 +55,28 @@ export const gallery = () => {
         <Alert
           variant="info"
           title="Title"
-          extra={<Button variant="primary">Perform Action</Button>}
+          extra={<Button variant="default">Perform Action</Button>}
         >
           Alert message goes here
         </Alert>
         <Alert
           variant="warning"
           title="Title"
-          extra={<Button variant="primary">Perform Action</Button>}
+          extra={<Button variant="default">Perform Action</Button>}
         >
           Alert message goes here
         </Alert>
         <Alert
           variant="danger"
           title="Title"
-          extra={<Button variant="primary">Perform Action</Button>}
+          extra={<Button variant="default">Perform Action</Button>}
         >
           Alert message goes here
         </Alert>
         <Alert
           variant="success"
           title="Title"
-          extra={<Button variant="primary">Perform Action</Button>}
+          extra={<Button variant="default">Perform Action</Button>}
         >
           Alert message goes here
         </Alert>
@@ -124,7 +124,7 @@ export const gallery = () => {
           variant="info"
           dismissable
           banner
-          extra={<Button variant="primary">Perform Action</Button>}
+          extra={<Button variant="default">Perform Action</Button>}
         >
           Alert message goes here
         </Alert>
@@ -132,7 +132,7 @@ export const gallery = () => {
           variant="warning"
           dismissable
           banner
-          extra={<Button variant="primary">Perform Action</Button>}
+          extra={<Button variant="default">Perform Action</Button>}
         >
           Alert message goes here
         </Alert>
@@ -140,7 +140,7 @@ export const gallery = () => {
           variant="danger"
           dismissable
           banner
-          extra={<Button variant="primary">Perform Action</Button>}
+          extra={<Button variant="default">Perform Action</Button>}
         >
           Alert message goes here
         </Alert>
@@ -148,7 +148,7 @@ export const gallery = () => {
           variant="success"
           dismissable
           banner
-          extra={<Button variant="primary">Perform Action</Button>}
+          extra={<Button variant="default">Perform Action</Button>}
         >
           Alert message goes here
         </Alert>

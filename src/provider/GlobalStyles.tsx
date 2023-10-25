@@ -352,15 +352,22 @@ export const darkThemeCSS = css`
     --ac-global-color-magenta-1400: #ffecf3;
 
     // Semantic colors
+    --ac-global-color-info: rgb(114, 217, 255);
+    --ac-global-color-info-900: rgba(114, 217, 255, 0.9);
+    --ac-global-color-info-700: rgba(114, 217, 255, 0.7);
+    --ac-global-color-info-500: rgba(114, 217, 255, 0.5);
     --ac-global-color-danger: rgb(248, 81, 73);
     --ac-global-color-danger-900: rgba(248, 81, 73, 0.9);
     --ac-global-color-danger-700: rgba(248, 81, 73, 0.7);
+    --ac-global-color-danger-500: rgba(248, 81, 73, 0.5);
     --ac-global-color-success: rgb(126, 231, 135);
     --ac-global-color-success-900: rgba(126, 231, 135, 0.9);
     --ac-global-color-success-700: rgba(126, 231, 135, 0.7);
+    --ac-global-color-success-500: rgba(126, 231, 135, 0.5);
     --ac-global-color-warning: rgb(230, 153, 88);
     --ac-global-color-warning-900: rgba(230, 153, 88, 0.9);
     --ac-global-color-warning-700: rgba(230, 153, 88, 0.7);
+    --ac-global-color-warning-500: rgba(230, 153, 88, 0.5);
 
     --ac-global-text-color-900: rgba(255, 255, 255, 0.9);
     --ac-global-text-color-700: rgba(255, 255, 255, 0.7);
@@ -375,9 +382,9 @@ export const lightThemeCSS = css`
     /* Colors */
 
     // The primary color tint for  the apps
-    --ac-global-color-primary: rgb(0, 193, 247);
-    --ac-global-color-primary-900: rgb(0, 193, 247, 0.9);
-    --ac-global-color-primary-700: rgb(0, 193, 247, 0.7);
+    --ac-global-color-primary: rgb(2, 173, 221);
+    --ac-global-color-primary-900: rgb(2, 173, 221, 0.9);
+    --ac-global-color-primary-700: rgb(2, 173, 221, 0.7);
 
     // The newer grays (grey)
     --ac-global-color-grey-50: #ffffff;
@@ -576,15 +583,22 @@ export const lightThemeCSS = css`
     --ac-global-color-magenta-1400: #3c061d;
 
     // Semantic colors
-    --ac-global-color-danger: rgb(248, 81, 73);
-    --ac-global-color-danger-900: rgba(248, 81, 73, 0.9);
-    --ac-global-color-danger-700: rgba(248, 81, 73, 0.7);
-    --ac-global-color-success: rgb(126, 231, 135);
-    --ac-global-color-success-900: rgba(126, 231, 135, 0.9);
-    --ac-global-color-success-700: rgba(126, 231, 135, 0.7);
-    --ac-global-color-warning: rgb(230, 153, 88);
-    --ac-global-color-warning-900: rgba(230, 153, 88, 0.9);
-    --ac-global-color-warning-700: rgba(230, 153, 88, 0.7);
+    --ac-global-color-info: rgb(2, 173, 221);
+    --ac-global-color-info-900: rgba(2, 173, 221, 0.9);
+    --ac-global-color-info-700: rgba(2, 173, 221, 0.7);
+    --ac-global-color-info-500: rgba(2, 173, 221, 0.5);
+    --ac-global-color-danger: rgb(218, 11, 0);
+    --ac-global-color-danger-900: rgba(218, 11, 0, 0.9);
+    --ac-global-color-danger-700: rgba(218, 11, 0, 0.7);
+    --ac-global-color-danger-500: rgba(218, 11, 0, 0.5);
+    --ac-global-color-success: rgb(17, 191, 69);
+    --ac-global-color-success-900: rgba(17, 191, 69, 0.9);
+    --ac-global-color-success-700: rgba(17, 191, 69, 0.7);
+    --ac-global-color-success-500: rgba(17, 191, 69, 0.5);
+    --ac-global-color-warning: rgb(224, 102, 2);
+    --ac-global-color-warning-900: rgba(224, 102, 2, 0.9);
+    --ac-global-color-warning-700: rgba(224, 102, 2, 0.7);
+    --ac-global-color-warning-500: rgba(224, 102, 2, 0.5);
 
     --ac-global-text-color-900: rgba(0, 0, 0, 0.9);
     --ac-global-text-color-700: rgba(0, 0, 0, 0.7);
