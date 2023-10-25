@@ -16,6 +16,7 @@ import { withDesign } from 'storybook-addon-designs';
 import { colorValue } from '../src/utils';
 import { globalColors } from './constants';
 import { css } from '@emotion/react';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const listStyle: CSSProperties = {
   listStyle: 'none',
@@ -95,24 +96,6 @@ function Colors() {
     }
   });
 
-  const components = Object.keys(theme.components).map(key => {
-    const colors = Object.keys(theme.components[key]);
-    return (
-      <section>
-        <Heading>{key}</Heading>
-        <ul style={listStyle}>
-          {colors.map((c, i) => (
-            <li key={i}>
-              {c}
-              <Color color={theme.components[key][c]} name={c} />
-            </li>
-          ))}
-        </ul>
-        z
-      </section>
-    );
-  });
-
   const designationColorKeys = Object.keys(designationColors);
   const designations = (
     <section>
@@ -163,7 +146,7 @@ function Colors() {
   );
 
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <main>
         <ul style={listStyle}>
           {colorsArray.map((el, i) => (
@@ -171,12 +154,11 @@ function Colors() {
           ))}
         </ul>
         <br />
-        {colorPaletteSection}
         {designations}
         {globalColorsEl}
-        {components}
+        {colorPaletteSection}
       </main>
-    </Provider>
+    </ThemeToggleWrap>
   );
 }
 

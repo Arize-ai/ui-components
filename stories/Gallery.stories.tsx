@@ -43,7 +43,8 @@ const meta: Meta = {
     controls: { expanded: true },
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=1398%3A4061',
+      url:
+        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=1398%3A4061',
     },
   },
 };
@@ -147,8 +148,8 @@ export function OverviewPage() {
                     <Flex direction="column">
                       <Heading level={3}>Setup Monitoring</Heading>
                       <Text textSize="medium">
-                        Recieve alerts when your model experiences drift,
-                        dataquality, and performance degredations.
+                        Receive alerts when your model experiences drift, data
+                        quality, and performance degradations.
                       </Text>
                     </Flex>
                   </Flex>
@@ -173,7 +174,7 @@ export function OverviewPage() {
   );
 }
 
-function AccordionDimentions() {
+function AccordionDimensions() {
   return (
     <Accordion>
       <AccordionItem
@@ -206,22 +207,22 @@ function ModelSchemaCard() {
     <TabbedCard title="Model Schema" extra={<CompactSearchField />}>
       <Tabs>
         <TabPane name="All">
-          <AccordionDimentions />
+          <AccordionDimensions />
         </TabPane>
         <TabPane name="Features">
-          <AccordionDimentions />
+          <AccordionDimensions />
         </TabPane>
         <TabPane name="Embeddings">
-          <AccordionDimentions />
+          <AccordionDimensions />
         </TabPane>
         <TabPane name="Tags">
-          <AccordionDimentions />
+          <AccordionDimensions />
         </TabPane>
         <TabPane name="Predictions">
-          <AccordionDimentions />
+          <AccordionDimensions />
         </TabPane>
         <TabPane name="Actuals">
-          <AccordionDimentions />
+          <AccordionDimensions />
         </TabPane>
       </Tabs>
     </TabbedCard>

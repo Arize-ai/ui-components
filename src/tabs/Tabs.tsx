@@ -34,8 +34,8 @@ const tabListCSS = css`
     --scope-border-color,
     var(--ac-global-border-color-default)
   );
-  --tab-hover-color: ${transparentize(0.2, theme.colors.arizeLightBlue)};
-  --tab-selected-border-color: ${theme.colors.arizeLightBlue};
+  --tab-hover-color: var(--ac-global-color-primary-900);
+  --tab-selected-border-color: var(--ac-global-color-primary);
 
   .ac-tabs__tab-list-item {
     box-sizing: border-box; /* place the border inside */

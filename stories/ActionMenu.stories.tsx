@@ -32,8 +32,8 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<DropdownProps> = args => (
-  <ThemeToggleWrap>
+const Template: Story<DropdownProps> = args => {
+  const content = (
     <div
       css={css`
         margin: 24px;
@@ -186,7 +186,9 @@ const Template: Story<DropdownProps> = args => (
         </ActionMenu>
       </div>
     </div>
-  </ThemeToggleWrap>
-);
+  );
+
+  return <ThemeToggleWrap>{content}</ThemeToggleWrap>;
+};
 
 export const Default = Template.bind({});

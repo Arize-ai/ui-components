@@ -4,6 +4,8 @@ import { Meta, Story } from '@storybook/react';
 import { Alert, AlertProps } from '../src/alert';
 import { Button } from '../src/button';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
+import { ThemeSplitView } from './components/ThemeSplitView';
+import { Flex } from '../src';
 const meta: Meta = {
   title: 'Alert',
   component: Alert,
@@ -30,14 +32,8 @@ const Template: Story<AlertProps> = args => <Alert {...args} />;
 
 export const gallery = () => {
   return (
-    <ThemeToggleWrap>
-      <div
-        css={css`
-          .ac-alert + .ac-alert {
-            margin-top: 8px;
-          }
-        `}
-      >
+    <ThemeSplitView>
+      <Flex direction="column" gap="size-100">
         <Alert variant="info">Alert message goes here</Alert>
         <Alert variant="warning">Alert message goes here</Alert>
         <Alert variant="danger">Alert message goes here</Alert>
@@ -156,7 +152,7 @@ export const gallery = () => {
         >
           Alert message goes here
         </Alert>
-      </div>
-    </ThemeToggleWrap>
+      </Flex>
+    </ThemeSplitView>
   );
 };

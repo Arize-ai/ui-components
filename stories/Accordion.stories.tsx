@@ -5,12 +5,12 @@ import {
   AccordionProps,
   AccordionItem,
   Card,
-  Provider,
   Counter,
 } from '../src';
 import { withDesign } from 'storybook-addon-designs';
 import InfoTip from './components/InfoTip';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
+import { ThemeSplitView } from './components/ThemeSplitView';
 
 const meta: Meta = {
   title: 'Accordion',
@@ -39,8 +39,8 @@ const AccordionContents = () => (
 
 export default meta;
 
-const Template: Story<AccordionProps> = args => (
-  <ThemeToggleWrap>
+const Template: Story<AccordionProps> = args => {
+  const content = (
     <Card
       title="Model Health"
       subTitle={'An overview of the the health of your model'}
@@ -68,8 +68,9 @@ const Template: Story<AccordionProps> = args => (
         </AccordionItem>
       </Accordion>
     </Card>
-  </ThemeToggleWrap>
-);
+  );
+  return <ThemeSplitView>{content}</ThemeSplitView>;
+};
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing

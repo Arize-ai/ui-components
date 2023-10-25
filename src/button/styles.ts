@@ -36,7 +36,7 @@ export const buttonCSS = css`
   &[data-variant='primary'] {
     background-color: var(--ac-global-button-primary-background-color);
     border-color: var(--ac-global-button-primary-border-color);
-    color: var(--ac-global-color-white-900);
+    color: var(--ac-global-static-color-white-900);
     &:hover:not([disabled]) {
       background-color: var(--ac-global-button-primary-background-color-hover);
     }
@@ -44,7 +44,7 @@ export const buttonCSS = css`
   &[data-variant='danger'] {
     background-color: var(--ac-global-button-danger-background-color);
     border-color: var(--ac-global-button-danger-border-color);
-    color: var(--ac-global-color-white-900);
+    color: var(--ac-global-static-color-white-900);
     &:hover:not([disabled]) {
       background-color: var(--ac-global-button-danger-background-color-hover);
     }
@@ -52,8 +52,8 @@ export const buttonCSS = css`
   &[data-variant='success'] {
     background-color: var(--ac-global-button-success-background-color);
     border-color: var(--ac-global-button-success-border-color);
-    color: var(--ac-global-color-white-900);
-    color: var(--ac-global-color-white-900);
+    color: var(--ac-global-static-color-white-900);
+    color: var(--ac-global-static-color-white-900);
     &:hover:not([disabled]) {
       background-color: var(--ac-global-button-success-background-color-hover);
     }

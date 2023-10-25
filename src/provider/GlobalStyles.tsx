@@ -1,5 +1,6 @@
 import { Global, css } from '@emotion/react';
 import { useProvider } from './Provider';
+import { ProviderTheme } from '../types';
 
 /**
  * Medium size root CSS variables
@@ -58,6 +59,15 @@ export const mediumRootCSS = css`
     --ac-global-dimension-size-4600: 368px;
     --ac-global-dimension-size-5000: 400px;
     --ac-global-dimension-size-6000: 480px;
+  }
+`;
+
+const staticCSS = css`
+  :root {
+    // static colors
+    --ac-global-static-color-white-900: rgba(255, 255, 255, 0.9);
+    --ac-global-static-color-white-700: rgba(255, 255, 255, 0.7);
+    --ac-global-static-color-white-300: rgba(255, 255, 255, 0.3);
   }
 `;
 
@@ -125,7 +135,8 @@ const dimensionsCSS = css`
 `;
 
 export const darkThemeCSS = css`
-  :root {
+  :root,
+  .ac-theme--dark {
     /* Colors */
 
     // The primary color tint for  the apps
@@ -143,11 +154,6 @@ export const darkThemeCSS = css`
     --ac-global-color-gray-300: #4a5057;
     --ac-global-color-gray-200: #585d64;
     --ac-global-color-gray-100: #666b71;
-
-    // static colors
-    --ac-global-color-white-900: rgba(255, 255, 255, 0.9);
-    --ac-global-color-white-700: rgba(255, 255, 255, 0.7);
-    --ac-global-color-white-300: rgba(255, 255, 255, 0.3);
 
     // The newer grays (grey)
     --ac-global-color-grey-50: #000000;
@@ -364,13 +370,14 @@ export const darkThemeCSS = css`
 `;
 
 export const lightThemeCSS = css`
-  :root {
+  :root,
+  .ac-theme--light {
     /* Colors */
 
     // The primary color tint for  the apps
-    --ac-global-color-primary: rgb(39, 156, 199);
-    --ac-global-color-primary-900: rgb(39, 156, 199, 0.9);
-    --ac-global-color-primary-700: rgb(39, 156, 199, 0.7);
+    --ac-global-color-primary: rgb(0, 193, 247);
+    --ac-global-color-primary-900: rgb(0, 193, 247, 0.9);
+    --ac-global-color-primary-700: rgb(0, 193, 247, 0.7);
 
     // The newer grays (grey)
     --ac-global-color-grey-50: #ffffff;
@@ -586,8 +593,9 @@ export const lightThemeCSS = css`
   }
 `;
 
-export const derivedCSS = css`
-  :root {
+export const derivedCSS = (theme: ProviderTheme) => css`
+  :root,
+  .ac-theme--${theme} {
     --ac-global-background-color-default: var(--ac-global-color-grey-100);
     --ac-global-background-color-light: var(--ac-global-color-grey-200);
     --ac-global-background-color-light-hover: var(--ac-global-color-grey-300);
@@ -637,6 +645,10 @@ export const derivedCSS = css`
     );
     --ac-global-button-success-border-color: var(--ac-global-color-success);
 
+    // Style for tooltips
+    --ac-global-tooltip-background-color: var(--ac-global-color-grey-100);
+    --ac-global-tooltip-border-color: var(--ac-global-color-grey-300);
+
     --ac-global-rounding-small: var(--ac-global-dimension-static-size-50);
     --ac-global-rounding-medium: var(--ac-global-dimension-static-size-100);
 
@@ -672,9 +684,18 @@ export const derivedCSS = css`
   }
 `;
 export function GlobalStyles() {
-  const { theme } = useProvider();
+  let { theme } = useProvider();
+  theme = theme || 'dark';
   const themeCSS = theme === 'dark' ? darkThemeCSS : lightThemeCSS;
   return (
-    <Global styles={css(dimensionsCSS, themeCSS, derivedCSS, mediumRootCSS)} />
+    <Global
+      styles={css(
+        dimensionsCSS,
+        staticCSS,
+        themeCSS,
+        derivedCSS(theme),
+        mediumRootCSS
+      )}
+    />
   );
 }

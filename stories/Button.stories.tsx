@@ -6,6 +6,7 @@ import { Button, ButtonProps } from '../src/button';
 import { CheckmarkCircleOutline, Icon, PlusCircleOutline } from '../src/icon';
 import { withDesign } from 'storybook-addon-designs';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
+import { ThemeSplitView } from './components/ThemeSplitView';
 
 const plusIcon = <Icon svg={<PlusCircleOutline />} />;
 const checkmarkIcon = <Icon svg={<CheckmarkCircleOutline />} />;
@@ -35,7 +36,7 @@ export default meta;
 
 export const Gallery = () => {
   return (
-    <ThemeToggleWrap>
+    <ThemeSplitView>
       <ul
         css={css`
           & > li {
@@ -152,7 +153,7 @@ export const Gallery = () => {
           </ButtonToolbar>
         </li>
       </ul>
-    </ThemeToggleWrap>
+    </ThemeSplitView>
   );
 };
 const Template: Story<ButtonProps> = args => (

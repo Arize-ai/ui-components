@@ -64,8 +64,11 @@ const getTextColor = (color: TextColorValue) => {
     // Return the designation color (e.x. the main primary / reference colors)
     return designationColors[color];
   }
+  if (color === 'inherit') {
+    return 'inherit';
+  }
   const textColor = theme.textColors[color];
-  if (textColor && color !== 'inherit') {
+  if (textColor) {
     console.warn(
       `${textColor} is deprecated since it is not light/dark theme compatible.`
     );

@@ -22,7 +22,7 @@ export function Provider(props: ProviderProps) {
   return (
     <Context.Provider value={{ ...context, theme }}>
       {isRootProvider ? <GlobalStyles /> : null}
-      {content}
+      <div className={`ac-theme--${theme}`}>{content}</div>
     </Context.Provider>
   );
 }

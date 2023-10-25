@@ -159,9 +159,9 @@ export const actionTooltipCSS = ({
     --tooltip-tip-width: 8px;
     --tooltip-max-inline-size: 500px;
     color: var(--ac-global-text-color-900);
-    background-color: ${actionTooltipStyles.backgroundColor};
+    background-color: var(--ac-global-tooltip-background-color);
     border-radius: 8px;
-    border: 1px solid ${actionTooltipStyles.borderColor};
+    border: 1px solid var(--ac-global-tooltip-border-color);
     position: relative;
 
     display: flex;
@@ -193,8 +193,8 @@ export const actionTooltipCSS = ({
   `;
 };
 
-export const actionTooltipHeaderWrap = css`
-  border-bottom: 1px solid ${actionTooltipStyles.borderColor};
+export const actionTooltipHeaderWrapCSS = css`
+  border-bottom: 1px solid var(--ac-global-tooltip-border-color);
   padding: ${theme.spacing.padding8}px;
 `;
 
@@ -226,8 +226,8 @@ export const helpTooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
     --tooltip-animation-distance: ${theme.spacing.tooltip.offset}px;
     --tooltip-target-offset: ${theme.spacing.tooltip.offset}px;
     --tooltip-max-inline-size: 300px;
-    --tooltip-background-color: var(--ac-global-color-grey-100);
-    --tooltip-border-color: var(--ac-global-color-grey-300);
+    --tooltip-background-color: var(--ac-global-tooltip-background-color);
+    --tooltip-border-color: var(--ac-global-tooltip-border-color);
     color: var(--ac-global-text-color-900);
     background-color: var(--tooltip-background-color);
     position: relative;

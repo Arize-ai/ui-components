@@ -2,8 +2,11 @@ import React, { PropsWithChildren, useState } from 'react';
 import { Button, Heading, Icon, Icons, Provider, View } from '../../src';
 import { css } from '@emotion/react';
 
-export function ThemeToggleWrap({ children }: PropsWithChildren) {
-  const [isLight, setIsLight] = useState(false);
+export function ThemeToggleWrap({
+  children,
+  defaultLight = false,
+}: PropsWithChildren<{ defaultLight?: boolean }>) {
+  const [isLight, setIsLight] = useState<boolean>(defaultLight);
   return (
     <div
       css={css`
@@ -28,11 +31,7 @@ export function ThemeToggleWrap({ children }: PropsWithChildren) {
           }
         ></Button>
 
-        <View
-          backgroundColor="grey-75"
-          padding="size-100"
-          paddingTop="size-1000"
-        >
+        <View backgroundColor="grey-75" padding="size-300">
           {children}
         </View>
       </Provider>

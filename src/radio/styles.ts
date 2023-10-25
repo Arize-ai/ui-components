@@ -66,7 +66,7 @@ export const selectorRadioCSS = ({
   border: 2px solid
     ${isSelected
       ? 'var(--ac-global-text-color-900)'
-      : theme.colors.dividerColor};
+      : 'var(--ac-global-input-field-border-color)'};
   color: ${isDisabled
     ? 'var(--ac-global-text-color-300)'
     : 'var(--ac-global-text-color-900)'};
@@ -75,7 +75,7 @@ export const selectorRadioCSS = ({
   ${!isDisabled &&
     !isSelected &&
     `&:hover {
-    border-color: ${theme.components.button.defaultHoverBackgroundColor};
+    border-color: var(--ac-global-input-field-border-color-hover);
     transition: border-color 0.2s ease-in-out;
   }`};
 `;
@@ -85,16 +85,16 @@ export const inlineButtonRadioCSS = () =>
     css`
       transition: all 0.2s ease-in-out;
       &.is-selected {
-        background-color: ${transparentize(0.1, theme.colors.arizeBlue)};
+        background-color: var(--ac-global-button-primary-background-color);
         &:hover {
-          background-color: ${theme.components.button
-            .primaryHoverBackgroundColor};
+          background-color: var(
+            --ac-global-button-primary-background-color-hover
+          );
         }
       }
       &:not(.is-selected) {
         &:hover {
-          background-color: ${theme.components.button
-            .defaultHoverBackgroundColor};
+          background-color: --ac-global-input-field-background-color-hover;
         }
       }
       &[data-size='normal'] {
