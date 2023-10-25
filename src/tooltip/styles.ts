@@ -2,8 +2,6 @@ import { css } from '@emotion/react';
 import theme from '../theme';
 import { PlacementAxis } from '../types';
 
-const actionTooltipStyles = theme.components.actionTooltip;
-
 export const tooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
   let transformCSS = css``;
   switch (placement) {
