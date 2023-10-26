@@ -113,7 +113,7 @@ const listItemCSS = (options: {
 
     &:not(:first-of-type)::after {
       content: ' ';
-      border-top: 1px solid ${theme.colors.dividerColor};
+      border-top: 1px solid var(--ac-global-border-color-default);
       position: absolute;
       left: ${spacing}px;
       right: 0;

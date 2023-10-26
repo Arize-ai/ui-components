@@ -24,7 +24,7 @@ export const radioGroupCSS = ({
   &.ac-radio-group--inline-button {
     display: inline-flex;
     flex-direction: row;
-    background-color: var(--ac-global-color-grey-300);
+    background-color: var(--ac-global-input-field-background-color);
     border: 1px solid var(--ac-global-input-field-border-color);
     border-radius: ${theme.borderRadius.medium}px;
     overflow: hidden;

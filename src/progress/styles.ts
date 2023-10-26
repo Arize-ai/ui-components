@@ -4,10 +4,10 @@ import { fillMask1, fillMask2, fillsRotate } from './animation';
 
 export const progressCircleCSS = css`
   /* circle unfilled border color */
-  --progress-circle-track-border-color: ${theme.colors.gray200};
+  --progress-circle-track-border-color: var(--ac-global-color-grey-300);
 
   /* circle progress fill border color */
-  --progress-circle-fill-border-color: ${theme.colors.arizeLightBlue};
+  --progress-circle-fill-border-color: var(--ac-global-color-primary);
 
   /* default size and thickness */
   --progress-circle-size: 32px;

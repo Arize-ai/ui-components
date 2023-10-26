@@ -2,14 +2,14 @@ import { css } from '@emotion/react';
 import theme from '../theme';
 
 export const switchCSS = css`
-  --ac-switch-label-color-disabled: ${theme.textColors.white50};
+  --ac-switch-label-color-disabled: var(--ac-global-text-color-500);
 
   --ac-switch-background-color: var(--ac-global-color-grey-300);
   --ac-switch-background-color-disabled: var(--ac-global-color-grey-300);
-  --ac-switch-background-color-selected: var(--ac-global-color-primary);
+  --ac-switch-background-color-selected: var(--ac-global-color-primary-900);
 
   --ac-switch-handle-background-color: white;
-  --ac-switch-handle-background-color-selected: ${theme.colors.arizeLightBlue};
+  --ac-switch-handle-background-color-selected: var(--ac-global-color-primary);
 
   --ac-switch-min-height: 30px;
   --ac-switch-rail-width: 34px;

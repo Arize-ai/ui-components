@@ -4,6 +4,7 @@ import { Meta, Story } from '@storybook/react';
 import { ProgressCircle, ProgressCircleProps } from '../src';
 import { Icon, PlusCircleOutline } from '../src/icon';
 import { withDesign } from 'storybook-addon-designs';
+import { ThemeSplitView } from './components/ThemeSplitView';
 
 const plusIcon = <Icon svg={<PlusCircleOutline />} />;
 
@@ -31,21 +32,23 @@ export default meta;
 
 export const Gallery = () => {
   return (
-    <div
-      css={css`
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        align-items: center;
-      `}
-    >
-      <ProgressCircle aria-label="Loading…" size="S" isIndeterminate />
-      <ProgressCircle aria-label="Loading…" size="M" isIndeterminate />
-      <ProgressCircle aria-label="Loading…" size="L" isIndeterminate />
-      <ProgressCircle aria-label="Loading…" size="S" value={30} />
-      <ProgressCircle aria-label="Loading…" size="M" value={60} />
-      <ProgressCircle aria-label="Loading…" size="L" value={80} />
-    </div>
+    <ThemeSplitView>
+      <div
+        css={css`
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          align-items: center;
+        `}
+      >
+        <ProgressCircle aria-label="Loading…" size="S" isIndeterminate />
+        <ProgressCircle aria-label="Loading…" size="M" isIndeterminate />
+        <ProgressCircle aria-label="Loading…" size="L" isIndeterminate />
+        <ProgressCircle aria-label="Loading…" size="S" value={30} />
+        <ProgressCircle aria-label="Loading…" size="M" value={60} />
+        <ProgressCircle aria-label="Loading…" size="L" value={80} />
+      </div>
+    </ThemeSplitView>
   );
 };
 const Template: Story<ProgressCircleProps> = args => (

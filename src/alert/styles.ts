@@ -12,7 +12,7 @@ const generateSeverityCSS = (semanticColor: SeverityLevel) => {
     css`
       border: 1px solid var(${colorPrefix});
       background-color: var(${colorPrefix}-700);
-      color: var(--ac-global-color-text-900);
+      color: var(--ac-global-static-color-white-900);
     `
   );
 };

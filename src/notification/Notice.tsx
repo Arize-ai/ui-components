@@ -56,6 +56,7 @@ export function Notice({
           display: flex;
           flex-direction: row;
           align-items: center;
+          color: var(--ac-global-static-color-white-900);
           flex: 1 1 auto;
           & > .ac-text {
             flex: 1 1 auto;
@@ -75,7 +76,7 @@ export function Notice({
           title="Close notice"
           css={css`
             background-color: transparent;
-            color: inherit;
+            color: var(--ac-global-static-color-white-900);
             padding: 0;
             border: none;
             cursor: pointer;
@@ -126,7 +127,7 @@ export function Notice({
               onClose();
             }}
           >
-            <Text textSize="medium" color={'inherit'}>
+            <Text textSize="medium" color="inherit">
               {action.text}
             </Text>
           </button>

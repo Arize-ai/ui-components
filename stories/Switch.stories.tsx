@@ -5,6 +5,7 @@ import { Heading, Provider, Switch, SwitchProps } from '../src';
 import { Icon, PlusCircleOutline } from '../src/icon';
 import { withDesign } from 'storybook-addon-designs';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
+import { ThemeSplitView } from './components/ThemeSplitView';
 
 const plusIcon = <Icon svg={<PlusCircleOutline />} />;
 
@@ -23,7 +24,8 @@ const meta: Meta = {
     controls: { expanded: true },
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=232%3A694&t=ZSWiYNP9rFSVJOzv-1',
+      url:
+        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=232%3A694&t=ZSWiYNP9rFSVJOzv-1',
     },
   },
 };
@@ -32,7 +34,7 @@ export default meta;
 
 export const Gallery = () => {
   return (
-    <ThemeToggleWrap>
+    <ThemeSplitView>
       <div>
         <ul
           css={css`
@@ -78,9 +80,9 @@ export const Gallery = () => {
           </ul>
         </section>
       </div>
-    </ThemeToggleWrap>
+    </ThemeSplitView>
   );
 };
-const Template: Story<SwitchProps> = (args) => <Switch {...args} />;
+const Template: Story<SwitchProps> = args => <Switch {...args} />;
 
 export const Default = Template.bind({});

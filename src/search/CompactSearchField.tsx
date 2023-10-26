@@ -50,10 +50,7 @@ export function CompactSearchField(props: CompactSearchFieldProps) {
           border: none !important;
           border-radius: 0 ${theme.rounding.rounding4}px
             ${theme.rounding.rounding4}px 0;
-          // The button padding provides enough space
-          & > input {
-            padding-left: 0;
-          }
+
           min-width: 0;
           transition: width 0.2s ease-in-out;
         }

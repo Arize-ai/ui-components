@@ -36,6 +36,7 @@ import { Icon, Icons, SearchOutline, Settings } from '../src/icon';
 import chartFile from './images/chart.png';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 import InfoTip from './components/InfoTip';
+import { ThemeSplitView } from './components/ThemeSplitView';
 
 const meta: Meta = {
   title: 'Gallery',
@@ -100,7 +101,7 @@ function AsideLane(props: PropsWithChildren) {
 
 export function OverviewPage() {
   return (
-    <ThemeToggleWrap>
+    <ThemeSplitView>
       <View padding="size-100">
         <Flex direction="row" gap="size-100">
           <MainLane>
@@ -110,10 +111,25 @@ export function OverviewPage() {
               extra={<ZoomControls />}
             >
               <Flex direction="row">
-                <img src={chartFile} />
-                <View>
-                  <Text textSize="xxlarge">0.0</Text>
-                  <Heading>Metric</Heading>
+                <View flex="1 1 auto">
+                  <img
+                    src={chartFile}
+                    css={css`
+                      width: 100%;
+                      flex: 1 1 auto;
+                    `}
+                  />
+                </View>
+                <View flex="none" width="100px">
+                  <Flex
+                    direction="column"
+                    alignItems="center"
+                    justifyContent="center"
+                    height="100%"
+                  >
+                    <Text textSize="xxlarge">0.0</Text>
+                    <Heading>Metric</Heading>
+                  </Flex>
                 </View>
               </Flex>
             </Card>
@@ -160,17 +176,8 @@ export function OverviewPage() {
             <ModelBaseline />
           </AsideLane>
         </Flex>
-
-        <Flex direction="column" gap="size-100">
-          <View
-            borderColor="light"
-            borderWidth="thin"
-            flex="1 1 auto"
-            borderRadius="medium"
-          ></View>
-        </Flex>
       </View>
-    </ThemeToggleWrap>
+    </ThemeSplitView>
   );
 }
 
@@ -182,21 +189,21 @@ function AccordionDimensions() {
         id="model-health-predictions"
         defaultIsOpen={false}
       >
-        beeboop
+        Prediction Details
       </AccordionItem>
       <AccordionItem
         title="Actuals"
         id="model-health-actual"
         defaultIsOpen={false}
       >
-        beeboop
+        Actuals Details
       </AccordionItem>
       <AccordionItem
         title="Features"
         id="model-health-features"
         defaultIsOpen={false}
       >
-        beeboop
+        Feature Details
       </AccordionItem>
     </Accordion>
   );
@@ -239,25 +246,22 @@ function MonitorsListingCard() {
     >
       <List>
         <ListItem>
-          <div
-            css={css`
-              display: flex;
-              align-items: center;
-            `}
-          >
-            <div
-              css={css`
-                margin-right: 24px;
-              `}
-            >
-              <Icon svg={<Icons.CheckmarkCircleOutline />} />
-              <h3>Drift</h3>
-            </div>
-          </div>
+          <Flex direction="row" alignItems="center" gap="size-100">
+            <Icon svg={<Icons.CheckmarkCircleOutline />} />
+            <Heading>Drift</Heading>
+          </Flex>
         </ListItem>
         <ListItem>
-          <Icon svg={<Icons.CheckmarkCircleOutline />} />
-          Data Quality
+          <Flex direction="row" alignItems="center" gap="size-100">
+            <Icon svg={<Icons.CheckmarkCircleOutline />} />
+            <Heading>Data Quality</Heading>
+          </Flex>
+        </ListItem>
+        <ListItem>
+          <Flex direction="row" alignItems="center" gap="size-100">
+            <Icon svg={<Icons.CheckmarkCircleOutline />} />
+            <Heading>Performance</Heading>
+          </Flex>
         </ListItem>
       </List>
     </Card>
@@ -271,7 +275,7 @@ function ModelBaseline() {
       variant="compact"
       titleExtra={<InfoTip>tooltips stuff</InfoTip>}
     >
-      drift/dataquality/performance stuff
+      baseline info
     </Card>
   );
 }
@@ -292,29 +296,11 @@ export function Gallery() {
         `}
       >
         <Card
-          title="hello"
-          extra={
-            <div
-              css={css`
-                display: flex;
-                & > * + * {
-                  margin-left: 8px;
-                }
-              `}
-            >
-              <Button
-                variant="default"
-                icon={<Icon svg={<Settings />} />}
-              ></Button>
-              <CompactSearchField placeholder="Search..." />
-            </div>
-          }
-        ></Card>
-        <Card
           title="Model Health"
           subTitle={'An overview of the the health of your model'}
           bodyStyle={{ padding: 0, overflow: 'hidden' }}
           collapsible
+          extra={<CompactSearchField placeholder="Search..." />}
         >
           <Accordion>
             <AccordionItem
@@ -394,28 +380,20 @@ export function Gallery() {
             </div>
           }
         >
-          <div
+          <Alert variant="info" banner title="Heads up">
+            Your predictions may be delayed by up to 10 minutes
+          </Alert>
+          <Alert variant="danger" banner title="Heads up">
+            Your predictions may be delayed by up to 10 minutes
+          </Alert>
+          <img
+            src={chartFile}
+            alt="chart image"
             css={css`
-              position: relative;
-              .ac-alert {
-                position: absolute;
-                left: 0;
-                right: 0;
-              }
+              width: 100%;
+              padding: 16px;
             `}
-          >
-            <Alert variant="info" banner title="Heads up">
-              Your predictions may be delayed by up to 10 minutes
-            </Alert>
-
-            <img
-              src={chartFile}
-              alt="chart image"
-              css={css`
-                margin: 24px;
-              `}
-            />
-          </div>
+          />
         </Card>
         <Card
           title="Example Form"
@@ -510,6 +488,7 @@ export function Gallery() {
             alt="chart image"
             css={css`
               margin: 24px;
+              width: 100%;
             `}
           />
         </View>

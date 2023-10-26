@@ -70,7 +70,7 @@ export const buttonCSS = css`
     border-color: transparent;
     &:hover:not([disabled]) {
       border-color: transparent;
-      background-color: ${theme.components.button.defaultHoverBackgroundColor};
+      background-color: var(--ac-global-input-field-background-color-active);
     }
   }
 
