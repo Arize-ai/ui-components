@@ -24,7 +24,6 @@ import {
   useDOMRef,
   useStyleProps,
 } from '../utils';
-import { assertUnreachable } from '../utils/typeUtils';
 
 export interface TextProps extends DOMProps, StyleProps {
   /**
