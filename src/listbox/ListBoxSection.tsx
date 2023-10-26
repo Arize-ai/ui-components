@@ -33,7 +33,7 @@ const dividerCSS = css`
   box-sizing: content-box;
   height: var(--ac-global-border-size-thick);
   margin: 1.5px var(--ac-global-dimension-static-size-150);
-  background: var(--ac-global-color-gray-300);
+  background: var(--ac-global-border-color-default);
   border: none;
   padding: 0;
   overflow: visible;

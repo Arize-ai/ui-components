@@ -4,6 +4,7 @@ import React, { Fragment, Key } from 'react';
 import { TreeState } from '@react-stately/tree';
 import { useMenuSection } from '@react-aria/menu';
 import { useSeparator } from '@react-aria/separator';
+import { getChildNodes } from '@react-stately/collections';
 import { css } from '@emotion/react';
 import theme from '../theme';
 
@@ -46,7 +47,7 @@ export function MenuSection<T>(props: MenuSectionProps<T>) {
               margin: var(--ac-global-dimension-static-size-100)
                 var(--ac-global-dimension-static-size-200);
               font-size: ${theme.typography.sizes.small.fontSize}px;
-              color: ${theme.textColors.white70};
+              color: var(--ac-global-color-text-700);
             `}
           >
             {item.rendered}
@@ -59,7 +60,7 @@ export function MenuSection<T>(props: MenuSectionProps<T>) {
             padding: 0;
           `}
         >
-          {Array.from(item.childNodes).map(node => {
+          {[...getChildNodes(item, state.collection)].map(node => {
             let item = (
               <MenuItem
                 key={node.key}

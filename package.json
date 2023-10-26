@@ -127,7 +127,7 @@
     "@react-aria/utils": "^3.14.0",
     "@react-aria/virtualizer": "^3.5.1",
     "@react-aria/visually-hidden": "^3.5.0",
-    "@react-stately/collections": "3.5.1",
+    "@react-stately/collections": "^3.10.2",
     "@react-stately/layout": "^3.8.0",
     "@react-stately/list": "3.6.1",
     "@react-stately/overlays": "^3.4.2",
