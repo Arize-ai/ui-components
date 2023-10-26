@@ -43,7 +43,8 @@ export function MenuSection<T>(props: MenuSectionProps<T>) {
             className={'ac-menu__section-heading'}
             css={css`
               display: inline-block;
-              margin: ${theme.spacing.margin8}px ${theme.spacing.margin16}px;
+              margin: var(--ac-global-dimension-static-size-100)
+                var(--ac-global-dimension-static-size-200);
               font-size: ${theme.typography.sizes.small.fontSize}px;
               color: ${theme.textColors.white70};
             `}

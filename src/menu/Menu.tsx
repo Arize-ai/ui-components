@@ -14,7 +14,6 @@ import { mergeProps, useSyncRef } from '@react-aria/utils';
 import React, { Key, ReactElement, useContext } from 'react';
 import { useMenu } from '@react-aria/menu';
 import { useTreeState } from '@react-stately/tree';
-import theme from '../theme';
 import { css } from '@emotion/react';
 
 export interface MenuProps<T> extends CollectionBase<T>, MultipleSelection {
@@ -46,7 +45,7 @@ const menuULCSS = css`
   max-height: inherit;
   list-style: none;
   margin: 0;
-  padding: ${theme.spacing.padding4}px 0;
+  padding: var(--ac-global-dimension-static-size-50) 0;
 `;
 function Menu<T extends object>(
   props: MenuComponentProps<T>,

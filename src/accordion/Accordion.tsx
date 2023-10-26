@@ -50,8 +50,8 @@ export function Accordion({ children }: AccordionProps) {
         --accordion-animation-duration: ${theme.animation.global.duration}ms;
 
         &.ac-accordion--default {
-          --accordion-padding-top: ${theme.spacing.padding8}px;
-          --accordion-padding-side: ${theme.spacing.padding16}px;
+          --accordion-padding-top: var(--ac-global-dimension-static-size-100);
+          --accordion-padding-side: var(--ac-global-dimension-static-size-200);
           --accordion-font-size: ${theme.typography.sizes.medium.fontSize}px;
         }
       `}

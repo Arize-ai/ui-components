@@ -62,7 +62,7 @@ function FieldLabel(props: FieldLabelProps, ref: DOMRef<HTMLLabelElement>) {
         line-height: ${theme.typography.sizes.small.lineHeight}px;
         font-weight: ${theme.typography.weights.heavy};
         color: var(--ac-global-text-color-900);
-        padding: ${theme.spacing.padding4}px 0;
+        padding: var(--ac-global-dimension-static-size-50) 0;
         display: inline-flex;
         align-items: center;
       `}
@@ -90,7 +90,7 @@ function FieldLabel(props: FieldLabelProps, ref: DOMRef<HTMLLabelElement>) {
         <span
           className="ac-field-label__label-extra"
           css={css`
-            margin-left: ${theme.spacing.padding4}px;
+            margin-left: var(--ac-global-dimension-static-size-50);
             display: inline-flex;
             align-items: center;
           `}

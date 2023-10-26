@@ -21,7 +21,7 @@ export function ErrorSVG(props: StyleProps) {
           fill: transparent;
         }
         .cls-3 {
-          fill: #2c353f;
+          fill: var(--ac-global-color-grey-200);
         }
         .cls-4 {
           mix-blend-mode: multiply;
@@ -37,11 +37,11 @@ export function ErrorSVG(props: StyleProps) {
           stroke-miterlimit: 10;
         }
         .cls-6 {
-          stroke: #02bf92;
+          stroke: var(--ac-global-color-primary);
           stroke-dasharray: 0 6.31;
         }
         .cls-7 {
-          stroke: #5bdbff;
+          stroke: var(--ac-global-color-primary);
           stroke-width: 2px;
         }
       `}

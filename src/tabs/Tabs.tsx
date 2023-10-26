@@ -9,7 +9,6 @@ import React, {
 } from 'react';
 import { Text } from '../content';
 import { css } from '@emotion/react';
-import theme from '../theme';
 import { Orientation } from '../types/orientation';
 
 type Tab = TabPaneProps & {
@@ -42,7 +41,7 @@ const tabListCSS = css`
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 0 ${theme.spacing.padding16}px;
+    padding: 0 var(--ac-global-dimension-static-size-200);
     min-height: 30px;
     transition: 0.3s;
     font-weight: bold;

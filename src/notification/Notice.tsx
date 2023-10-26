@@ -13,7 +13,8 @@ import { slideInFromRightCSS, disappearCSS } from './styles';
 
 const noticeCSS = css`
   width: 400px;
-  padding: ${theme.spacing.margin8}px ${theme.spacing.margin16}px;
+  padding: var(--ac-global-dimension-static-size-100)
+    var(--ac-global-dimension-static-size-200);
   border-radius: 8px;
 `;
 interface NoticeProps extends NoticeConfig {
@@ -62,7 +63,7 @@ export function Notice({
             flex: 1 1 auto;
           }
           & > .ac-icon-wrap {
-            margin-right: ${theme.spacing.margin8}px;
+            margin-right: var(--ac-global-dimension-static-size-100);
           }
         `}
       >
@@ -82,7 +83,7 @@ export function Notice({
             cursor: pointer;
             width: 20px;
             height: 20px;
-            margin-left: ${theme.spacing.margin16}px;
+            margin-left: var(--ac-global-dimension-static-size-200);
           `}
           onClick={onClose}
         >
@@ -96,7 +97,7 @@ export function Notice({
           css={css`
             /* The icon is 12px with two 8px spacings on either side */
             padding-left: ${2 * theme.spacing.margin8 + 12}px;
-            margin-top: ${theme.spacing.margin4}px;
+            margin-top: var(--ac-global-dimension-static-size-50);
             display: inline-block;
           `}
         >
@@ -109,7 +110,7 @@ export function Notice({
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
-            margin-top: ${theme.spacing.margin8}px;
+            margin-top: var(--ac-global-dimension-static-size-100);
           `}
         >
           <button

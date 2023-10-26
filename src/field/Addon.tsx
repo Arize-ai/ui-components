@@ -5,7 +5,7 @@ import { Text } from '../content/Text';
 
 const addonBeforeCSS = css`
   background-color: var(--ac-global-color-grey-300);
-  padding: 0 ${theme.spacing.padding8}px;
+  padding: 0 var(--ac-global-dimension-static-size-100);
   flex: none;
   box-sizing: border-box;
   height: ${theme.singleLineHeight}px;

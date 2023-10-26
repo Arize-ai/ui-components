@@ -14,7 +14,7 @@ export type ListSize = 'small' | 'default';
 
 const interactiveListCSS = css`
   & > li:hover {
-    background-color: ${theme.colors.hoverBgColor};
+    background-color: var(--ac-global-background-color-light-hover);
     cursor: pointer;
   }
 `;
@@ -98,15 +98,15 @@ const listItemCSS = (options: {
 }) => {
   const spacing =
     options.listSize === 'small'
-      ? theme.spacing.padding8
-      : theme.spacing.padding16;
+      ? 'var(--ac-global-dimension-static-size-100)'
+      : 'var(--ac-global-dimension-static-size-200)';
   const innerPadding = options.noPadding ? 0 : spacing;
   return css`
-    padding: ${innerPadding}px;
+    padding: ${innerPadding};
     position: relative;
     &:hover {
       background-color: ${options.interactive
-        ? theme.colors.hoverBgColor
+        ? 'var(--ac-global-background-color-light-hover)'
         : 'transparent'};
       cursor: ${options.interactive ? 'pointer' : 'default'};
     }
@@ -115,7 +115,7 @@ const listItemCSS = (options: {
       content: ' ';
       border-top: 1px solid var(--ac-global-border-color-default);
       position: absolute;
-      left: ${spacing}px;
+      left: ${spacing};
       right: 0;
       top: 0;
     }

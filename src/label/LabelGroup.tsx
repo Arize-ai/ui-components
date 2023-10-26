@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react';
 import { css } from '@emotion/react';
-import theme from '../theme';
 
 export const LabelGroup = ({ children }: { children: ReactNode }) => {
   return (
@@ -8,7 +7,7 @@ export const LabelGroup = ({ children }: { children: ReactNode }) => {
       className="ac-label-group"
       css={css`
         .ac-label + .ac-label {
-          margin: ${theme.spacing.margin8}px;
+          margin: var(--ac-global-dimension-static-size-100);
         }
       `}
     >

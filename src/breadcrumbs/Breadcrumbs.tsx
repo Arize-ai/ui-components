@@ -79,7 +79,7 @@ const liCSS = css`
   position: relative;
 
   .ac-breadcrumbs-item-link {
-    padding: 0 ${theme.spacing.padding4}px;
+    padding: 0 var(--ac-global-dimension-static-size-50);
     outline: none;
   }
   .ac-icon-wrap {

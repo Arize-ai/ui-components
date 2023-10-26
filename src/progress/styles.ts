@@ -1,5 +1,4 @@
 import { css } from '@emotion/react';
-import theme from '../theme';
 import { fillMask1, fillMask2, fillsRotate } from './animation';
 
 export const progressCircleCSS = css`

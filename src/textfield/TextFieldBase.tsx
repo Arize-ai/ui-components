@@ -148,7 +148,8 @@ const textFieldBaseCSS = (styleProps: StyleProps) => css`
 
   &.ac-textfield--multiline {
     height: ${styleProps.height ?? theme.singleLineHeight}px;
-    ${styleProps.height && `padding-top: ${theme.spacing.padding4}px;`}
+    ${styleProps.height &&
+      `padding-top: var(--ac-global-dimension-static-size-50);`}
 
     textarea {
       resize: none;
@@ -198,7 +199,7 @@ const quietTextfieldBaseCSS = css`
   .ac-textfield__validation-icon {
     /* Animate in the icon */
     animation: ${appearKeyframes} ${0.2}s forwards ease-in-out;
-    top: ${theme.spacing.padding8}px;
+    top: var(--ac-global-dimension-static-size-100);
     right: 0;
     position: absolute;
     &.ac-textfield__validation-icon--invalid {
@@ -239,7 +240,8 @@ const standardTextfieldBaseCSS = css`
     }
   }
   .ac-textfield__input {
-    padding: ${theme.spacing.padding4}px ${theme.spacing.padding8}px;
+    padding: var(--ac-global-dimension-static-size-50)
+      var(--ac-global-dimension-static-size-100);
   }
 
   &.ac-textfield--invalid:not(.is-disabled) {
@@ -253,7 +255,7 @@ const standardTextfieldBaseCSS = css`
     // Make room for the invalid icon (outer padding + icon width + inner padding)
     padding-right: calc(
       ${theme.spacing.padding8} + var(--ac-validation-icon-width) +
-        ${theme.spacing.padding4}px
+        var(--ac-global-dimension-static-size-50)
     );
     color: var(--ac-global-color-danger);
   }
@@ -261,8 +263,8 @@ const standardTextfieldBaseCSS = css`
   .ac-textfield__validation-icon {
     /* Animate in the icon */
     animation: ${appearKeyframes} ${0.2}s forwards ease-in-out;
-    top: ${theme.spacing.padding8}px;
-    right: ${theme.spacing.padding8}px;
+    top: var(--ac-global-dimension-static-size-100);
+    right: var(--ac-global-dimension-static-size-100);
     position: absolute;
     &.ac-textfield__validation-icon--invalid {
       color: var(--ac-global-color-danger);

@@ -22,16 +22,20 @@ export const buttonCSS = css`
     opacity: ${theme.opacity.disabled};
   }
   &[data-size='normal'][data-childless='false'] {
-    padding: ${theme.spacing.padding8}px ${theme.spacing.padding16}px;
+    padding: var(--ac-global-dimension-static-size-100)
+      var(--ac-global-dimension-static-size-200);
   }
   &[data-size='compact'][data-childless='false'] {
-    padding: ${theme.spacing.padding4}px ${theme.spacing.padding8}px;
+    padding: var(--ac-global-dimension-static-size-50)
+      var(--ac-global-dimension-static-size-100);
   }
   &[data-size='normal'][data-childless='true'] {
-    padding: ${theme.spacing.padding8}px ${theme.spacing.padding8}px;
+    padding: var(--ac-global-dimension-static-size-100)
+      var(--ac-global-dimension-static-size-100);
   }
   &[data-size='compact'][data-childless='true'] {
-    padding: ${theme.spacing.padding4}px ${theme.spacing.padding4}px;
+    padding: var(--ac-global-dimension-static-size-50)
+      var(--ac-global-dimension-static-size-50);
   }
   &[data-variant='primary'] {
     background-color: var(--ac-global-button-primary-background-color);
@@ -76,6 +80,6 @@ export const buttonCSS = css`
 
   &[data-childless='false'] > i,
   & > .ac-spinner {
-    margin-right: ${theme.spacing.margin4}px;
+    margin-right: var(--ac-global-dimension-static-size-50);
   }
 `;

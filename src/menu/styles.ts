@@ -7,20 +7,21 @@ export const menuItemCSS = css`
   display: flex;
   align-items: center;
   color: var(--ac-global-text-color-900);
-  padding: ${theme.spacing.padding8}px ${theme.spacing.padding16}px;
+  padding: var(--ac-global-dimension-static-size-100)
+    var(--ac-global-dimension-static-size-200);
   font-size: ${theme.typography.sizes.medium.fontSize}px;
   min-width: 80px;
   cursor: pointer;
   position: relative;
   & > .ac-icon-wrap.ac-menu-item__selected-checkmark {
     position: absolute;
-    top: ${theme.spacing.padding8}px;
-    right: ${theme.spacing.padding8}px;
+    top: var(--ac-global-dimension-static-size-100);
+    right: var(--ac-global-dimension-static-size-100);
   }
 
   & > .ac-icon-wrap:first-child,
   & > i:first-child {
-    margin-right: ${theme.spacing.margin4}px;
+    margin-right: var(--ac-global-dimension-static-size-50);
   }
 
   &.is-selected {

@@ -44,7 +44,7 @@ export const tooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
     vertical-align: top;
 
     width: auto;
-    padding: ${theme.spacing.padding8}px;
+    padding: var(--ac-global-dimension-static-size-100);
     border-radius: 4px;
     min-height: 24px;
     max-inline-size: var(--tooltip-max-inline-size);
@@ -193,7 +193,7 @@ export const actionTooltipCSS = ({
 
 export const actionTooltipHeaderWrapCSS = css`
   border-bottom: 1px solid var(--ac-global-tooltip-border-color);
-  padding: ${theme.spacing.padding8}px;
+  padding: var(--ac-global-dimension-static-size-100);
 `;
 
 export const helpTooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
@@ -235,7 +235,7 @@ export const helpTooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
     vertical-align: top;
 
     width: auto;
-    padding: ${theme.spacing.padding16}px;
+    padding: var(--ac-global-dimension-static-size-200);
     border-radius: var(--ac-global-rounding-medium);
     border: 1px solid var(--tooltip-border-color);
     min-height: 24px;
@@ -257,7 +257,8 @@ export const helpTooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
       ${transformCSS};
     }
     .ac-content {
-      margin: ${theme.spacing.margin8}px 0 ${theme.spacing.margin8}px 0;
+      margin: var(--ac-global-dimension-static-size-100) 0
+        var(--ac-global-dimension-static-size-100) 0;
     }
   `;
 };

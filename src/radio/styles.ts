@@ -10,7 +10,7 @@ type RadioStyleProps = {
 };
 
 export const radioGroupLabelCSS = css`
-  margin-bottom: ${theme.spacing.padding8}px;
+  margin-bottom: var(--ac-global-dimension-static-size-100);
 `;
 
 export const radioGroupCSS = ({
@@ -69,8 +69,8 @@ export const selectorRadioCSS = ({
   color: ${isDisabled
     ? 'var(--ac-global-text-color-300)'
     : 'var(--ac-global-text-color-900)'};
-  margin-right: ${theme.spacing.padding4}px;
-  padding: ${theme.spacing.padding16}px;
+  margin-right: var(--ac-global-dimension-static-size-50);
+  padding: var(--ac-global-dimension-static-size-200);
   ${!isDisabled &&
     !isSelected &&
     `&:hover {
@@ -97,10 +97,12 @@ export const inlineButtonRadioCSS = () =>
         }
       }
       &[data-size='normal'] {
-        padding: ${theme.spacing.padding8}px ${theme.spacing.padding16}px;
+        padding: var(--ac-global-dimension-static-size-100)
+          var(--ac-global-dimension-static-size-200);
       }
       &[data-size='compact'] {
-        padding: ${theme.spacing.padding4}px ${theme.spacing.padding8}px;
+        padding: var(--ac-global-dimension-static-size-50)
+          var(--ac-global-dimension-static-size-100);
       }
     `,
     textSizeCSS('medium')
@@ -132,7 +134,7 @@ export const radioButtonIconCSS = ({
   color: ${isDisabled
     ? 'var(--ac-global-text-color-300)'
     : 'var(--ac-global-text-color-900)'};
-  margin-right: ${theme.spacing.padding4}px;
+  margin-right: var(--ac-global-dimension-static-size-50);
   ${isFocusVisible &&
     `outline: ${theme.spacing.outline.thin}px solid -webkit-focus-ring-color;`}
 `;
@@ -140,6 +142,6 @@ export const radioButtonIconCSS = ({
 export const radioChildrenCSS = css`
   display: flex;
   padding: 0;
-  margin-top: ${theme.spacing.padding4}px;
+  margin-top: var(--ac-global-dimension-static-size-50);
   flex-direction: column;
 `;

@@ -606,7 +606,7 @@ export const lightThemeCSS = css`
 
     // Designation colors
     --ac-global-color-designation-purple: #4500d9;
-    --ac-global-color-designation-turquoise: #y;
+    --ac-global-color-designation-turquoise: #00add0;
 
     --ac-global-text-color-900: rgba(0, 0, 0, 0.9);
     --ac-global-text-color-700: rgba(0, 0, 0, 0.7);

@@ -64,7 +64,8 @@ export const Alert = ({
     <div
       {...otherProps}
       css={css`
-        padding: ${theme.spacing.margin8}px ${theme.spacing.margin16}px;
+        padding: var(--ac-global-dimension-static-size-100)
+          var(--ac-global-dimension-static-size-200);
         border-radius: 4px;
         color: var(--ac-global-text-color-900);
         display: flex;
@@ -77,7 +78,7 @@ export const Alert = ({
         }
         ${variantStyle}
         .ac-alert__icon-title-wrap .ac-icon-wrap {
-          margin-right: ${theme.spacing.margin16}px;
+          margin-right: var(--ac-global-dimension-static-size-200);
           font-size: ${theme.typography.sizes.xlarge.fontSize}px;
           margin-top: 2px;
         }
@@ -129,7 +130,7 @@ export const Alert = ({
             cursor: pointer;
             width: 20px;
             height: 20px;
-            margin-left: ${theme.spacing.margin16}px;
+            margin-left: var(--ac-global-dimension-static-size-200);
           `}
           onClick={onDismissClick}
         >

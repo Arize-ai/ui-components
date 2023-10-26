@@ -38,7 +38,7 @@ function HelpText(props: HelpTextComponentProps, ref: DOMRef<HTMLDivElement>) {
       ref={domRef}
       css={css`
         height: 16px;
-        padding: ${theme.spacing.padding4}px 0 0;
+        padding: var(--ac-global-dimension-static-size-50) 0 0;
         color: var(--ac-global-text-color-500);
         &.ac-help-text--danger {
           color: var(--ac-global-color-danger);

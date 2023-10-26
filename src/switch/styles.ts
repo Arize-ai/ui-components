@@ -16,10 +16,12 @@ export const switchCSS = css`
   --ac-switch-rail-height: 14px;
   --ac-switch-handle-size: 20px;
   --ac-switch-halo-size: 28px;
-  --ac-switch-control-label-spacing: ${theme.spacing.margin8}px;
+  --ac-switch-control-label-spacing: var(--ac-global-dimension-static-size-100);
   --ac-switch-spacing-top-to-control: 10px;
   --ac-switch-spacing-top-to-label: 3px;
-  --ac-switch-spacing-label-to-handle: ${theme.spacing.margin8}px;
+  --ac-switch-spacing-label-to-handle: var(
+    --ac-global-dimension-static-size-100
+  );
 
   --ac-switch-font-size: ${theme.typography.sizes.medium.fontSize}px;
 
