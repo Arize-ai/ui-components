@@ -8,7 +8,6 @@ import React, {
   ReactElement,
 } from 'react';
 import { css } from '@emotion/react';
-import theme from '../theme';
 
 export type ListSize = 'small' | 'default';
 
