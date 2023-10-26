@@ -143,6 +143,8 @@ export const darkThemeCSS = css`
     --ac-global-color-primary: rgb(114, 217, 255);
     --ac-global-color-primary-900: rgba(114, 217, 255, 0.9);
     --ac-global-color-primary-700: rgba(114, 217, 255, 0.7);
+    --ac-global-color-primary-500: rgba(114, 217, 255, 0.5);
+    --ac-global-color-primary-300: rgba(114, 217, 255, 0.3);
 
     // These colors are legacy
     --ac-global-color-gray-900: #181b1f;
