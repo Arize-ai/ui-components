@@ -5,6 +5,7 @@ import {
   BorderRadiusValue,
   BorderSizeValue,
   ColorValue,
+  DesignationColorValue,
   DimensionValue,
   Direction,
   Responsive,
@@ -13,6 +14,7 @@ import {
   ViewStyleProps,
 } from '../types';
 import { useLocale } from '@react-aria/i18n';
+import { assertUnreachable } from './typeUtils';
 
 type Breakpoint = 'base' | 'S' | 'M' | 'L' | string;
 type StyleName = string | string[] | ((dir: Direction) => string);
@@ -212,6 +214,18 @@ type ColorType = 'default' | 'background' | 'border' | 'icon' | 'status';
 export function colorValue(value: ColorValue, type: ColorType = 'default') {
   // TODO actually support semantic colors
   return `var(--ac-global-color-${value}, var(--ac-semantic-${value}-color-${type}))`;
+}
+
+export function designationColorValue(value: DesignationColorValue) {
+  // Return the designation color (e.x. the main primary / reference colors)
+  switch (value) {
+    case 'designationPurple':
+      return 'var(--ac-global-color-designation-purple)';
+    case 'designationTurquoise':
+      return 'var(--ac-global-color-designation-turquoise)';
+    default:
+      assertUnreachable(value);
+  }
 }
 
 function backgroundColorValue(value: BackgroundColorValue) {

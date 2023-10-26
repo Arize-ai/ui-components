@@ -9,15 +9,22 @@ import {
   ColorValue,
   DOMProps,
   DOMRef,
+  DesignationColorValue,
   StyleProps,
   TextColorValue,
 } from '../types';
-import theme, { designationColors } from '../theme';
+import theme from '../theme';
 import { Size, TextElementType, Weight } from './types';
 
 import { textSizeCSS, textWeightCSS } from './styles';
 import { filterDOMProps } from '@react-aria/utils';
-import { colorValue, useDOMRef, useStyleProps } from '../utils';
+import {
+  colorValue,
+  designationColorValue,
+  useDOMRef,
+  useStyleProps,
+} from '../utils';
+import { assertUnreachable } from '../utils/typeUtils';
 
 export interface TextProps extends DOMProps, StyleProps {
   /**
@@ -59,10 +66,13 @@ export interface TextProps extends DOMProps, StyleProps {
   className?: string;
 }
 
-const getTextColor = (color: TextColorValue) => {
-  if (color.startsWith('designation')) {
-    // Return the designation color (e.x. the main primary / reference colors)
-    return designationColors[color];
+function isDesignationColor(color: string): color is DesignationColorValue {
+  return color.startsWith('designation');
+}
+
+const getTextColor = (color: TextColorValue): string => {
+  if (isDesignationColor(color)) {
+    return designationColorValue(color);
   }
   if (color === 'inherit') {
     return 'inherit';

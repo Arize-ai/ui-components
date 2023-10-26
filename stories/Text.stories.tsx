@@ -4,6 +4,7 @@ import { Meta } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
 import { ColorValue, Provider, Text, TextProps } from '../src';
 import { globalColors } from './constants';
+import { ThemeSplitView } from './components/ThemeSplitView';
 
 const meta: Meta = {
   title: 'Text',
@@ -42,7 +43,7 @@ const colors: TextProps['color'][] = [
  */
 export const Gallery = () => {
   return (
-    <Provider>
+    <ThemeSplitView>
       <div
         css={css`
           display: flex;
@@ -133,6 +134,6 @@ export const Gallery = () => {
           })}
         </p>
       </div>
-    </Provider>
+    </ThemeSplitView>
   );
 };
