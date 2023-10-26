@@ -311,7 +311,8 @@ export type ColorValue =
   | 'orange-1400'
   | 'success'
   | 'warning'
-  | 'danger';
+  | 'danger'
+  | 'info';
 
 export type DesignationColorValue =
   | 'designationPurple'

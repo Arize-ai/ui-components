@@ -7,7 +7,7 @@ export const LabelGroup = ({ children }: { children: ReactNode }) => {
       className="ac-label-group"
       css={css`
         .ac-label + .ac-label {
-          margin: var(--ac-global-dimension-static-size-100);
+          margin: var(--ac-global-dimension-static-size-50);
         }
       `}
     >
