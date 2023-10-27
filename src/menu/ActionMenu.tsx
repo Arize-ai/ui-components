@@ -7,7 +7,6 @@ import { ArrowIosDownwardOutline, Icon, MoreHorizontalOutline } from '../icon';
 import React, { forwardRef } from 'react';
 import { ActionMenuProps } from '../types';
 import { css } from '@emotion/react';
-import theme from '../theme';
 
 function ActionMenu<T extends object>(
   props: ActionMenuProps<T>,
@@ -34,7 +33,7 @@ function ActionMenu<T extends object>(
           align-items: center;
           .ac-icon-wrap {
             flex: fixed;
-            padding-left: ${theme.spacing.padding8}px;
+            padding-left: var(--ac-global-dimension-static-size-100);
             width: 16px;
             height: 16px;
             font-size: 16px;

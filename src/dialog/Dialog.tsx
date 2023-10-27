@@ -10,7 +10,6 @@ import { useDialog } from '@react-aria/dialog';
 import { DialogProps } from '../types/dialog';
 import { Heading } from '../content';
 import { css } from '@emotion/react';
-import theme from '../theme';
 
 const dialogCSS = css`
   outline: none;
@@ -112,8 +111,9 @@ function Dialog(props: DialogProps, ref: DOMRef) {
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            padding: ${theme.spacing.padding8}px ${theme.spacing.padding16}px;
-            border-bottom: 1px solid ${theme.colors.gray500};
+            padding: var(--ac-global-dimension-static-size-100)
+              var(--ac-global-dimension-static-size-200);
+            border-bottom: 1px solid var(--ac-global-border-color-dark);
             flex: none;
           `}
         >
@@ -123,7 +123,7 @@ function Dialog(props: DialogProps, ref: DOMRef) {
               display: flex;
               flex-direction: row;
               .ac-dialog__dismiss-button {
-                margin-left: ${theme.spacing.margin8}px;
+                margin-left: var(--ac-global-dimension-static-size-100);
               }
             `}
           >

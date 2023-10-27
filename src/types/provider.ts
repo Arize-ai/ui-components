@@ -1,5 +1,7 @@
 import { ReactNode } from 'react';
 
+export type ProviderTheme = 'light' | 'dark';
+
 interface ContextProps {
   /** Whether descendants should be displayed with the quiet style. */
   isQuiet?: boolean;
@@ -7,6 +9,8 @@ interface ContextProps {
   isDisabled?: boolean;
   /** Whether descendants should be read only. */
   isReadOnly?: boolean;
+  /** The color theme for all child components */
+  theme?: ProviderTheme;
 }
 
 export interface ProviderProps extends ContextProps {

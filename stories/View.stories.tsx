@@ -20,6 +20,7 @@ import {
 } from '../src/icon';
 import { withDesign } from 'storybook-addon-designs';
 import { css } from '@emotion/react';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const plusIcon = <Icon svg={<PlusCircleOutline />} />;
 const minusIcon = <Icon svg={<MinusCircleOutline />} />;
@@ -71,7 +72,7 @@ const Template = args => {
 
 export const Gallery = args => {
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <div
         css={css`
           display: flex;
@@ -156,7 +157,7 @@ export const Gallery = args => {
           </Text>
         </View>
       </div>
-    </Provider>
+    </ThemeToggleWrap>
   );
 };
 

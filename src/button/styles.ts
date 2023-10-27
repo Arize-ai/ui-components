@@ -1,9 +1,8 @@
 import { css } from '@emotion/react';
 import theme from '../theme';
-import { transparentize } from 'polished';
 
 export const buttonCSS = css`
-  border: 1px solid ${theme.components.button.defaultBorderColor};
+  border: 1px solid var(--ac-global-border-color-default);
   font-weight: 600;
   margin: 0;
   display: flex;
@@ -11,7 +10,7 @@ export const buttonCSS = css`
   align-items: center;
   box-sizing: border-box;
   border-radius: ${theme.borderRadius.medium}px;
-  color: ${theme.textColors.white90};
+  color: var(--ac-global-text-color-900);
   cursor: pointer;
   /* Disable outline since there are other mechanisms to show focus */
   outline: none;
@@ -23,36 +22,51 @@ export const buttonCSS = css`
     opacity: ${theme.opacity.disabled};
   }
   &[data-size='normal'][data-childless='false'] {
-    padding: ${theme.spacing.padding8}px ${theme.spacing.padding16}px;
+    padding: var(--ac-global-dimension-static-size-100)
+      var(--ac-global-dimension-static-size-200);
   }
   &[data-size='compact'][data-childless='false'] {
-    padding: ${theme.spacing.padding4}px ${theme.spacing.padding8}px;
+    padding: var(--ac-global-dimension-static-size-50)
+      var(--ac-global-dimension-static-size-100);
   }
   &[data-size='normal'][data-childless='true'] {
-    padding: ${theme.spacing.padding8}px ${theme.spacing.padding8}px;
+    padding: var(--ac-global-dimension-static-size-100)
+      var(--ac-global-dimension-static-size-100);
   }
   &[data-size='compact'][data-childless='true'] {
-    padding: ${theme.spacing.padding4}px ${theme.spacing.padding4}px;
+    padding: var(--ac-global-dimension-static-size-50)
+      var(--ac-global-dimension-static-size-50);
   }
   &[data-variant='primary'] {
-    background-color: ${transparentize(0.1, theme.colors.arizeBlue)};
-    border-color: ${theme.components.button.primaryBorderColor};
+    background-color: var(--ac-global-button-primary-background-color);
+    border-color: var(--ac-global-button-primary-border-color);
+    color: var(--ac-global-static-color-white-900);
     &:hover:not([disabled]) {
-      background-color: ${theme.components.button.primaryHoverBackgroundColor};
+      background-color: var(--ac-global-button-primary-background-color-hover);
+    }
+  }
+  &[data-variant='danger'] {
+    background-color: var(--ac-global-button-danger-background-color);
+    border-color: var(--ac-global-button-danger-border-color);
+    color: var(--ac-global-static-color-white-900);
+    &:hover:not([disabled]) {
+      background-color: var(--ac-global-button-danger-background-color-hover);
     }
   }
   &[data-variant='success'] {
-    background-color: ${theme.components.button.successColor};
-    border-color: ${theme.components.button.successBorderColor};
+    background-color: var(--ac-global-button-success-background-color);
+    border-color: var(--ac-global-button-success-border-color);
+    color: var(--ac-global-static-color-white-900);
+    color: var(--ac-global-static-color-white-900);
     &:hover:not([disabled]) {
-      background-color: ${theme.components.button.successHoverBackgroundColor};
+      background-color: var(--ac-global-button-success-background-color-hover);
     }
   }
   &[data-variant='default'] {
-    background-color: ${theme.colors.gray500};
-    border-color: ${theme.components.button.defaultBorderColor};
+    background-color: var(--ac-global-input-field-background-color);
+    border-color: var(--ac-global-input-field-border-color);
     &:hover:not([disabled]) {
-      background-color: ${theme.components.button.defaultHoverBackgroundColor};
+      background-color: var(--ac-global-input-field-border-color-hover);
     }
   }
   &[data-variant='quiet'] {
@@ -60,18 +74,12 @@ export const buttonCSS = css`
     border-color: transparent;
     &:hover:not([disabled]) {
       border-color: transparent;
-      background-color: ${theme.components.button.defaultHoverBackgroundColor};
+      background-color: var(--ac-global-input-field-background-color-active);
     }
   }
-  &[data-variant='danger'] {
-    background-color: ${transparentize(0.3, theme.colors.statusDanger)};
-    border-color: ${theme.components.button.dangerBorderColor};
-    &:hover:not([disabled]) {
-      background-color: ${theme.components.button.dangerHoverBackgroundColor};
-    }
-  }
+
   &[data-childless='false'] > i,
   & > .ac-spinner {
-    margin-right: ${theme.spacing.margin4}px;
+    margin-right: var(--ac-global-dimension-static-size-50);
   }
 `;

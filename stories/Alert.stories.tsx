@@ -3,6 +3,9 @@ import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
 import { Alert, AlertProps } from '../src/alert';
 import { Button } from '../src/button';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
+import { ThemeSplitView } from './components/ThemeSplitView';
+import { Flex } from '../src';
 const meta: Meta = {
   title: 'Alert',
   component: Alert,
@@ -29,131 +32,127 @@ const Template: Story<AlertProps> = args => <Alert {...args} />;
 
 export const gallery = () => {
   return (
-    <div
-      css={css`
-        .ac-alert + .ac-alert {
-          margin-top: 8px;
-        }
-      `}
-    >
-      <Alert variant="info">Alert message goes here</Alert>
-      <Alert variant="warning">Alert message goes here</Alert>
-      <Alert variant="danger">Alert message goes here</Alert>
-      <Alert variant="success">Alert message goes here</Alert>
-      <br />
-      <Alert variant="info" title="Title">
-        Alert message goes here
-      </Alert>
-      <Alert variant="warning" title="Title">
-        Alert message goes here
-      </Alert>
-      <Alert variant="danger" title="Title">
-        Alert message goes here
-      </Alert>
-      <Alert variant="success" title="Title">
-        Alert message goes here
-      </Alert>
-      <br />
-      <Alert
-        variant="info"
-        title="Title"
-        extra={<Button variant="primary">Perform Action</Button>}
-      >
-        Alert message goes here
-      </Alert>
-      <Alert
-        variant="warning"
-        title="Title"
-        extra={<Button variant="primary">Perform Action</Button>}
-      >
-        Alert message goes here
-      </Alert>
-      <Alert
-        variant="danger"
-        title="Title"
-        extra={<Button variant="primary">Perform Action</Button>}
-      >
-        Alert message goes here
-      </Alert>
-      <Alert
-        variant="success"
-        title="Title"
-        extra={<Button variant="primary">Perform Action</Button>}
-      >
-        Alert message goes here
-      </Alert>
-      <br />
-      <Alert variant="info" title="Title" dismissable>
-        Alert message goes here
-      </Alert>
-      <Alert variant="warning" title="Title" dismissable>
-        Alert message goes here
-      </Alert>
-      <Alert variant="danger" title="Title" dismissable>
-        Alert message goes here
-      </Alert>
-      <Alert variant="success" title="Title" dismissable>
-        Alert message goes here
-      </Alert>
-      <br />
-      <Alert variant="info" title="Title" dismissable banner>
-        Alert message goes here
-      </Alert>
-      <Alert variant="warning" title="Title" dismissable banner>
-        Alert message goes here
-      </Alert>
-      <Alert variant="danger" title="Title" dismissable banner>
-        Alert message goes here
-      </Alert>
-      <Alert variant="success" title="Title" dismissable banner>
-        Alert message goes here
-      </Alert>
-      <br />
-      <Alert variant="info" dismissable banner>
-        Alert message goes here
-      </Alert>
-      <Alert variant="warning" dismissable banner>
-        Alert message goes here
-      </Alert>
-      <Alert variant="danger" dismissable banner>
-        Alert message goes here
-      </Alert>
-      <Alert variant="success" dismissable banner>
-        Alert message goes here
-      </Alert>
-      <br />
-      <Alert
-        variant="info"
-        dismissable
-        banner
-        extra={<Button variant="primary">Perform Action</Button>}
-      >
-        Alert message goes here
-      </Alert>
-      <Alert
-        variant="warning"
-        dismissable
-        banner
-        extra={<Button variant="primary">Perform Action</Button>}
-      >
-        Alert message goes here
-      </Alert>
-      <Alert
-        variant="danger"
-        dismissable
-        banner
-        extra={<Button variant="primary">Perform Action</Button>}
-      >
-        Alert message goes here
-      </Alert>
-      <Alert
-        variant="success"
-        dismissable
-        banner
-        extra={<Button variant="primary">Perform Action</Button>}
-      >
-        Alert message goes here
-      </Alert>
-    </div>
+    <ThemeSplitView>
+      <Flex direction="column" gap="size-100">
+        <Alert variant="info">Alert message goes here</Alert>
+        <Alert variant="warning">Alert message goes here</Alert>
+        <Alert variant="danger">Alert message goes here</Alert>
+        <Alert variant="success">Alert message goes here</Alert>
+        <br />
+        <Alert variant="info" title="Title">
+          Alert message goes here
+        </Alert>
+        <Alert variant="warning" title="Title">
+          Alert message goes here
+        </Alert>
+        <Alert variant="danger" title="Title">
+          Alert message goes here
+        </Alert>
+        <Alert variant="success" title="Title">
+          Alert message goes here
+        </Alert>
+        <br />
+        <Alert
+          variant="info"
+          title="Title"
+          extra={<Button variant="default">Perform Action</Button>}
+        >
+          Alert message goes here
+        </Alert>
+        <Alert
+          variant="warning"
+          title="Title"
+          extra={<Button variant="default">Perform Action</Button>}
+        >
+          Alert message goes here
+        </Alert>
+        <Alert
+          variant="danger"
+          title="Title"
+          extra={<Button variant="default">Perform Action</Button>}
+        >
+          Alert message goes here
+        </Alert>
+        <Alert
+          variant="success"
+          title="Title"
+          extra={<Button variant="default">Perform Action</Button>}
+        >
+          Alert message goes here
+        </Alert>
+        <br />
+        <Alert variant="info" title="Title" dismissable>
+          Alert message goes here
+        </Alert>
+        <Alert variant="warning" title="Title" dismissable>
+          Alert message goes here
+        </Alert>
+        <Alert variant="danger" title="Title" dismissable>
+          Alert message goes here
+        </Alert>
+        <Alert variant="success" title="Title" dismissable>
+          Alert message goes here
+        </Alert>
+        <br />
+        <Alert variant="info" title="Title" dismissable banner>
+          Alert message goes here
+        </Alert>
+        <Alert variant="warning" title="Title" dismissable banner>
+          Alert message goes here
+        </Alert>
+        <Alert variant="danger" title="Title" dismissable banner>
+          Alert message goes here
+        </Alert>
+        <Alert variant="success" title="Title" dismissable banner>
+          Alert message goes here
+        </Alert>
+        <br />
+        <Alert variant="info" dismissable banner>
+          Alert message goes here
+        </Alert>
+        <Alert variant="warning" dismissable banner>
+          Alert message goes here
+        </Alert>
+        <Alert variant="danger" dismissable banner>
+          Alert message goes here
+        </Alert>
+        <Alert variant="success" dismissable banner>
+          Alert message goes here
+        </Alert>
+        <br />
+        <Alert
+          variant="info"
+          dismissable
+          banner
+          extra={<Button variant="default">Perform Action</Button>}
+        >
+          Alert message goes here
+        </Alert>
+        <Alert
+          variant="warning"
+          dismissable
+          banner
+          extra={<Button variant="default">Perform Action</Button>}
+        >
+          Alert message goes here
+        </Alert>
+        <Alert
+          variant="danger"
+          dismissable
+          banner
+          extra={<Button variant="default">Perform Action</Button>}
+        >
+          Alert message goes here
+        </Alert>
+        <Alert
+          variant="success"
+          dismissable
+          banner
+          extra={<Button variant="default">Perform Action</Button>}
+        >
+          Alert message goes here
+        </Alert>
+      </Flex>
+    </ThemeSplitView>
   );
 };

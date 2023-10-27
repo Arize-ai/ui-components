@@ -58,7 +58,7 @@ function NotificationContainer(props: NotificationContainerProps) {
         bottom: ${theme.spacing.margin24}px;
         right: ${theme.spacing.margin24}px;
         & .ac-notice + .ac-notice {
-          margin-top: ${theme.spacing.margin16}px;
+          margin-top: var(--ac-global-dimension-static-size-200);
         }
       `}
       {...passThroughProps}

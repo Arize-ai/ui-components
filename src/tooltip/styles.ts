@@ -2,9 +2,6 @@ import { css } from '@emotion/react';
 import theme from '../theme';
 import { PlacementAxis } from '../types';
 
-const tooltipStyles = theme.components.tooltip;
-const actionTooltipStyles = theme.components.actionTooltip;
-
 export const tooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
   let transformCSS = css``;
   switch (placement) {
@@ -34,8 +31,9 @@ export const tooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
     --tooltip-target-offset: ${theme.spacing.tooltip.offset}px;
     --tooltip-tip-width: 8px;
     --tooltip-max-inline-size: 200px;
-    color: ${theme.textColors.white90};
-    background-color: ${tooltipStyles.backgroundColor};
+    --tooltip-background-color: var(--ac-global-color-grey-200);
+    color: var(--ac-global-text-color-900);
+    background-color: var(--tooltip-background-color);
     position: relative;
 
     display: inline-flex;
@@ -46,7 +44,7 @@ export const tooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
     vertical-align: top;
 
     width: auto;
-    padding: ${theme.spacing.padding8}px;
+    padding: var(--ac-global-dimension-static-size-100);
     border-radius: 4px;
     min-height: 24px;
     max-inline-size: var(--tooltip-max-inline-size);
@@ -111,7 +109,7 @@ export const tooltipTipCSS = ({ placement }: { placement: PlacementAxis }) => {
   return css(
     css`
       position: absolute;
-      border-color: ${tooltipStyles.backgroundColor};
+      border-color: var(--tooltip-background-color);
       height: 0;
       width: 0;
 
@@ -158,10 +156,10 @@ export const actionTooltipCSS = ({
     --tooltip-target-offset: ${theme.spacing.tooltip.offset}px;
     --tooltip-tip-width: 8px;
     --tooltip-max-inline-size: 500px;
-    color: ${theme.textColors.white90};
-    background-color: ${actionTooltipStyles.backgroundColor};
+    color: var(--ac-global-text-color-900);
+    background-color: var(--ac-global-tooltip-background-color);
     border-radius: 8px;
-    border: 1px solid ${actionTooltipStyles.borderColor};
+    border: 1px solid var(--ac-global-tooltip-border-color);
     position: relative;
 
     display: flex;
@@ -193,9 +191,9 @@ export const actionTooltipCSS = ({
   `;
 };
 
-export const actionTooltipHeaderWrap = css`
-  border-bottom: 1px solid ${actionTooltipStyles.borderColor};
-  padding: ${theme.spacing.padding8}px;
+export const actionTooltipHeaderWrapCSS = css`
+  border-bottom: 1px solid var(--ac-global-tooltip-border-color);
+  padding: var(--ac-global-dimension-static-size-100);
 `;
 
 export const helpTooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
@@ -226,8 +224,10 @@ export const helpTooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
     --tooltip-animation-distance: ${theme.spacing.tooltip.offset}px;
     --tooltip-target-offset: ${theme.spacing.tooltip.offset}px;
     --tooltip-max-inline-size: 300px;
-    color: ${theme.textColors.white90};
-    background-color: ${tooltipStyles.backgroundColor};
+    --tooltip-background-color: var(--ac-global-tooltip-background-color);
+    --tooltip-border-color: var(--ac-global-tooltip-border-color);
+    color: var(--ac-global-text-color-900);
+    background-color: var(--tooltip-background-color);
     position: relative;
     box-sizing: border-box;
     font-size: ${theme.typography.sizes.medium.fontSize}px;
@@ -235,12 +235,12 @@ export const helpTooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
     vertical-align: top;
 
     width: auto;
-    padding: ${theme.spacing.padding16}px;
-    border-radius: ${theme.rounding.rounding4}px;
-    border: 1px solid ${tooltipStyles.borderColor};
+    padding: var(--ac-global-dimension-static-size-200);
+    border-radius: var(--ac-global-rounding-medium);
+    border: 1px solid var(--tooltip-border-color);
     min-height: 24px;
     max-inline-size: var(--tooltip-max-inline-size);
-    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.1);
 
     word-break: break-word;
     -webkit-font-smoothing: antialiased;
@@ -257,7 +257,8 @@ export const helpTooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
       ${transformCSS};
     }
     .ac-content {
-      margin: ${theme.spacing.margin8}px 0 ${theme.spacing.margin8}px 0;
+      margin: var(--ac-global-dimension-static-size-100) 0
+        var(--ac-global-dimension-static-size-100) 0;
     }
   `;
 };

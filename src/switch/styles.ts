@@ -2,24 +2,26 @@ import { css } from '@emotion/react';
 import theme from '../theme';
 
 export const switchCSS = css`
-  --ac-switch-label-color-disabled: ${theme.textColors.white50};
+  --ac-switch-label-color-disabled: var(--ac-global-text-color-500);
 
-  --ac-switch-background-color: ${theme.colors.gray300};
-  --ac-switch-background-color-disabled: ${theme.colors.gray300};
-  --ac-switch-background-color-selected: ${theme.colors.arizeBlue};
+  --ac-switch-background-color: var(--ac-global-color-grey-300);
+  --ac-switch-background-color-disabled: var(--ac-global-color-grey-300);
+  --ac-switch-background-color-selected: var(--ac-global-color-primary-900);
 
   --ac-switch-handle-background-color: white;
-  --ac-switch-handle-background-color-selected: ${theme.colors.arizeLightBlue};
+  --ac-switch-handle-background-color-selected: var(--ac-global-color-primary);
 
   --ac-switch-min-height: 30px;
   --ac-switch-rail-width: 34px;
   --ac-switch-rail-height: 14px;
   --ac-switch-handle-size: 20px;
   --ac-switch-halo-size: 28px;
-  --ac-switch-control-label-spacing: ${theme.spacing.margin8}px;
+  --ac-switch-control-label-spacing: var(--ac-global-dimension-static-size-100);
   --ac-switch-spacing-top-to-control: 10px;
   --ac-switch-spacing-top-to-label: 3px;
-  --ac-switch-spacing-label-to-handle: ${theme.spacing.margin8}px;
+  --ac-switch-spacing-label-to-handle: var(
+    --ac-global-dimension-static-size-100
+  );
 
   --ac-switch-font-size: ${theme.typography.sizes.medium.fontSize}px;
 
@@ -147,7 +149,7 @@ export const switchCSS = css`
   }
 
   .ac-switch-label {
-    color: ${theme.textColors.white90};
+    color: var(--ac-global-text-color-900);
     // margin-inline: var(--ac-switch-control-label-spacing);
     margin-block-start: var(--ac-switch-spacing-top-to-label);
     margin-block-end: 0;

@@ -22,7 +22,7 @@ const navCSS = css`
     visibility: hidden;
   }
   .ac-menu-item {
-    margin-left: ${theme.spacing.margin8}px;
+    margin-left: var(--ac-global-dimension-static-size-100);
     border-radius: ${theme.rounding.rounding4}px;
     position: relative;
     overflow: visible;

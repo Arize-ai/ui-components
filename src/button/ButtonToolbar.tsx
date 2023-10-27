@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react';
 import { css } from '@emotion/react';
-import theme from '../theme';
 
 type ButtonToolbarProps = {
   children: ReactNode;
@@ -18,7 +17,7 @@ export function ButtonToolbar({ children }: ButtonToolbarProps) {
         display: flex;
         flex-direction: row;
         & > .ac-button + .ac-button {
-          margin-left: ${theme.spacing.margin8}px;
+          margin-left: var(--ac-global-dimension-static-size-100);
         }
       `}
     >

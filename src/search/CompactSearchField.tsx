@@ -33,24 +33,24 @@ export function CompactSearchField(props: CompactSearchFieldProps) {
       css={css`
         display: inline-flex;
         flex-direction: row;
-        border: 1px solid ${theme.components.textField.borderColor};
+        border: 1px solid var(--ac-global-input-field-border-color);
         border-radius: ${theme.rounding.rounding4}px;
         overflow: hidden;
         transition: all 0.2s ease-in-out;
-        background-color: ${theme.components.textField.backgroundColor};
+        background-color: var(--ac-global-input-field-background-color);
         & > .ac-button {
           flex: none;
           border: none;
           border-radius: 0;
         }
-        & .ac-textfield {
-          border: none;
+        & .ac-textfield,
+        .ac-textfield:hover,
+        .ac-textfield:active,
+        .ac-textfield:focus {
+          border: none !important;
           border-radius: 0 ${theme.rounding.rounding4}px
             ${theme.rounding.rounding4}px 0;
-          // The button padding provides enough space
-          & > input {
-            padding-left: 0;
-          }
+
           min-width: 0;
           transition: width 0.2s ease-in-out;
         }

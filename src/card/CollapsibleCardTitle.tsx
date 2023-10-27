@@ -2,7 +2,6 @@ import React, { ReactNode } from 'react';
 import { css } from '@emotion/react';
 import { Icon, ArrowIosDownwardOutline } from '../icon';
 import { classNames, useStyleProps, viewStyleProps } from '../utils';
-import theme from '../theme';
 import { ViewProps } from '../view';
 
 const titleWrapCSS = css`
@@ -55,7 +54,7 @@ export function CollapsibleCardTitle(props: CollapsibleCardTitleProps) {
         css={css`
           transition: transform ease var(--collapsible-card-animation-duration);
           transform: rotate(-90deg);
-          margin-right: ${theme.spacing.padding8}px;
+          margin-right: var(--ac-global-dimension-static-size-100);
         `}
         aria-hidden={true}
       />

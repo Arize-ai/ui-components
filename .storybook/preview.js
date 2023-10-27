@@ -10,6 +10,10 @@ export const parameters = {
         name: 'arize',
         value: '#14171b',
       },
+      {
+        name: 'arize light',
+        value: '#ffffff',
+      },
     ],
   },
 };

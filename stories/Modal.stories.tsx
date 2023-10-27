@@ -2,6 +2,8 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
 import { css } from '@emotion/react';
+// @ts-ignore
+import chartFile from './images/chart.png';
 import {
   Provider,
   Card,
@@ -12,6 +14,7 @@ import {
   Dialog,
   Button,
 } from '../src';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const meta: Meta = {
   title: 'Modal',
@@ -39,7 +42,14 @@ const content = (
     data-testid="scroll-container"
   >
     <div data-testid="scroll-content">
-      <Text>I'm a Modal</Text>
+      <img
+        src={chartFile}
+        alt="chart image"
+        css={css`
+          width: 100%;
+          padding: 16px;
+        `}
+      />
     </div>
   </div>
 );
@@ -52,7 +62,7 @@ const Template: Story<ModalProps> = args => {
   const [isFullscreenOpen, setIsFullscreenOpen] = React.useState(false);
 
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <Button variant="primary" onClick={() => setIsSmallOpen(true)}>
         (Default) Small Modal
       </Button>
@@ -119,7 +129,7 @@ const Template: Story<ModalProps> = args => {
           </Dialog>
         )}
       </DialogContainer>
-    </Provider>
+    </ThemeToggleWrap>
   );
 };
 

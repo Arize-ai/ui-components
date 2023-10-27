@@ -5,7 +5,7 @@ import { PlacementAxis, DOMRef } from '../types';
 import { mergeProps } from '@react-aria/utils';
 import { TooltipContext } from './context';
 import { Text } from '../content';
-import { actionTooltipCSS, actionTooltipHeaderWrap } from './styles';
+import { actionTooltipCSS, actionTooltipHeaderWrapCSS } from './styles';
 
 interface ActionTooltipProps extends HTMLProps<HTMLDivElement> {
   isOpen?: boolean;
@@ -69,7 +69,7 @@ function ActionTooltip(props: ActionTooltipProps, _ref: DOMRef) {
       css={actionTooltipCSS({ placement })}
     >
       <div
-        css={actionTooltipHeaderWrap}
+        css={actionTooltipHeaderWrapCSS}
         className={classNames('ac-action-tooltip__title-wrap')}
       >
         <Text color="text-900" textSize="large" elementType="h5" weight="heavy">

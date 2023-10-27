@@ -1,6 +1,6 @@
-import React from 'react';
 import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
+import React, { Children, PropsWithChildren, useState } from 'react';
 import {
   Alert,
   Card,
@@ -18,10 +18,25 @@ import {
   Heading,
   ButtonGroup,
   Flex,
+  Switch,
+  Counter,
+  ActionTooltip,
+  Content,
+  ListItem,
+  List,
+  TabbedCard,
+  Tabs,
+  TabPane,
+  Accordion,
+  AccordionItem,
+  CompactSearchField,
 } from '../src';
-import { Icon, Icons, SearchOutline } from '../src/icon';
+import { Icon, Icons, SearchOutline, Settings } from '../src/icon';
 // @ts-ignore
 import chartFile from './images/chart.png';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
+import InfoTip from './components/InfoTip';
+import { ThemeSplitView } from './components/ThemeSplitView';
 
 const meta: Meta = {
   title: 'Gallery',
@@ -37,10 +52,242 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story = args => {
-  const [notify, holder] = useNotification();
+function ZoomControls() {
   return (
-    <Provider>
+    <ButtonGroup aria-label="zoom control">
+      <Button
+        variant="default"
+        icon={<Icon svg={<Icons.ArrowIosBackOutline />} />}
+        size="compact"
+      />
+      <Button
+        variant="default"
+        icon={<Icon svg={<Icons.PlusCircleOutline />} />}
+        size="compact"
+      />
+      <Button
+        variant="default"
+        icon={<Icon svg={<Icons.PlusCircleOutline />} />}
+        size="compact"
+      />
+      <Button
+        variant="default"
+        icon={<Icon svg={<Icons.ArrowIosForwardOutline />} />}
+        size="compact"
+      />
+    </ButtonGroup>
+  );
+}
+
+function MainLane(props: PropsWithChildren) {
+  return (
+    <View flex="1 1 auto">
+      <Flex direction="column" gap="size-100">
+        {props.children}
+      </Flex>
+    </View>
+  );
+}
+
+function AsideLane(props: PropsWithChildren) {
+  return (
+    <View flex="none" width="500px">
+      <Flex direction="column" gap="size-100">
+        {props.children}
+      </Flex>
+    </View>
+  );
+}
+
+export function OverviewPage() {
+  return (
+    <ThemeSplitView>
+      <View padding="size-100">
+        <Flex direction="row" gap="size-100">
+          <MainLane>
+            <Card
+              title="Performance Over Time"
+              variant="compact"
+              extra={<ZoomControls />}
+            >
+              <Flex direction="row">
+                <View flex="1 1 auto">
+                  <img
+                    src={chartFile}
+                    css={css`
+                      width: 100%;
+                      flex: 1 1 auto;
+                    `}
+                  />
+                </View>
+                <View flex="none" width="100px">
+                  <Flex
+                    direction="column"
+                    alignItems="center"
+                    justifyContent="center"
+                    height="100%"
+                  >
+                    <Text textSize="xxlarge">0.0</Text>
+                    <Heading>Metric</Heading>
+                  </Flex>
+                </View>
+              </Flex>
+            </Card>
+            <ModelSchemaCard />
+          </MainLane>
+          <AsideLane>
+            <Card
+              collapsible
+              title="Setup Your Model"
+              variant="compact"
+              bodyStyle={{ padding: 0 }}
+            >
+              <List>
+                <ListItem>
+                  <Flex direction="row" gap="size-100" alignItems="center">
+                    <Icon svg={<Icons.AlertCircleOutline />} color="warning" />
+                    <Flex direction="column">
+                      <Heading level={3}>Send in Production Data</Heading>
+                      <Text textSize="medium">
+                        Make sure your models in production are working the way
+                        you intended
+                      </Text>
+                    </Flex>
+                  </Flex>
+                </ListItem>
+                <ListItem>
+                  <Flex direction="row" alignItems="center" gap="size-100">
+                    <Icon
+                      svg={<Icons.CheckmarkCircleOutline />}
+                      color="success"
+                    />
+                    <Flex direction="column">
+                      <Heading level={3}>Setup Monitoring</Heading>
+                      <Text textSize="medium">
+                        Receive alerts when your model experiences drift, data
+                        quality, and performance degradations.
+                      </Text>
+                    </Flex>
+                  </Flex>
+                </ListItem>
+              </List>
+            </Card>
+            <MonitorsListingCard />
+            <ModelBaseline />
+          </AsideLane>
+        </Flex>
+      </View>
+    </ThemeSplitView>
+  );
+}
+
+function AccordionDimensions() {
+  return (
+    <Accordion>
+      <AccordionItem
+        title="Predictions"
+        id="model-health-predictions"
+        defaultIsOpen={false}
+      >
+        Prediction Details
+      </AccordionItem>
+      <AccordionItem
+        title="Actuals"
+        id="model-health-actual"
+        defaultIsOpen={false}
+      >
+        Actuals Details
+      </AccordionItem>
+      <AccordionItem
+        title="Features"
+        id="model-health-features"
+        defaultIsOpen={false}
+      >
+        Feature Details
+      </AccordionItem>
+    </Accordion>
+  );
+}
+
+function ModelSchemaCard() {
+  return (
+    <TabbedCard title="Model Schema" extra={<CompactSearchField />}>
+      <Tabs>
+        <TabPane name="All">
+          <AccordionDimensions />
+        </TabPane>
+        <TabPane name="Features">
+          <AccordionDimensions />
+        </TabPane>
+        <TabPane name="Embeddings">
+          <AccordionDimensions />
+        </TabPane>
+        <TabPane name="Tags">
+          <AccordionDimensions />
+        </TabPane>
+        <TabPane name="Predictions">
+          <AccordionDimensions />
+        </TabPane>
+        <TabPane name="Actuals">
+          <AccordionDimensions />
+        </TabPane>
+      </Tabs>
+    </TabbedCard>
+  );
+}
+
+function MonitorsListingCard() {
+  return (
+    <Card
+      title="Monitors"
+      variant="compact"
+      titleExtra={<InfoTip>toolstip stuff</InfoTip>}
+      bodyStyle={{ padding: 0 }}
+    >
+      <List>
+        <ListItem>
+          <Flex direction="row" alignItems="center" gap="size-100">
+            <Icon svg={<Icons.CheckmarkCircleOutline />} />
+            <Heading>Drift</Heading>
+          </Flex>
+        </ListItem>
+        <ListItem>
+          <Flex direction="row" alignItems="center" gap="size-100">
+            <Icon svg={<Icons.CheckmarkCircleOutline />} />
+            <Heading>Data Quality</Heading>
+          </Flex>
+        </ListItem>
+        <ListItem>
+          <Flex direction="row" alignItems="center" gap="size-100">
+            <Icon svg={<Icons.CheckmarkCircleOutline />} />
+            <Heading>Performance</Heading>
+          </Flex>
+        </ListItem>
+      </List>
+    </Card>
+  );
+}
+
+function ModelBaseline() {
+  return (
+    <Card
+      title="Model Baseline"
+      variant="compact"
+      titleExtra={<InfoTip>tooltips stuff</InfoTip>}
+    >
+      baseline info
+    </Card>
+  );
+}
+
+export function Gallery() {
+  const [notify, holder] = useNotification();
+  function setSearch(e: string): void {
+    throw new Error('Function not implemented.');
+  }
+
+  return (
+    <ThemeToggleWrap>
       <div
         css={css`
           display: flex;
@@ -48,6 +295,48 @@ const Template: Story = args => {
           gap: 8px;
         `}
       >
+        <Card
+          title="Model Health"
+          subTitle={'An overview of the the health of your model'}
+          bodyStyle={{ padding: 0, overflow: 'hidden' }}
+          collapsible
+          extra={<CompactSearchField placeholder="Search..." />}
+        >
+          <Accordion>
+            <AccordionItem
+              title="2 Predictions"
+              titleExtra={<InfoTip>Description of predictions</InfoTip>}
+              id="predictions"
+            >
+              <p style={{ padding: 16, margin: 10 }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </AccordionItem>
+            <AccordionItem
+              title="Features"
+              titleExtra={<Counter variant="light">100</Counter>}
+              id="features"
+            >
+              <p style={{ padding: 16, margin: 10 }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </AccordionItem>
+            <AccordionItem title="10 Actuals" id="actuals">
+              <p style={{ padding: 16, margin: 10 }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </AccordionItem>
+          </Accordion>
+        </Card>
         <Card
           title="Prediction Volume"
           variant="compact"
@@ -91,30 +380,26 @@ const Template: Story = args => {
             </div>
           }
         >
-          <div
+          <Alert variant="info" banner title="Heads up">
+            Your predictions may be delayed by up to 10 minutes
+          </Alert>
+          <Alert variant="danger" banner title="Heads up">
+            Your predictions may be delayed by up to 10 minutes
+          </Alert>
+          <img
+            src={chartFile}
+            alt="chart image"
             css={css`
-              position: relative;
-              .ac-alert {
-                position: absolute;
-                left: 0;
-                right: 0;
-              }
+              width: 100%;
+              padding: 16px;
             `}
-          >
-            <Alert variant="info" banner title="Heads up">
-              Your predictions may be delayed by up to 10 minutes
-            </Alert>
-
-            <img
-              src={chartFile}
-              alt="chart image"
-              css={css`
-                margin: 24px;
-              `}
-            />
-          </div>
+          />
         </Card>
-        <Card title="Example Form" variant="compact">
+        <Card
+          title="Example Form"
+          variant="compact"
+          extra={<Switch name="Toggle" />}
+        >
           <div
             css={css`
               display: flex;
@@ -164,6 +449,7 @@ const Template: Story = args => {
           padding="static-size-200"
           borderRadius="medium"
           borderColor="dark"
+          borderWidth="thin"
         >
           <div
             css={css`
@@ -202,6 +488,7 @@ const Template: Story = args => {
             alt="chart image"
             css={css`
               margin: 24px;
+              width: 100%;
             `}
           />
         </View>
@@ -223,7 +510,7 @@ const Template: Story = args => {
             </View>
             <View
               width="size-2400"
-              backgroundColor="gray-800"
+              backgroundColor="grey-100"
               borderColor="dark"
               borderLeftWidth="thin"
             >
@@ -242,10 +529,6 @@ const Template: Story = args => {
         </View>
         {holder}
       </div>
-    </Provider>
+    </ThemeToggleWrap>
   );
-};
-
-// By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
-// https://storybook.js.org/docs/react/workflows/unit-testing
-export const Default = Template.bind({});
+}

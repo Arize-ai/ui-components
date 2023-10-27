@@ -14,6 +14,7 @@ import {
 } from '../src';
 
 import css from '@emotion/css';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const placements: Placement[] = [
   'start',
@@ -53,7 +54,7 @@ const meta: Meta = {
 export default meta;
 
 export const Gallery = () => (
-  <Provider>
+  <ThemeToggleWrap>
     <section>
       <Heading>Form Horizontal</Heading>
       <Form layout="inline">
@@ -110,5 +111,5 @@ export const Gallery = () => (
         })}
       </ul>
     </section>
-  </Provider>
+  </ThemeToggleWrap>
 );

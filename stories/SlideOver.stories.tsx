@@ -9,6 +9,8 @@ import {
   Dialog,
   ButtonGroup,
   Card,
+  Flex,
+  CardProps,
 } from '../src';
 import { DialogProps } from '../src/types/dialog';
 import {
@@ -17,6 +19,7 @@ import {
   Icon,
 } from '../src/icon';
 import { css } from '@emotion/react';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const meta: Meta = {
   title: 'SlideOver',
@@ -39,43 +42,50 @@ const meta: Meta = {
 
 export default meta;
 
+const cardProps: Partial<CardProps> = {
+  borderColor: 'light',
+  backgroundColor: 'light',
+  variant: 'compact',
+};
+
 const content = (
   <div
     css={css`
       flex: 1 1 auto;
       overflow-y: scroll;
+      padding: var(--ac-global-dimension-static-size-100);
     `}
     data-testid="scroll-container"
   >
-    <div data-testid="scroll-content">
-      <Card title="Section 1">
+    <Flex direction="column" gap="size-100">
+      <Card title="Section 1" {...cardProps}>
         <Text>hello</Text>
       </Card>
-      <Card title="Section 2">
+      <Card title="Section 2" {...cardProps}>
         <Text>hello</Text>
       </Card>
-      <Card title="Section 3">
+      <Card title="Section 3" {...cardProps}>
         <Text>hello</Text>
       </Card>
-      <Card title="Section 4">
+      <Card title="Section 4" {...cardProps}>
         <Text>hello</Text>
       </Card>
-      <Card title="Section 5">
+      <Card title="Section 5" {...cardProps}>
         <Text>hello</Text>
       </Card>
-      <Card title="Section 6">
+      <Card title="Section 6" {...cardProps}>
         <Text>hello</Text>
       </Card>
-      <Card title="Section 7">
+      <Card title="Section 7" {...cardProps}>
         <Text>hello</Text>
       </Card>
-      <Card title="Section 8">
+      <Card title="Section 8" {...cardProps}>
         <Text>hello</Text>
       </Card>
-      <Card title="Section 9">
+      <Card title="Section 9" {...cardProps}>
         <Text>hello</Text>
       </Card>
-    </div>
+    </Flex>
   </div>
 );
 
@@ -84,7 +94,7 @@ const Template: Story<DialogProps> = args => {
   props.title = props.title || 'Title';
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <Button variant="primary" onClick={() => setIsOpen(true)}>
         Open
       </Button>
@@ -95,7 +105,7 @@ const Template: Story<DialogProps> = args => {
       >
         {isOpen && <Dialog {...props}>{content}</Dialog>}
       </DialogContainer>
-    </Provider>
+    </ThemeToggleWrap>
   );
 };
 
@@ -107,7 +117,7 @@ export const Paginated: Story<DialogProps> = args => {
   const { isDismissable, onDismiss, ...props } = args;
   props.title = props.title || 'Title';
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <DialogContainer type="slideOver" isDismissable onDismiss={() => {}}>
         <Dialog
           {...props}
@@ -129,6 +139,6 @@ export const Paginated: Story<DialogProps> = args => {
           {content}
         </Dialog>
       </DialogContainer>
-    </Provider>
+    </ThemeToggleWrap>
   );
 };

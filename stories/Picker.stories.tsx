@@ -12,6 +12,7 @@ import {
 import { Provider } from '../src';
 import { css } from '@emotion/react';
 import InfoTip from './components/InfoTip';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const itemWithDescriptionCSS = css`
   display: flex;
@@ -42,13 +43,13 @@ const meta: Meta = {
 export default meta;
 
 const Template: Story<PickerProps<string>> = args => (
-  <Provider>
+  <ThemeToggleWrap>
     <Picker {...args}>
       <Item key="rarely">Rarely</Item>
       <Item key="sometimes">Sometimes</Item>
       <Item key="always">Always</Item>
     </Picker>
-  </Provider>
+  </ThemeToggleWrap>
 );
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
@@ -60,7 +61,7 @@ const Controlled: Story<PickerProps<string>> = args => {
     'rarely'
   );
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <Picker
         {...args}
         selectedKey={frequency}
@@ -75,7 +76,7 @@ const Controlled: Story<PickerProps<string>> = args => {
       <Button variant="default" onClick={() => setFrequency(undefined)}>
         Reset
       </Button>
-    </Provider>
+    </ThemeToggleWrap>
   );
 };
 
@@ -86,7 +87,7 @@ export const controlled = Controlled.bind({});
 const WithAddon: Story<PickerProps<string>> = args => {
   const [frequency, setFrequency] = React.useState<string>('rarely');
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <Picker
         addonBefore={'Frequency'}
         {...args}
@@ -99,14 +100,14 @@ const WithAddon: Story<PickerProps<string>> = args => {
       </Picker>
       <br />
       <Text>Selected Value: {frequency}</Text>
-    </Provider>
+    </ThemeToggleWrap>
   );
 };
 
 export const WithSections: Story<PickerProps<string>> = args => {
   const [frequency, setFrequency] = React.useState<string>('rarely');
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <Picker
         isOpen
         {...args}
@@ -126,7 +127,7 @@ export const WithSections: Story<PickerProps<string>> = args => {
       </Picker>
       <br />
       <Text>Selected Value: {frequency}</Text>
-    </Provider>
+    </ThemeToggleWrap>
   );
 };
 
@@ -137,7 +138,7 @@ export const withAddon = WithAddon.bind({});
 const Gallery: Story<void> = () => {
   const [frequency, setFrequency] = React.useState<string>('rarely');
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <div
         css={css`
           & > * + * {
@@ -236,7 +237,7 @@ const Gallery: Story<void> = () => {
           </Picker>
         </div>
       </div>
-    </Provider>
+    </ThemeToggleWrap>
   );
 };
 
@@ -247,7 +248,7 @@ export const gallery = Gallery.bind({});
 const ItemsViaProps: Story<PickerProps<string>> = args => {
   const [frequency, setFrequency] = React.useState<string>('rarely');
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <Picker
         addonBefore={'Frequency'}
         {...args}
@@ -269,7 +270,7 @@ const ItemsViaProps: Story<PickerProps<string>> = args => {
       </Picker>
       <br />
       <Text>Selected Value: {frequency}</Text>
-    </Provider>
+    </ThemeToggleWrap>
   );
 };
 
@@ -286,7 +287,7 @@ for (var i = 0; i < 100; i++) {
 const Long: Story<PickerProps<string>> = args => {
   const [frequency, setFrequency] = React.useState<string>('rarely');
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <Picker
         addonBefore={'Frequency'}
         {...args}
@@ -299,7 +300,7 @@ const Long: Story<PickerProps<string>> = args => {
       </Picker>
       <br />
       <Text>Selected Value: {frequency}</Text>
-    </Provider>
+    </ThemeToggleWrap>
   );
 };
 
@@ -307,7 +308,7 @@ export const Inline: Story<PickerProps<string>> = args => {
   const [subject, setSubject] = React.useState<string>('boy');
   const [food, setFood] = React.useState<string>('cake');
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <p
         css={css`
           display: flex;
@@ -343,7 +344,7 @@ export const Inline: Story<PickerProps<string>> = args => {
           {item => <Item key={item.id}>{item.name}</Item>}
         </Picker>
       </p>
-    </Provider>
+    </ThemeToggleWrap>
   );
 };
 

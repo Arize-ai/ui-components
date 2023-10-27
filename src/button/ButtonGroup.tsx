@@ -7,7 +7,6 @@ import React, {
   HTMLAttributes,
   ReactElement,
 } from 'react';
-import theme from '../theme';
 import { ButtonProps } from './Button';
 
 export interface ButtonGroupProps extends HTMLAttributes<HTMLDivElement> {
@@ -21,15 +20,15 @@ export interface ButtonGroupProps extends HTMLAttributes<HTMLDivElement> {
 
 const buttonGroupCSS = css`
   display: inline-flex;
-  border-radius: ${theme.borderRadius.medium}px;
-  border: 1px solid ${theme.components.button.defaultBorderColor};
+  border-radius: var(--ac-global-rounding-small);
+  border: 1px solid var(--ac-global-input-field-border-color);
   overflow: hidden;
   & > .ac-button {
     border-radius: 0;
     border: none;
   }
   & > .ac-button + .ac-button {
-    border-left: 1px solid ${theme.components.button.defaultBorderColor};
+    border-left: 1px solid var(--ac-global-input-field-border-color);
   }
 `;
 

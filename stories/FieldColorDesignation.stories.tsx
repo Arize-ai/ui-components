@@ -1,6 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { Meta } from '@storybook/react';
+import { ThemeSplitView } from './components/ThemeSplitView';
 import {
   Dropdown,
   FieldColorDesignation,
@@ -37,7 +38,7 @@ export default meta;
 
 export const Gallery = () => {
   return (
-    <Provider>
+    <ThemeSplitView>
       <ul
         css={css`
           & > li {
@@ -101,6 +102,6 @@ export const Gallery = () => {
           </FieldColorDesignation>
         </li>
       </ul>
-    </Provider>
+    </ThemeSplitView>
   );
 };

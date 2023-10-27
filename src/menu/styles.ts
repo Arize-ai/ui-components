@@ -6,37 +6,38 @@ export const menuItemCSS = css`
   outline: none;
   display: flex;
   align-items: center;
-  color: ${theme.textColors.white90};
-  padding: ${theme.spacing.padding8}px ${theme.spacing.padding16}px;
+  color: var(--ac-global-text-color-900);
+  padding: var(--ac-global-dimension-static-size-100)
+    var(--ac-global-dimension-static-size-200);
   font-size: ${theme.typography.sizes.medium.fontSize}px;
   min-width: 80px;
   cursor: pointer;
   position: relative;
   & > .ac-icon-wrap.ac-menu-item__selected-checkmark {
     position: absolute;
-    top: ${theme.spacing.padding8}px;
-    right: ${theme.spacing.padding8}px;
+    top: var(--ac-global-dimension-static-size-100);
+    right: var(--ac-global-dimension-static-size-100);
   }
 
   & > .ac-icon-wrap:first-child,
   & > i:first-child {
-    margin-right: ${theme.spacing.margin4}px;
+    margin-right: var(--ac-global-dimension-static-size-50);
   }
 
   &.is-selected {
     i {
-      color: ${theme.colors.arizeLightBlue};
+      color: var(--ac-global-color-primary);
     }
   }
   &.is-hovered,
   &.focus-ring {
-    background-color: ${theme.colors.gray500};
+    background-color: var(--ac-global-menu-item-background-color-hover);
   }
   &.is-selectable {
     cursor: pointer;
   }
   &.is-disabled {
     cursor: not-allowed;
-    color: ${theme.textColors.white50};
+    color: var(--ac-global-color-text-30);
   }
 `;

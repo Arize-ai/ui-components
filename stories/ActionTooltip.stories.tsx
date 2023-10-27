@@ -12,6 +12,7 @@ import {
   Text,
 } from '../src';
 import { Icon, ArrowIosForwardOutline } from '../src/icon';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const placements: Placement[] = [
   'start',
@@ -51,7 +52,7 @@ const Link = () => (
     href="#"
     css={css`
       padding: 8px;
-      color: rgba(255, 255, 255, 0.9);
+      color: var(--ac-global-text-color-900);
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -71,7 +72,7 @@ const containerCSS = css`
 `;
 
 export const Gallery = () => (
-  <Provider>
+  <ThemeToggleWrap>
     <ul style={{ listStyle: 'none' }} css={containerCSS}>
       {placements.map((placement, index) => {
         return (
@@ -90,12 +91,12 @@ export const Gallery = () => (
         );
       })}
     </ul>
-  </Provider>
+  </ThemeToggleWrap>
 );
 
 const Template: Story<TooltipTriggerProps> = args => {
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <div css={containerCSS}>
         <TooltipTrigger {...args}>
           <ActionButton>Hover</ActionButton>
@@ -108,7 +109,7 @@ const Template: Story<TooltipTriggerProps> = args => {
           </ActionTooltip>
         </TooltipTrigger>
       </div>
-    </Provider>
+    </ThemeToggleWrap>
   );
 };
 

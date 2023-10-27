@@ -5,13 +5,25 @@ import React, {
   CSSProperties,
 } from 'react';
 import { css } from '@emotion/react';
-import { ColorValue, DOMProps, DOMRef, StyleProps } from '../types';
-import theme, { designationColors } from '../theme';
-import { TextColor, Size, TextElementType, Weight } from './types';
+import {
+  ColorValue,
+  DOMProps,
+  DOMRef,
+  DesignationColorValue,
+  StyleProps,
+  TextColorValue,
+} from '../types';
+import theme from '../theme';
+import { Size, TextElementType, Weight } from './types';
 
 import { textSizeCSS, textWeightCSS } from './styles';
 import { filterDOMProps } from '@react-aria/utils';
-import { colorValue, useDOMRef, useStyleProps } from '../utils';
+import {
+  colorValue,
+  designationColorValue,
+  useDOMRef,
+  useStyleProps,
+} from '../utils';
 
 export interface TextProps extends DOMProps, StyleProps {
   /**
@@ -37,7 +49,7 @@ export interface TextProps extends DOMProps, StyleProps {
    * The color of the text
    * @default 'text-900'
    */
-  color?: TextColor;
+  color?: TextColorValue;
   /**
    * The font style
    * @default 'normal'
@@ -53,13 +65,19 @@ export interface TextProps extends DOMProps, StyleProps {
   className?: string;
 }
 
-const getTextColor = (color: TextColor) => {
-  if (color.startsWith('designation')) {
-    // Return the designation color (e.x. the main primary / reference colors)
-    return designationColors[color];
+function isDesignationColor(color: string): color is DesignationColorValue {
+  return color.startsWith('designation');
+}
+
+const getTextColor = (color: TextColorValue): string => {
+  if (isDesignationColor(color)) {
+    return designationColorValue(color);
+  }
+  if (color === 'inherit') {
+    return 'inherit';
   }
   const textColor = theme.textColors[color];
-  if (textColor && color !== 'inherit') {
+  if (textColor) {
     console.warn(
       `${textColor} is deprecated since it is not light/dark theme compatible.`
     );
@@ -72,7 +90,7 @@ const getTextColor = (color: TextColor) => {
   return colorValue(color as ColorValue);
 };
 
-const textCSS = (color: TextColor) => css`
+const textCSS = (color: TextColorValue) => css`
   /* default to no margin */
   margin: 0;
   color: ${getTextColor(color)};

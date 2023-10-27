@@ -57,15 +57,15 @@ const ulCSS = css`
   padding: 0;
   list-style-type: none;
   display: flex;
-  color: ${theme.textColors.white70};
+  color: var(--ac-global-text-color-700);
   li:last-of-type {
     font-weight: ${theme.typography.weights.heavy};
-    color: ${theme.textColors.white90};
+    color: var(--ac-global-text-color-900);
   }
   li:not(:last-of-type):hover {
     text-decoration: underline;
     cursor: pointer;
-    color: ${theme.textColors.white90};
+    color: var(--ac-global-text-color-900);
   }
 `;
 
@@ -79,11 +79,11 @@ const liCSS = css`
   position: relative;
 
   .ac-breadcrumbs-item-link {
-    padding: 0 ${theme.spacing.padding4}px;
+    padding: 0 var(--ac-global-dimension-static-size-50);
     outline: none;
   }
   .ac-icon-wrap {
-    color: ${theme.textColors.white70};
+    color: var(--ac-global-text-color-700);
   }
 `;
 

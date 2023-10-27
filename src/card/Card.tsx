@@ -8,7 +8,7 @@ import React, {
 import { css } from '@emotion/react';
 import { Text } from '../content';
 import { CollapsibleCardTitle } from './CollapsibleCardTitle';
-import theme from '../theme';
+
 import { cardCSS, headerCSS, collapsibleCardCSS } from './styles';
 import { classNames, useStyleProps, viewStyleProps } from '../utils';
 import { useId } from '@react-aria/utils';
@@ -35,7 +35,7 @@ const titleWithTitleExtraCSS = css`
 
 const bodyCSS = css`
   flex: 1 1 auto;
-  padding: ${theme.spacing.padding16}px;
+  padding: var(--ac-global-dimension-static-size-200);
 `;
 
 export interface CardBaseProps {

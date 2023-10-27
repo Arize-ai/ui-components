@@ -131,14 +131,14 @@ const textFieldBaseCSS = (styleProps: StyleProps) => css`
     var(--ac-field-border-color-override, var(--ac-textfield-border-color));
 
   .ac-textfield__input::placeholder {
-    color: ${theme.textColors.white30};
+    color: var(--ac-global-text-color-300);
     font-style: italic;
   }
   .ac-textfield__input {
     flex: 1 1 auto;
     box-sizing: border-box;
     background-color: transparent;
-    color: var(--ac-field-text-color-override, --ac-global-text-color-900);
+    color: var(--ac-field-text-color-override, var(--ac-global-text-color-900));
     height: ${styleProps.height ?? theme.singleLineHeight}px;
     transition: all 0.2s ease-in-out;
     /** provide an alternate highlight */
@@ -148,7 +148,8 @@ const textFieldBaseCSS = (styleProps: StyleProps) => css`
 
   &.ac-textfield--multiline {
     height: ${styleProps.height ?? theme.singleLineHeight}px;
-    ${styleProps.height && `padding-top: ${theme.spacing.padding4}px;`}
+    ${styleProps.height &&
+      `padding-top: var(--ac-global-dimension-static-size-50);`}
 
     textarea {
       resize: none;
@@ -198,7 +199,7 @@ const quietTextfieldBaseCSS = css`
   .ac-textfield__validation-icon {
     /* Animate in the icon */
     animation: ${appearKeyframes} ${0.2}s forwards ease-in-out;
-    top: ${theme.spacing.padding8}px;
+    top: var(--ac-global-dimension-static-size-100);
     right: 0;
     position: absolute;
     &.ac-textfield__validation-icon--invalid {
@@ -221,8 +222,8 @@ const standardTextfieldBaseCSS = css`
     background-color: var(--ac-global-input-field-background-color-active);
   }
   &.is-focused:not(.is-disabled) {
-    border: 1px solid ${theme.components.textField.activeBorderColor};
-    background-color: ${theme.components.textField.activeBackgroundColor};
+    border: 1px solid var(--ac-global-input-field-border-color-active);
+    background-color: var(--ac-global-input-field-background-color-active);
     &.ac-textfield--invalid {
       border: 1px solid var(--ac-global-color-danger);
       .ac-textfield__input {
@@ -232,14 +233,15 @@ const standardTextfieldBaseCSS = css`
   }
   &.is-disabled {
     border: 1px solid ${theme.colors.lightGrayBorder};
-    background-color: ${theme.components.textField.backgroundColor};
+    background-color: var(--ac-global-input-field-background-color);
     opacity: ${theme.opacity.disabled};
     .ac-textfield__input {
-      color: ${theme.textColors.white50};
+      color: var(--ac-global-text-color-500);
     }
   }
   .ac-textfield__input {
-    padding: ${theme.spacing.padding4}px ${theme.spacing.padding8}px;
+    padding: var(--ac-global-dimension-static-size-50)
+      var(--ac-global-dimension-static-size-100);
   }
 
   &.ac-textfield--invalid:not(.is-disabled) {
@@ -253,7 +255,7 @@ const standardTextfieldBaseCSS = css`
     // Make room for the invalid icon (outer padding + icon width + inner padding)
     padding-right: calc(
       ${theme.spacing.padding8} + var(--ac-validation-icon-width) +
-        ${theme.spacing.padding4}px
+        var(--ac-global-dimension-static-size-50)
     );
     color: var(--ac-global-color-danger);
   }
@@ -261,8 +263,8 @@ const standardTextfieldBaseCSS = css`
   .ac-textfield__validation-icon {
     /* Animate in the icon */
     animation: ${appearKeyframes} ${0.2}s forwards ease-in-out;
-    top: ${theme.spacing.padding8}px;
-    right: ${theme.spacing.padding8}px;
+    top: var(--ac-global-dimension-static-size-100);
+    right: var(--ac-global-dimension-static-size-100);
     position: absolute;
     &.ac-textfield__validation-icon--invalid {
       color: var(--ac-global-color-danger);

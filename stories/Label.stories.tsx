@@ -12,6 +12,7 @@ import {
 import { Provider, Heading } from '../src';
 import { ColorValue } from '../src/types';
 import { globalColors } from './constants';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const meta: Meta = {
   title: 'Label',
@@ -51,7 +52,7 @@ const baseColors = [
  * A gallery of all the variants
  */
 export const Gallery = () => (
-  <Provider>
+  <ThemeToggleWrap>
     <LabelGroup>
       <Label color="white">Label</Label>
       <Label color="blue">Label</Label>
@@ -64,16 +65,16 @@ export const Gallery = () => (
     <br />
     <br />
     <LabelGroup>
-      <Label color="blue" icon={<Icon svg={<CheckmarkCircleOutline />} />}>
+      <Label color="info" icon={<Icon svg={<CheckmarkCircleOutline />} />}>
         Info
       </Label>
-      <Label color="green" icon={<Icon svg={<CheckmarkCircleOutline />} />}>
+      <Label color="success" icon={<Icon svg={<CheckmarkCircleOutline />} />}>
         Success
       </Label>
-      <Label color="orange" icon={<Icon svg={<AlertTriangleOutline />} />}>
+      <Label color="warning" icon={<Icon svg={<AlertTriangleOutline />} />}>
         Warning
       </Label>
-      <Label color="red" icon={<Icon svg={<AlertCircleOutline />} />}>
+      <Label color="danger" icon={<Icon svg={<AlertCircleOutline />} />}>
         Danger
       </Label>
     </LabelGroup>
@@ -93,10 +94,13 @@ export const Gallery = () => (
     <Heading>Global Colors</Heading>
     <LabelGroup>
       {globalColors.map(color => (
-        <Label color={color}>{color}</Label>
+        <>
+          {color.endsWith('-100') ? <br /> : null}
+          <Label color={color}>{color}</Label>
+        </>
       ))}
     </LabelGroup>
-  </Provider>
+  </ThemeToggleWrap>
 );
 
 const Template: Story<LabelProps> = args => <Label {...args}>Label Text</Label>;

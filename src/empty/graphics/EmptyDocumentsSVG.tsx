@@ -20,7 +20,7 @@ export const EmptyDocumentsSVG = (props: StyleProps) => {
           isolation: isolate;
         }
         .cls-2 {
-          fill: #2c353f;
+          fill: var(--ac-global-color-grey-200);
         }
         .cls-3,
         .cls-9 {
@@ -29,7 +29,7 @@ export const EmptyDocumentsSVG = (props: StyleProps) => {
           stroke-miterlimit: 10;
         }
         .cls-3 {
-          stroke: #02bf92;
+          stroke: var(--ac-global-color-primary);
           stroke-width: 1.21px;
           stroke-dasharray: 0 6.2;
         }
@@ -50,7 +50,7 @@ export const EmptyDocumentsSVG = (props: StyleProps) => {
           fill: url(${linearGradientIdPrefix}-4);
         }
         .cls-9 {
-          stroke: #02bfff;
+          stroke: var(--ac-global-color-primary);
           stroke-width: 2px;
         }
       `}

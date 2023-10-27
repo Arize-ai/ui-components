@@ -1,6 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 import { Breadcrumbs, Item, Provider } from '../src';
 import { withDesign } from 'storybook-addon-designs';
@@ -29,12 +30,12 @@ export default meta;
 
 export const Gallery = () => {
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <Breadcrumbs>
         <Item key="home">Home</Item>
         <Item key="trendy">Trendy</Item>
         <Item key="march 2020 assets">March 2020 Assets</Item>
       </Breadcrumbs>
-    </Provider>
+    </ThemeToggleWrap>
   );
 };

@@ -9,9 +9,7 @@ import React, {
 } from 'react';
 import { Text } from '../content';
 import { css } from '@emotion/react';
-import theme from '../theme';
 import { Orientation } from '../types/orientation';
-import { transparentize } from 'polished';
 
 type Tab = TabPaneProps & {
   key: string;
@@ -34,8 +32,8 @@ const tabListCSS = css`
     --scope-border-color,
     var(--ac-global-border-color-default)
   );
-  --tab-hover-color: ${transparentize(0.2, theme.colors.arizeLightBlue)};
-  --tab-selected-border-color: ${theme.colors.arizeLightBlue};
+  --tab-hover-color: var(--ac-global-color-primary-900);
+  --tab-selected-border-color: var(--ac-global-color-primary);
 
   .ac-tabs__tab-list-item {
     box-sizing: border-box; /* place the border inside */
@@ -43,7 +41,7 @@ const tabListCSS = css`
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 0 ${theme.spacing.padding16}px;
+    padding: 0 var(--ac-global-dimension-static-size-200);
     min-height: 30px;
     transition: 0.3s;
     font-weight: bold;
@@ -168,7 +166,7 @@ export function Tabs({
               <Text
                 textSize="medium"
                 weight="heavy"
-                color={isSelected ? 'white90' : 'white70'}
+                color={isSelected ? 'text-900' : 'text-700'}
               >
                 {tab.name}
               </Text>

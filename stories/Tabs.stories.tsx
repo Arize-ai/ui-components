@@ -5,7 +5,7 @@ import { withDesign } from 'storybook-addon-designs';
 import { Tabs, TabsProps } from '../src/tabs/Tabs';
 import { Heading } from '../src/content';
 import { Button, CloseOutline, Counter, Icon, Provider } from '../src';
-
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 const { TabPane } = Tabs;
 
 const meta: Meta = {
@@ -36,14 +36,16 @@ const tabContentCSS = css`
   color: white;
 `;
 const Template: Story<TabsProps> = args => (
-  <div style={{ width: 500 }}>
-    <Tabs {...args}>
-      <TabPane name="Tab 1" tabListItemProps={{ 'data-testid': 'first tab' }}>
-        Tab 1 contents
-      </TabPane>
-      <TabPane name="Tab 2">Tab 2 contents</TabPane>
-    </Tabs>
-  </div>
+  <ThemeToggleWrap>
+    <div style={{ width: 500 }}>
+      <Tabs {...args}>
+        <TabPane name="Tab 1" tabListItemProps={{ 'data-testid': 'first tab' }}>
+          Tab 1 contents
+        </TabPane>
+        <TabPane name="Tab 2">Tab 2 contents</TabPane>
+      </Tabs>
+    </div>
+  </ThemeToggleWrap>
 );
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
@@ -132,37 +134,39 @@ export const WithHidden: Story<TabsProps> = args => (
 );
 
 export const Gallery: Story<TabsProps> = args => (
-  <div style={{ width: 500 }}>
-    <section>
-      <Heading>Horizontal</Heading>
-      <Tabs orientation="horizontal">
-        <TabPane name="Tab 1">
-          {({ isSelected }) => (
-            <LazyLoadingTabContents isSelected={isSelected} />
-          )}
-        </TabPane>
-        <TabPane name="Tab 2">
-          {({ isSelected }) => (
-            <LazyLoadingTabContents isSelected={isSelected} />
-          )}
-        </TabPane>
-      </Tabs>
-    </section>
-    <section>
-      <Heading>Vertical</Heading>
-      <Tabs orientation="vertical">
-        <TabPane name="Tab 1">
-          {({ isSelected }) => (
-            <LazyLoadingTabContents isSelected={isSelected} />
-          )}
-        </TabPane>
-        <TabPane name="Tab 2">
-          {({ isSelected }) => (
-            <LazyLoadingTabContents isSelected={isSelected} />
-          )}
-        </TabPane>
-      </Tabs>
-    </section>
-  </div>
+  <ThemeToggleWrap>
+    <div style={{ width: 500 }}>
+      <section>
+        <Heading>Horizontal</Heading>
+        <Tabs orientation="horizontal">
+          <TabPane name="Tab 1">
+            {({ isSelected }) => (
+              <LazyLoadingTabContents isSelected={isSelected} />
+            )}
+          </TabPane>
+          <TabPane name="Tab 2">
+            {({ isSelected }) => (
+              <LazyLoadingTabContents isSelected={isSelected} />
+            )}
+          </TabPane>
+        </Tabs>
+      </section>
+      <section>
+        <Heading>Vertical</Heading>
+        <Tabs orientation="vertical">
+          <TabPane name="Tab 1">
+            {({ isSelected }) => (
+              <LazyLoadingTabContents isSelected={isSelected} />
+            )}
+          </TabPane>
+          <TabPane name="Tab 2">
+            {({ isSelected }) => (
+              <LazyLoadingTabContents isSelected={isSelected} />
+            )}
+          </TabPane>
+        </Tabs>
+      </section>
+    </div>
+  </ThemeToggleWrap>
 );
 Default.args = {};

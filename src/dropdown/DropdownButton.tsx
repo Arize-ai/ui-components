@@ -34,7 +34,7 @@ export interface DropdownButtonProps extends AddonableProps, Validation {
 const buttonBaseCSS = css`
   border: none;
   background-color: transparent;
-  color: ${theme.textColors.white90};
+  color: var(--ac-global-text-color-900);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +51,7 @@ const buttonBaseCSS = css`
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    color: var(--ac-field-text-color-override, ${theme.textColors.white90});
+    color: var(--ac-field-text-color-override, var(--ac-global-text-color-900));
   }
   .ac-dropdown-button__dropdown-icon {
     margin: 10px 0 10px 10px;
@@ -74,7 +74,7 @@ const buttonBaseCSS = css`
   .ac-dropdown-button__validation-icon {
     /* Animate in the icon */
     animation: ${appearKeyframes} ${0.2}s forwards ease-in-out;
-    top: ${theme.spacing.padding8}px;
+    top: var(--ac-global-dimension-static-size-100);
     right: 0;
     &.ac-dropdown-button__validation-icon--invalid {
       color: var(--ac-global-color-danger);
@@ -84,7 +84,8 @@ const buttonBaseCSS = css`
   // Make room for the invalid icon
   &.ac-dropdown-button > .ac-dropdown-button__text {
     padding-right: calc(
-      ${theme.spacing.padding8}px + var(--ac-validation-icon-width)
+      var(--ac-global-dimension-static-size-100) +
+        var(--ac-validation-icon-width)
     );
   }
 
@@ -97,7 +98,7 @@ const buttonBaseCSS = css`
  * Styles to add in addition to the base button styles for quiet
  */
 const quietButtonCSS = css`
-  --ac-dropdown-button-border-color: ${theme.components.dropdown.borderColor};
+  --ac-dropdown-button-border-color: var(--ac-global-border-color-default);
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   border-top: 1px solid transparent;
@@ -106,13 +107,14 @@ const quietButtonCSS = css`
       --ac-field-border-color-override,
       var(--ac-dropdown-button-border-color)
     );
-  margin: ${theme.spacing.margin8}px 0 ${theme.spacing.margin8}px 0;
+  margin: var(--ac-global-dimension-static-size-100) 0
+    var(--ac-global-dimension-static-size-100) 0;
   &.is-hovered {
-    border-bottom: 1px solid ${theme.components.dropdown.hoverBorderColor};
+    border-bottom: 1px solid var(--ac-global-color-grey-500);
   }
   &.is-active,
   &:focus {
-    border-bottom: 1px solid ${theme.components.dropdown.activeBorderColor};
+    border-bottom: 1px solid var(--ac-global-color-primary);
   }
   &[disabled] {
     cursor: default;
@@ -131,31 +133,33 @@ const quietButtonCSS = css`
  */
 const nonQuietButtonCSS = css`
   min-width: 200px;
-  padding: 0 ${theme.spacing.margin8}px 0 0;
-  --ac-dropdown-button-border-color: ${theme.components.dropdown.borderColor};
+  padding: 0 var(--ac-global-dimension-static-size-100) 0 0;
+  --ac-dropdown-button-border-color: var(--ac-global-input-field-border-color);
   border: 1px solid
     var(
       --ac-field-border-color-override,
       var(--ac-dropdown-button-border-color)
     );
   border-radius: ${theme.borderRadius.medium}px;
-  background-color: ${theme.components.dropdown.backgroundColor};
+  background-color: var(--ac-global-input-field-background-color);
   &.is-hovered {
-    border: 1px solid ${theme.components.dropdown.hoverBorderColor};
-    background-color: ${theme.components.dropdown.activeBackgroundColor};
+    border: 1px solid var(--ac-global-input-field-border-color-hover);
+    background-color: var(--ac-global-input-field-background-color-active);
   }
   &.is-active,
   &:focus {
-    border: 1px solid ${theme.components.dropdown.activeBorderColor};
-    background-color: ${theme.components.dropdown.activeBackgroundColor};
+    border: 1px solid var(--ac-global-input-field-border-color-active);
+    background-color: var(--ac-global-input-field-background-color-active);
   }
   &[disabled] {
     cursor: default;
     border: 1px solid ${theme.components.dropdown.borderColor};
   }
   .ac-dropdown-button__text {
-    margin: ${theme.spacing.margin8}px ${theme.spacing.margin8}px
-      ${theme.spacing.margin8}px ${theme.spacing.margin16}px;
+    margin: var(--ac-global-dimension-static-size-100)
+      var(--ac-global-dimension-static-size-100)
+      var(--ac-global-dimension-static-size-100)
+      var(--ac-global-dimension-static-size-200);
   }
 
   &.ac-dropdown-button--invalid {
@@ -231,7 +235,7 @@ function DropdownButton(
           css={css`
             color: var(
               --ac-field-text-color-override,
-              ${theme.textColors.white90}
+              var(--ac-global-text-color-900)
             );
           `}
         >

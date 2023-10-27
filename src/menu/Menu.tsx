@@ -14,7 +14,6 @@ import { mergeProps, useSyncRef } from '@react-aria/utils';
 import React, { Key, ReactElement, useContext } from 'react';
 import { useMenu } from '@react-aria/menu';
 import { useTreeState } from '@react-stately/tree';
-import theme from '../theme';
 import { css } from '@emotion/react';
 
 export interface MenuProps<T> extends CollectionBase<T>, MultipleSelection {
@@ -36,17 +35,17 @@ export interface AriaMenuProps<T>
 export interface MenuComponentProps<T> extends AriaMenuProps<T> {}
 
 const menuULCSS = css`
-  background-color: ${theme.colors.gray500};
-  border-radius: 4px;
-  color: ${theme.textColors.white90};
+  background-color: var(--ac-global-menu-background-color);
+  border-radius: var(--ac-global-rounding-small);
+  color: var(--ac-global-color-text-900);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
   outline: none;
-  border: 1px solid ${theme.components.dropdown.borderColor};
+  border: 1px solid var(--ac-global-menu-border-color);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
   max-height: inherit;
   list-style: none;
   margin: 0;
-  padding: ${theme.spacing.padding4}px 0;
+  padding: var(--ac-global-dimension-static-size-50) 0;
 `;
 function Menu<T extends object>(
   props: MenuComponentProps<T>,

@@ -23,7 +23,7 @@ export const NotFoundSVG = (props: StyleProps) => {
         }
         .cls-14,
         .cls-3 {
-          fill: #2c353f;
+          fill: var(--ac-global-color-grey-200);
         }
         .cls-4 {
           fill: url(#${id});
@@ -44,7 +44,7 @@ export const NotFoundSVG = (props: StyleProps) => {
         .cls-7,
         .cls-8,
         .cls-9 {
-          stroke: #5bdbff;
+          stroke: var(--ac-global-color-primary);
         }
         .cls-5 {
           stroke-width: 0.95px;
@@ -62,7 +62,7 @@ export const NotFoundSVG = (props: StyleProps) => {
           stroke-width: 0.25px;
         }
         .cls-10 {
-          stroke: #02bf92;
+          stroke: var(--ac-global-color-primary);
           stroke-dasharray: 0 5.11;
         }
         .cls-11 {
@@ -71,7 +71,7 @@ export const NotFoundSVG = (props: StyleProps) => {
         }
         .cls-12,
         .cls-14 {
-          stroke: #ededed;
+          stroke: var(--ac-global-color-grey-900);
           stroke-miterlimit: 1;
           stroke-width: 1.5px;
         }
