@@ -11,6 +11,7 @@ import {
   View,
 } from '../src';
 import { Meta, Story } from '@storybook/react';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 function IconsGrid() {
   const iconsArray: ReactElement[] = [];
@@ -25,11 +26,11 @@ function IconsGrid() {
             display: 'flex',
             flexDirection: 'column',
             gap: '8px',
-            color: 'white',
             width: 120,
             height: 80,
             alignItems: 'center',
             justifyContent: 'center',
+            color: 'var(--ac-global-color-grey-800)',
             borderRadius: 3,
           }}
           title={name}
@@ -63,7 +64,7 @@ function IconsGrid() {
   });
 
   return (
-    <Provider>
+    <ThemeToggleWrap>
       <ul
         style={{
           listStyle: 'none',
@@ -79,7 +80,7 @@ function IconsGrid() {
           <li key={i}>{el}</li>
         ))}
       </ul>
-    </Provider>
+    </ThemeToggleWrap>
   );
 }
 
