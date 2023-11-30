@@ -38,17 +38,30 @@ export interface LabelProps extends HTMLAttributes<HTMLElement> {
     | 'purple'
     | 'gray'
     | ColorValue;
+  /**
+   * The shape of the label
+   * @default pill
+   */
+  shape?: LabelShape;
 }
+
+type LabelShape = 'pill' | 'badge';
 
 const labelCSS = (color: string | null) => css`
   color: ${color || theme.labelColors.white};
   border: 1px solid ${color || theme.labelColors.white};
   background-color: transparent;
   padding: 1px 8px;
-  border-radius: 10px;
+
   text-align: center;
   display: inline-flex;
   align-items: center;
+  &[data-shape='pill'] {
+    border-radius: 12px;
+  }
+  &[data-shape='badge'] {
+    border-radius: 4px;
+  }
   &.interactive {
     cursor: pointer;
     transition: opacity 0.2s ease;
@@ -98,6 +111,7 @@ export const Label = ({
   icon,
   children,
   color = 'white',
+  shape = 'pill',
   onClick,
   ...props
 }: LabelProps) => {
@@ -124,6 +138,7 @@ export const Label = ({
       className={classNames(classes)}
       css={labelCSS(globalColor)}
       onClick={onClick}
+      data-shape={shape}
       {...props}
     >
       {icon}
