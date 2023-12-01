@@ -9,8 +9,8 @@ import {
   AlertTriangleOutline,
   AlertCircleOutline,
 } from '../src/icon';
-import { Provider, Heading } from '../src';
-import { ColorValue } from '../src/types';
+import { Heading } from '../src';
+
 import { globalColors } from './constants';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
@@ -61,6 +61,30 @@ export const Gallery = () => (
       <Label color="red">Label</Label>
       <Label color="purple">Label</Label>
       <Label color="gray">Label</Label>
+    </LabelGroup>
+    <br />
+    <LabelGroup>
+      <Label color="white" shape="badge">
+        white
+      </Label>
+      <Label color="blue" shape="badge">
+        blue
+      </Label>
+      <Label color="green" shape="badge">
+        green
+      </Label>
+      <Label color="orange" shape="badge">
+        orange
+      </Label>
+      <Label color="red" shape="badge">
+        red
+      </Label>
+      <Label color="purple" shape="badge">
+        purple
+      </Label>
+      <Label color="gray" shape="badge">
+        gray
+      </Label>
     </LabelGroup>
     <br />
     <br />
