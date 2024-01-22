@@ -145,7 +145,7 @@ export function Tabs({
   const [selectedIndex, setSelectedIndex] = useControlledState(
     index,
     defaultValue,
-    () => {}
+    onChange
   );
   return (
     <div
@@ -168,7 +168,6 @@ export function Tabs({
               onClick={e => {
                 e.preventDefault();
                 setSelectedIndex(index);
-                onChange && onChange(index);
               }}
               {...tab?.tabListItemProps}
             >
