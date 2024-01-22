@@ -7,6 +7,7 @@ import React, {
   ReactElement,
   HtmlHTMLAttributes,
 } from 'react';
+import { useControlledState } from '@react-stately/utils';
 import { Text } from '../content';
 import { css } from '@emotion/react';
 import { Orientation } from '../types/orientation';
@@ -115,7 +116,7 @@ export type TabsProps = {
   /**
    * If specified, the index of the selected tab is controlled by the parent component rather than the internal state.
    */
-  selectedTabIndex?: number;
+  index?: number;
   onChange?: (index: number) => void;
   /**
    * The orientation of the tabs. Defaults to horizontal
@@ -131,7 +132,7 @@ export type TabsProps = {
 export function Tabs({
   children,
   className,
-  selectedTabIndex,
+  index,
   onChange,
   orientation = 'horizontal',
   extra,
@@ -139,12 +140,14 @@ export function Tabs({
   // Filter out the nulls from the children so that tabs can be mounted conditionally
   children = Children.toArray(children).filter(child => child);
   const tabs = parseTabList(children);
-  // Initialize the selected tab to the first non-hidden tab
-  const [selectedStateIndex, setSelectedIndex] = useState<number>(
-    tabs.findIndex(tab => !tab.hidden)
+  
+  // Initialize the selected tab to the first non-hidden tab if there is no controlled value provided
+  const defaultValue = tabs.findIndex(tab => !tab.hidden);
+  const [selectedIndex, setSelectedIndex] = useControlledState(
+    index,
+    defaultValue,
+    () => {}
   );
-  const selectedIndex =
-    typeof selectedTabIndex == "number" ? selectedTabIndex : selectedStateIndex;
   return (
     <div
       className={`ac-tabs ${className}`}
