@@ -112,6 +112,10 @@ function parseTabList(children: ReactNode): Tab[] {
 export type TabsProps = {
   children: ReactNode[];
   className?: string;
+  /**
+   * If specified, the index of the selected tab is controlled by the parent component rather than the internal state.
+   */
+  selectedTabIndex?: number;
   onChange?: (index: number) => void;
   /**
    * The orientation of the tabs. Defaults to horizontal
@@ -127,6 +131,7 @@ export type TabsProps = {
 export function Tabs({
   children,
   className,
+  selectedTabIndex,
   onChange,
   orientation = 'horizontal',
   extra,
@@ -135,9 +140,11 @@ export function Tabs({
   children = Children.toArray(children).filter(child => child);
   const tabs = parseTabList(children);
   // Initialize the selected tab to the first non-hidden tab
-  const [selectedIndex, setSelectedIndex] = useState<number>(
+  const [selectedStateIndex, setSelectedIndex] = useState<number>(
     tabs.findIndex(tab => !tab.hidden)
   );
+  const selectedIndex =
+    typeof selectedTabIndex == "number" ? selectedTabIndex : selectedStateIndex;
   return (
     <div
       className={`ac-tabs ${className}`}
