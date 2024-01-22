@@ -1,5 +1,4 @@
 import React, {
-  useState,
   Children,
   cloneElement,
   ReactNode,
@@ -7,6 +6,7 @@ import React, {
   ReactElement,
   HtmlHTMLAttributes,
 } from 'react';
+import { useControlledState } from '@react-stately/utils';
 import { Text } from '../content';
 import { css } from '@emotion/react';
 import { Orientation } from '../types/orientation';
@@ -112,6 +112,10 @@ function parseTabList(children: ReactNode): Tab[] {
 export type TabsProps = {
   children: ReactNode[];
   className?: string;
+  /**
+   * If specified, the index of the selected tab is controlled by the parent component rather than the internal state.
+   */
+  index?: number;
   onChange?: (index: number) => void;
   /**
    * The orientation of the tabs. Defaults to horizontal
@@ -127,6 +131,7 @@ export type TabsProps = {
 export function Tabs({
   children,
   className,
+  index,
   onChange,
   orientation = 'horizontal',
   extra,
@@ -134,9 +139,13 @@ export function Tabs({
   // Filter out the nulls from the children so that tabs can be mounted conditionally
   children = Children.toArray(children).filter(child => child);
   const tabs = parseTabList(children);
-  // Initialize the selected tab to the first non-hidden tab
-  const [selectedIndex, setSelectedIndex] = useState<number>(
-    tabs.findIndex(tab => !tab.hidden)
+  
+  // Initialize the selected tab to the first non-hidden tab if there is no controlled value provided
+  const defaultValue = tabs.findIndex(tab => !tab.hidden);
+  const [selectedIndex, setSelectedIndex] = useControlledState(
+    index,
+    defaultValue,
+    onChange
   );
   return (
     <div
@@ -159,7 +168,6 @@ export function Tabs({
               onClick={e => {
                 e.preventDefault();
                 setSelectedIndex(index);
-                onChange && onChange(index);
               }}
               {...tab?.tabListItemProps}
             >
