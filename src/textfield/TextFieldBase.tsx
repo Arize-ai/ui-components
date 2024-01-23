@@ -219,11 +219,9 @@ const standardTextfieldBaseCSS = css`
     var(--ac-field-border-color-override, var(--ac-textfield-border-color));
   &.is-hovered:not(.is-disabled) {
     border: 1px solid var(--ac-global-input-field-border-color-active);
-    background-color: var(--ac-global-input-field-background-color-active);
   }
   &.is-focused:not(.is-disabled) {
     border: 1px solid var(--ac-global-input-field-border-color-active);
-    background-color: var(--ac-global-input-field-background-color-active);
     &.ac-textfield--invalid {
       border: 1px solid var(--ac-global-color-danger);
       .ac-textfield__input {

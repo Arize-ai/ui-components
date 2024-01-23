@@ -167,6 +167,13 @@ export function OverviewPage() {
                         Receive alerts when your model experiences drift, data
                         quality, and performance degradations.
                       </Text>
+                      <span
+                        css={css`
+                          color: var(--ac-global-color-primary);
+                        `}
+                      >
+                        This is a fake link
+                      </span>
                     </Flex>
                   </Flex>
                 </ListItem>
