@@ -31,7 +31,7 @@ export const tooltipCSS = ({ placement }: { placement: PlacementAxis }) => {
     --tooltip-target-offset: ${theme.spacing.tooltip.offset}px;
     --tooltip-tip-width: 8px;
     --tooltip-max-inline-size: 200px;
-    --tooltip-background-color: var(--ac-global-color-grey-200);
+    --tooltip-background-color: var(--ac-global-color-grey-300);
     color: var(--ac-global-text-color-900);
     background-color: var(--tooltip-background-color);
     position: relative;
