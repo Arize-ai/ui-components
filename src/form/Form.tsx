@@ -100,7 +100,7 @@ const formCSS = css`
       flex-wrap: wrap;
       gap: 0.5em;
 
-      --ac-field-text-color-override: ${theme.colors.arizeLightBlue};
+      --ac-field-text-color-override: var(--ac-global-color-primary);
     }
   }
 `;
