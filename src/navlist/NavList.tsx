@@ -27,12 +27,12 @@ const navCSS = css`
     position: relative;
     overflow: visible;
     &.is-selected {
-      background-color: ${theme.colors.gray600};
+      background-color: var(--ac-global-color-grey-700);
       &::before {
         position: absolute;
         display: block;
         content: '';
-        background-color: ${theme.colors.arizeLightBlue};
+        background-color: var(--ac-global-color-primary);
         width: 4px;
         height: calc(100% - 4px);
         left: -8px;
@@ -40,7 +40,7 @@ const navCSS = css`
       }
     }
     &:hover {
-      background-color: ${theme.colors.gray500};
+      background-color: var(--ac-global-color-grey-500);
     }
   }
 `;

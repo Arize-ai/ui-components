@@ -11,7 +11,6 @@ import { filterDOMProps } from '@react-aria/utils';
 import React, { useContext, ReactElement, FormEventHandler } from 'react';
 import { css } from '@emotion/react';
 import { Provider } from '../provider';
-import theme from '../theme';
 
 let FormContext = React.createContext<LabelableProps>({});
 
@@ -100,7 +99,7 @@ const formCSS = css`
       flex-wrap: wrap;
       gap: 0.5em;
 
-      --ac-field-text-color-override: ${theme.colors.arizeLightBlue};
+      --ac-field-text-color-override: var(--ac-global-color-primary);
     }
   }
 `;
