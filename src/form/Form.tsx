@@ -11,7 +11,6 @@ import { filterDOMProps } from '@react-aria/utils';
 import React, { useContext, ReactElement, FormEventHandler } from 'react';
 import { css } from '@emotion/react';
 import { Provider } from '../provider';
-import theme from '../theme';
 
 let FormContext = React.createContext<LabelableProps>({});
 
