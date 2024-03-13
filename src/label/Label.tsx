@@ -71,8 +71,8 @@ const labelCSS = (color: string | null) => css`
   }
   // hard coded values
   &.ac-label--blue {
-    color: ${theme.labelColors.blue};
-    border: 1px solid ${theme.labelColors.blue};
+    color: var(--ac-global-color-primary);
+    border: 1px solid var(--ac-global-color-primary);
   }
   &.ac-label--orange {
     color: ${theme.labelColors.orange};

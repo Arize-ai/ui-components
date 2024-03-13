@@ -27,7 +27,7 @@ const navCSS = css`
     position: relative;
     overflow: visible;
     &.is-selected {
-      background-color: var(--ac-global-color-grey-700);
+      background-color: var(--ac-global-color-grey-300);
       &::before {
         position: absolute;
         display: block;
@@ -40,7 +40,7 @@ const navCSS = css`
       }
     }
     &:hover {
-      background-color: var(--ac-global-color-grey-500);
+      background-color: var(--ac-global-color-grey-200);
     }
   }
 `;
