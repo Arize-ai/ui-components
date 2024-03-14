@@ -51,7 +51,7 @@ function TextArea(props: TextAreaProps, ref: RefObject<TextFieldRef>) {
       // overflow: hidden in Firefox https://bugzilla.mozilla.org/show_bug.cgi?id=1787062
       const isFirefox = 'MozAppearance' in input.style;
       if (!isFirefox) {
-        input.style.overflow = 'auto';
+        input.style.overflow = 'hidden';
       }
       input.style.alignSelf = 'start';
       input.style.height = 'auto';
