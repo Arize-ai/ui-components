@@ -71,28 +71,28 @@ const labelCSS = (color: string | null) => css`
   }
   // hard coded values
   &.ac-label--blue {
-    color: var(--ac-global-color-primary);
-    border: 1px solid var(--ac-global-color-primary);
+    color: var(--ac-global-color-blue-900);
+    border: 1px solid var(--ac-global-color-blue-900);
   }
   &.ac-label--orange {
-    color: ${theme.labelColors.orange};
-    border: 1px solid ${theme.labelColors.orange};
+    color: var(--ac-global-color-orange-900);
+    border: 1px solid var(--ac-global-color-orange-900);
   }
   &.ac-label--green {
-    color: ${theme.labelColors.green};
-    border: 1px solid ${theme.labelColors.green};
+    color: var(--ac-global-color-green-900);
+    border: 1px solid var(--ac-global-color-green-900);
   }
   &.ac-label--red {
-    color: ${theme.labelColors.red};
-    border: 1px solid ${theme.labelColors.red};
+    color: var(--ac-global-color-red-900);
+    border: 1px solid var(--ac-global-color-red-900);
   }
   &.ac-label--purple {
-    color: ${theme.labelColors.purple};
-    border: 1px solid ${theme.labelColors.purple};
+    color: var(--ac-global-color-purple-900);
+    border: 1px solid var(--ac-global-color-purple-900);
   }
   &.ac-label--gray {
-    color: ${theme.labelColors.gray};
-    border: 1px solid ${theme.labelColors.gray};
+    color: var(--ac-global-color-grey-900);
+    border: 1px solid var(--ac-global-color-grey-900);
   }
   & > i {
     font-size: 10px;
