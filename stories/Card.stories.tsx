@@ -94,6 +94,33 @@ const GalleryCards = (props: { variant: CardProps['variant'] }) => {
       >
         {''}
       </Card>
+      <Card
+        collapsible
+        titleSeparator={false}
+        title="Title"
+        style={cardStyle}
+        {...props}
+      >
+        <Tabs>
+          <TabPane name="Tab 1">{null}</TabPane>
+          <TabPane name="Tab 2">{null}</TabPane>
+        </Tabs>
+      </Card>
+      <TabbedCard
+        title="Title"
+        extra={
+          <Button variant="default" size={buttonSize}>
+            Create Dashboard
+          </Button>
+        }
+        {...props}
+        style={cardStyle}
+      >
+        <Tabs>
+          <TabPane name="Tab 1">{null}</TabPane>
+          <TabPane name="Tab 2">{null}</TabPane>
+        </Tabs>
+      </TabbedCard>
       <TabbedCard title="Title" style={cardStyle} {...props}>
         <Tabs>
           <TabPane name="Tab 1">{null}</TabPane>
