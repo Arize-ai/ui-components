@@ -142,7 +142,6 @@ export function Card({
         headerId={headerId}
         className="ac-card-collapsible-header"
         subTitle={subTitleEl}
-        titleSeparator={titleSeparator}
         {...styleProps}
       />
     </div>

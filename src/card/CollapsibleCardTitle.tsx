@@ -27,7 +27,6 @@ interface CollapsibleCardTitleProps extends ViewProps {
   headerId: string;
   className?: string;
   subTitle: ReactNode;
-  titleSeparator?: boolean;
 }
 export function CollapsibleCardTitle(props: CollapsibleCardTitleProps) {
   const {
