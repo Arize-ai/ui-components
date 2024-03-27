@@ -45,7 +45,7 @@ export type RadioProps = {
   /**
    * The actual text to be displayed `Cats For Adoptions`
    */
-  label: string;
+  label: string | ReactNode;
   /**
    * Additional functionality after the select
    */
@@ -104,7 +104,7 @@ function Radio(props: RadioProps) {
   };
 
   const radioChildren = children
-    ? React.Children.map(props.children, (child) =>
+    ? React.Children.map(props.children, child =>
         isValidElement(child)
           ? React.cloneElement(child as ReactElement<any>, { isDisabled })
           : child
