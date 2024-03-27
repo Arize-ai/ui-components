@@ -61,6 +61,11 @@ interface CollapsibleCardProps {
    * Callback function for when the collapsed state changes
    */
   onOpenChange?: (isOpen: boolean) => void;
+  /**
+   * Whether or not the title has a separator
+   * @default true
+   */
+  titleSeparator?: boolean;
 }
 
 export interface CardProps
@@ -87,6 +92,7 @@ export function Card({
   titleExtra,
   collapsible = false,
   defaultOpen = true,
+  titleSeparator = true,
   id,
   onOpenChange,
   ...props
@@ -136,6 +142,7 @@ export function Card({
         headerId={headerId}
         className="ac-card-collapsible-header"
         subTitle={subTitleEl}
+        titleSeparator={titleSeparator}
         {...styleProps}
       />
     </div>
@@ -159,7 +166,7 @@ export function Card({
       style={{ ...style, ...styleProps.style }}
     >
       <header
-        css={headerCSS({ bordered: true })}
+        css={headerCSS({ bordered: titleSeparator })}
         id={headerId}
         className={classNames({ 'is-collapsible': collapsible })}
       >
