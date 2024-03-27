@@ -1807,26 +1807,18 @@ export const VolumeOnOutline = () => (
 );
 
 export const MinusOutline = () => (
-  <svg viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg" fill="none">
-    <path
-      d="M15.834 11.3334H4.16732C3.70732 11.3334 3.33398 10.9609 3.33398 10.5001C3.33398 10.0392 3.70732 9.66675 4.16732 9.66675H15.834C16.2948 9.66675 16.6673 10.0392 16.6673 10.5001C16.6673 10.9609 16.2948 11.3334 15.834 11.3334"
-      fill="white"
-      fill-opacity="0.9"
-    />
-    <mask
-      id="mask0_1981_1616"
-      maskUnits="userSpaceOnUse"
-      x="3"
-      y="9"
-      width="14"
-      height="3"
-    >
-      <path
-        d="M15.834 11.3334H4.16732C3.70732 11.3334 3.33398 10.9609 3.33398 10.5001C3.33398 10.0392 3.70732 9.66675 4.16732 9.66675H15.834C16.2948 9.66675 16.6673 10.0392 16.6673 10.5001C16.6673 10.9609 16.2948 11.3334 15.834 11.3334"
-        fill="white"
-      />
-    </mask>
-    <g mask="url(#mask0_1981_1616)"></g>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g data-name="Layer 2">
+      <g data-name="minus">
+        <rect
+          width="24"
+          height="24"
+          transform="rotate(180 12 12)"
+          opacity="0"
+        />
+        <path d="M19 13H5a1 1 0 0 1 0-2h14a1 1 0 0 1 0 2z" />
+      </g>
+    </g>
   </svg>
 );
 
