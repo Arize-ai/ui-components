@@ -135,7 +135,7 @@ export function ListItem({
   return (
     <li
       className={`ac-list-item${
-        className !== undefined ? ` ${className}` : ''
+        className ? ` ${className}` : ''
       }`}
       css={listItemCSS({ listSize, noPadding, interactive })}
       onClick={onClick}
