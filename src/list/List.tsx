@@ -47,7 +47,7 @@ export function List({
 }: ListProps) {
   return (
     <ul
-      className={`ac-list${className !== undefined ? ` ${className}` : ''}`}
+      className={`ac-list${className ? ` ${className}` : ''}`}
       css={css(
         css`
           list-style: none;
