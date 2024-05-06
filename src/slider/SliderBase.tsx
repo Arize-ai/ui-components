@@ -16,7 +16,8 @@ export interface SliderBaseChildArguments {
 
 export interface SliderBaseProps<T = number[]> extends BarSliderBase<T> {
   children: (opts: SliderBaseChildArguments) => ReactNode;
-  classes?: string[];
+  // eslint-disable-next-line @typescript-eslint/ban-types
+  classes?: string[] | Object;
   style?: CSSProperties;
 }
 
