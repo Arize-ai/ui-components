@@ -1,15 +1,6 @@
 import { css } from '@emotion/react';
-import { Popover } from '../popover';
-import { classNames, useDOMRef, useUnwrapDOMRef } from '../utils';
 import { useOverlayPosition } from '@react-aria/overlays';
-import {
-  DOMRef,
-  DOMRefValue,
-  FocusableRefValue,
-  LabelPosition,
-} from '../types';
 import { HiddenSelect, useSelect } from '@react-aria/select';
-import { ListBoxBase, useListBoxLayout } from '../listbox';
 import { FocusScope } from '@react-aria/focus';
 import {
   mergeProps,
@@ -17,11 +8,20 @@ import {
   useResizeObserver,
 } from '@react-aria/utils';
 import { Placement } from '@react-types/overlays';
-import { DropdownMenu, DropdownButton } from '../dropdown';
 import { PressResponder, useHover } from '@react-aria/interactions';
 import React, { ReactElement, useCallback, useRef, useState } from 'react';
-import { PickerProps } from '../types';
 import { useSelectState } from '@react-stately/select';
+import { PickerProps } from '../types';
+import { DropdownMenu, DropdownButton } from '../dropdown';
+import { ListBoxBase, useListBoxLayout } from '../listbox';
+import {
+  DOMRef,
+  DOMRefValue,
+  FocusableRefValue,
+  LabelPosition,
+} from '../types';
+import { classNames, useDOMRef, useUnwrapDOMRef } from '../utils';
+import { Popover } from '../popover';
 import { useProviderProps } from '../provider';
 import { Field } from '../field';
 import { dimensionValue } from '../utils/styleProps';
@@ -33,7 +33,7 @@ function Picker<T extends object>(
   // Call use provider props so the textfield can inherit from the provider
   // E.x. disabled, readOnly, etc.
   props = useProviderProps(props);
-  let {
+  const {
     isQuiet = false,
     isDisabled,
     direction = 'bottom',
@@ -49,20 +49,20 @@ function Picker<T extends object>(
     validationState,
   } = props;
 
-  let state = useSelectState(props);
-  let domRef = useDOMRef(ref);
+  const state = useSelectState(props);
+  const domRef = useDOMRef(ref);
 
-  let dropdownRef = useRef<DOMRefValue<HTMLDivElement>>(null);
-  let unwrappedDropdownRef = useUnwrapDOMRef(dropdownRef);
+  const dropdownRef = useRef<DOMRefValue<HTMLDivElement>>(null);
+  const unwrappedDropdownRef = useUnwrapDOMRef(dropdownRef);
   const triggerRef = useRef<FocusableRefValue<HTMLElement>>(null);
-  let unwrappedTriggerRef = useUnwrapDOMRef(triggerRef);
-  let listboxRef = useRef();
+  const unwrappedTriggerRef = useUnwrapDOMRef(triggerRef);
+  const listboxRef = useRef();
 
   // We create the listbox layout in Picker and pass it to ListBoxBase below
   // so that the layout information can be cached even while the listbox is not mounted.
   // We also use the layout as the keyboard delegate for type to select.
-  let layout = useListBoxLayout(state);
-  let {
+  const layout = useListBoxLayout(state);
+  const {
     labelProps,
     triggerProps,
     menuProps,
@@ -77,7 +77,7 @@ function Picker<T extends object>(
     unwrappedTriggerRef
   );
 
-  let { overlayProps, placement, updatePosition } = useOverlayPosition({
+  const { overlayProps, placement, updatePosition } = useOverlayPosition({
     targetRef: unwrappedTriggerRef,
     overlayRef: unwrappedDropdownRef,
     // @ts-ignore refs are not playing nicely with hooks
@@ -88,7 +88,7 @@ function Picker<T extends object>(
     onClose: state.close,
   });
 
-  let { hoverProps, isHovered } = useHover({ isDisabled });
+  const { hoverProps, isHovered } = useHover({ isDisabled });
 
   // Update position once the ListBox has rendered. This ensures that
   // it flips properly when it doesn't fit in the available space.
@@ -101,10 +101,10 @@ function Picker<T extends object>(
     }
   }, [state.isOpen, updatePosition]);
 
-  let isLoadingInitial = props.isLoading && state.collection.size === 0;
-  let isLoadingMore = props.isLoading && state.collection.size > 0;
+  const isLoadingInitial = props.isLoading && state.collection.size === 0;
+  const isLoadingMore = props.isLoading && state.collection.size > 0;
 
-  let listbox = (
+  const listbox = (
     <FocusScope restoreFocus>
       <ListBoxBase
         {...menuProps}
@@ -126,11 +126,11 @@ function Picker<T extends object>(
   );
 
   // Measure the width of the button to inform the width of the menu (below).
-  let [buttonWidth, setButtonWidth] = useState<number | null>(null);
+  const [buttonWidth, setButtonWidth] = useState<number | null>(null);
 
-  let onResize = useCallback(() => {
+  const onResize = useCallback(() => {
     if (unwrappedTriggerRef.current) {
-      let width = unwrappedTriggerRef.current.offsetWidth;
+      const width = unwrappedTriggerRef.current.offsetWidth;
       setButtonWidth(width);
     }
   }, [unwrappedTriggerRef, setButtonWidth]);
@@ -145,9 +145,9 @@ function Picker<T extends object>(
   // If quiet, use the default width, otherwise match the width of the button. This can be overridden by the menuWidth prop.
   // Always have a minimum width of the button width. When quiet, there is an extra offset to add.
   // Not using style props for this because they don't support `calc`.
-  let width = isQuiet ? null : buttonWidth;
+  const width = isQuiet ? null : buttonWidth;
 
-  let style = {
+  const style = {
     ...overlayProps.style,
     width: menuWidth ? dimensionValue(menuWidth) : width,
     // TODO: move to a css variable
@@ -238,7 +238,7 @@ function Picker<T extends object>(
     </div>
   );
 
-  let wrapperClassName = label
+  const wrapperClassName = label
     ? classNames('ac-field', props.className, {
         'ac-dropdown-field-wrapper--quiet': isQuiet,
         'ac-Dropdown-field-wrapper--positionSide': labelPosition === 'side',

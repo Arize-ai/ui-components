@@ -1,10 +1,10 @@
 import React, { CSSProperties, ReactNode } from 'react';
-import { classNames } from '../utils/classNames';
 import { mergeProps } from '@react-aria/utils';
 import { useHover } from '@react-aria/interactions';
+import { useButton } from '@react-aria/button';
+import { classNames } from '../utils/classNames';
 import { FocusableRef, PressEvents } from '../types';
 import { useFocusableRef } from '../utils/useDOMRef';
-import { useButton } from '@react-aria/button';
 
 interface TriggerWrapProps extends PressEvents {
   style?: CSSProperties;
@@ -21,7 +21,7 @@ function TriggerWrap(
   props: TriggerWrapProps,
   ref: FocusableRef<HTMLDivElement>
 ) {
-  let domRef = useFocusableRef(ref);
+  const domRef = useFocusableRef(ref);
   const { children, style, ...otherProps } = props;
   // Need to advertise the component as a button for tooltips to work
   const { buttonProps } = useButton(props, domRef);
@@ -44,5 +44,5 @@ function TriggerWrap(
 /**
  * TriggerWrap allows users to focus on an element and to get tooltips
  */
-let _TriggerWrap = React.forwardRef(TriggerWrap);
+const _TriggerWrap = React.forwardRef(TriggerWrap);
 export { _TriggerWrap as TriggerWrap };

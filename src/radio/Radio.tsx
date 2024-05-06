@@ -5,21 +5,21 @@ import React, {
   SyntheticEvent,
 } from 'react';
 import { useRadio } from '@react-aria/radio';
-import { useRadioProvider } from './context';
-import { Icon } from '../icon';
-import { RadioButtonOff, RadioButtonOnFill } from './icons';
 import { VisuallyHidden } from '@react-aria/visually-hidden';
 import { useFocusRing } from '@react-aria/focus';
+import { useId } from '@react-aria/utils';
+import { Icon } from '../icon';
+import { Text } from '../content';
+import { classNames } from '../utils';
 import {
   radioCSS,
   radioButtonIconCSS,
   radioChildrenCSS,
   getRadioCSS,
 } from './styles';
-import { useId } from '@react-aria/utils';
-import { Text } from '../content';
+import { RadioButtonOff, RadioButtonOnFill } from './icons';
 import { RadioSize, RadioVariant } from './types';
-import { classNames } from '../utils';
+import { useRadioProvider } from './context';
 
 export type RadioProps = {
   /**
@@ -60,7 +60,7 @@ export type RadioProps = {
 
 function Radio(props: RadioProps) {
   const radioGroupProps = useRadioProvider();
-  let { state } = radioGroupProps!;
+  const { state } = radioGroupProps!;
   const {
     variant = 'default',
     size = 'normal',

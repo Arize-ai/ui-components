@@ -1,15 +1,15 @@
-import { Button } from '../button';
-import { classNames, useDOMRef } from '../utils';
-import { CloseOutline, Icon } from '../icon';
-import { DialogContext, DialogContextValue } from './context';
 import { DOMRef } from '@react-types/shared';
 import { FocusScope } from '@react-aria/focus';
 import { mergeProps } from '@react-aria/utils';
 import React, { useContext } from 'react';
 import { useDialog } from '@react-aria/dialog';
+import { css } from '@emotion/react';
 import { DialogProps } from '../types/dialog';
 import { Heading } from '../content';
-import { css } from '@emotion/react';
+import { CloseOutline, Icon } from '../icon';
+import { classNames, useDOMRef } from '../utils';
+import { Button } from '../button';
+import { DialogContext, DialogContextValue } from './context';
 
 const dialogCSS = css`
   outline: none;
@@ -73,7 +73,7 @@ const sizeMap: Record<NonNullable<DialogProps['size']>, string> = {
 };
 
 function Dialog(props: DialogProps, ref: DOMRef) {
-  let { type = 'modal', ...contextProps } =
+  const { type = 'modal', ...contextProps } =
     useContext(DialogContext) || ({} as DialogContextValue);
   let {
     children,
@@ -83,9 +83,9 @@ function Dialog(props: DialogProps, ref: DOMRef) {
     title,
     extra,
   } = props;
-  let domRef = useDOMRef(ref);
+  const domRef = useDOMRef(ref);
   size = size || 'S';
-  let sizeVariant = sizeMap[size];
+  const sizeVariant = sizeMap[size];
   const { dialogProps, titleProps } = useDialog(
     mergeProps(contextProps, props),
     domRef
@@ -150,5 +150,5 @@ function Dialog(props: DialogProps, ref: DOMRef) {
  * Dialogs are windows containing contextual information, tasks, or workflows that appear over the user interface.
  * Depending on the kind of Dialog, further interactions may be blocked until the Dialog is acknowledged.
  */
-let _Dialog = React.forwardRef(Dialog);
+const _Dialog = React.forwardRef(Dialog);
 export { _Dialog as Dialog };

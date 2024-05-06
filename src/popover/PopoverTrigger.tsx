@@ -1,18 +1,18 @@
 import React, { ReactNode, ReactElement, useRef } from 'react';
 import { PressResponder } from '@react-aria/interactions';
-import { Popover } from './Popover';
 import {
   OverlayTriggerState,
   useOverlayTriggerState,
 } from '@react-stately/overlays';
+import { useOverlayPosition, useOverlayTrigger } from '@react-aria/overlays';
 import {
   PopoverClose,
   OverlayTriggerProps,
   PositionProps,
   DOMRefValue,
 } from '../types';
-import { useOverlayPosition, useOverlayTrigger } from '@react-aria/overlays';
 import { unwrapDOMRef } from '../utils/useDOMRef';
+import { Popover } from './Popover';
 
 export interface PopoverTriggerProps
   extends OverlayTriggerProps,

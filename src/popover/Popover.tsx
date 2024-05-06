@@ -1,10 +1,10 @@
 import React, { ReactNode, HTMLAttributes, forwardRef } from 'react';
 import { useOverlay, useModal } from '@react-aria/overlays';
-import { Overlay } from '../overlays';
-import { PlacementAxis, DOMRef } from '../types';
 import { mergeProps } from '@react-aria/utils';
 import { FocusScope } from '@react-aria/focus';
 import { useDialog } from '@react-aria/dialog';
+import { PlacementAxis, DOMRef } from '../types';
+import { Overlay } from '../overlays';
 import { useDOMRef } from '../utils/useDOMRef';
 import { classNames } from '../utils/classNames';
 import { popoverCSS } from './styles';

@@ -7,8 +7,8 @@ import React, {
   HtmlHTMLAttributes,
 } from 'react';
 import { useControlledState } from '@react-stately/utils';
-import { Text } from '../content';
 import { css } from '@emotion/react';
+import { Text } from '../content';
 import { Orientation } from '../types/orientation';
 
 type Tab = TabPaneProps & {

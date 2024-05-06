@@ -1,7 +1,7 @@
 import { CSSProperties } from 'react';
-import { PlacementAxis } from '../types';
 import React, { HTMLAttributes, RefObject } from 'react';
 import { TooltipTriggerState } from '@react-stately/tooltip';
+import { PlacementAxis } from '../types';
 
 interface TooltipContextProps {
   state?: TooltipTriggerState;

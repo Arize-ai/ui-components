@@ -1,19 +1,19 @@
 import { FocusableRef } from '@react-types/shared';
 import React from 'react';
+import { useLocale } from '@react-aria/i18n';
+import { RangeSliderProps } from '../types/slider';
 import {
   SliderBase,
   SliderBaseChildArguments,
   SliderBaseProps,
 } from './SliderBase';
 import { SliderThumb } from './SliderThumb';
-import { RangeSliderProps } from '../types/slider';
-import { useLocale } from '@react-aria/i18n';
 
 function RangeSlider(
   props: RangeSliderProps,
   ref: FocusableRef<HTMLDivElement>
 ) {
-  let {
+  const {
     onChange,
     onChangeEnd,
     value,
@@ -22,7 +22,7 @@ function RangeSlider(
     ...otherProps
   } = props;
 
-  let baseProps: Omit<SliderBaseProps<number[]>, 'children'> = {
+  const baseProps: Omit<SliderBaseProps<number[]>, 'children'> = {
     ...otherProps,
     value: value != null ? [value.start, value.end] : undefined,
     defaultValue:
@@ -37,17 +37,16 @@ function RangeSlider(
       onChangeEnd?.({ start: v[0], end: v[1] });
     },
     getValueLabel: getValueLabel
-      ? // @ts-expect-error update typescript version
-        ([start, end]) => getValueLabel({ start, end })
+      ? ([start, end]) => getValueLabel({ start, end })
       : undefined,
   };
 
-  let { direction } = useLocale();
+  const { direction } = useLocale();
 
   return (
     <SliderBase {...baseProps} classes={'ac-slider--range'} ref={ref}>
       {({ trackRef, inputRef, state }: SliderBaseChildArguments) => {
-        let cssDirection = direction === 'rtl' ? 'right' : 'left';
+        const cssDirection = direction === 'rtl' ? 'right' : 'left';
         return (
           <>
             <div

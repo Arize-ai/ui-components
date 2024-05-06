@@ -1,10 +1,10 @@
 import React, { ReactNode, useContext, HTMLProps, CSSProperties } from 'react';
 import { useTooltip } from '@react-aria/tooltip';
+import { mergeProps } from '@react-aria/utils';
 import { classNames } from '../utils';
 import { PlacementAxis, DOMRef } from '../types';
-import { mergeProps } from '@react-aria/utils';
-import { TooltipContext } from './context';
 import { Text } from '../content';
+import { TooltipContext } from './context';
 import { actionTooltipCSS, actionTooltipHeaderWrapCSS } from './styles';
 
 interface ActionTooltipProps extends HTMLProps<HTMLDivElement> {
@@ -31,7 +31,7 @@ interface ActionTooltipProps extends HTMLProps<HTMLDivElement> {
 function ActionTooltip(props: ActionTooltipProps, _ref: DOMRef) {
   const {
     ref: overlayRef,
-    arrowProps,
+
     state,
     ...tooltipProviderProps
   } = useContext(TooltipContext);
@@ -89,5 +89,5 @@ function ActionTooltip(props: ActionTooltipProps, _ref: DOMRef) {
 /**
  * Display container for Tooltip content. Has a directional arrow dependent on its placement.
  */
-let _ActionTooltip = React.forwardRef(ActionTooltip);
+const _ActionTooltip = React.forwardRef(ActionTooltip);
 export { _ActionTooltip as ActionTooltip };

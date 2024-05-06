@@ -1,3 +1,4 @@
+import { Validation, AriaValidationProps } from '../types';
 import { LabelableProps, Alignment, AddonableProps } from './labelable';
 import { CollectionBase } from './collection';
 import { HelpTextProps, InputBase, TextInputBase } from './input';
@@ -6,7 +7,6 @@ import { SingleSelection } from './selection';
 import { FocusableProps } from './events';
 import { StyleProps } from './style';
 import { DimensionValue } from './core';
-import { Validation, AriaValidationProps } from '../types';
 
 export interface SelectProps<T>
   extends CollectionBase<T>,

@@ -1,8 +1,8 @@
 import React, { Key, ReactElement } from 'react';
+import { css } from '@emotion/react';
 import { ListBox, ListBoxProps } from '../listbox';
 import { DOMRef } from '../types';
 import { useDOMRef } from '../utils';
-import { css } from '@emotion/react';
 import theme from '../theme';
 
 export interface NavListProps<T>

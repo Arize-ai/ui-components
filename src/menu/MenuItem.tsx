@@ -1,14 +1,14 @@
-import { Icon, CheckmarkOutline } from '../icon';
-import { classNames } from '../utils';
 import { FocusRing } from '@react-aria/focus';
 import { mergeProps } from '@react-aria/utils';
 import { Node } from '@react-types/shared';
 import React, { Key, useRef } from 'react';
-import { Text } from '../content';
 import { TreeState } from '@react-stately/tree';
 import { useHover } from '@react-aria/interactions';
-import { useMenuContext } from './context';
 import { useMenuItem } from '@react-aria/menu';
+import { Text } from '../content';
+import { classNames } from '../utils';
+import { Icon, CheckmarkOutline } from '../icon';
+import { useMenuContext } from './context';
 import { menuItemCSS } from './styles';
 
 interface MenuItemProps<T> {
@@ -20,17 +20,17 @@ interface MenuItemProps<T> {
 
 /** @private */
 export function MenuItem<T>(props: MenuItemProps<T>) {
-  let { item, state, isVirtualized, onAction } = props;
+  const { item, state, isVirtualized, onAction } = props;
 
-  let { onClose, closeOnSelect } = useMenuContext();
+  const { onClose, closeOnSelect } = useMenuContext();
 
-  let { rendered, key } = item;
+  const { rendered, key } = item;
 
-  let isSelected = state.selectionManager.isSelected(key);
-  let isDisabled = state.disabledKeys.has(key);
+  const isSelected = state.selectionManager.isSelected(key);
+  const isDisabled = state.disabledKeys.has(key);
 
-  let ref = useRef<HTMLLIElement>(null);
-  let {
+  const ref = useRef<HTMLLIElement>(null);
+  const {
     menuItemProps,
     // labelProps,
     // descriptionProps,
@@ -49,9 +49,9 @@ export function MenuItem<T>(props: MenuItemProps<T>) {
     state,
     ref
   );
-  let { hoverProps, isHovered } = useHover({ isDisabled });
+  const { hoverProps, isHovered } = useHover({ isDisabled });
 
-  let contents =
+  const contents =
     typeof rendered === 'string' ? <Text>{rendered}</Text> : rendered;
 
   return (

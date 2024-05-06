@@ -2,11 +2,11 @@ import React, { isValidElement, ReactElement, ReactNode } from 'react';
 import { useRadioGroupState } from '@react-stately/radio';
 import { useRadioGroup } from '@react-aria/radio';
 import { useId } from '@react-aria/utils';
-import { radioGroupCSS, radioGroupLabelCSS } from './styles';
 import { Text } from '../content';
+import { classNames } from '../utils';
+import { radioGroupCSS, radioGroupLabelCSS } from './styles';
 import { RadioContext } from './context';
 import { RadioSize, RadioVariant } from './types';
-import { classNames } from '../utils';
 import { RadioProps } from './Radio';
 
 export interface RadioGroupProps {

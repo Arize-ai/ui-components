@@ -1,3 +1,7 @@
+import { filterDOMProps } from '@react-aria/utils';
+import React, { useContext, ReactElement, FormEventHandler } from 'react';
+import { css } from '@emotion/react';
+import { classNames, useDOMRef } from '../utils';
 import {
   Alignment,
   DOMRef,
@@ -6,16 +10,12 @@ import {
   DOMProps,
   AriaLabelingProps,
 } from '../types';
-import { classNames, useDOMRef } from '../utils';
-import { filterDOMProps } from '@react-aria/utils';
-import React, { useContext, ReactElement, FormEventHandler } from 'react';
-import { css } from '@emotion/react';
 import { Provider } from '../provider';
 
-let FormContext = React.createContext<LabelableProps>({});
+const FormContext = React.createContext<LabelableProps>({});
 
 export function useFormProps<T extends LabelableProps>(props: T): T {
-  let ctx = useContext(FormContext);
+  const ctx = useContext(FormContext);
   return { ...ctx, ...props };
 }
 
@@ -105,11 +105,12 @@ const formCSS = css`
 `;
 
 function Form(props: FormProps, ref: DOMRef<HTMLFormElement>) {
-  let {
+  const {
     children,
     labelPosition = 'top' as LabelPosition,
     labelAlign = 'start' as Alignment,
     layout = 'vertical',
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     isRequired,
     necessityIndicator,
     isDisabled,
@@ -117,9 +118,9 @@ function Form(props: FormProps, ref: DOMRef<HTMLFormElement>) {
     isQuiet,
     ...otherProps
   } = props;
-  let domRef = useDOMRef(ref);
+  const domRef = useDOMRef(ref);
 
-  let ctx = {
+  const ctx = {
     labelPosition,
     labelAlign,
     necessityIndicator,

@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import { css } from '@emotion/react';
-import { NoticeConfig } from './types';
 import { Text } from '../content';
 import { useSeverityStyle } from '../alert/useSeverityStyle';
 import { getSeverityIcon } from '../alert/getSeverityIcon';
 import { Icon, CloseOutline } from '../icon';
 import theme from '../theme';
-import { DEFAULT_EXPIRE_MS } from './constants';
 import { classNames } from '../utils';
 import { buttonCSS } from '../button/styles';
+import { DEFAULT_EXPIRE_MS } from './constants';
+import { NoticeConfig } from './types';
 import { slideInFromRightCSS, disappearCSS } from './styles';
 
 const noticeCSS = css`

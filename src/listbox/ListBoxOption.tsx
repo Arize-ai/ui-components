@@ -1,15 +1,15 @@
-import { Icon, CheckmarkOutline } from '../icon';
-import { classNames } from '../utils';
 import { FocusRing } from '@react-aria/focus';
 import { isFocusVisible, useHover } from '@react-aria/interactions';
-import { ListBoxContext } from './ListBoxContext';
 import { mergeProps } from '@react-aria/utils';
 import { Node } from '@react-types/shared';
 import React, { useContext } from 'react';
-import { Text } from '../content';
 import { useOption } from '@react-aria/listbox';
 import { useRef } from 'react';
+import { Text } from '../content';
+import { classNames } from '../utils';
+import { Icon, CheckmarkOutline } from '../icon';
 import { menuItemCSS } from '../menu/styles';
+import { ListBoxContext } from './ListBoxContext';
 
 interface OptionProps<T> {
   item: Node<T>;
@@ -20,19 +20,19 @@ interface OptionProps<T> {
 
 /** @private */
 export function ListBoxOption<T>(props: OptionProps<T>) {
-  let {
+  const {
     item,
     shouldSelectOnPressUp,
     shouldFocusOnHover,
     shouldUseVirtualFocus,
   } = props;
 
-  let { rendered, key } = item;
+  const { rendered, key } = item;
 
-  let state = useContext(ListBoxContext);
+  const state = useContext(ListBoxContext);
 
-  let ref = useRef<HTMLDivElement>();
-  let { optionProps, isSelected, isDisabled, isFocused } = useOption(
+  const ref = useRef<HTMLDivElement>();
+  const { optionProps, isSelected, isDisabled, isFocused } = useOption(
     {
       'aria-label': item['aria-label'],
       key,
@@ -45,15 +45,15 @@ export function ListBoxOption<T>(props: OptionProps<T>) {
     // @ts-ignore
     ref
   );
-  let { hoverProps, isHovered } = useHover({
+  const { hoverProps, isHovered } = useHover({
     ...props,
     isDisabled,
   });
 
-  let contents =
+  const contents =
     typeof rendered === 'string' ? <Text>{rendered}</Text> : rendered;
 
-  let isKeyboardModality = isFocusVisible();
+  const isKeyboardModality = isFocusVisible();
 
   return (
     <FocusRing focusRingClass="focus-ring">

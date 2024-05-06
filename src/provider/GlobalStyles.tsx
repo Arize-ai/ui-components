@@ -1,6 +1,7 @@
+import React from 'react';
 import { Global, css } from '@emotion/react';
-import { useProvider } from './Provider';
 import { ProviderTheme } from '../types';
+import { useProvider } from './Provider';
 
 /**
  * Medium size root CSS variables
