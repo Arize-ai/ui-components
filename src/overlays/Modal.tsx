@@ -90,13 +90,15 @@ interface ModalWrapperProps extends HTMLAttributes<HTMLElement> {
 }
 
 // @ts-ignore
-const ModalWrapper = forwardRef<HTMLDivElement>(function(
+const ModalWrapper = forwardRef<HTMLDivElement>(function wrapperForwardRef(
   props: ModalWrapperProps,
   ref: RefObject<HTMLDivElement>
 ) {
-  let { children, isOpen, type, overlayProps, ...otherProps } = props;
+  const { children, isOpen, type, overlayProps, ...otherProps } = props;
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   usePreventScroll();
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { modalProps } = useModal();
 
   const wrapperClassName = classNames('ac-modal-wrapper', {
@@ -149,5 +151,5 @@ function Modal(props: ModalProps, ref: DOMRef<HTMLElement>) {
   );
 }
 
-let _Modal = forwardRef(Modal);
+const _Modal = forwardRef(Modal);
 export { _Modal as Modal };

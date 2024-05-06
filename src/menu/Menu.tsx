@@ -1,3 +1,8 @@
+import { mergeProps, useSyncRef } from '@react-aria/utils';
+import React, { Key, ReactElement, useContext } from 'react';
+import { useMenu } from '@react-aria/menu';
+import { useTreeState } from '@react-stately/tree';
+import { css } from '@emotion/react';
 import { useDOMRef } from '../utils';
 import {
   AriaLabelingProps,
@@ -10,11 +15,6 @@ import {
 import { MenuContext } from './context';
 import { MenuItem } from './MenuItem';
 import { MenuSection } from './MenuSection';
-import { mergeProps, useSyncRef } from '@react-aria/utils';
-import React, { Key, ReactElement, useContext } from 'react';
-import { useMenu } from '@react-aria/menu';
-import { useTreeState } from '@react-stately/tree';
-import { css } from '@emotion/react';
 
 export interface MenuProps<T> extends CollectionBase<T>, MultipleSelection {
   /** Where the focus should be set. */
@@ -32,7 +32,7 @@ export interface AriaMenuProps<T>
     DOMProps,
     AriaLabelingProps {}
 
-export interface MenuComponentProps<T> extends AriaMenuProps<T> {}
+export type MenuComponentProps<T> = AriaMenuProps<T>
 
 const menuULCSS = css`
   background-color: var(--ac-global-menu-background-color);
@@ -51,14 +51,14 @@ function Menu<T extends object>(
   props: MenuComponentProps<T>,
   ref: DOMRef<HTMLUListElement>
 ) {
-  let contextProps = useContext(MenuContext);
-  let completeProps = {
+  const contextProps = useContext(MenuContext);
+  const completeProps = {
     ...mergeProps(contextProps, props),
   };
 
-  let domRef = useDOMRef(ref);
-  let state = useTreeState(completeProps);
-  let { menuProps } = useMenu(completeProps, state, domRef);
+  const domRef = useDOMRef(ref);
+  const state = useTreeState(completeProps);
+  const { menuProps } = useMenu(completeProps, state, domRef);
   useSyncRef(contextProps, domRef);
   const items = Array.from(state.collection);
   return (

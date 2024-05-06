@@ -1,4 +1,3 @@
-import { ButtonProps } from './button';
 import {
   Alignment,
   AriaLabelingProps,
@@ -9,6 +8,7 @@ import {
   StyleProps,
 } from '@react-types/shared';
 import { Key, ReactElement, ReactNode } from 'react';
+import { ButtonProps } from './button';
 import { OverlayTriggerProps } from './overlays';
 
 export type MenuTriggerType = 'press' | 'longPress';

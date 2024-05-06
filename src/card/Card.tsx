@@ -6,14 +6,14 @@ import React, {
   useState,
 } from 'react';
 import { css } from '@emotion/react';
+import { useId } from '@react-aria/utils';
 import { Text } from '../content';
+import { classNames, useStyleProps, viewStyleProps } from '../utils';
+import { ViewStyleProps } from '../types';
 import { CollapsibleCardTitle } from './CollapsibleCardTitle';
 
 import { cardCSS, headerCSS, collapsibleCardCSS } from './styles';
-import { classNames, useStyleProps, viewStyleProps } from '../utils';
-import { useId } from '@react-aria/utils';
 import { CardVariant } from './types';
-import { ViewStyleProps } from '../types';
 
 const headerTitleWrapCSS = css`
   flex: 1 1 auto;

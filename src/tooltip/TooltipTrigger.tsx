@@ -4,8 +4,8 @@ import { useOverlayPosition } from '@react-aria/overlays';
 import { useTooltipTrigger } from '@react-aria/tooltip';
 import { useTooltipTriggerState } from '@react-stately/tooltip';
 import { Overlay } from '../overlays';
-import { TooltipContext } from './context';
 import { PositionProps, OverlayTriggerProps } from '../types';
+import { TooltipContext } from './context';
 
 export interface TooltipTriggerProps
   extends PositionProps,

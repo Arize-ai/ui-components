@@ -107,4 +107,4 @@ export interface ACSliderProps extends BarSliderBase<number>, InputDOMProps {
   trackGradient?: string[];
 }
 
-export interface RangeSliderProps extends BarSliderBase<RangeValue<number>> {}
+export type RangeSliderProps = BarSliderBase<RangeValue<number>>

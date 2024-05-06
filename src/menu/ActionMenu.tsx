@@ -1,12 +1,12 @@
-import { Button } from '../button';
 import { filterDOMProps } from '@react-aria/utils';
 import { FocusableRef } from '@react-types/shared';
-import { Menu } from './Menu';
-import { MenuTrigger } from './MenuTrigger';
-import { ArrowIosDownwardOutline, Icon, MoreHorizontalOutline } from '../icon';
 import React, { forwardRef } from 'react';
-import { ActionMenuProps } from '../types';
 import { css } from '@emotion/react';
+import { ArrowIosDownwardOutline, Icon, MoreHorizontalOutline } from '../icon';
+import { ActionMenuProps } from '../types';
+import { Button } from '../button';
+import { MenuTrigger } from './MenuTrigger';
+import { Menu } from './Menu';
 
 function ActionMenu<T extends object>(
   props: ActionMenuProps<T>,
@@ -60,17 +60,19 @@ function ActionMenu<T extends object>(
         icon={icon ?? <Icon svg={<MoreHorizontalOutline />} />}
         ref={ref}
         {...buttonProps}
-        children={buttonChildren}
         size={buttonSize}
         variant={buttonVariant}
         disabled={props.isDisabled}
-      />
+      >
+        {buttonChildren}
+      </Button>
       <Menu
-        children={children}
         items={props.items}
         disabledKeys={props.disabledKeys}
         onAction={props.onAction}
-      />
+      >
+        {children}
+      </Menu>
     </MenuTrigger>
   );
 }

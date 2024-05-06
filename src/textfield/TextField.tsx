@@ -1,12 +1,12 @@
 import React, { forwardRef, RefObject, useRef } from 'react';
+import { useTextField } from '@react-aria/textfield';
+import { AddonableProps, StyleProps } from '../types';
+import { useProviderProps } from '../provider';
 import {
   TextFieldBase,
   AriaTextFieldProps,
   TextFieldRef,
 } from './TextFieldBase';
-import { useTextField } from '@react-aria/textfield';
-import { AddonableProps, StyleProps } from '../types';
-import { useProviderProps } from '../provider';
 
 export interface TextFieldProps
   extends AriaTextFieldProps,
@@ -24,8 +24,8 @@ function TextField(props: TextFieldProps, ref: RefObject<TextFieldRef>) {
   // Call use provider props so the textfield can inherit from the provider
   // E.x. disabled, readOnly, etc.
   props = useProviderProps(props);
-  let inputRef = useRef<HTMLInputElement>(null);
-  let {
+  const inputRef = useRef<HTMLInputElement>(null);
+  const {
     labelProps,
     inputProps,
     descriptionProps,

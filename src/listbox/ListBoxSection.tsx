@@ -3,7 +3,6 @@ import {
   layoutInfoToStyle,
   useVirtualizerItem,
 } from '@react-aria/virtualizer';
-import { ListBoxContext } from './ListBoxContext';
 import { Node } from '@react-types/shared';
 import React, { Fragment, ReactNode, useContext, useRef } from 'react';
 import { LayoutInfo } from '@react-stately/virtualizer';
@@ -12,6 +11,7 @@ import { useLocale } from '@react-aria/i18n';
 import { useSeparator } from '@react-aria/separator';
 import { css } from '@emotion/react';
 import theme from '../theme';
+import { ListBoxContext } from './ListBoxContext';
 
 interface ListBoxSectionProps<T> extends Omit<VirtualizerItemOptions, 'ref'> {
   headerLayoutInfo: LayoutInfo;
@@ -41,25 +41,25 @@ const dividerCSS = css`
 
 /** @private */
 export function ListBoxSection<T>(props: ListBoxSectionProps<T>) {
-  let { children, layoutInfo, headerLayoutInfo, virtualizer, item } = props;
-  let { headingProps, groupProps } = useListBoxSection({
+  const { children, layoutInfo, headerLayoutInfo, virtualizer, item } = props;
+  const { headingProps, groupProps } = useListBoxSection({
     heading: item.rendered,
     'aria-label': item['aria-label'],
   });
 
-  let { separatorProps } = useSeparator({
+  const { separatorProps } = useSeparator({
     elementType: 'li',
   });
 
-  let headerRef = useRef(null);
+  const headerRef = useRef(null);
   useVirtualizerItem({
     layoutInfo: headerLayoutInfo,
     virtualizer,
     ref: headerRef,
   });
 
-  let { direction } = useLocale();
-  let state = useContext(ListBoxContext);
+  const { direction } = useLocale();
+  const state = useContext(ListBoxContext);
 
   return (
     <Fragment>

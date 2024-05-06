@@ -1,14 +1,14 @@
 import { clamp } from '@react-aria/utils';
+import React, { ReactNode } from 'react';
 import { classNames } from '../utils';
 import { FocusableRef } from '../types';
-import React, { ReactNode } from 'react';
+import { ACSliderProps } from '../types/slider';
 import {
   SliderBase,
   SliderBaseChildArguments,
   SliderBaseProps,
 } from './SliderBase';
 import { SliderThumb } from './SliderThumb';
-import { ACSliderProps } from '../types/slider';
 
 function Slider(props: ACSliderProps, ref: FocusableRef<HTMLDivElement>) {
   let {
@@ -18,12 +18,13 @@ function Slider(props: ACSliderProps, ref: FocusableRef<HTMLDivElement>) {
     defaultValue,
     isFilled,
     fillOffset,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     trackGradient,
     getValueLabel,
     ...otherProps
   } = props;
 
-  let baseProps: Omit<SliderBaseProps, 'children'> = {
+  const baseProps: Omit<SliderBaseProps, 'children'> = {
     ...otherProps,
     // Normalize `value: number[]` to `value: number`
     value: value != null ? [value] : undefined,
@@ -54,7 +55,7 @@ function Slider(props: ACSliderProps, ref: FocusableRef<HTMLDivElement>) {
               )
             : fillOffset;
 
-        let lowerTrack = (
+        const lowerTrack = (
           <div
             className={classNames('ac-slider-track')}
             style={{
@@ -70,7 +71,7 @@ function Slider(props: ACSliderProps, ref: FocusableRef<HTMLDivElement>) {
             }}
           />
         );
-        let upperTrack = (
+        const upperTrack = (
           <div
             className="ac-slider-track"
             style={{
@@ -86,10 +87,10 @@ function Slider(props: ACSliderProps, ref: FocusableRef<HTMLDivElement>) {
 
         let filledTrack: ReactNode = null;
         if (isFilled && fillOffset != null) {
-          let width =
+          const width =
             state.getThumbPercent(0) - state.getValuePercent(fillOffset);
-          let isRightOfOffset = width > 0;
-          let offset = isRightOfOffset
+          const isRightOfOffset = width > 0;
+          const offset = isRightOfOffset
             ? state.getValuePercent(fillOffset)
             : state.getThumbPercent(0);
           filledTrack = (

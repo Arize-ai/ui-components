@@ -1,4 +1,3 @@
-import { MenuItem } from './MenuItem';
 import { Node } from '@react-types/shared';
 import React, { Fragment, Key } from 'react';
 import { TreeState } from '@react-stately/tree';
@@ -7,6 +6,7 @@ import { useSeparator } from '@react-aria/separator';
 import { getChildNodes } from '@react-stately/collections';
 import { css } from '@emotion/react';
 import theme from '../theme';
+import { MenuItem } from './MenuItem';
 
 interface MenuSectionProps<T> {
   item: Node<T>;
@@ -16,13 +16,13 @@ interface MenuSectionProps<T> {
 
 /** @private */
 export function MenuSection<T>(props: MenuSectionProps<T>) {
-  let { item, state, onAction } = props;
-  let { itemProps, headingProps, groupProps } = useMenuSection({
+  const { item, state, onAction } = props;
+  const { itemProps, headingProps, groupProps } = useMenuSection({
     heading: item.rendered,
     'aria-label': item['aria-label'],
   });
 
-  let { separatorProps } = useSeparator({
+  const { separatorProps } = useSeparator({
     elementType: 'li',
   });
 

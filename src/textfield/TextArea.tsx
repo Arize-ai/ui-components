@@ -1,14 +1,14 @@
 import React, { RefObject, useCallback, useRef } from 'react';
-import {
-  TextFieldBase,
-  AriaTextFieldProps,
-  TextFieldRef,
-} from './TextFieldBase';
 import { useTextField } from '@react-aria/textfield';
 import { chain, useLayoutEffect } from '@react-aria/utils';
 import { useControlledState } from '@react-stately/utils';
 import { useProviderProps } from '../provider';
 import { AddonableProps, StyleProps } from '../types';
+import {
+  TextFieldBase,
+  AriaTextFieldProps,
+  TextFieldRef,
+} from './TextFieldBase';
 
 export interface TextAreaProps
   extends AriaTextFieldProps,
@@ -36,7 +36,7 @@ function TextArea(props: TextAreaProps, ref: RefObject<TextFieldRef>) {
     props.defaultValue,
     () => {}
   );
-  let inputRef = useRef<HTMLTextAreaElement>(null);
+  const inputRef = useRef<HTMLTextAreaElement>(null);
 
   const onHeightChange = useCallback(() => {
     // Quiet textareas always grow based on their text content.
@@ -69,7 +69,7 @@ function TextArea(props: TextAreaProps, ref: RefObject<TextFieldRef>) {
     }
   }, [onHeightChange, inputValue, inputRef]);
 
-  let {
+  const {
     labelProps,
     inputProps,
     descriptionProps,
@@ -107,5 +107,5 @@ function TextArea(props: TextAreaProps, ref: RefObject<TextFieldRef>) {
  * are available to text fields.
  */
 // @ts-ignore
-let _TextArea = React.forwardRef(TextArea);
+const _TextArea = React.forwardRef(TextArea);
 export { _TextArea as TextArea };

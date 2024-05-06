@@ -1,12 +1,12 @@
 import React, { CSSProperties } from 'react';
-import { classNames } from '../utils/classNames';
 import { mergeProps } from '@react-aria/utils';
 import { useButton } from '@react-aria/button';
 import { useHover } from '@react-aria/interactions';
+import { css } from '@emotion/react';
+import { classNames } from '../utils/classNames';
 import { FocusableRef, PressEvents } from '../types';
 import { useFocusableRef } from '../utils/useDOMRef';
 import { BaseButtonProps } from '../types/button';
-import { css } from '@emotion/react';
 import { theme } from '../theme';
 
 interface ActionButtonProps extends BaseButtonProps, PressEvents {
@@ -28,7 +28,7 @@ function ActionButton(
   props: ActionButtonProps,
   ref: FocusableRef<HTMLButtonElement>
 ) {
-  let domRef = useFocusableRef(ref);
+  const domRef = useFocusableRef(ref);
   const { isDisabled, children, style, isQuiet = false, ...otherProps } = props;
   const { buttonProps, isPressed } = useButton(props, domRef);
   const { hoverProps, isHovered } = useHover({ isDisabled });
@@ -72,5 +72,5 @@ const quietButtonCSS = css`
  * ActionButtons allow users to perform an action.
  * They’re used for similar, task-based options within a workflow, and are ideal for interfaces where buttons aren’t meant to draw a lot of attention.
  */
-let _ActionButton = React.forwardRef(ActionButton);
+const _ActionButton = React.forwardRef(ActionButton);
 export { _ActionButton as ActionButton };
