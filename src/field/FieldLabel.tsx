@@ -1,8 +1,8 @@
-import { classNames, useDOMRef } from '../utils';
 import { DOMRef } from '@react-types/shared';
 import { css } from '@emotion/react';
 import { filterDOMProps } from '@react-aria/utils';
 import React, { ReactNode, ElementType, HTMLAttributes } from 'react';
+import { classNames, useDOMRef } from '../utils';
 import { DOMProps, LabelableProps, ExtendableLabelProps } from '../types';
 import theme from '../theme';
 
@@ -26,7 +26,7 @@ export interface FieldLabelProps
     HTMLAttributes<HTMLElement> {}
 
 function FieldLabel(props: FieldLabelProps, ref: DOMRef<HTMLLabelElement>) {
-  let {
+  const {
     children,
     labelPosition = 'top',
     labelAlign = labelPosition === 'side' ? 'start' : null,
@@ -41,11 +41,11 @@ function FieldLabel(props: FieldLabelProps, ref: DOMRef<HTMLLabelElement>) {
     ...otherProps
   } = props;
 
-  let domRef = useDOMRef(ref);
-  let necessityLabel = isRequired ? '(required)' : '(optional)';
-  let icon = '*';
+  const domRef = useDOMRef(ref);
+  const necessityLabel = isRequired ? '(required)' : '(optional)';
+  const icon = '*';
 
-  let labelClassNames = classNames('ac-field-label', {
+  const labelClassNames = classNames('ac-field-label', {
     'ac-field-label--positionSide': labelPosition === 'side',
     'ac-field-label--alignEnd': labelAlign === 'end',
   });
@@ -102,5 +102,5 @@ function FieldLabel(props: FieldLabelProps, ref: DOMRef<HTMLLabelElement>) {
   );
 }
 
-let _FieldLabel = React.forwardRef(FieldLabel);
+const _FieldLabel = React.forwardRef(FieldLabel);
 export { _FieldLabel as FieldLabel };

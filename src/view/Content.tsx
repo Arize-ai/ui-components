@@ -1,7 +1,7 @@
-import { useDOMRef } from '../utils';
 import { DOMRef } from '@react-types/shared';
 import { filterDOMProps } from '@react-aria/utils';
 import React, { forwardRef, ReactNode } from 'react';
+import { useDOMRef } from '../utils';
 import { DOMProps } from '../types';
 
 export interface ContentProps extends DOMProps {
@@ -12,8 +12,8 @@ export interface ContentProps extends DOMProps {
 }
 
 function Content(props: ContentProps, ref: DOMRef) {
-  let { children, ...otherProps } = props;
-  let domRef = useDOMRef(ref);
+  const { children, ...otherProps } = props;
+  const domRef = useDOMRef(ref);
 
   return (
     <section

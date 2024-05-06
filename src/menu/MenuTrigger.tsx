@@ -1,15 +1,15 @@
-import { unwrapDOMRef, useDOMRef } from '../utils';
 import { DismissButton, useOverlayPosition } from '@react-aria/overlays';
 import { DOMRef, DOMRefValue } from '@react-types/shared';
 import { FocusScope } from '@react-aria/focus';
-import { MenuContext } from './context';
 import { Placement } from '@react-types/overlays';
-import { Popover } from '../popover';
 import { PressResponder } from '@react-aria/interactions';
 import React, { forwardRef, Fragment, ReactElement, useRef } from 'react';
 import { useMenuTrigger } from '@react-aria/menu';
 import { useMenuTriggerState } from '@react-stately/menu';
+import { Popover } from '../popover';
+import { unwrapDOMRef, useDOMRef } from '../utils';
 import { Alignment, OverlayTriggerProps } from '../types';
+import { MenuContext } from './context';
 
 type MenuTriggerType = 'press' | 'longPress';
 
@@ -46,12 +46,12 @@ export interface MenuTriggerProps extends OverlayTriggerProps {
 }
 
 function MenuTrigger(props: MenuTriggerProps, ref: DOMRef<HTMLElement>) {
-  let menuPopoverRef = useRef<DOMRefValue<HTMLDivElement>>(null);
-  let triggerRef = useRef<HTMLElement>(null);
-  let domRef = useDOMRef(ref);
-  let menuTriggerRef = domRef || triggerRef;
-  let menuRef = useRef<HTMLUListElement>(null);
-  let {
+  const menuPopoverRef = useRef<DOMRefValue<HTMLDivElement>>(null);
+  const triggerRef = useRef<HTMLElement>(null);
+  const domRef = useDOMRef(ref);
+  const menuTriggerRef = domRef || triggerRef;
+  const menuRef = useRef<HTMLUListElement>(null);
+  const {
     children,
     align = 'start',
     shouldFlip = true,
@@ -61,9 +61,9 @@ function MenuTrigger(props: MenuTriggerProps, ref: DOMRef<HTMLElement>) {
   } = props;
 
   const [menuTrigger, menu] = React.Children.toArray(children);
-  let state = useMenuTriggerState(props);
+  const state = useMenuTriggerState(props);
 
-  let { menuTriggerProps, menuProps } = useMenuTrigger(
+  const { menuTriggerProps, menuProps } = useMenuTrigger(
     { trigger },
     state,
     menuTriggerRef
@@ -106,7 +106,7 @@ function MenuTrigger(props: MenuTriggerProps, ref: DOMRef<HTMLElement>) {
 
   // Only contain focus while the menu is open. There is a fade out transition during which we may try to move focus.
   // If we contain, then focus will be pulled back into the menu.
-  let contents = (
+  const contents = (
     <FocusScope restoreFocus>
       <DismissButton onDismiss={state.close} />
       {menu}
@@ -147,5 +147,5 @@ function MenuTrigger(props: MenuTriggerProps, ref: DOMRef<HTMLElement>) {
  * The MenuTrigger serves as a wrapper around a Menu and its associated trigger,
  * linking the Menu's open state with the trigger's press state.
  */
-let _MenuTrigger = forwardRef(MenuTrigger);
+const _MenuTrigger = forwardRef(MenuTrigger);
 export { _MenuTrigger as MenuTrigger };

@@ -1,12 +1,12 @@
 import React, { ReactNode, useState, useCallback, useRef } from 'react';
-import { DropdownButton, DropdownButtonProps } from './DropdownButton';
-import { DropdownMenu } from './DropdownMenu';
-import { DropdownTrigger, DropdownTriggerProps } from './DropdownTrigger';
 import { useResizeObserver } from '@react-aria/utils';
+import { filterDOMProps } from '@react-aria/utils';
 import { DOMProps, FocusableRefValue } from '../types';
 import { useUnwrapDOMRef } from '../utils';
 import { useProviderProps } from '../provider';
-import { filterDOMProps } from '@react-aria/utils';
+import { DropdownButton, DropdownButtonProps } from './DropdownButton';
+import { DropdownMenu } from './DropdownMenu';
+import { DropdownTrigger, DropdownTriggerProps } from './DropdownTrigger';
 
 export interface DropdownProps extends DOMProps {
   /**

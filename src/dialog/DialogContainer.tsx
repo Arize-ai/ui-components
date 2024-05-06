@@ -1,6 +1,6 @@
-import { DialogContext } from './context';
-import { Modal } from '../overlays';
 import React, { ReactElement, ReactNode, useRef } from 'react';
+import { Modal } from '../overlays';
+import { DialogContext } from './context';
 
 export interface DialogContainerProps {
   /** The Dialog to display, if any. */
@@ -26,7 +26,7 @@ export interface DialogContainerProps {
  * or when the trigger unmounts while the dialog is open.
  */
 export function DialogContainer(props: DialogContainerProps) {
-  let {
+  const {
     children,
     type = 'modal',
     onDismiss,
@@ -34,18 +34,18 @@ export function DialogContainer(props: DialogContainerProps) {
     isKeyboardDismissDisabled,
   } = props;
 
-  let childArray = React.Children.toArray(children);
+  const childArray = React.Children.toArray(children);
   if (childArray.length > 1) {
     throw new Error('Only a single child can be passed to DialogContainer.');
   }
 
-  let lastChild = useRef<ReactElement | null>(null);
-  let child = React.isValidElement(childArray[0]) ? childArray[0] : null;
+  const lastChild = useRef<ReactElement | null>(null);
+  const child = React.isValidElement(childArray[0]) ? childArray[0] : null;
   if (child) {
     lastChild.current = child;
   }
 
-  let context = {
+  const context = {
     type,
     onClose: onDismiss,
     isDismissable,

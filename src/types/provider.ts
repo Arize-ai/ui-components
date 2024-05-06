@@ -18,4 +18,4 @@ export interface ProviderProps extends ContextProps {
   children: ReactNode;
 }
 
-export interface ProviderContext extends ContextProps {}
+export type ProviderContext = ContextProps

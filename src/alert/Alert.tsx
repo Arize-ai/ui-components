@@ -4,9 +4,9 @@ import theme from '../theme';
 import { classNames } from '../utils';
 import { Text } from '../content';
 import { Icon, CloseOutline } from '../icon';
+import { SeverityLevel } from '../types';
 import { useSeverityStyle } from './useSeverityStyle';
 import { getSeverityIcon } from './getSeverityIcon';
-import { SeverityLevel } from '../types';
 export interface AlertProps {
   variant: SeverityLevel;
   children?: ReactNode;
@@ -55,7 +55,7 @@ export const Alert = ({
   extra,
   ...otherProps
 }: AlertProps) => {
-  let variantStyle = useSeverityStyle(variant);
+  const variantStyle = useSeverityStyle(variant);
 
   if (!icon && showIcon) {
     icon = getSeverityIcon(variant);

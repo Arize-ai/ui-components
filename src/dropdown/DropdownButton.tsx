@@ -1,16 +1,16 @@
 import React, { ReactNode, CSSProperties } from 'react';
 import { css, keyframes } from '@emotion/react';
-import { classNames } from '../utils/classNames';
 import { mergeProps } from '@react-aria/utils';
 import { useButton } from '@react-aria/button';
 import { useHover } from '@react-aria/interactions';
+import { FocusRing } from '@react-aria/focus';
+import { classNames } from '../utils/classNames';
 import { FocusableRef, Validation } from '../types';
 import { useFocusableRef } from '../utils/useDOMRef';
 import theme from '../theme';
 import { AddonBefore } from '../field';
 import { Icon, ArrowIosDownwardOutline, AlertCircleOutline } from '../icon';
 import { AddonableProps } from '../types';
-import { FocusRing } from '@react-aria/focus';
 import { textSizeCSS } from '../content/styles';
 
 const appearKeyframes = keyframes`
@@ -185,7 +185,7 @@ function DropdownButton(
   props: DropdownButtonProps,
   ref: FocusableRef<HTMLButtonElement>
 ) {
-  let domRef = useFocusableRef(ref);
+  const domRef = useFocusableRef(ref);
   const {
     isQuiet = false,
     isDisabled,
@@ -251,5 +251,5 @@ function DropdownButton(
   );
 }
 
-let _DropdownButton = React.forwardRef(DropdownButton);
+const _DropdownButton = React.forwardRef(DropdownButton);
 export { _DropdownButton as DropdownButton };

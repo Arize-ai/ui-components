@@ -1,9 +1,9 @@
 import React, { JSXElementConstructor, ReactNode, forwardRef } from 'react';
 import { css } from '@emotion/react';
+import { filterDOMProps } from '@react-aria/utils';
 import { DOMProps, DOMRef, ViewStyleProps } from '../types';
 import { useDOMRef } from '../utils';
 import { useStyleProps, viewStyleProps } from '../utils';
-import { filterDOMProps } from '@react-aria/utils';
 
 export interface ViewProps extends ViewStyleProps, DOMProps {
   /**

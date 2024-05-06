@@ -1,17 +1,17 @@
 import React from 'react';
+import { mergeProps } from '@react-aria/utils';
+import { useButton } from '@react-aria/button';
+import { useHover } from '@react-aria/interactions';
 import Spinner from '../Spinner';
 import { Text } from '../content';
 import { FocusableRef } from '../types';
 import { useFocusableRef } from '../utils/useDOMRef';
 import { classNames } from '../utils/classNames';
-import { mergeProps } from '@react-aria/utils';
-import { useButton } from '@react-aria/button';
-import { useHover } from '@react-aria/interactions';
 import { ButtonProps } from '../types';
 import { buttonCSS } from './styles';
 
 const Button = (props: ButtonProps, ref: FocusableRef<HTMLButtonElement>) => {
-  let domRef = useFocusableRef(ref);
+  const domRef = useFocusableRef(ref);
   const {
     disabled,
     children,
@@ -53,5 +53,5 @@ const Button = (props: ButtonProps, ref: FocusableRef<HTMLButtonElement>) => {
   );
 };
 
-let _Button = React.forwardRef(Button);
+const _Button = React.forwardRef(Button);
 export { _Button as Button, ButtonProps };

@@ -7,14 +7,14 @@ const Context = React.createContext<ProviderContext | null>(null);
 
 export function Provider(props: ProviderProps) {
   const prevContext = useContext(Context);
-  let { children, theme: propsTheme, ...context } = props;
+  const { children, theme: propsTheme, ...context } = props;
   let theme: ProviderTheme = propsTheme || 'dark';
-  let isRootProvider = !prevContext;
+  const isRootProvider = !prevContext;
   // If there is a theme higher up in the tree, use that theme
   if (prevContext && prevContext.theme) {
     theme = prevContext.theme;
   }
-  let content = isRootProvider ? (
+  const content = isRootProvider ? (
     <OverlayProvider>{children}</OverlayProvider>
   ) : (
     children
@@ -36,7 +36,7 @@ export function useProvider(): ProviderContext {
 }
 
 export function useProviderProps<T>(props: T): T {
-  let context = useProvider();
+  const context = useProvider();
   if (!context) {
     return props;
   }
