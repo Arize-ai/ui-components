@@ -1,12 +1,12 @@
-import { classNames, useFocusableRef } from '../utils';
 import { FocusableRef } from '@react-types/shared';
 import React, { CSSProperties, ReactNode, RefObject, useRef } from 'react';
 import { SliderState, useSliderState } from '@react-stately/slider';
-import { BarSliderBase } from '../types/slider';
 import { useNumberFormatter } from '@react-aria/i18n';
-import { useProviderProps } from '../provider';
 import { useSlider } from '@react-aria/slider';
 import { css } from '@emotion/react';
+import { useProviderProps } from '../provider';
+import { BarSliderBase } from '../types/slider';
+import { classNames, useFocusableRef } from '../utils';
 import { labelCSS, labelContainerCSS, sliderCSS } from './styles';
 export interface SliderBaseChildArguments {
   inputRef: RefObject<HTMLInputElement>;
@@ -16,6 +16,7 @@ export interface SliderBaseChildArguments {
 
 export interface SliderBaseProps<T = number[]> extends BarSliderBase<T> {
   children: (opts: SliderBaseChildArguments) => ReactNode;
+  // eslint-disable-next-line @typescript-eslint/ban-types
   classes?: string[] | Object;
   style?: CSSProperties;
 }
@@ -47,7 +48,7 @@ function SliderBase(props: SliderBaseProps, ref: FocusableRef<HTMLDivElement>) {
   } = props;
 
   // `Math.abs(Math.sign(a) - Math.sign(b)) === 2` is true if the values have a different sign.
-  let alwaysDisplaySign =
+  const alwaysDisplaySign =
     Math.abs(Math.sign(minValue) - Math.sign(maxValue)) === 2;
   if (alwaysDisplaySign) {
     if (formatOptions != null) {
@@ -70,15 +71,15 @@ function SliderBase(props: SliderBaseProps, ref: FocusableRef<HTMLDivElement>) {
     minValue,
     maxValue,
   });
-  let trackRef = useRef<HTMLDivElement>(null);
-  let { groupProps, trackProps, labelProps, outputProps } = useSlider(
+  const trackRef = useRef<HTMLDivElement>(null);
+  const { groupProps, trackProps, labelProps, outputProps } = useSlider(
     props,
     state,
     trackRef
   );
 
-  let inputRef = useRef<HTMLInputElement>(null);
-  let domRef = useFocusableRef(ref, inputRef);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const domRef = useFocusableRef(ref, inputRef);
 
   let displayValue = '';
   let maxLabelLength: number | undefined = undefined;
@@ -120,6 +121,7 @@ function SliderBase(props: SliderBaseProps, ref: FocusableRef<HTMLDivElement>) {
         displayValue = `${state.getThumbValueLabel(
           0
         )} – ${state.getThumbValueLabel(1)}`;
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         maxLabelLength =
           3 +
           2 *
@@ -134,13 +136,13 @@ function SliderBase(props: SliderBaseProps, ref: FocusableRef<HTMLDivElement>) {
     }
   }
 
-  let labelNode = (
+  const labelNode = (
     <label className={'ac-slider-label'} {...labelProps} css={labelCSS}>
       {props.label}
     </label>
   );
 
-  let valueNode = (
+  const valueNode = (
     <output
       {...outputProps}
       className={'ac-slider-value'}

@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0](https://github.com/Arize-ai/ui-components/compare/v1.2.0...v1.3.0) (2024-05-07)
+
+
+### Features
+
+* icons for mkdown ([#202](https://github.com/Arize-ai/ui-components/issues/202)) ([83848be](https://github.com/Arize-ai/ui-components/commit/83848be180b0a342c8cb905800da4bbd5d46ed69))
+* **list:** add className prop forwarding to List and ListItem ([#204](https://github.com/Arize-ai/ui-components/issues/204)) ([bc31c7e](https://github.com/Arize-ai/ui-components/commit/bc31c7ec9204518cca5d3df7843516264d5701ce))
+
 ## [1.2.0](https://github.com/Arize-ai/ui-components/compare/v1.1.7...v1.2.0) (2024-03-27)
 
 

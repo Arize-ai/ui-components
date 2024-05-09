@@ -5,6 +5,7 @@ import React, {
   CSSProperties,
 } from 'react';
 import { css } from '@emotion/react';
+import { filterDOMProps } from '@react-aria/utils';
 import {
   ColorValue,
   DOMProps,
@@ -14,16 +15,15 @@ import {
   TextColorValue,
 } from '../types';
 import theme from '../theme';
-import { Size, TextElementType, Weight } from './types';
-
-import { textSizeCSS, textWeightCSS } from './styles';
-import { filterDOMProps } from '@react-aria/utils';
 import {
   colorValue,
   designationColorValue,
   useDOMRef,
   useStyleProps,
 } from '../utils';
+import { Size, TextElementType, Weight } from './types';
+
+import { textSizeCSS, textWeightCSS } from './styles';
 
 export interface TextProps extends DOMProps, StyleProps {
   /**
@@ -78,6 +78,7 @@ const getTextColor = (color: TextColorValue): string => {
   }
   const textColor = theme.textColors[color];
   if (textColor) {
+    // eslint-disable-next-line no-console
     console.warn(
       `${textColor} is deprecated since it is not light/dark theme compatible.`
     );

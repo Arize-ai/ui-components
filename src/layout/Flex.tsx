@@ -1,3 +1,7 @@
+import { filterDOMProps } from '@react-aria/utils';
+import React, { forwardRef, ReactNode } from 'react';
+import { css } from '@emotion/react';
+import { DOMProps, DOMRef, FlexStyleProps } from '../types';
 import {
   StyleHandlers,
   classNames,
@@ -6,10 +10,6 @@ import {
   useDOMRef,
   useStyleProps,
 } from '../utils';
-import { DOMProps, DOMRef, FlexStyleProps } from '../types';
-import { filterDOMProps } from '@react-aria/utils';
-import React, { forwardRef, ReactNode } from 'react';
-import { css } from '@emotion/react';
 
 export interface FlexProps extends DOMProps, FlexStyleProps {
   /** Children of the flex container. */
@@ -29,15 +29,15 @@ const flexStyleProps: StyleHandlers = {
 };
 
 function Flex(props: FlexProps, ref: DOMRef<HTMLDivElement>) {
-  let { children, ...otherProps } = props;
+  const { children, ...otherProps } = props;
 
-  let matchedBreakpoints = ['base'];
-  let { styleProps } = useStyleProps(otherProps);
-  let { styleProps: flexStyle } = useStyleProps(otherProps, flexStyleProps);
-  let domRef = useDOMRef(ref);
+  const matchedBreakpoints = ['base'];
+  const { styleProps } = useStyleProps(otherProps);
+  const { styleProps: flexStyle } = useStyleProps(otherProps, flexStyleProps);
+  const domRef = useDOMRef(ref);
 
   // If no gaps, or native support exists, then we only need to render a single div.
-  let style = {
+  const style = {
     ...styleProps.style,
     ...flexStyle.style,
   };

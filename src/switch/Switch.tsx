@@ -1,4 +1,9 @@
 import React, { ReactNode, forwardRef, useRef } from 'react';
+import { useSwitch } from '@react-aria/switch';
+import { useHover } from '@react-aria/interactions';
+import { useToggleState } from '@react-stately/toggle';
+import { FocusRing } from '@react-aria/focus';
+import { classNames, useFocusableRef } from '../utils';
 import {
   AriaLabelingProps,
   FocusableDOMProps,
@@ -6,11 +11,6 @@ import {
   FocusableRef,
   InputBase,
 } from '../types';
-import { classNames, useFocusableRef } from '../utils';
-import { useSwitch } from '@react-aria/switch';
-import { useHover } from '@react-aria/interactions';
-import { useToggleState } from '@react-stately/toggle';
-import { FocusRing } from '@react-aria/focus';
 import { switchCSS } from './styles';
 
 interface SwitchBase extends InputBase, FocusableProps {
@@ -40,7 +40,7 @@ interface SwitchBase extends InputBase, FocusableProps {
   name?: string;
 }
 
-export interface BaseSwitchProps extends SwitchBase {}
+export type BaseSwitchProps = SwitchBase
 export interface AriaSwitchBase
   extends SwitchBase,
     FocusableDOMProps,

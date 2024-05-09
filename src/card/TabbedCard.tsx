@@ -1,9 +1,9 @@
 import React from 'react';
-import { CardBaseProps, useStyleBorderColor } from './Card';
 import { css } from '@emotion/react';
 import { Text } from '../content';
-import { cardCSS, headerCSS } from './styles';
 import { classNames, useStyleProps, viewStyleProps } from '../utils';
+import { cardCSS, headerCSS } from './styles';
+import { CardBaseProps, useStyleBorderColor } from './Card';
 
 const tabbedCardCSS = css`
   &[data-has-title='false'] {
@@ -13,7 +13,7 @@ const tabbedCardCSS = css`
   }
 `;
 
-export interface TabbedCardProps extends CardBaseProps {}
+export type TabbedCardProps = CardBaseProps
 
 export function TabbedCard(props: TabbedCardProps) {
   const {

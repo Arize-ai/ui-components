@@ -1,3 +1,5 @@
+import { mergeProps, useLabels } from '@react-aria/utils';
+import React, { ReactNode } from 'react';
 import { ActionButton } from '../button';
 import {
   AriaLabelingProps,
@@ -8,8 +10,6 @@ import {
   PositionProps,
 } from '../types';
 
-import { mergeProps, useLabels } from '@react-aria/utils';
-import React, { ReactNode } from 'react';
 
 import { Icon, InfoOutline, QuestionOutline } from '../icon';
 import { HelpTooltip, TooltipTrigger } from '../tooltip';
@@ -42,7 +42,7 @@ function ContextualHelp(
   props: ContextualHelpProps,
   ref: FocusableRef<HTMLButtonElement>
 ) {
-  let {
+  const {
     variant = 'help',
     placement = 'bottom start',
     children,
@@ -55,7 +55,7 @@ function ContextualHelp(
     <Icon color="grey-900" svg={iconSVG} style={{ fontSize: 'inherit' }} />
   );
 
-  let labelProps = useLabels(otherProps);
+  const labelProps = useLabels(otherProps);
 
   return (
     <TooltipTrigger {...otherProps} placement={placement} delay={delay}>
@@ -74,5 +74,5 @@ function ContextualHelp(
 /**
  * Contextual help shows a user extra information about the state of an adjacent component, or a total view.
  */
-let _ContextualHelp = React.forwardRef(ContextualHelp);
+const _ContextualHelp = React.forwardRef(ContextualHelp);
 export { _ContextualHelp as ContextualHelp };

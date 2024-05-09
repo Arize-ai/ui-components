@@ -1,7 +1,7 @@
-import { classNames, useDOMRef } from '../utils';
-import { DOMRef, HelpTextProps, Validation } from '../types';
 import React, { HTMLAttributes } from 'react';
 import { css } from '@emotion/react';
+import { classNames, useDOMRef } from '../utils';
+import { DOMRef, HelpTextProps, Validation } from '../types';
 import theme from '../theme';
 
 export interface HelpTextComponentProps extends HelpTextProps, Validation {
@@ -16,7 +16,7 @@ export interface HelpTextComponentProps extends HelpTextProps, Validation {
 }
 
 function HelpText(props: HelpTextComponentProps, ref: DOMRef<HTMLDivElement>) {
-  let {
+  const {
     description,
     errorMessage,
     validationState,
@@ -25,8 +25,8 @@ function HelpText(props: HelpTextComponentProps, ref: DOMRef<HTMLDivElement>) {
     descriptionProps,
     errorMessageProps,
   } = props;
-  let domRef = useDOMRef(ref);
-  let isErrorMessage = errorMessage && validationState === 'invalid';
+  const domRef = useDOMRef(ref);
+  const isErrorMessage = errorMessage && validationState === 'invalid';
 
   return (
     <div

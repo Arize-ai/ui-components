@@ -36,16 +36,18 @@ export interface ListProps extends HTMLProps<HTMLUListElement> {
    * @default false
    */
   interactive?: boolean;
+  className?: string;
 }
 export function List({
   children,
   listSize = 'default',
   interactive = false,
   noPadding = false,
+  className,
 }: ListProps) {
   return (
     <ul
-      className="ac-list"
+      className={`ac-list${className ? ` ${className}` : ''}`}
       css={css(
         css`
           list-style: none;
@@ -88,6 +90,7 @@ export interface ListItemProps extends HTMLProps<HTMLLIElement> {
    * @default true
    */
   interactive?: boolean;
+  className?: string;
 }
 
 const listItemCSS = (options: {
@@ -126,11 +129,14 @@ export function ListItem({
   listSize = 'default',
   noPadding = false,
   interactive = false,
+  className,
   onClick,
 }: ListItemProps) {
   return (
     <li
-      className="ac-list-item"
+      className={`ac-list-item${
+        className ? ` ${className}` : ''
+      }`}
       css={listItemCSS({ listSize, noPadding, interactive })}
       onClick={onClick}
     >

@@ -4,7 +4,7 @@ import { OverlayProps } from '../types';
 import { OpenTransition } from './OpenTransition';
 
 function Overlay(props: OverlayProps): any {
-  let {
+  const {
     children,
     isOpen,
     container,
@@ -32,7 +32,7 @@ function Overlay(props: OverlayProps): any {
   }, [onExited]);
 
   // Don't un-render the overlay while it's transitioning out.
-  let mountOverlay = isOpen || !exited;
+  const mountOverlay = isOpen || !exited;
   if (!mountOverlay) {
     // Don't bother showing anything if we don't have to.
     return null;

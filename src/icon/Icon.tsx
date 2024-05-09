@@ -1,6 +1,6 @@
 import React, { ReactNode, HTMLAttributes } from 'react';
-import { classNames, colorValue } from '../utils';
 import { css } from '@emotion/react';
+import { classNames, colorValue } from '../utils';
 import { ColorValue } from '../types';
 
 interface IconProps extends HTMLAttributes<HTMLElement> {

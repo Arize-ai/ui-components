@@ -1,17 +1,17 @@
 import { css, keyframes } from '@emotion/react';
-import { classNames } from '../utils';
-import { HelpText, HelpTextComponentProps } from './HelpText';
-import { FieldLabel, FieldLabelProps } from './FieldLabel';
 import { LabelPosition } from '@react-types/shared';
 import { mergeProps } from '@react-aria/utils';
-import { Validation } from '../types';
 import React, {
   RefObject,
   HTMLAttributes,
   ReactNode,
   ReactElement,
 } from 'react';
+import { Validation } from '../types';
+import { classNames } from '../utils';
 import { useFormProps } from '../form';
+import { FieldLabel, FieldLabelProps } from './FieldLabel';
+import { HelpText, HelpTextComponentProps } from './HelpText';
 
 const appearKeyframes = keyframes`
     0% {  opacity: 0; }
@@ -51,10 +51,10 @@ function Field(props: FieldProps, ref: RefObject<HTMLElement>) {
     elementType,
     wrapperClassName,
   } = props;
-  let hasHelpText =
+  const hasHelpText =
     !!description || (errorMessage && validationState === 'invalid');
 
-  let labelWrapperClass = classNames(
+  const labelWrapperClass = classNames(
     'ac-field',
     {
       'ac-field--positionTop': labelPosition === 'top',
@@ -71,7 +71,7 @@ function Field(props: FieldProps, ref: RefObject<HTMLElement>) {
       className: 'ac-field__field',
     })
   );
-  let renderHelpText = () => (
+  const renderHelpText = () => (
     <HelpText
       descriptionProps={descriptionProps}
       errorMessageProps={errorMessageProps}
@@ -122,5 +122,5 @@ function Field(props: FieldProps, ref: RefObject<HTMLElement>) {
 }
 
 // @ts-ignore
-let _Field = React.forwardRef(Field);
+const _Field = React.forwardRef(Field);
 export { _Field as Field };

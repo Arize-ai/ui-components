@@ -1,8 +1,8 @@
 import { clamp } from '@react-aria/utils';
-import { classNames, useDOMRef } from '../utils';
 import { AriaLabelingProps, DOMRef } from '@react-types/shared';
 import React, { CSSProperties } from 'react';
 import { useProgressBar } from '@react-aria/progress';
+import { classNames, useDOMRef } from '../utils';
 import { DOMProps, ProgressBaseProps } from '../types';
 import { progressCircleCSS } from './styles';
 
@@ -34,15 +34,15 @@ function ProgressCircle(
     'aria-label': ariaLabel,
     'aria-labelledby': ariaLabelledby,
   } = props;
-  let domRef = useDOMRef(ref);
+  const domRef = useDOMRef(ref);
 
   value = clamp(value, minValue, maxValue);
-  let { progressBarProps } = useProgressBar({ ...props, value });
+  const { progressBarProps } = useProgressBar({ ...props, value });
 
-  let subMask1Style: CSSProperties = {};
-  let subMask2Style: CSSProperties = {};
+  const subMask1Style: CSSProperties = {};
+  const subMask2Style: CSSProperties = {};
   if (!isIndeterminate) {
-    let percentage = ((value - minValue) / (maxValue - minValue)) * 100;
+    const percentage = ((value - minValue) / (maxValue - minValue)) * 100;
     let angle;
     if (percentage > 0 && percentage <= 50) {
       angle = -180 + (percentage / 50) * 180;
@@ -56,6 +56,7 @@ function ProgressCircle(
   }
 
   if (!ariaLabel && !ariaLabelledby) {
+    // eslint-disable-next-line no-console
     console.warn(
       'ProgressCircle requires an aria-label or aria-labelledby attribute for accessibility'
     );
@@ -101,5 +102,5 @@ function ProgressCircle(
  * ProgressCircles show the progression of a system operation such as downloading, uploading, processing, etc. in a visual way.
  * They can represent determinate or indeterminate progress.
  */
-let _ProgressCircle = React.forwardRef(ProgressCircle);
+const _ProgressCircle = React.forwardRef(ProgressCircle);
 export { _ProgressCircle as ProgressCircle };

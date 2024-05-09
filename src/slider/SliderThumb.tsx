@@ -1,5 +1,3 @@
-import { AriaSliderThumbProps } from '../types/slider';
-import { classNames } from '../utils';
 import { FocusRing } from '@react-aria/focus';
 import { mergeProps } from '@react-aria/utils';
 import React, { RefObject, useRef } from 'react';
@@ -7,6 +5,8 @@ import { SliderState } from '@react-stately/slider';
 import { useHover } from '@react-aria/interactions';
 import { useSliderThumb } from '@react-aria/slider';
 import { VisuallyHidden } from '@react-aria/visually-hidden';
+import { classNames } from '../utils';
+import { AriaSliderThumbProps } from '../types/slider';
 import { handleCSS } from './styles';
 
 interface SliderThumbProps extends AriaSliderThumbProps {
@@ -17,10 +17,10 @@ interface SliderThumbProps extends AriaSliderThumbProps {
 
 export function SliderThumb(props: SliderThumbProps) {
   let { inputRef, state } = props;
-  let backupRef = useRef<HTMLInputElement>(null);
+  const backupRef = useRef<HTMLInputElement>(null);
   inputRef = inputRef || backupRef;
 
-  let { thumbProps, inputProps, isDragging, isFocused } = useSliderThumb(
+  const { thumbProps, inputProps, isDragging, isFocused } = useSliderThumb(
     {
       ...props,
       inputRef,
@@ -28,7 +28,7 @@ export function SliderThumb(props: SliderThumbProps) {
     state
   );
 
-  let { hoverProps, isHovered } = useHover({});
+  const { hoverProps, isHovered } = useHover({});
 
   return (
     <FocusRing within focusRingClass={'is-focused'}>

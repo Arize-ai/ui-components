@@ -1,8 +1,7 @@
 import { DOMRef } from '@react-types/shared';
-import { ListBoxBase, useListBoxLayout } from './ListBoxBase';
 import React, { ReactElement, CSSProperties, ReactNode, Key } from 'react';
-import { useDOMRef } from '../utils';
 import { useListState } from '@react-stately/list';
+import { useDOMRef } from '../utils';
 import {
   AriaLabelingProps,
   CollectionBase,
@@ -10,6 +9,7 @@ import {
   MultipleSelection,
   SelectionBehavior,
 } from '../types';
+import { ListBoxBase, useListBoxLayout } from './ListBoxBase';
 
 export interface ListBoxPropsBase<T>
   extends CollectionBase<T>,

@@ -1,7 +1,7 @@
-import theme from '../theme';
 import { css, SerializedStyles } from '@emotion/react';
-import { RadioVariant } from './types';
+import theme from '../theme';
 import { textSizeCSS } from '../content/styles';
+import { RadioVariant } from './types';
 
 type RadioStyleProps = {
   isSelected?: boolean;

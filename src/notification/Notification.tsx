@@ -1,9 +1,9 @@
 import React, { Component, CSSProperties, ReactNode } from 'react';
 import { css } from '@emotion/react';
-import { Overlay } from '../overlays';
-import { Notice } from './Notice';
-import theme from '../theme';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { Overlay } from '../overlays';
+import theme from '../theme';
+import { Notice } from './Notice';
 import { NoticeDefinition, NoticeConfig } from './types';
 import {
   TRANSITION_ENTER_DURATION_MS,
@@ -49,7 +49,7 @@ interface NotificationContainerProps extends PropsFromOverlay {
  * The container for the notifications that is used in the CSS transition group
  */
 function NotificationContainer(props: NotificationContainerProps) {
-  const { isOpen, ...passThroughProps } = props;
+  const { isOpen: _isOpen, ...passThroughProps } = props;
   return (
     <div
       className="ac-notification-container"

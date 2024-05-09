@@ -7,9 +7,6 @@ import {
 } from '@react-types/shared';
 import { AriaListBoxOptions, useListBox } from '@react-aria/listbox';
 
-import { ListBoxContext } from './ListBoxContext';
-import { ListBoxOption } from './ListBoxOption';
-import { ListBoxSection } from './ListBoxSection';
 import { ListLayout } from '@react-stately/layout';
 import { ListState } from '@react-stately/list';
 import { mergeProps } from '@react-aria/utils';
@@ -24,6 +21,9 @@ import React, {
 import { ReusableView } from '@react-stately/virtualizer';
 import { useCollator } from '@react-aria/i18n';
 import { Virtualizer, VirtualizerItem } from '@react-aria/virtualizer';
+import { ListBoxSection } from './ListBoxSection';
+import { ListBoxOption } from './ListBoxOption';
+import { ListBoxContext } from './ListBoxContext';
 
 interface ListBoxBaseProps<T>
   extends AriaListBoxOptions<T>,
@@ -49,8 +49,8 @@ interface ListBoxBaseProps<T>
 
 /** @private */
 export function useListBoxLayout<T>(state: ListState<T>) {
-  let collator = useCollator({ usage: 'search', sensitivity: 'base' });
-  let layout = useMemo<ListLayout<T>>(
+  const collator = useCollator({ usage: 'search', sensitivity: 'base' });
+  const layout = useMemo<ListLayout<T>>(
     () =>
       new ListLayout<T>({
         estimatedRowHeight: 32,
@@ -73,7 +73,7 @@ function ListBoxBase<T>(
   props: ListBoxBaseProps<T>,
   ref: RefObject<HTMLDivElement>
 ) {
-  let {
+  const {
     layout,
     state,
     shouldSelectOnPressUp,
@@ -84,7 +84,7 @@ function ListBoxBase<T>(
     onScroll,
     isLoading = false,
   } = props;
-  let { listBoxProps } = useListBox(
+  const { listBoxProps } = useListBox(
     {
       ...props,
       keyboardDelegate: layout,
@@ -101,7 +101,7 @@ function ListBoxBase<T>(
   // The header is extracted from the children so it can receive ARIA labeling properties.
   type View = ReusableView<Node<T>, unknown>;
 
-  let renderWrapper = (
+  const renderWrapper = (
     parent: View,
     reusableView: View,
     children: View[],
@@ -172,7 +172,6 @@ function ListBoxBase<T>(
             return (
               // aria-selected isn't needed here since this option is not selectable.
               <div
-                // eslint-disable-next-line jsx-a11y/role-has-required-aria-props
                 role="option"
                 style={{
                   display: 'flex',
@@ -187,7 +186,7 @@ function ListBoxBase<T>(
               </div>
             );
           } else if (type === 'placeholder') {
-            let emptyState = props.renderEmptyState
+            const emptyState = props.renderEmptyState
               ? props.renderEmptyState()
               : null;
             if (emptyState == null) {
@@ -197,7 +196,6 @@ function ListBoxBase<T>(
             return (
               <div
                 // aria-selected isn't needed here since this option is not selectable.
-                // eslint-disable-next-line jsx-a11y/role-has-required-aria-props
                 role="option"
               >
                 {emptyState}

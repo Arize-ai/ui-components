@@ -1,4 +1,5 @@
 import { CSSProperties, HTMLAttributes } from 'react';
+import { useLocale } from '@react-aria/i18n';
 import {
   BackgroundColorValue,
   BorderColorValue,
@@ -13,7 +14,6 @@ import {
   StyleProps,
   ViewStyleProps,
 } from '../types';
-import { useLocale } from '@react-aria/i18n';
 import { assertUnreachable } from './typeUtils';
 
 type Breakpoint = 'base' | 'S' | 'M' | 'L' | string;
@@ -169,25 +169,26 @@ export function convertStyleProps(
   direction: Direction,
   matchedBreakpoints: Breakpoint[]
 ) {
-  let style: CSSProperties = {};
-  for (let key in props) {
-    let styleProp = handlers[key];
+  const style: CSSProperties = {};
+  for (const key in props) {
+    const styleProp = handlers[key];
     if (!styleProp || props[key] == null) {
       continue;
     }
 
+    // eslint-disable-next-line prefer-const
     let [name, convert] = styleProp;
     if (typeof name === 'function') {
       name = name(direction);
     }
 
-    let prop = getResponsiveProp(
+    const prop = getResponsiveProp(
       props[key as keyof ViewStyleProps],
       matchedBreakpoints
     );
-    let value = convert(prop);
+    const value = convert(prop);
     if (Array.isArray(name)) {
-      for (let k of name) {
+      for (const k of name) {
         (style as any)[k] = value;
       }
     } else {
@@ -195,7 +196,7 @@ export function convertStyleProps(
     }
   }
 
-  for (let prop in borderStyleProps) {
+  for (const prop in borderStyleProps) {
     if (style[prop as keyof typeof borderStyleProps]) {
       (style as any)[borderStyleProps[prop as keyof typeof borderStyleProps]] =
         'solid';
@@ -281,7 +282,7 @@ export function getResponsiveProp<T>(
 ): T {
   if (prop && typeof prop === 'object' && !Array.isArray(prop)) {
     for (let i = 0; i < matchedBreakpoints.length; i++) {
-      let breakpoint = matchedBreakpoints[i];
+      const breakpoint = matchedBreakpoints[i];
       if (prop[breakpoint] != null) {
         return prop[breakpoint];
       }
@@ -300,19 +301,20 @@ export function useStyleProps<T extends StyleProps>(
   handlers: StyleHandlers = baseStyleProps,
   options: StylePropsOptions = {}
 ) {
-  let { ...otherProps } = props;
-  let { direction } = useLocale();
-  let { matchedBreakpoints = ['base'] } = options;
-  let styles = convertStyleProps(
+  const { ...otherProps } = props;
+  const { direction } = useLocale();
+  const { matchedBreakpoints = ['base'] } = options;
+  const styles = convertStyleProps(
     props,
     handlers,
     direction,
     matchedBreakpoints
   );
-  let style = { ...styles };
+  const style = { ...styles };
 
   // @ts-ignore
   if (otherProps.className) {
+    // eslint-disable-next-line no-console
     console.warn(
       'The className prop is unsafe and is unsupported in Arize Components. ' +
         'Please use style props with AC variables, or UNSAFE_className if you absolutely must do something custom. ' +
@@ -322,6 +324,7 @@ export function useStyleProps<T extends StyleProps>(
 
   // @ts-ignore
   if (otherProps.style) {
+    // eslint-disable-next-line no-console
     console.warn(
       'The style prop is unsafe and is unsupported in React Arize Components. ' +
         'Please use style props with AC variables, or UNSAFE_style if you absolutely must do something custom. ' +
@@ -329,7 +332,7 @@ export function useStyleProps<T extends StyleProps>(
     );
   }
 
-  let styleProps: HTMLAttributes<HTMLElement> = {
+  const styleProps: HTMLAttributes<HTMLElement> = {
     style,
   };
 

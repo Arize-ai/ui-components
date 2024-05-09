@@ -1,8 +1,8 @@
 import React, { ReactNode, useContext, HTMLProps, CSSProperties } from 'react';
 import { useTooltip } from '@react-aria/tooltip';
+import { mergeProps } from '@react-aria/utils';
 import { classNames } from '../utils';
 import { PlacementAxis, DOMRef } from '../types';
-import { mergeProps } from '@react-aria/utils';
 import { TooltipContext } from '../tooltip/context';
 import { helpTooltipCSS } from './styles';
 
@@ -26,12 +26,9 @@ interface HelpTooltipProps extends HTMLProps<HTMLDivElement> {
  * @returns
  */
 function HelpTooltip(props: HelpTooltipProps, _ref: DOMRef) {
-  const {
-    ref: overlayRef,
-    arrowProps,
-    state,
-    ...tooltipProviderProps
-  } = useContext(TooltipContext);
+  const { ref: overlayRef, state, ...tooltipProviderProps } = useContext(
+    TooltipContext
+  );
 
   props = mergeProps(props, tooltipProviderProps);
   const { placement = 'right', isOpen, style: propsStyle, id } = props;
@@ -66,5 +63,5 @@ function HelpTooltip(props: HelpTooltipProps, _ref: DOMRef) {
 /**
  * Display container for Tooltip content. Has a directional arrow dependent on its placement.
  */
-let _HelpTooltip = React.forwardRef(HelpTooltip);
+const _HelpTooltip = React.forwardRef(HelpTooltip);
 export { _HelpTooltip as HelpTooltip };

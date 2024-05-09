@@ -1,10 +1,7 @@
 import { css, keyframes } from '@emotion/react';
-import { classNames, createFocusableRef } from '../utils';
-import { Field } from '../field';
 import { FocusRing } from '@react-aria/focus';
 import { mergeProps } from '@react-aria/utils';
 import { PressEvents } from '@react-types/shared';
-import { Icon, AlertCircleOutline } from '../icon';
 import React, {
   HTMLAttributes,
   InputHTMLAttributes,
@@ -17,6 +14,10 @@ import React, {
   useRef,
   forwardRef,
 } from 'react';
+import { useHover } from '@react-aria/interactions';
+import { classNames, createFocusableRef } from '../utils';
+import { Field } from '../field';
+import { Icon, AlertCircleOutline } from '../icon';
 import {
   InputBase,
   LabelableProps,
@@ -35,7 +36,6 @@ import {
   StyleProps,
 } from '../types';
 import { AddonBefore } from '../field';
-import { useHover } from '@react-aria/interactions';
 import theme from '../theme';
 import { dimensionValue } from '../utils/styleProps';
 
@@ -303,10 +303,10 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
     height,
     width,
   } = props;
-  let { hoverProps, isHovered } = useHover({ isDisabled });
-  let [isFocused, setIsFocused] = React.useState(false);
-  let domRef = useRef<HTMLDivElement>(null);
-  let defaultInputRef = useRef<HTMLInputElement | HTMLTextAreaElement>(null);
+  const { hoverProps, isHovered } = useHover({ isDisabled });
+  const [isFocused, setIsFocused] = React.useState(false);
+  const domRef = useRef<HTMLDivElement>(null);
+  const defaultInputRef = useRef<HTMLInputElement | HTMLTextAreaElement>(null);
   inputRef = inputRef || defaultInputRef;
 
   // Expose imperative interface for ref
@@ -323,8 +323,8 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
     },
   }));
 
-  let ElementType: React.ElementType = multiLine ? 'textarea' : 'input';
-  let isInvalid = validationState === 'invalid';
+  const ElementType: React.ElementType = multiLine ? 'textarea' : 'input';
+  const isInvalid = validationState === 'invalid';
 
   const validation = (
     <Icon
