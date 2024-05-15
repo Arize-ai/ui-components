@@ -826,19 +826,33 @@ export const CloudUpload = () => (
 //D
 export const DatabaseOutline = () => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"
     viewBox="0 0 24 24"
-    fill="none"
     stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
+    xmlns="http://www.w3.org/2000/svg"
   >
-    <ellipse cx="12" cy="5" rx="9" ry="3" fill="none"></ellipse>
-    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" fill="none"></path>
-    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" fill="none"></path>
+    <path
+      d="M12 8.66669C16.1421 8.66669 19.5 7.5474 19.5 6.16669C19.5 4.78598 16.1421 3.66669 12 3.66669C7.85786 3.66669 4.5 4.78598 4.5 6.16669C4.5 7.5474 7.85786 8.66669 12 8.66669Z"
+      strokeWidth="2"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M19.5 12C19.5 13.3833 16.1667 14.5 12 14.5C7.83333 14.5 4.5 13.3833 4.5 12"
+      strokeWidth="2"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M4.5 6.16669V17.8334C4.5 19.2167 7.83333 20.3334 12 20.3334C16.1667 20.3334 19.5 19.2167 19.5 17.8334V6.16669"
+      strokeWidth="2"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
   </svg>
 );
 
