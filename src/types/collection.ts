@@ -25,6 +25,13 @@ export type LoadingState =
   | 'idle'
   | 'filtering';
 
+export interface AsyncLoadable {
+  /** Whether the items are currently loading. */
+  isLoading?: boolean; // possibly isLoadingMore
+  /** Handler that is called when more items should be loaded, e.g. while scrolling near the bottom. */
+  onLoadMore?: () => any;
+}
+
 export interface SectionProps<T> {
   /** Rendered contents of the section, e.g. a header. */
   title?: ReactNode;
