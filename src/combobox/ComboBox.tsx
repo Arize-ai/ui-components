@@ -29,8 +29,7 @@ import { TextFieldBase } from '../textfield';
 import { ProgressCircle } from '../progress';
 import { Popover } from '../popover';
 import { useProviderProps } from '../provider';
-import { AriaButtonProps } from '../types';
-import { ACComboBoxProps } from '../types';
+import { AriaButtonProps, ACComboBoxProps } from '../types';
 import { ArrowIosDownwardOutline, Icon } from '../icon';
 
 function ComboBox<T extends object>(
@@ -72,7 +71,7 @@ const ComboBoxBase = React.forwardRef(function ComboBoxBase<T extends object>(
   let listBoxRef = useRef(null);
   let inputRef = useRef<HTMLInputElement>(null);
   // serve as the new popover `triggerRef` instead of `unwrappedButtonRef` before for better positioning.
-  let inputGroupRef = useRef<HTMLDivElement>();
+  let inputGroupRef = useRef<HTMLDivElement>(null);
   let domRef = useFocusableRef(ref, inputRef);
 
   let { contains } = useFilter({ sensitivity: 'base' });
@@ -239,10 +238,10 @@ const ComboBoxInput = React.forwardRef(function ComboBoxInput(
       aria-label={'loading'}
       size="S"
       isIndeterminate
-      className={classNames(
-        'spectrum-Textfield-circleLoader',
-        'ac-input-group-input-circle-loader'
-      )}
+      // className={classNames(
+      //   'spectrum-Textfield-circleLoader',
+      //   'ac-input-group-input-circle-loader'
+      // )}
     />
   );
 
@@ -308,7 +307,7 @@ const ComboBoxInput = React.forwardRef(function ComboBoxInput(
         <TextFieldBase
           inputProps={inputProps}
           inputRef={inputRef}
-          UNSAFE_className={classNames('ac-input-group-field')}
+          className={classNames('ac-input-group-field')}
           inputClassName={classNames('ac-input-group-input')}
           validationIconClassName={classNames(
             'ac-input-group-input-validationIcon'
@@ -322,7 +321,7 @@ const ComboBoxInput = React.forwardRef(function ComboBoxInput(
             showLoading &&
             (isOpen || menuTrigger === 'manual' || loadingState === 'loading')
           }
-          loadingIndicator={loadingState != null && loadingCircle}
+          // loadingIndicator={loadingState != null && loadingCircle}
           disableFocusRing
         />
         <PressResponder preventFocusOnPress isPressed={isOpen}>

@@ -1,5 +1,5 @@
 import { css, keyframes } from '@emotion/react';
-import { FocusRing } from '@react-aria/focus';
+import { useFocusRing } from '@react-aria/focus';
 import { mergeProps } from '@react-aria/utils';
 import { PressEvents } from '@react-types/shared';
 import React, {
@@ -110,6 +110,7 @@ interface TextFieldBaseProps
   className?: string;
   /** Whether the input should be displayed with a quiet style. */
   isQuiet?: boolean;
+  disableFocusRing?: boolean;
 }
 
 const textFieldBaseCSS = (styleProps: StyleProps) => css`
@@ -302,6 +303,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
     className,
     height,
     width,
+    disableFocusRing,
   } = props;
   const { hoverProps, isHovered } = useHover({ isDisabled });
   const [isFocused, setIsFocused] = React.useState(false);
@@ -334,6 +336,11 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
     />
   );
 
+  let { focusProps, isFocusVisible } = useFocusRing({
+    isTextInput: true,
+    autoFocus,
+  });
+
   let textField = (
     <div
       className={classNames('ac-textfield', {
@@ -344,7 +351,7 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
         'ac-textfield--loadable': loadingIndicator,
         'ac-textfield--multiline': multiLine,
         'is-hovered': isHovered,
-        'is-focused': isFocused,
+        'is-focused': !disableFocusRing && isFocusVisible,
         'is-disabled': isDisabled,
         'is-readonly': isReadOnly,
       })}
@@ -356,24 +363,13 @@ function TextFieldBase(props: TextFieldBaseProps, ref: Ref<TextFieldRef>) {
       {addonBefore != null ? (
         <AddonBefore key="addon-before">{addonBefore}</AddonBefore>
       ) : null}
-      <FocusRing
-        focusRingClass={'focus-ring'}
-        isTextInput
-        autoFocus={autoFocus}
-      >
-        <ElementType
-          key="element"
-          {...mergeProps(inputProps, hoverProps, {
-            onFocus: () => {
-              setIsFocused(true);
-            },
-            onBlur: () => setIsFocused(false),
-          })}
-          ref={inputRef as any}
-          rows={multiLine ? 1 : undefined}
-          className={classNames('ac-textfield__input', inputClassName)}
-        />
-      </FocusRing>
+      <ElementType
+        key="element"
+        {...mergeProps(inputProps, hoverProps, focusProps)}
+        ref={inputRef as any}
+        rows={multiLine ? 1 : undefined}
+        className={classNames('ac-textfield__input', inputClassName)}
+      />
       {validationState && validationState === 'invalid' && !isLoading
         ? validation
         : null}
