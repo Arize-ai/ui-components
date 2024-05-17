@@ -1,6 +1,7 @@
 import React from 'react';
 import { Global, css } from '@emotion/react';
 import { ProviderTheme } from '../types';
+import { comboBoxCSS } from '../combobox/styles';
 import { useProvider } from './Provider';
 
 /**
@@ -992,6 +993,9 @@ export const derivedCSS = (theme: ProviderTheme) => css`
     /* Aliases */
     --ac-alias-single-line-height: var(--ac-global-dimension-size-400);
     --ac-alias-single-line-width: var(--ac-global-dimension-size-2400);
+
+    --ac-highlight-background-color: var(--ac-global-color-primary-700);
+    --ac-highlight-foreground-color: var(--ac-global-text-color-900);
   }
 `;
 export function GlobalStyles() {
@@ -1005,7 +1009,8 @@ export function GlobalStyles() {
         staticCSS,
         themeCSS,
         derivedCSS(theme),
-        mediumRootCSS
+        mediumRootCSS,
+        comboBoxCSS
       )}
     />
   );
