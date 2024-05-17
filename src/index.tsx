@@ -33,6 +33,7 @@ export * from './empty';
 export * from './contextualhelp';
 export * from './counter';
 export * from './layout';
+export * from './combobox';
 export { theme, designationColors, colorPalette } from './theme';
 // export interface Props extends HTMLAttributes<HTMLDivElement> {
 //   /** custom content, defaults to 'the snozzberries taste like snozzberries' */
