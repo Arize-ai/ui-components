@@ -153,7 +153,7 @@ const textFieldBaseCSS = (styleProps: StyleProps) => css`
 
     textarea {
       resize: none;
-      overflow-y: scroll;
+      overflow-y: auto;
     }
   }
 
