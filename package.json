@@ -144,6 +144,7 @@
     "@react-types/shared": "^3.15.0",
     "clsx": "^1.1.1",
     "eslint-config-prettier": "^8.8.0",
+    "react-aria-components": "^1.2.0",
     "react-transition-group": "^4.4.5"
   },
   "description": "Re-usable React components",
