@@ -26,14 +26,6 @@ export interface BreadcrumbItemProps extends AriaLinkProps, LinkDOMProps {
   children: ReactNode;
 }
 
-export interface AriaBreadcrumbItemProps extends BreadcrumbItemProps, DOMProps {
-  /**
-   * The HTML element used to render the breadcrumb link, e.g. 'a', or 'span'.
-   * @default 'a'
-   */
-  elementType?: string;
-}
-
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface BreadcrumbsProps {}
 export interface AriaBreadcrumbsProps
