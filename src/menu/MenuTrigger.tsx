@@ -1,14 +1,18 @@
 import { DismissButton, useOverlayPosition } from '@react-aria/overlays';
-import { DOMRef, DOMRefValue } from '@react-types/shared';
 import { FocusScope } from '@react-aria/focus';
-import { Placement } from '@react-types/overlays';
 import { PressResponder } from '@react-aria/interactions';
 import React, { forwardRef, Fragment, ReactElement, useRef } from 'react';
 import { useMenuTrigger } from '@react-aria/menu';
 import { useMenuTriggerState } from '@react-stately/menu';
 import { Popover } from '../popover';
 import { unwrapDOMRef, useDOMRef } from '../utils';
-import { Alignment, OverlayTriggerProps } from '../types';
+import {
+  Alignment,
+  DOMRef,
+  DOMRefValue,
+  OverlayTriggerProps,
+  Placement,
+} from '../types';
 import { MenuContext } from './context';
 
 type MenuTriggerType = 'press' | 'longPress';

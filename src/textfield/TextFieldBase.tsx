@@ -1,7 +1,6 @@
 import { css, keyframes } from '@emotion/react';
 import { FocusRing } from '@react-aria/focus';
 import { mergeProps } from '@react-aria/utils';
-import { PressEvents } from '@react-types/shared';
 import React, {
   HTMLAttributes,
   InputHTMLAttributes,
@@ -14,7 +13,7 @@ import React, {
   useRef,
   forwardRef,
 } from 'react';
-import { useHover } from '@react-aria/interactions';
+import { PressEvents, useHover } from '@react-aria/interactions';
 import { classNames, createFocusableRef } from '../utils';
 import { Field } from '../field';
 import { Icon, AlertCircleOutline } from '../icon';

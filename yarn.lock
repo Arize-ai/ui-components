@@ -2692,7 +2692,7 @@
   dependencies:
     "@react-types/shared" "^3.21.0"
 
-"@react-types/shared@^3.15.0", "@react-types/shared@^3.16.0", "@react-types/shared@^3.21.0":
+"@react-types/shared@^3.16.0", "@react-types/shared@^3.21.0":
   version "3.21.0"
   resolved "https://registry.yarnpkg.com/@react-types/shared/-/shared-3.21.0.tgz#1af41fdf7dfbdbd33bbc1210617c43ed0d4ef20c"
   integrity sha512-wJA2cUF8dP4LkuNUt9Vh2kkfiQb2NLnV2pPXxVnKJZ7d4x2/7VPccN+LYPnH8m0X3+rt50cxWuPKQmjxSsCFOg==

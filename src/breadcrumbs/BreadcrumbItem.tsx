@@ -1,4 +1,3 @@
-import { BreadcrumbItemProps } from '@react-types/breadcrumbs';
 import { FocusRing } from '@react-aria/focus';
 import { mergeProps } from '@react-aria/utils';
 import React, { Fragment, useRef } from 'react';
@@ -6,6 +5,7 @@ import { useBreadcrumbItem } from '@react-aria/breadcrumbs';
 import { useHover } from '@react-aria/interactions';
 import { classNames, getWrappedElement } from '../utils';
 import { ChevronRightOutline, Icon } from '../icon';
+import { BreadcrumbItemProps } from '../types';
 
 export function BreadcrumbItem(props: BreadcrumbItemProps) {
   const { children, isCurrent, isDisabled } = props;

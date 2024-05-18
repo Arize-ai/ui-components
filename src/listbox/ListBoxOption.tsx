@@ -1,7 +1,6 @@
 import { FocusRing } from '@react-aria/focus';
 import { isFocusVisible, useHover } from '@react-aria/interactions';
 import { mergeProps } from '@react-aria/utils';
-import { Node } from '@react-types/shared';
 import React, { useContext } from 'react';
 import { useOption } from '@react-aria/listbox';
 import { useRef } from 'react';
@@ -9,6 +8,7 @@ import { Text } from '../content';
 import { classNames } from '../utils';
 import { Icon, CheckmarkOutline } from '../icon';
 import { menuItemCSS } from '../menu/styles';
+import { Node } from '../types';
 import { ListBoxContext } from './ListBoxContext';
 
 interface OptionProps<T> {

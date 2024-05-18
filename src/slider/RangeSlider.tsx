@@ -1,7 +1,7 @@
-import { FocusableRef } from '@react-types/shared';
 import React from 'react';
 import { useLocale } from '@react-aria/i18n';
 import { RangeSliderProps } from '../types/slider';
+import { FocusableRef } from '../types';
 import {
   SliderBase,
   SliderBaseChildArguments,

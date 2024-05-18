@@ -1,4 +1,3 @@
-import { DOMRef } from '@react-types/shared';
 import React, { Key, ReactElement, useCallback, useRef } from 'react';
 import { useBreadcrumbs } from '@react-aria/breadcrumbs';
 import { useLayoutEffect, useValueEffect } from '@react-aria/utils';
@@ -11,7 +10,13 @@ import { FolderOutline } from '../icon/Icons';
 import { classNames, useDOMRef } from '../utils';
 import { ActionButton } from '../button';
 import theme from '../theme';
-import { AriaLabelingProps, DOMProps, ItemProps, StyleProps } from '../types';
+import {
+  AriaLabelingProps,
+  DOMProps,
+  DOMRef,
+  ItemProps,
+  StyleProps,
+} from '../types';
 import { BreadcrumbItem } from './BreadcrumbItem';
 
 const MIN_VISIBLE_ITEMS = 1;

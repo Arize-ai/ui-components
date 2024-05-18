@@ -1,9 +1,8 @@
 import { filterDOMProps } from '@react-aria/utils';
-import { FocusableRef } from '@react-types/shared';
 import React, { forwardRef } from 'react';
 import { css } from '@emotion/react';
 import { ArrowIosDownwardOutline, Icon, MoreHorizontalOutline } from '../icon';
-import { ActionMenuProps } from '../types';
+import { ActionMenuProps, FocusableRef } from '../types';
 import { Button } from '../button';
 import { MenuTrigger } from './MenuTrigger';
 import { Menu } from './Menu';

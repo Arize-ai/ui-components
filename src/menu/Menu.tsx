@@ -1,5 +1,5 @@
 import { mergeProps, useSyncRef } from '@react-aria/utils';
-import React, { Key, ReactElement, useContext } from 'react';
+import React, { ReactElement, useContext } from 'react';
 import { useMenu } from '@react-aria/menu';
 import { useTreeState } from '@react-stately/tree';
 import { css } from '@emotion/react';
@@ -16,6 +16,7 @@ import { MenuContext } from './context';
 import { MenuItem } from './MenuItem';
 import { MenuSection } from './MenuSection';
 
+type Key = string | number;
 export interface MenuProps<T> extends CollectionBase<T>, MultipleSelection {
   /** Where the focus should be set. */
   autoFocus?: boolean | FocusStrategy;
@@ -32,7 +33,7 @@ export interface AriaMenuProps<T>
     DOMProps,
     AriaLabelingProps {}
 
-export type MenuComponentProps<T> = AriaMenuProps<T>
+export type MenuComponentProps<T> = AriaMenuProps<T>;
 
 const menuULCSS = css`
   background-color: var(--ac-global-menu-background-color);

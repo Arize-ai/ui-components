@@ -1,8 +1,7 @@
-import { DOMRef } from '@react-types/shared';
 import { filterDOMProps } from '@react-aria/utils';
 import React, { forwardRef, ReactNode } from 'react';
 import { useDOMRef } from '../utils';
-import { DOMProps } from '../types';
+import { DOMProps, DOMRef } from '../types';
 
 export interface ContentProps extends DOMProps {
   /**

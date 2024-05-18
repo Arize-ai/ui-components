@@ -1,9 +1,13 @@
-import { DOMRef } from '@react-types/shared';
 import { css } from '@emotion/react';
 import { filterDOMProps } from '@react-aria/utils';
 import React, { ReactNode, ElementType, HTMLAttributes } from 'react';
 import { classNames, useDOMRef } from '../utils';
-import { DOMProps, LabelableProps, ExtendableLabelProps } from '../types';
+import {
+  DOMProps,
+  LabelableProps,
+  ExtendableLabelProps,
+  DOMRef,
+} from '../types';
 import theme from '../theme';
 
 interface LabelProps {

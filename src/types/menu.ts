@@ -1,15 +1,11 @@
-import {
-  Alignment,
-  AriaLabelingProps,
-  CollectionBase,
-  DOMProps,
-  FocusStrategy,
-  MultipleSelection,
-  StyleProps,
-} from '@react-types/shared';
 import { Key, ReactElement, ReactNode } from 'react';
 import { ButtonProps } from './button';
 import { OverlayTriggerProps } from './overlays';
+import { Alignment } from './labelable';
+import { FocusStrategy, MultipleSelection } from './selection';
+import { CollectionBase } from './collection';
+import { AriaLabelingProps, DOMProps } from './dom';
+import { StyleProps } from './style';
 
 export type MenuTriggerType = 'press' | 'longPress';
 

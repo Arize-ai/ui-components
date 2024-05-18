@@ -7,11 +7,10 @@ import {
   useLayoutEffect,
   useResizeObserver,
 } from '@react-aria/utils';
-import { Placement } from '@react-types/overlays';
 import { PressResponder, useHover } from '@react-aria/interactions';
 import React, { ReactElement, useCallback, useRef, useState } from 'react';
 import { useSelectState } from '@react-stately/select';
-import { PickerProps } from '../types';
+import { PickerProps, Placement } from '../types';
 import { DropdownMenu, DropdownButton } from '../dropdown';
 import { ListBoxBase, useListBoxLayout } from '../listbox';
 import {

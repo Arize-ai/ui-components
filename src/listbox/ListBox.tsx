@@ -1,4 +1,3 @@
-import { DOMRef } from '@react-types/shared';
 import React, { ReactElement, CSSProperties, ReactNode, Key } from 'react';
 import { useListState } from '@react-stately/list';
 import { useDOMRef } from '../utils';
@@ -6,6 +5,7 @@ import {
   AriaLabelingProps,
   CollectionBase,
   DOMProps,
+  DOMRef,
   MultipleSelection,
   SelectionBehavior,
 } from '../types';

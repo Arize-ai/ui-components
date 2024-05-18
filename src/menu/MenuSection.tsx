@@ -1,4 +1,3 @@
-import { Node } from '@react-types/shared';
 import React, { Fragment, Key } from 'react';
 import { TreeState } from '@react-stately/tree';
 import { useMenuSection } from '@react-aria/menu';
@@ -6,8 +5,8 @@ import { useSeparator } from '@react-aria/separator';
 import { getChildNodes } from '@react-stately/collections';
 import { css } from '@emotion/react';
 import theme from '../theme';
+import { Node } from '../types';
 import { MenuItem } from './MenuItem';
-
 interface MenuSectionProps<T> {
   item: Node<T>;
   state: TreeState<T>;
