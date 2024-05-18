@@ -1,4 +1,4 @@
-import { Key, ReactElement, ReactNode } from 'react';
+import { ReactElement, ReactNode } from 'react';
 import { ButtonProps } from './button';
 import { OverlayTriggerProps } from './overlays';
 import { Alignment } from './labelable';
@@ -6,6 +6,7 @@ import { FocusStrategy, MultipleSelection } from './selection';
 import { CollectionBase } from './collection';
 import { AriaLabelingProps, DOMProps } from './dom';
 import { StyleProps } from './style';
+import { Key } from './key';
 
 export type MenuTriggerType = 'press' | 'longPress';
 

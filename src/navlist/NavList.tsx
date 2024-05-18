@@ -1,7 +1,7 @@
-import React, { Key, ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 import { css } from '@emotion/react';
 import { ListBox, ListBoxProps } from '../listbox';
-import { DOMRef } from '../types';
+import { DOMRef, Key } from '../types';
 import { useDOMRef } from '../utils';
 import theme from '../theme';
 

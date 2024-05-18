@@ -1,4 +1,5 @@
-import { Key, ReactElement, ReactNode } from 'react';
+import { ReactElement, ReactNode } from 'react';
+import { Key } from './key';
 
 export interface ItemProps<T> {
   /** Rendered contents of the item or child items. */

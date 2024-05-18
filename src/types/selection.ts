@@ -1,4 +1,4 @@
-import { Key } from 'react';
+import { Key } from './key';
 
 export interface SingleSelection {
   /** Whether the collection allows empty selection. */

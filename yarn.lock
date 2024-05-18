@@ -2414,7 +2414,7 @@
     "@react-types/shared" "^3.23.0"
     "@swc/helpers" "^0.5.0"
 
-"@react-stately/collections@^3.10.2", "@react-stately/collections@^3.10.6", "@react-stately/collections@^3.5.1":
+"@react-stately/collections@^3.10.2", "@react-stately/collections@^3.10.6":
   version "3.10.6"
   resolved "https://registry.yarnpkg.com/@react-stately/collections/-/collections-3.10.6.tgz#487a4c4e201e8f0de53725ce650d1e57b820917a"
   integrity sha512-hb/yzxQnZaSRu43iR6ftkCJIqD4Qu5WUjl4ASBn2EGb9TmipA7bFnYVqSH4xFPCCTZ68Qxh95dOcxYBHlHeWZQ==
@@ -2460,17 +2460,6 @@
     "@react-types/shared" "^3.23.0"
     "@react-types/table" "^3.9.4"
     "@swc/helpers" "^0.5.0"
-
-"@react-stately/list@3.6.1":
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/@react-stately/list/-/list-3.6.1.tgz#75d07a4e04111b804fb13c975df5a0c1265f3aa1"
-  integrity sha512-+/fVkK3UO+N2NoUGpe57k9gcnfIsyEgWP8SD6CXZUkJho7BTp6mwrH0Wm8tcOclT3uBk+fZaQrk8mR3uWsPZGw==
-  dependencies:
-    "@react-stately/collections" "^3.5.1"
-    "@react-stately/selection" "^3.11.2"
-    "@react-stately/utils" "^3.5.2"
-    "@react-types/shared" "^3.16.0"
-    "@swc/helpers" "^0.4.14"
 
 "@react-stately/list@^3.10.4":
   version "3.10.4"
@@ -2525,7 +2514,7 @@
     "@react-types/shared" "^3.23.0"
     "@swc/helpers" "^0.5.0"
 
-"@react-stately/selection@^3.11.2", "@react-stately/selection@^3.15.0":
+"@react-stately/selection@^3.15.0":
   version "3.15.0"
   resolved "https://registry.yarnpkg.com/@react-stately/selection/-/selection-3.15.0.tgz#224a7a279236aacbd30063bc9f11dbe196728e8e"
   integrity sha512-OtypXNtvRWLmpkaktluzCYEXKXAON16WIJv2mZ4cae3H0UVfWaFL9sD+ST9nj7UqYNTDXECug5ziIY+YKd7zvA==
@@ -2589,7 +2578,7 @@
     "@react-types/shared" "^3.23.0"
     "@swc/helpers" "^0.5.0"
 
-"@react-stately/utils@^3.10.0", "@react-stately/utils@^3.5.1", "@react-stately/utils@^3.5.2":
+"@react-stately/utils@^3.10.0", "@react-stately/utils@^3.5.1":
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/@react-stately/utils/-/utils-3.10.0.tgz#2479c891b9d726cc43e6abcc0cc74498eda8e0fa"
   integrity sha512-nji2i9fTYg65ZWx/3r11zR1F2tGya+mBubRCbMTwHyRnsSLFZaeq/W6lmrOyIy1uMJKBNKLJpqfmpT4x7rw6pg==
@@ -2692,7 +2681,7 @@
   dependencies:
     "@react-types/shared" "^3.23.0"
 
-"@react-types/shared@^3.16.0", "@react-types/shared@^3.23.0":
+"@react-types/shared@^3.23.0":
   version "3.23.0"
   resolved "https://registry.yarnpkg.com/@react-types/shared/-/shared-3.23.0.tgz#59c9d2683d131b81a8f775b56408782fc70bc79b"
   integrity sha512-GQm/iPiii3ikcaMNR4WdVkJ4w0mKtV3mLqeSfSqzdqbPr6vONkqXbh3RhPlPmAJs1b4QHnexd/wZQP3U9DHOwQ==

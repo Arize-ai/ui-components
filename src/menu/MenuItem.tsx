@@ -1,13 +1,13 @@
 import { FocusRing } from '@react-aria/focus';
 import { mergeProps } from '@react-aria/utils';
-import React, { Key, useRef } from 'react';
+import React, { useRef } from 'react';
 import { TreeState } from '@react-stately/tree';
 import { useHover } from '@react-aria/interactions';
 import { useMenuItem } from '@react-aria/menu';
 import { Text } from '../content';
 import { classNames } from '../utils';
 import { Icon, CheckmarkOutline } from '../icon';
-import { Node } from '../types';
+import { Key, Node } from '../types';
 import { useMenuContext } from './context';
 import { menuItemCSS } from './styles';
 
