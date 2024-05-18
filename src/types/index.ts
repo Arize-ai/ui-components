@@ -17,3 +17,4 @@ export * from './progress';
 export * from './style';
 export * from './locale';
 export * from './breadcrumb';
+export * from './key';
