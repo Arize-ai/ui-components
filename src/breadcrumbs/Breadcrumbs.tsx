@@ -16,9 +16,6 @@ import { BreadcrumbItem } from './BreadcrumbItem';
 const MIN_VISIBLE_ITEMS = 1;
 const MAX_VISIBLE_ITEMS = 4;
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface BreadcrumbsProps {}
-
 const ulCSS = css`
   flex-wrap: nowrap;
   flex: 1 0;
