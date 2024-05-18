@@ -1,4 +1,3 @@
-import { FocusableRef } from '@react-types/shared';
 import React, { CSSProperties, ReactNode, RefObject, useRef } from 'react';
 import { SliderState, useSliderState } from '@react-stately/slider';
 import { useNumberFormatter } from '@react-aria/i18n';
@@ -7,6 +6,7 @@ import { css } from '@emotion/react';
 import { useProviderProps } from '../provider';
 import { BarSliderBase } from '../types/slider';
 import { classNames, useFocusableRef } from '../utils';
+import { FocusableRef } from '../types';
 import { labelCSS, labelContainerCSS, sliderCSS } from './styles';
 export interface SliderBaseChildArguments {
   inputRef: RefObject<HTMLInputElement>;

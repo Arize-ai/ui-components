@@ -3,7 +3,6 @@ import {
   layoutInfoToStyle,
   useVirtualizerItem,
 } from '@react-aria/virtualizer';
-import { Node } from '@react-types/shared';
 import React, { Fragment, ReactNode, useContext, useRef } from 'react';
 import { LayoutInfo } from '@react-stately/virtualizer';
 import { useListBoxSection } from '@react-aria/listbox';
@@ -11,6 +10,7 @@ import { useLocale } from '@react-aria/i18n';
 import { useSeparator } from '@react-aria/separator';
 import { css } from '@emotion/react';
 import theme from '../theme';
+import { Node } from '../types';
 import { ListBoxContext } from './ListBoxContext';
 
 interface ListBoxSectionProps<T> extends Omit<VirtualizerItemOptions, 'ref'> {

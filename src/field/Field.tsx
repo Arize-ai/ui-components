@@ -1,5 +1,4 @@
 import { css, keyframes } from '@emotion/react';
-import { LabelPosition } from '@react-types/shared';
 import { mergeProps } from '@react-aria/utils';
 import React, {
   RefObject,
@@ -7,7 +6,7 @@ import React, {
   ReactNode,
   ReactElement,
 } from 'react';
-import { Validation } from '../types';
+import { LabelPosition, Validation } from '../types';
 import { classNames } from '../utils';
 import { useFormProps } from '../form';
 import { FieldLabel, FieldLabelProps } from './FieldLabel';

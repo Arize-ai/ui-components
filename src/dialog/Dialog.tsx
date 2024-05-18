@@ -1,4 +1,3 @@
-import { DOMRef } from '@react-types/shared';
 import { FocusScope } from '@react-aria/focus';
 import { mergeProps } from '@react-aria/utils';
 import React, { useContext } from 'react';
@@ -9,6 +8,7 @@ import { Heading } from '../content';
 import { CloseOutline, Icon } from '../icon';
 import { classNames, useDOMRef } from '../utils';
 import { Button } from '../button';
+import { DOMRef } from '../types';
 import { DialogContext, DialogContextValue } from './context';
 
 const dialogCSS = css`

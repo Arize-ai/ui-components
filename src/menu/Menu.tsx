@@ -32,7 +32,7 @@ export interface AriaMenuProps<T>
     DOMProps,
     AriaLabelingProps {}
 
-export type MenuComponentProps<T> = AriaMenuProps<T>
+export type MenuComponentProps<T> = AriaMenuProps<T>;
 
 const menuULCSS = css`
   background-color: var(--ac-global-menu-background-color);

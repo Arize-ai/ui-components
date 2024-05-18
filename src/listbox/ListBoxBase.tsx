@@ -1,10 +1,3 @@
-import {
-  AriaLabelingProps,
-  DOMProps,
-  FocusStrategy,
-  Node,
-  StyleProps,
-} from '@react-types/shared';
 import { AriaListBoxOptions, useListBox } from '@react-aria/listbox';
 
 import { ListLayout } from '@react-stately/layout';
@@ -21,6 +14,13 @@ import React, {
 import { ReusableView } from '@react-stately/virtualizer';
 import { useCollator } from '@react-aria/i18n';
 import { Virtualizer, VirtualizerItem } from '@react-aria/virtualizer';
+import {
+  AriaLabelingProps,
+  DOMProps,
+  FocusStrategy,
+  StyleProps,
+  Node,
+} from '../types';
 import { ListBoxSection } from './ListBoxSection';
 import { ListBoxOption } from './ListBoxOption';
 import { ListBoxContext } from './ListBoxContext';

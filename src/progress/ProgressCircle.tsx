@@ -1,9 +1,13 @@
 import { clamp } from '@react-aria/utils';
-import { AriaLabelingProps, DOMRef } from '@react-types/shared';
 import React, { CSSProperties } from 'react';
 import { useProgressBar } from '@react-aria/progress';
 import { classNames, useDOMRef } from '../utils';
-import { DOMProps, ProgressBaseProps } from '../types';
+import {
+  AriaLabelingProps,
+  DOMProps,
+  DOMRef,
+  ProgressBaseProps,
+} from '../types';
 import { progressCircleCSS } from './styles';
 
 interface AriaProgressCircleProps extends DOMProps, AriaLabelingProps {}
