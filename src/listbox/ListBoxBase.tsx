@@ -19,6 +19,7 @@ import {
   DOMProps,
   FocusStrategy,
   StyleProps,
+  Node,
 } from '../types';
 import { ListBoxSection } from './ListBoxSection';
 import { ListBoxOption } from './ListBoxOption';
