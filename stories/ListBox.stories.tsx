@@ -1,8 +1,7 @@
 import React from 'react';
-import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
 import { ListBox, Item, ListBoxProps, Section, Provider } from '../src';
-
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 const meta: Meta = {
   title: 'ListBox',
   component: ListBox,
@@ -14,11 +13,13 @@ const meta: Meta = {
 export default meta;
 
 const Template: Story<ListBoxProps<string>> = args => (
-  <ListBox style={{ width: 200 }} aria-label="Alignment">
-    <Item>Left</Item>
-    <Item>Middle</Item>
-    <Item>Right</Item>
-  </ListBox>
+  <ThemeToggleWrap>
+    <ListBox style={{ width: 200 }} aria-label="Alignment" {...args}>
+      <Item>Left</Item>
+      <Item>Middle</Item>
+      <Item>Right</Item>
+    </ListBox>
+  </ThemeToggleWrap>
 );
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
@@ -40,7 +41,7 @@ function SelectableListBox() {
   let [animalId, setAnimalId] = React.useState<any>();
 
   return (
-    <>
+    <ThemeToggleWrap>
       <ListBox
         style={{ width: 200 }}
         aria-label="Animals"
@@ -51,7 +52,7 @@ function SelectableListBox() {
         {item => <Item>{item.name}</Item>}
       </ListBox>
       <p>Animal id: {animalId}</p>
-    </>
+    </ThemeToggleWrap>
   );
 }
 const ListOptions: Story<ListBoxProps<string>> = args => {
@@ -118,18 +119,21 @@ export const listBoxWithSections = ListBoxWithSections.bind({});
 
 const ListBoxMultiSelect: Story<ListBoxProps<string>> = args => {
   return (
-    <ListBox
-      style={{ width: 200 }}
-      aria-label="Pick your favorite"
-      selectionMode="multiple"
-    >
-      <Item key="Aardvark">Aardvark</Item>
-      <Item key="Kangaroo">Kangaroo</Item>
-      <Item key="Snake">Snake</Item>
-      <Item key="Danni">Danni</Item>
-      <Item key="Devon">Devon</Item>
-      <Item key="Ross">Ross</Item>
-    </ListBox>
+    <ThemeToggleWrap>
+      <ListBox
+        style={{ width: 200 }}
+        aria-label="Pick your favorite"
+        selectionMode="multiple"
+        {...args}
+      >
+        <Item key="Aardvark">Aardvark</Item>
+        <Item key="Kangaroo">Kangaroo</Item>
+        <Item key="Snake">Snake</Item>
+        <Item key="Danni">Danni</Item>
+        <Item key="Devon">Devon</Item>
+        <Item key="Ross">Ross</Item>
+      </ListBox>
+    </ThemeToggleWrap>
   );
 };
 
