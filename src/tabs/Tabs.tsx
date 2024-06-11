@@ -116,6 +116,10 @@ export type TabsProps = {
    * If specified, the index of the selected tab is controlled by the parent component rather than the internal state.
    */
   index?: number;
+  /**
+   * default index of the selected tab.
+   */
+  defaultIndex?: number;
   onChange?: (index: number) => void;
   /**
    * The orientation of the tabs. Defaults to horizontal
@@ -132,6 +136,7 @@ export function Tabs({
   children,
   className,
   index,
+  defaultIndex,
   onChange,
   orientation = 'horizontal',
   extra,
@@ -139,9 +144,12 @@ export function Tabs({
   // Filter out the nulls from the children so that tabs can be mounted conditionally
   children = Children.toArray(children).filter(child => child);
   const tabs = parseTabList(children);
-  
+
   // Initialize the selected tab to the first non-hidden tab if there is no controlled value provided
-  const defaultValue = tabs.findIndex(tab => !tab.hidden);
+  const defaultValue =
+    typeof defaultIndex === 'number'
+      ? defaultIndex
+      : tabs.findIndex(tab => !tab.hidden);
   const [selectedIndex, setSelectedIndex] = useControlledState(
     index,
     defaultValue,
