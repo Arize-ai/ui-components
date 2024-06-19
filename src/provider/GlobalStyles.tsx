@@ -69,6 +69,9 @@ const staticCSS = css`
     --ac-global-static-color-white-900: rgba(255, 255, 255, 0.9);
     --ac-global-static-color-white-700: rgba(255, 255, 255, 0.7);
     --ac-global-static-color-white-300: rgba(255, 255, 255, 0.3);
+    --ac-global-static-color-black-900: rgba(0, 0, 0, 0.9);
+    --ac-global-static-color-black-700: rgba(0, 0, 0, 0.7);
+    --ac-global-static-color-black-300: rgba(0, 0, 0, 0.3);
   }
 `;
 
@@ -132,6 +135,25 @@ const dimensionsCSS = css`
     --ac-global-dimension-static-grid-columns: 12;
     --ac-global-dimension-static-grid-fluid-width: 100%;
     --ac-global-dimension-static-grid-fixed-max-width: 1280px;
+
+    /* Font sizing */
+    --ac-global-dimension-font-size-25: 10px;
+    --ac-global-dimension-font-size-50: 11px;
+    --ac-global-dimension-font-size-75: 12px;
+    --ac-global-dimension-font-size-100: 14px;
+    --ac-global-dimension-font-size-150: 15px;
+    --ac-global-dimension-font-size-200: 16px;
+    --ac-global-dimension-font-size-300: 18px;
+    --ac-global-dimension-font-size-400: 20px;
+    --ac-global-dimension-font-size-500: 22px;
+    --ac-global-dimension-font-size-600: 25px;
+    --ac-global-dimension-font-size-700: 28px;
+    --ac-global-dimension-font-size-800: 32px;
+    --ac-global-dimension-font-size-900: 36px;
+    --ac-global-dimension-font-size-1000: 40px;
+    --ac-global-dimension-font-size-1100: 45px;
+    --ac-global-dimension-font-size-1200: 50px;
+    --ac-global-dimension-font-size-1300: 60px;
   }
 `;
 
