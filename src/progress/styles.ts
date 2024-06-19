@@ -122,3 +122,83 @@ export const progressCircleCSS = css`
     }
   }
 `;
+
+export const progressBarCSS = css`
+  --ac-barloader-large-border-radius: 3px;
+  --ac-barloader-track-color-default: var(--ac-global-color-grey-300);
+  &.ac-barloader {
+    --ac-barloader-large-track-fill-color: var(--ac-global-color-primary);
+    --ac-barloader-static-black-track-color: #00000040;
+    --ac-barloader-static-black-fill-color: var(
+      --ac-global-static-color-black-900
+    );
+
+    min-inline-size: var(--ac-global-dimension-static-size-600, 48px);
+    inline-size: var(--ac-global-dimension-size-2400);
+    vertical-align: top;
+    isolation: isolate;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+  }
+
+  &.ac-barloader--static-white {
+    --mod-barloader-label-and-value-color: var(
+      --ac-global-static-color-white-900
+    );
+    --mod-barloader-fill-color: var(--ac-global-color-white-900);
+  }
+  &.ac-barloader--static-black {
+    --mod-barloader-label-and-value-color: var(
+      --ac-global-static-color-black-900
+    );
+    --mod-barloader-fill-color: var(--ac-global-static-color-black-900);
+    --mod-barloader-track-color: var(--ac-barloader-static-black-track-color);
+  }
+
+  .ac-barloader-label,
+  .ac-barloader-percentage {
+    color: var(
+      --mod-barloader-label-and-value-color,
+      var(--ac-global-text-color-900)
+    );
+    font-size: var(--spectrum-global-dimension-font-size-75);
+    font-weight: var(--spectrum-global-font-weight-regular);
+    line-height: var(--spectrum-global-font-line-height-small);
+    text-align: start;
+    text-align: start;
+    margin-bottom: var(--ac-global-dimension-size-115);
+  }
+
+  .ac-barloader-label {
+    flex: 1;
+  }
+
+  .ac-barloader-percentage {
+    align-self: flex-start;
+    margin-inline-start: var(--ac-global-dimension-size-150);
+  }
+
+  .ac-barloader-track {
+    background-color: var(
+      --mod-barloader-track-color,
+      var(--ac-barloader-track-color-default)
+    );
+    min-inline-size: var(--ac-global-dimension-static-size-600);
+    height: var(--ac-global-dimension-size-75);
+    border-radius: var(--ac-barloader-large-border-radius);
+    z-index: 1;
+    inline-size: 100%;
+    overflow: hidden;
+  }
+
+  .ac-barloader-fill {
+    background: var(--mod-barloader-fill-color, var(--ac-global-color-primary));
+    height: var(--ac-global-dimension-size-75);
+
+    border: none;
+    transition: width 1s;
+  }
+`;
