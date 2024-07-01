@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.4.0](https://github.com/Arize-ai/ui-components/compare/v1.3.0...v1.4.0) (2024-07-01)
+
+
+### Features
+
+* add HardDriveFilled icon ([#215](https://github.com/Arize-ai/ui-components/issues/215)) ([14016e7](https://github.com/Arize-ai/ui-components/commit/14016e7276733b2d41b0c07f52fd860aa2b646c7))
+* experiment icon ([#222](https://github.com/Arize-ai/ui-components/issues/222)) ([58280cf](https://github.com/Arize-ai/ui-components/commit/58280cffd706d73352f0960392fa6747255b180d))
+* **icons:** Add folder filled icon ([#219](https://github.com/Arize-ai/ui-components/issues/219)) ([dc346ca](https://github.com/Arize-ai/ui-components/commit/dc346ca5e5820957337b8c56a6fbd7f3c93183b1))
+* **icons:** Compare icon ([#217](https://github.com/Arize-ai/ui-components/issues/217)) ([2bd514c](https://github.com/Arize-ai/ui-components/commit/2bd514c3640305ec880ec1c2f5e7ac6a55fadfd2))
+* new database icon ([#207](https://github.com/Arize-ai/ui-components/issues/207)) ([8d52e84](https://github.com/Arize-ai/ui-components/commit/8d52e8460d02eabe9ecdfc2fe140e77ac08fd5e3))
+* progress bar ([#220](https://github.com/Arize-ai/ui-components/issues/220)) ([8c87af4](https://github.com/Arize-ai/ui-components/commit/8c87af41c683651c866f3a6e3eec4515753f6d68))
+* **tabs:** initial selected tab ([#216](https://github.com/Arize-ai/ui-components/issues/216)) ([255f74c](https://github.com/Arize-ai/ui-components/commit/255f74cc47e52127da31a439d0710777ddd71c91))
+* trace icon ([#221](https://github.com/Arize-ai/ui-components/issues/221)) ([f1f2cd2](https://github.com/Arize-ai/ui-components/commit/f1f2cd2e11e621ba762a06395b99b2a8ff4b833b))
+
+
+### Bug Fixes
+
+* database icon ([#209](https://github.com/Arize-ai/ui-components/issues/209)) ([124facf](https://github.com/Arize-ai/ui-components/commit/124facf9bf2840c8f174ce97c98fef37296a6bd6))
+
 ## [1.3.0](https://github.com/Arize-ai/ui-components/compare/v1.2.0...v1.3.0) (2024-05-07)
 
 
