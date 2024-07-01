@@ -1048,6 +1048,47 @@ export const ExpandOutline = () => (
   </svg>
 );
 
+export const ExperimentOutline = () => (
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 20 20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M11.7325 8.3969L12.9778 9.61741L5.58892 16.9977C4.90368 17.6822 3.79253 17.6823 3.10751 16.9981C2.42238 16.3137 2.42238 15.2042 3.10751 14.5198L10.4967 7.13917L11.7245 8.38888L11.7244 8.38895L11.7325 8.3969Z"
+      stroke="currentColor"
+      strokeWidth="1.2"
+      fill="none"
+    />
+    <circle
+      cx="12"
+      cy="5"
+      r="0.75"
+      stroke="currentColor"
+      strokeWidth="0.5"
+      fill="none"
+    />
+    <circle
+      cx="15"
+      cy="4"
+      r="0.75"
+      stroke="currentColor"
+      strokeWidth="0.5"
+      fill="none"
+    />
+    <circle
+      cx="14.5"
+      cy="7.5"
+      r="1.2"
+      stroke="currentColor"
+      strokeWidth="0.6"
+      fill="none"
+    />
+  </svg>
+);
+
 export const Explainability = () => (
   <svg
     width="24"
