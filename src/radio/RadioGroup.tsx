@@ -25,6 +25,10 @@ export interface RadioGroupProps {
    */
   label?: string;
   /**
+   * The controlled value of the radio group
+   */
+  value?: string | null;
+  /**
    * Matches the `value` option of one of the Radio Children components
    */
   defaultValue: string;

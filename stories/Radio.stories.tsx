@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
 import { Radio, RadioGroup, RadioGroupProps } from '../src/radio';
 import { Card, Text, ActionButton } from '../src';
@@ -12,24 +12,25 @@ const meta: Meta = {
     },
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/Gs8BthCViFvipFh0gknwgg/Drift-Monitors?node-id=90%3A44',
+      url:
+        'https://www.figma.com/file/Gs8BthCViFvipFh0gknwgg/Drift-Monitors?node-id=90%3A44',
     },
   },
 };
 
 export default meta;
 const DefaultChildren = [
-  <Radio value="dogs" label="Dogs" />,
-  <Radio value="horses" label="Horses" />,
-  <Radio value="cats" label="Cats" isDisabled />,
+  <Radio key="dogs" value="dogs" label="Dogs" />,
+  <Radio key="horses" value="horses" label="Horses" />,
+  <Radio key="cats" value="cats" label="Cats" isDisabled />,
 ];
-const Template: Story<RadioGroupProps> = (args) => {
+const Template: Story<RadioGroupProps> = args => {
   return (
     <ThemeToggleWrap>
       <Card title="Radio Info" style={{ width: 300 }}>
         <RadioGroup
           {...args}
-          onChange={(value) => alert('clicked radio option ' + value)}
+          onChange={value => alert('clicked radio option ' + value)}
         >
           {args.children || DefaultChildren}
         </RadioGroup>
@@ -38,11 +39,11 @@ const Template: Story<RadioGroupProps> = (args) => {
   );
 };
 
-const SelectorExample: Story<RadioGroupProps> = (args) => (
+const SelectorExample: Story<RadioGroupProps> = args => (
   <Card title="Radio Info" style={{ width: 500 }}>
     <RadioGroup
       {...args}
-      onChange={(value) => alert('clicked radio option ' + value)}
+      onChange={value => alert('clicked radio option ' + value)}
     >
       <Radio value="dogs" label="Dogs">
         <Text>Dogs</Text>
@@ -86,18 +87,48 @@ const SomeChildren = () => (
   </>
 );
 
-export const Gallery: Story<RadioGroupProps> = (args) => {
+export const Gallery: Story<RadioGroupProps> = args => {
   return (
-    <Card title="Radio Info" style={{ width: 300 }}>
-      <RadioGroup {...args} variant="inline-button">
-        {args.children || DefaultChildren}
-      </RadioGroup>
-      <br />
-      <br />
-      <RadioGroup {...args} variant="inline-button" size="compact">
-        {args.children || DefaultChildren}
-      </RadioGroup>
-    </Card>
+    <ThemeToggleWrap>
+      <Card title="Radio Info" style={{ width: 300 }}>
+        <RadioGroup {...args} variant="inline-button">
+          {args.children || DefaultChildren}
+        </RadioGroup>
+        <br />
+        <br />
+        <RadioGroup {...args} variant="inline-button" size="compact">
+          {args.children || DefaultChildren}
+        </RadioGroup>
+      </Card>
+    </ThemeToggleWrap>
+  );
+};
+
+/**
+ * Controlled Radio Group
+ * Use this to control the selected value of the radio group via props
+ */
+export const Controlled: Story<RadioGroupProps> = args => {
+  const [value, setValue] = useState<string | null>('cats');
+  return (
+    <ThemeToggleWrap>
+      <Text>Controlled Radio Group</Text>
+      <Card title="Radio Info">
+        <RadioGroup
+          {...args}
+          value={value}
+          onChange={setValue}
+          variant="inline-button"
+        >
+          {args.children || DefaultChildren}
+        </RadioGroup>
+        <br />
+        <br />
+        <RadioGroup {...args} variant="inline-button" size="compact">
+          {args.children || DefaultChildren}
+        </RadioGroup>
+      </Card>
+    </ThemeToggleWrap>
   );
 };
 
