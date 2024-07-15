@@ -31,7 +31,7 @@ export interface RadioGroupProps {
   /**
    * Matches the `value` option of one of the Radio Children components
    */
-  defaultValue: string;
+  defaultValue?: string | null;
   /**
    * On change handler that is triggered by the selectedValue state change.
    * `value` is the new selected value.
