@@ -2,10 +2,17 @@
   "version": "1.6.1-0",
   "license": "MIT",
   "main": "dist/index.js",
-  "exports": {
-    "./utils": "./dist/utils/"
-  },
   "typings": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./utils": {
+      "types": "./dist/utils/index.d.ts",
+      "default": "./dist/utils/index.js"
+    }
+  },
   "files": [
     "dist",
     "src"
