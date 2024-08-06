@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.0-0](https://github.com/Arize-ai/ui-components/compare/v1.6.2-0...v1.7.0-0) (2024-08-06)
+
+
+### Features
+
+* export utils ([#228](https://github.com/Arize-ai/ui-components/issues/228)) ([3abbdd8](https://github.com/Arize-ai/ui-components/commit/3abbdd8d7ec682a1bb9b949bd1a46c0ec7bce8bc))
+* timer and row expand icons ([#229](https://github.com/Arize-ai/ui-components/issues/229)) ([f004dba](https://github.com/Arize-ai/ui-components/commit/f004dbafdd7a3042c73b05e7b72c11463425253c))
+
 ## [1.3.0](https://github.com/Arize-ai/ui-components/compare/v1.2.0...v1.3.0) (2024-05-07)
 
 
