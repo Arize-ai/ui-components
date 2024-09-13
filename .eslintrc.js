@@ -25,7 +25,6 @@ module.exports = {
   rules: {
     'import/order': 'error',
     'no-unused-vars': 'off',
-    'unused-imports/no-unused-imports': 'error',
     /**
      * ignore if the variable starts with an underscore
      */
