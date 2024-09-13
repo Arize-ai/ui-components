@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { withDesign } from 'storybook-addon-designs';
+
+import { css } from '@emotion/react';
 import {
   ActionButton,
   TooltipTrigger,
@@ -12,7 +13,6 @@ import {
   Card,
 } from '../src';
 
-import css from '@emotion/css';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const placements: Placement[] = [
@@ -27,7 +27,7 @@ const placements: Placement[] = [
 const meta: Meta = {
   title: 'TooltipTrigger',
   component: TooltipTrigger,
-  decorators: [withDesign],
+
   argTypes: {
     placement: {
       control: {
@@ -38,11 +38,6 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=503%3A0',
-    },
   },
 };
 

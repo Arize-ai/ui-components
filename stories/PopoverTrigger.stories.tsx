@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
-import { withDesign } from 'storybook-addon-designs';
+
+import { css } from '@emotion/react';
 import {
-  ActionButton,
   Card,
   PopoverTrigger,
   Provider,
@@ -13,7 +13,6 @@ import {
   Item,
   View,
 } from '../src';
-import { css } from '@emotion/react';
 import { Icon, PlusCircleOutline } from '../src/icon';
 
 const placements: Placement[] = [
@@ -44,7 +43,7 @@ const placements: Placement[] = [
 const meta: Meta = {
   title: 'PopoverTrigger',
   component: PopoverTrigger,
-  decorators: [withDesign],
+
   argTypes: {
     placement: {
       control: {
@@ -55,11 +54,6 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=32%3A52',
-    },
   },
 };
 

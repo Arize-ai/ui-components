@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
-import { withDesign } from 'storybook-addon-designs';
+
+import { css } from '@emotion/react';
 import {
-  Provider,
   Text,
   Button,
   DialogContainer,
@@ -18,13 +18,12 @@ import {
   ArrowIosUpwardOutline,
   Icon,
 } from '../src/icon';
-import { css } from '@emotion/react';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const meta: Meta = {
   title: 'SlideOver',
   component: Dialog,
-  decorators: [withDesign],
+
   argTypes: {
     title: {
       control: 'text',
@@ -32,11 +31,6 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=32%3A52',
-    },
   },
 };
 

@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
-import { Meta, Story } from '@storybook/react';
-import React, { Children, PropsWithChildren, useState } from 'react';
+import { Meta } from '@storybook/react';
+import React, { PropsWithChildren } from 'react';
 import {
   Alert,
   Card,
@@ -9,7 +9,6 @@ import {
   Text,
   TextField,
   Dropdown,
-  Provider,
   Field,
   RadioGroup,
   Radio,
@@ -20,8 +19,6 @@ import {
   Flex,
   Switch,
   Counter,
-  ActionTooltip,
-  Content,
   ListItem,
   List,
   TabbedCard,
@@ -31,7 +28,7 @@ import {
   AccordionItem,
   CompactSearchField,
 } from '../src';
-import { Icon, Icons, SearchOutline, Settings } from '../src/icon';
+import { Icon, Icons, SearchOutline } from '../src/icon';
 // @ts-ignore
 import chartFile from './images/chart.png';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
@@ -42,11 +39,6 @@ const meta: Meta = {
   title: 'Gallery',
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=1398%3A4061',
-    },
   },
 };
 

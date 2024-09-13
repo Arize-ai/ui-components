@@ -1,5 +1,7 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
+
+import { css } from '@emotion/react';
 import {
   Card,
   Provider,
@@ -18,8 +20,6 @@ import {
   ArrowIosForwardOutline,
   ArrowIosBackOutline,
 } from '../src/icon';
-import { withDesign } from 'storybook-addon-designs';
-import { css } from '@emotion/react';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const plusIcon = <Icon svg={<PlusCircleOutline />} />;
@@ -30,7 +30,7 @@ const leftIcon = <Icon svg={<ArrowIosBackOutline />} />;
 const meta: Meta = {
   title: 'View',
   component: View,
-  decorators: [withDesign],
+
   argTypes: {
     children: {
       control: {
@@ -46,10 +46,6 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url: '',
-    },
   },
 };
 

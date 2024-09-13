@@ -1,14 +1,13 @@
 import React from 'react';
-import { css } from '@emotion/react';
 import { Meta } from '@storybook/react';
-import { ButtonGroup, Button, ActionMenu, Provider, Item, Flex } from '../src';
+
+import { ButtonGroup, Button, ActionMenu, Item, Flex } from '../src';
 import {
   Icon,
   Icons,
   PlusCircleOutline,
   MinusCircleOutline,
 } from '../src/icon';
-import { withDesign } from 'storybook-addon-designs';
 import { ThemeSplitView } from './components/ThemeSplitView';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
@@ -18,7 +17,7 @@ const minusIcon = <Icon svg={<MinusCircleOutline />} />;
 const meta: Meta = {
   title: 'ButtonGroup',
   component: ButtonGroup,
-  decorators: [withDesign],
+
   argTypes: {
     children: {
       control: {
@@ -28,11 +27,6 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=0%3A1',
-    },
   },
 };
 

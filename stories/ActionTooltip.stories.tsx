@@ -1,11 +1,10 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
-import { withDesign } from 'storybook-addon-designs';
+
 import {
   ActionButton,
   TooltipTrigger,
-  Provider,
   TooltipTriggerProps,
   ActionTooltip,
   Placement,
@@ -26,7 +25,6 @@ const placements: Placement[] = [
 const meta: Meta = {
   title: 'ActionTooltip',
   component: TooltipTrigger,
-  decorators: [withDesign],
   argTypes: {
     placement: {
       control: {
@@ -37,11 +35,6 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=1030%3A1',
-    },
   },
 };
 

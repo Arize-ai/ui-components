@@ -1,10 +1,9 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
-import { Heading, Provider, Switch, SwitchProps } from '../src';
+
+import { Heading, Switch, SwitchProps } from '../src';
 import { Icon, PlusCircleOutline } from '../src/icon';
-import { withDesign } from 'storybook-addon-designs';
-import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 import { ThemeSplitView } from './components/ThemeSplitView';
 
 const plusIcon = <Icon svg={<PlusCircleOutline />} />;
@@ -12,7 +11,7 @@ const plusIcon = <Icon svg={<PlusCircleOutline />} />;
 const meta: Meta = {
   title: 'Switch',
   component: Switch,
-  decorators: [withDesign],
+
   argTypes: {
     children: {
       control: {
@@ -22,11 +21,6 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=232%3A694&t=ZSWiYNP9rFSVJOzv-1',
-    },
   },
 };
 

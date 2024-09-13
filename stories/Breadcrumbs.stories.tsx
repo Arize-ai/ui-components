@@ -1,15 +1,13 @@
 import React from 'react';
-import { css } from '@emotion/react';
-import { Meta, Story } from '@storybook/react';
-import { ThemeToggleWrap } from './components/ThemeToggleWrap';
+import { Meta } from '@storybook/react';
 
-import { Breadcrumbs, Item, Provider } from '../src';
-import { withDesign } from 'storybook-addon-designs';
+import { Breadcrumbs, Item } from '../src';
+import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const meta: Meta = {
   title: 'Breadcrumbs (Beta)',
   component: Breadcrumbs,
-  decorators: [withDesign],
+
   argTypes: {
     children: {
       control: {
@@ -19,10 +17,6 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url: '',
-    },
   },
 };
 

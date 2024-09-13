@@ -1,22 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
-import { withDesign } from 'storybook-addon-designs';
-import {
-  Provider,
-  DropdownProps,
-  ActionMenu,
-  Item,
-  Heading,
-  Section,
-} from '../src';
+
+import { DropdownProps, ActionMenu, Item, Heading, Section } from '../src';
 import { AlertTriangleFilled, Icon, PlusCircleOutline } from '../src/icon';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const meta: Meta = {
   title: 'ActionMenu',
   component: ActionMenu,
-  decorators: [withDesign],
+
   argTypes: {
     children: {
       control: {
