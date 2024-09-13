@@ -1,12 +1,12 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
-import { withDesign } from 'storybook-addon-designs';
+
 import { Card, CardProps, TabbedCard } from '../src/card';
 import { Tabs } from '../src/tabs';
 import { Button } from '../src/button';
-import InfoTip from './components/InfoTip';
 import { Counter, Flex, Heading, Provider, View } from '../src';
+import InfoTip from './components/InfoTip';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const { TabPane } = Tabs;
@@ -14,7 +14,7 @@ const { TabPane } = Tabs;
 const meta: Meta = {
   title: 'Card',
   component: Card,
-  decorators: [withDesign],
+
   argTypes: {
     children: {
       control: {
@@ -24,11 +24,6 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=3%3A371',
-    },
   },
 };
 

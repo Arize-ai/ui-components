@@ -1,9 +1,9 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
+
 import { ProgressCircle, ProgressCircleProps } from '../src';
 import { Icon, PlusCircleOutline } from '../src/icon';
-import { withDesign } from 'storybook-addon-designs';
 import { ThemeSplitView } from './components/ThemeSplitView';
 
 const plusIcon = <Icon svg={<PlusCircleOutline />} />;
@@ -11,7 +11,7 @@ const plusIcon = <Icon svg={<PlusCircleOutline />} />;
 const meta: Meta = {
   title: 'ProgressCircle',
   component: ProgressCircle,
-  decorators: [withDesign],
+
   argTypes: {
     children: {
       control: {
@@ -21,10 +21,6 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url: '',
-    },
   },
 };
 

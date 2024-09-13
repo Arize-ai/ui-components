@@ -1,20 +1,14 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { withDesign } from 'storybook-addon-designs';
+
 import { ContextualHelp, Form, TextArea, TextAreaProps } from '../src';
-import InfoTip from './components/InfoTip';
 
 const meta: Meta = {
   title: 'TextArea',
   component: TextArea,
-  decorators: [withDesign],
+
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=76%3A505',
-    },
   },
 };
 

@@ -1,11 +1,9 @@
 import React from 'react';
-import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
 import { Alert, AlertProps } from '../src/alert';
 import { Button } from '../src/button';
-import { ThemeToggleWrap } from './components/ThemeToggleWrap';
-import { ThemeSplitView } from './components/ThemeSplitView';
 import { Flex } from '../src';
+import { ThemeSplitView } from './components/ThemeSplitView';
 const meta: Meta = {
   title: 'Alert',
   component: Alert,
@@ -18,11 +16,6 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=309%3A0',
-    },
   },
 };
 

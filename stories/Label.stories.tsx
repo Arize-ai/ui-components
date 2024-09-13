@@ -1,7 +1,6 @@
 import React from 'react';
-import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
-import { withDesign } from 'storybook-addon-designs';
+
 import { LabelGroup, Label, LabelProps } from '../src/label';
 import {
   Icon,
@@ -17,7 +16,7 @@ import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 const meta: Meta = {
   title: 'Label',
   component: Label,
-  decorators: [withDesign],
+
   argTypes: {
     children: {
       control: {
@@ -28,25 +27,10 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=76%3A505',
-    },
   },
 };
 
 export default meta;
-
-const baseColors = [
-  'white',
-  'blue',
-  'orange',
-  'green',
-  'red',
-  'purple',
-  'gray',
-] as const;
 
 /**
  * A gallery of all the variants

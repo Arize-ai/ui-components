@@ -1,21 +1,16 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
+
 import { Card, Text, List, ListItem, ListProps } from '../src';
-import { withDesign } from 'storybook-addon-designs';
 import { ThemeSplitView } from './components/ThemeSplitView';
 
 const meta: Meta = {
   title: 'List',
   component: List,
-  decorators: [withDesign],
+
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=357%3A1489',
-    },
   },
 };
 

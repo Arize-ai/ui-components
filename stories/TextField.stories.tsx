@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
-import { withDesign } from 'storybook-addon-designs';
+
+import { css } from '@emotion/react';
 import {
   Form,
   TextField,
@@ -9,23 +10,16 @@ import {
   Heading,
   Text,
   Content,
-  theme,
   Provider,
 } from '../src';
-import { css } from '@emotion/react';
 import { ThemeSplitView } from './components/ThemeSplitView';
 
 const meta: Meta = {
   title: 'TextField',
   component: TextField,
-  decorators: [withDesign],
+
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=76%3A505',
-    },
   },
 };
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
+
 import { ButtonToolbar } from '../src/button';
 import { Button, ButtonProps } from '../src/button';
 import { CheckmarkCircleOutline, Icon, PlusCircleOutline } from '../src/icon';
-import { withDesign } from 'storybook-addon-designs';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 import { ThemeSplitView } from './components/ThemeSplitView';
 
@@ -14,7 +14,7 @@ const checkmarkIcon = <Icon svg={<CheckmarkCircleOutline />} />;
 const meta: Meta = {
   title: 'Button',
   component: Button,
-  decorators: [withDesign],
+
   argTypes: {
     children: {
       control: {
@@ -24,11 +24,6 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=0%3A1',
-    },
   },
 };
 
