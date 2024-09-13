@@ -21,13 +21,7 @@ module.exports = {
     sourceType: 'module',
     impliedStrict: true,
   },
-  plugins: [
-    '@typescript-eslint',
-    'react',
-    'import',
-    // Not strictly needed but fixes un-used imports via --fix
-    'unused-imports',
-  ],
+  plugins: ['@typescript-eslint', 'react', 'import'],
   rules: {
     'import/order': 'error',
     'no-unused-vars': 'off',
