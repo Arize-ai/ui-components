@@ -18,3 +18,4 @@ export * from './style';
 export * from './locale';
 export * from './breadcrumb';
 export * from './key';
+export * from './sizing';

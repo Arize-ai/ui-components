@@ -39,7 +39,7 @@ const bodyCSS = css`
 `;
 
 export interface CardBaseProps {
-  title?: string;
+  title?: ReactNode;
   subTitle?: string;
   variant?: CardVariant;
   children: ReactNode;

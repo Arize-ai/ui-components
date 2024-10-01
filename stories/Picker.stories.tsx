@@ -9,6 +9,7 @@ import {
   Button,
   ContextualHelp,
   Section,
+  Flex,
 } from '../src';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
@@ -69,6 +70,47 @@ const Controlled: Story<PickerProps<string>> = args => {
       <Button variant="default" onClick={() => setFrequency(undefined)}>
         Reset
       </Button>
+    </ThemeToggleWrap>
+  );
+};
+
+export const Sizes: Story<PickerProps<string>> = args => {
+  const [frequency, setFrequency] = React.useState<string | undefined>(
+    'rarely'
+  );
+  return (
+    <ThemeToggleWrap>
+      <Flex direction="column" gap="size-200">
+        <Flex direction="row" gap="size-100">
+          <Picker
+            key="default"
+            {...args}
+            selectedKey={frequency}
+            onSelectionChange={selected => setFrequency(selected as string)}
+          >
+            <Item key="rarely">Rarely</Item>
+            <Item key="sometimes">Sometimes</Item>
+            <Item key="always">Always</Item>
+          </Picker>
+          <Button variant="default">Submit</Button>
+        </Flex>
+        <Flex direction="row" gap="size-100" alignItems="center">
+          <Picker
+            key="compact"
+            {...args}
+            size="compact"
+            selectedKey={frequency}
+            onSelectionChange={selected => setFrequency(selected as string)}
+          >
+            <Item key="rarely">Rarely</Item>
+            <Item key="sometimes">Sometimes</Item>
+            <Item key="always">Always</Item>
+          </Picker>
+          <Button variant="default" size="compact">
+            Submit
+          </Button>
+        </Flex>
+      </Flex>
     </ThemeToggleWrap>
   );
 };
