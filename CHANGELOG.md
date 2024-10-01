@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.9.0](https://github.com/Arize-ai/ui-components/compare/v1.8.2...v1.9.0) (2024-10-01)
+
+
+### Features
+
+* add compact picker ([#238](https://github.com/Arize-ai/ui-components/issues/238)) ([eecfbd8](https://github.com/Arize-ai/ui-components/commit/eecfbd814d0e13c777ce7837bdf08a3a393fb631))
+
+
+### Bug Fixes
+
+* braces ([#235](https://github.com/Arize-ai/ui-components/issues/235)) ([1f5b4d4](https://github.com/Arize-ai/ui-components/commit/1f5b4d44dc830c7d8cfdfadf47c88fdfaa096433))
+
 ## [1.3.0](https://github.com/Arize-ai/ui-components/compare/v1.2.0...v1.3.0) (2024-05-07)
 
 
