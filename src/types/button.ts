@@ -1,5 +1,5 @@
 import { ReactNode, SyntheticEvent } from 'react';
-import { AriaLabelingProps, FocusableDOMProps } from '.';
+import { AriaLabelingProps, FocusableDOMProps, SizingProps } from '.';
 
 interface AriaBaseButtonProps extends FocusableDOMProps, AriaLabelingProps {
   /**
@@ -14,7 +14,7 @@ export interface BaseButtonProps extends AriaBaseButtonProps {
   children?: ReactNode;
 }
 
-export interface ButtonProps extends BaseButtonProps {
+export interface ButtonProps extends BaseButtonProps, SizingProps {
   children?: ReactNode | string;
   variant: 'primary' | 'default' | 'danger' | 'quiet' | 'success';
   disabled?: boolean;
@@ -26,9 +26,4 @@ export interface ButtonProps extends BaseButtonProps {
    * The title of the button. Required if only showing an icon
    */
   title?: string;
-  /**
-   * The size of the button
-   * @default 'normal'
-   */
-  size?: 'normal' | 'compact';
 }

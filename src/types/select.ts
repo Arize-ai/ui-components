@@ -1,4 +1,4 @@
-import { Validation, AriaValidationProps } from '../types';
+import { Validation, AriaValidationProps, SizingProps } from '../types';
 import { LabelableProps, Alignment, AddonableProps } from './labelable';
 import { CollectionBase } from './collection';
 import { HelpTextProps, InputBase, TextInputBase } from './input';
@@ -49,7 +49,8 @@ export interface PickerProps<T>
     AddonableProps,
     StyleProps,
     Validation,
-    HelpTextProps {
+    HelpTextProps,
+    SizingProps {
   /**
    * Whether the picker should be displayed with a quiet style.
    * @default false

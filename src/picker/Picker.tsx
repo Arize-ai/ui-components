@@ -46,6 +46,7 @@ function Picker<T extends object>(
     addonBefore,
     menuWidth,
     validationState,
+    size = 'default',
   } = props;
 
   const state = useSelectState(props);
@@ -223,6 +224,7 @@ function Picker<T extends object>(
           isActive={state.isOpen}
           isDisabled={isDisabled}
           autoFocus={autoFocus}
+          size={size}
           className={classNames('ac-dropdown-trigger', {
             'is-hovered': isHovered,
           })}
