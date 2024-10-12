@@ -11,7 +11,8 @@ export interface AccordionProps {
 
 const accordionItemCSS = css`
   cursor: pointer;
-  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  height: 40px;
+  padding: 0 var(--accordion-padding-side);
   display: block;
   width: 100%;
   display: flex;
@@ -48,11 +49,15 @@ export function Accordion({ children }: AccordionProps) {
       role="region"
       css={css`
         --accordion-animation-duration: ${theme.animation.global.duration}ms;
-
         &.ac-accordion--default {
           --accordion-padding-top: var(--ac-global-dimension-static-size-100);
           --accordion-padding-side: var(--ac-global-dimension-static-size-200);
           --accordion-font-size: ${theme.typography.sizes.medium.fontSize}px;
+        }
+        .ac-accordion-item:not(:last-of-type) {
+          .ac-accordion-itemContent {
+            border-bottom: 1px solid var(--ac-global-border-color-dark);
+          }
         }
       `}
     >
@@ -77,6 +82,10 @@ export interface AccordionItemProps {
    * Callback function for when the collapsed state changes
    */
   onChange?: (isOpen: boolean) => void;
+  /**
+   * An extra element to show on the right hand side
+   */
+  extra?: ReactNode;
 }
 
 export function AccordionItem(props: AccordionItemProps) {
@@ -87,6 +96,7 @@ export function AccordionItem(props: AccordionItemProps) {
     defaultIsOpen = true,
     onChange,
     children,
+    extra,
   } = props;
   const [isOpen, setIsOpen] = useState(defaultIsOpen);
   const contentId = `${id}-content`,
@@ -137,15 +147,25 @@ export function AccordionItem(props: AccordionItemProps) {
           aria-expanded={isOpen}
         >
           {titleEl}
-          <Icon
-            svg={<ArrowIosDownwardOutline />}
-            className="ac-accordion-itemIndicator"
+          <div
             css={css`
-              transition: transform ease var(--accordion-animation-duration);
-              transform: rotate(0deg);
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: var(--ac-global-dimension-static-size-100);
             `}
-            aria-hidden={true}
-          />
+          >
+            {extra}
+            <Icon
+              svg={<ArrowIosDownwardOutline />}
+              className="ac-accordion-itemIndicator"
+              css={css`
+                transition: transform ease var(--accordion-animation-duration);
+                transform: rotate(0deg);
+              `}
+              aria-hidden={true}
+            />
+          </div>
         </button>
       </Heading>
       <div
@@ -153,7 +173,6 @@ export function AccordionItem(props: AccordionItemProps) {
         id={contentId}
         role="region"
         css={css`
-          border-bottom: 1px solid var(--ac-global-border-color-dark);
           display: ${isOpen ? 'block' : 'none'};
         `}
         aria-labelledby={headerId}
