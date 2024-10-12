@@ -25,7 +25,24569 @@ const accordionItemCSS = css`
   text-align: start;
   color: var(--ac-global-text-color-900);
   border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark); 
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark); 
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark); 
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark); 
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark); 
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark); 
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark); 
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark); 
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark); 
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark); 
+  cursor: pointer;
+  padding: var(--accordion-padding-top) var(--accordion-padding-side);
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  text-align: start;
+  color: var(--ac-global-text-color-900);
+  border-bottom: 1px solid var(--ac-global-border-color-dark);
   /* remove outline - TODO might need to give a visual cue that this area is in focus */
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
+  outline: none;
+  background-color: var(--ac-global-background-color-light);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--ac-global-background-color-light-hover);
+  }
+  .ac-accordion-item__title {
+    font-size: var(--accordion-font-size);
+  }
   outline: none;
   background-color: var(--ac-global-background-color-light);
   transition: background-color 0.2s ease-in-out;
@@ -48,11 +24610,16 @@ export function Accordion({ children }: AccordionProps) {
       role="region"
       css={css`
         --accordion-animation-duration: ${theme.animation.global.duration}ms;
-
         &.ac-accordion--default {
           --accordion-padding-top: var(--ac-global-dimension-static-size-100);
           --accordion-padding-side: var(--ac-global-dimension-static-size-200);
           --accordion-font-size: ${theme.typography.sizes.medium.fontSize}px;
+        }
+        .ac-accordion-item:not(:last-of-type) {
+          .ac-accordion-itemContent {
+            border-bottom: 1px solid var(--ac-global-border-color-dark);
+          }
+        
         }
       `}
     >
@@ -153,7 +24720,6 @@ export function AccordionItem(props: AccordionItemProps) {
         id={contentId}
         role="region"
         css={css`
-          border-bottom: 1px solid var(--ac-global-border-color-dark);
           display: ${isOpen ? 'block' : 'none'};
         `}
         aria-labelledby={headerId}
