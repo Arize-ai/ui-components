@@ -80,6 +80,7 @@ export function useStyleBorderColor(styleProps: HTMLAttributes<HTMLElement>) {
       : `var(--ac-global-border-color-default)`;
   }, [styleProps.style]);
 }
+
 export function Card({
   title,
   subTitle,
