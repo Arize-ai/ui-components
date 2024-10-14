@@ -1,4 +1,4 @@
-import React, { useState, ReactNode } from 'react';
+import React, { useState, ReactNode, PropsWithChildren } from 'react';
 import { css } from '@emotion/react';
 import { Heading } from '../content';
 import { Icon, ArrowIosDownwardOutline } from '../icon';
@@ -27,6 +27,7 @@ const accordionItemCSS = css`
   color: var(--ac-global-text-color-900);
   border-bottom: 1px solid var(--ac-global-border-color-dark);
   transition: background-color ease-in-out 0.2s;
+  box-sizing: border-box;
   &:hover {
     background-color: var(--ac-global-background-color-light);
   }
@@ -102,6 +103,8 @@ export function AccordionItem(props: AccordionItemProps) {
       css={css`
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
         .ac-accordion-item__title {
           margin-right: var(--ac-global-dimension-static-size-50);
         }
@@ -128,40 +131,40 @@ export function AccordionItem(props: AccordionItemProps) {
         }
       `}
     >
-      <Heading level={3}>
-        <button
-          id={headerId}
-          css={accordionItemCSS}
-          onClick={() => {
-            const newIsOpen = !isOpen;
-            setIsOpen(newIsOpen);
-            onChange && onChange(newIsOpen);
-          }}
-          aria-controls={contentId}
-          aria-expanded={isOpen}
+      <div
+        role="button"
+        id={headerId}
+        css={accordionItemCSS}
+        onClick={() => {
+          const newIsOpen = !isOpen;
+          setIsOpen(newIsOpen);
+          onChange && onChange(newIsOpen);
+        }}
+        aria-controls={contentId}
+        aria-expanded={isOpen}
+      >
+        <Heading level={3}>{titleEl}</Heading>
+        <div
+          css={css`
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: var(--ac-global-dimension-static-size-100);
+          `}
         >
-          {titleEl}
-          <div
+          {extra && <StopEventPropagation>{extra}</StopEventPropagation>}
+          <Icon
+            svg={<ArrowIosDownwardOutline />}
+            className="ac-accordion-itemIndicator"
             css={css`
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              gap: var(--ac-global-dimension-static-size-100);
+              transition: transform ease var(--accordion-animation-duration);
+              transform: rotate(0deg);
             `}
-          >
-            {extra}
-            <Icon
-              svg={<ArrowIosDownwardOutline />}
-              className="ac-accordion-itemIndicator"
-              css={css`
-                transition: transform ease var(--accordion-animation-duration);
-                transform: rotate(0deg);
-              `}
-              aria-hidden={true}
-            />
-          </div>
-        </button>
-      </Heading>
+            aria-hidden={true}
+          />
+        </div>
+      </div>
+
       <div
         className="ac-accordion-itemContent"
         id={contentId}
@@ -174,6 +177,21 @@ export function AccordionItem(props: AccordionItemProps) {
       >
         {children}
       </div>
+    </div>
+  );
+}
+
+/**
+ * A wrapper component that stops the event from propagating up the DOM tree
+ */
+function StopEventPropagation(props: PropsWithChildren) {
+  return (
+    <div
+      onClick={e => {
+        e.stopPropagation();
+      }}
+    >
+      {props.children}
     </div>
   );
 }

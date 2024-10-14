@@ -51,6 +51,11 @@ const Template: Story<AccordionProps> = args => {
         <AccordionItem
           title="2 Predictions"
           titleExtra={<InfoTip>Description of predictions</InfoTip>}
+          extra={
+            <Button variant="default" size="compact">
+              Add
+            </Button>
+          }
           id="predictions"
         >
           <AccordionContents />
