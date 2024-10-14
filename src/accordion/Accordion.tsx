@@ -111,7 +111,7 @@ export function AccordionItem(props: AccordionItemProps) {
       `}
     >
       <span className="ac-accordion-item__title">{title}</span>
-      {titleExtra && <>{titleExtra}</>}
+      {titleExtra}
     </div>
   ) : (
     <span className="ac-accordion-item__title">{title}</span>
