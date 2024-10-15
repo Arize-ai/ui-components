@@ -10,6 +10,7 @@ import {
   Text,
   Button,
   View,
+  Flex,
 } from '../src';
 import InfoTip from './components/InfoTip';
 import { ThemeSplitView } from './components/ThemeSplitView';
@@ -40,38 +41,72 @@ export default meta;
 
 const Template: Story<AccordionProps> = args => {
   const content = (
-    <Card
-      title="Model Health"
-      subTitle={'An overview of the the health of your model'}
-      bodyStyle={{ padding: 0, overflow: 'hidden' }}
-      style={{ width: 700 }}
-      collapsible
-    >
-      <Accordion {...args}>
-        <AccordionItem
-          title="2 Predictions"
-          titleExtra={<InfoTip>Description of predictions</InfoTip>}
-          extra={
-            <Button variant="default" size="compact">
-              Add
-            </Button>
-          }
-          id="predictions"
-        >
-          <AccordionContents />
-        </AccordionItem>
-        <AccordionItem
-          title="Features"
-          titleExtra={<Counter variant="light">100</Counter>}
-          id="features"
-        >
-          <AccordionContents />
-        </AccordionItem>
-        <AccordionItem title="10 Actuals" id="actuals">
-          <AccordionContents />
-        </AccordionItem>
-      </Accordion>
-    </Card>
+    <Flex direction="column" gap="size-200">
+      <Card
+        title="Medium Accordion"
+        subTitle={'An overview of the the health of your model'}
+        bodyStyle={{ padding: 0, overflow: 'hidden' }}
+        style={{ width: 700 }}
+        collapsible
+      >
+        <Accordion {...args}>
+          <AccordionItem
+            title="2 Predictions"
+            titleExtra={<InfoTip>Description of predictions</InfoTip>}
+            extra={
+              <Button variant="default" size="compact">
+                Add
+              </Button>
+            }
+            id="predictions"
+          >
+            <AccordionContents />
+          </AccordionItem>
+          <AccordionItem
+            title="Features"
+            titleExtra={<Counter variant="light">100</Counter>}
+            id="features"
+          >
+            <AccordionContents />
+          </AccordionItem>
+          <AccordionItem title="10 Actuals" id="actuals">
+            <AccordionContents />
+          </AccordionItem>
+        </Accordion>
+      </Card>
+      <Card
+        title="Large Accordion"
+        subTitle={'An overview of the the health of your model'}
+        bodyStyle={{ padding: 0, overflow: 'hidden' }}
+        style={{ width: 700 }}
+        collapsible
+      >
+        <Accordion {...args} size="L" arrowPosition="start">
+          <AccordionItem
+            title="2 Predictions"
+            titleExtra={<InfoTip>Description of predictions</InfoTip>}
+            extra={
+              <Button variant="default" size="compact">
+                Add
+              </Button>
+            }
+            id="predictions"
+          >
+            <AccordionContents />
+          </AccordionItem>
+          <AccordionItem
+            title="Features"
+            titleExtra={<Counter variant="light">100</Counter>}
+            id="features"
+          >
+            <AccordionContents />
+          </AccordionItem>
+          <AccordionItem title="10 Actuals" id="actuals">
+            <AccordionContents />
+          </AccordionItem>
+        </Accordion>
+      </Card>
+    </Flex>
   );
   return <ThemeSplitView>{content}</ThemeSplitView>;
 };
