@@ -4,7 +4,6 @@ import { Heading } from '../content';
 import { Icon, ArrowIosDownwardOutline } from '../icon';
 import { classNames } from '../utils/classNames';
 import theme from '../theme';
-import { Flex } from '../layout';
 import { AccordionContext, useAccordionContext } from './context';
 
 export interface AccordionProps {
@@ -165,10 +164,10 @@ export function AccordionItem(props: AccordionItemProps) {
         aria-controls={contentId}
         aria-expanded={isOpen}
       >
-        <Flex direction="row" gap="size-100" justifyContent="center">
+        <FlexRow>
           {arrowPosition === 'start' && <ArrowIcon />}
           <Heading level={3}>{titleEl}</Heading>
-        </Flex>
+        </FlexRow>
         <div
           css={css`
             display: flex;
@@ -225,4 +224,15 @@ function ArrowIcon() {
       aria-hidden={true}
     />
   );
+}
+
+const flexRowCSS = css`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--ac-global-dimension-static-size-100);
+`;
+
+function FlexRow(props: PropsWithChildren) {
+  return <div css={flexRowCSS}>{props.children}</div>;
 }
