@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/Arize-ai/ui-components/compare/v1.8.6...v1.9.0) (2024-10-15)
+
+
+### Features
+
+* title as an element ([#244](https://github.com/Arize-ai/ui-components/issues/244)) ([a1a7d00](https://github.com/Arize-ai/ui-components/commit/a1a7d005b0728784f3c9a990f5706a521a64b64d))
+
 ## [1.3.0](https://github.com/Arize-ai/ui-components/compare/v1.2.0...v1.3.0) (2024-05-07)
 
 
