@@ -74,7 +74,7 @@ export function Accordion({ children, ...props }: AccordionProps) {
 }
 
 export interface AccordionItemProps {
-  title: string;
+  title: ReactNode;
   /**
    * An extra interactive element to be displayed next to the header
    */
