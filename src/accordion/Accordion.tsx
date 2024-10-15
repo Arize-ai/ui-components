@@ -4,14 +4,23 @@ import { Heading } from '../content';
 import { Icon, ArrowIosDownwardOutline } from '../icon';
 import { classNames } from '../utils/classNames';
 import theme from '../theme';
+import { Flex } from '../layout';
+import { AccordionContext, useAccordionContext } from './context';
 
 export interface AccordionProps {
   children: ReactNode;
+  size?: 'M' | 'L';
+  arrowPosition?: 'start' | 'end';
 }
+
+const sizeMap: Record<NonNullable<AccordionProps['size']>, string> = {
+  M: 'medium',
+  L: 'large',
+};
 
 const accordionItemCSS = css`
   cursor: pointer;
-  height: 40px;
+  height: var(--ac-accordion-item-height);
   padding: 0 var(--accordion-padding-side);
   display: block;
   width: 100%;
@@ -37,27 +46,31 @@ const accordionItemCSS = css`
  * Accordion component for having collapsible sections
  * @see https://www.w3.org/TR/wai-aria-practices-1.1/#accordion
  */
-export function Accordion({ children }: AccordionProps) {
+export function Accordion({ children, ...props }: AccordionProps) {
   return (
-    <div
-      className={`ac-accordion ac-accordion--default`}
-      role="region"
-      css={css`
-        --accordion-animation-duration: ${theme.animation.global.duration}ms;
-        &.ac-accordion--default {
-          --accordion-padding-top: var(--ac-global-dimension-static-size-100);
-          --accordion-padding-side: var(--ac-global-dimension-static-size-200);
-          --accordion-font-size: ${theme.typography.sizes.medium.fontSize}px;
-        }
-        .ac-accordion-item:not(:last-of-type) {
-          .ac-accordion-itemContent {
-            border-bottom: 1px solid var(--ac-global-border-color-dark);
+    <AccordionContext.Provider value={props}>
+      <div
+        className={`ac-accordion ac-accordion--default`}
+        role="region"
+        css={css`
+          --accordion-animation-duration: ${theme.animation.global.duration}ms;
+          &.ac-accordion--default {
+            --accordion-padding-top: var(--ac-global-dimension-static-size-100);
+            --accordion-padding-side: var(
+              --ac-global-dimension-static-size-200
+            );
+            --accordion-font-size: ${theme.typography.sizes.medium.fontSize}px;
           }
-        }
-      `}
-    >
-      {children}
-    </div>
+          .ac-accordion-item:not(:last-of-type) {
+            .ac-accordion-itemContent {
+              border-bottom: 1px solid var(--ac-global-border-color-dark);
+            }
+          }
+        `}
+      >
+        {children}
+      </div>
+    </AccordionContext.Provider>
   );
 }
 
@@ -93,6 +106,8 @@ export function AccordionItem(props: AccordionItemProps) {
     children,
     extra,
   } = props;
+  const { arrowPosition = 'end', size = 'M' } = useAccordionContext();
+  const sizeVariant = sizeMap[size];
   const [isOpen, setIsOpen] = useState(defaultIsOpen);
   const contentId = `${id}-content`,
     headerId = `${id}-heading`;
@@ -121,6 +136,7 @@ export function AccordionItem(props: AccordionItemProps) {
     <div
       className={classNames('ac-accordion-item', {
         'is-open': isOpen,
+        [`ac-accordion-item--${sizeVariant}`]: sizeVariant,
       })}
       role="presentation"
       css={css`
@@ -128,6 +144,12 @@ export function AccordionItem(props: AccordionItemProps) {
           .ac-accordion-itemIndicator {
             transform: rotate(180deg);
           }
+        }
+        &.ac-accordion-item--medium {
+          --ac-accordion-item-height: 40px;
+        }
+        &.ac-accordion-item--large {
+          --ac-accordion-item-height: 48px;
         }
       `}
     >
@@ -143,7 +165,10 @@ export function AccordionItem(props: AccordionItemProps) {
         aria-controls={contentId}
         aria-expanded={isOpen}
       >
-        <Heading level={3}>{titleEl}</Heading>
+        <Flex direction="row" gap="size-100" justifyContent="center">
+          {arrowPosition === 'start' && <ArrowIcon />}
+          <Heading level={3}>{titleEl}</Heading>
+        </Flex>
         <div
           css={css`
             display: flex;
@@ -153,15 +178,7 @@ export function AccordionItem(props: AccordionItemProps) {
           `}
         >
           {extra && <StopEventPropagation>{extra}</StopEventPropagation>}
-          <Icon
-            svg={<ArrowIosDownwardOutline />}
-            className="ac-accordion-itemIndicator"
-            css={css`
-              transition: transform ease var(--accordion-animation-duration);
-              transform: rotate(0deg);
-            `}
-            aria-hidden={true}
-          />
+          {arrowPosition === 'end' && <ArrowIcon />}
         </div>
       </div>
 
@@ -193,5 +210,19 @@ function StopEventPropagation(props: PropsWithChildren) {
     >
       {props.children}
     </div>
+  );
+}
+
+function ArrowIcon() {
+  return (
+    <Icon
+      svg={<ArrowIosDownwardOutline />}
+      className="ac-accordion-itemIndicator"
+      css={css`
+        transition: transform ease var(--accordion-animation-duration);
+        transform: rotate(0deg);
+      `}
+      aria-hidden={true}
+    />
   );
 }
