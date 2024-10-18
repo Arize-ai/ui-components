@@ -1,33 +1,19 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { withDesign } from 'storybook-addon-designs';
+
 import { css } from '@emotion/react';
 // @ts-ignore
+import { Modal, ModalProps, DialogContainer, Dialog, Button } from '../src';
 import chartFile from './images/chart.png';
-import {
-  Provider,
-  Card,
-  Text,
-  Modal,
-  ModalProps,
-  DialogContainer,
-  Dialog,
-  Button,
-} from '../src';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const meta: Meta = {
   title: 'Modal',
   component: Modal,
-  decorators: [withDesign],
+
   argTypes: {},
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=32%3A52',
-    },
   },
 };
 

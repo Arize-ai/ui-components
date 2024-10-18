@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { Meta } from '@storybook/react';
-import { withDesign } from 'storybook-addon-designs';
+
 import { ColorValue, Provider, Text, TextProps } from '../src';
 import { globalColors } from './constants';
 import { ThemeSplitView } from './components/ThemeSplitView';
@@ -9,7 +9,7 @@ import { ThemeSplitView } from './components/ThemeSplitView';
 const meta: Meta = {
   title: 'Text',
   component: Text,
-  decorators: [withDesign],
+
   parameters: {
     controls: { expanded: true },
   },

@@ -1,14 +1,14 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
-import { withDesign } from 'storybook-addon-designs';
+
 import { LabelGroup, Label, LabelProps } from '../src/label';
 import { Counter, Provider } from '../src';
 
 const meta: Meta = {
   title: 'Counter',
   component: Counter,
-  decorators: [withDesign],
+
   argTypes: {
     children: {
       control: {

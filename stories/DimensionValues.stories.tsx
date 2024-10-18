@@ -1,13 +1,13 @@
 import React from 'react';
 import { css } from '@emotion/react';
-import { Meta, Story } from '@storybook/react';
-import { withDesign } from 'storybook-addon-designs';
-import { Provider, Text } from '../src';
+import { Meta } from '@storybook/react';
+
 import detent from 'ts-dedent';
+import { Provider, Text } from '../src';
 
 const meta: Meta = {
   title: 'DimensionValues',
-  decorators: [withDesign],
+
   argTypes: {
     children: {
       control: {
@@ -18,10 +18,7 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url: '',
-    },
+
     docs: {
       description: {
         component: detent`

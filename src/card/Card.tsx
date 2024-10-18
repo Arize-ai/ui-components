@@ -39,7 +39,7 @@ const bodyCSS = css`
 `;
 
 export interface CardBaseProps {
-  title?: string;
+  title?: ReactNode;
   subTitle?: string;
   variant?: CardVariant;
   children: ReactNode;
@@ -80,6 +80,7 @@ export function useStyleBorderColor(styleProps: HTMLAttributes<HTMLElement>) {
       : `var(--ac-global-border-color-default)`;
   }, [styleProps.style]);
 }
+
 export function Card({
   title,
   subTitle,

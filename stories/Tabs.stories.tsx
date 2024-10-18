@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
-import { withDesign } from 'storybook-addon-designs';
+
 import { Tabs, TabsProps } from '../src/tabs/Tabs';
 import { Heading } from '../src/content';
 import { Button, CloseOutline, Counter, Icon, Provider } from '../src';
@@ -11,7 +11,7 @@ const { TabPane } = Tabs;
 const meta: Meta = {
   title: 'Tabs',
   component: Tabs,
-  decorators: [withDesign],
+
   argTypes: {
     children: {
       control: {
@@ -21,11 +21,6 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=20%3A2',
-    },
   },
 };
 

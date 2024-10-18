@@ -1,5 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/react';
+import { Meta, Story } from '@storybook/react';
+
 import {
   DropdownTrigger,
   DropdownTriggerProps,
@@ -7,13 +9,11 @@ import {
   DropdownMenu,
 } from '../src/dropdown';
 import { Provider } from '../src';
-import { Meta, Story } from '@storybook/react';
-import { withDesign } from 'storybook-addon-designs';
 
 const meta: Meta = {
   title: 'DropdownTrigger',
   component: DropdownTrigger,
-  decorators: [withDesign],
+
   argTypes: {
     children: {
       control: {
@@ -24,11 +24,6 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=1238%3A2417',
-    },
   },
 };
 

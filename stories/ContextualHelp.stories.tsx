@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { Meta, Story } from '@storybook/react';
-import { withDesign } from 'storybook-addon-designs';
+import React from 'react';
+import { Meta } from '@storybook/react';
+
+import { css } from '@emotion/react';
 import {
   Form,
-  Provider,
   Placement,
   ContextualHelp,
   Text,
@@ -13,7 +13,6 @@ import {
   TextField,
 } from '../src';
 
-import css from '@emotion/css';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const placements: Placement[] = [
@@ -32,7 +31,7 @@ const placements: Placement[] = [
 const meta: Meta = {
   title: 'ContextualHelp',
   component: ContextualHelp,
-  decorators: [withDesign],
+
   argTypes: {
     placement: {
       control: {
@@ -43,11 +42,6 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=503%3A0',
-    },
   },
 };
 

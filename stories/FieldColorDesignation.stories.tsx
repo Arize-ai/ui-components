@@ -1,23 +1,22 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { Meta } from '@storybook/react';
-import { ThemeSplitView } from './components/ThemeSplitView';
+
 import {
   Dropdown,
   FieldColorDesignation,
   Item,
   ListBox,
   Picker,
-  Provider,
   TextArea,
   TextField,
 } from '../src';
-import { withDesign } from 'storybook-addon-designs';
+import { ThemeSplitView } from './components/ThemeSplitView';
 
 const meta: Meta = {
   title: 'FieldColorDesignation',
   component: FieldColorDesignation,
-  decorators: [withDesign],
+
   argTypes: {
     children: {
       control: {
@@ -27,10 +26,6 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url: '',
-    },
   },
 };
 

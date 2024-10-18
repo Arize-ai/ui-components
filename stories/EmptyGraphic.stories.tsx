@@ -1,13 +1,13 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { withDesign } from 'storybook-addon-designs';
+
 import { EmptyGraphic, EmptyGraphicProps } from '../src';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const meta: Meta = {
   title: 'Empty',
   component: EmptyGraphic,
-  decorators: [withDesign],
+
   argTypes: {
     children: {
       control: {
@@ -17,10 +17,6 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url: '',
-    },
   },
 };
 

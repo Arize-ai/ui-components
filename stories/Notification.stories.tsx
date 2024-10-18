@@ -1,20 +1,15 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { Meta, Story } from '@storybook/react';
+
 import { Provider, useNotification, SeverityLevel } from '../src';
-import { withDesign } from 'storybook-addon-designs';
 
 const meta: Meta = {
   title: 'Notification',
   component: null,
-  decorators: [withDesign],
+
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?node-id=554%3A1721',
-    },
   },
 };
 

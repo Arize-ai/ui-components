@@ -5,7 +5,7 @@ import { useButton } from '@react-aria/button';
 import { useHover } from '@react-aria/interactions';
 import { FocusRing } from '@react-aria/focus';
 import { classNames } from '../utils/classNames';
-import { FocusableRef, Validation } from '../types';
+import { FocusableRef, SizingProps, Validation } from '../types';
 import { useFocusableRef } from '../utils/useDOMRef';
 import theme from '../theme';
 import { AddonBefore } from '../field';
@@ -17,7 +17,10 @@ const appearKeyframes = keyframes`
     0% {  opacity: 0; }
     100% { opacity: 1; }
 `;
-export interface DropdownButtonProps extends AddonableProps, Validation {
+export interface DropdownButtonProps
+  extends AddonableProps,
+    Validation,
+    SizingProps {
   /**
    * Whether the button should be displayed with a quiet style.
    * @default false
@@ -54,10 +57,7 @@ const buttonBaseCSS = css`
     color: var(--ac-field-text-color-override, var(--ac-global-text-color-900));
   }
   .ac-dropdown-button__dropdown-icon {
-    margin: 10px 0 10px 10px;
     flex: fixed;
-    width: 16px;
-    height: 16px;
     font-size: 16px;
   }
 
@@ -91,6 +91,37 @@ const buttonBaseCSS = css`
 
   &.ac-dropdown-button--invalid > .ac-dropdown-button__text {
     padding-right: 0;
+  }
+
+  // Sizing
+  &.ac-dropdown-button--default {
+    .ac-dropdown-button__text {
+      margin: var(--ac-global-dimension-static-size-100)
+        var(--ac-global-dimension-static-size-100)
+        var(--ac-global-dimension-static-size-100)
+        var(--ac-global-dimension-static-size-200);
+    }
+    .ac-dropdown-button__dropdown-icon {
+      margin: 10px 0 10px 10px;
+      flex: fixed;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &.ac-dropdown-button--compact {
+    .ac-dropdown-button__text {
+      margin: var(--ac-global-dimension-static-size-50)
+        var(--ac-global-dimension-static-size-50)
+        var(--ac-global-dimension-static-size-50)
+        var(--ac-global-dimension-static-size-100);
+    }
+    .ac-dropdown-button__dropdown-icon {
+      margin: var(--ac-global-dimension-size-50) 0
+        var(--ac-global-dimension-size-50) var(--ac-global-dimension-size-50);
+      flex: fixed;
+      width: 16px;
+      height: 16px;
+    }
   }
 `;
 
@@ -155,12 +186,6 @@ const nonQuietButtonCSS = css`
     cursor: default;
     border: 1px solid ${theme.components.dropdown.borderColor};
   }
-  .ac-dropdown-button__text {
-    margin: var(--ac-global-dimension-static-size-100)
-      var(--ac-global-dimension-static-size-100)
-      var(--ac-global-dimension-static-size-100)
-      var(--ac-global-dimension-static-size-200);
-  }
 
   &.ac-dropdown-button--invalid {
     border: 1px solid var(--ac-global-color-danger);
@@ -194,6 +219,7 @@ function DropdownButton(
     style,
     addonBefore,
     validationState,
+    size = 'default',
     // TODO: add support for autoFocus
     // autoFocus,
     ...otherProps
@@ -214,14 +240,18 @@ function DropdownButton(
       <button
         {...mergeProps(buttonProps, hoverProps, otherProps)}
         ref={domRef}
-        className={classNames('ac-dropdown-button', {
-          'ac-dropdown-button--quiet': isQuiet,
-          'is-active': isActive || isPressed,
-          'is-disabled': isDisabled,
-          'is-hovered': isHovered,
-          'ac-dropdown-button--invalid': isInvalid,
-          'ac-dropdown-button--valid': validationState === 'valid',
-        })}
+        className={classNames(
+          'ac-dropdown-button',
+          `ac-dropdown-button--${size}`,
+          {
+            'ac-dropdown-button--quiet': isQuiet,
+            'is-active': isActive || isPressed,
+            'is-disabled': isDisabled,
+            'is-hovered': isHovered,
+            'ac-dropdown-button--invalid': isInvalid,
+            'ac-dropdown-button--valid': validationState === 'valid',
+          }
+        )}
         style={style}
         css={css(
           buttonBaseCSS,

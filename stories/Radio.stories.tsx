@@ -10,11 +10,6 @@ const meta: Meta = {
     controls: {
       expanded: true,
     },
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/Gs8BthCViFvipFh0gknwgg/Drift-Monitors?node-id=90%3A44',
-    },
   },
 };
 

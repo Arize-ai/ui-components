@@ -1,13 +1,12 @@
 import React from 'react';
 
 import { Meta, Story } from '@storybook/react';
-import { withDesign } from 'storybook-addon-designs';
+
 import { Flex, Heading, Provider, View } from '../src';
 
 const meta: Meta = {
   title: 'Flex',
   component: Flex,
-  decorators: [withDesign],
 };
 
 export default meta;

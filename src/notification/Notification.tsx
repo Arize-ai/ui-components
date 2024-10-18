@@ -85,7 +85,9 @@ export class Notification extends Component<
     this.add = this.add.bind(this);
     this.remove = this.remove.bind(this);
   }
+
   add(noticeConfig: NoticeConfig) {
+    // eslint-disable-next-line react/no-is-mounted
     this.setState({
       notices: [
         ...this.state.notices,
@@ -98,6 +100,7 @@ export class Notification extends Component<
   }
 
   remove(id: string) {
+    // eslint-disable-next-line react/no-is-mounted
     this.setState({
       notices: this.state.notices.filter(notice => notice.id !== id),
     });
@@ -120,6 +123,7 @@ export class Notification extends Component<
                 <Notice
                   key={notice.id}
                   {...notice}
+                  // eslint-disable-next-line react/no-is-mounted
                   onClose={() => this.remove(notice.id)}
                 />
               </CSSTransition>

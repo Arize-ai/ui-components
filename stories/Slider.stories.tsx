@@ -1,13 +1,13 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
-import { Flex, Provider, Slider, Switch } from '../src';
-import { withDesign } from 'storybook-addon-designs';
+import { Meta } from '@storybook/react';
+
+import { Flex, Slider, Switch } from '../src';
 import { ThemeToggleWrap } from './components/ThemeToggleWrap';
 
 const meta: Meta = {
   title: 'Slider',
   component: Slider,
-  decorators: [withDesign],
+
   argTypes: {
     children: {
       control: {
@@ -17,10 +17,6 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
-    design: {
-      type: 'figma',
-      url: 'https://www.figma.com/file/5mMInYH9JdJY389s8iBVQm/Component-Library?type=design&node-id=3235%3A9316&mode=dev',
-    },
   },
 };
 
