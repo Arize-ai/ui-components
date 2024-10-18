@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/Arize-ai/ui-components/compare/v1.8.7...v1.9.0) (2024-10-18)
+
+
+### Features
+
+* add message and message filled icons ([#246](https://github.com/Arize-ai/ui-components/issues/246)) ([af5e35a](https://github.com/Arize-ai/ui-components/commit/af5e35ab7d0efac43c425baf7d7657dd9004835c))
+
 ## [1.3.0](https://github.com/Arize-ai/ui-components/compare/v1.2.0...v1.3.0) (2024-05-07)
 
 
