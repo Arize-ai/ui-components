@@ -20,7 +20,7 @@ const Button = (props: ButtonProps, ref: FocusableRef<HTMLButtonElement>) => {
     onClick,
     icon,
     className,
-    size = 'normal',
+    size = 'default',
     ...otherProps
   } = props;
   const isDisabled = disabled || loading;

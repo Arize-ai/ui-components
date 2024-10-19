@@ -315,21 +315,23 @@ export function useStyleProps<T extends StyleProps>(
   // @ts-ignore
   if (otherProps.className) {
     // eslint-disable-next-line no-console
-    console.warn(
-      'The className prop is unsafe and is unsupported in Arize Components. ' +
-        'Please use style props with AC variables, or UNSAFE_className if you absolutely must do something custom. ' +
-        'Note that this may break in future versions due to DOM structure changes.'
-    );
+    // TODO: add back this warning when we have a better solution for className
+    // console.warn(
+    //   'The className prop is unsafe and is unsupported in Arize Components. ' +
+    //     'Please use style props with AC variables, or UNSAFE_className if you absolutely must do something custom. ' +
+    //     'Note that this may break in future versions due to DOM structure changes.'
+    // );
   }
 
   // @ts-ignore
   if (otherProps.style) {
     // eslint-disable-next-line no-console
-    console.warn(
-      'The style prop is unsafe and is unsupported in React Arize Components. ' +
-        'Please use style props with AC variables, or UNSAFE_style if you absolutely must do something custom. ' +
-        'Note that this may break in future versions due to DOM structure changes.'
-    );
+    // TODO: add back this warning when we have a better solution for className
+    // console.warn(
+    //   'The style prop is unsafe and is unsupported in React Arize Components. ' +
+    //     'Please use style props with AC variables, or UNSAFE_style if you absolutely must do something custom. ' +
+    //     'Note that this may break in future versions due to DOM structure changes.'
+    // );
   }
 
   const styleProps: HTMLAttributes<HTMLElement> = {
