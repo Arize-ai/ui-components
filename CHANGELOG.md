@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.9](https://github.com/Arize-ai/ui-components/compare/v1.8.8...v1.8.9) (2024-10-19)
+
+
+### Bug Fixes
+
+* button styles ([#247](https://github.com/Arize-ai/ui-components/issues/247)) ([5019809](https://github.com/Arize-ai/ui-components/commit/50198092777458f311fb89619978304f5a956490))
+
 ## [1.3.0](https://github.com/Arize-ai/ui-components/compare/v1.2.0...v1.3.0) (2024-05-07)
 
 
