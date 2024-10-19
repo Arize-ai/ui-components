@@ -21,7 +21,7 @@ export const buttonCSS = css`
     cursor: default;
     opacity: ${theme.opacity.disabled};
   }
-  &[data-size='normal'][data-childless='false'] {
+  &[data-size='default'][data-childless='false'] {
     padding: var(--ac-global-dimension-static-size-100)
       var(--ac-global-dimension-static-size-200);
   }
@@ -29,7 +29,7 @@ export const buttonCSS = css`
     padding: var(--ac-global-dimension-static-size-50)
       var(--ac-global-dimension-static-size-100);
   }
-  &[data-size='normal'][data-childless='true'] {
+  &[data-size='default'][data-childless='true'] {
     padding: var(--ac-global-dimension-static-size-100)
       var(--ac-global-dimension-static-size-100);
   }
