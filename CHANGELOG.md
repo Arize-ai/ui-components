@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.9.0](https://github.com/Arize-ai/ui-components/compare/v1.8.9...v1.9.0) (2025-01-14)
+
+
+### Features
+
+* Add new ImageOutline icon ([#250](https://github.com/Arize-ai/ui-components/issues/250)) ([b0fb727](https://github.com/Arize-ai/ui-components/commit/b0fb7279a1d7a3d8671973e33aada9515609eb65))
+* add save outline and fill icons ([#251](https://github.com/Arize-ai/ui-components/issues/251)) ([8f81ef4](https://github.com/Arize-ai/ui-components/commit/8f81ef49ea614ac25226d5f7981a19110d7d1d15))
+* add the ability to un-mount global styles ([#253](https://github.com/Arize-ai/ui-components/issues/253)) ([087208d](https://github.com/Arize-ai/ui-components/commit/087208dfdb5b77f067bd91992fb10f527692d496))
+
 ## [1.3.0](https://github.com/Arize-ai/ui-components/compare/v1.2.0...v1.3.0) (2024-05-07)
 
 
