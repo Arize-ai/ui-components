@@ -1016,6 +1016,10 @@ export const derivedCSS = (theme: ProviderTheme) => css`
     --ac-alias-single-line-width: var(--ac-global-dimension-size-2400);
   }
 `;
+
+const opacitiesCSS = css`
+  --ac-opacity-disabled: 0.6;
+`;
 export function GlobalStyles() {
   let { theme } = useProvider();
   theme = theme || 'dark';
@@ -1027,7 +1031,8 @@ export function GlobalStyles() {
         staticCSS,
         themeCSS,
         derivedCSS(theme),
-        mediumRootCSS
+        mediumRootCSS,
+        opacitiesCSS
       )}
     />
   );

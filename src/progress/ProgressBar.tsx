@@ -12,7 +12,7 @@ function ProgressBar(props: ACProgressBarProps, ref: DOMRef<HTMLDivElement>) {
   return (
     <ProgressBarBase
       {...otherProps}
-      ref={ref}
+      ref={ref as any}
       barProps={progressBarProps}
       labelProps={labelProps}
       barClassName={classNames({

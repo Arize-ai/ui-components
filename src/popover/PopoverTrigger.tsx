@@ -58,7 +58,7 @@ export function PopoverTrigger(props: PopoverTriggerProps) {
       isOpen={state.isOpen}
       ref={overlayRef}
       onClose={state.close}
-      placement={placement}
+      placement={placement || 'bottom'}
       {...popoverProps}
     >
       {typeof content === 'function' ? content(state.close) : content}

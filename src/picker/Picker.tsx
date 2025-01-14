@@ -77,12 +77,13 @@ function Picker<T extends object>(
     unwrappedTriggerRef
   );
 
+  const propsPlacement = `${direction} ${align}` as Placement;
   const { overlayProps, placement, updatePosition } = useOverlayPosition({
     targetRef: unwrappedTriggerRef,
     overlayRef: unwrappedDropdownRef,
     // @ts-ignore refs are not playing nicely with hooks
     scrollRef: listboxRef,
-    placement: `${direction} ${align}` as Placement,
+    placement: propsPlacement,
     shouldFlip: shouldFlip,
     isOpen: state.isOpen,
     onClose: state.close,
@@ -162,7 +163,7 @@ function Picker<T extends object>(
       className={classNames('ac-dropdown', props.className)}
       // @ts-ignore
       ref={dropdownRef}
-      placement={placement}
+      placement={placement || 'center'}
       hideArrow
       shouldCloseOnBlur
       onClose={state.close}

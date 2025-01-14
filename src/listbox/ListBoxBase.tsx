@@ -144,7 +144,7 @@ function ListBoxBase<T>(
         style={props.style}
         {...mergeProps(listBoxProps, domProps)}
         ref={ref}
-        focusedKey={state.selectionManager.focusedKey}
+        focusedKey={state.selectionManager.focusedKey || undefined}
         sizeToFit="height"
         scrollDirection="vertical"
         className="ac-menu"
