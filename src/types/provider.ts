@@ -16,6 +16,12 @@ interface ContextProps {
 export interface ProviderProps extends ContextProps {
   /** The content of the Provider. */
   children: ReactNode;
+  /**
+   * Whether or not to mount the global styles. This should only be set to false if
+   * you are wanting to manually set the global design tokens.
+   * @default true
+   */
+  mountGlobalStyles?: boolean;
 }
 
-export type ProviderContext = ContextProps
+export type ProviderContext = ContextProps;

@@ -19,7 +19,7 @@ export const buttonCSS = css`
   }
   &[disabled] {
     cursor: default;
-    opacity: ${theme.opacity.disabled};
+    opacity: var(--ac-opacity-disabled);
   }
   &[data-size='default'][data-childless='false'] {
     padding: var(--ac-global-dimension-static-size-100)

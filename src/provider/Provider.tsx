@@ -7,7 +7,12 @@ const Context = React.createContext<ProviderContext | null>(null);
 
 export function Provider(props: ProviderProps) {
   const prevContext = useContext(Context);
-  const { children, theme: propsTheme, ...context } = props;
+  const {
+    children,
+    theme: propsTheme,
+    mountGlobalStyles = true,
+    ...context
+  } = props;
   let theme: ProviderTheme = propsTheme || 'dark';
   const isRootProvider = !prevContext;
   // If there is a theme higher up in the tree, use that theme
@@ -21,7 +26,7 @@ export function Provider(props: ProviderProps) {
   );
   return (
     <Context.Provider value={{ ...context, theme }}>
-      {isRootProvider ? <GlobalStyles /> : null}
+      {isRootProvider && mountGlobalStyles ? <GlobalStyles /> : null}
       <div className={`ac-theme ac-theme--${theme}`}>{content}</div>
     </Context.Provider>
   );
