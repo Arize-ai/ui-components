@@ -22,6 +22,7 @@
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
+    "typecheck": "tsc --noEmit",
     "chromatic": "npx chromatic --project-token 1yugawkzsgd"
   },
   "peerDependencies": {
@@ -87,7 +88,7 @@
     "ts-dedent": "^2.2.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.0.3",
-    "typescript": "^4.9.5"
+    "typescript": "5.4.5"
   },
   "resolutions": {
     "react": "^18",

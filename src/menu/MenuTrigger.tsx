@@ -125,7 +125,7 @@ function MenuTrigger(props: MenuTriggerProps, ref: DOMRef<HTMLElement>) {
       isOpen={state.isOpen}
       style={positionProps.style}
       ref={menuPopoverRef}
-      placement={placement}
+      placement={placement || undefined}
       onClose={state.close}
       shouldCloseOnBlur
     >
