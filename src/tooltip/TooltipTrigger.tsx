@@ -59,7 +59,7 @@ export function TooltipTrigger(props: TooltipTriggerProps) {
   );
 
   const { overlayProps, arrowProps, placement } = useOverlayPosition({
-    placement: props.placement || 'top',
+    placement: props.placement,
     targetRef: tooltipTriggerRef,
     overlayRef,
     offset,
@@ -73,7 +73,7 @@ export function TooltipTrigger(props: TooltipTriggerProps) {
       <TooltipContext.Provider
         value={{
           state,
-          placement,
+          placement: placement || 'top',
           ref: overlayRef,
           style: overlayProps.style,
           arrowProps,
